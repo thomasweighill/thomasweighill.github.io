@@ -1,0 +1,410 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-E.html">Eigenvalues</a> » <a href="section-SD.html">Similarity and Diagonalization</a> »</div></div>
+<div id="title"><span id="title-content">Similarity and Diagonalization</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-SD" acro="SD" titletext="Similarity and Diagonalization">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">SD</span> <span class="titletext">Similarity and Diagonalization</span>
+</h3>
+<div class="introduction">
+<p>This section's topic will perhaps seem out of place at first, but we will make the connection soon with eigenvalues and eigenvectors.  This is also our first look at one of the central ideas of <a href="chapter-R.html" title="Representations">Chapter R</a>.</p>
+
+</div>
+<div class="subsection" id="subsection-SM" acro="SM" titletext="Similar Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">SM</span> <span class="titletext">Similar Matrices</span>
+</h4>
+<p>The notion of matrices being “similar” is a lot like saying two matrices are row-equivalent.  Two similar matrices are not equal, but they share many important properties.  This section, and later sections in <a href="chapter-R.html" title="Representations">Chapter R</a> will be devoted in part to discovering just what these common properties are.</p>
+<p>First, the main definition for this section.</p>
+<div class="definition" id="definition-SIM" acro="SIM" titletext="Similar Matrices">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SIM</span> <span class="titletext"> Similar Matrices</span>
+</h5>
+<p>Suppose $A$ and $B$ are two square matrices of size $n$.  Then $A$ and $B$ are <em class="term">similar</em> if there exists a nonsingular matrix of size $n$, $S$, such that $A=\similar{B}{S}$.</p>
+</div>
+<p>We will say “$A$ is similar to $B$ via $S$” when we want to emphasize the role of $S$ in the relationship between $A$ and $B$.  Also, it does not matter if we say $A$ is similar to $B$, or $B$ is similar to $A$.  If one statement is true then so is the other, as can be seen by using $\inverse{S}$ in place of $S$ (see <a class="knowl" acro="SER" type="Theorem" title="Similarity is an Equivalence Relation" knowl="./knowls/theorem.SER.knowl">Theorem SER</a> for the careful proof).    Finally, we will refer to $\similar{B}{S}$ as a <em class="term">similarity transformation</em> when we want to emphasize the way $S$ changes $B$.  OK, enough about language, let us build a few examples.</p>
+<div class="example" id="example-SMS5" acro="SMS5" titletext="Similar matrices of size 5"><h5 class="example">
+<a knowl="./knowls/example.SMS5.knowl"><span class="type">Example</span> <span class="acro">SMS5</span></a> <span class="titletext">Similar matrices of size 5</span>
+</h5></div>
+<p>Let us do that again.</p>
+<div class="example" id="example-SMS3" acro="SMS3" titletext="Similar matrices of size 3"><h5 class="example">
+<a knowl="./knowls/example.SMS3.knowl"><span class="type">Example</span> <span class="acro">SMS3</span></a> <span class="titletext">Similar matrices of size 3</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-PSM" acro="PSM" titletext="Properties of Similar Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">PSM</span> <span class="titletext">Properties of Similar Matrices</span>
+</h4>
+<p>Similar matrices share many properties and it is these theorems that justify the choice of the word “similar.”  First we will show that similarity is an <em class="term">equivalence relation</em>.  Equivalence relations are important in the study of various algebras and can always be regarded as a kind of weak version of equality.  Sort of alike, but not quite equal.  The notion of two matrices being row-equivalent is an example of an equivalence relation we have been working with since the beginning of the course (see <a knowl="./knowls/exercise.RREF.T11.knowl">Exercise RREF.T11</a>).  Row-equivalent matrices are not equal, but they are a lot alike.  For example, row-equivalent matrices have the same rank.  Formally, an equivalence relation requires three conditions hold:  reflexive, symmetric and transitive.  We will illustrate these as we prove that similarity is an equivalence relation.</p>
+<div class="theorem" id="theorem-SER" acro="SER" titletext="Similarity is an Equivalence Relation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SER</span><span class="titletext"> Similarity is an Equivalence Relation</span>
+</h5>
+<div class="statement"><p>Suppose $A$, $B$ and $C$ are square matrices of size $n$.  Then
+<ol>
+<li> $A$ is similar to $A$.  (Reflexive)
+</li>
+<li> If $A$ is similar to $B$, then $B$ is similar to $A$.  (Symmetric)
+</li>
+<li> If $A$ is similar to $B$ and $B$ is similar to $C$, then $A$ is similar to $C$.  (Transitive)
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.SER.knowl">Proof</a></div>
+</div>
+<p>Here is another theorem that tells us exactly what sorts of properties similar matrices share.</p>
+<div class="theorem" id="theorem-SMEE" acro="SMEE" titletext="Similar Matrices have Equal Eigenvalues">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SMEE</span><span class="titletext"> Similar Matrices have Equal Eigenvalues</span>
+</h5>
+<div class="statement"><p>Suppose $A$ and $B$ are similar matrices.  Then the characteristic polynomials of $A$ and $B$ are equal, that is, $\charpoly{A}{x}=\charpoly{B}{x}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SMEE.knowl">Proof</a></div>
+</div>
+<p>So similar matrices not only have the same <em>set</em> of eigenvalues, the algebraic multiplicities of these eigenvalues will also be the same.  However, be careful with this theorem.  It is tempting to think the converse is true, and argue that if two matrices have the same eigenvalues, then they are similar.  Not so, as the following example illustrates.</p>
+<div class="example" id="example-EENS" acro="EENS" titletext="Equal eigenvalues, not similar"><h5 class="example">
+<a knowl="./knowls/example.EENS.knowl"><span class="type">Example</span> <span class="acro">EENS</span></a> <span class="titletext">Equal eigenvalues, not similar</span>
+</h5></div>
+<div class="sage" id="sage-SM" acro="SM" titletext="Similar Matrices"><h5 class="sage">
+<a knowl="./knowls/sage.SM.knowl"><span class="type">Sage</span> <span class="acro">SM</span></a> <span class="titletext">Similar Matrices</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-D" acro="D" titletext="Diagonalization">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">D</span> <span class="titletext">Diagonalization</span>
+</h4>
+<p>Good things happen when a matrix is similar to a diagonal matrix.  For example, the eigenvalues of the matrix are the  entries on the diagonal of the diagonal matrix.  And it can be a much simpler matter to compute high powers of the matrix.  Diagonalizable matrices are also of interest in more abstract settings.  Here are the relevant definitions, then our main theorem for this section.</p>
+<div class="definition" id="definition-DIM" acro="DIM" titletext="Diagonal Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">DIM</span> <span class="titletext"> Diagonal Matrix</span>
+</h5>
+<p>Suppose that $A$ is a square matrix.  Then $A$ is a <em class="term">diagonal matrix</em> if $\matrixentry{A}{ij}=0$ whenever $i\neq j$.</p>
+</div>
+<div class="definition" id="definition-DZM" acro="DZM" titletext="Diagonalizable Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">DZM</span> <span class="titletext"> Diagonalizable Matrix</span>
+</h5>
+<p>Suppose $A$ is a square matrix.  Then $A$ is <em class="term">diagonalizable</em> if $A$ is similar to a diagonal matrix.</p>
+</div>
+<div class="example" id="example-DAB" acro="DAB" titletext="Diagonalization of Archetype B"><h5 class="example">
+<a knowl="./knowls/example.DAB.knowl"><span class="type">Example</span> <span class="acro">DAB</span></a> <span class="titletext">Diagonalization of Archetype B</span>
+</h5></div>
+<p><a class="knowl" acro="SMS3" type="Example" title="Similar matrices of size 3" knowl="./knowls/example.SMS3.knowl">Example SMS3</a> provides yet another example of a matrix that is subjected to a similarity transformation and the result is a diagonal matrix.  Alright, just how would we find the magic matrix $S$ that can be used in a similarity transformation to produce a diagonal matrix?  Before you read the statement of the next theorem, you might study the eigenvalues and eigenvectors of <a knowl="./knowls/archetype.B.knowl">Archetype B</a> and compute the eigenvalues and eigenvectors of the matrix in <a class="knowl" acro="SMS3" type="Example" title="Similar matrices of size 3" knowl="./knowls/example.SMS3.knowl">Example SMS3</a>.</p>
+<div class="theorem" id="theorem-DC" acro="DC" titletext="Diagonalization Characterization">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DC</span><span class="titletext"> Diagonalization Characterization</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix of size $n$.  Then $A$ is diagonalizable if and only if there exists a linearly independent set $S$ that contains $n$ eigenvectors of $A$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DC.knowl">Proof</a></div>
+</div>
+<p>Notice that the proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> is constructive.  To diagonalize a matrix, we need only locate $n$ linearly independent eigenvectors.  Then we can construct a nonsingular matrix using the eigenvectors as columns ($R$) so that $\inverse{R}AR$ is a diagonal matrix ($D$).  The entries on the diagonal of $D$ will be the eigenvalues of the eigenvectors used to create $R$, <em>in the same order</em> as the eigenvectors appear in $R$.  We illustrate this by <em class="term">diagonalizing</em> some matrices.</p>
+<div class="example" id="example-DMS3" acro="DMS3" titletext="Diagonalizing a matrix of size 3"><h5 class="example">
+<a knowl="./knowls/example.DMS3.knowl"><span class="type">Example</span> <span class="acro">DMS3</span></a> <span class="titletext">Diagonalizing a matrix of size 3</span>
+</h5></div>
+<p>The dimension of an eigenspace can be no larger than the algebraic multiplicity of the eigenvalue by <a class="knowl" acro="ME" type="Theorem" title="Multiplicities of an Eigenvalue" knowl="./knowls/theorem.ME.knowl">Theorem ME</a>.  When every eigenvalue's eigenspace is this large, then we can diagonalize the matrix, and only then.   Three examples we have seen so far in this section,  <a class="knowl" acro="SMS5" type="Example" title="Similar matrices of size 5" knowl="./knowls/example.SMS5.knowl">Example SMS5</a>,  <a class="knowl" acro="DAB" type="Example" title="Diagonalization of Archetype B" knowl="./knowls/example.DAB.knowl">Example DAB</a> and <a class="knowl" acro="DMS3" type="Example" title="Diagonalizing a matrix of size 3" knowl="./knowls/example.DMS3.knowl">Example DMS3</a>,  illustrate the diagonalization of a matrix, with varying degrees of detail about just how the diagonalization is achieved.  However, in each case, you can verify that the geometric and algebraic multiplicities are equal for every eigenvalue.  This is the substance of the next theorem.</p>
+<div class="theorem" id="theorem-DMFE" acro="DMFE" titletext="Diagonalizable Matrices have Full Eigenspaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DMFE</span><span class="titletext"> Diagonalizable Matrices have Full Eigenspaces</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix.  Then $A$ is diagonalizable if and only if $\geomult{A}{\lambda}=\algmult{A}{\lambda}$ for every eigenvalue $\lambda$ of $A$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DMFE.knowl">Proof</a></div>
+</div>
+<p><a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a>,
+<a class="knowl" acro="CAEHW" type="Example" title="Computing an eigenvalue the hard way" knowl="./knowls/example.CAEHW.knowl">Example CAEHW</a>,
+<a class="knowl" acro="ESMS3" type="Example" title="Eigenspaces of a matrix, size 3" knowl="./knowls/example.ESMS3.knowl">Example ESMS3</a>,
+<a class="knowl" acro="ESMS4" type="Example" title="Eigenvalues, symmetric matrix of size 4" knowl="./knowls/example.ESMS4.knowl">Example ESMS4</a>,
+<a class="knowl" acro="DEMS5" type="Example" title="Distinct eigenvalues, matrix of size 5" knowl="./knowls/example.DEMS5.knowl">Example DEMS5</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a> and
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+are all examples of matrices that are diagonalizable and that illustrate <a class="knowl" acro="DMFE" type="Theorem" title="Diagonalizable Matrices have Full Eigenspaces" knowl="./knowls/theorem.DMFE.knowl">Theorem DMFE</a>.  While we have provided many examples of matrices that are diagonalizable, especially among the archetypes, there are many matrices that are not diagonalizable.  Here is one now.</p>
+<div class="example" id="example-NDMS4" acro="NDMS4" titletext="A non-diagonalizable matrix of size 4"><h5 class="example">
+<a knowl="./knowls/example.NDMS4.knowl"><span class="type">Example</span> <span class="acro">NDMS4</span></a> <span class="titletext">A non-diagonalizable matrix of size 4</span>
+</h5></div>
+<p><a knowl="./knowls/archetype.A.knowl">Archetype A</a> is the lone archetype with a square matrix that is not diagonalizable, as the algebraic and geometric multiplicities of the eigenvalue $\lambda=0$ differ.  <a class="knowl" acro="HMEM5" type="Example" title="High multiplicity eigenvalues, matrix of size 5" knowl="./knowls/example.HMEM5.knowl">Example HMEM5</a> is another example of a matrix that cannot be diagonalized due to the difference between the geometric and algebraic multiplicities of $\lambda=2$, as is <a class="knowl" acro="CEMS6" type="Example" title="Complex eigenvalues, matrix of size 6" knowl="./knowls/example.CEMS6.knowl">Example CEMS6</a> which has two complex eigenvalues, each with differing multiplicities.  Likewise, <a class="knowl" acro="EMMS4" type="Example" title="Eigenvalue multiplicities, matrix of size 4" knowl="./knowls/example.EMMS4.knowl">Example EMMS4</a> has an eigenvalue with different algebraic and geometric multiplicities and so cannot be diagonalized.</p>
+<div class="sage" id="sage-MD" acro="MD" titletext="Matrix Diagonalization"><h5 class="sage">
+<a knowl="./knowls/sage.MD.knowl"><span class="type">Sage</span> <span class="acro">MD</span></a> <span class="titletext">Matrix Diagonalization</span>
+</h5></div>
+<div class="theorem" id="theorem-DED" acro="DED" titletext="Distinct Eigenvalues implies Diagonalizable">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DED</span><span class="titletext"> Distinct Eigenvalues implies Diagonalizable</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix of size $n$ with $n$ distinct eigenvalues.  Then $A$ is diagonalizable.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DED.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-DEHD" acro="DEHD" titletext="Distinct eigenvalues, hence diagonalizable"><h5 class="example">
+<a knowl="./knowls/example.DEHD.knowl"><span class="type">Example</span> <span class="acro">DEHD</span></a> <span class="titletext">Distinct eigenvalues, hence diagonalizable</span>
+</h5></div>
+<p><a knowl="./knowls/archetype.B.knowl">Archetype B</a> is another example of a matrix that has as many distinct eigenvalues as its size, and is hence diagonalizable by <a class="knowl" acro="DED" type="Theorem" title="Distinct Eigenvalues implies Diagonalizable" knowl="./knowls/theorem.DED.knowl">Theorem DED</a>.</p>
+<p>Powers of a diagonal matrix are easy to compute, and when a matrix is diagonalizable, it is almost as easy.  We could state a theorem here perhaps, but we will settle instead for an example that makes the point just as well.</p>
+<div class="example" id="example-HPDM" acro="HPDM" titletext="High power of a diagonalizable matrix"><h5 class="example">
+<a knowl="./knowls/example.HPDM.knowl"><span class="type">Example</span> <span class="acro">HPDM</span></a> <span class="titletext">High power of a diagonalizable matrix</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-FS" acro="FS" titletext="Fibonacci Sequences">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">FS</span> <span class="titletext">Fibonacci Sequences</span>
+</h4>
+<div class="example" id="example-FSCF" acro="FSCF" titletext="Fibonacci sequence, closed form"><h5 class="example">
+<a knowl="./knowls/example.FSCF.knowl"><span class="type">Example</span> <span class="acro">FSCF</span></a> <span class="titletext">Fibonacci sequence, closed form</span>
+</h5></div>
+<p>We close this section with a comment about an important upcoming theorem that we prove in <a href="chapter-R.html" title="Representations">Chapter R</a>.  A consequence of <a class="knowl" acro="OD" type="Theorem" title="Orthonormal Diagonalization" knowl="./knowls/theorem.OD.knowl">Theorem OD</a> is that every Hermitian matrix (<a class="knowl" acro="HM" type="Definition" title="Hermitian Matrix" knowl="./knowls/definition.HM.knowl">Definition HM</a>) is diagonalizable (<a class="knowl" acro="DZM" type="Definition" title="Diagonalizable Matrix" knowl="./knowls/definition.DZM.knowl">Definition DZM</a>), and the similarity transformation that accomplishes the diagonalization uses a unitary matrix (<a class="knowl" acro="UM" type="Definition" title="Unitary Matrices" knowl="./knowls/definition.UM.knowl">Definition UM</a>).  This means that for every Hermitian matrix of size $n$ there is a basis of $\complex{n}$  that is composed entirely of eigenvectors for the matrix and also forms an orthonormal set (<a class="knowl" acro="ONS" type="Definition" title="OrthoNormal Set" knowl="./knowls/definition.ONS.knowl">Definition ONS</a>).  Notice that for matrices with only real entries, we only need the hypothesis that the matrix is symmetric (<a class="knowl" acro="SYM" type="Definition" title="Symmetric Matrix" knowl="./knowls/definition.SYM.knowl">Definition SYM</a>) to reach this conclusion (<a class="knowl" acro="ESMS4" type="Example" title="Eigenvalues, symmetric matrix of size 4" knowl="./knowls/example.ESMS4.knowl">Example ESMS4</a>).  Can you imagine a prettier basis for use with a matrix?  I cannot.</p>
+<p>These results in <a href="section-OD.html" title="Orthonormal Diagonalization">Section OD</a> explain much of our recurring interest in orthogonality, and make the section a high point in your study of linear algebra.  A precise statement of this diagonalization result applies to a slightly broader class of matrices, known as “normal” matrices (<a class="knowl" acro="NRML" type="Definition" title="Normal Matrix" knowl="./knowls/definition.NRML.knowl">Definition NRML</a>), which are matrices that commute with their adjoints.  With this expanded category of matrices, the result becomes an equivalence (<a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a>).  See <a class="knowl" acro="OD" type="Theorem" title="Orthonormal Diagonalization" knowl="./knowls/theorem.OD.knowl">Theorem OD</a> and <a class="knowl" acro="OBNM" type="Theorem" title="Orthonormal Bases and Normal Matrices" knowl="./knowls/theorem.OBNM.knowl">Theorem OBNM</a> in <a href="section-OD.html" title="Orthonormal Diagonalization">Section OD</a> for all the details.</p>
+</div>
+<div class="readingquestions" id="readingquestions-SD" titletext="Reading Questions"><h4 class="readingquestions"><a knowl="./knowls/reading.SD.knowl"><span class="titletext">Reading Questions</span></a></h4></div>
+<div class="exercisesubsection" id="exercisesubsection-SD" titletext="Exercises"><h4 class="exercises"><a knowl="./knowls/exercises.SD.knowl"><span class="titletext">Exercises</span></a></h4></div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

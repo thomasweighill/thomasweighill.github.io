@@ -1,0 +1,429 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-E.html">Eigenvalues</a> » <a href="section-EE.html">Eigenvalues and Eigenvectors</a> »</div></div>
+<div id="title"><span id="title-content">Eigenvalues and Eigenvectors</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-EE" acro="EE" titletext="Eigenvalues and Eigenvectors">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">EE</span> <span class="titletext">Eigenvalues and Eigenvectors</span>
+</h3>
+<div class="introduction">
+<p>In this section, we will define the eigenvalues and eigenvectors of a matrix, and see how to compute them.  More theoretical properties will be taken up in the next section.</p>
+</div>
+<div class="subsection" id="subsection-EEM" acro="EEM" titletext="Eigenvalues and Eigenvectors of a Matrix">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">EEM</span> <span class="titletext">Eigenvalues and Eigenvectors of a Matrix</span>
+</h4>
+<p>We start with the principal definition for this chapter.</p>
+<div class="definition" id="definition-EEM" acro="EEM" titletext="Eigenvalues and Eigenvectors of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EEM</span> <span class="titletext"> Eigenvalues and Eigenvectors of a Matrix</span>
+</h5>
+<p>Suppose that $A$ is a square matrix of size $n$, $\vect{x}\neq\zerovector$ is a vector in $\complex{n}$, and $\lambda$ is a scalar in $\complex{\null}$.   Then we say $\vect{x}$ is an <em class="term">eigenvector</em> of $A$ with <em class="term">eigenvalue</em> $\lambda$ if
+\begin{equation*}
+A\vect{x}=\lambda\vect{x}
+\end{equation*}
+</p>
+</div>
+<p>Before going any further, perhaps we should convince you that such things ever happen at all.  Understand the next example, but do not concern yourself with where the pieces come from.  We will have methods soon enough to be able to discover these eigenvectors ourselves.</p>
+<div class="example" id="example-SEE" acro="SEE" titletext="Some eigenvalues and eigenvectors"><h5 class="example">
+<a knowl="./knowls/example.SEE.knowl"><span class="type">Example</span> <span class="acro">SEE</span></a> <span class="titletext">Some eigenvalues and eigenvectors</span>
+</h5></div>
+<div class="sage" id="sage-EE" acro="EE" titletext="Eigenvalues and Eigenvectors"><h5 class="sage">
+<a knowl="./knowls/sage.EE.knowl"><span class="type">Sage</span> <span class="acro">EE</span></a> <span class="titletext">Eigenvalues and Eigenvectors</span>
+</h5></div>
+<p><a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a> hints at a number of intriguing properties, and there are many more.  We will explore the general properties of eigenvalues and eigenvectors in <a href="section-PEE.html" title="Properties of Eigenvalues and Eigenvectors">Section PEE</a>, but in this section we will concern ourselves with the question of actually computing eigenvalues and eigenvectors.  First we need a bit of background material on polynomials and matrices.</p>
+</div>
+<div class="subsection" id="subsection-PM" acro="PM" titletext="Polynomials and Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">PM</span> <span class="titletext">Polynomials and Matrices</span>
+</h4>
+<p>A polynomial is a combination of powers, multiplication by scalar coefficients, and addition (with subtraction just being the inverse of addition).  We never have occasion to divide when computing the value of a polynomial.  So it is with matrices.  We can add and subtract matrices, we can multiply matrices by scalars, and we can form powers of square matrices by repeated applications of matrix multiplication.  We do not normally divide matrices (though sometimes we can multiply by an inverse).  If a matrix is square, all the operations constituting a polynomial will preserve the size of the matrix.  So it is natural to consider evaluating a polynomial with a matrix, effectively replacing the variable of the polynomial by a matrix.  We will demonstrate with an example.</p>
+<div class="example" id="example-PM" acro="PM" titletext="Polynomial of a matrix"><h5 class="example">
+<a knowl="./knowls/example.PM.knowl"><span class="type">Example</span> <span class="acro">PM</span></a> <span class="titletext">Polynomial of a matrix</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-EEE" acro="EEE" titletext="Existence of Eigenvalues and Eigenvectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">EEE</span> <span class="titletext">Existence of Eigenvalues and Eigenvectors</span>
+</h4>
+<p>Before we embark on computing eigenvalues and eigenvectors, we will prove that every matrix has at least one eigenvalue (and an eigenvector to go with it).  Later, in <a class="knowl" acro="MNEM" type="Theorem" title="Maximum Number of Eigenvalues of a Matrix" knowl="./knowls/theorem.MNEM.knowl">Theorem MNEM</a>, we will determine the maximum number of eigenvalues a matrix may have.</p>
+<p>The determinant (<a class="knowl" acro="DM" type="Definition" title="Determinant of a Matrix" knowl="./knowls/definition.DM.knowl">Definition DM</a>) will be a powerful tool in <a class="knowl" acro="EE.CEE" type="Subsection" title="" knowl="./knowls/subsection.EE.CEE.knowl">Subsection EE.CEE</a> when it comes time to compute eigenvalues.  However, it is possible, with some more advanced machinery, to compute eigenvalues without ever making use of the determinant.  Sheldon Axler does just that in his book, <i>Linear Algebra Done Right</i>.  Here and now, we give Axler's “determinant-free” proof that every matrix has an eigenvalue.  The result is not too startling, but the proof is most enjoyable.</p>
+<div class="theorem" id="theorem-EMHE" acro="EMHE" titletext="Every Matrix Has an Eigenvalue">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMHE</span><span class="titletext"> Every Matrix Has an Eigenvalue</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix.  Then $A$ has at least one eigenvalue.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMHE.knowl">Proof</a></div>
+</div>
+<p>The proof of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a> is constructive (it contains an unambiguous procedure that leads to an eigenvalue), but it is not meant to be practical.  We will illustrate the theorem with an example, the purpose being to provide a companion for studying the proof and not to suggest this is the best procedure for computing an eigenvalue.</p>
+<div class="example" id="example-CAEHW" acro="CAEHW" titletext="Computing an eigenvalue the hard way"><h5 class="example">
+<a knowl="./knowls/example.CAEHW.knowl"><span class="type">Example</span> <span class="acro">CAEHW</span></a> <span class="titletext">Computing an eigenvalue the hard way</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-CEE" acro="CEE" titletext="Computing Eigenvalues and Eigenvectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CEE</span> <span class="titletext">Computing Eigenvalues and Eigenvectors</span>
+</h4>
+<p>Fortunately, we need not rely on the procedure of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a> each time we need an eigenvalue.  It is the determinant, and specifically <a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a>, that provides the main tool for computing eigenvalues.  Here is an informal sequence of equivalences that is the key to determining the eigenvalues and eigenvectors of a matrix,
+\begin{equation*}
+A\vect{x}=\lambda\vect{x}\iff
+A\vect{x}-\lambda I_n\vect{x}=\zerovector\iff
+\left(A-\lambda I_n\right)\vect{x}=\zerovector
+\end{equation*}
+</p>
+<p>So, for an eigenvalue $\lambda$ and associated eigenvector $\vect{x}\neq\zerovector$, the vector $\vect{x}$ will be a nonzero element of the null space of $A-\lambda I_n$, while the matrix $A-\lambda I_n$ will be singular and therefore have zero determinant.  These ideas are made precise in <a class="knowl" acro="EMRCP" type="Theorem" title="Eigenvalues of a Matrix are Roots of Characteristic Polynomials" knowl="./knowls/theorem.EMRCP.knowl">Theorem EMRCP</a> and <a class="knowl" acro="EMNS" type="Theorem" title="Eigenspace of a Matrix is a Null Space" knowl="./knowls/theorem.EMNS.knowl">Theorem EMNS</a>, but for now this brief discussion should suffice as motivation for the following definition and example.</p>
+<div class="definition" id="definition-CP" acro="CP" titletext="Characteristic Polynomial">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CP</span> <span class="titletext"> Characteristic Polynomial</span>
+</h5>
+<p>Suppose that $A$ is a square matrix of size $n$.  Then the <em class="term">characteristic polynomial</em> of $A$ is the polynomial $\charpoly{A}{x}$ defined by
+\begin{equation*}
+\charpoly{A}{x}=\detname{A-xI_n}
+\end{equation*}
+</p>
+</div>
+<div class="example" id="example-CPMS3" acro="CPMS3" titletext="Characteristic polynomial of a matrix, size 3"><h5 class="example">
+<a knowl="./knowls/example.CPMS3.knowl"><span class="type">Example</span> <span class="acro">CPMS3</span></a> <span class="titletext">Characteristic polynomial of a matrix, size 3</span>
+</h5></div>
+<p>The characteristic polynomial is our main computational tool for finding eigenvalues, and will sometimes be used to aid us in determining the properties of eigenvalues.</p>
+<div class="theorem" id="theorem-EMRCP" acro="EMRCP" titletext="Eigenvalues of a Matrix are Roots of Characteristic Polynomials">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMRCP</span><span class="titletext"> Eigenvalues of a Matrix are Roots of Characteristic Polynomials</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix.
+Then $\lambda$ is an eigenvalue of $A$ if and only if $\charpoly{A}{\lambda}=0$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMRCP.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-EMS3" acro="EMS3" titletext="Eigenvalues of a matrix, size 3"><h5 class="example">
+<a knowl="./knowls/example.EMS3.knowl"><span class="type">Example</span> <span class="acro">EMS3</span></a> <span class="titletext">Eigenvalues of a matrix, size 3</span>
+</h5></div>
+<p>Let us now turn our attention to the computation of eigenvectors.</p>
+<div class="definition" id="definition-EM" acro="EM" titletext="Eigenspace of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EM</span> <span class="titletext"> Eigenspace of a Matrix</span>
+</h5>
+<p>Suppose that $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then the <em class="term">eigenspace</em> of $A$ for $\lambda$, $\eigenspace{A}{\lambda}$, is the set of all the eigenvectors of $A$ for $\lambda$, together with the inclusion of the zero vector.</p>
+</div>
+<p><a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a> hinted that the set of eigenvectors for a single eigenvalue might have some closure properties, and with the addition of the one eigenvector that is never an eigenvector, $\zerovector$, we indeed get a whole subspace.</p>
+<div class="theorem" id="theorem-EMS" acro="EMS" titletext="Eigenspace for a Matrix is a Subspace">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMS</span><span class="titletext"> Eigenspace for a Matrix is a Subspace</span>
+</h5>
+<div class="statement"><p>Suppose  $A$ is a square matrix of size $n$ and $\lambda$ is an eigenvalue of $A$.  Then the eigenspace $\eigenspace{A}{\lambda}$ is a subspace of the vector space $\complex{n}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMS.knowl">Proof</a></div>
+</div>
+<p><a class="knowl" acro="EMS" type="Theorem" title="Eigenspace for a Matrix is a Subspace" knowl="./knowls/theorem.EMS.knowl">Theorem EMS</a> tells us that an eigenspace is a subspace (and hence a vector space in its own right).  Our next theorem tells us how to quickly construct this subspace.</p>
+<div class="theorem" id="theorem-EMNS" acro="EMNS" titletext="Eigenspace of a Matrix is a Null Space">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMNS</span><span class="titletext"> Eigenspace of a Matrix is a Null Space</span>
+</h5>
+<div class="statement"><p>Suppose  $A$ is a square matrix of size $n$ and $\lambda$ is an eigenvalue of $A$.  Then
+\begin{equation*}
+\eigenspace{A}{\lambda}=\nsp{A-\lambda I_n}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMNS.knowl">Proof</a></div>
+</div>
+<p>You might notice the close parallels (and differences) between the proofs of <a class="knowl" acro="EMRCP" type="Theorem" title="Eigenvalues of a Matrix are Roots of Characteristic Polynomials" knowl="./knowls/theorem.EMRCP.knowl">Theorem EMRCP</a> and <a class="knowl" acro="EMNS" type="Theorem" title="Eigenspace of a Matrix is a Null Space" knowl="./knowls/theorem.EMNS.knowl">Theorem EMNS</a>.  Since <a class="knowl" acro="EMNS" type="Theorem" title="Eigenspace of a Matrix is a Null Space" knowl="./knowls/theorem.EMNS.knowl">Theorem EMNS</a> describes the set of all the eigenvectors of $A$ as a null space we can use techniques such as <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> to provide concise descriptions of eigenspaces.  <a class="knowl" acro="EMNS" type="Theorem" title="Eigenspace of a Matrix is a Null Space" knowl="./knowls/theorem.EMNS.knowl">Theorem EMNS</a> also provides a trivial proof for <a class="knowl" acro="EMS" type="Theorem" title="Eigenspace for a Matrix is a Subspace" knowl="./knowls/theorem.EMS.knowl">Theorem EMS</a>.</p>
+<div class="example" id="example-ESMS3" acro="ESMS3" titletext="Eigenspaces of a matrix, size 3"><h5 class="example">
+<a knowl="./knowls/example.ESMS3.knowl"><span class="type">Example</span> <span class="acro">ESMS3</span></a> <span class="titletext">Eigenspaces of a matrix, size 3</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-ECEE" acro="ECEE" titletext="Examples of Computing Eigenvalues and Eigenvectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">ECEE</span> <span class="titletext">Examples of Computing Eigenvalues and Eigenvectors</span>
+</h4>
+<p>There are no theorems in this section, just a selection of examples meant to illustrate the range of possibilities for the eigenvalues and eigenvectors of a matrix.  These examples can all be done by hand, though the computation of the characteristic polynomial would be very time-consuming and error-prone.  It can also be difficult to factor an arbitrary polynomial, though if we were to suggest that most of our eigenvalues are going to be integers, then it can be easier to hunt for roots.  These examples are meant to look similar to a concatenation of <a class="knowl" acro="CPMS3" type="Example" title="Characteristic polynomial of a matrix, size 3" knowl="./knowls/example.CPMS3.knowl">Example CPMS3</a>, <a class="knowl" acro="EMS3" type="Example" title="Eigenvalues of a matrix, size 3" knowl="./knowls/example.EMS3.knowl">Example EMS3</a> and <a class="knowl" acro="ESMS3" type="Example" title="Eigenspaces of a matrix, size 3" knowl="./knowls/example.ESMS3.knowl">Example ESMS3</a>.  First, we will sneak in a pair of definitions so we can illustrate them throughout this sequence of examples.</p>
+<div class="definition" id="definition-AME" acro="AME" titletext="Algebraic Multiplicity of an Eigenvalue">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">AME</span> <span class="titletext"> Algebraic Multiplicity of an Eigenvalue</span>
+</h5>
+<p>Suppose that $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then the <em class="term">algebraic multiplicity</em> of $\lambda$, $\algmult{A}{\lambda}$, is the highest power of $(x-\lambda)$ that divides the characteristic polynomial, $\charpoly{A}{x}$.</p>
+</div>
+<p>Since an eigenvalue $\lambda$ is a root of the characteristic polynomial, there is always a factor of $(x-\lambda)$, and the algebraic multiplicity is just the power of this factor in a factorization of $\charpoly{A}{x}$.  So in particular, $\algmult{A}{\lambda}\geq 1$.  Compare the definition of algebraic multiplicity with the next definition.</p>
+<div class="definition" id="definition-GME" acro="GME" titletext="Geometric Multiplicity of an Eigenvalue">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">GME</span> <span class="titletext"> Geometric Multiplicity of an Eigenvalue</span>
+</h5>
+<p>Suppose that $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then the <em class="term">geometric multiplicity</em> of $\lambda$, $\geomult{A}{\lambda}$, is the dimension of the eigenspace $\eigenspace{A}{\lambda}$.</p>
+</div>
+<p>Every eigenvalue must have at least one eigenvector, so the associated eigenspace cannot be trivial, and so $\geomult{A}{\lambda}\geq 1$.</p>
+<div class="example" id="example-EMMS4" acro="EMMS4" titletext="Eigenvalue multiplicities, matrix of size 4"><h5 class="example">
+<a knowl="./knowls/example.EMMS4.knowl"><span class="type">Example</span> <span class="acro">EMMS4</span></a> <span class="titletext">Eigenvalue multiplicities, matrix of size 4</span>
+</h5></div>
+<div class="example" id="example-ESMS4" acro="ESMS4" titletext="Eigenvalues, symmetric matrix of size 4"><h5 class="example">
+<a knowl="./knowls/example.ESMS4.knowl"><span class="type">Example</span> <span class="acro">ESMS4</span></a> <span class="titletext">Eigenvalues, symmetric matrix of size 4</span>
+</h5></div>
+<div class="example" id="example-HMEM5" acro="HMEM5" titletext="High multiplicity eigenvalues, matrix of size 5"><h5 class="example">
+<a knowl="./knowls/example.HMEM5.knowl"><span class="type">Example</span> <span class="acro">HMEM5</span></a> <span class="titletext">High multiplicity eigenvalues, matrix of size 5</span>
+</h5></div>
+<div class="example" id="example-CEMS6" acro="CEMS6" titletext="Complex eigenvalues, matrix of size 6"><h5 class="example">
+<a knowl="./knowls/example.CEMS6.knowl"><span class="type">Example</span> <span class="acro">CEMS6</span></a> <span class="titletext">Complex eigenvalues, matrix of size 6</span>
+</h5></div>
+<div class="example" id="example-DEMS5" acro="DEMS5" titletext="Distinct eigenvalues, matrix of size 5"><h5 class="example">
+<a knowl="./knowls/example.DEMS5.knowl"><span class="type">Example</span> <span class="acro">DEMS5</span></a> <span class="titletext">Distinct eigenvalues, matrix of size 5</span>
+</h5></div>
+<div class="sage" id="sage-CEVAL" acro="CEVAL" titletext="Computing Eigenvalues"><h5 class="sage">
+<a knowl="./knowls/sage.CEVAL.knowl"><span class="type">Sage</span> <span class="acro">CEVAL</span></a> <span class="titletext">Computing Eigenvalues</span>
+</h5></div>
+<div class="sage" id="sage-CEVEC" acro="CEVEC" titletext="Computing Eigenvectors"><h5 class="sage">
+<a knowl="./knowls/sage.CEVEC.knowl"><span class="type">Sage</span> <span class="acro">CEVEC</span></a> <span class="titletext">Computing Eigenvectors</span>
+</h5></div>
+</div>
+<div class="readingquestions" id="readingquestions-EE" titletext="Reading Questions"><h4 class="readingquestions"><a knowl="./knowls/reading.EE.knowl"><span class="titletext">Reading Questions</span></a></h4></div>
+<div class="exercisesubsection" id="exercisesubsection-EE" titletext="Exercises"><h4 class="exercises"><a knowl="./knowls/exercises.EE.knowl"><span class="titletext">Exercises</span></a></h4></div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

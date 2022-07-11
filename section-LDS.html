@@ -1,0 +1,333 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-V.html">Vectors</a> » <a href="section-LDS.html">Linear Dependence and Spans</a> »</div></div>
+<div id="title"><span id="title-content">Linear Dependence and Spans</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-LDS" acro="LDS" titletext="Linear Dependence and Spans">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">LDS</span> <span class="titletext">Linear Dependence and Spans</span>
+</h3>
+<div class="introduction">
+<p>In any linearly dependent set there is always one vector that can be written as a linear combination of the others.  This is the substance of the upcoming <a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a>.  Perhaps this will explain the use of the word “dependent.”  In a linearly dependent set, at least one vector “depends” on the others (via a linear combination).</p>
+
+<p>Indeed, because <a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a> is an equivalence (<a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a>) some authors use this condition as a definition (<a class="knowl" acro="D" type="Proof Technique" title="Definitions" knowl="./knowls/technique.D.knowl">Proof Technique D</a>) of linear dependence.  Then linear independence is defined as the logical opposite of linear dependence.  Of course, we have <em>chosen</em> to take <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a> as our definition, and then follow with <a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a> as a theorem.</p>
+
+</div>
+<div class="subsection" id="subsection-LDSS" acro="LDSS" titletext="Linearly Dependent Sets and Spans">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LDSS</span> <span class="titletext">Linearly Dependent Sets and Spans</span>
+</h4>
+<p>If we use a linearly dependent set to construct a span, then we can <em>always</em> create the same infinite set with a starting set that is one vector smaller in size.  We will illustrate this behavior in <a class="knowl" acro="RSC5" type="Example" title="Reducing a span in $\complex{5}$" knowl="./knowls/example.RSC5.knowl">Example RSC5</a>.  However, this will not be possible if we build a span from a linearly independent set.  So in a certain sense, using a linearly independent set to formulate a span is the best possible way — there are not any extra vectors being used to build up all the necessary linear combinations.  OK, here is the theorem, and then the example.</p>
+<div class="theorem" id="theorem-DLDS" acro="DLDS" titletext="Dependency in Linearly Dependent Sets">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DLDS</span><span class="titletext"> Dependency in Linearly Dependent Sets</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{u}{n}}$ is a set of vectors.  Then $S$ is a linearly dependent set if and only if there is an index $t$, $1\leq t\leq n$ such that $\vect{u_t}$ is a linear combination of the vectors $\vect{u}_1,\,\vect{u}_2,\,\vect{u}_3,\,\ldots,\,\vect{u}_{t-1},\,\vect{u}_{t+1},\,\ldots,\,\vect{u}_n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DLDS.knowl">Proof</a></div>
+</div>
+<p>This theorem can be used, sometimes repeatedly, to whittle down the size of a set of vectors used in a span construction.  We have seen some of this already in <a class="knowl" acro="SCAD" type="Example" title="Span of the columns of Archetype D" knowl="./knowls/example.SCAD.knowl">Example SCAD</a>, but in the next example we will detail some of the subtleties.</p>
+<div class="example" id="example-RSC5" acro="RSC5" titletext="Reducing a span in $\complex{5}$"><h5 class="example">
+<a knowl="./knowls/example.RSC5.knowl"><span class="type">Example</span> <span class="acro">RSC5</span></a> <span class="titletext">Reducing a span in $\complex{5}$</span>
+</h5></div>
+<div class="sage" id="sage-RLD" acro="RLD" titletext="Relations of Linear Dependence"><h5 class="sage">
+<a knowl="./knowls/sage.RLD.knowl"><span class="type">Sage</span> <span class="acro">RLD</span></a> <span class="titletext">Relations of Linear Dependence</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-COV" acro="COV" titletext="Casting Out Vectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">COV</span> <span class="titletext">Casting Out Vectors</span>
+</h4>
+<p>In <a class="knowl" acro="RSC5" type="Example" title="Reducing a span in $\complex{5}$" knowl="./knowls/example.RSC5.knowl">Example RSC5</a> we used four vectors to create a span.  With a relation of linear dependence in hand, we were able to “toss out” one of these four vectors and create the same span from a subset of just three vectors from the original set of four.  We did have to take some care as to just which vector we tossed out.  In the next example, we will be more methodical about just how we choose to eliminate vectors from a linearly dependent set while preserving a span.</p>
+<div class="example" id="example-COV" acro="COV" titletext="Casting out vectors"><h5 class="example">
+<a knowl="./knowls/example.COV.knowl"><span class="type">Example</span> <span class="acro">COV</span></a> <span class="titletext">Casting out vectors</span>
+</h5></div>
+<div class="sage" id="sage-COV" acro="COV" titletext="Casting Out Vectors"><h5 class="sage">
+<a knowl="./knowls/sage.COV.knowl"><span class="type">Sage</span> <span class="acro">COV</span></a> <span class="titletext">Casting Out Vectors</span>
+</h5></div>
+<p><a class="knowl" acro="COV" type="Example" title="Casting out vectors" knowl="./knowls/example.COV.knowl">Example COV</a> deserves your careful attention, since this important example motivates the following very fundamental theorem.</p>
+<div class="theorem" id="theorem-BS" acro="BS" titletext="Basis of a Span">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">BS</span><span class="titletext"> Basis of a Span</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{v}{n}}$ is a set of column vectors.  Define $W=\spn{S}$ and let $A$ be the matrix whose columns are the vectors from $S$.  Let $B$ be the reduced row-echelon form of $A$, with $D=\set{\scalarlist{d}{r}}$ the set of indices for the pivot columns of $B$.  Then
+<ol>
+<li> $T=\set{\vect{v}_{d_1},\,\vect{v}_{d_2},\,\vect{v}_{d_3},\,\ldots\,\vect{v}_{d_r}}$ is a linearly independent set.
+</li>
+<li> $W=\spn{T}$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.BS.knowl">Proof</a></div>
+</div>
+<p>In <a class="knowl" acro="COV" type="Example" title="Casting out vectors" knowl="./knowls/example.COV.knowl">Example COV</a>, we tossed-out vectors one at a time.  But in each instance, we rewrote the offending vector as a linear combination of those vectors with the column indices of the pivot columns of the reduced row-echelon form of the matrix of columns.  In the proof of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>, we accomplish this reduction in one big step.  In <a class="knowl" acro="COV" type="Example" title="Casting out vectors" knowl="./knowls/example.COV.knowl">Example COV</a> we arrived at a linearly independent set at exactly the same moment that we ran out of free variables to exploit.  This was not a coincidence, it is the substance of our conclusion of linear independence in <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>.</p>
+<p>Here is a straightforward application of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>.
+</p>
+<div class="example" id="example-RSC4" acro="RSC4" titletext="Reducing a span in $\complex{4}$"><h5 class="example">
+<a knowl="./knowls/example.RSC4.knowl"><span class="type">Example</span> <span class="acro">RSC4</span></a> <span class="titletext">Reducing a span in $\complex{4}$</span>
+</h5></div>
+<div class="sage" id="sage-RS" acro="RS" titletext="Reducing a Span"><h5 class="sage">
+<a knowl="./knowls/sage.RS.knowl"><span class="type">Sage</span> <span class="acro">RS</span></a> <span class="titletext">Reducing a Span</span>
+</h5></div>
+<div class="example" id="example-RES" acro="RES" titletext="Reworking elements of a span"><h5 class="example">
+<a knowl="./knowls/example.RES.knowl"><span class="type">Example</span> <span class="acro">RES</span></a> <span class="titletext">Reworking elements of a span</span>
+</h5></div>
+<div class="sage" id="sage-RES" acro="RES" titletext="Reworking a Span"><h5 class="sage">
+<a knowl="./knowls/sage.RES.knowl"><span class="type">Sage</span> <span class="acro">RES</span></a> <span class="titletext">Reworking a Span</span>
+</h5></div>
+</div>
+<div class="readingquestions" id="readingquestions-LDS" titletext="Reading Questions"><h4 class="readingquestions"><a knowl="./knowls/reading.LDS.knowl"><span class="titletext">Reading Questions</span></a></h4></div>
+<div class="exercisesubsection" id="exercisesubsection-LDS" titletext="Exercises"><h4 class="exercises"><a knowl="./knowls/exercises.LDS.knowl"><span class="titletext">Exercises</span></a></h4></div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

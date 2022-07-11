@@ -1,0 +1,595 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="reference.html">Reference</a> » <a href="notation.html">Notation</a> »</div></div>
+<div id="title"><span id="title-content">Notation</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><table class="reference">
+<tr>
+<th>Symbol</th>
+<th>Definition</th>
+<th></th>
+</tr>
+<tr>
+<td>$A$</td>
+<td><a knowl="./knowls/definition.M.knowl">M</a></td>
+<td>Matrix</td>
+</tr>
+<tr>
+<td>$\matrixentry{A}{ij}$</td>
+<td><a knowl="./knowls/definition.M.knowl">M</a></td>
+<td>Matrix Entries</td>
+</tr>
+<tr>
+<td>$\vect{v}$</td>
+<td><a knowl="./knowls/definition.CV.knowl">CV</a></td>
+<td>Column Vector</td>
+</tr>
+<tr>
+<td>$\vectorentry{\vect{v}}{i}$</td>
+<td><a knowl="./knowls/definition.CV.knowl">CV</a></td>
+<td>Column Vector Entries</td>
+</tr>
+<tr>
+<td>$\zerovector$</td>
+<td><a knowl="./knowls/definition.ZCV.knowl">ZCV</a></td>
+<td>Zero Column Vector</td>
+</tr>
+<tr>
+<td>$\linearsystem{A}{\vect{b}}$</td>
+<td><a knowl="./knowls/definition.MRLS.knowl">MRLS</a></td>
+<td>Matrix Representation of a Linear System</td>
+</tr>
+<tr>
+<td>$\augmented{A}{\vect{b}}$</td>
+<td><a knowl="./knowls/definition.AM.knowl">AM</a></td>
+<td>Augmented Matrix</td>
+</tr>
+<tr>
+<td>$\rowopswap{i}{j}$</td>
+<td><a knowl="./knowls/definition.RO.knowl">RO</a></td>
+<td>Row Operation, Swap</td>
+</tr>
+<tr>
+<td>$\rowopmult{\alpha}{i}$</td>
+<td><a knowl="./knowls/definition.RO.knowl">RO</a></td>
+<td>Row Operation, Multiply</td>
+</tr>
+<tr>
+<td>$\rowopadd{\alpha}{i}{j}$</td>
+<td><a knowl="./knowls/definition.RO.knowl">RO</a></td>
+<td>Row Operation, Add</td>
+</tr>
+<tr>
+<td>$r$, $D$, $F$</td>
+<td><a knowl="./knowls/definition.RREF.knowl">RREF</a></td>
+<td>Reduced Row-Echelon Form Analysis</td>
+</tr>
+<tr>
+<td>$\nsp{A}$</td>
+<td><a knowl="./knowls/definition.NSM.knowl">NSM</a></td>
+<td>Null Space of a Matrix</td>
+</tr>
+<tr>
+<td>$I_m$</td>
+<td><a knowl="./knowls/definition.IM.knowl">IM</a></td>
+<td>Identity Matrix</td>
+</tr>
+<tr>
+<td>$\complex{m}$</td>
+<td><a knowl="./knowls/definition.VSCV.knowl">VSCV</a></td>
+<td>Vector Space of Column Vectors</td>
+</tr>
+<tr>
+<td>$\vect{u}=\vect{v}$</td>
+<td><a knowl="./knowls/definition.CVE.knowl">CVE</a></td>
+<td>Column Vector Equality</td>
+</tr>
+<tr>
+<td>$\vect{u}+\vect{v}$</td>
+<td><a knowl="./knowls/definition.CVA.knowl">CVA</a></td>
+<td>Column Vector Addition</td>
+</tr>
+<tr>
+<td>$\alpha\vect{u}$</td>
+<td><a knowl="./knowls/definition.CVSM.knowl">CVSM</a></td>
+<td>Column Vector Scalar Multiplication</td>
+</tr>
+<tr>
+<td>$\spn{S}$</td>
+<td><a knowl="./knowls/definition.SSCV.knowl">SSCV</a></td>
+<td>Span of a Set of Vectors</td>
+</tr>
+<tr>
+<td>$\conjugate{\vect{u}}$</td>
+<td><a knowl="./knowls/definition.CCCV.knowl">CCCV</a></td>
+<td>Complex Conjugate of a Column Vector</td>
+</tr>
+<tr>
+<td>$\innerproduct{\vect{u}}{\vect{v}}$</td>
+<td><a knowl="./knowls/definition.IP.knowl">IP</a></td>
+<td>Inner Product</td>
+</tr>
+<tr>
+<td>$\norm{\vect{v}}$</td>
+<td><a knowl="./knowls/definition.NV.knowl">NV</a></td>
+<td>Norm of a Vector</td>
+</tr>
+<tr>
+<td>$\vect{e}_i$</td>
+<td><a knowl="./knowls/definition.SUV.knowl">SUV</a></td>
+<td>Standard Unit Vectors</td>
+</tr>
+<tr>
+<td>$M_{mn}$</td>
+<td><a knowl="./knowls/definition.VSM.knowl">VSM</a></td>
+<td>Vector Space of Matrices</td>
+</tr>
+<tr>
+<td>$A=B$</td>
+<td><a knowl="./knowls/definition.ME.knowl">ME</a></td>
+<td>Matrix Equality</td>
+</tr>
+<tr>
+<td>$A+B$</td>
+<td><a knowl="./knowls/definition.MA.knowl">MA</a></td>
+<td>Matrix Addition</td>
+</tr>
+<tr>
+<td>$\alpha A$</td>
+<td><a knowl="./knowls/definition.MSM.knowl">MSM</a></td>
+<td>Matrix Scalar Multiplication</td>
+</tr>
+<tr>
+<td>$\zeromatrix$</td>
+<td><a knowl="./knowls/definition.ZM.knowl">ZM</a></td>
+<td>Zero Matrix</td>
+</tr>
+<tr>
+<td>$\transpose{A}$</td>
+<td><a knowl="./knowls/definition.TM.knowl">TM</a></td>
+<td>Transpose of a Matrix</td>
+</tr>
+<tr>
+<td>$\conjugate{A}$</td>
+<td><a knowl="./knowls/definition.CCM.knowl">CCM</a></td>
+<td>Complex Conjugate of a Matrix</td>
+</tr>
+<tr>
+<td>$\adjoint{A}$</td>
+<td><a knowl="./knowls/definition.A.knowl">A</a></td>
+<td>Adjoint</td>
+</tr>
+<tr>
+<td>$A\vect{u}$</td>
+<td><a knowl="./knowls/definition.MVP.knowl">MVP</a></td>
+<td>Matrix-Vector Product</td>
+</tr>
+<tr>
+<td>$AB$</td>
+<td><a knowl="./knowls/definition.MM.knowl">MM</a></td>
+<td>Matrix Multiplication</td>
+</tr>
+<tr>
+<td>$\inverse{A}$</td>
+<td><a knowl="./knowls/definition.MI.knowl">MI</a></td>
+<td>Matrix Inverse</td>
+</tr>
+<tr>
+<td>$\csp{A}$</td>
+<td><a knowl="./knowls/definition.CSM.knowl">CSM</a></td>
+<td>Column Space of a Matrix</td>
+</tr>
+<tr>
+<td>$\rsp{A}$</td>
+<td><a knowl="./knowls/definition.RSM.knowl">RSM</a></td>
+<td>Row Space of a Matrix</td>
+</tr>
+<tr>
+<td>$\lns{A}$</td>
+<td><a knowl="./knowls/definition.LNS.knowl">LNS</a></td>
+<td>Left Null Space</td>
+</tr>
+<tr>
+<td>$\dimension{V}$</td>
+<td><a knowl="./knowls/definition.D.knowl">D</a></td>
+<td>Dimension</td>
+</tr>
+<tr>
+<td>$\nullity{A}$</td>
+<td><a knowl="./knowls/definition.NOM.knowl">NOM</a></td>
+<td>Nullity of a Matrix</td>
+</tr>
+<tr>
+<td>$\rank{A}$</td>
+<td><a knowl="./knowls/definition.ROM.knowl">ROM</a></td>
+<td>Rank of a Matrix</td>
+</tr>
+<tr>
+<td>$\elemswap{i}{j}$</td>
+<td><a knowl="./knowls/definition.ELEM.knowl">ELEM</a></td>
+<td>Elementary Matrix, Swap</td>
+</tr>
+<tr>
+<td>$\elemmult{\alpha}{i}$</td>
+<td><a knowl="./knowls/definition.ELEM.knowl">ELEM</a></td>
+<td>Elementary Matrix, Multiply</td>
+</tr>
+<tr>
+<td>$\elemadd{\alpha}{i}{j}$</td>
+<td><a knowl="./knowls/definition.ELEM.knowl">ELEM</a></td>
+<td>Elementary Matrix, Add</td>
+</tr>
+<tr>
+<td>$\submatrix{A}{i}{j}$</td>
+<td><a knowl="./knowls/definition.SM.knowl">SM</a></td>
+<td>SubMatrix</td>
+</tr>
+<tr>
+<td>$\detbars{A}$</td>
+<td><a knowl="./knowls/definition.DM.knowl">DM</a></td>
+<td>Determinant of a Matrix, Bars</td>
+</tr>
+<tr>
+<td>$\detname{A}$</td>
+<td><a knowl="./knowls/definition.DM.knowl">DM</a></td>
+<td>Determinant of a Matrix, Functional</td>
+</tr>
+<tr>
+<td>$\algmult{A}{\lambda}$</td>
+<td><a knowl="./knowls/definition.AME.knowl">AME</a></td>
+<td>Algebraic Multiplicity of an Eigenvalue</td>
+</tr>
+<tr>
+<td>$\geomult{A}{\lambda}$</td>
+<td><a knowl="./knowls/definition.GME.knowl">GME</a></td>
+<td>Geometric Multiplicity of an Eigenvalue</td>
+</tr>
+<tr>
+<td>$\ltdefn{T}{U}{V}$</td>
+<td><a knowl="./knowls/definition.LT.knowl">LT</a></td>
+<td>Linear Transformation</td>
+</tr>
+<tr>
+<td>$\krn{T}$</td>
+<td><a knowl="./knowls/definition.KLT.knowl">KLT</a></td>
+<td>Kernel of a Linear Transformation</td>
+</tr>
+<tr>
+<td>$\rng{T}$</td>
+<td><a knowl="./knowls/definition.RLT.knowl">RLT</a></td>
+<td>Range of a Linear Transformation</td>
+</tr>
+<tr>
+<td>$\rank{T}$</td>
+<td><a knowl="./knowls/definition.ROLT.knowl">ROLT</a></td>
+<td>Rank of a Linear Transformation</td>
+</tr>
+<tr>
+<td>$\nullity{T}$</td>
+<td><a knowl="./knowls/definition.NOLT.knowl">NOLT</a></td>
+<td>Nullity of a Linear Transformation</td>
+</tr>
+<tr>
+<td>$\vectrep{B}{\vect{w}}$</td>
+<td><a knowl="./knowls/definition.VR.knowl">VR</a></td>
+<td>Vector Representation</td>
+</tr>
+<tr>
+<td>$\matrixrep{T}{B}{C}$</td>
+<td><a knowl="./knowls/definition.MR.knowl">MR</a></td>
+<td>Matrix Representation</td>
+</tr>
+<tr>
+<td>$\alpha=\beta$</td>
+<td><a knowl="./knowls/definition.CNE.knowl">CNE</a></td>
+<td>Complex Number Equality</td>
+</tr>
+<tr>
+<td>$\alpha+\beta$</td>
+<td><a knowl="./knowls/definition.CNA.knowl">CNA</a></td>
+<td>Complex Number Addition</td>
+</tr>
+<tr>
+<td>$\alpha\beta$</td>
+<td><a knowl="./knowls/definition.CNM.knowl">CNM</a></td>
+<td>Complex Number Multiplication</td>
+</tr>
+<tr>
+<td>$\conjugate{\alpha}$</td>
+<td><a knowl="./knowls/definition.CCN.knowl">CCN</a></td>
+<td>Conjugate of a Complex Number</td>
+</tr>
+<tr>
+<td>$x\in S$</td>
+<td><a knowl="./knowls/definition.SET.knowl">SET</a></td>
+<td>Set Membership</td>
+</tr>
+<tr>
+<td>$S\subseteq T$</td>
+<td><a knowl="./knowls/definition.SSET.knowl">SSET</a></td>
+<td>Subset</td>
+</tr>
+<tr>
+<td>$\emptyset$</td>
+<td><a knowl="./knowls/definition.ES.knowl">ES</a></td>
+<td>Empty Set</td>
+</tr>
+<tr>
+<td>$S=T$</td>
+<td><a knowl="./knowls/definition.SE.knowl">SE</a></td>
+<td>Set Equality</td>
+</tr>
+<tr>
+<td>$\card{S}$</td>
+<td><a knowl="./knowls/definition.C.knowl">C</a></td>
+<td>Cardinality</td>
+</tr>
+<tr>
+<td>$S\cup T$</td>
+<td><a knowl="./knowls/definition.SU.knowl">SU</a></td>
+<td>Set Union</td>
+</tr>
+<tr>
+<td>$S\cap T$</td>
+<td><a knowl="./knowls/definition.SI.knowl">SI</a></td>
+<td>Set Intersection</td>
+</tr>
+<tr>
+<td>$\setcomplement{S}$</td>
+<td><a knowl="./knowls/definition.SC.knowl">SC</a></td>
+<td>Set Complement</td>
+</tr>
+</table></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

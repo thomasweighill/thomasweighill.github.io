@@ -1,0 +1,649 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="reference.html">Reference</a> » <a href="sage.html">Sage</a> »</div></div>
+<div id="title"><span id="title-content">Sage</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><table class="reference">
+<tr class="chapter"><th colspan="2" align="left">Chapter SLE: Systems of Linear Equations</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.GS.knowl">GS</a></td>
+<td>Getting Started</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.M.knowl">M</a></td>
+<td>Matrices</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.V.knowl">V</a></td>
+<td>Vectors</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.AM.knowl">AM</a></td>
+<td>Augmented Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RO.knowl">RO</a></td>
+<td>Row Operations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RREF.knowl">RREF</a></td>
+<td>Reduced Row-Echelon Form</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.FDV.knowl">FDV</a></td>
+<td>Free and Dependent Variables</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RCLS.knowl">RCLS</a></td>
+<td>Recognizing Consistency of a Linear System</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SS1.knowl">SS1</a></td>
+<td>Solving Systems, Part 1</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SHS.knowl">SHS</a></td>
+<td>Solving Homogeneous Systems</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NS.knowl">NS</a></td>
+<td>Null Space</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SH.knowl">SH</a></td>
+<td>Sage Help</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NM.knowl">NM</a></td>
+<td>Nonsingular Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.IM.knowl">IM</a></td>
+<td>Identity Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME1.knowl">NME1</a></td>
+<td>Nonsingular Matrix Equivalences, Round 1</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter V: Vectors</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.VSCV.knowl">VSCV</a></td>
+<td>Vector Spaces of Column Vectors</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.VO.knowl">VO</a></td>
+<td>Vector Operations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.ANC.knowl">ANC</a></td>
+<td>A Note on Coercion</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LC.knowl">LC</a></td>
+<td>Linear Combinations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SLC.knowl">SLC</a></td>
+<td>Solutions and Linear Combinations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SS2.knowl">SS2</a></td>
+<td>Solving Systems, Part 2</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.PSHS.knowl">PSHS</a></td>
+<td>Particular Solutions, Homogeneous Solutions</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SS.knowl">SS</a></td>
+<td>Spanning Sets</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CSS.knowl">CSS</a></td>
+<td>Consistent Systems and Spans</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SSNS.knowl">SSNS</a></td>
+<td>Spanning Sets for Null Spaces</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SS3.knowl">SS3</a></td>
+<td>Solving Systems, Part 3</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LI.knowl">LI</a></td>
+<td>Linear Independence</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME2.knowl">NME2</a></td>
+<td>Nonsingular Matrix Equivalences, Round 2</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LISS.knowl">LISS</a></td>
+<td>Linearly Independent Spanning Sets</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RLD.knowl">RLD</a></td>
+<td>Relations of Linear Dependence</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.COV.knowl">COV</a></td>
+<td>Casting Out Vectors</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RS.knowl">RS</a></td>
+<td>Reducing a Span</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RES.knowl">RES</a></td>
+<td>Reworking a Span</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.EVIC.knowl">EVIC</a></td>
+<td>Exact Versus Inexact Computations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CNIP.knowl">CNIP</a></td>
+<td>Conjugates, Norms and Inner Products</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.OGS.knowl">OGS</a></td>
+<td>Orthogonality and Gram-Schmidt</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter M: Matrices</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.MS.knowl">MS</a></td>
+<td>Matrix Spaces</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MO.knowl">MO</a></td>
+<td>Matrix Operations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MVP.knowl">MVP</a></td>
+<td>Matrix-Vector Product</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MM.knowl">MM</a></td>
+<td>Matrix Multiplication</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.PMM.knowl">PMM</a></td>
+<td>Properties of Matrix Multiplication</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MISLE.knowl">MISLE</a></td>
+<td>Matrix Inverse, Systems of Equations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MI.knowl">MI</a></td>
+<td>Matrix Inverse</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME3.knowl">NME3</a></td>
+<td>Nonsingular Matrix Equivalences, Round 3</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.UM.knowl">UM</a></td>
+<td>Unitary Matrices</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CSCS.knowl">CSCS</a></td>
+<td>Column Space and Consistent Systems</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CSOC.knowl">CSOC</a></td>
+<td>Column Space, Original Columns</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME4.knowl">NME4</a></td>
+<td>Nonsingular Matrix Equivalences, Round 4</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RSM.knowl">RSM</a></td>
+<td>Row Space of a Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LNS.knowl">LNS</a></td>
+<td>Left Null Spaces</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RRSM.knowl">RRSM</a></td>
+<td>Row-Reducing a Symbolic Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.EEF.knowl">EEF</a></td>
+<td>Extended Echelon Form</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter VS: Vector Spaces</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.VS.knowl">VS</a></td>
+<td>Vector Spaces</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.B.knowl">B</a></td>
+<td>Bases</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SUTH0.knowl">SUTH0</a></td>
+<td>Sage Under The Hood, Round 0</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME5.knowl">NME5</a></td>
+<td>Nonsingular Matrix Equivalences, Round 5</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.C.knowl">C</a></td>
+<td>Coordinates</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.D.knowl">D</a></td>
+<td>Dimension</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.RNM.knowl">RNM</a></td>
+<td>Rank and Nullity of a Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME6.knowl">NME6</a></td>
+<td>Nonsingular Matrix Equivalences, Round 6</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.DMS.knowl">DMS</a></td>
+<td>Dimensions of Matrix Subspaces</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter D: Determinants</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.EM.knowl">EM</a></td>
+<td>Elementary Matrices</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.DM.knowl">DM</a></td>
+<td>Determinant of a Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME7.knowl">NME7</a></td>
+<td>Nonsingular Matrix Equivalences, Round 7</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.PDM.knowl">PDM</a></td>
+<td>Properties of Determinants of Matrices</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter E: Eigenvalues</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.EE.knowl">EE</a></td>
+<td>Eigenvalues and Eigenvectors</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CEVAL.knowl">CEVAL</a></td>
+<td>Computing Eigenvalues</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CEVEC.knowl">CEVEC</a></td>
+<td>Computing Eigenvectors</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME8.knowl">NME8</a></td>
+<td>Nonsingular Matrix Equivalences, Round 8</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SM.knowl">SM</a></td>
+<td>Similar Matrices</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MD.knowl">MD</a></td>
+<td>Matrix Diagonalization</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter LT: Linear Transformations</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.LTS.knowl">LTS</a></td>
+<td>Linear Transformations, Symbolic</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LTM.knowl">LTM</a></td>
+<td>Linear Transformations, Matrices</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LTB.knowl">LTB</a></td>
+<td>Linear Transformations, Bases</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.PI.knowl">PI</a></td>
+<td>Pre-Images</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.OLT.knowl">OLT</a></td>
+<td>Operations on Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.ILT.knowl">ILT</a></td>
+<td>Injective Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CILT.knowl">CILT</a></td>
+<td>Composition of Injective Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SLT.knowl">SLT</a></td>
+<td>Surjective Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CSLT.knowl">CSLT</a></td>
+<td>Composition of Surjective Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.IVLT.knowl">IVLT</a></td>
+<td>Invertible Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CIVLT.knowl">CIVLT</a></td>
+<td>Computing the Inverse of a Linear Transformations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LTOE.knowl">LTOE</a></td>
+<td>Linear Transformation Odds and Ends</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SUTH1.knowl">SUTH1</a></td>
+<td>Sage Under The Hood, Round 1</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter R: Representations</th></tr>
+<tr>
+<td><a knowl="./knowls/sage.VR.knowl">VR</a></td>
+<td>Vector Representations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SUTH2.knowl">SUTH2</a></td>
+<td>Sage Under The Hood, Round 2</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MR.knowl">MR</a></td>
+<td>Matrix Representations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SUTH3.knowl">SUTH3</a></td>
+<td>Sage Under The Hood, Round 3</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.LTR.knowl">LTR</a></td>
+<td>Linear Transformation Restrictions</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.NME9.knowl">NME9</a></td>
+<td>Nonsingular Matrix Equivalences, Round 9</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.ENDO.knowl">ENDO</a></td>
+<td>Endomorphisms</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CBM.knowl">CBM</a></td>
+<td>Change-of-Basis Matrix</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.MRCB.knowl">MRCB</a></td>
+<td>Matrix Representation and Change-of-Basis</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.CELT.knowl">CELT</a></td>
+<td>Designing Matrix Representations</td>
+</tr>
+<tr>
+<td><a knowl="./knowls/sage.SUTH4.knowl">SUTH4</a></td>
+<td>Sage Under The Hood, Round 4</td>
+</tr>
+<tr class="chapter"><th colspan="2" align="left">Chapter P: Preliminaries</th></tr>
+</table></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

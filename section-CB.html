@@ -1,0 +1,424 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-R.html">Representations</a> » <a href="section-CB.html">Change of Basis</a> »</div></div>
+<div id="title"><span id="title-content">Change of Basis</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-CB" acro="CB" titletext="Change of Basis">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">CB</span> <span class="titletext">Change of Basis</span>
+</h3>
+<div class="introduction">
+<p>We have seen in <a href="section-MR.html" title="Matrix Representations">Section MR</a> that a linear transformation can be represented by a matrix, once we pick bases for the domain and codomain.  How does the matrix representation change if we choose different bases?  Which bases lead to especially nice representations?  From the infinite possibilities, what is the best possible representation?  This section will begin to answer these questions.  But first we need to define eigenvalues for linear transformations and the change-of-basis matrix.</p>
+
+</div>
+<div class="subsection" id="subsection-EELT" acro="EELT" titletext="Eigenvalues and Eigenvectors of Linear Transformations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">EELT</span> <span class="titletext">Eigenvalues and Eigenvectors of Linear Transformations</span>
+</h4>
+<p>We now define the notion of an eigenvalue and eigenvector of a linear transformation.  It should not be too surprising, especially if you remind yourself of the close relationship between matrices and linear transformations.</p>
+<div class="definition" id="definition-EELT" acro="EELT" titletext="Eigenvalue and Eigenvector of a Linear Transformation">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EELT</span> <span class="titletext"> Eigenvalue and Eigenvector of a Linear Transformation</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{V}{V}$ is a linear transformation.  Then a nonzero vector $\vect{v}\in V$ is an <em class="term">eigenvector</em> of $T$ for the <em class="term">eigenvalue</em> $\lambda$ if $\lt{T}{\vect{v}}=\lambda\vect{v}$.</p>
+</div>
+<p>We will see shortly the best method for computing the eigenvalues and eigenvectors of a linear transformation, but for now, here are some examples to verify that such things really do exist.</p>
+<div class="example" id="example-ELTBM" acro="ELTBM" titletext="Eigenvectors of linear transformation between matrices"><h5 class="example">
+<a knowl="./knowls/example.ELTBM.knowl"><span class="type">Example</span> <span class="acro">ELTBM</span></a> <span class="titletext">Eigenvectors of linear transformation between matrices</span>
+</h5></div>
+<p>Here is another.</p>
+<div class="example" id="example-ELTBP" acro="ELTBP" titletext="Eigenvectors of linear transformation between polynomials"><h5 class="example">
+<a knowl="./knowls/example.ELTBP.knowl"><span class="type">Example</span> <span class="acro">ELTBP</span></a> <span class="titletext">Eigenvectors of linear transformation between polynomials</span>
+</h5></div>
+<p>Of course, these examples are meant only to illustrate the definition of eigenvectors and eigenvalues for linear transformations, and therefore beg the question, “How would I <em>find</em> eigenvectors?”  We will have an answer before we finish this section.  We need one more construction first.</p>
+<div class="sage" id="sage-ENDO" acro="ENDO" titletext="Endomorphisms"><h5 class="sage">
+<a knowl="./knowls/sage.ENDO.knowl"><span class="type">Sage</span> <span class="acro">ENDO</span></a> <span class="titletext">Endomorphisms</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-CBM" acro="CBM" titletext="Change-of-Basis Matrix">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CBM</span> <span class="titletext">Change-of-Basis Matrix</span>
+</h4>
+<p>Given a vector space, we know we can usually find many different bases for the vector space, some nice, some nasty.  If we choose a single vector from this vector space, we can build many different representations of the vector by constructing the representations relative to different bases.  How are these different representations related to each other?  A change-of-basis matrix answers this question.</p>
+<div class="definition" id="definition-CBM" acro="CBM" titletext="Change-of-Basis Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CBM</span> <span class="titletext"> Change-of-Basis Matrix</span>
+</h5>
+<p>Suppose that $V$ is a vector space, and $\ltdefn{I_V}{V}{V}$ is the identity linear transformation on $V$.  Let $B=\set{\vectorlist{v}{n}}$ and $C$ be two bases of $V$.  Then the <em class="term">change-of-basis matrix</em> from $B$ to $C$ is the matrix representation of $I_V$ relative to $B$ and $C$,
+\begin{align*}
+\cbm{B}{C}&amp;=\matrixrep{I_V}{B}{C}\\
+&amp;=\matrixrepcolumns{I_V}{C}{v}{n}\\
+&amp;=\left\lbrack
+\left.\vectrep{C}{\vect{v}_1}\right|
+\left.\vectrep{C}{\vect{v}_2}\right|
+\left.\vectrep{C}{\vect{v}_3}\right|
+\ldots
+\left|\vectrep{C}{\vect{v}_n}\right.
+\right\rbrack
+\end{align*}
+
+</p>
+</div>
+<p>Notice that this definition is primarily about a single vector space ($V$) and two bases of $V$ ($B$, $C$).  The linear transformation ($I_V$) is necessary but not critical.  As you might expect, this matrix has something to do with changing bases.  Here is the theorem that gives the matrix its name (not the other way around).</p>
+<div class="theorem" id="theorem-CB" acro="CB" titletext="Change-of-Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CB</span><span class="titletext"> Change-of-Basis</span>
+</h5>
+<div class="statement"><p>Suppose that $\vect{v}$ is a vector in the vector space $V$ and $B$ and $C$ are bases of $V$.  Then
+\begin{equation*}
+\vectrep{C}{\vect{v}}=\cbm{B}{C}\vectrep{B}{\vect{v}}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.CB.knowl">Proof</a></div>
+</div>
+<p>So the change-of-basis matrix can be used with matrix multiplication to convert a vector representation of a vector ($\vect{v}$) relative to one basis ($\vectrep{B}{\vect{v}}$) to a representation of the same vector relative to a second basis ($\vectrep{C}{\vect{v}}$).</p>
+<div class="theorem" id="theorem-ICBM" acro="ICBM" titletext="Inverse of Change-of-Basis Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ICBM</span><span class="titletext"> Inverse of Change-of-Basis Matrix</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space, and $B$ and $C$ are bases of $V$.
+Then the change-of-basis matrix $\cbm{B}{C}$ is nonsingular and
+\begin{equation*}
+\inverse{\cbm{B}{C}}=\cbm{C}{B}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.ICBM.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-CBP" acro="CBP" titletext="Change of basis with polynomials"><h5 class="example">
+<a knowl="./knowls/example.CBP.knowl"><span class="type">Example</span> <span class="acro">CBP</span></a> <span class="titletext">Change of basis with polynomials</span>
+</h5></div>
+<p>The computations of the previous example are not meant to present any labor-saving devices, but instead are meant to illustrate the <em>utility</em> of the change-of-basis matrix.  However, you might have noticed that $\cbm{C}{B}$ was easier to compute than $\cbm{B}{C}$.  If you needed $\cbm{B}{C}$, then you could first compute $\cbm{C}{B}$ and then compute its inverse, which by <a class="knowl" acro="ICBM" type="Theorem" title="Inverse of Change-of-Basis Matrix" knowl="./knowls/theorem.ICBM.knowl">Theorem ICBM</a>, would equal $\cbm{B}{C}$.</p>
+<p>Here is another illustrative example.  We have been concentrating on working with abstract vector spaces, but all of our theorems and techniques apply just as well to $\complex{m}$, the vector space of column vectors.  We only need to use more complicated bases than the standard unit vectors (<a class="knowl" acro="SUVB" type="Theorem" title="Standard Unit Vectors are a Basis" knowl="./knowls/theorem.SUVB.knowl">Theorem SUVB</a>) to make things interesting.</p>
+<div class="example" id="example-CBCV" acro="CBCV" titletext="Change of basis with column vectors"><h5 class="example">
+<a knowl="./knowls/example.CBCV.knowl"><span class="type">Example</span> <span class="acro">CBCV</span></a> <span class="titletext">Change of basis with column vectors</span>
+</h5></div>
+<div class="sage" id="sage-CBM" acro="CBM" titletext="Change-of-Basis Matrix"><h5 class="sage">
+<a knowl="./knowls/sage.CBM.knowl"><span class="type">Sage</span> <span class="acro">CBM</span></a> <span class="titletext">Change-of-Basis Matrix</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-MRS" acro="MRS" titletext="Matrix Representations and Similarity">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">MRS</span> <span class="titletext">Matrix Representations and Similarity</span>
+</h4>
+<p>Here is the main theorem of this section.  It looks a bit involved at first glance, but the proof should make you realize it is not all that complicated.  In any event, we are more interested in a special case.</p>
+<div class="theorem" id="theorem-MRCB" acro="MRCB" titletext="Matrix Representation and Change of Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRCB</span><span class="titletext"> Matrix Representation and Change of Basis</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $B$ and $C$ are bases for $U$, and $D$ and $E$ are bases for $V$.  Then
+\begin{equation*}
+\matrixrep{T}{B}{D}=\cbm{E}{D}\matrixrep{T}{C}{E}\cbm{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRCB.knowl">Proof</a></div>
+</div>
+<p>We will be most interested in a special case of this theorem (<a class="knowl" acro="SCB" type="Theorem" title="Similarity and Change of Basis" knowl="./knowls/theorem.SCB.knowl">Theorem SCB</a>), but here is an example that illustrates the full generality of <a class="knowl" acro="MRCB" type="Theorem" title="Matrix Representation and Change of Basis" knowl="./knowls/theorem.MRCB.knowl">Theorem MRCB</a>.</p>
+<div class="example" id="example-MRCM" acro="MRCM" titletext="Matrix representations and change-of-basis matrices"><h5 class="example">
+<a knowl="./knowls/example.MRCM.knowl"><span class="type">Example</span> <span class="acro">MRCM</span></a> <span class="titletext">Matrix representations and change-of-basis matrices</span>
+</h5></div>
+<p>Here is a special case of the previous theorem, where we choose $U$ and $V$ to be the same vector space, so the matrix representations and the change-of-basis matrices are all square of the same size.</p>
+<div class="theorem" id="theorem-SCB" acro="SCB" titletext="Similarity and Change of Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SCB</span><span class="titletext"> Similarity and Change of Basis</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{V}{V}$ is a linear transformation and $B$ and $C$ are bases of $V$.  Then
+\begin{equation*}
+\matrixrep{T}{B}{B}=\inverse{\cbm{B}{C}}\matrixrep{T}{C}{C}\cbm{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.SCB.knowl">Proof</a></div>
+</div>
+<p>This is the third surprise of this chapter.  <a class="knowl" acro="SCB" type="Theorem" title="Similarity and Change of Basis" knowl="./knowls/theorem.SCB.knowl">Theorem SCB</a> considers the special case where a linear transformation has the same vector space for the domain and codomain ($V$).  We build a matrix representation of $T$ using the basis $B$ simultaneously for both the domain and codomain ($\matrixrep{T}{B}{B}$), and then we build a second matrix representation of $T$, now using the basis $C$ for both the domain and codomain ($\matrixrep{T}{C}{C}$).  Then these two representations are related via a similarity transformation (<a class="knowl" acro="SIM" type="Definition" title="Similar Matrices" knowl="./knowls/definition.SIM.knowl">Definition SIM</a>) using a change-of-basis matrix ($\cbm{B}{C}$)!</p>
+<div class="example" id="example-MRBE" acro="MRBE" titletext="Matrix representation with basis of eigenvectors"><h5 class="example">
+<a knowl="./knowls/example.MRBE.knowl"><span class="type">Example</span> <span class="acro">MRBE</span></a> <span class="titletext">Matrix representation with basis of eigenvectors</span>
+</h5></div>
+<div class="sage" id="sage-MRCB" acro="MRCB" titletext="Matrix Representation and Change-of-Basis"><h5 class="sage">
+<a knowl="./knowls/sage.MRCB.knowl"><span class="type">Sage</span> <span class="acro">MRCB</span></a> <span class="titletext">Matrix Representation and Change-of-Basis</span>
+</h5></div>
+<p>We can now return to the question of computing an eigenvalue or eigenvector of a linear transformation.  For a linear transformation of the form $\ltdefn{T}{V}{V}$, we know that representations relative to different bases are similar matrices.  We also know that similar matrices have equal characteristic polynomials by <a class="knowl" acro="SMEE" type="Theorem" title="Similar Matrices have Equal Eigenvalues" knowl="./knowls/theorem.SMEE.knowl">Theorem SMEE</a>.   We will now show that eigenvalues of a linear transformation $T$ are precisely the eigenvalues of <em>any</em> matrix representation of $T$.  Since the choice of a different matrix representation leads to a similar matrix, there will be no “new” eigenvalues obtained from this second representation.  Similarly, the change-of-basis matrix can be used to show that eigenvectors obtained from one matrix representation will be precisely those obtained from any other representation.  So we can determine the eigenvalues and eigenvectors of a linear transformation by forming one matrix representation, using <em>any</em> basis we please, and analyzing the matrix in the manner of <a href="chapter-E.html" title="Eigenvalues">Chapter E</a>.</p>
+<div class="theorem" id="theorem-EER" acro="EER" titletext="Eigenvalues, Eigenvectors, Representations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EER</span><span class="titletext"> Eigenvalues, Eigenvectors, Representations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{V}{V}$ is a linear transformation and $B$ is a basis of $V$.  Then $\vect{v}\in V$ is an eigenvector of $T$ for the eigenvalue $\lambda$ if and only if $\vectrep{B}{\vect{v}}$ is an eigenvector of $\matrixrep{T}{B}{B}$ for the eigenvalue $\lambda$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EER.knowl">Proof</a></div>
+</div>
+</div>
+<div class="subsection" id="subsection-CELT" acro="CELT" titletext="Computing Eigenvectors of Linear Transformations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CELT</span> <span class="titletext">Computing Eigenvectors of Linear Transformations</span>
+</h4>
+<p><a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a> tells us that the eigenvalues of a linear transformation are the eigenvalues of <em>any</em> representation, no matter what the choice of the basis $B$ might be.  So we could now unambiguously define items such as the characteristic polynomial of a linear transformation, which we would define as the characteristic polynomial of any matrix representation.  We will say that again — eigenvalues, eigenvectors, and characteristic polynomials are intrinsic properties of a linear transformation, independent of the choice of a basis used to construct a matrix representation.</p>
+<p>As a practical matter, how does one compute the eigenvalues and eigenvectors of a linear transformation of the form $\ltdefn{T}{V}{V}$?  Choose a nice basis $B$ for $V$, one where the vector representations of the values of the linear transformations necessary for the matrix representation are easy to compute.  Construct the matrix representation relative to this basis, and find the eigenvalues and eigenvectors of this matrix using the techniques of <a href="chapter-E.html" title="Eigenvalues">Chapter E</a>.  The resulting eigenvalues of the matrix are precisely the eigenvalues of the linear transformation.  The eigenvectors of the matrix are column vectors that need to be converted to vectors in $V$ through application of $\ltinverse{\vectrepname{B}}$ (this is part of the content of <a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a>).</p>
+<p>Now consider the case where the matrix representation of a linear transformation is diagonalizable.  The $n$ linearly independent eigenvectors that must exist for the matrix (<a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a>) can be converted (via $\ltinverse{\vectrepname{B}}$) into eigenvectors of the linear transformation.  A matrix representation of the linear transformation relative to a basis of eigenvectors will be a diagonal matrix — an especially nice representation!  Though we did not know it at the time, the diagonalizations of <a href="section-SD.html" title="Similarity and Diagonalization">Section SD</a> were really about finding especially pleasing matrix representations of linear transformations.</p>
+<p>Here are some examples.</p>
+<div class="example" id="example-ELTT" acro="ELTT" titletext="Eigenvectors of a linear transformation, twice"><h5 class="example">
+<a knowl="./knowls/example.ELTT.knowl"><span class="type">Example</span> <span class="acro">ELTT</span></a> <span class="titletext">Eigenvectors of a linear transformation, twice</span>
+</h5></div>
+<p>Another example, this time a bit larger and with complex eigenvalues.</p>
+<div class="example" id="example-CELT" acro="CELT" titletext="Complex eigenvectors of a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.CELT.knowl"><span class="type">Example</span> <span class="acro">CELT</span></a> <span class="titletext">Complex eigenvectors of a linear transformation</span>
+</h5></div>
+<div class="sage" id="sage-CELT" acro="CELT" titletext="Designing Matrix Representations"><h5 class="sage">
+<a knowl="./knowls/sage.CELT.knowl"><span class="type">Sage</span> <span class="acro">CELT</span></a> <span class="titletext">Designing Matrix Representations</span>
+</h5></div>
+<div class="sage" id="sage-SUTH4" acro="SUTH4" titletext="Sage Under The Hood, Round 4"><h5 class="sage">
+<a knowl="./knowls/sage.SUTH4.knowl"><span class="type">Sage</span> <span class="acro">SUTH4</span></a> <span class="titletext">Sage Under The Hood, Round 4</span>
+</h5></div>
+</div>
+<div class="readingquestions" id="readingquestions-CB" titletext="Reading Questions"><h4 class="readingquestions"><a knowl="./knowls/reading.CB.knowl"><span class="titletext">Reading Questions</span></a></h4></div>
+<div class="exercisesubsection" id="exercisesubsection-CB" titletext="Exercises"><h4 class="exercises"><a knowl="./knowls/exercises.CB.knowl"><span class="titletext">Exercises</span></a></h4></div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

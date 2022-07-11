@@ -1,0 +1,540 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-LT.html">Linear Transformations</a> » <a href="section-LT.html">Linear Transformations</a> »</div></div>
+<div id="title"><span id="title-content">Linear Transformations</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-LT" acro="LT" titletext="Linear Transformations">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">LT</span> <span class="titletext">Linear Transformations</span>
+</h3>
+<div class="introduction">
+<p>Early in <a href="chapter-VS.html" title="Vector Spaces">Chapter VS</a> we prefaced the definition of a vector space with the comment that it was “one of the two most important definitions in the entire course.”  Here comes the other.  Any capsule summary of linear algebra would have to describe the subject as the interplay of linear transformations and vector spaces.  Here we go.</p>
+
+</div>
+<div class="subsection" id="subsection-LT" acro="LT" titletext="Linear Transformations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LT</span> <span class="titletext">Linear Transformations</span>
+</h4>
+<div class="definition" id="definition-LT" acro="LT" titletext="Linear Transformation">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LT</span> <span class="titletext"> Linear Transformation</span>
+</h5>
+<p>A <em class="term">linear transformation</em>, $\ltdefn{T}{U}{V}$, is a function that carries elements of the vector space $U$ (called the <em class="term">domain</em>) to the vector space $V$ (called the <em class="term">codomain</em>), and which has two additional properties
+<ol>
+<li> $\lt{T}{\vect{u}_1+\vect{u}_2}=\lt{T}{\vect{u}_1}+\lt{T}{\vect{u}_2}$ for all $\vect{u}_1,\,\vect{u}_2\in U$
+</li>
+<li> $\lt{T}{\alpha\vect{u}}=\alpha\lt{T}{\vect{u}}$ for all $\vect{u}\in U$ and all $\alpha\in\complex{\null}$
+</li>
+</ol>
+</p>
+</div>
+<p>The two defining conditions in the definition of a linear transformation should “feel linear,” whatever that means.  Conversely, these two conditions could be taken as <em>exactly</em> what it means <em>to be</em> linear.  As every vector space property derives from vector addition and scalar multiplication, so too, every property of a linear transformation derives from these two defining properties.  While these conditions may be reminiscent of how we test subspaces, they really are quite different, so do not confuse the two.</p>
+<p>Here are two diagrams that convey the essence of the two defining properties of a linear transformation.  In each case, begin in the upper left-hand corner, and follow the arrows around the rectangle to the lower-right hand corner, taking two different routes and doing the indicated operations labeled on the arrows.  There are two results there.  For a linear transformation these two expressions are always equal.
+<div class="diagram" id="diagram-DLTA" acro="DLTA" titletext="Definition of Linear Transformation, Additive">
+<a id="diagram-DLTA"></a><object type="image/svg+xml" data="./diagrams/DLTA.svg">SVG image not dispayed</object><br><br><h5 class="diagram">
+<span class="type">Diagram</span> <span class="acro">DLTA</span> <span class="titletext">Definition of Linear Transformation, Additive</span>
+</h5>
+</div>
+<div class="diagram" id="diagram-DLTM" acro="DLTM" titletext="Definition of Linear Transformation, Multiplicative">
+<a id="diagram-DLTM"></a><object type="image/svg+xml" data="./diagrams/DLTM.svg">SVG image not dispayed</object><br><br><h5 class="diagram">
+<span class="type">Diagram</span> <span class="acro">DLTM</span> <span class="titletext">Definition of Linear Transformation, Multiplicative</span>
+</h5>
+</div>
+</p>
+<p>A couple of words about notation.  $T$ is the <em>name</em> of the linear transformation, and should be used when we want to discuss the function as a whole.  $\lt{T}{\vect{u}}$ is how we talk about the output of the function, it is a vector in the vector space $V$.  When we write $\lt{T}{\vect{x}+\vect{y}}=\lt{T}{\vect{x}}+\lt{T}{\vect{y}}$, the plus sign on the left is the operation of vector addition in the vector space $U$, since $\vect{x}$ and $\vect{y}$ are elements of $U$.  The plus sign on the right is the operation of vector addition in the vector space $V$, since $\lt{T}{\vect{x}}$ and $\lt{T}{\vect{y}}$ are elements of the vector space $V$.  These two instances of vector addition might be wildly different.</p>
+<p>Let us examine several examples and begin to form a catalog of known linear transformations to work with.</p>
+<div class="example" id="example-ALT" acro="ALT" titletext="A linear transformation"><h5 class="example">
+<a knowl="./knowls/example.ALT.knowl"><span class="type">Example</span> <span class="acro">ALT</span></a> <span class="titletext">A linear transformation</span>
+</h5></div>
+<p>It can be just as instructive to look at functions that are <em>not</em> linear transformations.  Since the defining conditions must be true for <em>all</em> vectors and scalars, it is enough to find just one situation where the properties fail.</p>
+<div class="example" id="example-NLT" acro="NLT" titletext="Not a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.NLT.knowl"><span class="type">Example</span> <span class="acro">NLT</span></a> <span class="titletext">Not a linear transformation</span>
+</h5></div>
+<div class="example" id="example-LTPM" acro="LTPM" titletext="Linear transformation, polynomials to matrices"><h5 class="example">
+<a knowl="./knowls/example.LTPM.knowl"><span class="type">Example</span> <span class="acro">LTPM</span></a> <span class="titletext">Linear transformation, polynomials to matrices</span>
+</h5></div>
+<div class="example" id="example-LTPP" acro="LTPP" titletext="Linear transformation, polynomials to polynomials"><h5 class="example">
+<a knowl="./knowls/example.LTPP.knowl"><span class="type">Example</span> <span class="acro">LTPP</span></a> <span class="titletext">Linear transformation, polynomials to polynomials</span>
+</h5></div>
+<p>Linear transformations have many amazing properties, which we will investigate through the next few sections.  However, as a taste of things to come, here is a theorem we can prove now and put to use immediately.</p>
+<div class="theorem" id="theorem-LTTZZ" acro="LTTZZ" titletext="Linear Transformations Take Zero to Zero">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">LTTZZ</span><span class="titletext"> Linear Transformations Take Zero to Zero</span>
+</h5>
+<div class="statement"><p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  Then $\lt{T}{\zerovector}=\zerovector$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.LTTZZ.knowl">Proof</a></div>
+</div>
+<p>Return to <a class="knowl" acro="NLT" type="Example" title="Not a linear transformation" knowl="./knowls/example.NLT.knowl">Example NLT</a> and compute $\lt{S}{\colvector{0\\0\\0}}=\colvector{0\\0\\-2}$ to quickly see again that $S$ is not a linear transformation, while in <a class="knowl" acro="LTPM" type="Example" title="Linear transformation, polynomials to matrices" knowl="./knowls/example.LTPM.knowl">Example LTPM</a>  compute
+\begin{align*}
+\lt{S}{0+0x+0x^2+0x^3}&amp;=\begin{bmatrix}0&amp;0\\0&amp;0\end{bmatrix}
+\end{align*}
+
+as an example of <a class="knowl" acro="LTTZZ" type="Theorem" title="Linear Transformations Take Zero to Zero" knowl="./knowls/theorem.LTTZZ.knowl">Theorem LTTZZ</a> at work.</p>
+<div class="sage" id="sage-LTS" acro="LTS" titletext="Linear Transformations, Symbolic"><h5 class="sage">
+<a knowl="./knowls/sage.LTS.knowl"><span class="type">Sage</span> <span class="acro">LTS</span></a> <span class="titletext">Linear Transformations, Symbolic</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-LTC" acro="LTC" titletext="Linear Transformation Cartoons">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LTC</span> <span class="titletext">Linear Transformation Cartoons</span>
+</h4>
+<p>Throughout this chapter, and <a href="chapter-R.html" title="Representations">Chapter R</a>, we will include drawings of linear transformations.  We will call them “cartoons,” not because they are humorous, but because they will only expose a portion of the truth.  A Bugs Bunny cartoon might give us some insights on human nature, but the rules of physics and biology are routinely (and grossly) violated.  So it will be with our <em class="term">linear transformation cartoons</em>.  Here is our first, followed by a guide to help you understand how these are meant to describe fundamental truths about linear transformations, while simultaneously violating other truths.
+<div class="diagram" id="diagram-GLT" acro="GLT" titletext="General Linear Transformation">
+<a id="diagram-GLT"></a><object type="image/svg+xml" data="./diagrams/GLT.svg">SVG image not dispayed</object><br><br><h5 class="diagram">
+<span class="type">Diagram</span> <span class="acro">GLT</span> <span class="titletext">General Linear Transformation</span>
+</h5>
+</div>
+</p>
+<p>Here we picture a linear transformation $\ltdefn{T}{U}{V}$, where this information will be consistently displayed along the bottom edge.  The ovals are meant to represent the vector spaces, in this case $U$, the domain, on the left and $V$, the codomain, on the right.  Of course, vector spaces are typically infinite sets, so you will have to imagine that characteristic of these sets.  A small dot inside of an oval will represent a vector within that vector space, sometimes with a name, sometimes not (in this case every vector has a name).  The sizes of the ovals are meant to be proportional to the dimensions of the vector spaces.  However, when we make no assumptions about the dimensions, we will draw the ovals as the same size, as we have done here (which is not meant to suggest that the dimensions have to be equal).</p>
+<p>To convey that the linear transformation associates a certain input with a certain output, we will draw an arrow from the input to the output.  So, for example, in this cartoon we suggest that $\lt{T}{\vect{x}}=\vect{y}$.  Nothing in the definition of a linear transformation prevents two different inputs being sent to the same output and we see this in $\lt{T}{\vect{u}}=\vect{v}=\lt{T}{\vect{w}}$.  Similarly, an output may not have any input being sent its way, as illustrated by no arrow pointing at $\vect{t}$.  In this cartoon, we have captured the essence of our one general theorem about linear transformations, <a class="knowl" acro="LTTZZ" type="Theorem" title="Linear Transformations Take Zero to Zero" knowl="./knowls/theorem.LTTZZ.knowl">Theorem LTTZZ</a>, $\lt{T}{\zerovector_U}=\zerovector_V$.  On occasion we might include this basic fact when it is relevant, at other times maybe not.  Note that the definition of a linear transformation requires that it be a function, so every element of the domain should be associated with some element of the codomain.  This will be reflected by never having an element of the domain without an arrow originating there.</p>
+<p>These cartoons are of course no substitute for careful definitions and proofs, but they can be a handy way to think about the various properties we will be studying.</p>
+</div>
+<div class="subsection" id="subsection-MLT" acro="MLT" titletext="Matrices and Linear Transformations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">MLT</span> <span class="titletext">Matrices and Linear Transformations</span>
+</h4>
+<p>If you give me a matrix, then I can quickly build you a linear transformation.  Always.  First a motivating example and then the theorem.</p>
+<div class="example" id="example-LTM" acro="LTM" titletext="Linear transformation from a matrix"><h5 class="example">
+<a knowl="./knowls/example.LTM.knowl"><span class="type">Example</span> <span class="acro">LTM</span></a> <span class="titletext">Linear transformation from a matrix</span>
+</h5></div>
+<p>So the multiplication of a vector by a matrix “transforms” the input vector into an output vector, possibly of a different size, by performing a linear combination.  And this transformation happens in a “linear” fashion.  This “functional” view of the matrix-vector product is the most important shift you can make right now in how you think about linear algebra.  Here is the theorem, whose proof is very nearly an exact copy of the verification in the last example.</p>
+<div class="theorem" id="theorem-MBLT" acro="MBLT" titletext="Matrices Build Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MBLT</span><span class="titletext"> Matrices Build Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Define a function $\ltdefn{T}{\complex{n}}{\complex{m}}$ by $\lt{T}{\vect{x}}=A\vect{x}$.  Then $T$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MBLT.knowl">Proof</a></div>
+</div>
+<p>So <a class="knowl" acro="MBLT" type="Theorem" title="Matrices Build Linear Transformations" knowl="./knowls/theorem.MBLT.knowl">Theorem MBLT</a> gives us a rapid way to construct linear transformations.  Grab an $m\times n$ matrix $A$, define $\lt{T}{\vect{x}}=A\vect{x}$ and <a class="knowl" acro="MBLT" type="Theorem" title="Matrices Build Linear Transformations" knowl="./knowls/theorem.MBLT.knowl">Theorem MBLT</a> tells us that $T$ is a linear transformation from $\complex{n}$ to $\complex{m}$, without any further checking.</p>
+<p>We can turn <a class="knowl" acro="MBLT" type="Theorem" title="Matrices Build Linear Transformations" knowl="./knowls/theorem.MBLT.knowl">Theorem MBLT</a> around.  You give me a linear transformation and I will give you a matrix.</p>
+<div class="example" id="example-MFLT" acro="MFLT" titletext="Matrix from a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.MFLT.knowl"><span class="type">Example</span> <span class="acro">MFLT</span></a> <span class="titletext">Matrix from a linear transformation</span>
+</h5></div>
+<p><a class="knowl" acro="MFLT" type="Example" title="Matrix from a linear transformation" knowl="./knowls/example.MFLT.knowl">Example MFLT</a> was not an accident.  Consider any one of the archetypes where both the domain and codomain are sets of column vectors (<a knowl="./knowls/archetype.M.knowl">Archetype M</a> through <a knowl="./knowls/archetype.R.knowl">Archetype R</a>) and you should be able to mimic the previous example.  Here is the theorem, which is notable since it is our first occasion to use the full power of the defining properties of a linear transformation when our hypothesis includes a linear transformation.</p>
+<div class="theorem" id="theorem-MLTCV" acro="MLTCV" titletext="Matrix of a Linear Transformation, Column Vectors">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MLTCV</span><span class="titletext"> Matrix of a Linear Transformation, Column Vectors</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{\complex{n}}{\complex{m}}$ is a linear transformation.  Then there is an $m\times n$ matrix $A$ such that $\lt{T}{\vect{x}}=A\vect{x}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MLTCV.knowl">Proof</a></div>
+</div>
+<p>So if we were to restrict our study of linear transformations to those where the domain and codomain are both vector spaces of column vectors (<a class="knowl" acro="VSCV" type="Definition" title="Vector Space of Column Vectors" knowl="./knowls/definition.VSCV.knowl">Definition VSCV</a>), every matrix leads to a linear transformation of this type (<a class="knowl" acro="MBLT" type="Theorem" title="Matrices Build Linear Transformations" knowl="./knowls/theorem.MBLT.knowl">Theorem MBLT</a>), while every such linear transformation leads to a matrix (<a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>).  So matrices and linear transformations are fundamentally the same.  We call the matrix $A$ of <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a> the <em class="term">matrix representation</em> of $T$.</p>
+<p>We have defined linear transformations for more general vector spaces than just $\complex{m}$. Can we extend this correspondence between linear transformations and matrices to more general linear transformations (more general domains and codomains)?  Yes, and this is the main theme of <a href="chapter-R.html" title="Representations">Chapter R</a>.  Stay tuned.  For now, let us illustrate <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a> with an example.</p>
+<div class="example" id="example-MOLT" acro="MOLT" titletext="Matrix of a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.MOLT.knowl"><span class="type">Example</span> <span class="acro">MOLT</span></a> <span class="titletext">Matrix of a linear transformation</span>
+</h5></div>
+<div class="sage" id="sage-LTM" acro="LTM" titletext="Linear Transformations, Matrices"><h5 class="sage">
+<a knowl="./knowls/sage.LTM.knowl"><span class="type">Sage</span> <span class="acro">LTM</span></a> <span class="titletext">Linear Transformations, Matrices</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-LTLC" acro="LTLC" titletext="Linear Transformations and Linear Combinations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LTLC</span> <span class="titletext">Linear Transformations and Linear Combinations</span>
+</h4>
+<p>It is the interaction between linear transformations and linear combinations that lies at the heart of many of the important theorems of linear algebra.  The next theorem distills the essence of this.  The proof is not deep, the result is hardly startling, but it will be referenced frequently.  We have already passed by one occasion to employ it, in the proof of <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>.  Paraphrasing, this theorem says that we can “push” linear transformations “down into” linear combinations, or “pull” linear transformations “up out” of linear combinations.  We will have opportunities to both push and pull.</p>
+<div class="theorem" id="theorem-LTLC" acro="LTLC" titletext="Linear Transformations and Linear Combinations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">LTLC</span><span class="titletext"> Linear Transformations and Linear Combinations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $\vectorlist{u}{t}$ are vectors from $U$ and $\scalarlist{a}{t}$ are scalars from $\complex{\null}$.  Then
+\begin{equation*}
+\lt{T}{\lincombo{a}{u}{t}}
+=
+a_1\lt{T}{\vect{u}_1}+
+a_2\lt{T}{\vect{u}_2}+
+a_3\lt{T}{\vect{u}_3}+\cdots+
+a_t\lt{T}{\vect{u}_t}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.LTLC.knowl">Proof</a></div>
+</div>
+<p>Some authors, especially in more advanced texts, take the conclusion of <a class="knowl" acro="LTLC" type="Theorem" title="Linear Transformations and Linear Combinations" knowl="./knowls/theorem.LTLC.knowl">Theorem LTLC</a> as the defining condition of a linear transformation.  This has the appeal of being a single condition, rather than the two-part condition of <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>.  (See <a knowl="./knowls/exercise.LT.T20.knowl">Exercise LT.T20</a>).</p>
+<p>Our next theorem says, informally, that it is enough to know how a linear transformation behaves for inputs from any basis of the domain, and <em>all</em> the other outputs are described by a linear combination of these few values.  Again, the statement of the theorem, and its proof, are not remarkable, but the insight that goes along with it is very fundamental.</p>
+<div class="theorem" id="theorem-LTDB" acro="LTDB" titletext="Linear Transformation Defined on a Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">LTDB</span><span class="titletext"> Linear Transformation Defined on a Basis</span>
+</h5>
+<div class="statement"><p>Suppose $U$ is a vector space with basis $B=\set{\vectorlist{u}{n}}$ and the vector space $V$ contains the vectors $\vectorlist{v}{n}$ (which may not be distinct).   Then there is a unique linear transformation, $\ltdefn{T}{U}{V}$, such that $\lt{T}{\vect{u}_i}=\vect{v}_i$, $1\leq i\leq n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.LTDB.knowl">Proof</a></div>
+</div>
+<p>You might recall facts from analytic geometry, such as “any two points determine a line” and “any three non-collinear points determine a parabola.”  <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> has much of the same feel.  By specifying the $n$ outputs for inputs from a basis, an entire linear transformation is determined.  The analogy is not perfect, but the style of these facts are not very dissimilar from <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a>.</p>
+<p>Notice that the statement of <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> asserts the <em>existence</em> of a linear transformation with certain properties, while the proof shows us exactly how to define the desired linear transformation. The next two examples show how to compute values of linear transformations that we create this way.</p>
+<div class="example" id="example-LTDB1" acro="LTDB1" titletext="Linear transformation defined on a basis"><h5 class="example">
+<a knowl="./knowls/example.LTDB1.knowl"><span class="type">Example</span> <span class="acro">LTDB1</span></a> <span class="titletext">Linear transformation defined on a basis</span>
+</h5></div>
+<div class="example" id="example-LTDB2" acro="LTDB2" titletext="Linear transformation defined on a basis"><h5 class="example">
+<a knowl="./knowls/example.LTDB2.knowl"><span class="type">Example</span> <span class="acro">LTDB2</span></a> <span class="titletext">Linear transformation defined on a basis</span>
+</h5></div>
+<p>Here is a third example of a linear transformation defined by its action on a basis, only with more abstract vector spaces involved.</p>
+<div class="example" id="example-LTDB3" acro="LTDB3" titletext="Linear transformation defined on a basis"><h5 class="example">
+<a knowl="./knowls/example.LTDB3.knowl"><span class="type">Example</span> <span class="acro">LTDB3</span></a> <span class="titletext">Linear transformation defined on a basis</span>
+</h5></div>
+<p>Informally, we can describe <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> by saying “it is enough to know what a linear transformation does to a basis (of the domain).”</p>
+<div class="sage" id="sage-LTB" acro="LTB" titletext="Linear Transformations, Bases"><h5 class="sage">
+<a knowl="./knowls/sage.LTB.knowl"><span class="type">Sage</span> <span class="acro">LTB</span></a> <span class="titletext">Linear Transformations, Bases</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-PI" acro="PI" titletext="Pre-Images">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">PI</span> <span class="titletext">Pre-Images</span>
+</h4>
+<p>The definition of a function requires that for each input in the domain there is <em>exactly</em> one output in the codomain.  However, the correspondence does not have to behave the other way around.  An output from the codomain could have many different inputs from the domain which the transformation sends to that output, or there could be no inputs at all which the transformation sends to that output.  To formalize our discussion of this aspect of linear transformations, we define the pre-image.</p>
+<div class="definition" id="definition-PI" acro="PI" titletext="Pre-Image">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">PI</span> <span class="titletext"> Pre-Image</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  For each $\vect{v}$, define the <em class="term">pre-image</em> of $\vect{v}$ to be the subset of $U$ given by
+\begin{equation*}
+\preimage{T}{\vect{v}}=\setparts{\vect{u}\in U}{\lt{T}{\vect{u}}=\vect{v}}
+\end{equation*}
+</p>
+</div>
+<p>In other words, $\preimage{T}{\vect{v}}$ is the set of all those vectors in the domain $U$ that get “sent” to the vector $\vect{v}$.</p>
+<div class="example" id="example-SPIAS" acro="SPIAS" titletext="Sample pre-images, Archetype S"><h5 class="example">
+<a knowl="./knowls/example.SPIAS.knowl"><span class="type">Example</span> <span class="acro">SPIAS</span></a> <span class="titletext">Sample pre-images, Archetype S</span>
+</h5></div>
+<p>The preimage is just a set, it is almost never a subspace of $U$ (you might think about just when $\preimage{T}{\vect{v}}$ is a subspace, see <a knowl="./knowls/exercise.ILT.T10.knowl">Exercise ILT.T10</a>).  We will describe its properties going forward, and it will be central to the main ideas of this chapter.</p>
+<div class="sage" id="sage-PI" acro="PI" titletext="Pre-Images"><h5 class="sage">
+<a knowl="./knowls/sage.PI.knowl"><span class="type">Sage</span> <span class="acro">PI</span></a> <span class="titletext">Pre-Images</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-NLTFO" acro="NLTFO" titletext="New Linear Transformations From Old">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">NLTFO</span> <span class="titletext">New Linear Transformations From Old</span>
+</h4>
+<p>We can combine linear transformations in natural ways to create new linear transformations.  So we will define these combinations and then prove that the results really are still linear transformations.  First the sum of two linear transformations.</p>
+<div class="definition" id="definition-LTA" acro="LTA" titletext="Linear Transformation Addition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTA</span> <span class="titletext"> Linear Transformation Addition</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{U}{V}$ are two linear transformations with the same domain and codomain.  Then their <em class="term">sum</em> is the function $\ltdefn{T+S}{U}{V}$ whose outputs are defined by
+\begin{equation*}
+\lt{(T+S)}{\vect{u}}=\lt{T}{\vect{u}}+\lt{S}{\vect{u}}
+\end{equation*}
+</p>
+</div>
+<p>Notice that the first plus sign in the definition is the operation being defined, while the second one is the vector addition in $V$.  (Vector addition in $U$ will appear just now in the proof that $T+S$ is a linear transformation.)  <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> only provides a function.  It would be nice to know that when the constituents ($T$, $S$) are linear transformations, then so too is $T+S$.</p>
+<div class="theorem" id="theorem-SLTLT" acro="SLTLT" titletext="Sum of Linear Transformations is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SLTLT</span><span class="titletext"> Sum of Linear Transformations is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{U}{V}$ are two linear transformations with the same domain and codomain.  Then $\ltdefn{T+S}{U}{V}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SLTLT.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-STLT" acro="STLT" titletext="Sum of two linear transformations"><h5 class="example">
+<a knowl="./knowls/example.STLT.knowl"><span class="type">Example</span> <span class="acro">STLT</span></a> <span class="titletext">Sum of two linear transformations</span>
+</h5></div>
+<div class="definition" id="definition-LTSM" acro="LTSM" titletext="Linear Transformation Scalar Multiplication">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTSM</span> <span class="titletext"> Linear Transformation Scalar Multiplication</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and $\alpha\in\complex{\null}$.  Then the <em class="term">scalar multiple</em> is the function $\ltdefn{\alpha T}{U}{V}$ whose outputs are defined by
+\begin{equation*}
+\lt{(\alpha T)}{\vect{u}}=\alpha\lt{T}{\vect{u}}
+\end{equation*}
+</p>
+</div>
+<p>Given that $T$ is a linear transformation, it would be nice to know that $\alpha T$ is also a linear transformation.</p>
+<div class="theorem" id="theorem-MLTLT" acro="MLTLT" titletext="Multiple of a Linear Transformation is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MLTLT</span><span class="titletext"> Multiple of a Linear Transformation is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and $\alpha\in\complex{\null}$.  Then $\ltdefn{(\alpha T)}{U}{V}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MLTLT.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-SMLT" acro="SMLT" titletext="Scalar multiple of a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.SMLT.knowl"><span class="type">Example</span> <span class="acro">SMLT</span></a> <span class="titletext">Scalar multiple of a linear transformation</span>
+</h5></div>
+<p>Now, let us imagine we have two vector spaces, $U$ and $V$, and we collect every possible linear transformation from $U$ to $V$ into one big set, and call it $\vslt{U}{V}$.  <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> and <a class="knowl" acro="LTSM" type="Definition" title="Linear Transformation Scalar Multiplication" knowl="./knowls/definition.LTSM.knowl">Definition LTSM</a> tell us how we can “add” and “scalar multiply” two elements of $\vslt{U}{V}$.  <a class="knowl" acro="SLTLT" type="Theorem" title="Sum of Linear Transformations is a Linear Transformation" knowl="./knowls/theorem.SLTLT.knowl">Theorem SLTLT</a> and <a class="knowl" acro="MLTLT" type="Theorem" title="Multiple of a Linear Transformation is a Linear Transformation" knowl="./knowls/theorem.MLTLT.knowl">Theorem MLTLT</a> tell us that if we do these operations, then the resulting functions are linear transformations that are also in $\vslt{U}{V}$.   Hmmmm, sounds like a vector space to me!  A set of objects, an addition and a scalar multiplication.  Why not?</p>
+<div class="theorem" id="theorem-VSLT" acro="VSLT" titletext="Vector Space of Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VSLT</span><span class="titletext"> Vector Space of Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ and $V$ are vector spaces.  Then the set of all linear transformations from $U$ to $V$, $\vslt{U}{V}$, is a vector space when the operations are those given in <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> and <a class="knowl" acro="LTSM" type="Definition" title="Linear Transformation Scalar Multiplication" knowl="./knowls/definition.LTSM.knowl">Definition LTSM</a>.</p></div>
+<div class="proof"><a knowl="./knowls/proof.VSLT.knowl">Proof</a></div>
+</div>
+<div class="definition" id="definition-LTC" acro="LTC" titletext="Linear Transformation Composition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTC</span> <span class="titletext"> Linear Transformation Composition</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Then the <em class="term">composition</em> of $S$ and $T$ is the function $\ltdefn{(\compose{S}{T})}{U}{W}$ whose outputs are defined by
+\begin{equation*}
+\lt{(\compose{S}{T})}{\vect{u}}=\lt{S}{\lt{T}{\vect{u}}}
+\end{equation*}
+</p>
+</div>
+<p>Given that $T$ and $S$ are linear transformations, it would be nice to know that $\compose{S}{T}$ is also a linear transformation.</p>
+<div class="theorem" id="theorem-CLTLT" acro="CLTLT" titletext="Composition of Linear Transformations is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CLTLT</span><span class="titletext"> Composition of Linear Transformations is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Then $\ltdefn{(\compose{S}{T})}{U}{W}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CLTLT.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-CTLT" acro="CTLT" titletext="Composition of two linear transformations"><h5 class="example">
+<a knowl="./knowls/example.CTLT.knowl"><span class="type">Example</span> <span class="acro">CTLT</span></a> <span class="titletext">Composition of two linear transformations</span>
+</h5></div>
+<p>Here is an interesting exercise that will presage an important result later.
+In <a class="knowl" acro="STLT" type="Example" title="Sum of two linear transformations" knowl="./knowls/example.STLT.knowl">Example STLT</a> compute (via <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>) the matrix of  $T$, $S$ and $T+S$.  Do you see a relationship between these three matrices?</p>
+<p>In <a class="knowl" acro="SMLT" type="Example" title="Scalar multiple of a linear transformation" knowl="./knowls/example.SMLT.knowl">Example SMLT</a> compute (via <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>) the matrix of  $T$ and  $2T$.  Do you see a relationship between these two matrices?</p>
+<p>Here is the tough one.  In <a class="knowl" acro="CTLT" type="Example" title="Composition of two linear transformations" knowl="./knowls/example.CTLT.knowl">Example CTLT</a> compute (via <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>) the matrix of  $T$, $S$ and $\compose{S}{T}$.  Do you see a relationship between these three matrices???</p>
+<div class="sage" id="sage-OLT" acro="OLT" titletext="Operations on Linear Transformations"><h5 class="sage">
+<a knowl="./knowls/sage.OLT.knowl"><span class="type">Sage</span> <span class="acro">OLT</span></a> <span class="titletext">Operations on Linear Transformations</span>
+</h5></div>
+</div>
+<div class="readingquestions" id="readingquestions-LT" titletext="Reading Questions"><h4 class="readingquestions"><a knowl="./knowls/reading.LT.knowl"><span class="titletext">Reading Questions</span></a></h4></div>
+<div class="exercisesubsection" id="exercisesubsection-LT" titletext="Exercises"><h4 class="exercises"><a knowl="./knowls/exercises.LT.knowl"><span class="titletext">Exercises</span></a></h4></div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

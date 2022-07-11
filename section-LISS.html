@@ -1,0 +1,356 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-VS.html">Vector Spaces</a> » <a href="section-LISS.html">Linear Independence and Spanning Sets</a> »</div></div>
+<div id="title"><span id="title-content">Linear Independence and Spanning Sets</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-LISS" acro="LISS" titletext="Linear Independence and Spanning Sets">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">LISS</span> <span class="titletext">Linear Independence and Spanning Sets</span>
+</h3>
+<div class="introduction">
+<p>A vector space is defined as a set with two operations, meeting ten properties (<a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a>).  Just as the definition of span of a set of vectors only required knowing how to add vectors and how to multiply vectors by scalars, so it is with linear independence.  A definition of a linearly independent set of vectors in an arbitrary vector space only requires knowing how to form linear combinations and equating these with the zero vector.  Since every vector space must have a zero vector (<a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>), we always have a zero vector at our disposal.</p>
+
+<p>In this section we will also put a twist on the notion of the span of a set of vectors.  Rather than beginning with a set of vectors and creating a subspace that is the span, we will instead begin with a subspace and look for a set of vectors whose span equals the subspace.</p>
+
+<p>The combination of linear independence and spanning will be very important going forward.
+</p>
+
+</div>
+<div class="subsection" id="subsection-LI" acro="LI" titletext="Linear Independence">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LI</span> <span class="titletext">Linear Independence</span>
+</h4>
+<p>Our previous definition of linear independence (<a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>) employed a relation of linear dependence that was a linear combination on one side of an equality and a zero vector on the other side.  As a linear combination in a vector space (<a class="knowl" acro="LC" type="Definition" title="Linear Combination" knowl="./knowls/definition.LC.knowl">Definition LC</a>) depends only on vector addition and scalar multiplication, and every vector space must have a zero vector (<a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>), we can extend our definition of linear independence from the setting of $\complex{m}$ to the setting of a general vector space $V$ with almost no changes.  Compare these next two definitions with <a class="knowl" acro="RLDCV" type="Definition" title="Relation of Linear Dependence for Column Vectors" knowl="./knowls/definition.RLDCV.knowl">Definition RLDCV</a> and <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>.</p>
+<div class="definition" id="definition-RLD" acro="RLD" titletext="Relation of Linear Dependence">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">RLD</span> <span class="titletext"> Relation of Linear Dependence</span>
+</h5>
+<p>Suppose that $V$ is a vector space.
+Given a set of vectors $S=\set{\vectorlist{u}{n}}$, an equation of the form
+\begin{equation*}
+\lincombo{\alpha}{u}{n}=\zerovector
+\end{equation*}
+is a <em class="term">relation of linear dependence</em> on $S$.  If this equation is formed in a trivial fashion, i.e.  $\alpha_i=0$, $1\leq i\leq n$, then we say it is a <em class="term">trivial relation of linear dependence</em> on $S$.
+</p>
+</div>
+<div class="definition" id="definition-LI" acro="LI" titletext="Linear Independence">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LI</span> <span class="titletext"> Linear Independence</span>
+</h5>
+<p>Suppose that $V$ is a vector space.
+The set of vectors $S=\set{\vectorlist{u}{n}}$ from $V$ is <em class="term">linearly dependent</em> if there is a relation of linear dependence on $S$ that is not trivial.  In the case where the <em>only</em> relation of linear dependence on $S$ is the trivial one, then $S$ is a <em class="term">linearly independent</em> set of vectors.</p>
+</div>
+<p>Notice the emphasis on the word “only.”  This might remind you of the definition of a nonsingular matrix, where if the matrix is employed as the coefficient matrix of a homogeneous system then the <em>only</em> solution is the <em>trivial</em> one.</p>
+<div class="example" id="example-LIP4" acro="LIP4" titletext="Linear independence in $P_4$"><h5 class="example">
+<a knowl="./knowls/example.LIP4.knowl"><span class="type">Example</span> <span class="acro">LIP4</span></a> <span class="titletext">Linear independence in $P_4$</span>
+</h5></div>
+<div class="example" id="example-LIM32" acro="LIM32" titletext="Linear independence in $M_{32}$"><h5 class="example">
+<a knowl="./knowls/example.LIM32.knowl"><span class="type">Example</span> <span class="acro">LIM32</span></a> <span class="titletext">Linear independence in $M_{32}$</span>
+</h5></div>
+<div class="example" id="example-LIC" acro="LIC" titletext="Linearly independent set in the crazy vector space"><h5 class="example">
+<a knowl="./knowls/example.LIC.knowl"><span class="type">Example</span> <span class="acro">LIC</span></a> <span class="titletext">Linearly independent set in the crazy vector space</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-SS" acro="SS" titletext="Spanning Sets">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">SS</span> <span class="titletext">Spanning Sets</span>
+</h4>
+<p>In a vector space $V$, suppose we are given a set of vectors $S\subseteq V$.  Then we can immediately construct a subspace, $\spn{S}$, using <a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a> and then be assured by <a class="knowl" acro="SSS" type="Theorem" title="Span of a Set is a Subspace" knowl="./knowls/theorem.SSS.knowl">Theorem SSS</a> that the construction does provide a subspace.  We now turn the situation upside-down.  Suppose we are first given a subspace $W\subseteq V$.  Can we find a set $S$ so that $\spn{S}=W$?  Typically $W$ is infinite and we are searching for a finite set of vectors $S$ that we can combine in linear combinations and “build” all of $W$.</p>
+<p>I like to think of $S$ as the raw materials that are sufficient for the construction of $W$.  If you have nails, lumber, wire, copper pipe, drywall, plywood, carpet, shingles, paint (and a few other things), then you can combine them in many different ways to create a house (or infinitely many different houses for that matter).  A fast-food restaurant may have beef, chicken, beans, cheese, tortillas, taco shells and hot sauce and from this small list of ingredients build a wide variety of items for sale.  Or maybe a better analogy comes from Ben Cordes — the additive primary colors (red, green and blue) can be combined to create many different colors by varying the intensity of each.  The intensity is like a scalar multiple, and the combination of the three intensities is like vector addition.  The three individual colors, red, green and blue, are the elements of the spanning set.</p>
+<p>Because we will use terms like “spanned by” and “spanning set,” there is the potential for confusion with “the span.”  Come back and reread the first paragraph of this subsection whenever you are uncertain about the difference.  Here is the working definition.</p>
+<div class="definition" id="definition-SSVS" acro="SSVS" titletext="Spanning Set of a Vector Space">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SSVS</span> <span class="titletext"> Spanning Set of a Vector Space</span>
+</h5>
+<p>Suppose $V$ is a vector space.  A subset $S$ of $V$ is a <em class="term">spanning set</em> of $V$ if $\spn{S}=V$.  In this case, we also frequently say $S$ <em class="term">spans</em> $V$.</p>
+</div>
+<p>The definition of a spanning set requires that two sets (subspaces actually) be equal.  If $S$ is a subset of $V$, then $\spn{S}\subseteq V$, always.  Thus it is usually only necessary to prove that $V\subseteq\spn{S}$.  Now would be a good time to review <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>.</p>
+<div class="example" id="example-SSP4" acro="SSP4" titletext="Spanning set in $P_4$"><h5 class="example">
+<a knowl="./knowls/example.SSP4.knowl"><span class="type">Example</span> <span class="acro">SSP4</span></a> <span class="titletext">Spanning set in $P_4$</span>
+</h5></div>
+<p>Given a subspace and a set of vectors, as in <a class="knowl" acro="SSP4" type="Example" title="Spanning set in $P_4$" knowl="./knowls/example.SSP4.knowl">Example SSP4</a> it can take some work to determine that the set actually is a spanning set.  An even harder problem is to be confronted with a subspace and required to construct a spanning set with no guidance.  We will now work  an example of this flavor, but some of the steps will be unmotivated.  Fortunately, we will have some better tools for this type of problem later on.</p>
+<div class="example" id="example-SSM22" acro="SSM22" titletext="Spanning set in $M_{22}$"><h5 class="example">
+<a knowl="./knowls/example.SSM22.knowl"><span class="type">Example</span> <span class="acro">SSM22</span></a> <span class="titletext">Spanning set in $M_{22}$</span>
+</h5></div>
+<div class="example" id="example-SSC" acro="SSC" titletext="Spanning set in the crazy vector space"><h5 class="example">
+<a knowl="./knowls/example.SSC.knowl"><span class="type">Example</span> <span class="acro">SSC</span></a> <span class="titletext">Spanning set in the crazy vector space</span>
+</h5></div>
+</div>
+<div class="subsection" id="subsection-VR" acro="VR" titletext="Vector Representation">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">VR</span> <span class="titletext">Vector Representation</span>
+</h4>
+<p>In <a href="chapter-R.html" title="Representations">Chapter R</a> we will take up the matter of representations fully, where <a class="knowl" acro="VRRB" type="Theorem" title="Vector Representation Relative to a Basis" knowl="./knowls/theorem.VRRB.knowl">Theorem VRRB</a> will be critical for <a class="knowl" acro="VR" type="Definition" title="Vector Representation" knowl="./knowls/definition.VR.knowl">Definition VR</a>.  We will now motivate and prove a critical theorem that tells us how to “represent” a vector.   This theorem could wait, but working with it now will provide some extra insight into the nature of linearly independent spanning sets.  First an example, then the theorem.</p>
+<div class="example" id="example-AVR" acro="AVR" titletext="A vector representation"><h5 class="example">
+<a knowl="./knowls/example.AVR.knowl"><span class="type">Example</span> <span class="acro">AVR</span></a> <span class="titletext">A vector representation</span>
+</h5></div>
+<div class="theorem" id="theorem-VRRB" acro="VRRB" titletext="Vector Representation Relative to a Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VRRB</span><span class="titletext"> Vector Representation Relative to a Basis</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space and $B=\set{\vectorlist{v}{m}}$ is a linearly independent set that spans $V$.  Let $\vect{w}$ be any vector in $V$.  Then there exist <em>unique</em> scalars $a_1,\,a_2,\,a_3,\,\ldots,\,a_m$ such that
+\begin{equation*}
+\vect{w}=\lincombo{a}{v}{m}.
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.VRRB.knowl">Proof</a></div>
+</div>
+<p>The converse of <a class="knowl" acro="VRRB" type="Theorem" title="Vector Representation Relative to a Basis" knowl="./knowls/theorem.VRRB.knowl">Theorem VRRB</a> is true as well, but is not important enough to rise beyond an exercise (see <a knowl="./knowls/exercise.LISS.T51.knowl">Exercise LISS.T51</a>).</p>
+<p>This is a very typical use of the hypothesis that a set is linearly independent — obtain a relation of linear dependence and then conclude that the scalars <em>must</em> all be zero.  The result of this theorem tells us that we can write any vector in a vector space as a linear combination of the vectors in a linearly independent spanning set, but only just.  There is only enough raw material in the spanning set to write each vector one way as a linear combination.  So in this sense, we could call a linearly independent spanning set a “minimal spanning set.”  These sets are so important that we will give them a simpler name (“basis”) and explore their properties further in the next section.</p>
+</div>
+<div class="readingquestions" id="readingquestions-LISS" titletext="Reading Questions"><h4 class="readingquestions"><a knowl="./knowls/reading.LISS.knowl"><span class="titletext">Reading Questions</span></a></h4></div>
+<div class="exercisesubsection" id="exercisesubsection-LISS" titletext="Exercises"><h4 class="exercises"><a knowl="./knowls/exercises.LISS.knowl"><span class="titletext">Exercises</span></a></h4></div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

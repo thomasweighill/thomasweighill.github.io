@@ -1,0 +1,413 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="chapter-P.html">Preliminaries</a> » <a href="section-CNO.html">Complex Number Operations</a> »</div></div>
+<div id="title"><span id="title-content">Complex Number Operations</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content"><div class="section" id="section-CNO" acro="CNO" titletext="Complex Number Operations">
+<h3 class="section">
+<span class="type">Section</span> <span class="acro">CNO</span> <span class="titletext">Complex Number Operations</span>
+</h3>
+<div class="introduction">
+<p>In this section we review some of the basics of working with complex numbers.</p>
+
+</div>
+<div class="subsection" id="subsection-CNA" acro="CNA" titletext="Arithmetic with complex numbers">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CNA</span> <span class="titletext">Arithmetic with complex numbers</span>
+</h4>
+<p>A complex number is a linear combination of $1$ and $i=\sqrt{-1}$, typically written in the form $a+bi$.  Complex numbers can be added, subtracted, multiplied and divided, just like we are used to doing with real numbers, including the restriction on division by zero.  We will not define these operations carefully immediately, but instead first illustrate with examples.</p>
+<div class="example" id="example-ACN" acro="ACN" titletext="Arithmetic of complex numbers"><h5 class="example">
+<a knowl="./knowls/example.ACN.knowl"><span class="type">Example</span> <span class="acro">ACN</span></a> <span class="titletext">Arithmetic of complex numbers</span>
+</h5></div>
+<p>In this example, we used $6+4i$ to convert the denominator in the fraction to a real number.  This number is known as the conjugate, which we define in the next section.</p>
+<p>We will often exploit the basic properties of complex number addition, subtraction, multiplication and division, so we will carefully define the two basic operations, together with a definition of equality, and then collect nine basic properties  in a theorem.</p>
+<div class="definition" id="definition-CNE" acro="CNE" titletext="Complex Number Equality">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CNE</span> <span class="titletext"> Complex Number Equality</span>
+</h5>
+<p>The complex numbers $\alpha=a+bi$ and $\beta=c+di$ are <em class="term">equal</em>, denoted $\alpha=\beta$, if $a=c$ and $b=d$.</p>
+</div>
+<div class="definition" id="definition-CNA" acro="CNA" titletext="Complex Number Addition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CNA</span> <span class="titletext"> Complex Number Addition</span>
+</h5>
+<p>The <em class="term">sum</em> of the complex numbers $\alpha=a+bi$ and $\beta=c+di$ , denoted $\alpha+\beta$, is $(a+c)+(b+d)i$.</p>
+</div>
+<div class="definition" id="definition-CNM" acro="CNM" titletext="Complex Number Multiplication">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CNM</span> <span class="titletext"> Complex Number Multiplication</span>
+</h5>
+<p>The <em class="term">product</em> of the complex numbers $\alpha=a+bi$ and $\beta=c+di$ , denoted $\alpha\beta$, is $(ac-bd)+(ad+bc)i$.</p>
+</div>
+<div class="theorem" id="theorem-PCNA" acro="PCNA" titletext="Properties of Complex Number Arithmetic">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">PCNA</span><span class="titletext"> Properties of Complex Number Arithmetic</span>
+</h5>
+<div class="statement"><p>The operations of addition and multiplication of complex numbers have the following properties.
+<ul>
+<li>ACCN Additive Closure, Complex Numbers<br>
+If $\alpha,\beta\in\complexes$, then $\alpha+\beta\in\complexes$.<br><br>
+</li>
+<li>MCCN Multiplicative Closure, Complex Numbers<br>
+If $\alpha,\beta\in\complexes$, then $\alpha\beta\in\complexes$.<br><br>
+</li>
+<li>CACN Commutativity of Addition, Complex Numbers<br>
+For any $\alpha,\,\beta\in\complexes$, $\alpha+\beta=\beta+\alpha$.<br><br>
+</li>
+<li>CMCN Commutativity of Multiplication, Complex Numbers<br>
+For any $\alpha,\,\beta\in\complexes$, $\alpha\beta=\beta\alpha$.<br><br>
+</li>
+<li>AACN Additive Associativity, Complex Numbers<br>
+For any $\alpha,\,\beta,\,\gamma\in\complexes$, $\alpha+\left(\beta+\gamma\right)=\left(\alpha+\beta\right)+\gamma$.<br><br>
+</li>
+<li>MACN Multiplicative Associativity, Complex Numbers<br>
+For any $\alpha,\,\beta,\,\gamma\in\complexes$, $\alpha\left(\beta\gamma\right)=\left(\alpha\beta\right)\gamma$.<br><br>
+</li>
+<li>DCN Distributivity, Complex Numbers<br>
+For any $\alpha,\,\beta,\,\gamma\in\complexes$, $\alpha(\beta+\gamma)=\alpha\beta+\alpha\gamma$.<br><br>
+</li>
+<li>ZCN Zero, Complex Numbers<br>
+There is a complex number $0=0+0i$ so that for any $\alpha\in\complexes$, $0+\alpha=\alpha$.<br><br>
+</li>
+<li>OCN One, Complex Numbers<br>
+There is a complex number $1=1+0i$ so that for any $\alpha\in\complexes$, $1\alpha=\alpha$.<br><br>
+</li>
+<li>AICN Additive Inverse, Complex Numbers<br>
+For every $\alpha\in\complexes$ there exists $-\alpha\in\complexes$ so that $\alpha+\left(-\alpha\right)=0$.<br><br>
+</li>
+<li>MICN Multiplicative Inverse, Complex Numbers<br>
+For every $\alpha\in\complexes$, $\alpha\neq 0$ there exists $\frac{1}{\alpha}\in\complexes$ so that $\alpha\left(\frac{1}{\alpha}\right)=1$.<br><br>
+</li>
+</ul>
+
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.PCNA.knowl">Proof</a></div>
+</div>
+<p>Zero and one play special roles, of course, and especially zero.  Our first result is one we take for granted, but it requires a proof, derived from our nine properties.  You can compare it to its vector space counterparts, <a class="knowl" acro="ZSSM" type="Theorem" title="Zero Scalar in Scalar Multiplication" knowl="./knowls/theorem.ZSSM.knowl">Theorem ZSSM</a> and <a class="knowl" acro="ZVSM" type="Theorem" title="Zero Vector in Scalar Multiplication" knowl="./knowls/theorem.ZVSM.knowl">Theorem ZVSM</a>.</p>
+<div class="theorem" id="theorem-ZPCN" acro="ZPCN" titletext="Zero Product, Complex Numbers">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ZPCN</span><span class="titletext"> Zero Product, Complex Numbers</span>
+</h5>
+<div class="statement"><p>Suppose $\alpha\in\complexes$.  Then $0\alpha=0$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ZPCN.knowl">Proof</a></div>
+</div>
+<p>Our next theorem could be called “cancellation”, since it will make that possible.  Though you will never see us drawing slashes through parts of products.  We will also make very limited use of this result, or its vector space counterpart, <a class="knowl" acro="SMEZV" type="Theorem" title="Scalar Multiplication Equals the Zero Vector" knowl="./knowls/theorem.SMEZV.knowl">Theorem SMEZV</a>.</p>
+<div class="theorem" id="theorem-ZPZT" acro="ZPZT" titletext="Zero Product, Zero Terms">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ZPZT</span><span class="titletext"> Zero Product, Zero Terms</span>
+</h5>
+<div class="statement"><p>Suppose $\alpha,\beta\in\complexes$.  Then $\alpha\beta=0$ if and only if at least one of $\alpha=0$ or $\beta=0$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ZPZT.knowl">Proof</a></div>
+</div>
+<p>As an equivalence (<a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a>), we could restate this result as the contrapositive (<a class="knowl" acro="CP" type="Proof Technique" title="Contrapositives" knowl="./knowls/technique.CP.knowl">Proof Technique CP</a>) by negating each statement, so it would read “$\alpha\beta\neq 0$ if and only if $\alpha\neq 0$ and $\beta\neq 0$.”  After you have learned more about nonsingular matrices and matrix multiplication, you should compare this result with <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>.</p>
+</div>
+<div class="subsection" id="subsection-CCN" acro="CCN" titletext="Conjugates of Complex Numbers">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CCN</span> <span class="titletext">Conjugates of Complex Numbers</span>
+</h4>
+<div class="definition" id="definition-CCN" acro="CCN" titletext="Conjugate of a Complex Number">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CCN</span> <span class="titletext"> Conjugate of a Complex Number</span>
+</h5>
+<p>The <em class="term">conjugate</em> of the complex number $\alpha=a+bi\in\complex{\null}$  is the complex number $\conjugate{\alpha}=a-bi$.</p>
+</div>
+<div class="example" id="example-CSCN" acro="CSCN" titletext="Conjugate of some complex numbers"><h5 class="example">
+<a knowl="./knowls/example.CSCN.knowl"><span class="type">Example</span> <span class="acro">CSCN</span></a> <span class="titletext">Conjugate of some complex numbers</span>
+</h5></div>
+<p>Notice how the conjugate of a real number leaves the number unchanged.  The conjugate enjoys some basic properties that are useful when we work with linear expressions involving addition and multiplication.</p>
+<div class="theorem" id="theorem-CCRA" acro="CCRA" titletext="Complex Conjugation Respects Addition">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CCRA</span><span class="titletext"> Complex Conjugation Respects Addition</span>
+</h5>
+<div class="statement"><p>Suppose that $\alpha$ and $\beta$ are complex numbers.  Then $\conjugate{\alpha+\beta}=\conjugate{\alpha}+\conjugate{\beta}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CCRA.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-CCRM" acro="CCRM" titletext="Complex Conjugation Respects Multiplication">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CCRM</span><span class="titletext"> Complex Conjugation Respects Multiplication</span>
+</h5>
+<div class="statement"><p>Suppose that $\alpha$ and $\beta$ are complex numbers.  Then $\conjugate{\alpha\beta}=\conjugate{\alpha}\conjugate{\beta}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CCRM.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-CCT" acro="CCT" titletext="Complex Conjugation Twice">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CCT</span><span class="titletext"> Complex Conjugation Twice</span>
+</h5>
+<div class="statement"><p>Suppose that $\alpha$ is a complex number.  Then $\conjugate{\conjugate{\alpha}}=\alpha$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CCT.knowl">Proof</a></div>
+</div>
+</div>
+<div class="subsection" id="subsection-MCN" acro="MCN" titletext="Modulus of a Complex Number">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">MCN</span> <span class="titletext">Modulus of a Complex Number</span>
+</h4>
+<p>We define one more operation with complex numbers that may be new to you.</p>
+<div class="definition" id="definition-MCN" acro="MCN" titletext="Modulus of a Complex Number">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">MCN</span> <span class="titletext"> Modulus of a Complex Number</span>
+</h5>
+<p>The <em class="term">modulus</em> of the complex number $\alpha=a+bi\in\complex{\null}$, is the nonnegative real number
+\begin{equation*}
+\modulus{\alpha}=\sqrt{\conjugate{\alpha}\alpha}=\sqrt{a^2+b^2}.
+\end{equation*}
+</p>
+</div>
+<div class="example" id="example-MSCN" acro="MSCN" titletext="Modulus of some complex numbers"><h5 class="example">
+<a knowl="./knowls/example.MSCN.knowl"><span class="type">Example</span> <span class="acro">MSCN</span></a> <span class="titletext">Modulus of some complex numbers</span>
+</h5></div>
+<p>The modulus can be interpreted as a version of the absolute value for complex numbers, as is suggested by the notation employed.  You can see this in how $\modulus{-3}=\modulus{-3+0i}=3$.  Notice too how the modulus of the complex zero, $0+0i$, has value $0$.</p>
+</div>
+</div></div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>

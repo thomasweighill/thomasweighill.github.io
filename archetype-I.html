@@ -1,0 +1,378 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js",
+               "TeX/AMSmath.js",
+               "TeX/AMSsymbols.js",
+               "http://aimath.org/mathbook/mathjaxknowl.js",
+               ],
+  tex2jax: {
+    inlineMath: [['$','$'],["\\(","\\)"]],
+    processEscapes: true,
+  },
+TeX: {
+   Macros: {
+denote: ["",4],
+null: "",
+sb: "_",
+leading: ["\\fbox{#1}",1],
+rref: "\\xrightarrow{\\text{RREF}}",
+rowopswap: ["R_{#1} \\leftrightarrow R_{#2}",2],
+rowopmult: ["#1 R_{#2}",2],
+rowopadd: ["#1 R_{#2} + R_{#3}",3],
+compose: ["#1 \\circ #2",2],
+inverse: ["#1^{-1}",1],
+setcomplement: ["\\overline{#1}",1],
+ltinverse: ["#1^{-1}",1],
+preimage: ["#1^{-1}\\left(#2\\right)",2],
+lt: ["#1\\left(#2\\right)",2],
+transpose: ["#1^{t}",1],
+adjoint: ["#1^{\\ast}",1],
+adj: ["\\transpose{\\left(\\conjugate{#1}\\right)}",1],
+similar: ["\\inverse{#2}#1#2",2],
+detname: ["\\det\\left(#1\\right)",1],
+dimension: ["\\dim\\left(#1\\right)",1],
+colvector: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+vslt: ["{\\mathcal LT}\\left(#1,#2\\right)",2],
+lns: ["{\\mathcal L}\\left(#1\\right)",1],
+nsp: ["{\\mathcal N}\\left(#1\\right)",1],
+csp: ["{\\mathcal C}\\left(#1\\right)",1],
+rsp: ["{\\mathcal R}\\left(#1\\right)",1],
+rng: ["{\\mathcal R}\\left(#1\\right)",1],
+krn: ["{\\mathcal K}\\left(#1\\right)",1],
+vectrepname: ["\\rho_{#1}",1],
+vectrep: ["\\lt{\\vectrepname{#1}}{#2}",2],
+vectrepinvname: ["\\ltinverse{\\vectrepname{#1}}",1],
+vectrepinv: ["\\lt{\\ltinverse{\\vectrepname{#1}}}{#2}",2],
+matrixrepcolumns: ["\\left\\lbrack \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{1}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{2}}}\\right| \\left.\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{3}}}\\right| \\ldots \\left|\\vectrep{#2}{\\lt{#1}{\\vect{#3}\\sb{#4}}}\\right.  \\right\\rbrack",4],
+matrixrep: ["M^{#1}_{#2,#3}",3],
+cbm: ["C_{#1,#2}",2],
+jordan: ["J_{#1}\\left(#2\\right)",2],
+restrict: ["{#1}|\\sb{#2}",2],
+indx: ["\\iota_{#1}|\\left(#2\\right)",2],
+rank: ["r\\left(#1\\right)",1],
+nullity: ["n\\left(#1\\right)",1],
+eigenspace: ["{\\mathcal E}_{#1}\\left(#2\\right)",2],
+eigensystem: ["\\lambda&=#2&\\eigenspace{#1}{#2}&=\\spn{\\set{#3}}",3],
+geneigenspace: ["{\\mathcal G}_{#1}\\left(#2\\right)",2],
+innerproduct: ["\\FCLAlangle#1,#2\\FCLArangle",2],
+spn: ["\\FCLAlangle#1\\FCLArangle",1],
+card: ["\\FCLAlvert#1\\FCLArvert",1],
+detbars: ["\\FCLAlvert#1\\FCLArvert",1],
+modulus: ["\\FCLAlvert#1\\FCLArvert",1],
+norm: ["\\FCLAlVert#1\\FCLArVert",1],
+matrixentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+vectorentry: ["\\FCLAlbrack#1\\FCLArbrack_{#2}",2],
+matrixcolumns: ["\\left\\lbrack\\vect{#1}_{1}|\\vect{#1}_{2}|\\vect{#1}_{3}|\\ldots|\\vect{#1}_{#2}\\right\\rbrack",2],
+vectorlist: ["\\vect{#1}_{1}, \\vect{#1}_{2}, \\vect{#1}_{3}, \\ldots, \\vect{#1}_{#2}",2],
+scalarlist: ["{#1}_{1}, {#1}_{2}, {#1}_{3}, \\ldots, {#1}_{#2}",2],
+set: ["\\FCLAlsetbrack#1\\FCLArsetbrack",1],
+setparts: ["\\FCLAlsetbrack\\FCLAlnull #1 \\FCLArvert #2 \\FCLArsetbrack",2],
+algmult: ["\\alpha_{#1}\\left(#2\\right)",2],
+geomult: ["\\gamma_{#1}\\left(#2\\right)",2],
+charpoly: ["p_{#1}\\left(#2\\right)",2],
+augmented: ["\\FCLAlbrack\\FCLAlnull#1\\FCLArvert#2\\FCLArbrack",2],
+linearsystem: ["{\\mathcal L}{\\mathcal S}\\left(#1,#2\\right)",2],
+homosystem: ["\\linearsystem{#1}{\\zerovector}",1],
+lincombo: ["#1_{1}\\vect{#2}_{1}+#1_{2}\\vect{#2}_{2}+#1_{3}\\vect{#2}_{3}+\\cdots +#1_{#3}\\vect{#2}_{#3}",3],
+submatrix: ["#1\\left(#2|#3\\right)",3],
+elemswap: ["E_{#1,#2}",2],
+elemmult: ["E_{#2}\\left(#1\\right)",2],
+elemadd: ["E_{#2,#3}\\left(#1\\right)",3],
+ltdefn: ["#1 : #2 \\rightarrow #3",3],
+zerovector: "\\vect{0}",
+zeromatrix: "{\\mathcal 0}",
+vect: ["{\\bf #1}",1],
+conjugate: ["\\overline{#1}",1],
+ds: "\\oplus",
+isomorphic: "\\cong",
+complexes: "{\\mathbb C}",
+complex: ["{\\mathbb C}^{#1}",1],
+real: ["{\\mathbb R}^{#1}",1],
+FCLAlangle: "\\left\\langle",
+FCLArangle: "\\right\\rangle",
+FCLAlbrack: "\\left\\lbrack",
+FCLArbrack: "\\right\\rbrack",
+FCLAlvert: "\\left\\lvert",
+FCLArvert: "\\right\\rvert",
+FCLAlVert: "\\left\\lVert",
+FCLArVert: "\\right\\rVert",
+FCLAlnull: "\\left.",
+FCLArnull: "\\right.",
+FCLAlsetbrack: "\\left\\{",
+FCLArsetbrack: "\\right\\}",
+intertext: ["\\\\ \\text{#1}\\\\ ",1],
+}
+},
+  CommonHTML: { scale: 85 },
+  menuSettings: { zscale: "150%", zoom: "Double-Click" }
+});
+
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML-full"></script><script type="text/javascript" src="http://sagecell.sagemath.org/static/jquery.min.js"></script><script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script><style type="text/css">
+.sagecell .CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.sagecell .CodeMirror {
+    height: auto;
+}
+
+
+.sagecell-practice .CodeMirror-scroll {
+  height: 100px;
+}
+
+.sagecell button.sagecell_evalButton {
+    font-size: 80%;
+}
+
+.sagecell_sessionContainer {
+    margin-bottom:1em;
+}
+</style>
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script><link href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="css/beezer.css" rel="stylesheet" type="text/css">
+<link href="css/beezer-addon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+<div id="logo"><a href="http://linear.pugetsound.edu/"><img src="images/cover-84x120.png"></a></div>
+<div class="right"><div class="bread">
+<a href="fcla.html">A First Course in Linear Algebra</a> » <a href="archetypes.html">Archetypes</a> » <a href="archetype-I.html">I</a> »</div></div>
+<div id="title"><span id="title-content">
+Archetype I</span></div>
+</div>
+<div id="sidebar">
+<h2 class="link"><a href="fcla.html">A First Course in Linear Algebra</a></h2>
+<ul class="list">
+<li><a href="preface.html">Preface</a></li>
+<li><a href="acknowledgements.html">Dedication and Acknowledgements</a></li>
+</ul>
+<h2 class="link"><a href="chapter-SLE.html">Systems of Linear Equations</a></h2>
+<ul class="list">
+<li><a href="section-WILA.html">What is Linear Algebra?</a></li>
+<li><a href="section-SSLE.html">Solving Systems of Linear Equations</a></li>
+<li><a href="section-RREF.html">Reduced Row-Echelon Form</a></li>
+<li><a href="section-TSS.html">Types of Solution Sets</a></li>
+<li><a href="section-HSE.html">Homogeneous Systems of Equations</a></li>
+<li><a href="section-NM.html">Nonsingular Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-V.html">Vectors</a></h2>
+<ul class="list">
+<li><a href="section-VO.html">Vector Operations</a></li>
+<li><a href="section-LC.html">Linear Combinations</a></li>
+<li><a href="section-SS.html">Spanning Sets</a></li>
+<li><a href="section-LI.html">Linear Independence</a></li>
+<li><a href="section-LDS.html">Linear Dependence and Spans</a></li>
+<li><a href="section-O.html">Orthogonality</a></li>
+</ul>
+<h2 class="link"><a href="chapter-M.html">Matrices</a></h2>
+<ul class="list">
+<li><a href="section-MO.html">Matrix Operations</a></li>
+<li><a href="section-MM.html">Matrix Multiplication</a></li>
+<li><a href="section-MISLE.html">Matrix Inverses and Systems of Linear Equations</a></li>
+<li><a href="section-MINM.html">Matrix Inverses and Nonsingular Matrices</a></li>
+<li><a href="section-CRS.html">Column and Row Spaces</a></li>
+<li><a href="section-FS.html">Four Subsets</a></li>
+</ul>
+<h2 class="link"><a href="chapter-VS.html">Vector Spaces</a></h2>
+<ul class="list">
+<li><a href="section-VS.html">Vector Spaces</a></li>
+<li><a href="section-S.html">Subspaces</a></li>
+<li><a href="section-LISS.html">Linear Independence and Spanning Sets</a></li>
+<li><a href="section-B.html">Bases</a></li>
+<li><a href="section-D.html">Dimension</a></li>
+<li><a href="section-PD.html">Properties of Dimension</a></li>
+</ul>
+<h2 class="link"><a href="chapter-D.html">Determinants</a></h2>
+<ul class="list">
+<li><a href="section-DM.html">Determinant of a Matrix</a></li>
+<li><a href="section-PDM.html">Properties of Determinants of Matrices</a></li>
+</ul>
+<h2 class="link"><a href="chapter-E.html">Eigenvalues</a></h2>
+<ul class="list">
+<li><a href="section-EE.html">Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-PEE.html">Properties of Eigenvalues and Eigenvectors</a></li>
+<li><a href="section-SD.html">Similarity and Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-LT.html">Linear Transformations</a></h2>
+<ul class="list">
+<li><a href="section-LT.html">Linear Transformations</a></li>
+<li><a href="section-ILT.html">Injective Linear Transformations</a></li>
+<li><a href="section-SLT.html">Surjective Linear Transformations</a></li>
+<li><a href="section-IVLT.html">Invertible Linear Transformations</a></li>
+</ul>
+<h2 class="link"><a href="chapter-R.html">Representations</a></h2>
+<ul class="list">
+<li><a href="section-VR.html">Vector Representations</a></li>
+<li><a href="section-MR.html">Matrix Representations</a></li>
+<li><a href="section-CB.html">Change of Basis</a></li>
+<li><a href="section-OD.html">Orthonormal Diagonalization</a></li>
+</ul>
+<h2 class="link"><a href="chapter-P.html">Preliminaries</a></h2>
+<ul class="list">
+<li><a href="section-CNO.html">Complex Number Operations</a></li>
+<li><a href="section-SET.html">Sets</a></li>
+</ul>
+<h2 class="link"><a href="archetypes.html">Archetypes</a></h2>
+<ul class="list">
+<li> 
+            <a href="archetype-A.html">A</a><a href="archetype-B.html">B</a><a href="archetype-C.html">C</a><a href="archetype-D.html">D</a><a href="archetype-E.html">E</a><a href="archetype-F.html">F</a><a href="archetype-G.html">G</a><a href="archetype-H.html">H</a><a href="archetype-I.html">I</a><a href="archetype-J.html">J</a><a href="archetype-K.html">K</a><a href="archetype-L.html">L</a><a href="archetype-M.html">M</a>
+</li>
+<li> 
+            <a href="archetype-N.html">N</a><a href="archetype-O.html">O</a><a href="archetype-P.html">P</a><a href="archetype-Q.html">Q</a><a href="archetype-R.html">R</a><a href="archetype-S.html">S</a><a href="archetype-T.html">T</a><a href="archetype-U.html">U</a><a href="archetype-V.html">V</a><a href="archetype-W.html">W</a><a href="archetype-X.html">X</a>
+</li>
+</ul>
+<h2 class="link"><a href="reference.html">Reference</a></h2>
+<ul class="list">
+<li><a href="notation.html">Notation</a></li>
+<li><a href="definitions.html">Definitions</a></li>
+<li><a href="theorems.html">Theorems</a></li>
+<li><a href="diagrams.html">Diagrams</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="sage.html">Sage</a></li>
+<li><a href="techniques.html">Proof Techniques</a></li>
+<li><a href="GFDL.html">GFDL License</a></li>
+</ul>
+</div>
+<div id="main"><div id="content">
+
+
+
+<p>$\square$  Summary: System with four equations, seven variables.  Consistent.  Null space of coefficient matrix has dimension 4.</p>
+
+<p>$\square$  A system of linear equations (<a class="knowl" acro="SLE" type="Definition" title="System of Linear Equations" knowl="./knowls/definition.SLE.knowl">Definition SLE</a>).\begin{align*}
+x_1 +4x_2  - x_4  + 7x_6 - 9x_7 &amp;= 3\\
+2x_1 + 8x_2 - x_3 + 3x_4 + 9x_5 - 13x_6 + 7x_7 &amp;= 9\\
+ 2x_3 -3x_4 -4x_5 +12x_6 -8x_7 &amp;= 1\\
+-x_1  - 4x_2 + 2x_3 +4x_4 + 8x_5 - 31x_6 + 37x_7 &amp;= 4
+\end{align*}
+
+</p>
+
+<p>$\square$  Some solutions to the system of linear equations, not necessarily exhaustive (<a class="knowl" acro="SSLE" type="Definition" title="Solution of a System of Linear Equations" knowl="./knowls/definition.SSLE.knowl">Definition SSLE</a>):<br><br>$x_1=-25$, $x_2=4$, $x_3=22$, $x_4=29$, $x_5=1$, $x_6=2$, $x_7=-3$<br>
+$x_1=-7$, $x_2=5$, $x_3=7$, $x_4=15$, $x_5=-4$, $x_6=2$, $x_7=1$<br>
+$x_1=4$, $x_2=0$, $x_3=2$, $x_4=1$, $x_5=0$, $x_6=0$, $x_7=0$
+</p>
+
+<p>$\square$  Augmented matrix of the linear system of equations (<a class="knowl" acro="AM" type="Definition" title="Augmented Matrix" knowl="./knowls/definition.AM.knowl">Definition AM</a>):\begin{bmatrix}
+ 1 &amp; 4 &amp; 0 &amp; -1 &amp; 0 &amp; 7 &amp;  -9 &amp; 3 \\
+ 2 &amp; 8 &amp;  -1 &amp; 3 &amp; 9 &amp;  -13 &amp; 7 &amp; 9 \\
+ 0 &amp; 0 &amp;  2 &amp; -3 &amp; -4 &amp; 12 &amp;  -8 &amp; 1 \\
+ -1 &amp;  -4 &amp; 2 &amp; 4 &amp; 8 &amp;  -31 &amp; 37 &amp; 4
+\end{bmatrix}
+</p>
+
+<p>$\square$  Matrix in reduced row-echelon form, row-equivalent to the augmented matrix. (<a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>)\begin{bmatrix}
+\leading{1} &amp; 4 &amp; 0 &amp; 0 &amp; 2 &amp; 1 &amp; -3 &amp; 4 \\
+0 &amp; 0 &amp; \leading{1}  &amp;  0 &amp; 1 &amp;  -3 &amp; 5 &amp; 2 \\
+0 &amp; 0 &amp;  0 &amp; \leading{1} &amp; 2 &amp;  -6 &amp; 6 &amp; 1 \\
+0 &amp; 0 &amp;  0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+</p>
+
+<p>$\square$  Analysis of the augmented matrix (<a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>).\begin{align*}r&amp;=3&amp;D&amp;=\set{1,\,3,\,4}&amp;F&amp;=\set{2,\,5,\,6,\,7,\,8}\end{align*}</p>
+
+<p>$\square$  Vector form of the solution set to the system of equations (<a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a>).  Notice the relationship between the free variables and the set $F$ above.   Also, notice the pattern of 0's and 1's in the entries of the vectors corresponding to elements of the set $F$ in the larger examples.<br><br>$\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{4\\0\\2\\1\\0\\0\\0} +
+x_2\colvector{-4\\1\\0\\0\\0\\0\\0}+
+x_5\colvector{-2\\0\\-1\\-2\\1\\0\\0}+
+x_6\colvector{-1\\0\\3\\6\\0\\1\\0}+
+x_7\colvector{3\\0\\-5\\-6\\0\\0\\1}$
+</p>
+
+<p>$\square$  Given a system of equations we can always build a new, related, homogeneous system (<a class="knowl" acro="HS" type="Definition" title="Homogeneous System" knowl="./knowls/definition.HS.knowl">Definition HS</a>) by converting the constant terms to zeros and retaining the coefficients of the variables.  Properties of this new system will have precise relationships with various properties of the original system.\begin{align*}
+x_1 +4x_2  - x_4  + 7x_6 - 9x_7 &amp;= 0\\
+2x_1 + 8x_2 - x_3 + 3x_4 + 9x_5 - 13x_6 + 7x_7 &amp;= 0\\
+ 2x_3 -3x_4 -4x_5 +12x_6 -8x_7 &amp;= 0\\
+-x_1  - 4x_2 + 2x_3 +4x_4 + 8x_5 - 31x_6 + 37x_7 &amp;= 0
+\end{align*}
+
+</p>
+
+<p>$\square$  Some solutions to the associated homogenous system of linear equations, not necessarily exhaustive (<a class="knowl" acro="SSLE" type="Definition" title="Solution of a System of Linear Equations" knowl="./knowls/definition.SSLE.knowl">Definition SSLE</a>).  Review <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a> as you consider these solutions. <br><br>$x_1=0$, $x_2=0$, $x_3=0$, $x_4=0$, $x_5=0$, $x_6=0$, $x_7=0$<br>
+$x_1=3$, $x_2=0$, $x_3=-5$, $x_4=-6$, $x_5=0$, $x_6=0$, $x_7=1$<br>
+$x_1=-1$, $x_2=0$, $x_3=3$, $x_4=6$, $x_5=0$, $x_6=1$, $x_7=0$<br>
+$x_1=-2$, $x_2=0$, $x_3=-1$, $x_4=-2$, $x_5=1$, $x_6=0$, $x_7=0$<br>
+$x_1=-4$, $x_2=1$, $x_3=0$, $x_4=0$, $x_5=0$, $x_6=0$, $x_7=0$<br>
+$x_1=-4$, $x_2=1$, $x_3=-3$, $x_4=-2$, $x_5=1$, $x_6=1$, $x_7=1$
+</p>
+
+<p>$\square$  Form the augmented matrix of the homogenous linear system, and use row operations to convert to reduced row-echelon form.  Notice how the entries of the final column remain zeros.\begin{bmatrix}
+\leading{1} &amp; 4 &amp; 0 &amp; 0 &amp; 2 &amp; 1 &amp; -3 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp;  0 &amp; 1 &amp;  -3 &amp; 5 &amp; 0 \\
+0 &amp; 0 &amp;  0 &amp; \leading{1} &amp; 2 &amp;  -6 &amp; 6 &amp; 0 \\
+0 &amp; 0 &amp;  0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+</p>
+
+<p>$\square$  Analysis of the augmented matrix for the homogenous system (<a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>).  Compare this with the same analysis of the original system, especially in the case where the original system is inconsistent (<a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>).\begin{align*}r&amp;=3&amp;D&amp;=\set{1,\,3,\,4}&amp;F&amp;=\set{2,\,5,\,6,\,7,\,8}\end{align*}</p>
+
+<p>$\square$  For any system of equations we can isolate the coefficient matrix, which will be identical to the coefficient matrix of the associated homogenous system.  For the remainder of the discussion of this system of equations, we will analyze just the coefficient matrix.\begin{bmatrix}
+ 1 &amp; 4 &amp; 0 &amp; -1 &amp; 0 &amp; 7 &amp;  -9 \\
+ 2 &amp; 8 &amp;  -1 &amp; 3 &amp; 9 &amp;  -13 &amp; 7\\
+ 0 &amp; 0 &amp;  2 &amp; -3 &amp; -4 &amp; 12 &amp;  -8\\
+ -1 &amp;  -4 &amp; 2 &amp; 4 &amp; 8 &amp;  -31 &amp; 37
+\end{bmatrix}
+</p>
+
+<p>$\square$  Row-equivalent matrix in reduced row-echelon form (<a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>).\begin{bmatrix}
+\leading{1} &amp; 4 &amp; 0 &amp; 0 &amp; 2 &amp; 1 &amp; -3\\
+0 &amp; 0 &amp; \leading{1} &amp;  0 &amp; 1 &amp;  -3 &amp; 5\\
+0 &amp; 0 &amp;  0 &amp; \leading{1} &amp; 2 &amp;  -6 &amp; 6\\
+0 &amp; 0 &amp;  0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+</p>
+
+<p>$\square$  Analysis of the reduced row-echelon form of the matrix (<a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>).  For archetypes begin as systems of equations, compare this analysis with the analysis for the coefficient matrices of the original system, and of the associated homogeneous system.\begin{align*}r&amp;=3&amp;D&amp;=\set{1,\,3,\,4}&amp;F&amp;=\set{2,\,5,\,6,\,7}\end{align*}</p>
+
+<p>$\square$  Is the matrix nonsingular or singular? (Consider <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>.  At the same time, examine the sizes of the sets $D$ and $F$ for the analysis of the reduced row-echelon version of the matrix.)<br><br>Since the matrix is not square, the question does not apply.</p>
+
+<p>$\square$  The null space of the matrix.  The set of vectors used in the span construction is a linearly independent set of column vectors that spans the null space of the matrix (<a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>, <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a>).  Solve a homogenous system with this matrix as the coefficient matrix and write the solutions in vector form (<a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a>) to see these vectors arise.  Compare the entries of these vectors for indices in $D$ versus entries for indices in $F$.\begin{align*}\spn{\set{
+\colvector{-4\\1\\0\\0\\0\\0\\0},\,
+\colvector{-2\\0\\-1\\-2\\1\\0\\0},\,
+\colvector{-1\\0\\3\\6\\0\\1\\0},\,
+\colvector{3\\0\\-5\\-6\\0\\0\\1}
+}
+}\end{align*}</p>
+
+<p>$\square$  The column space of the matrix, expressed as the span of a set of linearly independent vectors that are also columns of the matrix.  These columns have indices that form the set $D$ above (<a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a>).\begin{align*}\spn{\set{\colvector{1\\2\\0\\-1},\,\colvector{0\\-1\\2\\2},\,\colvector{-1\\3\\-3\\4}}
+}\end{align*}</p>
+
+<p>$\square$  The column space of the matrix, as it arises from the extended echelon form of the matrix.  The matrix $L$ is computed as described in <a class="knowl" acro="EEF" type="Definition" title="Extended Echelon Form" knowl="./knowls/definition.EEF.knowl">Definition EEF</a>.  This is followed by the column space described as the span of a set of linearly independent vectors that equals the null space of $L$, computed as according to <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a> and <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a>.  When $r=m$, the matrix $L$ has no rows and the column space is all of $\complex{m}$.\begin{align*}L&amp;=\begin{bmatrix}1&amp;-\frac{12}{31}&amp;-\frac{13}{31}&amp;\frac{7}{31}\end{bmatrix}\end{align*}\begin{align*}\spn{\set{\colvector{-\frac{7}{31}\\0\\0\\1},\,\colvector{\frac{13}{31}\\0\\1\\0},\,
+\colvector{\frac{12}{31}\\1\\0\\0}}
+}\end{align*}</p>
+
+<p>$\square$  The column space of the matrix, expressed as the span of a set of linearly independent vectors.  These vectors are computed by bringing the transpose of the matrix into reduced row-echelon form, tossing out the zero rows, and writing the remaining nonzero rows as column vectors.  By <a class="knowl" acro="CSRST" type="Theorem" title="Column Space, Row Space, Transpose" knowl="./knowls/theorem.CSRST.knowl">Theorem CSRST</a> and <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a>, and in the style of <a class="knowl" acro="CSROI" type="Example" title="Column space from row operations, Archetype I" knowl="./knowls/example.CSROI.knowl">Example CSROI</a>, this yields a linearly independent set of vectors that span the column space.\begin{align*}\spn{\set{\colvector{1\\0\\0\\-\frac{31}{7}},\,\colvector{0\\1\\0\\\frac{12}{7}},\,\colvector{0\\0\\1\\\frac{13}{7}}}
+}\end{align*}</p>
+
+<p>$\square$  Row space of the matrix, expressed as a span of a set of linearly independent vectors, obtained from the nonzero rows of the row-equivalent matrix in reduced row-echelon form.  (<a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a>)\begin{align*}\spn{\set{\colvector{1\\4\\0\\0\\2\\1\\-3},\,\colvector{0\\0\\1\\0\\1\\-3\\5},\,\colvector{0\\0\\0\\1\\2\\-6\\6}}
+}\end{align*}</p>
+
+<p>$\square$  Subspace dimensions associated with the matrix (<a class="knowl" acro="ROM" type="Definition" title="Rank Of a Matrix" knowl="./knowls/definition.ROM.knowl">Definition ROM</a>, <a class="knowl" acro="NOM" type="Definition" title="Nullity Of a Matrix" knowl="./knowls/definition.NOM.knowl">Definition NOM</a>).  Verify <a class="knowl" acro="RPNC" type="Theorem" title="Rank Plus Nullity is Columns" knowl="./knowls/theorem.RPNC.knowl">Theorem RPNC</a>.\begin{align*}\text{Rank: }3&amp;&amp;\text{Nullity: }4&amp;&amp;\text{Matrix columns: }7&amp;\end{align*}</p>
+
+<p>$\square$  Determinant of the matrix.   The matrix is nonsingular if and only if the determinant is nonzero (<a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a>).The determinant is not defined for matrices that are not square.</p>
+
+</div></div>
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6386040-1");
+pageTracker._trackPageview();
+</script>
+<!-- End: Google Analytics Code -->
+<!-- StatCounter Code -->
+<script type="text/javascript">
+var sc_project=8375157;
+var sc_invisible=1;
+var sc_security="c03f6ece";
+</script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8375157/0/c03f6ece/1/" alt="web analytics"></a></div></noscript>
+<!-- End: StatCounter Code -->
+</body>
+</html>
