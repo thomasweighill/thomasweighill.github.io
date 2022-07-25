@@ -1,0 +1,6 @@
+<div class="solution" acro="NM.T10">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">NM.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Let $n$ denote the size of the square matrix $A$.  By <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> the hypothesis that $A$ is singular implies that $B$ is not the identity matrix $I_n$.  If $B$ has $n$ pivot columns, then it would have to be $I_n$, so $B$ must have fewer than $n$ pivot columns.  But the number of nonzero rows in $B$ ($r$) is equal to the number of pivot columns as well.  So the $n$ rows of $B$ have fewer than $n$ nonzero rows, and $B$ must contain at least one zero row.  By <a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>, this row must be at the bottom of $B$.<br><br>
+A proof can also be formulated by first forming the contrapositive of the statement (<a class="knowl" acro="CP" type="Proof Technique" title="Contrapositives" knowl="./knowls/technique.CP.knowl">Proof Technique CP</a>) and proving this statement.
+</div>

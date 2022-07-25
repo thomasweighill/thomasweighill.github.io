@@ -1,0 +1,24 @@
+<div class="subsection" id="subsection-EELT" acro="EELT" titletext="Eigenvalues and Eigenvectors of Linear Transformations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">EELT</span> <span class="titletext">Eigenvalues and Eigenvectors of Linear Transformations</span>
+</h4>
+<p>We now define the notion of an eigenvalue and eigenvector of a linear transformation.  It should not be too surprising, especially if you remind yourself of the close relationship between matrices and linear transformations.</p>
+<div class="definition" id="definition-EELT" acro="EELT" titletext="Eigenvalue and Eigenvector of a Linear Transformation">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EELT</span> <span class="titletext"> Eigenvalue and Eigenvector of a Linear Transformation</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{V}{V}$ is a linear transformation.  Then a nonzero vector $\vect{v}\in V$ is an <em class="term">eigenvector</em> of $T$ for the <em class="term">eigenvalue</em> $\lambda$ if $\lt{T}{\vect{v}}=\lambda\vect{v}$.</p>
+</div>
+<p>We will see shortly the best method for computing the eigenvalues and eigenvectors of a linear transformation, but for now, here are some examples to verify that such things really do exist.</p>
+<div class="example" id="example-ELTBM" acro="ELTBM" titletext="Eigenvectors of linear transformation between matrices"><h5 class="example">
+<a knowl="./knowls/example.ELTBM.knowl"><span class="type">Example</span> <span class="acro">ELTBM</span></a> <span class="titletext">Eigenvectors of linear transformation between matrices</span>
+</h5></div>
+<p>Here is another.</p>
+<div class="example" id="example-ELTBP" acro="ELTBP" titletext="Eigenvectors of linear transformation between polynomials"><h5 class="example">
+<a knowl="./knowls/example.ELTBP.knowl"><span class="type">Example</span> <span class="acro">ELTBP</span></a> <span class="titletext">Eigenvectors of linear transformation between polynomials</span>
+</h5></div>
+<p>Of course, these examples are meant only to illustrate the definition of eigenvectors and eigenvalues for linear transformations, and therefore beg the question, “How would I <em>find</em> eigenvectors?”  We will have an answer before we finish this section.  We need one more construction first.</p>
+<div class="sage" id="sage-ENDO" acro="ENDO" titletext="Endomorphisms"><h5 class="sage">
+<a knowl="./knowls/sage.ENDO.knowl"><span class="type">Sage</span> <span class="acro">ENDO</span></a> <span class="titletext">Endomorphisms</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CB.html#subsection-EELT" class="context" title="Section CB">(in context)</a></div>

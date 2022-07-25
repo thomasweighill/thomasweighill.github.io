@@ -1,0 +1,42 @@
+<div class="subsection" id="subsection-ME" acro="ME" titletext="Multiplicities of Eigenvalues">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">ME</span> <span class="titletext">Multiplicities of Eigenvalues</span>
+</h4>
+<p>A polynomial of degree $n$ will have exactly $n$ roots.  From this fact about polynomial equations we can say more about the algebraic multiplicities of eigenvalues.</p>
+<div class="theorem" id="theorem-DCP" acro="DCP" titletext="Degree of the Characteristic Polynomial">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DCP</span><span class="titletext"> Degree of the Characteristic Polynomial</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$.  Then the characteristic polynomial of $A$, $\charpoly{A}{x}$, has degree $n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DCP.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-NEM" acro="NEM" titletext="Number of Eigenvalues of a Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NEM</span><span class="titletext"> Number of Eigenvalues of a Matrix</span>
+</h5>
+<div class="statement"><p>Suppose that $\scalarlist{\lambda}{k}$ are the distinct eigenvalues of a square matrix $A$ of size $n$.  Then
+\begin{equation*}
+\sum_{i=1}^{k}\algmult{A}{\lambda_i}=n
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.NEM.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-ME" acro="ME" titletext="Multiplicities of an Eigenvalue">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ME</span><span class="titletext"> Multiplicities of an Eigenvalue</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$ and $\lambda$ is an eigenvalue.  Then
+\begin{equation*}
+1\leq\geomult{A}{\lambda}\leq\algmult{A}{\lambda}\leq n
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.ME.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-MNEM" acro="MNEM" titletext="Maximum Number of Eigenvalues of a Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MNEM</span><span class="titletext"> Maximum Number of Eigenvalues of a Matrix</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$.  Then $A$ cannot have more than $n$ distinct eigenvalues.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MNEM.knowl">Proof</a></div>
+</div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#subsection-ME" class="context" title="Section PEE">(in context)</a></div>

@@ -1,0 +1,46 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-UM', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">UM</span> <span class="titletext">Unitary Matrices</span>
+</h5>
+
+
+<p>No surprise about how we check if a matrix is unitary.  Here is <a class="knowl" acro="UM3" type="Example" title="Unitary matrix of size 3" knowl="./knowls/example.UM3.knowl">Example UM3</a>,</p>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">A = matrix(QQbar, [
+    [(1+I)/sqrt(5), (3+2*I)/sqrt(55), (2+2*I)/sqrt(22)],
+    [(1-I)/sqrt(5), (2+2*I)/sqrt(55),  (-3+I)/sqrt(22)],
+    [    I/sqrt(5), (3-5*I)/sqrt(55),    (-2)/sqrt(22)]
+                  ])
+A.is_unitary()
+</script></div>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">A.conjugate_transpose() == A.inverse()
+</script></div>
+
+<p>We can verify <a class="knowl" acro="UMPIP" type="Theorem" title="Unitary Matrices Preserve Inner Products" knowl="./knowls/theorem.UMPIP.knowl">Theorem UMPIP</a>, where the vectors <span class="code">u</span> and <span class="code">v</span> are created randomly.  Try evaluating this compute cell with your own choices.</p>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">u = random_vector(QQ, 3) + QQbar(I)*random_vector(QQ, 3)
+v = random_vector(QQ, 3) + QQbar(I)*random_vector(QQ, 3)
+(A*u).hermitian_inner_product(A*v) == u.hermitian_inner_product(v)
+</script></div>
+
+<p>If you want to experiment with permutation matrices, Sage has these too.  We can create a permutation matrix from a list that indicates for each column the row with a one in it.  Notice that the product here of two permutation matrices is again a permutation matrix.</p>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">sigma = Permutation([2,3,1])
+S = sigma.to_matrix(); S
+</script></div>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">tau = Permutation([1,3,2])
+T = tau.to_matrix(); T
+</script></div>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">S*T
+</script></div>
+
+<br><br><div class="sage-UM"><script type="text/x-sage">rho = Permutation([2, 1, 3])
+S*T == rho.to_matrix()
+</script></div>
+
+<br><br><div class="sage-UM sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

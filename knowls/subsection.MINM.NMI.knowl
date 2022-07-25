@@ -1,0 +1,70 @@
+<div class="subsection" id="subsection-NMI" acro="NMI" titletext="Nonsingular Matrices are Invertible">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">NMI</span> <span class="titletext">Nonsingular Matrices are Invertible</span>
+</h4>
+<p>We need a couple of technical results for starters.  Some books would call these minor, but essential, results “lemmas.”  We'll just call 'em theorems.  See <a class="knowl" acro="LC" type="Proof Technique" title="Lemmas and Corollaries" knowl="./knowls/technique.LC.knowl">Proof Technique LC</a> for more on the distinction.</p>
+<p>The first of these technical results is interesting in that the hypothesis says something about a product of two square matrices and the conclusion then says the same thing about each individual matrix in the product.  This result has an analogy in the algebra of complex numbers: suppose $\alpha,\,\beta\in\complexes$, then $\alpha\beta\neq 0$ if and only if $\alpha\neq 0$ and $\beta\neq 0$.  We can view this result as suggesting that the term “nonsingular” for matrices is like the term “nonzero” for scalars.  Consider too that we know singular matrices, as coefficient matrices for systems of equations, will sometimes lead to systems with no solutions, or systems with infinitely many solutions (<a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>).  What do linear equations with zero look like?  Consider $0x=5$, which has no solution, and $0x=0$, which has infinitely many solutions.  In the algebra of scalars, zero is exceptional (meaning different, not better), and in the algebra of matrices, singular matrices are also the exception.  While there is only one zero scalar, and there are infinitely many singular matrices, we will see that singular matrices are a distinct minority.</p>
+<div class="theorem" id="theorem-NPNT" acro="NPNT" titletext="Nonsingular Product has Nonsingular Terms">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NPNT</span><span class="titletext"> Nonsingular Product has Nonsingular Terms</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ and $B$ are square matrices of size $n$.  The product $AB$ is nonsingular if and only if $A$ and $B$ are both nonsingular.</p></div>
+<div class="proof"><a knowl="./knowls/proof.NPNT.knowl">Proof</a></div>
+</div>
+<p>This is a powerful result in the “forward” direction, because it allows us to begin with a hypothesis that something complicated (the matrix product $AB$) has the property of being nonsingular, and we can then conclude that the simpler constituents ($A$ and $B$ individually) then also have the property of being nonsingular.  If we had thought that the matrix product was an artificial construction, results like this would make us begin to think twice.</p>
+<p>The contrapositive of this entire result is equally interesting.  It says that $A$ or $B$ (or both) is a singular matrix if and only if the product $AB$ is singular.  (See <a class="knowl" acro="CP" type="Proof Technique" title="Contrapositives" knowl="./knowls/technique.CP.knowl">Proof Technique CP</a>.)</p>
+<div class="theorem" id="theorem-OSIS" acro="OSIS" titletext="One-Sided Inverse is Sufficient">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">OSIS</span><span class="titletext"> One-Sided Inverse is Sufficient</span>
+</h5>
+<div class="statement"><p>Suppose $A$ and $B$ are  square matrices of size $n$ such that $AB=I_n$.  Then $BA=I_n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.OSIS.knowl">Proof</a></div>
+</div>
+<p>So <a class="knowl" acro="OSIS" type="Theorem" title="One-Sided Inverse is Sufficient" knowl="./knowls/theorem.OSIS.knowl">Theorem OSIS</a> tells us that if $A$ is nonsingular, then the matrix $B$ guaranteed by <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> will be both a “right-inverse” and a “left-inverse” for $A$, so $A$ is invertible and $\inverse{A}=B$.</p>
+<p>So if you have a nonsingular matrix, $A$, you can use the procedure described in <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> to find an inverse for $A$.  If $A$ is singular, then the procedure in <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> will fail as the first $n$ columns of $M$ will not row-reduce to the identity matrix.  However, we can say a bit more.  When $A$ is singular, then $A$ does not have an inverse (which is very different from saying that the procedure in <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> fails to find an inverse).
+This may feel like we are splitting hairs, but it is important that we do not make unfounded assumptions.  These observations motivate the next theorem.</p>
+<div class="theorem" id="theorem-NI" acro="NI" titletext="Nonsingularity is Invertibility">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NI</span><span class="titletext"> Nonsingularity is Invertibility</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Then $A$ is nonsingular if and only if $A$ is invertible.</p></div>
+<div class="proof"><a knowl="./knowls/proof.NI.knowl">Proof</a></div>
+</div>
+<p>So for a square matrix, the properties of having an inverse and of having a trivial null space are one and the same.  Cannot have one without the other.</p>
+<div class="theorem" id="theorem-NME3" acro="NME3" titletext="Nonsingular Matrix Equivalences, Round 3">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NME3</span><span class="titletext"> Nonsingular Matrix Equivalences, Round 3</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$.  The following are equivalent.
+<ol>
+<li> $A$ is nonsingular.
+</li>
+<li> $A$ row-reduces to the identity matrix.
+</li>
+<li> The null space of $A$ contains only the zero vector, $\nsp{A}=\set{\zerovector}$.
+</li>
+<li> The linear system $\linearsystem{A}{\vect{b}}$ has a unique solution for every possible choice of $\vect{b}$.
+</li>
+<li> The columns of $A$ are a linearly independent set.
+</li>
+<li> $A$ is invertible.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.NME3.knowl">Proof</a></div>
+</div>
+<p>In the case that $A$ is a nonsingular coefficient matrix of a system of equations, the inverse allows us to very quickly compute the unique solution, for any vector of constants.</p>
+<div class="theorem" id="theorem-SNCM" acro="SNCM" titletext="Solution with Nonsingular Coefficient Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SNCM</span><span class="titletext"> Solution with Nonsingular Coefficient Matrix</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is nonsingular.  Then the unique solution to $\linearsystem{A}{\vect{b}}$ is $\inverse{A}\vect{b}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SNCM.knowl">Proof</a></div>
+</div>
+<div class="sage" id="sage-MI" acro="MI" titletext="Matrix Inverse"><h5 class="sage">
+<a knowl="./knowls/sage.MI.knowl"><span class="type">Sage</span> <span class="acro">MI</span></a> <span class="titletext">Matrix Inverse</span>
+</h5></div>
+<div class="sage" id="sage-NME3" acro="NME3" titletext="Nonsingular Matrix Equivalences, Round 3"><h5 class="sage">
+<a knowl="./knowls/sage.NME3.knowl"><span class="type">Sage</span> <span class="acro">NME3</span></a> <span class="titletext">Nonsingular Matrix Equivalences, Round 3</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MINM.html#subsection-NMI" class="context" title="Section MINM">(in context)</a></div>

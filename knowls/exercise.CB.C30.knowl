@@ -1,0 +1,12 @@
+<div class="exercise" acro="CB.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CB.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find a basis for the vector space $P_3$  composed of eigenvectors of the linear transformation $T$.  Then find a matrix representation of $T$ relative to this basis.
+\begin{equation*}
+\ltdefn{T}{P_3}{P_3},\quad\lt{T}{a+bx+cx^2+dx^3}=
+(a+c+d)+(b+c+d)x+(a+b+c)x^2+(a+b+d)x^3
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CB.C30.knowl">Solution</a></p></div>
+</div>

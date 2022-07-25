@@ -1,0 +1,11 @@
+<div class="exercise" acro="LISS.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LISS.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In the vector space of polynomials $P_3$, determine if the set $S$ is linearly independent or linearly dependent.
+\begin{equation*}
+S=\set{2 +x -3x^2 -8x^3,\, 1+ x + x^2 +5x^3,\, 3 -4x^2 -7x^3}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LISS.C22.knowl">Solution</a></p></div>
+</div>

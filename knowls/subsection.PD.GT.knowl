@@ -1,0 +1,62 @@
+<div class="subsection" id="subsection-GT" acro="GT" titletext="Goldilocks' Theorem">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">GT</span> <span class="titletext">Goldilocks' Theorem</span>
+</h4>
+<p>We begin with a useful theorem that we will need later, and in the proof of the main theorem in this subsection.  This theorem says that we can extend linearly independent sets, one vector at a time, by adding vectors from outside the span of the linearly independent set, all the while preserving the  linear independence of the set.</p>
+<div class="theorem" id="theorem-ELIS" acro="ELIS" titletext="Extending Linearly Independent Sets">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ELIS</span><span class="titletext"> Extending Linearly Independent Sets</span>
+</h5>
+<div class="statement"><p>Suppose $V$ is a vector space and $S$ is a linearly independent set of vectors from $V$.  Suppose $\vect{w}$ is a vector such that $\vect{w}\not\in\spn{S}$.  Then the set $S^\prime=S\cup\set{\vect{w}}$ is linearly independent.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ELIS.knowl">Proof</a></div>
+</div>
+<p>In the story <i>Goldilocks and the Three Bears</i>, the young girl Goldilocks visits the empty house of the three bears while out walking in the woods.  One bowl of porridge is too hot, the other too cold, the third is just right.  One chair is too hard, one too soft, the third is just right.  So it is with sets of vectors — some are too big (linearly dependent), some are too small (they do not span), and some are just right (bases).  Here is Goldilocks' Theorem.</p>
+<div class="theorem" id="theorem-G" acro="G" titletext="Goldilocks">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">G</span><span class="titletext"> Goldilocks</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space of dimension $t$.  Let $S=\set{\vectorlist{v}{m}}$ be a set of vectors from $V$.  Then
+<ol>
+<li>  If $m&gt;t$, then $S$ is linearly dependent.
+</li>
+<li>  If $m&lt;t$, then $S$ does not span $V$.
+</li>
+<li>  If $m=t$ and $S$ is linearly independent, then $S$ spans $V$.
+</li>
+<li>  If $m=t$ and $S$ spans $V$, then $S$ is linearly independent.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.G.knowl">Proof</a></div>
+</div>
+<p>There is a tension in the construction of a basis.  Make a set too big and you will end up with relations of linear dependence among the vectors.  Make a set too small and you will not have enough raw material to span the entire vector space.  Make a set just the right size (the dimension) and you only need to have linear independence or spanning, and you get the other property for free.  These roughly-stated ideas are made precise by <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a>.</p>
+<p>The structure and proof of this theorem also deserve comment.  The hypotheses seem innocuous.  We presume we know the dimension of the vector space in hand, then we mostly just look at the size of the set $S$. From this we get big conclusions about spanning and linear independence.  Each of the four proofs relies on ultimately contradicting <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>, so in a way we could think of this entire theorem as a corollary of <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.    (See <a class="knowl" acro="LC" type="Proof Technique" title="Lemmas and Corollaries" knowl="./knowls/technique.LC.knowl">Proof Technique LC</a>.) The proofs of the third and fourth parts parallel each other in style: introduce $\vect{w}$ using <a class="knowl" acro="ELIS" type="Theorem" title="Extending Linearly Independent Sets" knowl="./knowls/theorem.ELIS.knowl">Theorem ELIS</a> or toss $\vect{v}_k$ using <a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a>.  Then obtain a contradiction to <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.</p>
+<p><a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> is useful in both concrete examples and as a tool in other proofs.  We will use it often to bypass verifying linear independence or spanning.</p>
+<div class="example" id="example-BPR" acro="BPR" titletext="Bases for $P_n$, reprised"><h5 class="example">
+<a knowl="./knowls/example.BPR.knowl"><span class="type">Example</span> <span class="acro">BPR</span></a> <span class="titletext">Bases for $P_n$, reprised</span>
+</h5></div>
+<div class="example" id="example-BDM22" acro="BDM22" titletext="Basis by dimension in $M_{22}$"><h5 class="example">
+<a knowl="./knowls/example.BDM22.knowl"><span class="type">Example</span> <span class="acro">BDM22</span></a> <span class="titletext">Basis by dimension in $M_{22}$</span>
+</h5></div>
+<div class="example" id="example-SVP4" acro="SVP4" titletext="Sets of vectors in $P_4$"><h5 class="example">
+<a knowl="./knowls/example.SVP4.knowl"><span class="type">Example</span> <span class="acro">SVP4</span></a> <span class="titletext">Sets of vectors in $P_4$</span>
+</h5></div>
+<p>A simple consequence of <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> is the observation that a proper subspace has strictly smaller dimension that its parent vector space.  Hopefully this may seem intuitively obvious, but it still requires proof, and we will cite this result later.</p>
+<div class="theorem" id="theorem-PSSD" acro="PSSD" titletext="Proper Subspaces have Smaller Dimension">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">PSSD</span><span class="titletext"> Proper Subspaces have Smaller Dimension</span>
+</h5>
+<div class="statement"><p>
+Suppose that $U$ and $V$ are subspaces of the vector space $W$, such that $U\subsetneq V$.  Then $\dimension{U}&lt;\dimension{V}$.
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.PSSD.knowl">Proof</a></div>
+</div>
+<p>The final theorem of this subsection is an extremely powerful tool for establishing the equality of two sets that are subspaces.  Notice that the hypotheses include the equality of two integers (dimensions) while the conclusion is the equality of two sets (subspaces).  It is the extra “structure” of a vector space and its dimension that makes possible this huge leap from an integer equality to a set equality.</p>
+<div class="theorem" id="theorem-EDYES" acro="EDYES" titletext="Equal Dimensions Yields Equal Subspaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EDYES</span><span class="titletext"> Equal Dimensions Yields Equal Subspaces</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ and $V$ are subspaces of the vector space $W$, such that $U\subseteq V$ and $\dimension{U}=\dimension{V}$.  Then $U=V$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EDYES.knowl">Proof</a></div>
+</div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PD.html#subsection-GT" class="context" title="Section PD">(in context)</a></div>

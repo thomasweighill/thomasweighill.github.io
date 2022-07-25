@@ -1,0 +1,42 @@
+<div class="example" id="example-CROB3" acro="CROB3" titletext="Coordinatization relative to an orthonormal basis, $\complex{3}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CROB3</span> <span class="titletext">Coordinatization relative to an orthonormal basis, $\complex{3}$</span>
+</h5>
+<p>The set
+\begin{equation*}
+\set{\vect{x}_1,\,\vect{x}_2,\,\vect{x}_3}
+=\set{
+\colvector{1\\2\\1},\,
+\colvector{-1\\0\\1},\,
+\colvector{2\\1\\1}
+}
+\end{equation*}
+is a linearly independent set, which the Gram-Schmidt Process (<a class="knowl" acro="GSP" type="Theorem" title="Gram-Schmidt Procedure" knowl="./knowls/theorem.GSP.knowl">Theorem GSP</a>) converts to an orthogonal set, and which can then be converted to the orthonormal set,
+\begin{equation*}
+B=
+\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3}
+=\set{
+\frac{1}{\sqrt{6}}\colvector{1\\2\\1},\,
+\frac{1}{\sqrt{2}}\colvector{-1\\0\\1},\,
+\frac{1}{\sqrt{3}}\colvector{1\\-1\\1}
+}
+\end{equation*}
+which is therefore an orthonormal basis of $\complex{3}$.  With three vectors in $\complex{3}$, all with real number entries, the inner product (<a class="knowl" acro="IP" type="Definition" title="Inner Product" knowl="./knowls/definition.IP.knowl">Definition IP</a>) reduces to the usual “dot product” (or scalar product) and the orthogonal pairs of vectors can be interpreted as perpendicular pairs of directions.  So the vectors in $B$ serve as replacements for our usual 3-D axes, or the usual 3-D unit vectors $\vec{i},\vec{j}$ and $\vec{k}$.  We would like to decompose arbitrary vectors into “components” in the directions of each of these basis vectors.  It is <a class="knowl" acro="COB" type="Theorem" title="Coordinates and Orthonormal Bases" knowl="./knowls/theorem.COB.knowl">Theorem COB</a> that tells us how to do this.</p>
+<p>Suppose that we choose $\vect{w}=\colvector{2\\-1\\5}$.  Compute
+\begin{align*}
+\innerproduct{\vect{v}_1}{\vect{w}}=\frac{5}{\sqrt{6}}&amp;&amp;
+\innerproduct{\vect{v}_2}{\vect{w}}=\frac{3}{\sqrt{2}}&amp;&amp;
+\innerproduct{\vect{v}_3}{\vect{w}}=\frac{8}{\sqrt{3}}
+\end{align*}
+
+then <a class="knowl" acro="COB" type="Theorem" title="Coordinates and Orthonormal Bases" knowl="./knowls/theorem.COB.knowl">Theorem COB</a> guarantees that
+\begin{equation*}
+\colvector{2\\-1\\5}=
+\frac{5}{\sqrt{6}}\left(\frac{1}{\sqrt{6}}\colvector{1\\2\\1}\right)+
+\frac{3}{\sqrt{2}}\left(\frac{1}{\sqrt{2}}\colvector{-1\\0\\1}\right)+
+\frac{8}{\sqrt{3}}\left(\frac{1}{\sqrt{3}}\colvector{1\\-1\\1}\right)
+\end{equation*}
+which you should be able to check easily, even if you do not have much patience.</p>
+<div class="context"><a href="section-B.html#example-CROB3" class="context" title="Section B">(in
+context)</a></div>
+</div>

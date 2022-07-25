@@ -1,0 +1,8 @@
+<div class="exercise" acro="OD.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">OD.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>
+In the discussion following <a class="knowl" acro="OBNM" type="Theorem" title="Orthonormal Bases and Normal Matrices" knowl="./knowls/theorem.OBNM.knowl">Theorem OBNM</a> we comment that the equation $\hat{\vect{x}} = \adjoint{U}\vect{x}$ is just <a class="knowl" acro="COB" type="Theorem" title="Coordinates and Orthonormal Bases" knowl="./knowls/theorem.COB.knowl">Theorem COB</a> in disguise.  Formulate this observation more formally and prove the equivalence.
+</p></div>
+</div>

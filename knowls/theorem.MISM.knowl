@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-MISM" acro="MISM" titletext="Matrix Inverse of a Scalar Multiple">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MISM</span><span class="titletext"> Matrix Inverse of a Scalar Multiple</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an invertible matrix and $\alpha$ is a nonzero scalar.  Then $\inverse{\left(\alpha A\right)}=\frac{1}{\alpha}\inverse{A}$ and $\alpha A$ is invertible.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MISM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MISLE.html#theorem-MISM" class="context" title="Section MISLE">(in context)</a></div>

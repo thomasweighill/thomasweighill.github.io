@@ -1,0 +1,49 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-RCLS', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">RCLS</span> <span class="titletext">Recognizing Consistency of a Linear System</span>
+</h5>
+
+
+<p>Another way of expressing <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> is to say a system is consistent if and only if column $n+1$ is not a pivot column of $B$.  Sage has the matrix method <span class="code">.pivot()</span> to easily identify the pivot columns of a matrix.  Let us use <a knowl="./knowls/archetype.E.knowl">Archetype E</a> as an example.</p>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">coeff = matrix(QQ, [[ 2, 1,  7, -7],
+                    [-3, 4, -5, -6],
+                    [ 1, 1,  4, -5]])
+const = vector(QQ, [2, 3, 2])
+aug = coeff.augment(const)
+aug.rref()
+</script></div>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">aug.pivots()
+</script></div>
+
+<p>We can <em>look</em> at the reduced row-echelon form of the augmented matrix and see a pivot column in the final column, so we know the system is inconsistent.  However, we could just as easily not form the reduced row-echelon form and just look at the list of pivot columns computed by <span class="code">aug.pivots()</span>.  Since <span class="code">aug</span> has 5 columns, the final column is numbered <span class="code">4</span>, which is present in the list of pivot columns, as we expect.</p>
+
+<p>One feature of Sage is that we can easily extend its capabilities by defining new commands.  Here will create a function that checks if an augmented matrix represents a consistent system of equations.  The syntax is just a bit complicated.  <span class="code">lambda</span> is the word that indicates we are making a new function, the input is temporarily named <span class="code">A</span> (think <span class="code">A</span>ugmented), and the <em>name</em> of the function is <span class="code">consistent</span>.  Everything following the colon will be evaluated and reported back as the output.</p>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">consistent = lambda A: not(A.ncols()-1 in A.pivots())
+</script></div>
+
+<p>Execute this block above.  There will not be any output, but now the <span class="code">consistent</span> function will be defined and available.  Now give it a try (after making sure to have run the code above that defines <span class="code">aug</span>).  Note that the output of <span class="code">consistent()</span> will be either <span class="code">True</span> or <span class="code">False</span>.</p>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">consistent(aug)
+</script></div>
+
+<p>The <span class="code">consistent()</span> command works by simply checking to see if the last column of <span class="code">A</span> is <em>not</em> in the list of pivots.  We can now test many different augmented matrices, such as perhaps changing the vector of constants while keeping the coefficient matrix fixed.  Again, make sure you execute the code above that defines <span class="code">coeff</span> and <span class="code">const</span>.</p>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">consistent(coeff.augment(const))
+</script></div>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">w = vector(QQ, [3,1,2])
+consistent(coeff.augment(w))
+</script></div>
+
+<br><br><div class="sage-RCLS"><script type="text/x-sage">u = vector(QQ, [1,3,1])
+consistent(coeff.augment(u))
+</script></div>
+
+<p>Why do some vectors of constants lead to a consistent system with this coefficient matrix, while others do not?  This is a fundamental question, which we will come to understand in several different ways.</p>
+
+<br><br><div class="sage-RCLS sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

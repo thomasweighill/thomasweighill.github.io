@@ -1,0 +1,8 @@
+<div class="exercise" acro="S.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">S.T30</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $P$ be the set of all polynomials, of any degree.  The set $P$ is a vector space.  Let $E$ be the subset of $P$ consisting of all polynomials with only terms of even degree.  Prove or disprove:  the set $E$ is a subspace of $P$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.S.T30.knowl">Solution</a></p></div>
+</div>

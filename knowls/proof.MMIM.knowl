@@ -1,0 +1,22 @@
+<div class="proof" id="proof-MMIM" acro="MMIM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MMIM</span>
+</h5>
+<p>Again, we will prove (1) and leave (2) to you.  Entry-by-entry,    For $1\leq i\leq m$, $1\leq j\leq n$,
+\begin{align*}
+\matrixentry{AI_n}{ij}=&amp;
+\sum_{k=1}^{n}\matrixentry{A}{ik}\matrixentry{I_n}{kj}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{A}{ij}\matrixentry{I_n}{jj}+\sum_{\substack{k=1\\k\neq j}}^{n}\matrixentry{A}{ik}\matrixentry{I_n}{kj}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=\matrixentry{A}{ij}(1)+\sum_{k=1, k\neq j}^{n}\matrixentry{A}{ik}(0)
+&amp;&amp;\knowl{./knowls/definition.IM.knowl}{\text{Definition IM}}\\
+&amp;=\matrixentry{A}{ij}+\sum_{k=1, k\neq j}^{n}0\\
+&amp;=\matrixentry{A}{ij}
+\end{align*}
+
+</p>
+
+<p>So the matrices $A$ and $AI_n$ are equal, entry-by-entry, and by the definition of matrix equality (<a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>) we can say they are equal matrices.</p>
+
+</div>

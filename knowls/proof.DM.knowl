@@ -1,0 +1,7 @@
+<div class="proof" id="proof-DM" acro="DM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DM</span>
+</h5>
+<p><a class="knowl" acro="BM" type="Example" title="A basis for the vector space of matrices" knowl="./knowls/example.BM.knowl">Example BM</a> provides a basis with $mn$ vectors.</p>
+
+</div>

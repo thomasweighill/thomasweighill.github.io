@@ -1,0 +1,45 @@
+<div class="example" id="example-DEHD" acro="DEHD" titletext="Distinct eigenvalues, hence diagonalizable">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">DEHD</span> <span class="titletext">Distinct eigenvalues, hence diagonalizable</span>
+</h5>
+<p>In <a class="knowl" acro="DEMS5" type="Example" title="Distinct eigenvalues, matrix of size 5" knowl="./knowls/example.DEMS5.knowl">Example DEMS5</a> the matrix
+\begin{equation*}
+H=
+\begin{bmatrix}
+15 &amp; 18 &amp; -8 &amp; 6 &amp; -5\\
+5 &amp; 3 &amp; 1 &amp; -1 &amp; -3\\
+0 &amp; -4 &amp; 5 &amp; -4 &amp; -2\\
+-43 &amp; -46 &amp; 17 &amp; -14 &amp; 15\\
+26 &amp; 30 &amp; -12 &amp; 8 &amp; -10
+\end{bmatrix}
+\end{equation*}
+has characteristic polynomial
+\begin{equation*}
+\charpoly{H}{x}=x(x-2)(x-1)(x+1)(x+3)
+\end{equation*}
+and so is a $5\times 5$ matrix with 5 distinct eigenvalues.</p>
+<p>By <a class="knowl" acro="DED" type="Theorem" title="Distinct Eigenvalues implies Diagonalizable" knowl="./knowls/theorem.DED.knowl">Theorem DED</a> we know $H$ must be diagonalizable.  But just for practice, we exhibit a diagonalization.  The matrix $S$ contains eigenvectors of $H$ as columns, one from each eigenspace, guaranteeing linear independent columns and thus the nonsingularity of $S$.  Notice that we are using the versions of the eigenvectors from <a class="knowl" acro="DEMS5" type="Example" title="Distinct eigenvalues, matrix of size 5" knowl="./knowls/example.DEMS5.knowl">Example DEMS5</a> that have integer entries.  The diagonal matrix has the eigenvalues of $H$ in the same order that their respective eigenvectors appear as the columns of $S$.  With these matrices, verify computationally that $\similar{H}{S}=D$.
+\begin{align*}
+S&amp;=
+\begin{bmatrix}
+2 &amp; 1 &amp; -1 &amp; 1 &amp; 1\\
+-1 &amp; 0 &amp; 2 &amp; 0 &amp; -1\\
+-2 &amp; 0 &amp; 2 &amp; -1 &amp; -2\\
+-4 &amp; -1 &amp; 0 &amp; -2 &amp; -1\\
+2 &amp; 2 &amp; 1 &amp; 2 &amp; 1
+\end{bmatrix}
+&amp;D&amp;=
+\begin{bmatrix}
+-3 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; -1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 2
+\end{bmatrix}
+\end{align*}
+
+Note that there are many different ways to diagonalize $H$.  We could replace eigenvectors by nonzero scalar multiples, or we could rearrange the order of the eigenvectors as the columns of $S$ (which would subsequently reorder the eigenvalues along the diagonal of $D$).
+</p>
+<div class="context"><a href="section-SD.html#example-DEHD" class="context" title="Section SD">(in
+context)</a></div>
+</div>

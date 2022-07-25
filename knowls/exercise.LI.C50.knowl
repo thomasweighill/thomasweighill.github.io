@@ -1,0 +1,15 @@
+<div class="exercise" acro="LI.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LI.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider each archetype that is a system of equations and consider the solutions listed for the homogeneous version of the archetype.  (If only the trivial solution is listed, then assume this is the only solution to the system.)  From the solution set, determine if the columns of the coefficient matrix form a linearly independent or linearly dependent set.  In the case of a linearly dependent set, use one of the sample solutions to provide a nontrivial relation of linear dependence on the set of columns of the coefficient matrix (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>).  Indicate when <a class="knowl" acro="MVSLD" type="Theorem" title="More Vectors than Size implies Linear Dependence" knowl="./knowls/theorem.MVSLD.knowl">Theorem MVSLD</a> applies and connect this with the number of variables and equations in the system of equations.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div>

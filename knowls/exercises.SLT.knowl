@@ -1,0 +1,162 @@
+<div class="exercise" acro="SLT.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Each archetype below is a linear transformation.  Compute the range for each.<br><br>
+<a knowl="./knowls/archetype.M.knowl">Archetype M</a>,
+<a knowl="./knowls/archetype.N.knowl">Archetype N</a>,
+<a knowl="./knowls/archetype.O.knowl">Archetype O</a>,
+<a knowl="./knowls/archetype.P.knowl">Archetype P</a>,
+<a knowl="./knowls/archetype.Q.knowl">Archetype Q</a>,
+<a knowl="./knowls/archetype.R.knowl">Archetype R</a>,
+<a knowl="./knowls/archetype.S.knowl">Archetype S</a>,
+<a knowl="./knowls/archetype.T.knowl">Archetype T</a>,
+<a knowl="./knowls/archetype.U.knowl">Archetype U</a>,
+<a knowl="./knowls/archetype.V.knowl">Archetype V</a>,
+<a knowl="./knowls/archetype.W.knowl">Archetype W</a>,
+<a knowl="./knowls/archetype.X.knowl">Archetype X</a>
+
+</p></div>
+</div><div class="exercise" acro="SLT.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="SAR" type="Example" title="Surjective, Archetype R" knowl="./knowls/example.SAR.knowl">Example SAR</a> concludes with an expression for a vector $\vect{u}\in\complex{5}$ that we believe will create the vector $\vect{v}\in\complex{5}$ when used to evaluate $T$.  That is, $\lt{T}{\vect{u}}=\vect{v}$.  Verify this assertion by actually evaluating $T$ with $\vect{u}$.  If you do not have the patience to push around all these symbols, try choosing a numerical instance of $\vect{v}$, compute $\vect{u}$, and then compute $\lt{T}{\vect{u}}$, which should result in $\vect{v}$.
+</p></div>
+</div><div class="exercise" acro="SLT.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The linear transformation $\ltdefn{S}{\complex{4}}{\complex{3}}$ is not surjective.  Find an output $\vect{w}\in\complex{3}$ that has an empty pre-image (that is $\preimage{S}{\vect{w}}=\emptyset$.)
+\begin{equation*}
+\lt{S}{\colvector{x_1\\x_2\\x_3\\x_4}}=
+\colvector{
+2x_1+x_2+3x_3-4x_4\\
+x_1+3x_2+4x_3+3x_4\\
+-x_1+2x_2+x_3+7x_4
+}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C22.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Determine whether or not the following linear transformation $\ltdefn{T}{\complex{5}}{P_3}$ is surjective:
+\begin{align*}
+\lt{T}{\colvector{a\\b\\c\\d\\e}} &amp;= a + (b + c)x + (c + d)x^2 + (d + e)x^3
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C23.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C24">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Determine whether or not the linear transformation $\ltdefn{T}{P_3}{\complex{5}}$ below is surjective:
+\begin{align*}
+\lt{T}{a + bx + cx^2 + dx^3} &amp;= \colvector{a + b \\ b + c \\ c + d \\ a + c\\ b + d}.
+\end{align*}
+
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C24.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Define the linear transformation
+\begin{equation*}
+\ltdefn{T}{\complex{3}}{\complex{2}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3}}=\colvector{2x_1-x_2+5x_3\\-4x_1+2x_2-10x_3}
+\end{equation*}
+Find a basis for the range of $T$, $\rng{T}$.  Is $T$ surjective?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C25.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $\ltdefn{T}{\complex{3}}{\complex{3}} $ be given by
+$\lt{T}{\colvector{a\\b\\c}} = \colvector{a + b + 2c\\ 2c\\ a + b + c}$.  Find a basis of $\rng{T}$.  Is $T$ surjective?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C26.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C27">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C27</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $\ltdefn{T}{\complex{3}}{\complex{4}}$ be given by
+$\lt{T}{\colvector{a\\b\\c}} = \colvector{a + b -c\\ a - b + c\\ -a + b + c\\a + b + c}$.
+Find a basis of $\rng{T}$.  Is $T$ surjective?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C27.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C28">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C28</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $\ltdefn{T}{\complex{4}}{ M_{22}}$ be given by
+$\lt{T}{\colvector{a\\b\\c\\d}} = \begin{bmatrix} a + b &amp; a + b + c\\ a + b + c &amp; a + d\end{bmatrix}$.
+ Find a basis of $\rng{T}$.
+Is $T$ surjective?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C28.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C29">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C29</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $\ltdefn{T}{P_2}{P_4}$ be given by
+$\lt{T}{p(x)} = x^2 p(x)$.
+Find a basis of $\rng{T}$.
+Is $T$ surjective?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C29.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C30</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $\ltdefn{T}{P_4}{P_3}$ be given by
+$\lt{T}{p(x)} = p^\prime(x)$, where $p^\prime(x)$ is the derivative.
+Find a basis of $\rng{T}$.
+Is $T$ surjective?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Show that the linear transformation $T$ is not surjective by finding an element of the codomain, $\vect{v}$,  such that there is  no vector $\vect{u}$ with $\lt{T}{\vect{u}}=\vect{v}$.
+\begin{equation*}
+\ltdefn{T}{\complex{3}}{\complex{3}},\quad
+\lt{T}{\colvector{a\\b\\c}}=
+\colvector{2a+3b-c\\2b-2c\\a-b+2c}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $U$ and $V$ are vector spaces.  Define the function $\ltdefn{Z}{U}{V}$ by $\lt{Z}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Then by <a knowl="./knowls/exercise.LT.M60.knowl">Exercise LT.M60</a>, $Z$ is a linear transformation.  Formulate a condition on $V$ that is equivalent to $Z$ being an surjective linear transformation.   In other words, fill in the blank to complete the following statement (and then give a proof):  $Z$ is surjective if and only if $V$ is $\Rule{1in}{1pt}{0pt}$. (See <a knowl="./knowls/exercise.ILT.M60.knowl">Exercise ILT.M60</a>, <a knowl="./knowls/exercise.IVLT.M60.knowl">Exercise IVLT.M60</a>.)
+</p></div>
+</div><div class="exercise" acro="SLT.T15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Prove the following relationship between ranges.
+\begin{equation*}
+\rng{\compose{S}{T}}\subseteq\rng{S}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.T15.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="SLT.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.T20</span> <span class="contributor"><a knowl="./knowls/contributor.andyzimmer.knowl">Andy Zimmer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix.  Define the linear transformation $T$ by
+\begin{equation*}
+\ltdefn{T}{\complex{n}}{\complex{m}},\quad \lt{T}{\vect{x}}=A\vect{x}
+\end{equation*}
+Prove that the range of $T$ equals the column space of $A$, $\rng{T}=\csp{A}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.T20.knowl">Solution</a></p></div>
+</div>

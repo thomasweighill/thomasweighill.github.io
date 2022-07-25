@@ -1,0 +1,14 @@
+<div class="exercise" acro="EE.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">EE.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>For matrix
+$A = \begin{bmatrix}
+2 &amp; 1 &amp; 1\\
+1 &amp; 2 &amp; 1\\
+1 &amp; 1 &amp; 2
+\end{bmatrix}$, the characteristic polynomial of $A$ is $\charpoly{A}{x} = (4-x)(1-x)^2$.
+Find the eigenvalues and corresponding eigenspaces of $A$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.EE.C26.knowl">Solution</a></p></div>
+</div>

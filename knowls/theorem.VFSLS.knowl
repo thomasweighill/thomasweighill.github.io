@@ -1,0 +1,32 @@
+<div class="theorem" id="theorem-VFSLS" acro="VFSLS" titletext="Vector Form of Solutions to Linear Systems">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VFSLS</span><span class="titletext"> Vector Form of Solutions to Linear Systems</span>
+</h5>
+<div class="statement">
+<p>Suppose that $\augmented{A}{\vect{b}}$ is the augmented matrix for a consistent linear system $\linearsystem{A}{\vect{b}}$ of $m$ equations in $n$ variables.
+Let $B$ be a row-equivalent $m\times (n+1)$ matrix in reduced row-echelon form. Suppose that $B$ has $r$ pivot columns, with indices $D=\set{d_1,\,d_2,\,d_3,\,\ldots,\,d_r}$, while the $n-r$ non-pivot columns have indices in $F=\set{f_1,\,f_2,\,f_3,\,\ldots,\,f_{n-r},\,n+1}$.  Define vectors $\vect{c}$, $\vect{u}_j$, $1\leq j\leq n-r$ of size $n$ by
+\begin{align*}
+\vectorentry{\vect{c}}{i}&amp;=
+\begin{cases}
+0&amp;\text{if $i\in F$}\\
+\matrixentry{B}{k,n+1}&amp;\text{if $i\in D$, $i=d_k$}
+\end{cases}\\
+\vectorentry{\vect{u}_j}{i}&amp;=
+\begin{cases}
+1&amp;\text{if $i\in F$, $i=f_j$}\\
+0&amp;\text{if $i\in F$, $i\neq f_j$}\\
+-\matrixentry{B}{k,f_j}&amp;\text{if $i\in D$, $i=d_k$}
+\end{cases}.
+\end{align*}
+</p>
+<p>Then the set of solutions to the system of equations $\linearsystem{A}{\vect{b}}$ is
+\begin{equation*}
+S=\setparts{
+\vect{c}+\alpha_1\vect{u}_1+\alpha_2\vect{u}_2+\alpha_3\vect{u}_3+\cdots+\alpha_{n-r}\vect{u}_{n-r}
+}{
+\alpha_1,\,\alpha_2,\,\alpha_3,\,\ldots,\,\alpha_{n-r}\in\complex{\null}
+}
+\end{equation*}</p>
+</div>
+<div class="proof"><a knowl="./knowls/proof.VFSLS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LC.html#theorem-VFSLS" class="context" title="Section LC">(in context)</a></div>

@@ -1,0 +1,14 @@
+<div class="exercise" acro="RREF.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+2x_1-3x_2+x_3+7x_4&amp;=14\\
+2x_1+8x_2-4x_3+5x_4&amp;=-1\\
+x_1+3x_2-3x_3&amp;=4 \\
+-5x_1+2x_2+3x_3+4x_4&amp;=-19
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C10.knowl">Solution</a></p></div>
+</div>

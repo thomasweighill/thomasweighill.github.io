@@ -1,0 +1,19 @@
+<div class="proof" id="proof-MIMI" acro="MIMI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MIMI</span>
+</h5>
+<p>As with the proof of <a class="knowl" acro="SS" type="Theorem" title="Socks and Shoes" knowl="./knowls/theorem.SS.knowl">Theorem SS</a>, we examine if $A$ is a suitable inverse for $\inverse{A}$ (by definition, the opposite is true).
+\begin{align*}
+A\inverse{A}&amp;=I_n&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}
+\end{align*}
+and
+\begin{align*}
+
+\inverse{A}A&amp;=I_n&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}
+\end{align*}
+
+</p>
+
+<p>The matrix $A$ has met all the requirements to be the inverse of $\inverse{A}$, and so is invertible and we can write $A=\inverse{(\inverse{A})}$.</p>
+
+</div>

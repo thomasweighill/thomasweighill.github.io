@@ -1,0 +1,11 @@
+<div class="solution" acro="LISS.T51">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LISS.T51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The converse could read: “Suppose that $V$ is a vector space and $S=\set{\vectorlist{v}{m}}$ is a set of vectors in $V$.  If, for each $\vect{w}\in V$, there are <em>unique</em> scalars $a_1,\,a_2,\,a_3,\,\ldots,\,a_m$ such that
+\begin{equation*}
+\vect{w}=\lincombo{a}{v}{m}
+\end{equation*}
+then $S$ is a linearly independent set that spans $V$.”<br><br>
+Since every vector $\vect{w}\in V$ is assumed to be a linear combination of the elements of $S$, it is easy to see that $S$ is a spanning set for $V$ (<a class="knowl" acro="SSVS" type="Definition" title="Spanning Set of a Vector Space" knowl="./knowls/definition.SSVS.knowl">Definition SSVS</a>).<br><br>
+To establish linear independence, begin with an arbitrary relation of linear dependence on the vectors in $S$ (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>).  One way to form such a relation is the trivial way, where each scalar is zero.   But our hypothesis of uniqueness then implies that that the <em>only</em> way to form this relation of linear dependence is the trivial way.  But this establishes the linear independence of $S$ (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>).
+</div>

@@ -1,0 +1,25 @@
+<div class="proof" id="proof-MMT" acro="MMT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MMT</span>
+</h5>
+<p>This theorem may be surprising but if we check the sizes of the matrices involved, then maybe it will not seem so far-fetched.  First, $AB$ has size $m\times p$, so its transpose has size $p\times m$.  The product of $\transpose{B}$ with $\transpose{A}$ is a $p\times n$ matrix times an $n\times m$ matrix, also resulting in a $p\times m$ matrix.  So at least our objects are compatible for equality (and would not be, in general, if we did not reverse the order of the matrix multiplication).</p>
+
+<p>Here we go again, entry-by-entry.  For $1\leq i\leq m$, $1\leq j\leq p$,
+\begin{align*}
+\matrixentry{\transpose{(AB)}}{ji}=&amp;\matrixentry{AB}{ij}
+&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=\sum_{k=1}^{n}\matrixentry{A}{ik}\matrixentry{B}{kj}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{k=1}^{n}\matrixentry{B}{kj}\matrixentry{A}{ik}
+&amp;&amp;\knowl{./knowls/property.CMCN.knowl}{\text{Property CMCN}}\\
+&amp;=\sum_{k=1}^{n}\matrixentry{\transpose{B}}{jk}\matrixentry{\transpose{A}}{ki}
+&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=\matrixentry{\transpose{B}\transpose{A}}{ji}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}
+\end{align*}
+
+</p>
+
+<p>So the matrices $\transpose{(AB)}$ and $\transpose{B}\transpose{A}$ are equal, entry-by-entry, and by the definition of matrix equality (<a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>) we can say they are equal matrices.</p>
+
+</div>

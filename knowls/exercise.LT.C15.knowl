@@ -1,0 +1,13 @@
+<div class="exercise" acro="LT.C15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The archetypes below are all linear transformations whose domains and codomains are vector spaces of column vectors (<a class="knowl" acro="VSCV" type="Definition" title="Vector Space of Column Vectors" knowl="./knowls/definition.VSCV.knowl">Definition VSCV</a>).  For each one, compute the matrix representation described in the proof of <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>.<br><br>
+<a knowl="./knowls/archetype.M.knowl">Archetype M</a>,
+<a knowl="./knowls/archetype.N.knowl">Archetype N</a>,
+<a knowl="./knowls/archetype.O.knowl">Archetype O</a>,
+<a knowl="./knowls/archetype.P.knowl">Archetype P</a>,
+<a knowl="./knowls/archetype.Q.knowl">Archetype Q</a>,
+<a knowl="./knowls/archetype.R.knowl">Archetype R</a>
+</p></div>
+</div>

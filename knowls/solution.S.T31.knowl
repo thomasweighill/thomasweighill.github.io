@@ -1,0 +1,7 @@
+<div class="solution" acro="S.T31">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">S.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>This conjecture is false.  The polynomials $p(x) = x^3 + x^2$ and $q(x) = -x^3 + x^2$ provide a counterexample to <a class="knowl" acro="AC" type="Property" title="Additive Closure" knowl="./knowls/property.AC.knowl">Property AC</a>.
+
+There is another very technical reason.  Constant polynomials have degree zero, with one exception.  The zero polynomial either does not have a degree, or is defined to have degree $-\infty$.  The latter definition will work best with our definition of $P$, the vector space of polynomials of any degree (or for $P_n$).  One justification of this definition is that we want various properties of arithmetic with polynomials to hold when the zero polynomial is involved.  For example, the degree of the sum of two polynomials should be less than, or equal to, the sum of the degrees of the polynomials.  So the zero polynomial does not have odd degree, and hence is not an element of $P$.
+</div>

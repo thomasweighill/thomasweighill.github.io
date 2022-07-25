@@ -1,0 +1,10 @@
+<div class="exercise" acro="VS.M13">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VS.M13</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $V$ be the set $M_{22}$ with the usual  scalar multiplication, but with addition defined by
+$A + B = \zeromatrix_{2,2}$ for all $2 \times 2$ matrices $A$ and $B$.
+Determine whether or not $V$ is a vector space with these operations.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VS.M13.knowl">Solution</a></p></div>
+</div>

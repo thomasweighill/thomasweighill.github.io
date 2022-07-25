@@ -1,0 +1,13 @@
+<div class="solution" acro="VO.C14">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VO.C14</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Performing the indicated operations (<a class="knowl" acro="CVA" type="Definition" title="Column Vector Addition" knowl="./knowls/definition.CVA.knowl">Definition CVA</a>, <a class="knowl" acro="CVSM" type="Definition" title="Column Vector Scalar Multiplication" knowl="./knowls/definition.CVSM.knowl">Definition CVSM</a>), we obtain the vector equations
+\begin{align*}
+\colvector{3\\2}
+&amp;=\alpha\colvector{1\\0} + \beta\colvector{0\\1}
+=\colvector{\alpha + 0 \\ 0 + \beta}
+=\colvector{\alpha\\ \beta}
+\end{align*}
+
+Since the entries of the vectors must be equal by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>, we have $\alpha = 3$ and $\beta = 2$.
+</div>

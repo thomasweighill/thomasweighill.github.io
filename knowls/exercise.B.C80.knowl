@@ -1,0 +1,7 @@
+<div class="exercise" acro="B.C80">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">B.C80</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that $\set{(1,\,2),\,(2,\,3)}$ is a basis for the crazy vector space $C$ (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>).
+</p></div>
+</div>

@@ -1,0 +1,9 @@
+<div class="proof" id="proof-VSLT" acro="VSLT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">VSLT</span>
+</h5>
+<p><a class="knowl" acro="SLTLT" type="Theorem" title="Sum of Linear Transformations is a Linear Transformation" knowl="./knowls/theorem.SLTLT.knowl">Theorem SLTLT</a> and <a class="knowl" acro="MLTLT" type="Theorem" title="Multiple of a Linear Transformation is a Linear Transformation" knowl="./knowls/theorem.MLTLT.knowl">Theorem MLTLT</a> provide two of the ten properties in <a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a>.  However, we still need to verify the remaining eight properties.  By and large, the proofs are straightforward and rely on concocting the obvious object, or by reducing the question to the same vector space property in the vector space $V$.</p>
+
+<p>The zero vector is of some interest, though. What linear transformation would we add to any other linear transformation, so as to keep the second one unchanged?  The answer is $\ltdefn{Z}{U}{V}$ defined by $\lt{Z}{\vect{u}}=\zerovector_V$ for every $\vect{u}\in U$.  Notice how we do not need to know any of the specifics about $U$ and $V$ to make this definition of $Z$.</p>
+
+</div>

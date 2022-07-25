@@ -1,0 +1,15 @@
+<div class="solution" acro="VO.T05">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VO.T05</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>\begin{align*}
+\vect{v}
+&amp;= \zerovector + \vect{v}&amp;&amp;\knowl{./knowls/property.ZC.knowl}{\text{Property ZC}}\\
+&amp;= (-\vect{u} + \vect{u}) + \vect{v}&amp;&amp;\knowl{./knowls/property.AIC.knowl}{\text{Property AIC}}\\
+&amp;= -\vect{u} + (\vect{u} + \vect{v})&amp;&amp;\knowl{./knowls/property.AAC.knowl}{\text{Property AAC}}\\
+&amp;= -\vect{u} + (\vect{u} + \vect{w})&amp;&amp;\text{Hypothesis}\\
+&amp;= (-\vect{u} + \vect{u}) + \vect{w}&amp;&amp;\knowl{./knowls/property.AAC.knowl}{\text{Property AAC}}\\
+&amp;= \zerovector + \vect{w}&amp;&amp;\knowl{./knowls/property.AIC.knowl}{\text{Property AIC}}\\
+&amp;= \vect{w}&amp;&amp;\knowl{./knowls/property.ZC.knowl}{\text{Property ZC}}\\
+\end{align*}
+
+</div>

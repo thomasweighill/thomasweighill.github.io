@@ -1,0 +1,7 @@
+<div class="exercise" acro="MR.M80">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M80</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In light of <a class="knowl" acro="KNSI" type="Theorem" title="Kernel and Null Space Isomorphism" knowl="./knowls/theorem.KNSI.knowl">Theorem KNSI</a> and <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a>, write a short comparison of <a knowl="./knowls/exercise.MM.T40.knowl">Exercise MM.T40</a> with <a knowl="./knowls/exercise.ILT.T15.knowl">Exercise ILT.T15</a>.
+</p></div>
+</div>

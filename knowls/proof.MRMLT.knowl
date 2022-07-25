@@ -1,0 +1,21 @@
+<div class="proof" id="proof-MRMLT" acro="MRMLT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MRMLT</span>
+</h5>
+<p>Let $\vect{x}$ be any vector in $\complex{n}$.  Define $\vect{u}\in U$ by $\vect{u}=\vectrepinv{B}{\vect{x}}$, so $\vect{x}=\vectrep{B}{\vect{u}}$.  Then,
+\begin{align*}
+\matrixrep{\alpha T}{B}{C}\vect{x}&amp;=
+\matrixrep{\alpha T}{B}{C}\vectrep{B}{\vect{u}}&amp;&amp;\text{Substitution}\\
+&amp;=\vectrep{C}{\lt{\left(\alpha T\right)}{\vect{u}}}&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\vectrep{C}{\alpha\lt{T}{\vect{u}}}&amp;&amp;\knowl{./knowls/definition.LTSM.knowl}{\text{Definition LTSM}}\\
+&amp;=\alpha\vectrep{C}{\lt{T}{\vect{u}}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\alpha\left(\matrixrep{T}{B}{C}\vectrep{B}{\vect{u}}\right)&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\left(\alpha\matrixrep{T}{B}{C}\right)\vectrep{B}{\vect{u}}&amp;&amp;\knowl{./knowls/theorem.MMSMM.knowl}{\text{Theorem MMSMM}}\\
+&amp;=\left(\alpha\matrixrep{T}{B}{C}\right)\vect{x}&amp;&amp;\text{Substitution}
+\end{align*}
+
+</p>
+
+<p>Since the matrices $\matrixrep{\alpha T}{B}{C}$ and $\alpha\matrixrep{T}{B}{C}$ have equal matrix-vector products for <em>every</em> vector in $\complex{n}$,  by <a class="knowl" acro="EMMVP" type="Theorem" title="Equal Matrices and Matrix-Vector Products" knowl="./knowls/theorem.EMMVP.knowl">Theorem EMMVP</a> they are equal matrices.</p>
+
+</div>

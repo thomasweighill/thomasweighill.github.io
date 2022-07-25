@@ -1,0 +1,7 @@
+<div class="exercise" acro="CRS.C32">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C32</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In <a class="knowl" acro="CSAA" type="Example" title="Column space of Archetype A" knowl="./knowls/example.CSAA.knowl">Example CSAA</a>, verify that the vector $\vect{b}$ is not in the column space of the coefficient matrix.
+</p></div>
+</div>

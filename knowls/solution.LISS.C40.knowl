@@ -1,0 +1,10 @@
+<div class="solution" acro="LISS.C40">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LISS.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The polynomial $x^4$ is an element of $P_4$.  Can we write this element as a linear combination of the elements of $T$?  To wit, are there scalars $a_1$, $a_2$, $a_3$ such that
+\begin{align*}
+x^4&amp;=a_1\left(x^2-x+5\right)+a_2\left(4x^3-x^2+5x\right)+a_3\left(3x+2\right)
+\end{align*}
+
+Massaging the right side of this equation, according to the definitions of <a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>, and then equating coefficients, leads to an inconsistent system of equations (check this!).  As such, $T$ is not a spanning set for $P_4$.
+</div>

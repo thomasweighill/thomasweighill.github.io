@@ -1,0 +1,57 @@
+<div class="subsection" id="subsection-MEASM" acro="MEASM" titletext="Matrix Equality, Addition, Scalar Multiplication">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">MEASM</span> <span class="titletext">Matrix Equality, Addition, Scalar Multiplication</span>
+</h4>
+<div class="definition" id="definition-VSM" acro="VSM" titletext="Vector Space of $m\times n$ Matrices">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">VSM</span> <span class="titletext"> Vector Space of $m\times n$ Matrices</span>
+</h5>
+<p>The vector space $M_{mn}$ is the set of all $m\times n$ matrices with entries from the set of complex numbers.</p>
+</div>
+<p>Just as we made, and used, a careful definition of equality for column vectors, so too, we have precise definitions for matrices.</p>
+<div class="definition" id="definition-ME" acro="ME" titletext="Matrix Equality">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">ME</span> <span class="titletext"> Matrix Equality</span>
+</h5>
+<p>The $m\times n$ matrices $A$ and $B$ are <em class="term">equal</em>, written $A=B$ provided $\matrixentry{A}{ij}=\matrixentry{B}{ij}$ for all $1\leq i\leq m$, $1\leq j\leq n$.</p>
+</div>
+<p>So equality of matrices translates to the equality of complex numbers, on an entry-by-entry basis.  Notice that we now have yet another definition that uses the symbol “=” for shorthand.  Whenever a theorem has a conclusion saying two matrices are equal (think about your objects), we will consider appealing to this definition as a way of formulating the top-level structure of the proof.</p>
+<p>We will now define two operations on the set $M_{mn}$.  Again, we will overload a symbol (`+') and a convention (juxtaposition for scalar multiplication).</p>
+<div class="definition" id="definition-MA" acro="MA" titletext="Matrix Addition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">MA</span> <span class="titletext"> Matrix Addition</span>
+</h5>
+<p>Given the $m\times n$ matrices  $A$ and $B$, define the <em class="term">sum</em> of $A$ and $B$ as an $m\times n$ matrix, written $A+B$, according to
+\begin{align*}
+\matrixentry{A+B}{ij}&amp;=\matrixentry{A}{ij}+\matrixentry{B}{ij}
+&amp;&amp;1\leq i\leq m,\,1\leq j\leq n
+\end{align*}
+
+</p>
+</div>
+<p>So matrix addition takes two matrices of the same size and combines them (in a natural way!) to create a new matrix of the same size.  Perhaps this is the “obvious” thing to do, but it does not relieve us from the obligation to state it carefully.</p>
+<div class="example" id="example-MA" acro="MA" titletext="Addition of two matrices in $M_{23}$"><h5 class="example">
+<a knowl="./knowls/example.MA.knowl"><span class="type">Example</span> <span class="acro">MA</span></a> <span class="titletext">Addition of two matrices in $M_{23}$</span>
+</h5></div>
+<p>Our second operation takes two objects of different types, specifically a number and a matrix, and combines them to create another matrix.  As with vectors, in this context we call a number a <em class="term">scalar</em> in order to emphasize that it is not a matrix.</p>
+<div class="definition" id="definition-MSM" acro="MSM" titletext="Matrix Scalar Multiplication">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">MSM</span> <span class="titletext"> Matrix Scalar Multiplication</span>
+</h5>
+<p>Given the $m\times n$ matrix $A$
+and the scalar $\alpha\in\complex{\null}$, the <em class="term">scalar multiple</em> of $A$ is an $m\times n$ matrix, written $\alpha A$ and defined according to
+\begin{align*}
+\matrixentry{\alpha A}{ij}&amp;=\alpha\matrixentry{A}{ij}&amp;&amp;
+\quad 1\leq i\leq m,\,1\leq j\leq n
+\end{align*}
+
+</p>
+</div>
+<p>Notice again that we have yet another kind of multiplication, and it is again written putting two symbols side-by-side.  Computationally, scalar matrix multiplication is very easy.</p>
+<div class="example" id="example-MSM" acro="MSM" titletext="Scalar multiplication in $M_{32}$"><h5 class="example">
+<a knowl="./knowls/example.MSM.knowl"><span class="type">Example</span> <span class="acro">MSM</span></a> <span class="titletext">Scalar multiplication in $M_{32}$</span>
+</h5></div>
+<div class="sage" id="sage-MS" acro="MS" titletext="Matrix Spaces"><h5 class="sage">
+<a knowl="./knowls/sage.MS.knowl"><span class="type">Sage</span> <span class="acro">MS</span></a> <span class="titletext">Matrix Spaces</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#subsection-MEASM" class="context" title="Section MO">(in context)</a></div>

@@ -1,0 +1,42 @@
+<div class="solution" acro="CRS.C35">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">CRS.C35</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>(a)\quad By <a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a> we can row-reduce $A$, identify pivot columns with the set $D$, and “keep” those columns of $A$ and we will have a set with the desired properties.
+\begin{align*}
+A\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; -13 &amp; -19 \\
+ 0 &amp; \leading{1} &amp; 8 &amp; 11 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{align*}
+
+So we have the set of pivot columns $D=\set{1,\,2}$ and we “keep” the first two columns of $A$,
+\begin{align*}
+\set{
+\colvector{3\\1\\-3},\,
+\colvector{5\\2\\-4}
+}
+\end{align*}
+
+(b)\quad We can view the column space as the row space of the transpose (<a class="knowl" acro="CSRST" type="Theorem" title="Column Space, Row Space, Transpose" knowl="./knowls/theorem.CSRST.knowl">Theorem CSRST</a>).  We can get a basis of the row space of a matrix quickly by bringing the matrix to reduced row-echelon form and keeping the nonzero rows as column vectors (<a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a>).  Here goes.
+\begin{align*}
+\transpose{A}\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; -2 \\
+ 0 &amp; \leading{1} &amp; 3 \\
+ 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{align*}
+
+Taking the nonzero rows and tilting them up as columns gives us
+\begin{align*}
+\set{
+\colvector{1\\0\\-2},\,
+\colvector{0\\1\\3}
+}
+\end{align*}
+
+An approach based on the matrix $L$ from extended echelon form (<a class="knowl" acro="EEF" type="Definition" title="Extended Echelon Form" knowl="./knowls/definition.EEF.knowl">Definition EEF</a>) and <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a> will work as well as an alternative approach.
+</div>

@@ -1,0 +1,34 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-CSS', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">CSS</span> <span class="titletext">Consistent Systems and Spans</span>
+</h5>
+
+
+<p>With the notion of a span, we can expand our techniques for checking the consistency of a linear system.  <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> tells us a system is consistent if and only if the vector of constants is a linear combination of the columns of the coefficient matrix.  This is because <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> says that any solution to the system will provide a linear combination of the columns of the coefficient that equals the vector of constants.  So consistency of a system is equivalent to the membership of the vector of constants in the span of the columns of the coefficient matrix.  Read that last sentence again carefully.  We will see this idea again, but more formally, in <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>.</p>
+
+<p>We will reprise <a class="knowl" acro="SLC" type="Sage" title="" knowl="./knowls/sage.SLC.knowl">Sage SLC</a>, which is based on <a knowl="./knowls/archetype.F.knowl">Archetype F</a>.  We again make use of the matrix method <span class="code">.columns()</span> to get all of the columns into a list at once.</p>
+
+<br><br><div class="sage-CSS"><script type="text/x-sage">coeff = matrix(QQ, [[33, -16, 10, -2],
+                    [99, -47, 27, -7],
+                    [78, -36, 17, -6],
+                    [-9,   2,  3,  4]])
+column_list = coeff.columns()
+column_list
+</script></div>
+
+<br><br><div class="sage-CSS"><script type="text/x-sage">span = (QQ^4).span(column_list)
+const = vector(QQ, [-27, -77, -52, 5])
+const in span
+</script></div>
+
+<p>You could try to find an example of a vector of constants which would create an inconsistent system with this coefficient matrix.  But there is no such thing.  Here is why — the null space of <span class="code">coeff</span> is trivial, just the zero vector.</p>
+
+<br><br><div class="sage-CSS"><script type="text/x-sage">nsp = coeff.right_kernel(basis='pivot')
+nsp.list()
+</script></div>
+
+<p>The system is consistent, as we have shown, so we can apply <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>. We can read <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a> as saying <em>any</em> two different solutions of the system will differ by an element of the null space, and the only possibility for this null space vector is just the zero vector.  In other words, any two solutions <em>cannot</em> be different.</p>
+
+<br><br><div class="sage-CSS sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

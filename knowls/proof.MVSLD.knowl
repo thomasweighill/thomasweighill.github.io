@@ -1,0 +1,8 @@
+<div class="proof" id="proof-MVSLD" acro="MVSLD" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MVSLD</span>
+</h5>
+<p>Form the $m\times n$ matrix $A$ whose columns are $\vect{u}_i$, $1\leq i\leq n$.  Consider the homogeneous system $\homosystem{A}$.  By <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a> this system has infinitely many solutions.  Since the system does not have a unique solution, <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a> says the columns of $A$ form a linearly dependent set, as desired.
+</p>
+
+</div>

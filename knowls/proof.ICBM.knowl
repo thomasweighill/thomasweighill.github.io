@@ -1,0 +1,18 @@
+<div class="proof" id="proof-ICBM" acro="ICBM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ICBM</span>
+</h5>
+<p>The linear transformation $\ltdefn{I_V}{V}{V}$ is invertible, and its inverse is itself, $I_V$ (check this!). So by <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a>, the matrix $\matrixrep{I_V}{B}{C}=\cbm{B}{C}$ is invertible.  <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a> says an invertible matrix is nonsingular.</p>
+
+<p>Then
+\begin{align*}
+\inverse{\cbm{B}{C}}
+&amp;=\inverse{\left(\matrixrep{I_V}{B}{C}\right)}&amp;&amp;\knowl{./knowls/definition.CBM.knowl}{\text{Definition CBM}}\\
+&amp;=\matrixrep{\ltinverse{I_V}}{C}{B}&amp;&amp;\knowl{./knowls/theorem.IMR.knowl}{\text{Theorem IMR}}\\
+&amp;=\matrixrep{I_V}{C}{B}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\cbm{C}{B}&amp;&amp;\knowl{./knowls/definition.CBM.knowl}{\text{Definition CBM}}\\
+\end{align*}
+
+</p>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="archetype" id="archetype-N" acro="N" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">N</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Linear transformation with domain larger than its codomain, so it is guaranteed to not be injective.  Happens to be onto.</p>
+<p>Definition:\begin{align*}\ltdefn{T}{\complex{5}}{\complex{3}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3\\x_4\\x_5}}=
+\colvector{2 x_1 + x_2 + 3 x_3 - 4 x_4 + 5 x_5\\
+x_1 - 2 x_2 + 3 x_3 - 9 x_4 + 3 x_5\\
+3 x_1 + 4 x_3 - 6 x_4 + 5 x_5}
+\end{align*}</p>
+<div class="context"><a href="archetype-N.html" class="context" title="Archetype N">Complete analysis of Archetype N</a></div>
+</div>

@@ -1,0 +1,6 @@
+<div class="solution" acro="PD.T20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">PD.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>(⇒) Suppose first that $\linearsystem{A}{\vect{b}}$ is consistent.  Then by <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, $\vect{b}\in\csp{A}$.  This means that $\csp{A}=\csp{\augmented{A}{\vect{b}}}$ and so it follows that $\rank{A}=\rank{\augmented{A}{\vect{b}}}$.<br><br>
+(⇐)  Adding a column to a matrix will only increase the size of its column space, so in all cases, $\csp{A}\subseteq\csp{\augmented{A}{\vect{b}}}$.  However, if we assume that $\rank{A}=\rank{\augmented{A}{\vect{b}}}$, then by <a class="knowl" acro="EDYES" type="Theorem" title="Equal Dimensions Yields Equal Subspaces" knowl="./knowls/theorem.EDYES.knowl">Theorem EDYES</a> we conclude that $\csp{A}=\csp{\augmented{A}{\vect{b}}}$.  Then $\vect{b}\in\csp{\augmented{A}{\vect{b}}}=\csp{A}$ so by <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, $\linearsystem{A}{\vect{b}}$ is consistent.
+</div>

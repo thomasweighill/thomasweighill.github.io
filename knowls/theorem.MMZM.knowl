@@ -1,0 +1,14 @@
+<div class="theorem" id="theorem-MMZM" acro="MMZM" titletext="Matrix Multiplication and the Zero Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MMZM</span><span class="titletext"> Matrix Multiplication and the Zero Matrix</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix.  Then
+<ol>
+<li> $A\zeromatrix_{n\times p}=\zeromatrix_{m\times p}$
+</li>
+<li> $\zeromatrix_{p\times m}A=\zeromatrix_{p\times n}$
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MMZM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-MMZM" class="context" title="Section MM">(in context)</a></div>

@@ -1,0 +1,13 @@
+<div class="exercise" acro="HSE.C23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 - 2x_2 + x_3 - x_4 &amp;= 0\\
+x_1 + x_2 + x_3 - x_4 &amp;= 0\\
+x_1 \quad + x_3 - x_4 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C23.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,7 @@
+<div class="proof" id="proof-DP" acro="DP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DP</span>
+</h5>
+<p><a class="knowl" acro="BP" type="Example" title="Bases for $P_n$" knowl="./knowls/example.BP.knowl">Example BP</a> provides <em>two</em> bases with $n+1$ vectors.  Take your pick.</p>
+
+</div>

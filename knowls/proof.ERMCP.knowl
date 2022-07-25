@@ -1,0 +1,17 @@
+<div class="proof" id="proof-ERMCP" acro="ERMCP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ERMCP</span>
+</h5>
+<p>
+\begin{align*}
+A\conjugate{\vect{x}}&amp;=\conjugate{A}\conjugate{\vect{x}}&amp;&amp;\text{$A$ has real entries}\\
+&amp;=\conjugate{A\vect{x}}&amp;&amp;\knowl{./knowls/theorem.MMCC.knowl}{\text{Theorem MMCC}}\\
+&amp;=\conjugate{\lambda\vect{x}}&amp;&amp;\knowl{./knowls/definition.EEM.knowl}{\text{Definition EEM}}\\
+&amp;=\conjugate{\lambda}\conjugate{\vect{x}}&amp;&amp;\knowl{./knowls/theorem.CRSM.knowl}{\text{Theorem CRSM}}
+\end{align*}
+
+</p>
+
+<p>So $\conjugate{\vect{x}}$ is an eigenvector of $A$ for the eigenvalue $\conjugate{\lambda}$.</p>
+
+</div>

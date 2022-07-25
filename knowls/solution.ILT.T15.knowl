@@ -1,0 +1,12 @@
+<div class="solution" acro="ILT.T15">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">ILT.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>We are asked to prove that $\krn{T}$ is a subset of $\krn{\compose{S}{T}}$.  Employing <a class="knowl" acro="SSET" type="Definition" title="Subset" knowl="./knowls/definition.SSET.knowl">Definition SSET</a>, choose $\vect{x}\in\krn{T}$.  Then we know that $\lt{T}{\vect{x}}=\zerovector$.  So
+\begin{align*}
+\lt{\left(\compose{S}{T}\right)}{\vect{x}}&amp;=\lt{S}{\lt{T}{\vect{x}}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{S}{\zerovector}&amp;&amp;\vect{x}\in\krn{T}\\
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/theorem.LTTZZ.knowl}{\text{Theorem LTTZZ}}
+\end{align*}
+
+This qualifies $\vect{x}$ for membership in $\krn{\compose{S}{T}}$.
+</div>

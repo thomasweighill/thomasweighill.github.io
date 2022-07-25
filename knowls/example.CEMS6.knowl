@@ -1,0 +1,130 @@
+<div class="example" id="example-CEMS6" acro="CEMS6" titletext="Complex eigenvalues, matrix of size 6">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CEMS6</span> <span class="titletext">Complex eigenvalues, matrix of size 6</span>
+</h5>
+<p>Consider the matrix
+\begin{equation*}
+F=
+\begin{bmatrix}
+-59 &amp; -34 &amp; 41 &amp; 12 &amp; 25 &amp; 30\\
+1 &amp; 7 &amp; -46 &amp; -36 &amp; -11 &amp; -29\\
+-233 &amp; -119 &amp; 58 &amp; -35 &amp; 75 &amp; 54\\
+157 &amp; 81 &amp; -43 &amp; 21 &amp; -51 &amp; -39\\
+-91 &amp; -48 &amp; 32 &amp; -5 &amp; 32 &amp; 26\\
+209 &amp; 107 &amp; -55 &amp; 28 &amp; -69 &amp; -50
+\end{bmatrix}
+\end{equation*}
+then
+\begin{align*}
+\charpoly{F}{x}&amp;=-50+55x+13x^2-50x^3+32x^4-9x^5+x^6\\
+ &amp;=(x-2)(x+1)(x^2-4x+5)^2\\
+ &amp;=(x-2)(x+1)((x-(2+i))(x-(2-i)))^2\\
+ &amp;=(x-2)(x+1)(x-(2+i))^2(x-(2-i))^2\\
+\end{align*}
+
+So the eigenvalues are $\lambda=2,\,-1,2+i,\,2-i$ with algebraic multiplicities $\algmult{F}{2}=1$, $\algmult{F}{-1}=1$, $\algmult{F}{2+i}=2$ and $\algmult{F}{2-i}=2$.</p>
+<p>We compute eigenvectors, noting that the last two basis vectors are each a scalar multiple of what <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> will provide,
+\begin{align*}
+\lambda&amp;=2\quad\quad F-2I_6=\\
+&amp;
+\begin{bmatrix}
+-61 &amp; -34 &amp; 41 &amp; 12 &amp; 25 &amp; 30\\
+1 &amp; 5 &amp; -46 &amp; -36 &amp; -11 &amp; -29\\
+-233 &amp; -119 &amp; 56 &amp; -35 &amp; 75 &amp; 54\\
+157 &amp; 81 &amp; -43 &amp; 19 &amp; -51 &amp; -39\\
+-91 &amp; -48 &amp; 32 &amp; -5 &amp; 30 &amp; 26\\
+209 &amp; 107 &amp; -55 &amp; 28 &amp; -69 &amp; -52
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{5}\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; \frac{3}{5}\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; -\frac{1}{5}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; \frac{4}{5}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;\eigenspace{F}{2}=\nsp{F-2I_6}
+=\spn{\set{\colvector{-\frac{1}{5}\\0\\-\frac{3}{5}\\\frac{1}{5}\\-\frac{4}{5}\\1}}}
+=\spn{\set{\colvector{-1\\0\\-3\\1\\-4\\5}}}\\
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=-1\quad\quad F+1I_6=\\
+&amp;
+\begin{bmatrix}
+-58 &amp; -34 &amp; 41 &amp; 12 &amp; 25 &amp; 30\\
+1 &amp; 8 &amp; -46 &amp; -36 &amp; -11 &amp; -29\\
+-233 &amp; -119 &amp; 59 &amp; -35 &amp; 75 &amp; 54\\
+157 &amp; 81 &amp; -43 &amp; 22 &amp; -51 &amp; -39\\
+-91 &amp; -48 &amp; 32 &amp; -5 &amp; 33 &amp; 26\\
+209 &amp; 107 &amp; -55 &amp; 28 &amp; -69 &amp; -49
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{2}\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{3}{2}\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; \frac{1}{2}\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -\frac{1}{2}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;\eigenspace{F}{-1}=\nsp{F+I_6}
+=\spn{\set{\colvector{-\frac{1}{2}\\\frac{3}{2}\\-\frac{1}{2}\\0\\\frac{1}{2}\\1}}}
+=\spn{\set{\colvector{-1\\3\\-1\\0\\1\\2}}}\\
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=2+i\\
+&amp;F-(2+i)I_6=
+\begin{bmatrix}
+-61-i &amp; -34 &amp; 41 &amp; 12 &amp; 25 &amp; 30\\
+1 &amp; 5-i &amp; -46 &amp; -36 &amp; -11 &amp; -29\\
+-233 &amp; -119 &amp; 56-i &amp; -35 &amp; 75 &amp; 54\\
+157 &amp; 81 &amp; -43 &amp; 19-i &amp; -51 &amp; -39\\
+-91 &amp; -48 &amp; 32 &amp; -5 &amp; 30-i &amp; 26\\
+209 &amp; 107 &amp; -55 &amp; 28 &amp; -69 &amp; -52-i
+\end{bmatrix}\\
+&amp;
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{5}(7+ i)\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{5}(-9-2i)\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;\eigenspace{F}{2+i}=\nsp{F-(2+i)I_6}
+=\spn{\set{\colvector{-7-i\\9+2i\\-5\\5\\-5\\5}}}\\
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=2-i\\
+&amp;F-(2-i)I_6=
+\begin{bmatrix}
+-61+i &amp; -34 &amp; 41 &amp; 12 &amp; 25 &amp; 30\\
+1 &amp; 5+i &amp; -46 &amp; -36 &amp; -11 &amp; -29\\
+-233 &amp; -119 &amp; 56+i &amp; -35 &amp; 75 &amp; 54\\
+157 &amp; 81 &amp; -43 &amp; 19+i &amp; -51 &amp; -39\\
+-91 &amp; -48 &amp; 32 &amp; -5 &amp; 30+i &amp; 26\\
+209 &amp; 107 &amp; -55 &amp; 28 &amp; -69 &amp; -52+i
+\end{bmatrix}\\
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{5}(7-i)\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; \frac{1}{5}(-9+2i)\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;\eigenspace{F}{2-i}=\nsp{F-(2-i)I_6}
+=\spn{\set{\colvector{-7+i\\9-2i\\-5\\5\\-5\\5}}}\\
+\end{align*}
+
+</p>
+<p>Eigenspace dimensions yield geometric multiplicities of $\geomult{F}{2}=1$, $\geomult{F}{-1}=1$, $\geomult{F}{2+i}=1$ and $\geomult{F}{2-i}=1$.  This example demonstrates some of the possibilities for the appearance of complex eigenvalues, even when all the entries of the matrix are real.  Notice how all the numbers in the analysis of $\lambda=2-i$ are conjugates of the corresponding number in the analysis of $\lambda=2+i$.  This is the content of the upcoming <a class="knowl" acro="ERMCP" type="Theorem" title="Eigenvalues of Real Matrices come in Conjugate Pairs" knowl="./knowls/theorem.ERMCP.knowl">Theorem ERMCP</a>.</p>
+<div class="context"><a href="section-EE.html#example-CEMS6" class="context" title="Section EE">(in
+context)</a></div>
+</div>

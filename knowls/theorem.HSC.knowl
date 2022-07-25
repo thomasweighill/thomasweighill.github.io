@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-HSC" acro="HSC" titletext="Homogeneous Systems are Consistent">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">HSC</span><span class="titletext"> Homogeneous Systems are Consistent</span>
+</h5>
+<div class="statement"><p>Suppose that a system of linear equations is homogeneous.  Then the system is consistent and one solution is found by setting each variable to zero.</p></div>
+<div class="proof"><a knowl="./knowls/proof.HSC.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-HSE.html#theorem-HSC" class="context" title="Section HSE">(in context)</a></div>

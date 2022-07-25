@@ -1,0 +1,41 @@
+
+<ol>
+<li>Form the matrix vector product of
+\begin{align*}
+\begin{bmatrix}
+2 &amp; 3 &amp; -1 &amp; 0\\
+1 &amp; -2 &amp; 7 &amp; 3\\
+1 &amp; 5 &amp; 3 &amp; 2\\
+\end{bmatrix}
+&amp;&amp;\text{with}&amp;&amp;
+\colvector{2\\-3\\0\\5}
+\end{align*}
+
+</li>
+<li> Multiply together the two matrices below (in the order given).
+\begin{align*}
+\begin{bmatrix}
+2 &amp; 3 &amp; -1 &amp; 0\\
+1 &amp; -2 &amp; 7 &amp; 3\\
+1 &amp; 5 &amp; 3 &amp; 2\\
+\end{bmatrix}
+&amp;&amp;
+\begin{bmatrix}
+2 &amp; 6\\
+-3 &amp; -4\\
+0 &amp; 2\\
+3 &amp; -1\\
+\end{bmatrix}
+\end{align*}
+
+</li>
+<li>Rewrite the system of linear equations below as a vector equality and using a matrix-vector product.  (This question does not ask for a solution to the system.  But it does ask you to express the system of equations in a new form using tools from this section.)
+\begin{align*}
+2x_1 + 3x_2 - x_3 &amp;= 0\\
+x_1 + 2x_2 + x_3 &amp;= 3\\
+x_1 + 3x_2 + 3x_3 &amp;= 7
+\end{align*}
+
+</li>
+</ol>
+

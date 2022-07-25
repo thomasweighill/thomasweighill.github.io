@@ -1,0 +1,5 @@
+<div class="solution" acro="ILT.C30">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">ILT.C30</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>We can see without computing that $T$ is not injective, since the dimension of $M_{22}$ is larger than the dimension of $P_2$.  However, that does not address the question of the kernel of $T$.  We need to find all matrices $\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}$ so that $(a + b) + (a + c)x + (a + d)x^2 = 0$.  This means $a + b = 0$, $a + c = 0$, and $a + d = 0$, or equivalently, $b = d = c = -a$.  Thus, the kernel is a one-dimensional subspace of $M_{22}$ spanned by $\begin{bmatrix} 1 &amp; -1\\-1&amp;-1 \end{bmatrix}$.  Symbolically, we have $\krn{T} = \spn{\set{\begin{bmatrix} 1 &amp; -1\\-1&amp;-1 \end{bmatrix}}}$.
+</div>

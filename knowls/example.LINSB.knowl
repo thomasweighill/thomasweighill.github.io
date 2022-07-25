@@ -1,0 +1,46 @@
+<div class="example" id="example-LINSB" acro="LINSB" titletext="Linear independence of null space basis">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LINSB</span> <span class="titletext">Linear independence of null space basis</span>
+</h5>
+<p>Suppose that we are interested in the null space of a $3\times 7$ matrix, $A$, which row-reduces to
+\begin{equation*}
+B=
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -2 &amp; 4 &amp; 0 &amp; 3 &amp; 9\\
+0 &amp; \leading{1} &amp; 5 &amp; 6 &amp; 0 &amp; 7 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 8 &amp; -5
+\end{bmatrix}
+\end{equation*}</p>
+<p>The set $F=\set{3,\,4,\,6,\,7}$ is the set of indices for our four free variables that would be used in a description of the solution set for the homogeneous system $\homosystem{A}$.  Applying <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a> we can begin to construct a set of four vectors whose span is the null space of $A$, a set of vectors we will reference as $T$.
+\begin{equation*}
+\nsp{A}=\spn{T}=\spn{\set{\vect{z}_1,\,\vect{z}_2,\,\vect{z}_3,\,\vect{z}_4}}=\spn{\set{
+\colvector{ \\ \\1\\0\\ \\0\\0},\,
+\colvector{ \\ \\0\\1\\ \\0\\0},\,
+\colvector{ \\ \\0\\0\\ \\1\\0},\,
+\colvector{ \\ \\0\\0\\ \\0\\1}
+}}
+\end{equation*}
+</p>
+<p>So far, we have constructed as much of these individual vectors as we can, based just on the knowledge of the contents of the set $F$.  This has allowed us to determine the entries in slots 3, 4, 6 and 7, while we have left slots 1, 2 and 5 blank.  Without doing any more, let us ask if $T$  is linearly independent?  Begin with a relation of linear dependence on $T$, and see what we can learn about the scalars,
+\begin{align*}
+\zerovector&amp;=\alpha_1\vect{z}_1+\alpha_2\vect{z}_2+\alpha_3\vect{z}_3+\alpha_4\vect{z}_4\\
+\colvector{0\\0\\0\\0\\0\\0\\0}
+&amp;=
+\alpha_1\colvector{ \\ \\1\\0\\ \\0\\0}+
+\alpha_2\colvector{ \\ \\0\\1\\ \\0\\0}+
+\alpha_3\colvector{ \\ \\0\\0\\ \\1\\0}+
+\alpha_4\colvector{ \\ \\0\\0\\ \\0\\1}\\
+&amp;=
+\colvector{ \\ \\\alpha_1\\0\\ \\0\\0}+
+\colvector{ \\ \\0\\\alpha_2\\ \\0\\0}+
+\colvector{ \\ \\0\\0\\ \\\alpha_3\\0}+
+\colvector{ \\ \\0\\0\\ \\0\\\alpha_4}
+=
+\colvector{ \\ \\\alpha_1\\\alpha_2\\ \\\alpha_3\\\alpha_4}
+\end{align*}
+
+</p>
+<p>Applying <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> to the two ends of this chain of equalities, we see that $\alpha_1=\alpha_2=\alpha_3=\alpha_4=0$.  So the only relation of linear dependence on the set $T$ is a trivial one.  By <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a> the set $T$ is linearly independent.  The important feature of this example is how the “pattern of zeros and ones” in the four vectors led to the conclusion of linear independence.</p>
+<div class="context"><a href="section-LI.html#example-LINSB" class="context" title="Section LI">(in
+context)</a></div>
+</div>

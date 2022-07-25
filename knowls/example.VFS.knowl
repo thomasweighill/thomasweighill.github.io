@@ -1,0 +1,169 @@
+<div class="example" id="example-VFS" acro="VFS" titletext="Vector form of solutions">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">VFS</span> <span class="titletext">Vector form of solutions</span>
+</h5>
+<p>Consider a linear system of $m=5$ equations in $n=7$ variables, having the augmented matrix $A$.
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 2 &amp; 1 &amp; -1 &amp; -2 &amp; 2 &amp; 1 &amp; 5 &amp; 21 \\
+ 1 &amp; 1 &amp; -3 &amp; 1 &amp; 1 &amp; 1 &amp; 2 &amp; -5 \\
+ 1 &amp; 2 &amp; -8 &amp; 5 &amp; 1 &amp; 1 &amp; -6 &amp; -15 \\
+ 3 &amp; 3 &amp; -9 &amp; 3 &amp; 6 &amp; 5 &amp; 2 &amp; -24 \\
+ -2 &amp; -1 &amp; 1 &amp; 2 &amp; 1 &amp; 1 &amp; -9 &amp; -30
+\end{bmatrix}
+\end{equation*}</p>
+<p>Row-reducing we obtain the matrix
+\begin{equation*}
+B=
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 2 &amp; -3 &amp; 0 &amp; 0 &amp; 9 &amp;  15 \\
+ 0 &amp; \leading{1} &amp; -5 &amp; 4 &amp; 0 &amp; 0 &amp; -8 &amp;  -10 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; -6 &amp;  11 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 7 &amp;  -21 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+and we see $r=4$ pivot columns. Also, $D=\set{1,\,2,\,5,\,6}$ so the dependent variables are then $x_1,\,x_2,\,x_5,$ and $x_6$.  $F=\set{3,\,4,\,7,\,8}$ so the $n-r=3$ free variables are $x_3,\,x_4$ and $x_7$.  We will express a generic solution for the system by two different methods: both a decomposition and a construction.</p>
+<p>First, we will decompose (<a class="knowl" acro="DC" type="Proof Technique" title="Decompositions" knowl="./knowls/technique.DC.knowl">Proof Technique DC</a>) a solution vector.  Rearranging each equation represented in the row-reduced form of the augmented matrix by solving for the dependent variable in each row yields the vector equality,
+\begin{align*}
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}&amp;=
+\colvector{
+15-2x_3+3x_4-9x_7\\
+-10+5x_3-4x_4+8x_7\\
+x_3\\
+x_4\\
+11+6x_7\\
+-21-7x_7\\
+x_7
+}
+\end{align*}
+Now we will use the definitions of column vector addition and scalar multiplication to decompose this generic solution vector as a linear combination,
+\begin{align*}
+
+&amp;=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0 }
++
+\colvector{ -2x_3\\ 5x_3\\ x_3\\ 0\\ 0\\ 0\\ 0 }
++
+\colvector{ 3x_4\\ -4x_4\\ 0\\ x_4\\ 0\\ 0\\ 0 }
++
+\colvector{ -9x_7\\ 8x_7\\ 0\\ 0\\ 6x_7\\ -7x_7\\ x_7 }
+&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0 }
++
+x_3\colvector{ -2\\ 5\\ 1\\ 0\\ 0\\ 0\\ 0 }
++
+x_4\colvector{ 3\\ -4\\ 0\\ 1\\ 0\\ 0\\ 0 }
++
+x_7\colvector{ -9\\ 8\\ 0\\ 0\\ 6\\ -7\\ 1 }
+&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}
+\end{align*}
+
+We will now develop the same linear combination a bit quicker, using three steps.  While the method above is instructive, the method below will be our preferred approach.</p>
+<p>Step 1.  Write the vector of variables as a fixed vector, plus a linear combination of $n-r$ vectors, using the free variables as the scalars.
+\begin{equation*}
+\vect{x}=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{\ \\\ \\\ \\\ \\\ \\\ \\\ }+x_3\colvector{\ \\\ \\\ \\\ \\\ \\\ \\\ }+x_4\colvector{\ \\\ \\\ \\\ \\\ \\\ \\\ }+x_7\colvector{\ \\\ \\\ \\\ \\\ \\\ \\\ }
+\end{equation*}</p>
+<p>Step 2.  Use 0's and 1's to ensure equality for the entries of the vectors with indices in $F$ (corresponding to the free variables).
+\begin{equation*}
+\vect{x}=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{\\ \\ 0\\ 0\\ \\ \\ 0}+x_3\colvector{\\ \\ 1\\ 0\\ \\ \\ 0}+x_4\colvector{\\ \\ 0\\ 1\\ \\ \\ 0}+x_7\colvector{\\ \\ 0\\ 0\\ \\ \\ 1}
+\end{equation*}</p>
+<p>Step 3.  For each dependent variable, use the augmented matrix to formulate an equation expressing the dependent variable as a constant plus multiples of the free variables.  Convert this equation into entries of the vectors that ensure equality for each dependent variable, one at a time.
+\begin{align*}
+x_1&amp;=15-2x_3+3x_4-9x_7\ \Rightarrow\\&amp;\vect{x}=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ \\ 0\\ 0\\ \\ \\ 0}+
+x_3\colvector{-2\\ \\ 1\\ 0\\ \\ \\ 0}+
+x_4\colvector{3\\ \\ 0\\ 1\\ \\ \\ 0}+
+x_7\colvector{-9\\ \\ 0\\ 0\\ \\ \\ 1}\\
+x_2&amp;=-10+5x_3-4x_4+8x_7\ \Rightarrow\\&amp;\vect{x}=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ -10\\ 0\\ 0\\ \\ \\ 0}+
+x_3\colvector{-2\\ 5\\ 1\\ 0\\ \\ \\ 0}+
+x_4\colvector{3\\ -4\\ 0\\ 1\\ \\ \\ 0}+
+x_7\colvector{-9\\ 8\\ 0\\ 0\\ \\ \\ 1}\\
+x_5&amp;=11+6x_7\ \Rightarrow\\&amp;\vect{x}=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ \\ 0}+
+x_3\colvector{-2\\ 5\\ 1\\ 0\\ 0\\ \\ 0}+
+x_4\colvector{3\\ -4\\ 0\\ 1\\ 0\\ \\ 0}+
+x_7\colvector{-9\\ 8\\ 0\\ 0\\ 6\\ \\ 1}\\
+x_6&amp;=-21-7x_7\ \Rightarrow\\&amp;\vect{x}=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0}+
+x_3\colvector{-2\\ 5\\ 1\\ 0\\ 0\\ 0\\ 0}+
+x_4\colvector{3\\ -4\\ 0\\ 1\\ 0\\ 0\\ 0}+
+x_7\colvector{-9\\ 8\\ 0\\ 0\\ 6\\ -7\\ 1}
+\end{align*}
+</p>
+<p>This final <em>form</em> of a typical solution is especially pleasing and useful.  For example, we can build solutions quickly by choosing values for our free variables, and then compute a linear combination.  For example
+\begin{align*}
+x_3&amp;=2,\,
+x_4=-4,\,
+x_7=3
+\quad\quad\Rightarrow\\
+\vect{x}&amp;=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0}+
+(2)\colvector{-2\\ 5\\ 1\\ 0\\ 0\\ 0\\ 0}+
+(-4)\colvector{3\\ -4\\ 0\\ 1\\ 0\\ 0\\ 0}+
+(3)\colvector{-9\\ 8\\ 0\\ 0\\ 6\\ -7\\ 1}
+=
+\colvector{-28\\40\\2\\-4\\29\\-42\\3}
+\end{align*}
+
+or perhaps,
+\begin{align*}
+x_3&amp;=5,\,
+x_4=2,\,
+x_7=1
+\quad\quad\Rightarrow\\
+\vect{x}&amp;=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0}+
+(5)\colvector{-2\\ 5\\ 1\\ 0\\ 0\\ 0\\ 0}+
+(2)\colvector{3\\ -4\\ 0\\ 1\\ 0\\ 0\\ 0}+
+(1)\colvector{-9\\ 8\\ 0\\ 0\\ 6\\ -7\\ 1}
+=
+\colvector{2\\15\\5\\2\\17\\-28\\1}
+\end{align*}
+
+or even,
+\begin{align*}
+x_3&amp;=0,\,
+x_4=0,\,
+x_7=0
+\quad\quad\Rightarrow\\
+\vect{x}&amp;=
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5\\x_6\\x_7}=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0}+
+(0)\colvector{-2\\ 5\\ 1\\ 0\\ 0\\ 0\\ 0}+
+(0)\colvector{3\\ -4\\ 0\\ 1\\ 0\\ 0\\ 0}+
+(0)\colvector{-9\\ 8\\ 0\\ 0\\ 6\\ -7\\ 1}
+=
+\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0}
+\end{align*}
+</p>
+<p>So we can compactly express <em>all</em> of the solutions to this linear system with just 4 fixed vectors, provided we agree how to combine them in a linear combinations to create solution vectors.</p>
+<p>Suppose you were told that the vector $\vect{w}$ below was a solution to this system of equations.  Could you turn the problem around and write $\vect{w}$ as a linear combination of the four vectors $\vect{c}$, $\vect{u}_1$, $\vect{u}_2$, $\vect{u}_3$?  (See <a knowl="./knowls/exercise.LC.M11.knowl">Exercise LC.M11</a>.)
+\begin{align*}
+\vect{w}&amp;=\colvector{100\\-75\\7\\9\\-37\\35\\-8}
+&amp;
+\vect{c}&amp;=\colvector{15\\ -10\\ 0\\ 0\\ 11\\ -21\\ 0}
+&amp;
+\vect{u}_1&amp;=\colvector{-2\\ 5\\ 1\\ 0\\ 0\\ 0\\ 0}
+&amp;
+\vect{u}_2&amp;=\colvector{3\\ -4\\ 0\\ 1\\ 0\\ 0\\ 0}
+&amp;
+\vect{u}_3&amp;=\colvector{-9\\ 8\\ 0\\ 0\\ 6\\ -7\\ 1}
+\end{align*}
+</p>
+<div class="context"><a href="section-LC.html#example-VFS" class="context" title="Section LC">(in
+context)</a></div>
+</div>

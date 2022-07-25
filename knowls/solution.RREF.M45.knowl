@@ -1,0 +1,27 @@
+<div class="solution" acro="RREF.M45">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">RREF.M45</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Let $l, m, p$ denote the number of lizards, mice and peacocks.  Then the statements from the problem yield the equations:
+\begin{align*}
+4l+4m+2p&amp;=108\\
+l+m+p &amp;= 30\\
+2l-m&amp;=0
+\end{align*}
+
+We form the augmented matrix for this system and row-reduce
+\begin{align*}
+\begin{bmatrix}
+4 &amp; 4 &amp; 2 &amp; 108\\
+1 &amp; 1 &amp; 1 &amp; 30\\
+2 &amp; -1 &amp; 0 &amp; 0
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp;  8\\
+0 &amp; \leading{1} &amp; 0 &amp;  16\\
+0 &amp; 0 &amp; \leading{1} &amp;  6
+\end{bmatrix}
+\end{align*}
+
+From the row-reduced matrix, we see that we have an equivalent system $l=8$, $m=16$, and $p=6$, which means that you have 8 lizards, 16 mice and 6 peacocks.
+</div>

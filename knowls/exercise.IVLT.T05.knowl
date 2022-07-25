@@ -1,0 +1,7 @@
+<div class="exercise" acro="IVLT.T05">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T05</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that the identity linear transformation (<a class="knowl" acro="IDLT" type="Definition" title="Identity Linear Transformation" knowl="./knowls/definition.IDLT.knowl">Definition IDLT</a>) is both injective and surjective, and hence invertible.
+</p></div>
+</div>

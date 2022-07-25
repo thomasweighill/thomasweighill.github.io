@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-IFDVS" acro="IFDVS" titletext="Isomorphism of Finite Dimensional Vector Spaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IFDVS</span><span class="titletext"> Isomorphism of Finite Dimensional Vector Spaces</span>
+</h5>
+<div class="statement"><p>Suppose $U$ and $V$ are both finite-dimensional vector spaces.  Then $U$ and $V$ are isomorphic if and only if $\dimension{U}=\dimension{V}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.IFDVS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VR.html#theorem-IFDVS" class="context" title="Section VR">(in context)</a></div>

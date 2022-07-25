@@ -1,0 +1,12 @@
+<div class="exercise" acro="MR.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find bases for the kernel and range of the linear transformation $S$ below.
+\begin{equation*}
+\ltdefn{S}{M_{22}}{P_2},\quad\lt{S}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+(a+2b+5c-4d)+(3a-b+8c+2d)x+(a+b+4c-2d)x^2
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C30.knowl">Solution</a></p></div>
+</div>

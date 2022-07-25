@@ -1,0 +1,8 @@
+<div class="exercise" acro="B.C13">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">B.C13</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find a basis for the subspace $Q$ of $P_2$, $Q = \setparts{p(x) = a + bx + cx^2}{p(0) = 0}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.B.C13.knowl">Solution</a></p></div>
+</div>

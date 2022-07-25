@@ -1,0 +1,5 @@
+<div class="solution" acro="TSS.M45">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">TSS.M45</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Demonstrate that the system is consistent by verifying any one of the four sample solutions provided.  Then because $n=9&gt;6=m$, <a class="knowl" acro="CMVEI" type="Theorem" title="Consistent, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.CMVEI.knowl">Theorem CMVEI</a> gives us the conclusion that the system has infinitely many solutions.  Notice that we only know the system will have <em>at least</em> $9-6=3$ free variables, but very well could have more.  We do not know know that $r=6$, only that $r\leq 6$.
+</div>

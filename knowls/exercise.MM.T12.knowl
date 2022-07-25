@@ -1,0 +1,7 @@
+<div class="exercise" acro="MM.T12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MM.T12</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The conclusion of <a class="knowl" acro="HMIP" type="Theorem" title="Hermitian Matrices and Inner Products" knowl="./knowls/theorem.HMIP.knowl">Theorem HMIP</a> is $\innerproduct{A\vect{x}}{\vect{y}}=\innerproduct{\vect{x}}{\adjoint{A}\vect{y}}$.  Use the same hypotheses, and prove the similar conclusion: $\innerproduct{\vect{x}}{A\vect{y}}=\innerproduct{\adjoint{A}\vect{x}}{\vect{y}}$.  Two different approaches can be based on an application of <a class="knowl" acro="HMIP" type="Theorem" title="Hermitian Matrices and Inner Products" knowl="./knowls/theorem.HMIP.knowl">Theorem HMIP</a>.  The first uses <a class="knowl" acro="AA" type="Theorem" title="Adjoint of an Adjoint" knowl="./knowls/theorem.AA.knowl">Theorem AA</a>, while a second uses <a class="knowl" acro="IPAC" type="Theorem" title="Inner Product is Anti-Commutative" knowl="./knowls/theorem.IPAC.knowl">Theorem IPAC</a>.  Can you provide two proofs?
+</p></div>
+</div>

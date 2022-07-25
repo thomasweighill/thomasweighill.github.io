@@ -1,0 +1,21 @@
+<div class="example" id="example-VSIS" acro="VSIS" titletext="The vector space of infinite sequences">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">VSIS</span> <span class="titletext">The vector space of infinite sequences</span>
+</h5>
+<p>Set: $\complex{\infty}=\setparts{(c_0,\,c_1,\,c_2,\,c_3,\,\ldots)}{c_i\in\complex{\null},\ i\in\mathbb{N}}$.</p>
+<p>Equality:
+\begin{equation*}
+(c_0,\,c_1,\,c_2,\,\ldots)=(d_0,\,d_1,\,d_2,\,\ldots)\text{ if and only if }c_i=d_i\text{ for all }i\geq 0
+\end{equation*}</p>
+<p>Vector Addition:
+\begin{equation*}
+(c_0,\,c_1,\,c_2,\,\ldots)+(d_0,\,d_1,\,d_2,\,\ldots)=(c_0+d_0,\,c_1+d_1,\,c_2+d_2,\,\ldots)
+\end{equation*}</p>
+<p>Scalar Multiplication:
+\begin{equation*}
+\alpha (c_0,\,c_1,\,c_2,\,c_3,\,\ldots)=(\alpha c_0,\,\alpha c_1,\,\alpha c_2,\,\alpha c_3,\,\ldots)
+\end{equation*}</p>
+<p>This should remind you of the vector space $\complex{m}$, though now our lists of scalars are written horizontally with commas as delimiters and they are allowed to be infinite in length.  What does the zero vector look like (<a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>)?  Additive inverses (<a class="knowl" acro="AI" type="Property" title="Additive Inverses" knowl="./knowls/property.AI.knowl">Property AI</a>)?  Can you prove the associativity of vector addition (<a class="knowl" acro="AA" type="Property" title="Additive Associativity" knowl="./knowls/property.AA.knowl">Property AA</a>)?</p>
+<div class="context"><a href="section-VS.html#example-VSIS" class="context" title="Section VS">(in
+context)</a></div>
+</div>

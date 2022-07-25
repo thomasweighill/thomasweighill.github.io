@@ -1,0 +1,21 @@
+<div class="subsection" id="subsection-PSHS" acro="PSHS" titletext="Particular Solutions, Homogeneous Solutions">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">PSHS</span> <span class="titletext">Particular Solutions, Homogeneous Solutions</span>
+</h4>
+<p>The next theorem tells us that in order to find all of the solutions to a linear system of equations, it is sufficient to find just one solution, and then find all of the solutions to the corresponding homogeneous system.  This explains part of our interest in the null space, the set of all solutions to a homogeneous system.</p>
+<div class="theorem" id="theorem-PSPHS" acro="PSPHS" titletext="Particular Solution Plus Homogeneous Solutions">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">PSPHS</span><span class="titletext"> Particular Solution Plus Homogeneous Solutions</span>
+</h5>
+<div class="statement"><p>Suppose that $\vect{w}$ is one solution to the linear system of equations $\linearsystem{A}{\vect{b}}$.  Then $\vect{y}$ is a solution to $\linearsystem{A}{\vect{b}}$ if and only if $\vect{y}=\vect{w}+\vect{z}$ for some vector $\vect{z}\in\nsp{A}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.PSPHS.knowl">Proof</a></div>
+</div>
+<p>After proving <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a> we commented (insufficiently) on the negation of one half of the theorem.  Nonsingular coefficient matrices lead to unique solutions for every choice of the vector of constants.  What does this say about singular matrices?  A singular matrix $A$ has a nontrivial null space (<a class="knowl" acro="NMTNS" type="Theorem" title="Nonsingular Matrices have Trivial Null Spaces" knowl="./knowls/theorem.NMTNS.knowl">Theorem NMTNS</a>).  For a given vector of constants, $\vect{b}$, the system $\linearsystem{A}{\vect{b}}$ could be inconsistent, meaning there are no solutions.  But if there is at least one solution ($\vect{w}$), then <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a> tells us there will be infinitely many solutions because of the role of the infinite null space for a singular matrix.  So a system of equations with a singular coefficient matrix <em>never</em> has a unique solution.  Notice that this is the contrapositive of the statement in <a knowl="./knowls/exercise.NM.T31.knowl">Exercise NM.T31</a>.  With a singular coefficient matrix, either there are no solutions, or infinitely many solutions, depending on the choice of the vector of constants ($\vect{b}$).</p>
+<div class="example" id="example-PSHS" acro="PSHS" titletext="Particular solutions, homogeneous solutions, Archetype D"><h5 class="example">
+<a knowl="./knowls/example.PSHS.knowl"><span class="type">Example</span> <span class="acro">PSHS</span></a> <span class="titletext">Particular solutions, homogeneous solutions, Archetype D</span>
+</h5></div>
+<p>The ideas of this subsection will appear again in <a href="chapter-LT.html" title="Linear Transformations">Chapter LT</a> when we discuss pre-images of linear transformations (<a class="knowl" acro="PI" type="Definition" title="Pre-Image" knowl="./knowls/definition.PI.knowl">Definition PI</a>).</p>
+<div class="sage" id="sage-PSHS" acro="PSHS" titletext="Particular Solutions, Homogeneous Solutions"><h5 class="sage">
+<a knowl="./knowls/sage.PSHS.knowl"><span class="type">Sage</span> <span class="acro">PSHS</span></a> <span class="titletext">Particular Solutions, Homogeneous Solutions</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LC.html#subsection-PSHS" class="context" title="Section LC">(in context)</a></div>

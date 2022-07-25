@@ -1,0 +1,11 @@
+<div class="proof" id="proof-NEM" acro="NEM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NEM</span>
+</h5>
+<p>By the definition of the algebraic multiplicity (<a class="knowl" acro="AME" type="Definition" title="Algebraic Multiplicity of an Eigenvalue" knowl="./knowls/definition.AME.knowl">Definition AME</a>), we can factor the characteristic polynomial as
+\begin{equation*}
+\charpoly{A}{x}=c(x-\lambda_1)^{\algmult{A}{\lambda_1}}(x-\lambda_2)^{\algmult{A}{\lambda_2}}(x-\lambda_3)^{\algmult{A}{\lambda_3}}\cdots(x-\lambda_k)^{\algmult{A}{\lambda_k}}
+\end{equation*}
+where $c$ is a nonzero constant.  (We could prove that $c=(-1)^{n}$, but we do not need that specificity right now.  See <a knowl="./knowls/exercise.PEE.T30.knowl">Exercise PEE.T30</a>)  The left-hand side is a polynomial of degree $n$ by <a class="knowl" acro="DCP" type="Theorem" title="Degree of the Characteristic Polynomial" knowl="./knowls/theorem.DCP.knowl">Theorem DCP</a> and the right-hand side is a polynomial of degree $\sum_{i=1}^{k}\algmult{A}{\lambda_i}$.  So the equality of the polynomials' degrees gives the equality $\sum_{i=1}^{k}\algmult{A}{\lambda_i}=n$.</p>
+
+</div>

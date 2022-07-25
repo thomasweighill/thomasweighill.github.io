@@ -1,0 +1,17 @@
+<div class="exercise" acro="CB.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CB.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $S_{22}$ be the vector space of $2\times 2$ symmetric matrices. Find a basis $C$ for $S_{22}$ that yields a diagonal matrix representation of the linear transformation $R$.
+\begin{align*}
+\ltdefn{R}{S_{22}}{S_{22}},\quad
+\lt{R}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}=
+\begin{bmatrix}
+-5a + 2b - 3c &amp; -12a + 5b - 6c\\
+-12a + 5b - 6c &amp; 6a - 2b + 4c
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CB.C40.knowl">Solution</a></p></div>
+</div>

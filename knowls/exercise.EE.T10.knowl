@@ -1,0 +1,8 @@
+<div class="exercise" acro="EE.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">EE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A matrix $A$ is idempotent if $A^2=A$.  Show that the only possible eigenvalues of an idempotent matrix are $\lambda=0$ and $\lambda=1$.  Then give an example of a matrix that is idempotent and has both of these two values as eigenvalues.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.EE.T10.knowl">Solution</a></p></div>
+</div>

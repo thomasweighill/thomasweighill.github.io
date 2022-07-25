@@ -1,0 +1,17 @@
+<div class="proof" id="proof-MRCB" acro="MRCB" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MRCB</span>
+</h5>
+<p>
+\begin{align*}
+\cbm{E}{D}\matrixrep{T}{C}{E}\cbm{B}{C}
+&amp;=\matrixrep{I_V}{E}{D}\matrixrep{T}{C}{E}\matrixrep{I_U}{B}{C}&amp;&amp;\knowl{./knowls/definition.CBM.knowl}{\text{Definition CBM}}\\
+&amp;=\matrixrep{I_V}{E}{D}\matrixrep{\compose{T}{I_U}}{B}{E}&amp;&amp;\knowl{./knowls/theorem.MRCLT.knowl}{\text{Theorem MRCLT}}\\
+&amp;=\matrixrep{I_V}{E}{D}\matrixrep{T}{B}{E}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\matrixrep{\compose{I_V}{T}}{B}{D}&amp;&amp;\knowl{./knowls/theorem.MRCLT.knowl}{\text{Theorem MRCLT}}\\
+&amp;=\matrixrep{T}{B}{D}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}
+\end{align*}
+
+</p>
+
+</div>

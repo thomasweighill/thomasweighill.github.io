@@ -1,0 +1,7 @@
+<div class="definition" id="definition-A" acro="A" titletext="Adjoint">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">A</span> <span class="titletext"> Adjoint</span>
+</h5>
+<p>If $A$ is a matrix, then its <em class="term">adjoint</em> is
+$\adjoint{A}=\transpose{\left(\conjugate{A}\right)}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-A" class="context" title="Section MO">(in context)</a></div>

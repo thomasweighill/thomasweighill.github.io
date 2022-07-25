@@ -1,0 +1,14 @@
+<div class="theorem" id="theorem-MMIP" acro="MMIP" titletext="Matrix Multiplication and Inner Products">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MMIP</span><span class="titletext"> Matrix Multiplication and Inner Products</span>
+</h5>
+<div class="statement"><p>If we consider the vectors $\vect{u},\,\vect{v}\in\complex{m}$ as $m\times 1$ matrices then
+\begin{align*}
+\innerproduct{\vect{u}}{\vect{v}}
+&amp;=\transpose{\conjugate{\vect{u}}}\vect{v}
+=\adjoint{\vect{u}}\vect{v}
+\end{align*}
+
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MMIP.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-MMIP" class="context" title="Section MM">(in context)</a></div>

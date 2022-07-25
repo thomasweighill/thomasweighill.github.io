@@ -1,0 +1,10 @@
+<div class="exercise" acro="D.C23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">D.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find the dimension of the subspace
+$W = \setparts{\begin{bmatrix} a &amp; b\\c &amp; d \end{bmatrix}}{a + b = c, b + c = d, c + d = a}$
+of $M_{22}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.D.C23.knowl">Solution</a></p></div>
+</div>

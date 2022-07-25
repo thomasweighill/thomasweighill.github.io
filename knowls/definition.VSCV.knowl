@@ -1,0 +1,6 @@
+<div class="definition" id="definition-VSCV" acro="VSCV" titletext="Vector Space of Column Vectors">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">VSCV</span> <span class="titletext"> Vector Space of Column Vectors</span>
+</h5>
+<p>The vector space $\complex{m}$ is the set of all column vectors (<a class="knowl" acro="CV" type="Definition" title="Column Vector" knowl="./knowls/definition.CV.knowl">Definition CV</a>) of size $m$ with entries from the set of complex numbers, $\complex{\null}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VO.html#definition-VSCV" class="context" title="Section VO">(in context)</a></div>

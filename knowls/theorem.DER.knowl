@@ -1,0 +1,17 @@
+<div class="theorem" id="theorem-DER" acro="DER" titletext="Determinant Expansion about Rows">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DER</span><span class="titletext"> Determinant Expansion about Rows</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$.  Then for $1\leq i\leq n$
+\begin{align*}
+\detname{A}&amp;=
+(-1)^{i+1}\matrixentry{A}{i1}\detname{\submatrix{A}{i}{1}}+
+(-1)^{i+2}\matrixentry{A}{i2}\detname{\submatrix{A}{i}{2}}\\
+&amp;\quad+(-1)^{i+3}\matrixentry{A}{i3}\detname{\submatrix{A}{i}{3}}+
+\cdots+
+(-1)^{i+n}\matrixentry{A}{in}\detname{\submatrix{A}{i}{n}}
+\end{align*}
+
+which is known as <em class="term">expansion</em> about row $i$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DER.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-DM.html#theorem-DER" class="context" title="Section DM">(in context)</a></div>

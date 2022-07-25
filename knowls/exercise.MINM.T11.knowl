@@ -1,0 +1,7 @@
+<div class="exercise" acro="MINM.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MINM.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that Hermitian matrices (<a class="knowl" acro="HM" type="Definition" title="Hermitian Matrix" knowl="./knowls/definition.HM.knowl">Definition HM</a>) have real entries on the diagonal.  More precisely, suppose that $A$ is a Hermitian matrix of size $n$.  Then $\matrixentry{A}{ii}\in\real{\null}$, $1\leq i\leq n$.
+</p></div>
+</div>

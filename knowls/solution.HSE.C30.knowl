@@ -1,0 +1,40 @@
+<div class="solution" acro="HSE.C30">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">HSE.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<a class="knowl" acro="NSM" type="Definition" title="Null Space of a Matrix" knowl="./knowls/definition.NSM.knowl">Definition NSM</a> tells us that the null space of $A$ is the solution set to the homogeneous system $\homosystem{A}$.  The augmented matrix of this system is
+\begin{equation*}
+\begin{bmatrix}
+ 2 &amp; 4 &amp; 1 &amp; 3 &amp; 8 &amp; 0 \\
+ -1 &amp; -2 &amp; -1 &amp; -1 &amp; 1 &amp; 0 \\
+ 2 &amp; 4 &amp; 0 &amp; -3 &amp; 4 &amp; 0 \\
+ 2 &amp; 4 &amp; -1 &amp; -7 &amp; 4 &amp; 0
+\end{bmatrix}
+\end{equation*}
+To solve the system, we row-reduce the augmented matrix and obtain,
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; 2 &amp; 0 &amp; 0 &amp; 5 &amp; 0 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; -8 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 2 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+This matrix represents a system with equations having three dependent variables ($x_1$, $x_3$,  and $x_4$) and two independent variables ($x_2$ and $x_5$).  These equations rearrange  to
+\begin{align*}
+x_1&amp;=-2x_2-5x_5
+&amp;
+x_3&amp;=8x_5
+&amp;
+x_4&amp;=-2x_5
+\end{align*}
+
+So we can write the solution set (which is the requested null space) as
+\begin{equation*}
+\nsp{A}=\setparts{
+\colvector{-2x_2-5x_5\\x_2\\8x_5\\-2x_5\\x_5}
+}{
+x_2, x_5\in\complex{\null}
+}
+\end{equation*}
+</div>

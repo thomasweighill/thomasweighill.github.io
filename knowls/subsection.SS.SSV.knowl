@@ -1,0 +1,35 @@
+<div class="subsection" id="subsection-SSV" acro="SSV" titletext="Span of a Set of Vectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">SSV</span> <span class="titletext">Span of a Set of Vectors</span>
+</h4>
+<p>In <a class="knowl" acro="VFSAL" type="Example" title="Vector form of solutions for Archetype L" knowl="./knowls/example.VFSAL.knowl">Example VFSAL</a> we saw the solution set of a homogeneous system described as all possible linear combinations of two particular vectors.  This is a useful way to construct or describe infinite sets of vectors, so we encapsulate the idea in a definition.</p>
+<div class="definition" id="definition-SSCV" acro="SSCV" titletext="Span of a Set of Column Vectors">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SSCV</span> <span class="titletext"> Span of a Set of Column Vectors</span>
+</h5>
+<p>Given a set of vectors $S=\{\vectorlist{u}{p}\}$, their <em class="term">span</em>, $\spn{S}$, is the set of all possible linear combinations of $\vectorlist{u}{p}$.  Symbolically,
+\begin{align*}
+\spn{S}&amp;=\setparts{\lincombo{\alpha}{u}{p}}{\alpha_i\in\complex{\null},\,1\leq i\leq p}\\
+&amp;=\setparts{\sum_{i=1}^{p}\alpha_i\vect{u}_i}{\alpha_i\in\complex{\null},\,1\leq i\leq p}
+\end{align*}
+
+</p>
+</div>
+<p>The span is just a set of vectors, though in all but one situation it is an infinite set.  (Just when is it not infinite?)  So we start with a finite collection of vectors $S$ ($p$ of them to be precise), and use this finite set to describe an infinite set of vectors, $\spn{S}$.  Confusing the <em>finite</em> set $S$ with the <em>infinite</em> set $\spn{S}$ is one of the most persistent problems in understanding introductory linear algebra.  We will see this construction repeatedly, so let us work through some examples to get comfortable with it.  The most obvious question about a set is if a particular item of the correct type is in the set, or not in the set.</p>
+<div class="example" id="example-ABS" acro="ABS" titletext="A basic span"><h5 class="example">
+<a knowl="./knowls/example.ABS.knowl"><span class="type">Example</span> <span class="acro">ABS</span></a> <span class="titletext">A basic span</span>
+</h5></div>
+<div class="example" id="example-SCAA" acro="SCAA" titletext="Span of the columns of Archetype A"><h5 class="example">
+<a knowl="./knowls/example.SCAA.knowl"><span class="type">Example</span> <span class="acro">SCAA</span></a> <span class="titletext">Span of the columns of Archetype A</span>
+</h5></div>
+<p>Having analyzed <a knowl="./knowls/archetype.A.knowl">Archetype A</a> in <a class="knowl" acro="SCAA" type="Example" title="Span of the columns of Archetype A" knowl="./knowls/example.SCAA.knowl">Example SCAA</a>, we will of course subject <a knowl="./knowls/archetype.B.knowl">Archetype B</a> to a similar investigation.</p>
+<div class="example" id="example-SCAB" acro="SCAB" titletext="Span of the columns of Archetype B"><h5 class="example">
+<a knowl="./knowls/example.SCAB.knowl"><span class="type">Example</span> <span class="acro">SCAB</span></a> <span class="titletext">Span of the columns of Archetype B</span>
+</h5></div>
+<div class="sage" id="sage-SS" acro="SS" titletext="Spanning Sets"><h5 class="sage">
+<a knowl="./knowls/sage.SS.knowl"><span class="type">Sage</span> <span class="acro">SS</span></a> <span class="titletext">Spanning Sets</span>
+</h5></div>
+<div class="sage" id="sage-CSS" acro="CSS" titletext="Consistent Systems and Spans"><h5 class="sage">
+<a knowl="./knowls/sage.CSS.knowl"><span class="type">Sage</span> <span class="acro">CSS</span></a> <span class="titletext">Consistent Systems and Spans</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SS.html#subsection-SSV" class="context" title="Section SS">(in context)</a></div>

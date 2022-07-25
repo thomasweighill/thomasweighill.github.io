@@ -1,0 +1,14 @@
+<div class="proof" id="proof-CMVEI" acro="CMVEI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CMVEI</span>
+</h5>
+<p>Suppose that the augmented matrix of the system of equations is row-equivalent to $B$, a matrix in reduced row-echelon form with $r$ nonzero rows.
+Because $B$ has $m$ rows in total, the number of nonzero rows is less than or equal to $m$.  In other words, $r\leq m$.
+Follow this with the hypothesis that $n&gt;m$ and we find that the system has a solution set described by at least one free variable because
+\begin{equation*}
+n-r\geq n-m&gt;0.
+\end{equation*}</p>
+
+<p>A consistent system with free variables will have an infinite number of solutions, as given by <a class="knowl" acro="CSRN" type="Theorem" title="Consistent Systems, $r$ and $n$" knowl="./knowls/theorem.CSRN.knowl">Theorem CSRN</a>.</p>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="exercise" acro="CRS.C51">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are either matrices or systems of equations with coefficient matrices.  For each matrix, compute the column space as the span of a linearly independent set as follows: transpose the matrix, row-reduce, toss out zero rows, convert rows into column vectors. See <a class="knowl" acro="CSROI" type="Example" title="Column space from row operations, Archetype I" knowl="./knowls/example.CSROI.knowl">Example CSROI</a>.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a>,
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+</p></div>
+</div>

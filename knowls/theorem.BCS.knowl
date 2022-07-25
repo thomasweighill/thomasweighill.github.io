@@ -1,0 +1,15 @@
+<div class="theorem" id="theorem-BCS" acro="BCS" titletext="Basis of the Column Space">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">BCS</span><span class="titletext"> Basis of the Column Space</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix with columns $\vectorlist{A}{n}$, and $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ pivot columns.  Let $D=\{d_1,\,d_2,\,d_3,\,\ldots,\,d_r\}$ be the set of indices for the pivot columns of $B$  Let
+$T=\set{\vect{A}_{d_1},\,\vect{A}_{d_2},\,\vect{A}_{d_3},\,\ldots,\,\vect{A}_{d_r}}$.  Then
+<ol>
+<li> $T$ is a linearly independent set.
+</li>
+<li> $\csp{A}=\spn{T}$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.BCS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#theorem-BCS" class="context" title="Section CRS">(in context)</a></div>

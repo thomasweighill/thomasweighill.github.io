@@ -1,0 +1,10 @@
+<div class="exercise" acro="LT.C42">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C42</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Define $\ltdefn{T}{M_{22}}{\complex{1}}$ by
+$\lt{T}{\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}} = a + b + c - d$.
+Find the pre-image $\preimage{T}{3}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C42.knowl">Solution</a></p></div>
+</div>

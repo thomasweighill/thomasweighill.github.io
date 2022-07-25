@@ -1,0 +1,41 @@
+<div class="proof" id="proof-DT" acro="DT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DT</span>
+</h5>
+<p>With our definition of the determinant (<a class="knowl" acro="DM" type="Definition" title="Determinant of a Matrix" knowl="./knowls/definition.DM.knowl">Definition DM</a>) and theorems like <a class="knowl" acro="DER" type="Theorem" title="Determinant Expansion about Rows" knowl="./knowls/theorem.DER.knowl">Theorem DER</a>, using induction (<a class="knowl" acro="I" type="Proof Technique" title="Induction" knowl="./knowls/technique.I.knowl">Proof Technique I</a>) is a natural approach to proving properties of determinants.  And so it is here.  Let $n$ be the size of the matrix $A$, and we will use induction on $n$.</p>
+
+<p>For $n=1$, the transpose of a matrix is identical to the original matrix, so vacuously, the determinants are equal.</p>
+
+<p>Now assume the result is true for matrices of size $n-1$.  Then,
+\begin{align*}
+\detname{\transpose{A}}
+&amp;=\frac{1}{n}\sum_{i=1}^{n}\detname{\transpose{A}}\\
+&amp;=
+\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}(-1)^{i+j}
+\matrixentry{\transpose{A}}{ij}\detname{\submatrix{\transpose{A}}{i}{j}}
+&amp;&amp;\knowl{./knowls/theorem.DER.knowl}{\text{Theorem DER}}\\
+&amp;=
+\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}(-1)^{i+j}
+\matrixentry{A}{ji}\detname{\submatrix{\transpose{A}}{i}{j}}
+&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=
+\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}(-1)^{i+j}
+\matrixentry{A}{ji}\detname{\transpose{\left(\submatrix{A}{j}{i}\right)}}
+&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=
+\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}(-1)^{i+j}
+\matrixentry{A}{ji}\detname{\submatrix{A}{j}{i}}
+&amp;&amp;\text{Induction Hypothesis}\\
+&amp;=
+\frac{1}{n}\sum_{j=1}^{n}\sum_{i=1}^{n}(-1)^{j+i}
+\matrixentry{A}{ji}\detname{\submatrix{A}{j}{i}}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=
+\frac{1}{n}\sum_{j=1}^{n}\detname{A}
+&amp;&amp;\knowl{./knowls/theorem.DER.knowl}{\text{Theorem DER}}\\
+&amp;=\detname{A}
+\end{align*}
+
+</p>
+
+</div>

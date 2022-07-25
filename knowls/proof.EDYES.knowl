@@ -1,0 +1,7 @@
+<div class="proof" id="proof-EDYES" acro="EDYES" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">EDYES</span>
+</h5>
+<p>We give a proof by contradiction (<a class="knowl" acro="CD" type="Proof Technique" title="Contradiction" knowl="./knowls/technique.CD.knowl">Proof Technique CD</a>).  Suppose to the contrary that $U\neq V$.  Since $U\subseteq V$, there must be a vector $\vect{v}$ such that $\vect{v}\in V$ and $\vect{v}\not\in U$.  Let $B=\set{\vectorlist{u}{t}}$ be a basis for $U$.  Then, by <a class="knowl" acro="ELIS" type="Theorem" title="Extending Linearly Independent Sets" knowl="./knowls/theorem.ELIS.knowl">Theorem ELIS</a>, the set $C=B\cup\set{\vect{v}}=\set{\vectorlist{u}{t},\,\vect{v}}$ is a linearly independent set of $t+1$ vectors in $V$.  However, by hypothesis, $V$ has the same dimension as $U$ (namely $t$) and therefore <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> says that $C$ is too big to be linearly independent.  This contradiction shows that $U=V$.</p>
+
+</div>

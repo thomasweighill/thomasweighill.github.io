@@ -1,0 +1,13 @@
+
+<ol>
+<li> Where have you seen vectors used before in other courses?  How were they different?
+</li>
+<li>In words only, when are two vectors equal?
+</li>
+<li>Perform the following computation with vector operations
+\begin{equation*}
+2\colvector{1\\5\\0} + (-3)\colvector{7\\6\\5}
+\end{equation*}
+</li>
+</ol>
+

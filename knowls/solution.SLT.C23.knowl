@@ -1,0 +1,21 @@
+<div class="solution" acro="SLT.C23">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SLT.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The linear transformation $T$ is surjective if for any $p(x) = \alpha + \beta x + \gamma x^2 + \delta x^3$, there is a vector $\vect{u} = \colvector{a\\b\\c\\d\\e}$ in $\complex{5}$ so that $\lt{T}{\vect{u}} = p(x)$.  We need to be able to solve the system
+\begin{align*}
+a &amp;=\alpha\\
+b+c &amp;= \beta\\
+c + d &amp;= \gamma\\
+d + e &amp;= \delta
+\end{align*}
+
+This system has an infinite number of solutions, one of which is $a = \alpha$, $b = \beta$, $c = 0$, $d = \gamma$ and $e = \delta - \gamma$, so that
+\begin{align*}
+\lt{T}{\colvector{\alpha\\ \beta\\0\\ \gamma \\ \delta - \gamma}}
+&amp;= \alpha + (\beta + 0)x + (0 + \gamma) x^2 + (\gamma + (\delta - \gamma)) x^3\\
+&amp;= \alpha + \beta x + \gamma x^2 + \delta x^3\\
+&amp;= p(x).
+\end{align*}
+
+Thus, $T$ is surjective, since for every vector $\vect{v} \in P_3$, there exists a vector $\vect{u} \in \complex{5}$ so that $\lt{T}{\vect{u}} = \vect{v}$.
+</div>

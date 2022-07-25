@@ -1,0 +1,44 @@
+<div class="example" id="example-FDV" acro="FDV" titletext="Free and dependent variables">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">FDV</span> <span class="titletext">Free and dependent variables</span>
+</h5>
+<p>Consider the system of five equations in five variables,
+\begin{align*}
+ x_1  - x_2  -2 x_3 +  x_4 + 11 x_5 &amp;= 13 \\
+x_1 - x_2 +  x_3+  x_4 + 5 x_5 &amp;= 16 \\
+ 2 x_1  -2 x_2       +  x_4 + 10 x_5 &amp;= 21 \\
+ 2 x_1  -2 x_2  - x_3 + 3 x_4 + 20 x_5 &amp;= 38 \\
+ 2 x_1  -2 x_ 2 +  x_3 +  x_4 + 8 x_ 5&amp;= 22
+\end{align*}
+
+whose augmented matrix row-reduces to
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; -1 &amp; 0 &amp; 0 &amp; 3 &amp; 6 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; -2 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 4 &amp; 9 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Columns 1, 3 and 4 are pivot columns, so $D=\set{1,\,3,\,4}$.  From this we know that the variables $x_1$, $x_3$ and $x_4$ will be dependent variables, and each of the $r=3$ nonzero rows of the row-reduced matrix will yield an expression for one of these three variables.  The set $F$ is all the remaining column indices, $F=\set{2,\,5,\,6}$.  The column index $6$ in $F$ means that the final column is not a pivot column, and thus the system is consistent (<a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>).  The remaining indices in $F$ indicate free variables, so $x_2$ and $x_5$ (the remaining variables) are our free variables.  The resulting three equations that describe our solution set are then,
+\begin{align*}
+(x_{d_1}=x_1)&amp; &amp; x_1&amp;=6+x_2-3x_5\\
+(x_{d_2}=x_3)&amp; &amp; x_3&amp;=1+2x_5\\
+(x_{d_3}=x_4)&amp; &amp; x_4&amp;=9-4x_5
+\end{align*}
+
+</p>
+<p>Make sure you understand where these three equations came from, and notice how the location of the pivot columns determined the variables on the left-hand side of each equation.  We can compactly describe the solution set as,
+\begin{equation*}
+S=
+\setparts{
+\colvector{6+x_2-3x_5\\x_2\\1+2x_5\\9-4x_5\\x_5}
+}{x_2,\,x_5\in\complex{\null}}
+\end{equation*}
+</p>
+<p>Notice how we express the freedom for $x_2$ and $x_5$: $x_2,\,x_5\in\complex{\null}$.</p>
+<div class="context"><a href="section-TSS.html#example-FDV" class="context" title="Section TSS">(in
+context)</a></div>
+</div>

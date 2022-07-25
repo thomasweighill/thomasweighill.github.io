@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-MRSLT" acro="MRSLT" titletext="Matrix Representation of a Sum of Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRSLT</span><span class="titletext"> Matrix Representation of a Sum of Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{U}{V}$ are linear transformations, $B$ is a basis of $U$ and $C$ is a basis of $V$.  Then
+\begin{equation*}
+\matrixrep{T+S}{B}{C}=\matrixrep{T}{B}{C}+\matrixrep{S}{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRSLT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#theorem-MRSLT" class="context" title="Section MR">(in context)</a></div>

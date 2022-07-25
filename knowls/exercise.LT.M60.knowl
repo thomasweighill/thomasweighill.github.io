@@ -1,0 +1,7 @@
+<div class="exercise" acro="LT.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $U$ and $V$ are vector spaces and define a function $\ltdefn{Z}{U}{V}$ by $\lt{Z}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Prove that $Z$ is a (stupid) linear transformation.  (See <a knowl="./knowls/exercise.ILT.M60.knowl">Exercise ILT.M60</a>, <a knowl="./knowls/exercise.SLT.M60.knowl">Exercise SLT.M60</a>, <a knowl="./knowls/exercise.IVLT.M60.knowl">Exercise IVLT.M60</a>.)
+</p></div>
+</div>

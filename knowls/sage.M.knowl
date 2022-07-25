@@ -1,0 +1,68 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-M', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">M</span> <span class="titletext">Matrices</span>
+</h5>
+
+
+<p>Matrices are fundamental objects in linear algebra and in Sage, so there are a variety of ways to construct a matrix in Sage.  Generally, you need to specify what types of entries the matrix contains (more on that in a minute), the number of rows and columns, and the entries themselves.  First, let us dissect an example:</p>
+
+<br><br><div class="sage-M"><script type="text/x-sage">A = matrix(QQ, 2, 3, [[1, 2, 3], [4, 5, 6]])
+A
+</script></div>
+
+<p><span class="code">QQ</span> is the set of all rational numbers (fractions with an integer numerator and denominator), <span class="code">2</span> is the number of rows, <span class="code">3</span> is the number of columns.  Sage understands a list of items as delimited by brackets (<span class="code">[,]</span>) and the items in the list can again be lists themselves.  So <span class="code">[[1, 2, 3], [4, 5, 6]]</span> is a list of lists, and in this context the inner lists are rows of the matrix.</p>
+
+<p>There are various shortcuts you can employ when creating a matrix.  For example, Sage is able to infer the size of the matrix from the lists of entries.</p>
+
+<br><br><div class="sage-M"><script type="text/x-sage">B = matrix(QQ, [[1, 2, 3], [4, 5, 6]])
+B
+</script></div>
+
+<p>Or you can specify how many rows the matrix will have and provide one big grand list of entries, which will get chopped up, row by row, if you prefer.</p>
+
+<br><br><div class="sage-M"><script type="text/x-sage">C = matrix(QQ, 2, [1, 2, 3, 4, 5, 6])
+C
+</script></div>
+
+<p>It is possible to also skip specifying the type of numbers used for entries of a matrix, however this is fraught with peril, as Sage will make an informed guess about your intent.  Is this what you want?  Consider when you enter the single character “2” into a computer program like Sage.  Is this the integer $2$, the rational number $\frac{2}{1}$, the real number $2.00000$, the complex number $2 + 0i$, or the polynomial $p(x)=2$?  In context, us humans can usually figure it out, but a literal-minded computer is not so smart.  It happens that the operations we can perform, and how they behave, are influenced by the type of the entries in a matrix.  So it is important to get this right and our advice is to be explicit and be in the habit of always specifying the type of the entries of a matrix you create.</p>
+
+<p>Mathematical objects in Sage often come from sets of similar objects.  This set is called the “parent” of the element.  We can use this to learn how Sage deduces the type of entries in a matrix.  Execute the following three compute cells in the Sage notebook, and notice how the three matrices are constructed to have entries from the integers, the rationals and the reals.</p>
+
+<br><br><div class="sage-M"><script type="text/x-sage">A = matrix(2, 3, [[1, 2, 3], [4, 5, 6]])
+A.parent()
+</script></div>
+
+<br><br><div class="sage-M"><script type="text/x-sage">B = matrix(2, 3, [[1, 2/3, 3], [4, 5, 6]])
+B.parent()
+</script></div>
+
+<br><br><div class="sage-M"><script type="text/x-sage">C = matrix(2, 3, [[1, sin(2.2), 3], [4, 5, 6]])
+C.parent()
+</script></div>
+
+<p>Sage knows a wide variety of sets of numbers.  These are known as “rings” or “fields” (see <a href="section-F.html" title="">Section F</a>), but we will call them “number systems” here.  Examples include: <span class="code">ZZ</span> is the integers, <span class="code">QQ</span> is the rationals, <span class="code">RR</span> is the real numbers with reasonable precision, and <span class="code">CC</span> is the complex numbers with reasonable precision.  We will present the theory of linear algebra over the complex numbers.  However, in any computer system, there will always be complications surrounding the inability of digital arithmetic to accurately represent all complex numbers.  In contrast, Sage can represent rational numbers exactly as the quotient of two (perhaps very large) integers.  So our Sage examples will begin by using <span class="code">QQ</span> as our number system and we can concentrate on understanding the key concepts.</p>
+
+<p>Once we have constructed a matrix, we can learn a lot about it (such as its parent).  Sage is largely object-oriented, which means many commands apply to an object by using the “dot” notation.  <span class="code">A.parent()</span> is an example of this syntax, while the constructor <span class="code">matrix([[1, 2, 3], [4, 5, 6]])</span> is an exception.  Here are a few examples, followed by some explanation:</p>
+
+<br><br><div class="sage-M"><script type="text/x-sage">A = matrix(QQ, 2, 3, [[1,2,3],[4,5,6]])
+A.nrows(), A.ncols()
+</script></div>
+
+<br><br><div class="sage-M"><script type="text/x-sage">A.base_ring()
+</script></div>
+
+<br><br><div class="sage-M"><script type="text/x-sage">A[1,1]
+</script></div>
+
+<br><br><div class="sage-M"><script type="text/x-sage">A[1,2]
+</script></div>
+
+<p>The number of rows and the number of columns should be apparent, <span class="code">.base_ring()</span> gives the number system for the entries, as included in the information provided by <span class="code">.parent()</span>.</p>
+
+<p>Computer scientists and computer languages prefer to begin counting from zero, while mathematicians and written mathematics prefer to begin counting at one.  Sage and this text are no exception.  It takes some getting used to, but the reasons for counting from zero in computer programs soon becomes very obvious.  Counting from one in mathematics is historical, and unlikely to change anytime soon.  So above, the two rows of <span class="code">A</span> are numbered 0 and 1, while the columns are numbered 0, 1 and 2.  So <span class="code">A[1,2]</span> refers to the entry of <span class="code">A</span> in the second row and the third column, i.e.  <span class="code">6</span>.</p>
+
+<p>There is much more to say about how Sage works with matrices, but this is already a lot to digest.  Use the space below to create some matrices (different ways) and examine them and their properties (size, entries, number system, parent).</p>
+
+<br><br><div class="sage-M sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

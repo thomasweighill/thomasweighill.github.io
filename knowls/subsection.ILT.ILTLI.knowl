@@ -1,0 +1,40 @@
+<div class="subsection" id="subsection-ILTLI" acro="ILTLI" titletext="Injective Linear Transformations and Linear Independence">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">ILTLI</span> <span class="titletext">Injective Linear Transformations and Linear Independence</span>
+</h4>
+<p>There is a connection between injective linear transformations and linearly independent sets that we will make precise in the next two theorems.  However, more informally, we can get a feel for this connection when we think about how each property is defined.  A set of vectors is linearly independent if the <b>only</b> relation of linear dependence is the trivial one.  A linear transformation is injective if the <b>only</b> way two input vectors can produce the same output is in the trivial way, when both input vectors are equal.</p>
+<div class="theorem" id="theorem-ILTLI" acro="ILTLI" titletext="Injective Linear Transformations and Linear Independence">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ILTLI</span><span class="titletext"> Injective Linear Transformations and Linear Independence</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is an injective linear transformation and
+\begin{align*}
+S&amp;=\set{\vectorlist{u}{t}}
+\end{align*}
+
+is a linearly independent subset of $U$.  Then
+\begin{align*}
+R&amp;=\set{\lt{T}{\vect{u}_1},\,\lt{T}{\vect{u}_2},\,\lt{T}{\vect{u}_3},\,\ldots,\,\lt{T}{\vect{u}_t}}
+\end{align*}
+
+is a linearly independent subset of $V$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ILTLI.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-ILTB" acro="ILTB" titletext="Injective Linear Transformations and Bases">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ILTB</span><span class="titletext"> Injective Linear Transformations and Bases</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and
+\begin{align*}
+B&amp;=\set{\vectorlist{u}{m}}
+\end{align*}
+
+is a basis of $U$.  Then $T$ is injective if and only if
+\begin{align*}
+C&amp;=\set{\lt{T}{\vect{u}_1},\,\lt{T}{\vect{u}_2},\,\lt{T}{\vect{u}_3},\,\ldots,\,\lt{T}{\vect{u}_m}}
+\end{align*}
+
+is a linearly independent subset of $V$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ILTB.knowl">Proof</a></div>
+</div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-ILT.html#subsection-ILTLI" class="context" title="Section ILT">(in context)</a></div>

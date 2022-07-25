@@ -1,0 +1,20 @@
+<div class="subsection" id="subsection-MCN" acro="MCN" titletext="Modulus of a Complex Number">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">MCN</span> <span class="titletext">Modulus of a Complex Number</span>
+</h4>
+<p>We define one more operation with complex numbers that may be new to you.</p>
+<div class="definition" id="definition-MCN" acro="MCN" titletext="Modulus of a Complex Number">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">MCN</span> <span class="titletext"> Modulus of a Complex Number</span>
+</h5>
+<p>The <em class="term">modulus</em> of the complex number $\alpha=a+bi\in\complex{\null}$, is the nonnegative real number
+\begin{equation*}
+\modulus{\alpha}=\sqrt{\conjugate{\alpha}\alpha}=\sqrt{a^2+b^2}.
+\end{equation*}
+</p>
+</div>
+<div class="example" id="example-MSCN" acro="MSCN" titletext="Modulus of some complex numbers"><h5 class="example">
+<a knowl="./knowls/example.MSCN.knowl"><span class="type">Example</span> <span class="acro">MSCN</span></a> <span class="titletext">Modulus of some complex numbers</span>
+</h5></div>
+<p>The modulus can be interpreted as a version of the absolute value for complex numbers, as is suggested by the notation employed.  You can see this in how $\modulus{-3}=\modulus{-3+0i}=3$.  Notice too how the modulus of the complex zero, $0+0i$, has value $0$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#subsection-MCN" class="context" title="Section CNO">(in context)</a></div>

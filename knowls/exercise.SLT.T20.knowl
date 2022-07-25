@@ -1,0 +1,12 @@
+<div class="exercise" acro="SLT.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.T20</span> <span class="contributor"><a knowl="./knowls/contributor.andyzimmer.knowl">Andy Zimmer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix.  Define the linear transformation $T$ by
+\begin{equation*}
+\ltdefn{T}{\complex{n}}{\complex{m}},\quad \lt{T}{\vect{x}}=A\vect{x}
+\end{equation*}
+Prove that the range of $T$ equals the column space of $A$, $\rng{T}=\csp{A}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.T20.knowl">Solution</a></p></div>
+</div>

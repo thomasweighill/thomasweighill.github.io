@@ -1,0 +1,96 @@
+<div class="proof" id="proof-RPNDD" acro="RPNDD" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">RPNDD</span>
+</h5>
+<p>Let $r=\rank{T}$ and $s=\nullity{T}$.  Suppose that $R=\set{\vectorlist{v}{r}}\subseteq V$ is a basis of the range of $T$, $\rng{T}$, and $S=\set{\vectorlist{u}{s}}\subseteq U$ is a basis of the kernel of $T$, $\krn{T}$.  Note that $R$ and $S$ are possibly empty, which means that some of the sums in this proof are “empty” and are equal to the zero vector.</p>
+
+<p>Because the elements of $R$ are all in the range of $T$, each must have a nonempty pre-image by <a class="knowl" acro="RPI" type="Theorem" title="Range and Pre-Image" knowl="./knowls/theorem.RPI.knowl">Theorem RPI</a>.  Choose vectors $\vect{w}_i\in U$, $1\leq i\leq r$ such that $\vect{w}_i\in\preimage{T}{\vect{v}_i}$.  So $\lt{T}{\vect{w}_i}=\vect{v}_i$, $1\leq i\leq r$.  Consider the set
+\begin{equation*}
+B=\set{\vectorlist{u}{s},\,\vectorlist{w}{r}}
+\end{equation*}
+We claim that $B$ is a basis for $U$.</p>
+
+<p>To establish linear independence for $B$, begin with a relation of linear dependence on $B$.  So suppose there are scalars $\scalarlist{a}{s}$ and $\scalarlist{b}{r}$
+\begin{equation*}
+\zerovector=\lincombo{a}{u}{s}+\lincombo{b}{w}{r}
+\end{equation*}
+</p>
+
+<p>Then
+\begin{align*}
+\zerovector&amp;=\lt{T}{\zerovector}&amp;&amp;\knowl{./knowls/theorem.LTTZZ.knowl}{\text{Theorem LTTZZ}}\\
+&amp;=T\left(\lincombo{a}{u}{s}+\right.\\
+&amp;\quad\quad\quad\quad\left.\lincombo{b}{w}{r}\right)&amp;&amp;\knowl{./knowls/definition.LI.knowl}{\text{Definition LI}}\\
+&amp;=a_1\lt{T}{\vect{u}_1}+a_2\lt{T}{\vect{u}_2}+a_3\lt{T}{\vect{u}_3}+\cdots+a_s\lt{T}{\vect{u}_s}+\\
+&amp;\quad\quad b_1\lt{T}{\vect{w}_1}+b_2\lt{T}{\vect{w}_2}+b_3\lt{T}{\vect{w}_3}+\cdots+b_r\lt{T}{\vect{w}_r}
+&amp;&amp;\knowl{./knowls/theorem.LTLC.knowl}{\text{Theorem LTLC}}\\
+&amp;=a_1\zerovector+a_2\zerovector+a_3\zerovector+\cdots+a_s\zerovector+\\
+&amp;\quad\quad b_1\lt{T}{\vect{w}_1}+b_2\lt{T}{\vect{w}_2}+b_3\lt{T}{\vect{w}_3}+\cdots+b_r\lt{T}{\vect{w}_r}
+&amp;&amp;\knowl{./knowls/definition.KLT.knowl}{\text{Definition KLT}}\\
+&amp;=\zerovector+\zerovector+\zerovector+\cdots+\zerovector+\\
+&amp;\quad\quad b_1\lt{T}{\vect{w}_1}+b_2\lt{T}{\vect{w}_2}+b_3\lt{T}{\vect{w}_3}+\cdots+b_r\lt{T}{\vect{w}_r}
+&amp;&amp;\knowl{./knowls/theorem.ZVSM.knowl}{\text{Theorem ZVSM}}\\
+&amp;=b_1\lt{T}{\vect{w}_1}+b_2\lt{T}{\vect{w}_2}+b_3\lt{T}{\vect{w}_3}+\cdots+b_r\lt{T}{\vect{w}_r}&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\\
+&amp;=b_1\vect{v}_1+b_2\vect{v}_2+b_3\vect{v}_3+\cdots+b_r\vect{v}_r&amp;&amp;\knowl{./knowls/definition.PI.knowl}{\text{Definition PI}}
+\end{align*}
+
+</p>
+
+<p>This is a relation of linear dependence on $R$ (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>), and since $R$ is a linearly independent set (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>), we see that $b_1=b_2=b_3=\ldots=b_r=0$.  Then the original relation of linear dependence on $B$ becomes
+\begin{align*}
+\zerovector&amp;=\lincombo{a}{u}{s}+0\vect{w}_1+0\vect{w}_2+\ldots+0\vect{w}_r\\
+&amp;=\lincombo{a}{u}{s}+\zerovector+\zerovector+\ldots+\zerovector&amp;&amp;\knowl{./knowls/theorem.ZSSM.knowl}{\text{Theorem ZSSM}}\\
+&amp;=\lincombo{a}{u}{s}&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}
+\end{align*}
+
+</p>
+
+<p>But this is again a relation of linear independence (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>), now on the set $S$.  Since $S$ is linearly independent (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>), we have $a_1=a_2=a_3=\ldots=a_r=0$.  Since we now know that all the scalars in the relation of linear dependence on $B$ must be zero, we have established the linear independence of $S$ through <a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>.</p>
+
+<p>To now establish that $B$ spans $U$, choose an arbitrary vector $\vect{u}\in U$.  Then $\lt{T}{\vect{u}}\in R(T)$, so there are scalars $\scalarlist{c}{r}$ such that
+\begin{equation*}
+\lt{T}{\vect{u}}=\lincombo{c}{v}{r}
+\end{equation*}
+</p>
+
+<p>Use the scalars $\scalarlist{c}{r}$ to define a vector $\vect{y}\in U$,
+\begin{equation*}
+\vect{y}=\lincombo{c}{w}{r}
+\end{equation*}
+</p>
+
+<p>Then
+\begin{align*}
+\lt{T}{\vect{u}-\vect{y}}&amp;=\lt{T}{\vect{u}}-\lt{T}{\vect{y}}&amp;&amp;\knowl{./knowls/theorem.LTLC.knowl}{\text{Theorem LTLC}}\\
+&amp;=\lt{T}{\vect{u}}-\lt{T}{\lincombo{c}{w}{r}}&amp;&amp;\text{Substitution}\\
+&amp;=\lt{T}{\vect{u}}-\left(c_1\lt{T}{\vect{w}_1}+c_2\lt{T}{\vect{w}_2}+\cdots+c_r\lt{T}{\vect{w}_r}\right)&amp;&amp;\knowl{./knowls/theorem.LTLC.knowl}{\text{Theorem LTLC}}\\
+&amp;=\lt{T}{\vect{u}}-\left(\lincombo{c}{v}{r}\right)&amp;&amp;\vect{w}_i\in\preimage{T}{\vect{v}_i}\\
+&amp;=\lt{T}{\vect{u}}-\lt{T}{\vect{u}}&amp;&amp;\text{Substitution}\\
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}
+\end{align*}
+
+</p>
+
+<p>So the vector $\vect{u}-\vect{y}$ is sent to the zero vector by $T$ and hence is an element of the kernel of $T$.  As such it can be written as a linear combination of the basis vectors for $\krn{T}$, the elements of the set $S$.  So there are scalars $\scalarlist{d}{s}$ such that
+\begin{equation*}
+\vect{u}-\vect{y}=\lincombo{d}{u}{s}
+\end{equation*}
+</p>
+
+<p>Then
+\begin{align*}
+\vect{u}&amp;=\left(\vect{u}-\vect{y}\right)+\vect{y}\\
+&amp;=\lincombo{d}{u}{s}+\lincombo{c}{w}{r}
+\end{align*}
+
+</p>
+
+<p>This says that for any vector, $\vect{u}$, from $U$, there exist scalars ($\scalarlist{d}{s}$, $\scalarlist{c}{r}$) that form $\vect{u}$ as a linear combination of the vectors in the set $B$.  In other words, $B$ spans $U$ (<a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a>).</p>
+
+<p>So $B$ is a basis (<a class="knowl" acro="B" type="Definition" title="Basis" knowl="./knowls/definition.B.knowl">Definition B</a>) of $U$ with $s+r$ vectors, and thus
+\begin{equation*}
+\dimension{U}=s+r=\nullity{T}+\rank{T}
+\end{equation*}
+as desired.</p>
+
+</div>

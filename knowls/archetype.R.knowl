@@ -1,0 +1,15 @@
+<div class="archetype" id="archetype-R" acro="R" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">R</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Linear transformation with equal-sized domain and codomain.  Injective, surjective, invertible, diagonalizable, the works.</p>
+<p>Definition:\begin{align*}\ltdefn{T}{\complex{5}}{\complex{5}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3\\x_4\\x_5}}=
+\colvector{-65 x_1 + 128 x_2 + 10 x_3 - 262 x_4 + 40 x_5\\
+36 x_1 - 73 x_2 - x_3 + 151 x_4 - 16 x_5\\
+-44 x_1 + 88 x_2 + 5 x_3 - 180 x_4 + 24 x_5\\
+34 x_1 - 68 x_2 - 3 x_3 + 140 x_4 - 18 x_5\\
+12 x_1 - 24 x_2 - x_3 + 49 x_4 - 5 x_5}
+\end{align*}</p>
+<div class="context"><a href="archetype-R.html" class="context" title="Archetype R">Complete analysis of Archetype R</a></div>
+</div>

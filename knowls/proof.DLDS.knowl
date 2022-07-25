@@ -1,0 +1,71 @@
+<div class="proof" id="proof-DLDS" acro="DLDS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DLDS</span>
+</h5>
+<p>(⇒) Suppose that $S$ is linearly dependent, so there exists a nontrivial relation of linear dependence by <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>.  That is, there are scalars, $\alpha_i$, $1\leq i\leq n$, which are not all zero, such that
+\begin{equation*}
+\lincombo{\alpha}{u}{n}=\zerovector.
+\end{equation*}
+Since the $\alpha_i$ cannot all be zero, choose one, say $\alpha_t$, that is nonzero.  Then,
+\begin{align*}
+\vect{u}_t
+&amp;=\frac{-1}{\alpha_t}\left(-\alpha_t\vect{u}_t\right)&amp;&amp;\knowl{./knowls/property.MICN.knowl}{\text{Property MICN}}\\
+&amp;=
+\frac{-1}{\alpha_t}\left(
+\alpha_1\vect{u}_1+
+\cdots+
+\alpha_{t-1}\vect{u}_{t-1}+
+\alpha_{t+1}\vect{u}_{t+1}+
+\cdots+
+\alpha_n\vect{u}_n
+\right)&amp;&amp;\knowl{./knowls/theorem.VSPCV.knowl}{\text{Theorem VSPCV}}\\
+&amp;=
+\frac{-\alpha_1}{\alpha_t}\vect{u}_1+
+\cdots+
+\frac{-\alpha_{t-1}}{\alpha_t}\vect{u}_{t-1}+
+\frac{-\alpha_{t+1}}{\alpha_t}\vect{u}_{t+1}+
+\cdots+
+\frac{-\alpha_n}{\alpha_t}\vect{u}_n
+&amp;&amp;\knowl{./knowls/theorem.VSPCV.knowl}{\text{Theorem VSPCV}}
+\end{align*}
+
+</p>
+
+<p>Since the values of $\frac{\alpha_i}{\alpha_t}$ are again scalars, we have expressed $\vect{u}_t$ as a linear combination of the other elements of $S$.</p>
+
+<p>(⇐) Assume that the vector $\vect{u}_t$ is a linear combination of the other vectors in $S$.  Write this linear combination,  denoting the relevant scalars as $\beta_1$, $\beta_2$, …, $\beta_{t-1}$, $\beta_{t+1}$, …, $\beta_n$, as
+\begin{align*}
+\vect{u_t}
+&amp;=
+\beta_1\vect{u}_1+
+\beta_2\vect{u}_2+
+\cdots+
+\beta_{t-1}\vect{u}_{t-1}+
+\beta_{t+1}\vect{u}_{t+1}+
+\cdots+
+\beta_n\vect{u}_n
+\end{align*}
+
+</p>
+
+<p>Then we have
+\begin{align*}
+\beta_1\vect{u}_1
+&amp;+\cdots+
+\beta_{t-1}\vect{u}_{t-1}+
+(-1)\vect{u}_t+
+\beta_{t+1}\vect{u}_{t+1}+
+\cdots+
+\beta_n\vect{u}_n\\
+&amp;=\vect{u}_t+(-1)\vect{u}_t&amp;&amp;\knowl{./knowls/theorem.VSPCV.knowl}{\text{Theorem VSPCV}}\\
+&amp;=\left(1+\left(-1\right)\right)\vect{u}_t&amp;&amp;\knowl{./knowls/property.DSAC.knowl}{\text{Property DSAC}}\\
+&amp;=0\vect{u}_t&amp;&amp;\knowl{./knowls/property.AICN.knowl}{\text{Property AICN}}\\
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}
+\end{align*}
+
+</p>
+
+<p>So the scalars $\beta_1,\,\beta_2,\,\beta_3,\,\ldots,\,\beta_{t-1},\,\beta_t=-1,\beta_{t+1},\,\,\ldots,\,\beta_n$ provide a <em>nontrivial</em> linear combination of the vectors in $S$, thus establishing that $S$ is a linearly dependent set (<a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>).
+</p>
+
+</div>

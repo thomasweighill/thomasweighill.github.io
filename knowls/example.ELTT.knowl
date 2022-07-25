@@ -1,0 +1,374 @@
+<div class="example" id="example-ELTT" acro="ELTT" titletext="Eigenvectors of a linear transformation, twice">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ELTT</span> <span class="titletext">Eigenvectors of a linear transformation, twice</span>
+</h5>
+<p>Consider the linear transformation $\ltdefn{S}{M_{22}}{M_{22}}$ defined by
+\begin{equation*}
+\lt{S}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+\begin{bmatrix}
+-b - c - 3d &amp; -14a - 15b - 13c + d\\
+18a + 21b + 19c + 3d &amp;  -6a - 7b - 7c - 3d
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>To find the eigenvalues and eigenvectors of $S$ we will build a matrix representation and analyze the matrix.  Since <a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a> places no restriction on the choice of the basis $B$, we may as well use a basis that is easy to work with.  So set
+\begin{equation*}
+B=\set{\vect{x}_1,\,\vect{x}_2,\,\vect{x}_3,\,\vect{x}_4}
+=\set{
+\begin{bmatrix}
+ 1 &amp; 0 \\ 0 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 0 &amp; 1 \\ 0 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 0 &amp; 0 \\ 1 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 0 &amp; 0 \\ 0 &amp; 1
+\end{bmatrix}
+}
+\end{equation*}
+</p>
+<p>Then to build the matrix representation of $S$ relative to $B$ compute,
+\begin{align*}
+\vectrep{B}{\lt{S}{\vect{x}_1}}&amp;=
+\vectrep{B}{\begin{bmatrix}0 &amp; -14 \\ 18 &amp; -6\end{bmatrix}}\\
+&amp;=\vectrep{B}{0\vect{x}_1+(-14)\vect{x}_2+18\vect{x}_3+(-6)\vect{x}_4}=
+\colvector{0\\-14\\18\\-6}\\
+\vectrep{B}{\lt{S}{\vect{x}_2}}&amp;=
+\vectrep{B}{\begin{bmatrix}-1 &amp; -15\\21 &amp; -7\end{bmatrix}}\\
+&amp;=\vectrep{B}{(-1)\vect{x}_1+(-15)\vect{x}_2+21\vect{x}_3+(-7)\vect{x}_4}=
+\colvector{-1\\-15\\21\\-7}\\
+\vectrep{B}{\lt{S}{\vect{x}_3}}&amp;=
+\vectrep{B}{\begin{bmatrix}-1 &amp; -13\\19 &amp; -7\end{bmatrix}}\\
+&amp;=\vectrep{B}{(-1)\vect{x}_1+(-13)\vect{x}_2+19\vect{x}_3+(-7)\vect{x}_4}=
+\colvector{-1\\-13\\19\\-7}\\
+\vectrep{B}{\lt{S}{\vect{x}_4}}&amp;=
+\vectrep{B}{\begin{bmatrix}-3 &amp; 1\\3 &amp; -3\end{bmatrix}}\\
+&amp;=\vectrep{B}{(-3)\vect{x}_1+1\vect{x}_2+3\vect{x}_3+(-3)\vect{x}_4}=
+\colvector{-3\\1\\3\\-3}
+\end{align*}
+
+</p>
+<p>So by <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a> we have
+\begin{equation*}
+M=\matrixrep{S}{B}{B}=
+\begin{bmatrix}
+ 0 &amp; -1 &amp; -1 &amp; -3 \\
+ -14 &amp; -15 &amp; -13 &amp; 1 \\
+ 18 &amp; 21 &amp; 19 &amp; 3 \\
+ -6 &amp; -7 &amp; -7 &amp; -3
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now compute eigenvalues and eigenvectors of the matrix representation of $M$ with the techniques of <a href="section-EE.html" title="Eigenvalues and Eigenvectors">Section EE</a>.  First the characteristic polynomial,
+\begin{equation*}
+\charpoly{M}{x}=\detname{M-xI_4}=x^4-x^3-10 x^2+4 x+24=(x-3) (x-2) (x+2)^2
+\end{equation*}
+</p>
+<p>We could now make statements about the eigenvalues of $M$, but in light of <a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a> we can refer to the eigenvalues of $S$ and mildly abuse (or extend) our notation for multiplicities to write
+\begin{align*}
+\algmult{S}{3}&amp;=1
+&amp;
+\algmult{S}{2}&amp;=1
+&amp;
+\algmult{S}{-2}&amp;=2
+\end{align*}
+
+</p>
+<p>Now compute the eigenvectors of $M$,
+\begin{align*}
+\lambda&amp;=3&amp;M-3I_4&amp;=
+\begin{bmatrix}
+ -3 &amp; -1 &amp; -1 &amp; -3 \\
+ -14 &amp; -18 &amp; -13 &amp; 1 \\
+ 18 &amp; 21 &amp; 16 &amp; 3 \\
+ -6 &amp; -7 &amp; -7 &amp; -6
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 1 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; -3 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 3 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{M}{3}&amp;=\nsp{M-3I_4}
+=\spn{\set{\colvector{-1\\3\\-3\\1}}}
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=2&amp;M-2I_4&amp;=
+\begin{bmatrix}
+ -2 &amp; -1 &amp; -1 &amp; -3 \\
+ -14 &amp; -17 &amp; -13 &amp; 1 \\
+ 18 &amp; 21 &amp; 17 &amp; 3 \\
+ -6 &amp; -7 &amp; -7 &amp; -5
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 2 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; -4 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 3 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{M}{2}&amp;=\nsp{M-2I_4}
+=\spn{\set{\colvector{-2\\4\\-3\\1}}}
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=-2&amp;M-(-2)I_4&amp;=
+\begin{bmatrix}
+ 2 &amp; -1 &amp; -1 &amp; -3 \\
+ -14 &amp; -13 &amp; -13 &amp; 1 \\
+ 18 &amp; 21 &amp; 21 &amp; 3 \\
+ -6 &amp; -7 &amp; -7 &amp; -1
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; -1 \\
+ 0 &amp; \leading{1} &amp; 1 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{M}{-2}&amp;=\nsp{M-(-2)I_4}
+=\spn{\set{\colvector{0\\-1\\1\\0},\,\colvector{1\\-1\\0\\1}}}
+\end{align*}
+
+</p>
+<p>According to <a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a> the eigenvectors just listed as basis vectors for the eigenspaces of $M$ are vector representations (relative to $B$) of eigenvectors for $S$.  So the application if the inverse function $\vectrepinvname{B}$ will convert these column vectors into elements of the vector space $M_{22}$ ($2\times 2$ matrices) that are eigenvectors of $S$.  Since $\vectrepname{B}$ is an isomorphism (<a class="knowl" acro="VRILT" type="Theorem" title="Vector Representation is an Invertible Linear Transformation" knowl="./knowls/theorem.VRILT.knowl">Theorem VRILT</a>), so is $\vectrepinvname{B}$.  Applying the inverse function will then preserve linear independence and spanning properties, so with a sweeping application of the <a href="section-VR.html" title="Coordinatization Principle">Coordinatization Principle</a> and some extensions of our previous notation for eigenspaces and geometric multiplicities, we can write,
+\begin{align*}
+\vectrepinv{B}{\colvector{-1\\3\\-3\\1}}
+&amp;=
+(-1)\vect{x}_1+3\vect{x}_2+(-3)\vect{x}_3+1\vect{x}_4=
+\begin{bmatrix}-1 &amp; 3\\-3 &amp; 1\end{bmatrix}\\
+\vectrepinv{B}{\colvector{-2\\4\\-3\\1}}
+&amp;=
+(-2)\vect{x}_1+4\vect{x}_2+(-3)\vect{x}_3+1\vect{x}_4=
+\begin{bmatrix}-2 &amp; 4\\-3 &amp; 1\end{bmatrix}\\
+\vectrepinv{B}{\colvector{0\\-1\\1\\0}}
+&amp;=
+0\vect{x}_1+(-1)\vect{x}_2+1\vect{x}_3+0\vect{x}_4=
+\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix}\\
+\vectrepinv{B}{\colvector{1\\-1\\0\\1}}
+&amp;=
+1\vect{x}_1+(-1)\vect{x}_2+0\vect{x}_3+1\vect{x}_4=
+\begin{bmatrix}1 &amp; -1\\0 &amp; 1\end{bmatrix}\\
+\end{align*}
+
+</p>
+<p>So
+\begin{align*}
+\eigenspace{S}{3}&amp;=
+\spn{\set{\begin{bmatrix}-1 &amp; 3\\-3 &amp; 1\end{bmatrix}}}\\
+\eigenspace{S}{2}&amp;=
+\spn{\set{\begin{bmatrix}-2 &amp; 4\\-3 &amp; 1\end{bmatrix}}}\\
+\eigenspace{S}{-2}&amp;=
+\spn{\set{\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix},\,\begin{bmatrix}1 &amp; -1\\0 &amp; 1\end{bmatrix}}}
+\end{align*}
+
+with geometric multiplicities given by
+\begin{align*}
+\geomult{S}{3}&amp;=1
+&amp;
+\geomult{S}{2}&amp;=1
+&amp;
+\geomult{S}{-2}&amp;=2
+\end{align*}
+
+</p>
+<p>Suppose we now decided to build another matrix representation of $S$, only now relative to a linearly independent set of eigenvectors of $S$, such as
+\begin{equation*}
+C=
+\set{
+\begin{bmatrix}-1 &amp; 3\\-3 &amp; 1\end{bmatrix},\,
+\begin{bmatrix}-2 &amp; 4\\-3 &amp; 1\end{bmatrix},\,
+\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}1 &amp; -1\\0 &amp; 1\end{bmatrix}
+}
+\end{equation*}
+</p>
+<p>At this point you should have computed enough matrix representations to predict that the result of representing $S$ relative to $C$ will be a diagonal matrix.  Computing this representation is an example of how <a class="knowl" acro="SCB" type="Theorem" title="Similarity and Change of Basis" knowl="./knowls/theorem.SCB.knowl">Theorem SCB</a> generalizes the diagonalizations from <a href="section-SD.html" title="Similarity and Diagonalization">Section SD</a>.  For the record, here is the diagonal representation,
+\begin{equation*}
+\matrixrep{S}{C}{C}
+=
+\begin{bmatrix}
+ 3 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 2 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; -2 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; -2
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Our interest in this example is not necessarily building nice representations, but instead we want to demonstrate how eigenvalues and eigenvectors are an intrinsic property of a linear transformation, independent of any particular representation.  To this end, we will repeat the foregoing, but replace $B$ by another basis.  We will make this basis different, but not extremely so,
+\begin{equation*}
+D=\set{\vect{y}_1,\,\vect{y}_2,\,\vect{y}_3,\,\vect{y}_4}
+=\set{
+\begin{bmatrix}
+ 1 &amp; 0 \\ 0 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 1 &amp; 1 \\ 0 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 1 &amp; 1 \\ 1 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 1 &amp; 1 \\ 1 &amp; 1
+\end{bmatrix}
+}
+\end{equation*}
+</p>
+<p>Then to build the matrix representation of $S$ relative to $D$ compute,
+\begin{align*}
+\vectrep{D}{\lt{S}{\vect{y}_1}}&amp;=
+\vectrep{D}{\begin{bmatrix}0 &amp; -14\\18 &amp; -6\end{bmatrix}}\\
+&amp;=\vectrep{D}{14\vect{y}_1+(-32)\vect{y}_2+24\vect{y}_3+(-6)\vect{y}_4}=
+\colvector{14\\-32\\24\\-6}\\
+\vectrep{D}{\lt{S}{\vect{y}_2}}&amp;=
+\vectrep{D}{\begin{bmatrix}-1 &amp; -29 \\ 39 &amp; -13\end{bmatrix}}\\
+&amp;=\vectrep{D}{28\vect{y}_1+(-68)\vect{y}_2+52\vect{y}_3+(-13)\vect{y}_4}=
+\colvector{28\\-68\\52\\-13}\\
+\vectrep{D}{\lt{S}{\vect{y}_3}}&amp;=
+\vectrep{D}{\begin{bmatrix}-2 &amp; -42 \\ 58 &amp; -20\end{bmatrix}}\\
+&amp;=\vectrep{D}{40\vect{y}_1+(-100)\vect{y}_2+78\vect{y}_3+(-20)\vect{y}_4}=
+\colvector{40\\-100\\78\\-20}\\
+\vectrep{D}{\lt{S}{\vect{y}_4}}&amp;=
+\vectrep{D}{\begin{bmatrix}-5 &amp; -41 \\ 61 &amp; -23\end{bmatrix}}\\
+&amp;=\vectrep{D}{36\vect{y}_1+(-102)\vect{y}_2+84\vect{y}_3+(-23)\vect{y}_4}=
+\colvector{36\\-102\\84\\-23}\\
+\end{align*}
+
+</p>
+<p>So by <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a> we have
+\begin{equation*}
+N=\matrixrep{S}{D}{D}=
+\begin{bmatrix}
+ 14 &amp; 28 &amp; 40 &amp; 36 \\
+ -32 &amp; -68 &amp; -100 &amp; -102 \\
+ 24 &amp; 52 &amp; 78 &amp; 84 \\
+ -6 &amp; -13 &amp; -20 &amp; -23
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now compute eigenvalues and eigenvectors of the matrix representation of $N$ with the techniques of <a href="section-EE.html" title="Eigenvalues and Eigenvectors">Section EE</a>.  First the characteristic polynomial,
+\begin{equation*}
+\charpoly{N}{x}=\detname{N-xI_4}=x^4-x^3-10 x^2+4 x+24=(x-3) (x-2) (x+2)^2
+\end{equation*}
+</p>
+<p>Of course this is not news.  We now know that $M=\matrixrep{S}{B}{B}$ and $N=\matrixrep{S}{D}{D}$ are similar matrices (<a class="knowl" acro="SCB" type="Theorem" title="Similarity and Change of Basis" knowl="./knowls/theorem.SCB.knowl">Theorem SCB</a>).  But <a class="knowl" acro="SMEE" type="Theorem" title="Similar Matrices have Equal Eigenvalues" knowl="./knowls/theorem.SMEE.knowl">Theorem SMEE</a> told us long ago that similar matrices have identical characteristic polynomials.  Now compute eigenvectors for the matrix representation,  which will be different than what we found for $M$,
+\begin{align*}
+\lambda&amp;=3&amp;N-3I_4&amp;=
+\begin{bmatrix}
+ 11 &amp; 28 &amp; 40 &amp; 36 \\
+ -32 &amp; -71 &amp; -100 &amp; -102 \\
+ 24 &amp; 52 &amp; 75 &amp; 84 \\
+ -6 &amp; -13 &amp; -20 &amp; -26
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; 4 \\
+ 0 &amp; 1 &amp; 0 &amp; -6 \\
+ 0 &amp; 0 &amp; 1 &amp; 4 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{N}{3}&amp;=\nsp{N-3I_4}
+=\spn{\set{\colvector{-4\\6\\-4\\1}}}
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=2&amp;N-2I_4&amp;=
+\begin{bmatrix}
+ 12 &amp; 28 &amp; 40 &amp; 36 \\
+ -32 &amp; -70 &amp; -100 &amp; -102 \\
+ 24 &amp; 52 &amp; 76 &amp; 84 \\
+ -6 &amp; -13 &amp; -20 &amp; -25
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; 6 \\
+ 0 &amp; 1 &amp; 0 &amp; -7 \\
+ 0 &amp; 0 &amp; 1 &amp; 4 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{N}{2}&amp;=\nsp{N-2I_4}
+=\spn{\set{\colvector{-6\\7\\-4\\1}}}
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=-2&amp;N-(-2)I_4&amp;=
+\begin{bmatrix}
+ 16 &amp; 28 &amp; 40 &amp; 36 \\
+ -32 &amp; -66 &amp; -100 &amp; -102 \\
+ 24 &amp; 52 &amp; 80 &amp; 84 \\
+ -6 &amp; -13 &amp; -20 &amp; -21
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ 1 &amp; 0 &amp; -1 &amp; -3 \\
+ 0 &amp; 1 &amp; 2 &amp; 3 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{N}{-2}&amp;=\nsp{N-(-2)I_4}
+=\spn{\set{\colvector{1\\-2\\1\\0},\,\colvector{3\\-3\\0\\1}}}
+\end{align*}
+
+</p>
+<p>Employing <a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a> we can apply $\vectrepinvname{D}$ to each of the basis vectors of the eigenspaces of $N$ to obtain eigenvectors for $S$ that also form bases for eigenspaces of $S$,
+\begin{align*}
+\vectrepinv{D}{\colvector{-4\\6\\-4\\1}}
+&amp;=
+(-4)\vect{y}_1+6\vect{y}_2+(-4)\vect{y}_3+1\vect{y}_4=
+\begin{bmatrix}-1 &amp; 3\\-3 &amp; 1\end{bmatrix}\\
+\vectrepinv{D}{\colvector{-6\\7\\-4\\1}}
+&amp;=
+(-6)\vect{y}_1+7\vect{y}_2+(-4)\vect{y}_3+1\vect{y}_4=
+\begin{bmatrix}-2 &amp; 4\\-3 &amp; 1\end{bmatrix}\\
+\vectrepinv{D}{\colvector{1\\-2\\1\\0}}
+&amp;=
+1\vect{y}_1+(-2)\vect{y}_2+1\vect{y}_3+0\vect{y}_4=
+\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix}\\
+\vectrepinv{D}{\colvector{3\\-3\\0\\1}}
+&amp;=
+3\vect{y}_1+(-3)\vect{y}_2+0\vect{y}_3+1\vect{y}_4=
+\begin{bmatrix}1 &amp; -2\\1 &amp; 1\end{bmatrix}\\
+\end{align*}
+
+</p>
+<p>The eigenspaces for the eigenvalues of algebraic multiplicity 1 are exactly as before,
+\begin{align*}
+\eigenspace{S}{3}&amp;=
+\spn{\set{\begin{bmatrix}-1 &amp; 3\\-3 &amp; 1\end{bmatrix}}}\\
+\eigenspace{S}{2}&amp;=
+\spn{\set{\begin{bmatrix}-2 &amp; 4\\-3 &amp; 1\end{bmatrix}}}
+\end{align*}
+
+</p>
+<p>However, the eigenspace for $\lambda=-2$ would at first glance appear to be different.  Here are the two eigenspaces for $\lambda=-2$, first the eigenspace obtained from $M=\matrixrep{S}{B}{B}$, then followed by the eigenspace obtained from $M=\matrixrep{S}{D}{D}$.
+\begin{align*}
+\eigenspace{S}{-2}&amp;=
+\spn{\set{\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix},\,\begin{bmatrix}1 &amp; -1\\0 &amp; 1\end{bmatrix}}}
+&amp;
+\eigenspace{S}{-2}&amp;=
+\spn{\set{\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix},\,\begin{bmatrix}1 &amp; -2\\1 &amp; 1\end{bmatrix}}}
+\end{align*}
+
+</p>
+<p>Subspaces generally have many bases, and that is the situation here.  With a careful proof of set equality, you can show that these two eigenspaces are equal sets.  The key observation to make such a proof go is that
+\begin{equation*}
+\begin{bmatrix}1 &amp; -2\\1 &amp; 1\end{bmatrix}
+=
+\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix}+\begin{bmatrix}1 &amp; -1\\0 &amp; 1\end{bmatrix}
+\end{equation*}
+which will establish that the second set is a subset of the first.  With equal dimensions, <a class="knowl" acro="EDYES" type="Theorem" title="Equal Dimensions Yields Equal Subspaces" knowl="./knowls/theorem.EDYES.knowl">Theorem EDYES</a> will finish the task.</p>
+<p>So the eigenvalues of a linear transformation are independent of the matrix representation employed to compute them!</p>
+<div class="context"><a href="section-CB.html#example-ELTT" class="context" title="Section CB">(in
+context)</a></div>
+</div>

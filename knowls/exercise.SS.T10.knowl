@@ -1,0 +1,12 @@
+<div class="exercise" acro="SS.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SS.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\vect{v}_1,\,\vect{v}_2\in\complex{m}$.  Prove that
+\begin{equation*}
+\spn{\set{\vect{v}_1,\,\vect{v}_2}}=
+\spn{\set{\vect{v}_1,\,\vect{v}_2,\,5\vect{v}_1+3\vect{v}_2}}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SS.T10.knowl">Solution</a></p></div>
+</div>

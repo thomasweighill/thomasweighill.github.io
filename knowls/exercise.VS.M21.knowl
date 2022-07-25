@@ -1,0 +1,8 @@
+<div class="exercise" acro="VS.M21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VS.M21</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>The set of integers is denoted $\mathbb{Z}$.  Does the set $\mathbb{Z}^2 = \setparts{\colvector{m\\n}}{m,n\in\mathbb{Z}}$ with the operations of standard addition and scalar multiplication of vectors form a vector space?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VS.M21.knowl">Solution</a></p></div>
+</div>

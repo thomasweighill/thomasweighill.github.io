@@ -1,0 +1,12 @@
+<div class="exercise" acro="EE.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">EE.C10</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find the characteristic polynomial of the matrix
+$A = \begin{bmatrix}
+1 &amp; 2\\
+3 &amp; 4
+\end{bmatrix}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.EE.C10.knowl">Solution</a></p></div>
+</div>

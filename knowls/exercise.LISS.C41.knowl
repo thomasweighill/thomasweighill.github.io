@@ -1,0 +1,18 @@
+<div class="exercise" acro="LISS.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LISS.C41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The set $W$ is a subspace of $M_{22}$, the vector space of all $2\times 2$ matrices.  Prove that $S$ is a spanning set for $W$.
+\begin{align*}
+W&amp;=\setparts{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}{2a-3b+4c-d=0}
+&amp;
+S=&amp;\set{
+\begin{bmatrix}1&amp;0\\0&amp;2\end{bmatrix},\,
+\begin{bmatrix}0&amp;1\\0&amp;-3\end{bmatrix},\,
+\begin{bmatrix}0&amp;0\\1&amp;4\end{bmatrix}
+}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LISS.C41.knowl">Solution</a></p></div>
+</div>

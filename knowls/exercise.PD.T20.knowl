@@ -1,0 +1,8 @@
+<div class="exercise" acro="PD.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">PD.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $\vect{b}\in\complex{m}$.  Prove that the linear system $\linearsystem{A}{\vect{b}}$ is consistent if and only if $\rank{A}=\rank{\augmented{A}{\vect{b}}}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.PD.T20.knowl">Solution</a></p></div>
+</div>

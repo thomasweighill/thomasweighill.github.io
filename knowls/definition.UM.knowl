@@ -1,0 +1,6 @@
+<div class="definition" id="definition-UM" acro="UM" titletext="Unitary Matrices">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">UM</span> <span class="titletext"> Unitary Matrices</span>
+</h5>
+<p>Suppose that $U$ is a square matrix of size $n$ such that $\adjoint{U}U=I_n$.  Then we say $U$ is <em class="term">unitary</em>.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MINM.html#definition-UM" class="context" title="Section MINM">(in context)</a></div>

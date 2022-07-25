@@ -1,0 +1,9 @@
+<div class="definition" id="definition-CSM" acro="CSM" titletext="Column Space of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CSM</span> <span class="titletext"> Column Space of a Matrix</span>
+</h5>
+<p>Suppose that $A$ is an $m\times n$ matrix with columns $\vectorlist{A}{n}$.  Then the <em class="term">column space</em> of $A$, written $\csp{A}$, is the subset of $\complex{m}$ containing all linear combinations of the columns of $A$,
+\begin{equation*}
+\csp{A}=\spn{\set{\vectorlist{A}{n}}}
+\end{equation*}</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#definition-CSM" class="context" title="Section CRS">(in context)</a></div>

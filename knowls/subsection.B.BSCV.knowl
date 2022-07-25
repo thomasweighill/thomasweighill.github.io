@@ -1,0 +1,20 @@
+<div class="subsection" id="subsection-BSCV" acro="BSCV" titletext="Bases for Spans of Column Vectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">BSCV</span> <span class="titletext">Bases for Spans of Column Vectors</span>
+</h4>
+<p>We have seen several examples of bases in different vector spaces.  In this subsection, and the next (<a class="knowl" acro="B.BNM" type="Subsection" title="" knowl="./knowls/subsection.B.BNM.knowl">Subsection B.BNM</a>), we will consider building bases for $\complex{m}$ and its subspaces.</p>
+<p>Suppose we have a subspace of $\complex{m}$ that is expressed as the span of a set of vectors, $S$, and $S$ is not necessarily linearly independent, or perhaps not very attractive.  <a class="knowl" acro="REMRS" type="Theorem" title="Row-Equivalent Matrices have equal Row Spaces" knowl="./knowls/theorem.REMRS.knowl">Theorem REMRS</a> says that row-equivalent matrices have identical row spaces, while <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a> says the nonzero rows of a matrix in reduced row-echelon form are a basis for the row space.  These theorems together give us a great computational tool for quickly finding a basis for a subspace that is expressed originally as a span.</p>
+<div class="example" id="example-RSB" acro="RSB" titletext="Row space basis"><h5 class="example">
+<a knowl="./knowls/example.RSB.knowl"><span class="type">Example</span> <span class="acro">RSB</span></a> <span class="titletext">Row space basis</span>
+</h5></div>
+<p><a class="knowl" acro="IAS" type="Example" title="Improving a span" knowl="./knowls/example.IAS.knowl">Example IAS</a> provides another example of this flavor, though now we can notice that $X$ is a subspace, and that the resulting set of three vectors is a basis.  This is such a powerful technique that we should do one more example.</p>
+<div class="example" id="example-RS" acro="RS" titletext="Reducing a span"><h5 class="example">
+<a knowl="./knowls/example.RS.knowl"><span class="type">Example</span> <span class="acro">RS</span></a> <span class="titletext">Reducing a span</span>
+</h5></div>
+<div class="sage" id="sage-B" acro="B" titletext="Bases"><h5 class="sage">
+<a knowl="./knowls/sage.B.knowl"><span class="type">Sage</span> <span class="acro">B</span></a> <span class="titletext">Bases</span>
+</h5></div>
+<div class="sage" id="sage-SUTH0" acro="SUTH0" titletext="Sage Under The Hood, Round 0"><h5 class="sage">
+<a knowl="./knowls/sage.SUTH0.knowl"><span class="type">Sage</span> <span class="acro">SUTH0</span></a> <span class="titletext">Sage Under The Hood, Round 0</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-B.html#subsection-BSCV" class="context" title="Section B">(in context)</a></div>

@@ -1,0 +1,15 @@
+<div class="solution" acro="MO.M23">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MO.M23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The matrix $A$ is in the span of $S$, since
+\begin{align*}
+\begin{bmatrix} -13 &amp; 24 &amp; 2 \\ -8 &amp; -2 &amp; -20 \end{bmatrix}
+&amp;=
+2\begin{bmatrix} -2 &amp; 3 &amp; 4 \\ -1 &amp; 3 &amp; -2 \end{bmatrix}
+-2\begin{bmatrix} 4 &amp; -2 &amp; 2 \\ 0 &amp; -1 &amp; 1 \end{bmatrix}
+-3\begin{bmatrix} -1 &amp; -2 &amp; -2 \\ 2 &amp; 2 &amp; 2 \end{bmatrix}
++ 4\begin{bmatrix} -1 &amp; 2 &amp; -2 \\0 &amp; -1 &amp; -2 \end{bmatrix}
+\end{align*}
+
+Note that if we were to write a complete linear combination of <em>all</em> of the matrices in $S$, then the fourth matrix would have a zero coefficient.
+</div>

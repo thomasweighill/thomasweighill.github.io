@@ -1,0 +1,14 @@
+<div class="solution" acro="LISS.T20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LISS.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>We will prove the contrapositive (<a class="knowl" acro="CP" type="Proof Technique" title="Contrapositives" knowl="./knowls/technique.CP.knowl">Proof Technique CP</a>): If $T$ is linearly dependent, then $S$ is linearly dependent.  This might be an interesting statement in its own right.<br><br>
+Write $S=\set{\vectorlist{v}{m}}$ and without loss of generality we can assume that the subset $T$ is the first $t$ vectors of $S$, $t\leq m$, so $T=\set{\vectorlist{v}{t}}$.  Since $T$ is linearly dependent, by <a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a> there are scalars, not all zero, $\scalarlist{a}{t}$, so that
+\begin{align*}
+\zerovector
+&amp;= \lincombo{a}{v}{t}\\
+&amp;= \lincombo{a}{v}{t}+\zerovector+\zerovector+\dots+\zerovector\\
+&amp;= \lincombo{a}{v}{t}+0\vect{v}_{t+1}+0\vect{v}_{t+2}+\dots+0\vect{v}_{m}
+\end{align*}
+
+which is a nontrivial relation of linear dependence (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>) on the set $S$, so we can say $S$ is linearly dependent.
+</div>

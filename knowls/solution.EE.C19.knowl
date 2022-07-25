@@ -1,0 +1,57 @@
+<div class="solution" acro="EE.C19">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.C19</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>First compute the characteristic polynomial,
+\begin{align*}
+\charpoly{C}{x}
+&amp;=\detname{C-xI_2}&amp;&amp;\knowl{./knowls/definition.CP.knowl}{\text{Definition CP}}\\
+&amp;=
+\begin{vmatrix}
+ -1-x &amp; 2 \\
+ -6    &amp; 6-x
+\end{vmatrix}\\
+&amp;=(-1-x)(6-x)-(2)(-6)&amp;&amp;\knowl{./knowls/theorem.DMST.knowl}{\text{Theorem DMST}}\\
+&amp;=x^2-5x+6\\
+&amp;=(x-3)(x-2)
+\end{align*}
+
+So the eigenvalues of $C$ are the solutions to $\charpoly{C}{x}=0$, namely, $\lambda=2$ and $\lambda=3$.  Each eigenvalue has a factor that appears just once in the characteristic polynomial, so $\algmult{C}{2}=1$ and $\algmult{C}{3}=1$.<br><br>
+To obtain the eigenspaces, construct the appropriate singular matrices and find expressions for the null spaces of these matrices.
+\begin{align*}
+\lambda&amp;=2\\
+C-(2)I_2&amp;=
+\begin{bmatrix}
+-3 &amp; 2\\
+-6 &amp; 4
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; -\frac{2}{3}\\
+0 &amp; 0
+\end{bmatrix}\\
+\eigenspace{C}{2}&amp;=\nsp{C-(2)I_2}=
+\spn{\set{\colvector{\frac{2}{3}\\1}}}
+=
+\spn{\set{\colvector{2\\3}}}
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=3\\
+C-(3)I_2&amp;=
+\begin{bmatrix}
+-4 &amp; 2\\
+-6 &amp; 3
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; -\frac{1}{2}\\
+0 &amp; 0
+\end{bmatrix}\\
+\eigenspace{C}{3}&amp;=\nsp{C-(3)I_2}=
+\spn{\set{\colvector{\frac{1}{2}\\1}}}
+=
+\spn{\set{\colvector{1\\2}}}
+\end{align*}
+
+Each eigenspace has a single basis vector, so the dimensions are both $1$ and the geometric multiplicities are $\geomult{A}{2}=1$ and $\geomult{A}{3}=1$.
+</div>

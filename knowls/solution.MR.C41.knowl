@@ -1,0 +1,46 @@
+<div class="solution" acro="MR.C41">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MR.C41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>First, build a matrix representation of $S$ (<a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>).  We are free to choose whatever bases we wish, so we should choose ones that are easy to work with, such as
+\begin{align*}
+B&amp;=\set{1,\,x}\\
+C&amp;=\set{\begin{bmatrix}1 &amp; 0\end{bmatrix},\,\begin{bmatrix}0 &amp; 1\end{bmatrix}}
+\end{align*}
+
+The resulting matrix representation is then
+\begin{equation*}
+\matrixrep{T}{B}{C}=
+\begin{bmatrix}
+3 &amp; 1\\
+2 &amp; 1
+\end{bmatrix}
+\end{equation*}
+This matrix is invertible since it has a nonzero determinant, so by <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a> the linear transformation $S$ is invertible.  We can use the matrix inverse and <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a> to find a formula for the inverse linear transformation,
+\begin{align*}
+\lt{\ltinverse{S}}{\begin{bmatrix}a&amp;b\end{bmatrix}}
+&amp;=\vectrepinv{B}{\matrixrep{\ltinverse{S}}{C}{B}\vectrep{C}{\begin{bmatrix}a&amp;b\end{bmatrix}}}&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\vectrepinv{B}{\inverse{\left(\matrixrep{S}{B}{C}\right)}\vectrep{C}{\begin{bmatrix}a&amp;b\end{bmatrix}}}&amp;&amp;\knowl{./knowls/theorem.IMR.knowl}{\text{Theorem IMR}}\\
+&amp;=\vectrepinv{B}{\inverse{\left(\matrixrep{S}{B}{C}\right)}\colvector{a\\b}}&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}\\
+&amp;=\vectrepinv{B}{
+\inverse{\left(
+\begin{bmatrix}
+3 &amp; 1\\
+2 &amp; 1
+\end{bmatrix}
+\right)}
+\colvector{a\\b}}\\
+&amp;=\vectrepinv{B}{
+\begin{bmatrix}
+1 &amp; -1\\
+-2 &amp; 3
+\end{bmatrix}
+\colvector{a\\b}}&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=\vectrepinv{B}{
+\colvector{
+a-b\\
+-2a+3b
+}}&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}\\
+&amp;=(a-b)+(-2a+3b)x&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}
+\end{align*}
+
+</div>

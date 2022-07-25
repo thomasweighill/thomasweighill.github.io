@@ -1,0 +1,8 @@
+<div class="exercise" acro="IVLT.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations and $\dimension{U}=\dimension{V}=\dimension{W}$.  Suppose that $\compose{S}{T}$ is invertible.  Prove that $S$ and $T$ are individually invertible (this could be construed as a converse of <a class="knowl" acro="CIVLT" type="Theorem" title="Composition of Invertible Linear Transformations" knowl="./knowls/theorem.CIVLT.knowl">Theorem CIVLT</a>).
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.T40.knowl">Solution</a></p></div>
+</div>

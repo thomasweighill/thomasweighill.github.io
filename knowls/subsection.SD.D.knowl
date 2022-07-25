@@ -1,0 +1,73 @@
+<div class="subsection" id="subsection-D" acro="D" titletext="Diagonalization">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">D</span> <span class="titletext">Diagonalization</span>
+</h4>
+<p>Good things happen when a matrix is similar to a diagonal matrix.  For example, the eigenvalues of the matrix are the  entries on the diagonal of the diagonal matrix.  And it can be a much simpler matter to compute high powers of the matrix.  Diagonalizable matrices are also of interest in more abstract settings.  Here are the relevant definitions, then our main theorem for this section.</p>
+<div class="definition" id="definition-DIM" acro="DIM" titletext="Diagonal Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">DIM</span> <span class="titletext"> Diagonal Matrix</span>
+</h5>
+<p>Suppose that $A$ is a square matrix.  Then $A$ is a <em class="term">diagonal matrix</em> if $\matrixentry{A}{ij}=0$ whenever $i\neq j$.</p>
+</div>
+<div class="definition" id="definition-DZM" acro="DZM" titletext="Diagonalizable Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">DZM</span> <span class="titletext"> Diagonalizable Matrix</span>
+</h5>
+<p>Suppose $A$ is a square matrix.  Then $A$ is <em class="term">diagonalizable</em> if $A$ is similar to a diagonal matrix.</p>
+</div>
+<div class="example" id="example-DAB" acro="DAB" titletext="Diagonalization of Archetype B"><h5 class="example">
+<a knowl="./knowls/example.DAB.knowl"><span class="type">Example</span> <span class="acro">DAB</span></a> <span class="titletext">Diagonalization of Archetype B</span>
+</h5></div>
+<p><a class="knowl" acro="SMS3" type="Example" title="Similar matrices of size 3" knowl="./knowls/example.SMS3.knowl">Example SMS3</a> provides yet another example of a matrix that is subjected to a similarity transformation and the result is a diagonal matrix.  Alright, just how would we find the magic matrix $S$ that can be used in a similarity transformation to produce a diagonal matrix?  Before you read the statement of the next theorem, you might study the eigenvalues and eigenvectors of <a knowl="./knowls/archetype.B.knowl">Archetype B</a> and compute the eigenvalues and eigenvectors of the matrix in <a class="knowl" acro="SMS3" type="Example" title="Similar matrices of size 3" knowl="./knowls/example.SMS3.knowl">Example SMS3</a>.</p>
+<div class="theorem" id="theorem-DC" acro="DC" titletext="Diagonalization Characterization">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DC</span><span class="titletext"> Diagonalization Characterization</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix of size $n$.  Then $A$ is diagonalizable if and only if there exists a linearly independent set $S$ that contains $n$ eigenvectors of $A$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DC.knowl">Proof</a></div>
+</div>
+<p>Notice that the proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> is constructive.  To diagonalize a matrix, we need only locate $n$ linearly independent eigenvectors.  Then we can construct a nonsingular matrix using the eigenvectors as columns ($R$) so that $\inverse{R}AR$ is a diagonal matrix ($D$).  The entries on the diagonal of $D$ will be the eigenvalues of the eigenvectors used to create $R$, <em>in the same order</em> as the eigenvectors appear in $R$.  We illustrate this by <em class="term">diagonalizing</em> some matrices.</p>
+<div class="example" id="example-DMS3" acro="DMS3" titletext="Diagonalizing a matrix of size 3"><h5 class="example">
+<a knowl="./knowls/example.DMS3.knowl"><span class="type">Example</span> <span class="acro">DMS3</span></a> <span class="titletext">Diagonalizing a matrix of size 3</span>
+</h5></div>
+<p>The dimension of an eigenspace can be no larger than the algebraic multiplicity of the eigenvalue by <a class="knowl" acro="ME" type="Theorem" title="Multiplicities of an Eigenvalue" knowl="./knowls/theorem.ME.knowl">Theorem ME</a>.  When every eigenvalue's eigenspace is this large, then we can diagonalize the matrix, and only then.   Three examples we have seen so far in this section,  <a class="knowl" acro="SMS5" type="Example" title="Similar matrices of size 5" knowl="./knowls/example.SMS5.knowl">Example SMS5</a>,  <a class="knowl" acro="DAB" type="Example" title="Diagonalization of Archetype B" knowl="./knowls/example.DAB.knowl">Example DAB</a> and <a class="knowl" acro="DMS3" type="Example" title="Diagonalizing a matrix of size 3" knowl="./knowls/example.DMS3.knowl">Example DMS3</a>,  illustrate the diagonalization of a matrix, with varying degrees of detail about just how the diagonalization is achieved.  However, in each case, you can verify that the geometric and algebraic multiplicities are equal for every eigenvalue.  This is the substance of the next theorem.</p>
+<div class="theorem" id="theorem-DMFE" acro="DMFE" titletext="Diagonalizable Matrices have Full Eigenspaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DMFE</span><span class="titletext"> Diagonalizable Matrices have Full Eigenspaces</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix.  Then $A$ is diagonalizable if and only if $\geomult{A}{\lambda}=\algmult{A}{\lambda}$ for every eigenvalue $\lambda$ of $A$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DMFE.knowl">Proof</a></div>
+</div>
+<p><a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a>,
+<a class="knowl" acro="CAEHW" type="Example" title="Computing an eigenvalue the hard way" knowl="./knowls/example.CAEHW.knowl">Example CAEHW</a>,
+<a class="knowl" acro="ESMS3" type="Example" title="Eigenspaces of a matrix, size 3" knowl="./knowls/example.ESMS3.knowl">Example ESMS3</a>,
+<a class="knowl" acro="ESMS4" type="Example" title="Eigenvalues, symmetric matrix of size 4" knowl="./knowls/example.ESMS4.knowl">Example ESMS4</a>,
+<a class="knowl" acro="DEMS5" type="Example" title="Distinct eigenvalues, matrix of size 5" knowl="./knowls/example.DEMS5.knowl">Example DEMS5</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a> and
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+are all examples of matrices that are diagonalizable and that illustrate <a class="knowl" acro="DMFE" type="Theorem" title="Diagonalizable Matrices have Full Eigenspaces" knowl="./knowls/theorem.DMFE.knowl">Theorem DMFE</a>.  While we have provided many examples of matrices that are diagonalizable, especially among the archetypes, there are many matrices that are not diagonalizable.  Here is one now.</p>
+<div class="example" id="example-NDMS4" acro="NDMS4" titletext="A non-diagonalizable matrix of size 4"><h5 class="example">
+<a knowl="./knowls/example.NDMS4.knowl"><span class="type">Example</span> <span class="acro">NDMS4</span></a> <span class="titletext">A non-diagonalizable matrix of size 4</span>
+</h5></div>
+<p><a knowl="./knowls/archetype.A.knowl">Archetype A</a> is the lone archetype with a square matrix that is not diagonalizable, as the algebraic and geometric multiplicities of the eigenvalue $\lambda=0$ differ.  <a class="knowl" acro="HMEM5" type="Example" title="High multiplicity eigenvalues, matrix of size 5" knowl="./knowls/example.HMEM5.knowl">Example HMEM5</a> is another example of a matrix that cannot be diagonalized due to the difference between the geometric and algebraic multiplicities of $\lambda=2$, as is <a class="knowl" acro="CEMS6" type="Example" title="Complex eigenvalues, matrix of size 6" knowl="./knowls/example.CEMS6.knowl">Example CEMS6</a> which has two complex eigenvalues, each with differing multiplicities.  Likewise, <a class="knowl" acro="EMMS4" type="Example" title="Eigenvalue multiplicities, matrix of size 4" knowl="./knowls/example.EMMS4.knowl">Example EMMS4</a> has an eigenvalue with different algebraic and geometric multiplicities and so cannot be diagonalized.</p>
+<div class="sage" id="sage-MD" acro="MD" titletext="Matrix Diagonalization"><h5 class="sage">
+<a knowl="./knowls/sage.MD.knowl"><span class="type">Sage</span> <span class="acro">MD</span></a> <span class="titletext">Matrix Diagonalization</span>
+</h5></div>
+<div class="theorem" id="theorem-DED" acro="DED" titletext="Distinct Eigenvalues implies Diagonalizable">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DED</span><span class="titletext"> Distinct Eigenvalues implies Diagonalizable</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix of size $n$ with $n$ distinct eigenvalues.  Then $A$ is diagonalizable.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DED.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-DEHD" acro="DEHD" titletext="Distinct eigenvalues, hence diagonalizable"><h5 class="example">
+<a knowl="./knowls/example.DEHD.knowl"><span class="type">Example</span> <span class="acro">DEHD</span></a> <span class="titletext">Distinct eigenvalues, hence diagonalizable</span>
+</h5></div>
+<p><a knowl="./knowls/archetype.B.knowl">Archetype B</a> is another example of a matrix that has as many distinct eigenvalues as its size, and is hence diagonalizable by <a class="knowl" acro="DED" type="Theorem" title="Distinct Eigenvalues implies Diagonalizable" knowl="./knowls/theorem.DED.knowl">Theorem DED</a>.</p>
+<p>Powers of a diagonal matrix are easy to compute, and when a matrix is diagonalizable, it is almost as easy.  We could state a theorem here perhaps, but we will settle instead for an example that makes the point just as well.</p>
+<div class="example" id="example-HPDM" acro="HPDM" titletext="High power of a diagonalizable matrix"><h5 class="example">
+<a knowl="./knowls/example.HPDM.knowl"><span class="type">Example</span> <span class="acro">HPDM</span></a> <span class="titletext">High power of a diagonalizable matrix</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#subsection-D" class="context" title="Section SD">(in context)</a></div>

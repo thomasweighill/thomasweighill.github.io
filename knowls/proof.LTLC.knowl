@@ -1,0 +1,22 @@
+<div class="proof" id="proof-LTLC" acro="LTLC" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">LTLC</span>
+</h5>
+<p>
+\begin{align*}
+&amp;\lt{T}{\lincombo{a}{u}{t}}\\
+&amp;\quad\quad=
+\lt{T}{a_1\vect{u}_1}+
+\lt{T}{a_2\vect{u}_2}+
+\lt{T}{a_3\vect{u}_3}+\cdots+
+\lt{T}{a_t\vect{u}_t}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;\quad\quad=
+a_1\lt{T}{\vect{u}_1}+
+a_2\lt{T}{\vect{u}_2}+
+a_3\lt{T}{\vect{u}_3}+\cdots+
+a_t\lt{T}{\vect{u}_t}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}
+\end{align*}
+
+</p>
+
+</div>

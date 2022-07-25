@@ -1,0 +1,50 @@
+<div class="example" id="example-SSNS" acro="SSNS" titletext="Spanning set of a null space">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SSNS</span> <span class="titletext">Spanning set of a null space</span>
+</h5>
+<p>Find a set of vectors, $S$, so that the null space of the matrix $A$ below is the span of $S$, that is, $\spn{S}=\nsp{A}$.
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 1 &amp; 3 &amp; 3 &amp; -1 &amp; -5\\
+ 2 &amp; 5 &amp; 7 &amp; 1 &amp; 1\\
+ 1 &amp; 1 &amp; 5 &amp; 1 &amp; 5\\
+ -1 &amp; -4 &amp; -2 &amp; 0 &amp; 4
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>The null space of $A$ is the set of all solutions to the homogeneous system $\homosystem{A}$.  If we find the vector form of the solutions to this homogeneous system (<a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a>) then the vectors $\vect{u}_j$, $1\leq j\leq n-r$ in the linear combination are exactly the vectors $\vect{z}_j$, $1\leq j\leq n-r$ described in <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>.  So we can mimic <a class="knowl" acro="VFSAL" type="Example" title="Vector form of solutions for Archetype L" knowl="./knowls/example.VFSAL.knowl">Example VFSAL</a> to arrive at these vectors (rather than being a slave to the formulas in the statement of the theorem).</p>
+<p>Begin by row-reducing $A$.  The result is
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 6 &amp; 0 &amp; 4\\
+0 &amp; \leading{1} &amp; -1 &amp; 0 &amp; -2\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 3\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>With $D=\set{1,\,2,\,4}$ and $F=\set{3,\,5}$ we recognize that $x_3$ and $x_5$ are free variables and we can interpret each nonzero row as an expression for the dependent variables $x_1$, $x_2$, $x_4$ (respectively) in the free variables $x_3$ and $x_5$.  With this we can write the vector form of a solution vector as
+\begin{equation*}
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5}=
+\colvector{-6x_3-4x_5\\x_3+2x_5\\x_3\\-3x_5\\x_5}=
+x_3\colvector{-6\\1\\1\\0\\0}+
+x_5\colvector{-4\\2\\0\\-3\\1}
+\end{equation*}
+</p>
+<p>Then in the notation of <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>,
+\begin{align*}
+\vect{z}_1&amp;=\colvector{-6\\1\\1\\0\\0}&amp;
+\vect{z}_2&amp;=\colvector{-4\\2\\0\\-3\\1}
+\end{align*}
+
+and
+\begin{equation*}
+\nsp{A}
+=\spn{\set{\vect{z}_1,\,\vect{z}_2}}
+=\spn{\set{\colvector{-6\\1\\1\\0\\0},\,\colvector{-4\\2\\0\\-3\\1}}}
+\end{equation*}
+</p>
+<div class="context"><a href="section-SS.html#example-SSNS" class="context" title="Section SS">(in
+context)</a></div>
+</div>

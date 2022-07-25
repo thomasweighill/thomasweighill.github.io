@@ -1,0 +1,27 @@
+<div class="annotatedacronyms" id="annotatedacronyms-SLE" acro="SLE" titletext="">
+<h5 class="annotatedacronyms">
+<span class="type">Annotated Acronyms for Chapter</span> <span class="acro">SLE</span>
+</h5>
+<div class="introduction">
+<p>At the conclusion of each chapter you will find a section like this, reviewing selected definitions and theorems.  There are many reasons for why a definition or theorem might be placed here.  It might represent a key concept, it might be used frequently for computations, provide the critical step in many proofs, or it may deserve special comment.</p>
+
+<p>These lists are not meant to be exhaustive, but should still be useful as part of reviewing each chapter.  We will mention a few of these that you might eventually recognize on sight as being worth memorization.  By that we mean that you can associate the acronym with a rough statement of the theorem — not that the exact details of the theorem need to be memorized.  And it is certainly not our intent that everything on these lists is important enough to memorize.</p>
+
+</div>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a></h5></div>
+<p>
+We will repeatedly appeal to this theorem to determine if a system of linear equations, does, or does not, have a solution.  This one we will see often enough that it is worth memorizing.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a></h5></div>
+<p>
+This theorem is the theoretical basis of several of our most important theorems.  So keep an eye out for it, and its descendants, as you study other proofs.  For example, <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a> is critical to the proof of <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>, <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a> is critical to the proof of <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a>,  <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> is critical to the proofs of the pair of similar theorems, <a class="knowl" acro="ILTD" type="Theorem" title="Injective Linear Transformations and Dimension" knowl="./knowls/theorem.ILTD.knowl">Theorem ILTD</a> and <a class="knowl" acro="SLTD" type="Theorem" title="Surjective Linear Transformations and Dimension" knowl="./knowls/theorem.SLTD.knowl">Theorem SLTD</a>, while finally <a class="knowl" acro="ILTD" type="Theorem" title="Injective Linear Transformations and Dimension" knowl="./knowls/theorem.ILTD.knowl">Theorem ILTD</a> and <a class="knowl" acro="SLTD" type="Theorem" title="Surjective Linear Transformations and Dimension" knowl="./knowls/theorem.SLTD.knowl">Theorem SLTD</a> are critical to the proof of an important result, <a class="knowl" acro="IVSED" type="Theorem" title="Isomorphic Vector Spaces have Equal Dimension" knowl="./knowls/theorem.IVSED.knowl">Theorem IVSED</a>.  This chain of implications might not make much sense on a first reading, but come back later to see how some very important theorems build on the seemingly simple result that is <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a>.  Using the “find” feature in whatever software you use to read the electronic version of the text can be a fun way to explore these relationships.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a></h5></div>
+<p>
+This theorem gives us one of simplest ways, computationally, to recognize if a matrix is nonsingular, or singular.  We will see this one often, in computational exercises especially.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a></h5></div>
+<p>
+Nonsingular matrices will be an important topic going forward (witness the NMEx series of theorems).  This is our first result along these lines, a useful theorem for other proofs, and also illustrates a more general concept from <a href="chapter-LT.html" title="Linear Transformations">Chapter LT</a>.
+</p>
+</div>

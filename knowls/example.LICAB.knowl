@@ -1,0 +1,18 @@
+<div class="example" id="example-LICAB" acro="LICAB" titletext="Linearly independent columns in Archetype B">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LICAB</span> <span class="titletext">Linearly independent columns in Archetype B</span>
+</h5>
+<p><a knowl="./knowls/archetype.B.knowl">Archetype B</a> is a system of linear equations with coefficient matrix,
+\begin{equation*}
+B=
+\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Do the columns of this matrix form a linearly independent or dependent set?  By <a class="knowl" acro="NM" type="Example" title="A nonsingular matrix, Archetype B" knowl="./knowls/example.NM.knowl">Example NM</a> we know that $B$ is nonsingular.  According to the definition of nonsingular matrices, <a class="knowl" acro="NM" type="Definition" title="Nonsingular Matrix" knowl="./knowls/definition.NM.knowl">Definition NM</a>, the homogeneous system $\homosystem{A}$ has a unique solution.  So by <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a>, the columns of $B$ form a linearly independent set.</p>
+<div class="context"><a href="section-LI.html#example-LICAB" class="context" title="Section LI">(in
+context)</a></div>
+</div>

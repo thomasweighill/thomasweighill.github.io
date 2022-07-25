@@ -1,0 +1,22 @@
+<div class="proof" id="proof-CSNM" acro="CSNM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CSNM</span>
+</h5>
+<p>(⇒)  Suppose $A$ is nonsingular.  We wish to establish the set equality $\csp{A}=\complex{n}$.  By <a class="knowl" acro="CSM" type="Definition" title="Column Space of a Matrix" knowl="./knowls/definition.CSM.knowl">Definition CSM</a>, $\csp{A}\subseteq\complex{n}$.
+To show that  $\complex{n}\subseteq\csp{A}$ choose $\vect{b}\in\complex{n}$.  By <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>, we know the linear system $\linearsystem{A}{\vect{b}}$ has a (unique) solution and therefore is consistent.  <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> then says that $\vect{b}\in\csp{A}$.  So  by <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>, $\csp{A}=\complex{n}$.</p>
+
+<p>(⇐)  If $\vect{e}_i$ is column $i$ of the $n\times n$ identity matrix (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>) and by hypothesis $\csp{A}=\complex{n}$, then $\vect{e}_i\in\csp{A}$ for $1\leq i\leq n$.  By <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, the system $\linearsystem{A}{\vect{e}_i}$ is consistent for $1\leq i\leq n$.   Let $\vect{b}_i$ denote any one particular solution to $\linearsystem{A}{\vect{e}_i}$, $1\leq i\leq n$.</p>
+
+<p>Define the $n\times n$ matrix $B=\matrixcolumns{b}{n}$.  Then
+\begin{align*}
+AB
+&amp;=A\matrixcolumns{b}{n}\\
+&amp;=[A\vect{b}_1|A\vect{b}_2|A\vect{b}_3|\ldots|A\vect{b}_n]&amp;&amp;\knowl{./knowls/definition.MM.knowl}{\text{Definition MM}}\\
+&amp;=\matrixcolumns{e}{n}\\
+&amp;=I_n&amp;&amp;\knowl{./knowls/definition.SUV.knowl}{\text{Definition SUV}}\\
+\end{align*}
+</p>
+
+<p>So the matrix $B$ is a “right-inverse” for $A$.  By <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>, $I_n$ is a nonsingular matrix, so by <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a> both $A$ and $B$ are nonsingular.  Thus, in particular, $A$ is nonsingular.  (<a knowl="./knowls/contributor.travisosborne.knowl">Travis Osborne</a> contributed to this proof.)</p>
+
+</div>

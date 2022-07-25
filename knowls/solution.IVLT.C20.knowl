@@ -1,0 +1,41 @@
+<div class="solution" acro="IVLT.C20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">IVLT.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>(a)  We will compute the kernel of $T$.  Suppose that $a+bx+cx^2\in\krn{T}$.  Then
+\begin{equation*}
+\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 0\end{bmatrix}
+=\lt{T}{a+bx+cx^2}
+=
+\begin{bmatrix}
+a+2b-2c &amp; 2a+2b \\
+-a+b-4c &amp; 3a+2b+2c
+\end{bmatrix}
+\end{equation*}
+and matrix equality (<a class="knowl" acro="ME" type="Theorem" title="Multiplicities of an Eigenvalue" knowl="./knowls/theorem.ME.knowl">Theorem ME</a>) yields the homogeneous system of four equations in three variables,
+\begin{align*}
+a+2b-2c&amp;=0\\
+2a+2b&amp;=0\\
+-a+b-4c&amp;=0\\
+3a+2b+2c&amp;=0\\
+\end{align*}
+
+The coefficient matrix of this system row-reduces as
+\begin{equation*}
+\begin{bmatrix}
+ 1 &amp; 2 &amp; -2 \\
+ 2 &amp; 2 &amp; 0 \\
+ -1 &amp; 1 &amp; -4 \\
+ 3 &amp; 2 &amp; 2
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 2 \\
+ 0 &amp; \leading{1} &amp; -2 \\
+ 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+From the existence of nontrivial solutions to this system, we can infer nonzero polynomials in $\krn{T}$.  By <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a> we then know that $T$ is not injective.<br><br>
+(b)  Since $3=\dimension{P_2}&lt;\dimension{M_{22}}=4$, by <a class="knowl" acro="SLTD" type="Theorem" title="Surjective Linear Transformations and Dimension" knowl="./knowls/theorem.SLTD.knowl">Theorem SLTD</a> $T$ is not surjective.<br><br>
+(c)  Since $T$ is not surjective, it is not invertible by <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a>.
+</div>

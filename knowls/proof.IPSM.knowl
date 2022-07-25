@@ -1,0 +1,22 @@
+<div class="proof" id="proof-IPSM" acro="IPSM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">IPSM</span>
+</h5>
+<p>The proofs of the two parts are very similar, with the second one requiring just a bit more effort due to the conjugation that occurs.  We will prove part 1 and you can prove part 2  (<a knowl="./knowls/exercise.O.T11.knowl">Exercise O.T11</a>).
+\begin{align*}
+\innerproduct{\alpha\vect{u}}{\vect{v}}
+&amp;=\sum_{i=1}^{m}\conjugate{\vectorentry{\alpha\vect{u}}{i}}\vectorentry{\vect{v}}{i}
+&amp;&amp;\knowl{./knowls/definition.IP.knowl}{\text{Definition IP}}\\
+&amp;=\sum_{i=1}^{m}\conjugate{\alpha\vectorentry{\vect{u}}{i}}\vectorentry{\vect{v}}{i}
+&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}\\
+&amp;=\sum_{i=1}^{m}\conjugate{\alpha}\,\conjugate{\vectorentry{\vect{u}}{i}}\vectorentry{\vect{v}}{i}
+&amp;&amp;\knowl{./knowls/theorem.CCRM.knowl}{\text{Theorem CCRM}}\\
+&amp;=\conjugate{\alpha}\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{u}}{i}}\vectorentry{\vect{v}}{i}
+&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\conjugate{\alpha}\innerproduct{\vect{u}}{\vect{v}}
+&amp;&amp;\knowl{./knowls/definition.IP.knowl}{\text{Definition IP}}
+\end{align*}
+
+</p>
+
+</div>

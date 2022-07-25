@@ -1,0 +1,15 @@
+<div class="theorem" id="theorem-FTMR" acro="FTMR" titletext="Fundamental Theorem of Matrix Representation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">FTMR</span><span class="titletext"> Fundamental Theorem of Matrix Representation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $B$ is a basis for $U$, $C$ is a basis for $V$ and $\matrixrep{T}{B}{C}$ is the matrix representation of $T$ relative to $B$ and $C$.  Then, for any $\vect{u}\in U$,
+\begin{equation*}
+\vectrep{C}{\lt{T}{\vect{u}}}=\matrixrep{T}{B}{C}\left(\vectrep{B}{\vect{u}}\right)
+\end{equation*}
+or equivalently
+\begin{equation*}
+\lt{T}{\vect{u}}=\vectrepinv{C}{\matrixrep{T}{B}{C}\left(\vectrep{B}{\vect{u}}\right)}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.FTMR.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#theorem-FTMR" class="context" title="Section MR">(in context)</a></div>

@@ -1,0 +1,44 @@
+<div class="example" id="example-LTDB1" acro="LTDB1" titletext="Linear transformation defined on a basis">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LTDB1</span> <span class="titletext">Linear transformation defined on a basis</span>
+</h5>
+<p>Consider the linear transformation $\ltdefn{T}{\complex{3}}{\complex{2}}$ that is required to have the following three values,
+\begin{align*}
+\lt{T}{\colvector{1\\0\\0}}=\colvector{2\\1}&amp;&amp;
+\lt{T}{\colvector{0\\1\\0}}=\colvector{-1\\4}&amp;&amp;
+\lt{T}{\colvector{0\\0\\1}}=\colvector{6\\0}
+\end{align*}
+
+</p>
+<p>Because
+\begin{equation*}
+B=\set{
+\colvector{1\\0\\0},\,
+\colvector{0\\1\\0},\,
+\colvector{0\\0\\1}
+}
+\end{equation*}
+is a basis for $\complex{3}$ (<a class="knowl" acro="SUVB" type="Theorem" title="Standard Unit Vectors are a Basis" knowl="./knowls/theorem.SUVB.knowl">Theorem SUVB</a>), <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> says there is a unique linear transformation $T$ that behaves this way.</p>
+<p>How do we compute other values of $T$?  Consider the input
+\begin{equation*}
+\vect{w}=\colvector{2\\-3\\1}=(2)\colvector{1\\0\\0}+(-3)\colvector{0\\1\\0}+(1)\colvector{0\\0\\1}
+\end{equation*}
+</p>
+<p>Then
+\begin{equation*}
+\lt{T}{\vect{w}}=(2)\colvector{2\\1}+ (-3)\colvector{-1\\4}+ (1)\colvector{6\\0}=\colvector{13\\-10}
+\end{equation*}
+</p>
+<p>Doing it again,
+\begin{equation*}
+\vect{x}=\colvector{5\\2\\-3}=(5)\colvector{1\\0\\0}+(2)\colvector{0\\1\\0}+(-3)\colvector{0\\0\\1}
+\end{equation*}
+so
+\begin{equation*}
+\lt{T}{\vect{x}}=(5)\colvector{2\\1}+ (2)\colvector{-1\\4}+ (-3)\colvector{6\\0}=\colvector{-10\\13}
+\end{equation*}
+</p>
+<p>Any other value of $T$ could be computed in a similar manner.  So rather than being given a <em>formula</em> for the outputs of $T$, the <em>requirement</em> that $T$ behave in a certain way for the inputs chosen from a basis of the domain, is as sufficient as a formula for computing any value of the function.  You might notice some parallels between this example and <a class="knowl" acro="MOLT" type="Example" title="Matrix of a linear transformation" knowl="./knowls/example.MOLT.knowl">Example MOLT</a> or <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>.</p>
+<div class="context"><a href="section-LT.html#example-LTDB1" class="context" title="Section LT">(in
+context)</a></div>
+</div>

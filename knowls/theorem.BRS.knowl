@@ -1,0 +1,14 @@
+<div class="theorem" id="theorem-BRS" acro="BRS" titletext="Basis for the Row Space">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">BRS</span><span class="titletext"> Basis for the Row Space</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a matrix and $B$ is a row-equivalent matrix in reduced row-echelon form.  Let $S$ be the set of nonzero columns of $\transpose{B}$.  Then
+<ol>
+<li> $\rsp{A}=\spn{S}$.
+</li>
+<li> $S$ is a linearly independent set.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.BRS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#theorem-BRS" class="context" title="Section CRS">(in context)</a></div>

@@ -1,0 +1,66 @@
+<div class="example" id="example-IAV" acro="IAV" titletext="Injective, Archetype V">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">IAV</span> <span class="titletext">Injective, Archetype V</span>
+</h5>
+<p><a knowl="./knowls/archetype.V.knowl">Archetype V</a> is defined by
+\begin{equation*}
+\ltdefn{T}{P_3}{M_{22}},\quad\lt{T}{a+bx+cx^2+dx^3}=
+\begin{bmatrix}
+a+b &amp; a-2c\\
+d &amp; b-d
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>To establish that the linear transformation is injective, begin by supposing that two polynomial inputs yield the same output matrix,
+\begin{equation*}
+\lt{T}{a_1+b_1x+c_1x^2+d_1x^3}=\lt{T}{a_2+b_2x+c_2x^2+d_2x^3}
+\end{equation*}
+</p>
+<p>Then
+\begin{align*}
+\zeromatrix
+&amp;=\begin{bmatrix}
+0&amp;0\\0&amp;0
+\end{bmatrix}\\
+&amp;=\lt{T}{a_1+b_1x+c_1x^2+d_1x^3}-\lt{T}{a_2+b_2x+c_2x^2+d_2x^3}&amp;&amp;\text{Hypothesis}\\
+&amp;=\lt{T}{(a_1+b_1x+c_1x^2+d_1x^3)-(a_2+b_2x+c_2x^2+d_2x^3)}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\lt{T}{(a_1-a_2)+(b_1-b_2)x+(c_1-c_2)x^2+(d_1-d_2)x^3}&amp;&amp;\text{Operations in $P_3$}\\
+&amp;=
+\begin{bmatrix}
+(a_1-a_2)+(b_1-b_2) &amp; (a_1-a_2)-2(c_1-c_2)\\
+(d_1-d_2) &amp; (b_1-b_2)-(d_1-d_2)
+\end{bmatrix}&amp;&amp;\text{Definition of $T$}
+\end{align*}
+</p>
+<p>This single matrix equality translates to the homogeneous system of equations in the variables $a_i-b_i$,
+\begin{align*}
+(a_1-a_2)+(b_1-b_2)&amp;=0\\
+(a_1-a_2)-2(c_1-c_2)&amp;=0\\
+(d_1-d_2)&amp;=0\\
+(b_1-b_2)-(d_1-d_2)&amp;=0
+\end{align*}
+
+</p>
+<p>This system of equations can be rewritten as the matrix equation
+\begin{equation*}
+\begin{bmatrix}
+1&amp;1&amp;0&amp;0\\1&amp;0&amp;-2&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;-1
+\end{bmatrix}
+\colvector{(a_1-a_2)\\(b_1-b_2)\\(c_1-c_2)\\(d_1-d_2)}=\colvector{0\\0\\0\\0}
+\end{equation*}
+</p>
+<p>Since the coefficient matrix is nonsingular (check this) the only solution is trivial, i.e.
+\begin{align*}
+a_1-a_2&amp;=0&amp;b_1-b_2&amp;=0&amp;c_1-c_2&amp;=0&amp;d_1-d_2&amp;=0
+\end{align*}
+so that
+\begin{align*}
+
+a_1&amp;=a_2&amp;b_1&amp;=b_2&amp;c_1&amp;=c_2&amp;d_1&amp;=d_2
+\end{align*}
+
+so the two inputs must be equal polynomials.  By <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a>, $T$ is injective.
+</p>
+<div class="context"><a href="section-ILT.html#example-IAV" class="context" title="Section ILT">(in
+context)</a></div>
+</div>

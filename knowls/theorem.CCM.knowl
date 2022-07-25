@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-CCM" acro="CCM" titletext="Conjugate of the Conjugate of a Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CCM</span><span class="titletext"> Conjugate of the Conjugate of a Matrix</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then $\conjugate{\left(\conjugate{A}\right)}=A$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CCM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-CCM" class="context" title="Section MO">(in context)</a></div>

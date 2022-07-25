@@ -1,0 +1,54 @@
+<div class="subsection" id="subsection-NSNM" acro="NSNM" titletext="Null Space of a Nonsingular Matrix">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">NSNM</span> <span class="titletext">Null Space of a Nonsingular Matrix</span>
+</h4>
+<p>Nonsingular matrices and their null spaces are intimately related, as the next two examples illustrate.</p>
+<div class="example" id="example-NSS" acro="NSS" titletext="Null space of a singular matrix"><h5 class="example">
+<a knowl="./knowls/example.NSS.knowl"><span class="type">Example</span> <span class="acro">NSS</span></a> <span class="titletext">Null space of a singular matrix</span>
+</h5></div>
+<div class="example" id="example-NSNM" acro="NSNM" titletext="Null space of a nonsingular matrix"><h5 class="example">
+<a knowl="./knowls/example.NSNM.knowl"><span class="type">Example</span> <span class="acro">NSNM</span></a> <span class="titletext">Null space of a nonsingular matrix</span>
+</h5></div>
+<p>These two examples illustrate the next theorem, which is another equivalence.</p>
+<div class="theorem" id="theorem-NMTNS" acro="NMTNS" titletext="Nonsingular Matrices have Trivial Null Spaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NMTNS</span><span class="titletext"> Nonsingular Matrices have Trivial Null Spaces</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Then $A$ is nonsingular if and only if the null space of $A$ is the set containing only the zero vector, i.e.  $\nsp{A}=\set{\zerovector}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.NMTNS.knowl">Proof</a></div>
+</div>
+<p>The next theorem pulls a lot of big ideas together.
+<a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a> tells us that we can learn much about solutions to a system of linear equations with a square coefficient matrix by just examining a similar homogeneous system.</p>
+<div class="theorem" id="theorem-NMUS" acro="NMUS" titletext="Nonsingular Matrices and Unique Solutions">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NMUS</span><span class="titletext"> Nonsingular Matrices and Unique Solutions</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  $A$ is a nonsingular matrix if and only if the system $\linearsystem{A}{\vect{b}}$ has a unique solution for every choice of the constant vector $\vect{b}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.NMUS.knowl">Proof</a></div>
+</div>
+<p>This theorem helps to explain part of our interest in nonsingular matrices.  If a matrix is nonsingular, then no matter what vector of constants we pair it with, using the matrix as the  coefficient matrix will <em>always</em> yield a linear system of equations with a solution, and the solution is unique.    To determine if a matrix has this property (nonsingularity) it is enough to just solve one linear system, the homogeneous system with the matrix as coefficient matrix and the zero vector as the vector of constants (or any other vector of constants, see <a knowl="./knowls/exercise.MM.T10.knowl">Exercise MM.T10</a>).</p>
+<p>Formulating the negation of the second part of this theorem is a good exercise.  A singular matrix has the property that for <em>some</em> value of the vector $\vect{b}$, the system $\linearsystem{A}{\vect{b}}$ does not have a unique solution (which means that it has no solution or infinitely many solutions).  We will be able to say more about this case later (see the discussion following <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>).</p>
+<p>Square matrices that are nonsingular have a long list of interesting properties, which we will start to catalog in the following, recurring, theorem.  Of course, singular matrices will then have all of the opposite properties.  The following theorem is a list of equivalences.</p>
+<p>We want to understand just what is involved with understanding and proving a theorem that says several conditions are equivalent. So have a look at <a class="knowl" acro="ME" type="Proof Technique" title="Multiple Equivalences" knowl="./knowls/technique.ME.knowl">Proof Technique ME</a> before studying the first in this series of theorems.</p>
+<div class="theorem" id="theorem-NME1" acro="NME1" titletext="Nonsingular Matrix Equivalences, Round 1">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NME1</span><span class="titletext"> Nonsingular Matrix Equivalences, Round 1</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  The following are equivalent.
+<ol>
+<li> $A$ is nonsingular.
+</li>
+<li> $A$ row-reduces to the identity matrix.
+</li>
+<li> The null space of $A$ contains only the zero vector, $\nsp{A}=\set{\zerovector}$.
+</li>
+<li> The linear system $\linearsystem{A}{\vect{b}}$ has a unique solution for every possible choice of $\vect{b}$.
+</li>
+</ol></p></div>
+<div class="proof"><a knowl="./knowls/proof.NME1.knowl">Proof</a></div>
+</div>
+<div class="sage" id="sage-NME1" acro="NME1" titletext="Nonsingular Matrix Equivalences, Round 1"><h5 class="sage">
+<a knowl="./knowls/sage.NME1.knowl"><span class="type">Sage</span> <span class="acro">NME1</span></a> <span class="titletext">Nonsingular Matrix Equivalences, Round 1</span>
+</h5></div>
+<p>Finally, you may have wondered why we refer to a matrix as <em>nonsingular</em> when it creates systems of equations with <em>single</em> solutions (<a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>)!  I have wondered the same thing.  We will have an opportunity to address this when we get to <a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a>.  Can you wait that long?</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-NM.html#subsection-NSNM" class="context" title="Section NM">(in context)</a></div>

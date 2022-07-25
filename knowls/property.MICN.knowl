@@ -1,0 +1,7 @@
+<div class="property" id="property-MICN" acro="MICN" titletext="Multiplicative Inverse, Complex Numbers">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">MICN</span> <span class="titletext">Multiplicative Inverse, Complex Numbers</span>
+</h5>
+<p>
+For every $\alpha\in\complexes$, $\alpha\neq 0$ there exists $\frac{1}{\alpha}\in\complexes$ so that $\alpha\left(\frac{1}{\alpha}\right)=1$.</p>
+</div>

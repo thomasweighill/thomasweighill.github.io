@@ -1,0 +1,28 @@
+
+<ol>
+<li>Consider the two matrices below, and suppose you already have computed $\detname{A}=-120$.  What is $\detname{B}$?  Why?
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+ 0 &amp; 8 &amp; 3 &amp; -4 \\
+ -1 &amp; 2 &amp; -2 &amp; 5 \\
+ -2 &amp; 8 &amp; 4 &amp; 3 \\
+ 0 &amp; -4 &amp; 2 &amp; -3
+\end{bmatrix}
+&amp;
+B&amp;=
+\begin{bmatrix}
+ 0 &amp; 8 &amp; 3 &amp; -4 \\
+ 0 &amp; -4 &amp; 2 &amp; -3 \\
+ -2 &amp; 8 &amp; 4 &amp; 3 \\
+ -1 &amp; 2 &amp; -2 &amp; 5
+\end{bmatrix}
+\end{align*}
+
+</li>
+<li>State the theorem that allows us to make yet another extension to our NMEx series of theorems.
+</li>
+<li>What is amazing about the interaction between matrix multiplication and the determinant?
+</li>
+</ol>
+

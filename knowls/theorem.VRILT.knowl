@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-VRILT" acro="VRILT" titletext="Vector Representation is an Invertible Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VRILT</span><span class="titletext"> Vector Representation is an Invertible Linear Transformation</span>
+</h5>
+<div class="statement"><p>The function $\vectrepname{B}$ (<a class="knowl" acro="VR" type="Definition" title="Vector Representation" knowl="./knowls/definition.VR.knowl">Definition VR</a>) is an invertible linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.VRILT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VR.html#theorem-VRILT" class="context" title="Section VR">(in context)</a></div>

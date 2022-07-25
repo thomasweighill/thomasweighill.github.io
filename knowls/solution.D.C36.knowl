@@ -1,0 +1,11 @@
+<div class="solution" acro="D.C36">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">D.C36</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The row reduced form of matrix $A$ is
+$\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -1 &amp; 3 &amp; 5\\
+0 &amp; \leading{1} &amp; 1&amp; -1 &amp; 3\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}$,
+so the rank of $A$ (the number of pivot columns) is $2$, and the nullity is $5 - 2 = 3$.
+</div>

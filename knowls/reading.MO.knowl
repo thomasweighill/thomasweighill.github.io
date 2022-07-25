@@ -1,0 +1,32 @@
+
+<ol>
+<li>Perform the following matrix computation.
+\begin{equation*}
+(6)
+\begin{bmatrix}
+2 &amp; -2 &amp; 8 &amp; 1 \\
+4 &amp; 5 &amp; -1 &amp; 3\\
+7 &amp; -3 &amp; 0 &amp; 2
+\end{bmatrix}
++
+(-2)
+\begin{bmatrix}
+2 &amp; 7 &amp; 1 &amp; 2\\
+3 &amp; -1 &amp; 0 &amp; 5\\
+1 &amp; 7 &amp; 3 &amp; 3
+\end{bmatrix}
+\end{equation*}
+</li>
+<li> <a class="knowl" acro="VSPM" type="Theorem" title="Vector Space Properties of Matrices" knowl="./knowls/theorem.VSPM.knowl">Theorem VSPM</a> reminds you of what previous theorem? How strong is the similarity?
+</li>
+<li>Compute the transpose of the matrix below.
+\begin{equation*}
+\begin{bmatrix}
+6 &amp; 8 &amp; 4 \\
+-2 &amp; 1 &amp; 0 \\
+9 &amp; -5 &amp; 6
+\end{bmatrix}
+\end{equation*}
+</li>
+</ol>
+

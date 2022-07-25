@@ -1,0 +1,12 @@
+<div class="solution" acro="VO.C11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VO.C11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Performing the indicated operations (<a class="knowl" acro="CVA" type="Definition" title="Column Vector Addition" knowl="./knowls/definition.CVA.knowl">Definition CVA</a>, <a class="knowl" acro="CVSM" type="Definition" title="Column Vector Scalar Multiplication" knowl="./knowls/definition.CVSM.knowl">Definition CVSM</a>), we obtain the vector equations
+\begin{align*}
+\colvector{11\\6\\17}
+&amp;= 3\colvector{1\\2\\-1} + 4\colvector{2 \\ 0 \\ x}
+= \colvector{11\\6\\ -3 + 4x}
+\end{align*}
+
+Since the entries of the vectors must be equal by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>, we have $-3 + 4x = 17$, which leads to $x = 5$.
+</div>

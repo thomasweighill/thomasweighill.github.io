@@ -1,0 +1,34 @@
+<div class="example" id="example-AOS" acro="AOS" titletext="An orthogonal set">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">AOS</span> <span class="titletext">An orthogonal set</span>
+</h5>
+<p>The set
+\begin{equation*}
+\set{\vect{x}_1,\,\vect{x}_2,\,\vect{x}_3,\,\vect{x}_4}=
+\set{
+\colvector{1+i\\1\\1-i\\i},\,
+\colvector{1+5i\\6+5i\\-7-i\\1-6i},\,
+\colvector{-7+34i\\-8-23i\\-10+22i\\30+13i},\,
+\colvector{-2-4i\\6+i\\4+3i\\6-i}
+}
+\end{equation*}
+is an orthogonal set.</p>
+<p>Since the inner product is anti-commutative (<a class="knowl" acro="IPAC" type="Theorem" title="Inner Product is Anti-Commutative" knowl="./knowls/theorem.IPAC.knowl">Theorem IPAC</a>) we can test pairs of different vectors in any order.  If the result is zero, then it will also be zero if the inner product is computed in the opposite order.  This means there are six different pairs of vectors to use in an inner product computation.  We will do two and you can practice your inner products on the other four.
+\begin{align*}
+\innerproduct{\vect{x}_1}{\vect{x}_3}&amp;=
+(1-i)(-7+34i)+(1)(-8-23i)+(1+i)(-10+22i)+(-i)(30+13i)\\
+&amp;=(27+41i)+(-8-23i)+(-32+12i)+(13-30i)\\
+&amp;=0+0i
+\end{align*}
+and
+\begin{align*}
+
+\innerproduct{\vect{x}_2}{\vect{x}_4}&amp;=
+(1-5i)(-2-4i)+(6-5i)(6+i)+(-7+i)(4+3i)+(1+6i)(6-i)\\
+&amp;=(-22+6i)+(41-24i)+(-31-17i)+(12+35i)\\
+&amp;=0+0i
+\end{align*}
+</p>
+<div class="context"><a href="section-O.html#example-AOS" class="context" title="Section O">(in
+context)</a></div>
+</div>

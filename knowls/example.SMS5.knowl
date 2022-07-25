@@ -1,0 +1,64 @@
+<div class="example" id="example-SMS5" acro="SMS5" titletext="Similar matrices of size 5">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SMS5</span> <span class="titletext">Similar matrices of size 5</span>
+</h5>
+<p>If you wondered if there are examples of similar matrices, then it will not be hard to convince you they exist.  Define
+\begin{align*}
+B=\begin{bmatrix}
+-4 &amp; 1 &amp; -3 &amp; -2 &amp; 2 \\
+1 &amp; 2 &amp; -1 &amp; 3 &amp; -2 \\
+-4 &amp; 1 &amp; 3 &amp; 2 &amp; 2 \\
+-3 &amp; 4 &amp; -2 &amp; -1 &amp; -3 \\
+3 &amp; 1 &amp; -1 &amp; 1 &amp; -4
+\end{bmatrix}
+&amp;&amp;
+S=\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; -1 &amp; -2 &amp; -1 \\
+1 &amp; 3 &amp; -1 &amp; 1 &amp; 1 \\
+-2 &amp; -3 &amp; 3 &amp; 1 &amp; -2 \\
+1 &amp; 3 &amp; -1 &amp; 2 &amp; 1\\
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Check that $S$ is nonsingular and then compute
+\begin{align*}
+&amp;A=\similar{B}{S}\\
+&amp;=
+\begin{bmatrix}
+10 &amp; 1 &amp; 0 &amp; 2 &amp; -5 \\
+-1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+3 &amp; 0 &amp; 2 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; -1 &amp; 0 &amp; 1 \\
+-4 &amp; -1 &amp; 1 &amp; -1 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+-4 &amp; 1 &amp; -3 &amp; -2 &amp; 2 \\
+1 &amp; 2 &amp; -1 &amp; 3 &amp; -2 \\
+-4 &amp; 1 &amp; 3 &amp; 2 &amp; 2 \\
+-3 &amp; 4 &amp; -2 &amp; -1 &amp; -3 \\
+3 &amp; 1 &amp; -1 &amp; 1 &amp; -4
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; -1 &amp; -2 &amp; -1 \\
+1 &amp; 3 &amp; -1 &amp; 1 &amp; 1 \\
+-2 &amp; -3 &amp; 3 &amp; 1 &amp; -2 \\
+1 &amp; 3 &amp; -1 &amp; 2 &amp; 1
+\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+-10 &amp; -27 &amp; -29 &amp; -80 &amp; -25 \\
+-2 &amp; 6 &amp; 6 &amp; 10 &amp; -2 \\
+-3 &amp; 11 &amp; -9 &amp; -14 &amp; -9 \\
+-1 &amp; -13 &amp; 0 &amp; -10 &amp; -1 \\
+11 &amp; 35 &amp; 6 &amp; 49 &amp; 19
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>So by this construction, we know that $A$ and $B$ are similar.</p>
+<div class="context"><a href="section-SD.html#example-SMS5" class="context" title="Section SD">(in
+context)</a></div>
+</div>

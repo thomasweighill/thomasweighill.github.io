@@ -1,0 +1,42 @@
+<div class="example" id="example-LDRN" acro="LDRN" titletext="Linearly dependent, $r$ and $n$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LDRN</span> <span class="titletext">Linearly dependent, $r$ and $n$</span>
+</h5>
+<p>Is the set of vectors
+\begin{equation*}
+S=\set{
+\colvector{2\\-1\\3\\1\\0\\3},\,
+\colvector{9\\-6\\-2\\3\\2\\1},\,
+\colvector{1\\1\\1\\0\\0\\1},\,
+\colvector{-3\\1\\4\\2\\1\\2},\,
+\colvector{6\\-2\\1\\4\\3\\2}
+}
+\end{equation*}
+linearly independent or linearly dependent?</p>
+<p><a class="knowl" acro="LIVRN" type="Theorem" title="Linearly Independent Vectors, $r$ and $n$" knowl="./knowls/theorem.LIVRN.knowl">Theorem LIVRN</a> suggests we place these vectors into a matrix as columns and analyze the row-reduced version of the matrix,
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 9 &amp; 1 &amp; -3 &amp; 6\\
+-1 &amp; -6 &amp; 1 &amp; 1 &amp; -2\\
+3 &amp; -2 &amp; 1 &amp; 4 &amp; 1\\
+1 &amp; 3 &amp; 0 &amp; 2 &amp; 4\\
+0 &amp; 2 &amp; 0 &amp; 1 &amp; 3\\
+3 &amp; 1 &amp; 1 &amp; 2 &amp; 2
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; -1\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now we need only compute that
+$r=4&lt;5=n$
+to recognize, via <a class="knowl" acro="LIVRN" type="Theorem" title="Linearly Independent Vectors, $r$ and $n$" knowl="./knowls/theorem.LIVRN.knowl">Theorem LIVRN</a> that $S$ is a linearly dependent set.  Boom!</p>
+<div class="context"><a href="section-LI.html#example-LDRN" class="context" title="Section LI">(in
+context)</a></div>
+</div>

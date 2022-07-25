@@ -1,0 +1,68 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-EEF', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">EEF</span> <span class="titletext">Extended Echelon Form</span>
+</h5>
+
+
+<p>Sage will compute the extended echelon form, an improvement over what we did “by hand” in <a class="knowl" acro="MISLE" type="Sage" title="" knowl="./knowls/sage.MISLE.knowl">Sage MISLE</a>.  And the output can be requested as a “subdivided” matrix so that we can easily work with the pieces $C$ and $L$.  Pieces of subdivided matrices can be extracted with indices entirely similar to how we index the actual entries of a matrix.  We will redo <a class="knowl" acro="FS2" type="Example" title="Four subsets, no. 2" knowl="./knowls/example.FS2.knowl">Example FS2</a> as an illustration of <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a> and <a class="knowl" acro="PEEF" type="Theorem" title="Properties of Extended Echelon Form" knowl="./knowls/theorem.PEEF.knowl">Theorem PEEF</a>.</p>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">A = matrix(QQ,[[ 10,  0,  3,   8,   7],
+               [-16, -1, -4, -10, -13],
+               [ -6,  1, -3,  -6,  -6],
+               [  0,  2, -2,  -3,  -2],
+               [  3,  0,  1,   2,   3],
+               [ -1, -1,  1,   1,   0]])
+N = A.extended_echelon_form(subdivide=True); N
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">C = N.subdivision(0,0); C
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">L = N.subdivision(1,1); L
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">K = N.subdivision(0,1); K
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">C.rref() == C
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">L.rref() == L
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">A.right_kernel() == C.right_kernel()
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">A.row_space() == C.row_space()
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">A.column_space() == L.right_kernel()
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">A.left_kernel() == L.row_space()
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">J = N.matrix_from_columns(range(5, 11)); J
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">J.is_singular()
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">J*A
+</script></div>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">J*A == A.rref()
+</script></div>
+
+<p>Notice how we can employ the uniqueness of reduced row-echelon form (<a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>) to verify that <span class="code">C</span> and <span class="code">L</span> are in reduced row-echelon form.  Realize too, that subdivided output is an optional behavior of the <span class="code">.extended_echelon_form()</span> method and must be requested with <span class="code">subdivide=True</span>.</p>
+
+<p>Additionally, it is the uniquely determined matrix <span class="code">J</span> that provides us with a standard version of the final column of the row-reduced augmented matrix using variables in the vector of constants, as first shown back in <a class="knowl" acro="CSANS" type="Example" title="Column space as null space" knowl="./knowls/example.CSANS.knowl">Example CSANS</a> and verified here with variables defined as in <a class="knowl" acro="RRSM" type="Sage" title="" knowl="./knowls/sage.RRSM.knowl">Sage RRSM</a>.  (The vector method <span class="code">.column()</span> converts a vector into a 1-column matrix, used here to format the matrix-vector product nicely.)</p>
+
+<br><br><div class="sage-EEF"><script type="text/x-sage">R.<b1,b2,b3,b4,b5,b6> = QQ[]
+const = vector(R, [b1, b2, b3, b4, b5, b6])
+(J*const).column()
+</script></div>
+
+<br><br><div class="sage-EEF sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

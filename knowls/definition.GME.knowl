@@ -1,0 +1,6 @@
+<div class="definition" id="definition-GME" acro="GME" titletext="Geometric Multiplicity of an Eigenvalue">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">GME</span> <span class="titletext"> Geometric Multiplicity of an Eigenvalue</span>
+</h5>
+<p>Suppose that $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then the <em class="term">geometric multiplicity</em> of $\lambda$, $\geomult{A}{\lambda}$, is the dimension of the eigenspace $\eigenspace{A}{\lambda}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#definition-GME" class="context" title="Section EE">(in context)</a></div>

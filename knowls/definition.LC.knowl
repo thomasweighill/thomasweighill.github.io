@@ -1,0 +1,11 @@
+<div class="definition" id="definition-LC" acro="LC" titletext="Linear Combination">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LC</span> <span class="titletext"> Linear Combination</span>
+</h5>
+<p>Suppose that $V$ is a vector space.
+Given $n$ vectors $\vectorlist{u}{n}$ and $n$ scalars $\alpha_1,\,\alpha_2,\,\alpha_3,\,\ldots,\,\alpha_n$, their <em class="term">linear combination</em> is the vector
+\begin{equation*}
+\lincombo{\alpha}{u}{n}.
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#definition-LC" class="context" title="Section S">(in context)</a></div>

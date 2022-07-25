@@ -1,0 +1,21 @@
+<div class="annotatedacronyms" id="annotatedacronyms-D" acro="D" titletext="">
+<h5 class="annotatedacronyms">
+<span class="type">Annotated Acronyms for Chapter</span> <span class="acro">D</span>
+</h5>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="EMDRO" type="Theorem" title="Elementary Matrices Do Row Operations" knowl="./knowls/theorem.EMDRO.knowl">Theorem EMDRO</a></h5></div>
+<p>
+The main purpose of elementary matrices is to provide a more formal foundation for row operations.  With this theorem we can convert the notion of “doing a row operation” into the slightly more precise, and tractable, operation of matrix multiplication by an elementary matrix.  The other big results in this chapter are made possible by this connection and our previous understanding of the behavior of matrix multiplication (such as results in <a href="section-MM.html" title="Matrix Multiplication">Section MM</a>).
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="DER" type="Theorem" title="Determinant Expansion about Rows" knowl="./knowls/theorem.DER.knowl">Theorem DER</a></h5></div>
+<p>
+We define the determinant by expansion about the first row and then prove you can expand about any row (and with <a class="knowl" acro="DEC" type="Theorem" title="Determinant Expansion about Columns" knowl="./knowls/theorem.DEC.knowl">Theorem DEC</a>, about any column).  Amazing.  If the determinant seems contrived, these results might begin to convince you that maybe something interesting is going on.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="DRMM" type="Theorem" title="Determinant Respects Matrix Multiplication" knowl="./knowls/theorem.DRMM.knowl">Theorem DRMM</a></h5></div>
+<p>
+<a class="knowl" acro="EMDRO" type="Theorem" title="Elementary Matrices Do Row Operations" knowl="./knowls/theorem.EMDRO.knowl">Theorem EMDRO</a> connects elementary matrices with matrix multiplication.  Now we connect determinants with matrix multiplication.  If you thought the definition of matrix multiplication (as exemplified by <a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a>) was as outlandish as the definition of the determinant, then no more.  They seem to play together quite nicely.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a></h5></div>
+<p>
+This theorem provides a simple test for nonsingularity, even though it is stated and titled as a theorem about singularity.  It will be helpful, especially in concert with <a class="knowl" acro="DRMM" type="Theorem" title="Determinant Respects Matrix Multiplication" knowl="./knowls/theorem.DRMM.knowl">Theorem DRMM</a>, in establishing upcoming results about nonsingular matrices or creating alternative proofs of earlier results.  You might even use this theorem as an indicator of how often a matrix is singular.  Create a square matrix at random — what are the odds it is singular?  This theorem says the determinant has to be zero, which we might suspect is a rare occurrence.  Of course, we have to be a lot more careful about words like “random,” “odds,” and “rare” if we want precise answers to this question.
+</p>
+</div>

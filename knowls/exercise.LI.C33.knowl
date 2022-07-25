@@ -1,0 +1,17 @@
+<div class="exercise" acro="LI.C33">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LI.C33</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find  a set $S$ so that $S$ is linearly independent and $\nsp{A}=\spn{S}$, where $\nsp{A}$ is the null space of the matrix $A$ below.
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+2 &amp; 3 &amp; 3 &amp; 1 &amp; 4 \\
+1 &amp; 1 &amp; -1 &amp; -1 &amp; -3 \\
+3 &amp; 2 &amp; -8 &amp; -1 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LI.C33.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,6 @@
+<div class="definition" id="definition-M" acro="M" titletext="Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">M</span> <span class="titletext"> Matrix</span>
+</h5>
+<p>An $m\times n$ <em class="term">matrix</em> is a rectangular layout of numbers from $\complex{\null}$ having $m$ rows and $n$ columns.  We will use upper-case Latin letters from the start of the alphabet ($A,\,B,\,C,\dotsc$) to denote matrices and squared-off brackets to delimit the layout.  Many use large parentheses instead of brackets — the distinction is not important.  Rows of a matrix will be referenced starting at the top and working down (i.e.  row 1 is at the top) and columns will be referenced starting from the left (i.e.  column 1 is at the left).  For a matrix $A$, the notation $\matrixentry{A}{ij}$ will refer to the complex number in row $i$ and column $j$ of $A$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-M" class="context" title="Section RREF">(in context)</a></div>

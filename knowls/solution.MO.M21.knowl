@@ -1,0 +1,35 @@
+<div class="solution" acro="MO.M21">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MO.M21</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Suppose there exist constants $\alpha$, $\beta$, $\gamma$, and $\delta$ so that
+\begin{align*}
+\alpha \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix} +
+\beta \begin{bmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{bmatrix} +
+\gamma \begin{bmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{bmatrix} +
+\delta \begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}
+&amp;=
+\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix} .
+\end{align*}
+
+Then,
+\begin{align*}
+\begin{bmatrix}\alpha &amp; 0 \\ 0 &amp; 0 \end{bmatrix} +
+ \begin{bmatrix} 0 &amp; \beta \\ 0 &amp; 0 \end{bmatrix} +
+\begin{bmatrix} 0 &amp; 0 \\ \gamma &amp; 0 \end{bmatrix} +
+ \begin{bmatrix} 0 &amp; 0 \\ 0 &amp; \delta \end{bmatrix}
+&amp;=
+\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}
+\end{align*}
+
+so that
+$\begin{bmatrix}
+\alpha &amp; \beta \\
+ \gamma &amp; \delta
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 &amp; 0 \\
+0 &amp; 0
+\end{bmatrix}$.
+The only solution is then $\alpha = 0$, $\beta = 0$, $\gamma = 0$, and $\delta = 0$, so that the set $S$ is a linearly independent set of matrices.
+</div>

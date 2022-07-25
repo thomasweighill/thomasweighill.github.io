@@ -1,0 +1,44 @@
+<div class="example" id="example-ABLC" acro="ABLC" titletext="Archetype B as a linear combination">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ABLC</span> <span class="titletext">Archetype B as a linear combination</span>
+</h5>
+<p>In this example we will rewrite <a knowl="./knowls/archetype.B.knowl">Archetype B</a> in the language of vectors, vector equality and linear combinations.  In <a class="knowl" acro="VESE" type="Example" title="Vector equality for a system of equations" knowl="./knowls/example.VESE.knowl">Example VESE</a> we wrote the  system of $m=3$ equations as the vector equality
+\begin{equation*}
+\colvector{-7x_1 -6 x_2 - 12x_3\\ 5x_1  + 5x_2 + 7x_3\\ x_1 +4x_3}
+=
+\colvector{-33\\24\\5}
+\end{equation*}</p>
+<p>Now we will bust up the linear expressions on the left, first using vector addition,
+\begin{equation*}
+\colvector{-7x_1\\ 5x_1\\x_1}+
+\colvector{-6 x_2\\5x_2\\0x_2}+
+\colvector{-12x_3\\7x_3\\4x_3}
+=
+\colvector{-33\\24\\5}
+\end{equation*}</p>
+<p>Now we can rewrite each of these vectors as a scalar multiple of a fixed vector, where the scalar is one of the unknown variables, converting the left-hand side into a linear combination
+\begin{equation*}
+x_1\colvector{-7\\5\\1}+
+x_2\colvector{-6\\5\\0}+
+x_3\colvector{-12\\7\\4}
+=
+\colvector{-33\\24\\5}
+\end{equation*}</p>
+<p>We can now interpret the problem of solving the system of equations as determining values for the scalar multiples that make the vector equation true.  In the analysis of <a knowl="./knowls/archetype.B.knowl">Archetype B</a>, we were able to determine that it had only one solution.  A quick way to see this is to row-reduce the coefficient matrix to the $3\times 3$ identity matrix and apply <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> to determine that the coefficient matrix is nonsingular.  Then <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a> tells us that the system of equations has a unique solution.  This solution is
+\begin{align*}
+x_1 = -3&amp;&amp;x_2 = 5&amp;&amp;x_3 = 2
+\end{align*}
+</p>
+<p>So, in the context of this example, we can express the fact that these values of the variables are a solution by writing the linear combination,
+\begin{equation*}
+(-3)\colvector{-7\\5\\1}+
+(5)\colvector{-6\\5\\0}+
+(2)\colvector{-12\\7\\4}
+=
+\colvector{-33\\24\\5}
+\end{equation*}</p>
+<p>Furthermore, these are the <em>only</em> three scalars that will accomplish this equality, since they come from a unique solution.</p>
+<p>Notice how the three vectors in this example are the columns of the coefficient matrix of the system of equations.  This is our first hint of the important interplay between the vectors that form the columns of a matrix, and the matrix itself.</p>
+<div class="context"><a href="section-LC.html#example-ABLC" class="context" title="Section LC">(in
+context)</a></div>
+</div>

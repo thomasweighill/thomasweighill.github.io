@@ -1,0 +1,8 @@
+<div class="exercise" acro="VS.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VS.M20</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Explain why we need to define the vector space $P_n$ as the set of all polynomials with degree <em>up to and including</em> $n$ instead of the more obvious set of all polynomials of degree <em>exactly</em> $n$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VS.M20.knowl">Solution</a></p></div>
+</div>

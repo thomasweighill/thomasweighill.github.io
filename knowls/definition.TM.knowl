@@ -1,0 +1,10 @@
+<div class="definition" id="definition-TM" acro="TM" titletext="Transpose of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">TM</span> <span class="titletext"> Transpose of a Matrix</span>
+</h5>
+<p>Given an $m\times n$ matrix $A$, its <em class="term">transpose</em> is the $n\times m$ matrix $\transpose{A}$ given by
+\begin{equation*}
+\matrixentry{\transpose{A}}{ij}=\matrixentry{A}{ji},\quad 1\leq i\leq n,\,1\leq j\leq m.
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-TM" class="context" title="Section MO">(in context)</a></div>

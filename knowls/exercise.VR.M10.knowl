@@ -1,0 +1,15 @@
+<div class="exercise" acro="VR.M10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VR.M10</span> <span class="contributor"><a knowl="./knowls/contributor.andyzimmer.knowl">Andy Zimmer</a></span>
+</h5>
+<div class="problem"><p>Prove that the set $S$ below is a basis for the vector space of $2\times 2$ matrices, $M_{22}$.  Do this by choosing a natural basis for $M_{22}$ and coordinatizing the elements of $S$ with respect to this basis.  Examine the resulting set of column vectors from $\complex{4}$ and apply the <a href="section-VR.html" title="Coordinatization Principle">Coordinatization Principle</a>.
+\begin{equation*}
+S=\set{
+\begin{bmatrix} 33 &amp;99\\ 78 &amp; -9 \end{bmatrix},\,
+\begin{bmatrix} -16 &amp; -47\\ -36 &amp; 2 \end{bmatrix},\,
+\begin{bmatrix} 10 &amp; 27\\ 17 &amp; 3 \end{bmatrix},\,
+\begin{bmatrix} -2 &amp; -7\\ -6 &amp; 4 \end{bmatrix}
+}
+\end{equation*}
+</p></div>
+</div>

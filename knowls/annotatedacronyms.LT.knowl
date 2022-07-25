@@ -1,0 +1,57 @@
+<div class="annotatedacronyms" id="annotatedacronyms-LT" acro="LT" titletext="">
+<h5 class="annotatedacronyms">
+<span class="type">Annotated Acronyms for Chapter</span> <span class="acro">LT</span>
+</h5>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="MBLT" type="Theorem" title="Matrices Build Linear Transformations" knowl="./knowls/theorem.MBLT.knowl">Theorem MBLT</a></h5></div>
+<p>
+You give me an $m\times n$ matrix and I will give you a linear transformation $\ltdefn{T}{\complex{n}}{\complex{m}}$.  This is our first hint that there is some relationship between linear transformations and matrices.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a></h5></div>
+<p>
+You give me a linear transformation $\ltdefn{T}{\complex{n}}{\complex{m}}$ and I will give you an $m\times n$ matrix.  This is our second hint that there is some relationship between linear transformations and matrices.  Generalizing this relationship to arbitrary vector spaces (i.e.  not just $\complex{n}$ and  $\complex{m}$) will be the most important idea of <a href="chapter-R.html" title="Representations">Chapter R</a>.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="LTLC" type="Theorem" title="Linear Transformations and Linear Combinations" knowl="./knowls/theorem.LTLC.knowl">Theorem LTLC</a></h5></div>
+<p>
+A simple idea, and as described in <a knowl="./knowls/exercise.LT.T20.knowl">Exercise LT.T20</a>, equivalent to the <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>.  The statement is really just for convenience, as we will quote this one often.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a></h5></div>
+<p>
+Another simple idea, but a powerful one.  “It is enough to know what a linear transformation does to a basis.”  At the outset of <a href="chapter-R.html" title="Representations">Chapter R</a>, <a class="knowl" acro="VRRB" type="Theorem" title="Vector Representation Relative to a Basis" knowl="./knowls/theorem.VRRB.knowl">Theorem VRRB</a> will help us define a very important function, and then <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> will allow us to understand that this function is also a linear transformation.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a></h5></div>
+<p>
+The pre-image will be an important construction in this chapter, and this is one of the most important descriptions of the pre-image.  It should remind you very much of <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>.  Also see <a class="knowl" acro="RPI" type="Theorem" title="Range and Pre-Image" knowl="./knowls/theorem.RPI.knowl">Theorem RPI</a>, which has a description below.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a></h5></div>
+<p>
+Kernels and injective linear transformations are intimately related.  This result is the connection.  Compare with <a class="knowl" acro="RSLT" type="Theorem" title="Range of a Surjective Linear Transformation" knowl="./knowls/theorem.RSLT.knowl">Theorem RSLT</a> below.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="ILTB" type="Theorem" title="Injective Linear Transformations and Bases" knowl="./knowls/theorem.ILTB.knowl">Theorem ILTB</a></h5></div>
+<p>
+Injective linear transformations and linear independence are intimately related.  This result is the connection.  Compare with <a class="knowl" acro="SLTB" type="Theorem" title="Surjective Linear Transformations and Bases" knowl="./knowls/theorem.SLTB.knowl">Theorem SLTB</a> below.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="RSLT" type="Theorem" title="Range of a Surjective Linear Transformation" knowl="./knowls/theorem.RSLT.knowl">Theorem RSLT</a></h5></div>
+<p>
+Ranges and surjective linear transformations are intimately related.  This result is the connection.  Compare with <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a> above.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="SSRLT" type="Theorem" title="Spanning Set for Range of a Linear Transformation" knowl="./knowls/theorem.SSRLT.knowl">Theorem SSRLT</a></h5></div>
+<p>
+This theorem provides the most direct way of forming the range of a linear transformation.  The resulting spanning set might well be linearly dependent, and beg for some clean-up, but that does not stop us from having very quickly formed a reasonable description of the range.  If you find the determination of spanning sets or ranges difficult, this is one worth remembering.  You can view this as the analogue of forming a column space by a direct application of <a class="knowl" acro="CSM" type="Definition" title="Column Space of a Matrix" knowl="./knowls/definition.CSM.knowl">Definition CSM</a>.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="SLTB" type="Theorem" title="Surjective Linear Transformations and Bases" knowl="./knowls/theorem.SLTB.knowl">Theorem SLTB</a></h5></div>
+<p>
+Surjective linear transformations and spanning sets are intimately related.  This result is the connection.  Compare with <a class="knowl" acro="ILTB" type="Theorem" title="Injective Linear Transformations and Bases" knowl="./knowls/theorem.ILTB.knowl">Theorem ILTB</a> above.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="RPI" type="Theorem" title="Range and Pre-Image" knowl="./knowls/theorem.RPI.knowl">Theorem RPI</a></h5></div>
+<p>
+This is the analogue of <a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a>.  Membership in the range is equivalent to nonempty pre-images.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a></h5></div>
+<p>
+Injectivity and surjectivity are independent concepts.  You can have one without the other.  But when you have both, you get invertibility, a linear transformation that can be run “backwards.”  This result might explain the entire structure of the four sections in this chapter.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="RPNDD" type="Theorem" title="Rank Plus Nullity is Domain Dimension" knowl="./knowls/theorem.RPNDD.knowl">Theorem RPNDD</a></h5></div>
+<p>
+This is the promised generalization of <a class="knowl" acro="RPNC" type="Theorem" title="Rank Plus Nullity is Columns" knowl="./knowls/theorem.RPNC.knowl">Theorem RPNC</a> about matrices.  So the number of columns of a matrix is the analogue of the dimension of the domain.  This will become even more precise in <a href="chapter-R.html" title="Representations">Chapter R</a>.  For now, this can be a powerful result for determining dimensions of kernels and ranges, and consequently, the injectivity or surjectivity of linear transformations.  Never underestimate a theorem that counts something.
+</p>
+</div>

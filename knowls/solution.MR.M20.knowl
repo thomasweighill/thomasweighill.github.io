@@ -1,0 +1,38 @@
+<div class="solution" acro="MR.M20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MR.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Build a matrix representation (<a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>) with the set
+\begin{equation*}
+B=\set{1,\,x,\,x^2,\,\dots,\,x^n}
+\end{equation*}
+employed as a basis of both the domain and codomain.  Then
+\begin{align*}
+\vectrep{B}{\lt{D}{1}}&amp;=\vectrep{B}{0}
+=\colvector{0\\0\\0\\\vdots\\0\\0}
+&amp;
+\vectrep{B}{\lt{D}{x}}&amp;=\vectrep{B}{1}
+=\colvector{1\\0\\0\\\vdots\\0\\0}\\
+\vectrep{B}{\lt{D}{x^2}}&amp;=\vectrep{B}{2x}
+=\colvector{0\\2\\0\\\vdots\\0\\0}
+&amp;
+\vectrep{B}{\lt{D}{x^3}}&amp;=\vectrep{B}{3x^2}
+=\colvector{0\\0\\3\\\vdots\\0\\0}\\
+&amp;\vdots\\
+\vectrep{B}{\lt{D}{x^n}}&amp;=\vectrep{B}{nx^{n-1}}
+=\colvector{0\\0\\0\\\vdots\\n\\0}\\
+\end{align*}
+
+and the resulting matrix representation is
+\begin{equation*}
+\matrixrep{D}{B}{B}=
+\begin{bmatrix}
+0 &amp; 1 &amp; 0 &amp; 0 &amp; \dots &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 2 &amp; 0 &amp; \dots &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; \dots &amp; 0 &amp; 0 \\
+   &amp; \vdots &amp;&amp;&amp; \ddots &amp; &amp; \vdots \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \dots &amp; 0 &amp; n \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \dots &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+This $(n+1)\times(n+1)$ matrix is very close to being in reduced row-echelon form.  Multiply row $i$ by $\frac{1}{i}$, for $1\leq i\leq n$, to convert it to reduced row-echelon form.  From this we can see that matrix representation $\matrixrep{D}{B}{B}$ has rank $n$ and nullity $1$.  Applying <a class="knowl" acro="RCSI" type="Theorem" title="Range and Column Space Isomorphism" knowl="./knowls/theorem.RCSI.knowl">Theorem RCSI</a> and <a class="knowl" acro="KNSI" type="Theorem" title="Kernel and Null Space Isomorphism" knowl="./knowls/theorem.KNSI.knowl">Theorem KNSI</a> tells us that the linear transformation $D$ will have the same values for the rank and nullity, as well.
+</div>

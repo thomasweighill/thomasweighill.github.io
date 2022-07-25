@@ -1,0 +1,36 @@
+<div class="proof" id="proof-UMPIP" acro="UMPIP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">UMPIP</span>
+</h5>
+<p>\begin{align*}
+\innerproduct{U\vect{u}}{U\vect{v}}
+&amp;=\transpose{\left(\conjugate{U\vect{u}}\right)}U\vect{v}
+&amp;&amp;\knowl{./knowls/theorem.MMIP.knowl}{\text{Theorem MMIP}}\\
+&amp;=\transpose{\left(\conjugate{U}\conjugate{\vect{u}}\right)}U\vect{v}
+&amp;&amp;\knowl{./knowls/theorem.MMCC.knowl}{\text{Theorem MMCC}}\\
+&amp;=\transpose{\conjugate{\vect{u}}}\transpose{\conjugate{U}}U\vect{v}
+&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\transpose{\conjugate{\vect{u}}}\adjoint{U}U\vect{v}
+&amp;&amp;\knowl{./knowls/definition.A.knowl}{\text{Definition A}}\\
+&amp;=\transpose{\conjugate{\vect{u}}}I_n\vect{v}
+&amp;&amp;\knowl{./knowls/definition.UM.knowl}{\text{Definition UM}}\\
+&amp;=\transpose{\conjugate{\vect{u}}}\vect{v}
+&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+&amp;=\innerproduct{\vect{u}}{\vect{v}}
+&amp;&amp;\knowl{./knowls/theorem.MMIP.knowl}{\text{Theorem MMIP}}
+\end{align*}
+</p>
+
+<p>The second conclusion is just a specialization of the first conclusion.
+\begin{align*}
+\norm{U\vect{v}}
+&amp;=\sqrt{\norm{U\vect{v}}^2}\\
+&amp;=\sqrt{\innerproduct{U\vect{v}}{U\vect{v}}}&amp;&amp;\knowl{./knowls/theorem.IPN.knowl}{\text{Theorem IPN}}\\
+&amp;=\sqrt{\innerproduct{\vect{v}}{\vect{v}}}\\
+&amp;=\sqrt{\norm{\vect{v}}^2}&amp;&amp;\knowl{./knowls/theorem.IPN.knowl}{\text{Theorem IPN}}\\
+&amp;=\norm{\vect{v}}
+\end{align*}
+
+</p>
+
+</div>

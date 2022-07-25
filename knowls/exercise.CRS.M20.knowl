@@ -1,0 +1,8 @@
+<div class="exercise" acro="CRS.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Usually the column space and null space of a matrix contain vectors of different sizes.  For a square matrix, though, the vectors in these two sets are the same size.  Usually the two sets will be different.  Construct an example of a square matrix where the column space and null space are equal.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.M20.knowl">Solution</a></p></div>
+</div>

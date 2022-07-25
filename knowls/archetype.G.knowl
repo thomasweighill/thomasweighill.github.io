@@ -1,0 +1,16 @@
+<div class="archetype" id="archetype-G" acro="G" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">G</span> <span class="titletext"></span>
+</h4>
+<p>Summary: System with five equations, two variables.  Consistent.  Null space of coefficient matrix has dimension 0.  Coefficient matrix identical to that of <a knowl="./knowls/archetype.H.knowl">Archetype H</a>, constant vector is different.</p>
+<p>Definition:\begin{align*}
+2x_1  + 3x_2  &amp;= 6 \\
+-x_1 + 4x_2  &amp;=  -14 \\
+3x_1 +10x_2  &amp;=  -2  \\
+3x_1 - x_2  &amp;=  20  \\
+6x_1 + 9x_2  &amp;=  18
+\end{align*}
+
+</p>
+<div class="context"><a href="archetype-G.html" class="context" title="Archetype G">Complete analysis of Archetype G</a></div>
+</div>

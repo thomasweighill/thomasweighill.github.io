@@ -1,0 +1,8 @@
+<div class="exercise" acro="ILT.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">ILT.C30</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $T : M_{22} \rightarrow P_2$ be given by $T\left(\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\right) = (a + b) + (a + c)x + (a + d)x^2$.  Is $T$ injective?  Find $\krn{T}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.ILT.C30.knowl">Solution</a></p></div>
+</div>

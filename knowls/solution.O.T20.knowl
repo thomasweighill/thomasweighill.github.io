@@ -1,0 +1,22 @@
+<div class="solution" acro="O.T20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">O.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Vectors are orthogonal if their inner product is zero (<a class="knowl" acro="OV" type="Definition" title="Orthogonal Vectors" knowl="./knowls/definition.OV.knowl">Definition OV</a>), so we compute,
+\begin{align*}
+\innerproduct{\vect{u}}{\alpha\vect{v}+\beta\vect{w}}
+&amp;=
+\innerproduct{\vect{u}}{\alpha\vect{v}}+
+\innerproduct{\vect{u}}{\beta\vect{w}}
+&amp;&amp;\knowl{./knowls/theorem.IPVA.knowl}{\text{Theorem IPVA}}\\
+&amp;=
+\alpha\innerproduct{\vect{u}}{\vect{v}}+
+\beta\innerproduct{\vect{u}}{\vect{w}}
+&amp;&amp;\knowl{./knowls/theorem.IPSM.knowl}{\text{Theorem IPSM}}\\
+&amp;=
+\alpha\left(0\right)+\beta\left(0\right)
+&amp;&amp;\knowl{./knowls/definition.OV.knowl}{\text{Definition OV}}\\
+&amp;=0
+\end{align*}
+
+So by <a class="knowl" acro="OV" type="Definition" title="Orthogonal Vectors" knowl="./knowls/definition.OV.knowl">Definition OV</a>, $\vect{u}$ and $\alpha\vect{v}+\beta\vect{w}$ are an orthogonal pair of vectors.
+</div>

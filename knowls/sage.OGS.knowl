@@ -1,0 +1,66 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-OGS', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">OGS</span> <span class="titletext">Orthogonality and Gram-Schmidt</span>
+</h5>
+
+<p>It is easy enough to check a pair of vectors for orthogonality (is the inner product zero?).  To check that a set is orthogonal, we just need to do this repeatedly. This is a redo of <a class="knowl" acro="AOS" type="Example" title="An orthogonal set" knowl="./knowls/example.AOS.knowl">Example AOS</a>.</p>
+
+<br><br><div class="sage-OGS"><script type="text/x-sage">x1 = vector(QQbar, [    1+I,       1,      1-I,       I])
+x2 = vector(QQbar, [  1+5*I,   6+5*I,     -7-I,   1-6*I])
+x3 = vector(QQbar, [-7+34*I, -8-23*I, -10+22*I, 30+13*I])
+x4 = vector(QQbar, [ -2-4*I,     6+I,    4+3*I,     6-I])
+S = [x1, x2, x3, x4]
+ips = [S[i].hermitian_inner_product(S[j])
+                  for i in range(3) for j in range(i+1,3)]
+all([ip == 0 for ip in ips])
+</script></div>
+
+<p>Notice how the list comprehension computes each pair just once, and never checks the inner product of a vector with itself.  If we wanted to check that a set is orthonormal, the “normal” part is less involved.  We will check the set above, even though we can clearly see that the four vectors are not even close to being unit vectors.  Be sure to run the above definitions of <span class="code">S</span> before running the next compute cell.</p>
+
+<br><br><div class="sage-OGS"><script type="text/x-sage">ips = [S[i].hermitian_inner_product(S[i]) for i in range(3)]
+all([ip == 1 for ip in ips])
+</script></div>
+
+<p>Applying the Gram-Schmidt procedure to a set of vectors is the type of computation that a program like Sage is perfect for.  Gram-Schmidt is implemented as a method for matrices, where we interpret the rows of the matrix as the vectors in the original set.  The result is two matrices, where the first has rows that are the orthogonal vectors.  The second matrix has rows that provide linear combinations of the orthogonal vectors that equal the original vectors.  The original vectors do not need to form a linearly independent set, and when the set is linearly dependent, then zero vectors produced are not part of the returned set.</p>
+
+<p>Over <span class="code">CDF</span> the set is automatically orthonormal, and since a different algorithm is used (to help control the imprecisions), the results will look different than what would result from <a class="knowl" acro="GSP" type="Theorem" title="Gram-Schmidt Procedure" knowl="./knowls/theorem.GSP.knowl">Theorem GSP</a>.  We will illustrate with the vectors from <a class="knowl" acro="GSTV" type="Example" title="Gram-Schmidt of three vectors" knowl="./knowls/example.GSTV.knowl">Example GSTV</a>.</p>
+
+<br><br><div class="sage-OGS"><script type="text/x-sage">v1 = vector(CDF, [ 1, 1+I,   1])
+v2 = vector(CDF, [-I,   1, 1+I])
+v3 = vector(CDF, [ 0,   I,   I])
+A = matrix([v1,v2,v3])
+G, M = A.gram_schmidt()
+G.round(5)
+</script></div>
+
+<p>We formed the matrix A with the three vectors as rows, and of the two outputs we are interested in the first one, whose rows form the orthonormal set.  We round the numbers to 5 digits, just to make the result fit nicely on your screen.  Let us do it again, now exactly over <span class="code">QQbar</span>.  We will output the entries of the matrix as list, working across rows first, so it fits nicely.</p>
+
+<br><br><div class="sage-OGS"><script type="text/x-sage">v1 = vector(QQbar, [ 1, 1+I,   1])
+v2 = vector(QQbar, [-I,   1, 1+I])
+v3 = vector(QQbar, [ 0,   I,   I])
+A = matrix([v1,v2,v3])
+G, M = A.gram_schmidt(orthonormal=True)
+Sequence(G.list(), cr=True)
+</script></div>
+
+<p>Notice that we asked for orthonormal output, so the rows of <span class="code">G</span> are the vectors $\set{\vect{w}_1,\,\vect{w}_2,\,\vect{w}_3}$ in <a class="knowl" acro="ONTV" type="Example" title="Orthonormal set, three vectors" knowl="./knowls/example.ONTV.knowl">Example ONTV</a>.  Exactly.  We can restrict ourselves to <span class="code">QQ</span> and forego the “normality” to obtain just the orthogonal set $\set{\vect{u}_1,\,\vect{u}_2,\,\vect{u}_3}$ of <a class="knowl" acro="GSTV" type="Example" title="Gram-Schmidt of three vectors" knowl="./knowls/example.GSTV.knowl">Example GSTV</a>.</p>
+
+<br><br><div class="sage-OGS"><script type="text/x-sage">v1 = vector(QQbar, [ 1, 1+I,   1])
+v2 = vector(QQbar, [-I,   1, 1+I])
+v3 = vector(QQbar, [ 0,   I,   I])
+A = matrix([v1, v2, v3])
+G, M = A.gram_schmidt(orthonormal=False)
+Sequence(G.list(), cr=True)
+</script></div>
+
+<p>Notice that it is an error to ask for an orthonormal set over <span class="code">QQ</span> since you cannot expect to take square roots of rationals and stick with rationals.</p>
+
+<br><br><div class="sage-OGS"><script type="text/x-sage">v1 = vector(QQ, [1, 1])
+v2 = vector(QQ, [2, 3])
+A = matrix([v1,v2])
+G, M = A.gram_schmidt(orthonormal=True)
+</script></div>
+
+<br><br><div class="sage-OGS sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

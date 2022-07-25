@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-IMR" acro="IMR" titletext="Invertible Matrix Representations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IMR</span><span class="titletext"> Invertible Matrix Representations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $B$ is a basis for $U$ and $C$ is a basis for $V$. Then $T$ is an invertible linear transformation if and only if the matrix representation of $T$ relative to $B$ and $C$, $\matrixrep{T}{B}{C}$ is an invertible matrix.  When $T$ is invertible,
+\begin{equation*}
+\matrixrep{\ltinverse{T}}{C}{B}=\inverse{\left(\matrixrep{T}{B}{C}\right)}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.IMR.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#theorem-IMR" class="context" title="Section MR">(in context)</a></div>

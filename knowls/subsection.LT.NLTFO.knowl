@@ -1,0 +1,84 @@
+<div class="subsection" id="subsection-NLTFO" acro="NLTFO" titletext="New Linear Transformations From Old">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">NLTFO</span> <span class="titletext">New Linear Transformations From Old</span>
+</h4>
+<p>We can combine linear transformations in natural ways to create new linear transformations.  So we will define these combinations and then prove that the results really are still linear transformations.  First the sum of two linear transformations.</p>
+<div class="definition" id="definition-LTA" acro="LTA" titletext="Linear Transformation Addition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTA</span> <span class="titletext"> Linear Transformation Addition</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{U}{V}$ are two linear transformations with the same domain and codomain.  Then their <em class="term">sum</em> is the function $\ltdefn{T+S}{U}{V}$ whose outputs are defined by
+\begin{equation*}
+\lt{(T+S)}{\vect{u}}=\lt{T}{\vect{u}}+\lt{S}{\vect{u}}
+\end{equation*}
+</p>
+</div>
+<p>Notice that the first plus sign in the definition is the operation being defined, while the second one is the vector addition in $V$.  (Vector addition in $U$ will appear just now in the proof that $T+S$ is a linear transformation.)  <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> only provides a function.  It would be nice to know that when the constituents ($T$, $S$) are linear transformations, then so too is $T+S$.</p>
+<div class="theorem" id="theorem-SLTLT" acro="SLTLT" titletext="Sum of Linear Transformations is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SLTLT</span><span class="titletext"> Sum of Linear Transformations is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{U}{V}$ are two linear transformations with the same domain and codomain.  Then $\ltdefn{T+S}{U}{V}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SLTLT.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-STLT" acro="STLT" titletext="Sum of two linear transformations"><h5 class="example">
+<a knowl="./knowls/example.STLT.knowl"><span class="type">Example</span> <span class="acro">STLT</span></a> <span class="titletext">Sum of two linear transformations</span>
+</h5></div>
+<div class="definition" id="definition-LTSM" acro="LTSM" titletext="Linear Transformation Scalar Multiplication">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTSM</span> <span class="titletext"> Linear Transformation Scalar Multiplication</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and $\alpha\in\complex{\null}$.  Then the <em class="term">scalar multiple</em> is the function $\ltdefn{\alpha T}{U}{V}$ whose outputs are defined by
+\begin{equation*}
+\lt{(\alpha T)}{\vect{u}}=\alpha\lt{T}{\vect{u}}
+\end{equation*}
+</p>
+</div>
+<p>Given that $T$ is a linear transformation, it would be nice to know that $\alpha T$ is also a linear transformation.</p>
+<div class="theorem" id="theorem-MLTLT" acro="MLTLT" titletext="Multiple of a Linear Transformation is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MLTLT</span><span class="titletext"> Multiple of a Linear Transformation is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and $\alpha\in\complex{\null}$.  Then $\ltdefn{(\alpha T)}{U}{V}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MLTLT.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-SMLT" acro="SMLT" titletext="Scalar multiple of a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.SMLT.knowl"><span class="type">Example</span> <span class="acro">SMLT</span></a> <span class="titletext">Scalar multiple of a linear transformation</span>
+</h5></div>
+<p>Now, let us imagine we have two vector spaces, $U$ and $V$, and we collect every possible linear transformation from $U$ to $V$ into one big set, and call it $\vslt{U}{V}$.  <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> and <a class="knowl" acro="LTSM" type="Definition" title="Linear Transformation Scalar Multiplication" knowl="./knowls/definition.LTSM.knowl">Definition LTSM</a> tell us how we can “add” and “scalar multiply” two elements of $\vslt{U}{V}$.  <a class="knowl" acro="SLTLT" type="Theorem" title="Sum of Linear Transformations is a Linear Transformation" knowl="./knowls/theorem.SLTLT.knowl">Theorem SLTLT</a> and <a class="knowl" acro="MLTLT" type="Theorem" title="Multiple of a Linear Transformation is a Linear Transformation" knowl="./knowls/theorem.MLTLT.knowl">Theorem MLTLT</a> tell us that if we do these operations, then the resulting functions are linear transformations that are also in $\vslt{U}{V}$.   Hmmmm, sounds like a vector space to me!  A set of objects, an addition and a scalar multiplication.  Why not?</p>
+<div class="theorem" id="theorem-VSLT" acro="VSLT" titletext="Vector Space of Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VSLT</span><span class="titletext"> Vector Space of Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ and $V$ are vector spaces.  Then the set of all linear transformations from $U$ to $V$, $\vslt{U}{V}$, is a vector space when the operations are those given in <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> and <a class="knowl" acro="LTSM" type="Definition" title="Linear Transformation Scalar Multiplication" knowl="./knowls/definition.LTSM.knowl">Definition LTSM</a>.</p></div>
+<div class="proof"><a knowl="./knowls/proof.VSLT.knowl">Proof</a></div>
+</div>
+<div class="definition" id="definition-LTC" acro="LTC" titletext="Linear Transformation Composition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTC</span> <span class="titletext"> Linear Transformation Composition</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Then the <em class="term">composition</em> of $S$ and $T$ is the function $\ltdefn{(\compose{S}{T})}{U}{W}$ whose outputs are defined by
+\begin{equation*}
+\lt{(\compose{S}{T})}{\vect{u}}=\lt{S}{\lt{T}{\vect{u}}}
+\end{equation*}
+</p>
+</div>
+<p>Given that $T$ and $S$ are linear transformations, it would be nice to know that $\compose{S}{T}$ is also a linear transformation.</p>
+<div class="theorem" id="theorem-CLTLT" acro="CLTLT" titletext="Composition of Linear Transformations is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CLTLT</span><span class="titletext"> Composition of Linear Transformations is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Then $\ltdefn{(\compose{S}{T})}{U}{W}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CLTLT.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-CTLT" acro="CTLT" titletext="Composition of two linear transformations"><h5 class="example">
+<a knowl="./knowls/example.CTLT.knowl"><span class="type">Example</span> <span class="acro">CTLT</span></a> <span class="titletext">Composition of two linear transformations</span>
+</h5></div>
+<p>Here is an interesting exercise that will presage an important result later.
+In <a class="knowl" acro="STLT" type="Example" title="Sum of two linear transformations" knowl="./knowls/example.STLT.knowl">Example STLT</a> compute (via <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>) the matrix of  $T$, $S$ and $T+S$.  Do you see a relationship between these three matrices?</p>
+<p>In <a class="knowl" acro="SMLT" type="Example" title="Scalar multiple of a linear transformation" knowl="./knowls/example.SMLT.knowl">Example SMLT</a> compute (via <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>) the matrix of  $T$ and  $2T$.  Do you see a relationship between these two matrices?</p>
+<p>Here is the tough one.  In <a class="knowl" acro="CTLT" type="Example" title="Composition of two linear transformations" knowl="./knowls/example.CTLT.knowl">Example CTLT</a> compute (via <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>) the matrix of  $T$, $S$ and $\compose{S}{T}$.  Do you see a relationship between these three matrices???</p>
+<div class="sage" id="sage-OLT" acro="OLT" titletext="Operations on Linear Transformations"><h5 class="sage">
+<a knowl="./knowls/sage.OLT.knowl"><span class="type">Sage</span> <span class="acro">OLT</span></a> <span class="titletext">Operations on Linear Transformations</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#subsection-NLTFO" class="context" title="Section LT">(in context)</a></div>

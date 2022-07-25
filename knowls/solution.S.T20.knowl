@@ -1,0 +1,25 @@
+<div class="solution" acro="S.T20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">S.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Apply <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a>.<br><br>
+First, the zero vector of $M_{nn}$ is the zero matrix, $\zeromatrix$, whose entries are all zero (<a class="knowl" acro="ZM" type="Definition" title="Zero Matrix" knowl="./knowls/definition.ZM.knowl">Definition ZM</a>).  This matrix then meets the condition that $\matrixentry{\zeromatrix}{ij}=0$ for $i&gt;j$ and so is an element of $UT_n$.<br><br>
+Suppose $A,B\in UT_n$.  Is $A+B\in UT_n$?  We examine the entries of $A+B$ “below” the diagonal.  That is, in the following, assume that $i&gt;j$.
+\begin{align*}
+\matrixentry{A+B}{ij}
+&amp;=\matrixentry{A}{ij}+\matrixentry{B}{ij}&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}\\
+&amp;=0 + 0&amp;&amp;\text{$A,B\in UT_n$}\\
+&amp;=0
+\end{align*}
+
+which qualifies $A+B$ for membership in $UT_n$.<br><br>
+Suppose $\alpha\in\complex{}$ and $A\in UT_n$.  Is $\alpha A\in UT_n$?  We examine the entries of $\alpha A$ “below” the diagonal.  That is, in the following, assume that $i&gt;j$.
+\begin{align*}
+\matrixentry{\alpha A}{ij}
+&amp;=\alpha\matrixentry{A}{ij}&amp;&amp;\knowl{./knowls/definition.MSM.knowl}{\text{Definition MSM}}\\
+&amp;=\alpha 0&amp;&amp;\text{$A\in UT_n$}\\
+&amp;=0
+\end{align*}
+
+which qualifies $\alpha A$ for membership in $UT_n$.<br><br>
+Having fulfilled the three conditions of <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a> we see that $UT_n$ is a subspace of $M_{nn}$.
+</div>

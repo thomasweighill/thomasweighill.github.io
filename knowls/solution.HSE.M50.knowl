@@ -1,0 +1,5 @@
+<div class="solution" acro="HSE.M50">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">HSE.M50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Since the system is homogeneous, we know it has the trivial solution (<a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>).  We cannot say anymore based on the information provided, except to say that there is either a unique solution or infinitely many solutions (<a class="knowl" acro="PSSLS" type="Theorem" title="Possible Solution Sets for Linear Systems" knowl="./knowls/theorem.PSSLS.knowl">Theorem PSSLS</a>). See <a knowl="./knowls/archetype.A.knowl">Archetype A</a> and <a knowl="./knowls/archetype.B.knowl">Archetype B</a> to understand the possibilities.
+</div>

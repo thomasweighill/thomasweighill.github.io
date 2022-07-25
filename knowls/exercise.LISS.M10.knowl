@@ -1,0 +1,22 @@
+<div class="exercise" acro="LISS.M10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LISS.M10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Halfway through <a class="knowl" acro="SSP4" type="Example" title="Spanning set in $P_4$" knowl="./knowls/example.SSP4.knowl">Example SSP4</a>, we need to show that the system of equations
+\begin{equation*}
+\linearsystem{
+\begin{bmatrix}
+0 &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; -8\\
+0 &amp; 1 &amp; -6 &amp; 24\\
+1 &amp; -4 &amp; 12 &amp; -32\\
+-2 &amp; 4 &amp; -8 &amp; 16\\
+\end{bmatrix}
+}
+{\colvector{a\\b\\c\\d\\e}}
+\end{equation*}
+is consistent for every choice of the vector of constants satisfying $16a+8b+4c+2d+e=0$.<br><br>
+Express the column space of the coefficient matrix of this system as a null space, using <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a>.  From this use <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> to establish that the system is always consistent.  Notice that this approach removes from <a class="knowl" acro="SSP4" type="Example" title="Spanning set in $P_4$" knowl="./knowls/example.SSP4.knowl">Example SSP4</a> the need to row-reduce a symbolic matrix.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LISS.M10.knowl">Solution</a></p></div>
+</div>

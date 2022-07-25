@@ -1,0 +1,63 @@
+<div class="proof" id="proof-EMMVP" acro="EMMVP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">EMMVP</span>
+</h5>
+<p>We are assuming $A\vect{x}=B\vect{x}$ for all $\vect{x}\in\complex{n}$, so we can employ this equality for <em>any</em> choice of the vector $\vect{x}$.  However, we will limit our use of this equality to the standard unit vectors, $\vect{e}_j$, $1\leq j\leq n$ (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>).  For all $1\leq j\leq n$, $1\leq i\leq m$,
+\begin{align*}
+&amp;\matrixentry{A}{ij}\\
+&amp;=
+0\matrixentry{A}{i1}+
+\cdots+
+0\matrixentry{A}{i,j-1}+
+1\matrixentry{A}{ij}+
+0\matrixentry{A}{i,j+1}+
+\cdots+
+0\matrixentry{A}{in}
+&amp;&amp;\knowl{./knowls/theorem.PCNA.knowl}{\text{Theorem PCNA}}\\
+&amp;=
+\vectorentry{\vect{e}_j}{1}\matrixentry{A}{i1}+
+\vectorentry{\vect{e}_j}{2}\matrixentry{A}{i2}+
+\vectorentry{\vect{e}_j}{3}\matrixentry{A}{i3}+
+\cdots+
+\vectorentry{\vect{e}_j}{n}\matrixentry{A}{in}
+&amp;&amp;\knowl{./knowls/property.CMCN.knowl}{\text{Property CMCN}}\\
+&amp;=
+\matrixentry{A}{i1}\vectorentry{\vect{e}_j}{1}+
+\matrixentry{A}{i2}\vectorentry{\vect{e}_j}{2}+
+\matrixentry{A}{i3}\vectorentry{\vect{e}_j}{3}+
+\cdots+
+\matrixentry{A}{in}\vectorentry{\vect{e}_j}{n}
+&amp;&amp;\knowl{./knowls/definition.SUV.knowl}{\text{Definition SUV}}\\
+&amp;=
+\vectorentry{A\vect{e}_j}{i}&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}\\
+&amp;=
+\vectorentry{B\vect{e}_j}{i}&amp;&amp;\text{Hypothesis}\\
+&amp;=
+\matrixentry{B}{i1}\vectorentry{\vect{e}_j}{1}+
+\matrixentry{B}{i2}\vectorentry{\vect{e}_j}{2}+
+\matrixentry{B}{i3}\vectorentry{\vect{e}_j}{3}+
+\cdots+
+\matrixentry{B}{in}\vectorentry{\vect{e}_j}{n}&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}\\
+&amp;=
+\vectorentry{\vect{e}_j}{1}\matrixentry{B}{i1}+
+\vectorentry{\vect{e}_j}{2}\matrixentry{B}{i2}+
+\vectorentry{\vect{e}_j}{3}\matrixentry{B}{i3}+
+\cdots+
+\vectorentry{\vect{e}_j}{n}\matrixentry{B}{in}&amp;&amp;\knowl{./knowls/property.CMCN.knowl}{\text{Property CMCN}}\\
+&amp;=
+0\matrixentry{B}{i1}+
+\cdots+
+0\matrixentry{B}{i,j-1}+
+1\matrixentry{B}{ij}+
+0\matrixentry{B}{i,j+1}+
+\cdots+
+0\matrixentry{B}{in}
+&amp;&amp;\knowl{./knowls/definition.SUV.knowl}{\text{Definition SUV}}\\
+&amp;=\matrixentry{B}{ij}
+&amp;&amp;\knowl{./knowls/theorem.PCNA.knowl}{\text{Theorem PCNA}}
+\end{align*}
+</p>
+
+<p>So by <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> the matrices $A$ and $B$ are equal, as desired.</p>
+
+</div>

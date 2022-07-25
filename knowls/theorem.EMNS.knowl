@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-EMNS" acro="EMNS" titletext="Eigenspace of a Matrix is a Null Space">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMNS</span><span class="titletext"> Eigenspace of a Matrix is a Null Space</span>
+</h5>
+<div class="statement"><p>Suppose  $A$ is a square matrix of size $n$ and $\lambda$ is an eigenvalue of $A$.  Then
+\begin{equation*}
+\eigenspace{A}{\lambda}=\nsp{A-\lambda I_n}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMNS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#theorem-EMNS" class="context" title="Section EE">(in context)</a></div>

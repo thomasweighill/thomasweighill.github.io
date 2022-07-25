@@ -1,0 +1,49 @@
+<div class="example" id="example-IAS" acro="IAS" titletext="Improving a span">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">IAS</span> <span class="titletext">Improving a span</span>
+</h5>
+<p>Suppose in the course of analyzing a matrix (its column space, its null space, its …) we encounter the following set of vectors, described by a span
+\begin{equation*}
+X=\spn{\set{
+\colvector{1\\2\\1\\6\\6},\,
+\colvector{3\\-1\\2\\-1\\6},\,
+\colvector{1\\-1\\0\\-1\\-2},\,
+\colvector{-3\\2\\-3\\6\\-10}
+}}
+\end{equation*}</p>
+<p>Let $A$ be the matrix whose rows are the vectors in $X$, so by design $X=\rsp{A}$,
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; 6 &amp; 6\\
+3 &amp; -1 &amp; 2 &amp; -1 &amp; 6\\
+1 &amp; -1 &amp; 0 &amp; -1 &amp; -2\\
+-3 &amp; 2 &amp; -3 &amp; 6 &amp; -10
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Row-reduce $A$ to form a row-equivalent matrix in reduced row-echelon form,
+\begin{equation*}
+B=
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 2 &amp; -1\\
+0 &amp; \leading{1} &amp; 0 &amp; 3 &amp; 1\\
+0 &amp; 0 &amp; \leading{1} &amp; -2 &amp; 5\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Then <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a> says we can grab the nonzero columns of $\transpose{B}$ and write
+\begin{equation*}
+X=\rsp{A}=\rsp{B}=
+\spn{\set{
+\colvector{1\\0\\0\\2\\-1},\,
+\colvector{0\\1\\0\\3\\1},\,
+\colvector{0\\0\\1\\-2\\5}
+}}
+\end{equation*}
+</p>
+<p>These three vectors provide a much-improved description of $X$.  There are fewer vectors, and the pattern of zeros and ones in the first three entries makes it easier to determine membership in $X$.  </p>
+<div class="context"><a href="section-CRS.html#example-IAS" class="context" title="Section CRS">(in
+context)</a></div>
+</div>

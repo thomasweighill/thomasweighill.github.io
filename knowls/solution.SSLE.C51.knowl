@@ -1,0 +1,32 @@
+<div class="solution" acro="SSLE.C51">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SSLE.C51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Let $abcdef$ denote any such six-digit number and convert each requirement in the problem statement into an equation.
+\begin{align*}
+a&amp;=b-1\\
+c&amp;=\frac{1}{2}b\\
+d&amp;=3c\\
+10e+f&amp;=d+e\\
+24&amp;=a+b+c+d+e+f
+\end{align*}
+
+In a more standard form this becomes
+\begin{align*}
+a-b&amp;=-1\\
+-b+2c&amp;=0\\
+-3c+d&amp;=0\\
+-d+9e+f&amp;=0\\
+a+b+c+d+e+f&amp;=24
+\end{align*}
+
+Using equation operations (or the techniques of the upcoming <a href="section-RREF.html" title="Reduced Row-Echelon Form">Section RREF</a>), this system can be converted to the equivalent system
+\begin{align*}
+a+\frac{16}{75}f &amp;= 5\\
+b+\frac{16}{75}f &amp;= 6\\
+c+ \frac{8}{75}f &amp;= 3\\
+d+ \frac{8}{25}f &amp;= 9\\
+e+\frac{11}{75}f &amp;= 1
+\end{align*}
+
+Clearly, choosing $f=0$ will yield the solution $abcde=563910$.  Furthermore, to have the variables result in single-digit numbers, none of the other choices for $f$ ($1,\,2,\,\ldots,\,9$) will yield a solution.
+</div>

@@ -1,0 +1,57 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-PSHS', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">PSHS</span> <span class="titletext">Particular Solutions, Homogeneous Solutions</span>
+</h5>
+
+
+<p>Again, Sage is useful for illustrating a theorem, in this case <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>.  We will illustrate both “directions” of this equivalence with the system from <a class="knowl" acro="ISSI" type="Example" title="Describing infinite solution sets, Archetype I" knowl="./knowls/example.ISSI.knowl">Example ISSI</a>.</p>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">coeff = matrix(QQ,[[ 1,  4,  0, -1,  0,   7, -9],
+                   [ 2,  8, -1,  3,  9, -13,  7],
+                   [ 0,  0,  2, -3, -4,  12, -8],
+                   [-1, -4,  2,  4,  8, -31, 37]])
+n = coeff.ncols()
+const = vector(QQ, [3, 9, 1, 4])
+</script></div>
+
+<p>First we will build solutions to this system.  <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a> says we need a particular solution, i.e.  one solution to the system, $\vect{w}$.  We can get this from Sage's <span class="code">.solve_right()</span> matrix method.  Then for <em>any</em> vector $\vect{z}$ from the null space of the coefficient matrix, the new vector $\vect{y}=\vect{w}+\vect{z}$ should be a solution.  We walk through this construction in the next few cells, where we have employed a specific element of the null space, <span class="code">z</span>, along with a check that it is really in the null space.</p>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">w = coeff.solve_right(const)
+nsp = coeff.right_kernel(basis='pivot')
+z = vector(QQ, [42, 0, 84, 28, -50, -47, -35])
+z in nsp
+</script></div>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">y = w + z
+y
+</script></div>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">const == sum([y[i]*coeff.column(i) for i in range(n)])
+</script></div>
+
+<p>You can create solutions repeatedly via the creation of random elements of the null space.  Be sure you have executed the cells above, so that <span class="code">coeff</span>, <span class="code">n</span>, <span class="code">const</span>, <span class="code">nsp</span> and <span class="code">w</span> are all defined.  Try executing the cell below repeatedly to test infinitely many solutions to the system.  You can use the subsequent compute cell to peek at any of the solutions you create.</p>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">z = nsp.random_element()
+y = w + z
+const == sum([y[i]*coeff.column(i) for i in range(n)])
+</script></div>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">y     # random
+</script></div>
+
+<p>For the other direction, we present (and verify) two solutions to the linear system of equations.  The condition that $\vect{y}=\vect{w}+\vect{z}$ can be rewritten as $\vect{y}-\vect{w}=\vect{z}$, where $\vect{z}$ is in the null space of the coefficient matrix.  which of our two solutions is the “particular” solution and which is “some other” solution?  It does not matter, it is all sematics at this point.  What is important is that their <em>difference</em> is an element of the null space (in either order).  So we define the solutions, along with checks that they are really solutions, then examine their difference.</p>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">soln1 = vector(QQ,[4, 0, -96, 29, 46, 76, 56])
+const == sum([soln1[i]*coeff.column(i) for i in range(n)])
+</script></div>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">soln2 = vector(QQ,[-108, -84, 86, 589, 240, 283, 105])
+const == sum([soln2[i]*coeff.column(i) for i in range(n)])
+</script></div>
+
+<br><br><div class="sage-PSHS"><script type="text/x-sage">(soln1 - soln2) in nsp
+</script></div>
+
+<br><br><div class="sage-PSHS sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

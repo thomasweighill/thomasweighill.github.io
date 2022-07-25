@@ -1,0 +1,22 @@
+<div class="subsection" id="subsection-CELT" acro="CELT" titletext="Computing Eigenvectors of Linear Transformations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CELT</span> <span class="titletext">Computing Eigenvectors of Linear Transformations</span>
+</h4>
+<p><a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a> tells us that the eigenvalues of a linear transformation are the eigenvalues of <em>any</em> representation, no matter what the choice of the basis $B$ might be.  So we could now unambiguously define items such as the characteristic polynomial of a linear transformation, which we would define as the characteristic polynomial of any matrix representation.  We will say that again — eigenvalues, eigenvectors, and characteristic polynomials are intrinsic properties of a linear transformation, independent of the choice of a basis used to construct a matrix representation.</p>
+<p>As a practical matter, how does one compute the eigenvalues and eigenvectors of a linear transformation of the form $\ltdefn{T}{V}{V}$?  Choose a nice basis $B$ for $V$, one where the vector representations of the values of the linear transformations necessary for the matrix representation are easy to compute.  Construct the matrix representation relative to this basis, and find the eigenvalues and eigenvectors of this matrix using the techniques of <a href="chapter-E.html" title="Eigenvalues">Chapter E</a>.  The resulting eigenvalues of the matrix are precisely the eigenvalues of the linear transformation.  The eigenvectors of the matrix are column vectors that need to be converted to vectors in $V$ through application of $\ltinverse{\vectrepname{B}}$ (this is part of the content of <a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a>).</p>
+<p>Now consider the case where the matrix representation of a linear transformation is diagonalizable.  The $n$ linearly independent eigenvectors that must exist for the matrix (<a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a>) can be converted (via $\ltinverse{\vectrepname{B}}$) into eigenvectors of the linear transformation.  A matrix representation of the linear transformation relative to a basis of eigenvectors will be a diagonal matrix — an especially nice representation!  Though we did not know it at the time, the diagonalizations of <a href="section-SD.html" title="Similarity and Diagonalization">Section SD</a> were really about finding especially pleasing matrix representations of linear transformations.</p>
+<p>Here are some examples.</p>
+<div class="example" id="example-ELTT" acro="ELTT" titletext="Eigenvectors of a linear transformation, twice"><h5 class="example">
+<a knowl="./knowls/example.ELTT.knowl"><span class="type">Example</span> <span class="acro">ELTT</span></a> <span class="titletext">Eigenvectors of a linear transformation, twice</span>
+</h5></div>
+<p>Another example, this time a bit larger and with complex eigenvalues.</p>
+<div class="example" id="example-CELT" acro="CELT" titletext="Complex eigenvectors of a linear transformation"><h5 class="example">
+<a knowl="./knowls/example.CELT.knowl"><span class="type">Example</span> <span class="acro">CELT</span></a> <span class="titletext">Complex eigenvectors of a linear transformation</span>
+</h5></div>
+<div class="sage" id="sage-CELT" acro="CELT" titletext="Designing Matrix Representations"><h5 class="sage">
+<a knowl="./knowls/sage.CELT.knowl"><span class="type">Sage</span> <span class="acro">CELT</span></a> <span class="titletext">Designing Matrix Representations</span>
+</h5></div>
+<div class="sage" id="sage-SUTH4" acro="SUTH4" titletext="Sage Under The Hood, Round 4"><h5 class="sage">
+<a knowl="./knowls/sage.SUTH4.knowl"><span class="type">Sage</span> <span class="acro">SUTH4</span></a> <span class="titletext">Sage Under The Hood, Round 4</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CB.html#subsection-CELT" class="context" title="Section CB">(in context)</a></div>

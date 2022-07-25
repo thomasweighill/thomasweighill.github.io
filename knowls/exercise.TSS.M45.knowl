@@ -1,0 +1,8 @@
+<div class="exercise" acro="TSS.M45">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M45</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The details for <a knowl="./knowls/archetype.J.knowl">Archetype J</a> include several sample solutions.  Verify that one of these solutions is correct (any one, but just one).  Based <em>only</em> on this evidence, and especially without doing any row operations, explain how you know this system of linear equations has infinitely many solutions.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M45.knowl">Solution</a></p></div>
+</div>

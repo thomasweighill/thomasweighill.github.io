@@ -1,0 +1,7 @@
+<div class="property" id="property-SMA" acro="SMA" titletext="Scalar Multiplication Associativity">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">SMA</span> <span class="titletext">Scalar Multiplication Associativity</span>
+</h5>
+<p>
+If $\alpha,\,\beta\in\complex{\null}$ and $\vect{u}\in V$, then $\alpha(\beta\vect{u})=(\alpha\beta)\vect{u}$.</p>
+</div>

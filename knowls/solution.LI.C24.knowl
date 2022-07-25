@@ -1,0 +1,26 @@
+<div class="solution" acro="LI.C24">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LI.C24</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<a class="knowl" acro="LIVRN" type="Theorem" title="Linearly Independent Vectors, $r$ and $n$" knowl="./knowls/theorem.LIVRN.knowl">Theorem LIVRN</a> suggests we analyze a matrix whose columns are the vectors from the set,
+\begin{equation*}
+A=\begin{bmatrix}
+1 &amp; 3 &amp; 4 &amp; -1\\
+2 &amp; 2 &amp; 4 &amp; 2\\
+-1 &amp; -1 &amp; -2 &amp; -1\\
+0 &amp; 2 &amp; 2 &amp; -2\\
+1 &amp; 2 &amp; 3 &amp; 0
+\end{bmatrix}
+\end{equation*}
+Row-reducing the matrix $A$ yields,
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1 &amp; 2\\
+0 &amp; \leading{1} &amp; 1 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+We see that $r=2\neq 4=n$, where $r$ is the number of nonzero rows and $n$ is the number of columns.  By <a class="knowl" acro="LIVRN" type="Theorem" title="Linearly Independent Vectors, $r$ and $n$" knowl="./knowls/theorem.LIVRN.knowl">Theorem LIVRN</a>, the set $S$ is  linearly dependent.
+</div>

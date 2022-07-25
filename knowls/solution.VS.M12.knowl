@@ -1,0 +1,12 @@
+<div class="solution" acro="VS.M12">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VS.M12</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Let us consider the existence of a zero vector, as required by <a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a> of a vector space.  The “regular” zero vector fails: $\colvector{x\\y}+\colvector{0\\0} = \colvector{y\\x}\ne\colvector{x\\y}$ (remember that the property must hold for <em>every</em> vector, not just for some).  Is there another vector that fills the role of the zero vector?  Suppose that $\zerovector=\colvector{z_1\\z_2}$.  Then for any vector $\colvector{x\\y}$, we have
+\begin{align*}
+\colvector{x\\y}+\colvector{z_1 \\z_2}
+&amp;= \colvector{y + z_2\\x + z_1}
+=  \colvector{x\\y}
+\end{align*}
+
+so that $x = y + z_2$ and $y = x + z_1$.  This means that $z_1 = y - x$ and $z_2 = x - y$.  However, since $x$ and $y$ can be any complex numbers, there are no fixed complex numbers $z_1$ and $z_2$ that satisfy these equations.  Thus, there is no zero vector, <a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>  is not valid, and the set  $\complex{2}$ with the proposed operations is not a vector space.
+</div>

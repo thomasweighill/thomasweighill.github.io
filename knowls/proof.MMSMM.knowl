@@ -1,0 +1,18 @@
+<div class="proof" id="proof-MMSMM" acro="MMSMM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MMSMM</span>
+</h5>
+<p>These are equalities of matrices.  We will do the first one, the second is similar and will be good practice for you.    For $1\leq i\leq m$, $1\leq j\leq p$,
+\begin{align*}
+\matrixentry{\alpha(AB)}{ij}
+&amp;=\alpha\matrixentry{AB}{ij}&amp;&amp;\knowl{./knowls/definition.MSM.knowl}{\text{Definition MSM}}\\
+&amp;=\alpha\sum_{k=1}^{n}\matrixentry{A}{ik}\matrixentry{B}{kj}&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{k=1}^{n}\alpha\matrixentry{A}{ik}\matrixentry{B}{kj}&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\sum_{k=1}^{n}\matrixentry{\alpha A}{ik}\matrixentry{B}{kj}&amp;&amp;\knowl{./knowls/definition.MSM.knowl}{\text{Definition MSM}}\\
+&amp;=\matrixentry{(\alpha A)B}{ij}&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}
+\end{align*}
+</p>
+
+<p>So the matrices $\alpha(AB)$ and $(\alpha A)B$ are equal, entry-by-entry, and by the definition of matrix equality (<a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>) we can say they are equal matrices.</p>
+
+</div>

@@ -1,0 +1,94 @@
+<div class="subsection" id="subsection-EM" acro="EM" titletext="Elementary Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">EM</span> <span class="titletext">Elementary Matrices</span>
+</h4>
+<p>Elementary matrices are very simple, as you might have suspected from their name.  Their purpose is to effect row operations (<a class="knowl" acro="RO" type="Definition" title="Row Operations" knowl="./knowls/definition.RO.knowl">Definition RO</a>) on a matrix through matrix multiplication (<a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>).  Their definitions look much more complicated than they really are, so be sure to skip over them on your first reading and head right for the explanation that follows and the first example.</p>
+<div class="definition" id="definition-ELEM" acro="ELEM" titletext="Elementary Matrices">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">ELEM</span> <span class="titletext"> Elementary Matrices</span>
+</h5>
+<p>
+<ol>
+<li>For $i\neq j$, $\elemswap{i}{j}$ is the square matrix of size $n$ with
+\begin{equation*}
+\matrixentry{\elemswap{i}{j}}{k\ell}=
+\begin{cases}
+0 &amp; k\neq i, k\neq j, \ell\neq k\\
+1 &amp; k\neq i, k\neq j, \ell=k\\
+0 &amp; k=i, \ell\neq j\\
+1 &amp; k=i, \ell=j\\
+0 &amp; k=j, \ell\neq i\\
+1 &amp; k=j, \ell=i
+\end{cases}
+\end{equation*}
+</li>
+<li>For $\alpha\neq 0$, $\elemmult{\alpha}{i}$ is the square matrix of size $n$ with
+\begin{equation*}
+\matrixentry{\elemmult{\alpha}{i}}{k\ell}=
+\begin{cases}
+0        &amp; \ell\neq k\\
+1        &amp; k\neq i, \ell=k\\
+\alpha &amp; k=i, \ell=i
+\end{cases}
+\end{equation*}
+</li>
+<li>For $i\neq j$, $\elemadd{\alpha}{i}{j}$ is the square matrix of size $n$ with
+\begin{equation*}
+\matrixentry{\elemadd{\alpha}{i}{j}}{k\ell}=
+\begin{cases}
+0 &amp; k\neq j, \ell\neq k\\
+1 &amp; k\neq j, \ell=k\\
+0 &amp; k=j, \ell\neq i, \ell\neq j\\
+1 &amp; k=j, \ell=j\\
+\alpha &amp; k=j, \ell=i\\
+\end{cases}
+\end{equation*}
+</li>
+</ol>
+</p>
+</div>
+<p>Again, these matrices are not as complicated as their definitions suggest, since they are just small perturbations of the $n\times n$ identity matrix (<a class="knowl" acro="IM" type="Definition" title="Identity Matrix" knowl="./knowls/definition.IM.knowl">Definition IM</a>).  $\elemswap{i}{j}$ is the identity matrix with rows (or columns) $i$ and $j$ trading places, $\elemmult{\alpha}{i}$ is the identity matrix where the diagonal entry in row $i$ and column $i$ has been replaced by $\alpha$, and $\elemadd{\alpha}{i}{j}$ is the identity matrix where the entry in row $j$ and column $i$ has been replaced by $\alpha$. (Yes, those subscripts look backwards in the description of $\elemadd{\alpha}{i}{j}$).  Notice that our notation makes no reference to the size of the elementary matrix, since this will always be apparent from the context, or unimportant.</p>
+<p>The <i>raison d'etre</i> for elementary matrices is to “do” row operations on matrices with matrix multiplication.  So here is an example where we will both see some elementary matrices and see how they accomplish row operations when used with matrix multiplication.</p>
+<div class="example" id="example-EMRO" acro="EMRO" titletext="Elementary matrices and row operations"><h5 class="example">
+<a knowl="./knowls/example.EMRO.knowl"><span class="type">Example</span> <span class="acro">EMRO</span></a> <span class="titletext">Elementary matrices and row operations</span>
+</h5></div>
+<p>The next three theorems establish that each elementary matrix effects a row operation via matrix multiplication.</p>
+<div class="theorem" id="theorem-EMDRO" acro="EMDRO" titletext="Elementary Matrices Do Row Operations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMDRO</span><span class="titletext"> Elementary Matrices Do Row Operations</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix, and $B$ is a matrix of the same size that is obtained from $A$ by a single row operation (<a class="knowl" acro="RO" type="Definition" title="Row Operations" knowl="./knowls/definition.RO.knowl">Definition RO</a>).  Then there is an elementary matrix of size $m$ that will convert $A$ to $B$ via matrix multiplication on the left.  More precisely,
+<ol>
+<li>If the row operation swaps rows $i$ and $j$,
+then $B=\elemswap{i}{j}A$.
+</li>
+<li>If the row operation multiplies row $i$ by $\alpha$,
+then $B=\elemmult{\alpha}{i}A$.
+</li>
+<li>If the row operation multiplies row $i$ by $\alpha$ and adds the result to row $j$,
+then $B=\elemadd{\alpha}{i}{j}A$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMDRO.knowl">Proof</a></div>
+</div>
+<p>Later in this section we will need two facts about elementary matrices.</p>
+<div class="theorem" id="theorem-EMN" acro="EMN" titletext="Elementary Matrices are Nonsingular">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMN</span><span class="titletext"> Elementary Matrices are Nonsingular</span>
+</h5>
+<div class="statement"><p>If $E$ is an elementary matrix, then $E$ is nonsingular.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMN.knowl">Proof</a></div>
+</div>
+<p>Notice that we have now made use of the nonzero restriction on $\alpha$ in the definition of $\elemmult{\alpha}{i}$.  One more key property of elementary matrices.</p>
+<div class="theorem" id="theorem-NMPEM" acro="NMPEM" titletext="Nonsingular Matrices are Products of Elementary Matrices">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NMPEM</span><span class="titletext"> Nonsingular Matrices are Products of Elementary Matrices</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a nonsingular matrix.  Then there exists elementary matrices $E_1,\,E_2,\,E_3,\,\dots,\,E_t$ so that $A=E_1 E_2 E_3\dots E_t$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.NMPEM.knowl">Proof</a></div>
+</div>
+<div class="sage" id="sage-EM" acro="EM" titletext="Elementary Matrices"><h5 class="sage">
+<a knowl="./knowls/sage.EM.knowl"><span class="type">Sage</span> <span class="acro">EM</span></a> <span class="titletext">Elementary Matrices</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-DM.html#subsection-EM" class="context" title="Section DM">(in context)</a></div>

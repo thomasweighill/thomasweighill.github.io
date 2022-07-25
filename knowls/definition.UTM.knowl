@@ -1,0 +1,6 @@
+<div class="definition" id="definition-UTM" acro="UTM" titletext="Upper Triangular Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">UTM</span> <span class="titletext"> Upper Triangular Matrix</span>
+</h5>
+<p>The $n\times n$ square matrix $A$ is <em class="term">upper triangular</em> if $\matrixentry{A}{ij} =0$ whenever $i&gt;j$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#definition-UTM" class="context" title="Section OD">(in context)</a></div>

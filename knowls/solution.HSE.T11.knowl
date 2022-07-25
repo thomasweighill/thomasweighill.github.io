@@ -1,0 +1,7 @@
+<div class="solution" acro="HSE.T11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">HSE.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>If the first system is homogeneous, then the zero vector is in the solution set of the system.  (See the proof of <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>.)<br><br>
+Since the two systems are equivalent, they have equal solutions sets (<a class="knowl" acro="ESYS" type="Definition" title="Equivalent Systems" knowl="./knowls/definition.ESYS.knowl">Definition ESYS</a>).  So the zero vector is in the solution set of the second system.  By <a knowl="./knowls/exercise.HSE.T10.knowl">Exercise HSE.T10</a> the presence of the zero vector in the solution set implies that the system is homogeneous.<br><br>
+So if any one of two equivalent systems is homogeneous, then they both are homogeneous.
+</div>

@@ -1,0 +1,7 @@
+<div class="exercise" acro="SLT.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="SAR" type="Example" title="Surjective, Archetype R" knowl="./knowls/example.SAR.knowl">Example SAR</a> concludes with an expression for a vector $\vect{u}\in\complex{5}$ that we believe will create the vector $\vect{v}\in\complex{5}$ when used to evaluate $T$.  That is, $\lt{T}{\vect{u}}=\vect{v}$.  Verify this assertion by actually evaluating $T$ with $\vect{u}$.  If you do not have the patience to push around all these symbols, try choosing a numerical instance of $\vect{v}$, compute $\vect{u}$, and then compute $\lt{T}{\vect{u}}$, which should result in $\vect{v}$.
+</p></div>
+</div>

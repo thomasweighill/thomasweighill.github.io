@@ -1,0 +1,12 @@
+<div class="example" id="example-VSM" acro="VSM" titletext="The vector space of matrices, $M_{mn}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">VSM</span> <span class="titletext">The vector space of matrices, $M_{mn}$</span>
+</h5>
+<p>Set: $M_{mn}$, the set of all matrices of size $m\times n$ and entries from $\complex{\null}$, <a class="knowl" acro="VSM" type="Definition" title="Vector Space of $m\times n$ Matrices" knowl="./knowls/definition.VSM.knowl">Definition VSM</a>.</p>
+<p>Equality: Entry-wise, <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>.</p>
+<p>Vector Addition:  The “usual” addition, given in <a class="knowl" acro="MA" type="Definition" title="Matrix Addition" knowl="./knowls/definition.MA.knowl">Definition MA</a>.</p>
+<p>Scalar Multiplication: The “usual” scalar multiplication, given in <a class="knowl" acro="MSM" type="Definition" title="Matrix Scalar Multiplication" knowl="./knowls/definition.MSM.knowl">Definition MSM</a>.</p>
+<p>Does this set with these operations fulfill the ten properties?  Yes.  And all we need to do is quote <a class="knowl" acro="VSPM" type="Theorem" title="Vector Space Properties of Matrices" knowl="./knowls/theorem.VSPM.knowl">Theorem VSPM</a>.  Another easy one (by design).</p>
+<div class="context"><a href="section-VS.html#example-VSM" class="context" title="Section VS">(in
+context)</a></div>
+</div>

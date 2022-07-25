@@ -1,0 +1,23 @@
+<div class="solution" acro="EE.T20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>This problem asks you to prove that two sets are equal, so use <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>.<br><br>
+First show that $\set{\zerovector}\subseteq\eigenspace{A}{\lambda}\cap\eigenspace{A}{\rho}$.  Choose $\vect{x}\in\set{\zerovector}$.  Then $\vect{x}=\zerovector$.   Eigenspaces are subspaces (<a class="knowl" acro="EMS" type="Theorem" title="Eigenspace for a Matrix is a Subspace" knowl="./knowls/theorem.EMS.knowl">Theorem EMS</a>), so both $\eigenspace{A}{\lambda}$ and $\eigenspace{A}{\rho}$ contain the zero vector, and therefore $\vect{x}\in\eigenspace{A}{\lambda}\cap\eigenspace{A}{\rho}$ (<a class="knowl" acro="SI" type="Definition" title="Set Intersection" knowl="./knowls/definition.SI.knowl">Definition SI</a>).<br><br>
+To show that $\eigenspace{A}{\lambda}\cap\eigenspace{A}{\rho}\subseteq\set{\zerovector}$, suppose that $\vect{x}\in\eigenspace{A}{\lambda}\cap\eigenspace{A}{\rho}$.  Then $\vect{x}$ is an eigenvector of $A$ for both $\lambda$ and $\rho$ (<a class="knowl" acro="SI" type="Definition" title="Set Intersection" knowl="./knowls/definition.SI.knowl">Definition SI</a>) and so
+\begin{align*}
+\vect{x}
+&amp;=1\vect{x}
+&amp;&amp;\knowl{./knowls/property.O.knowl}{\text{Property O}}\\
+&amp;=\frac{1}{\lambda-\rho}\left(\lambda-\rho\right)\vect{x}
+&amp;&amp;\lambda\neq\rho,\ \lambda-\rho\neq 0\\
+&amp;=\frac{1}{\lambda-\rho}\left(\lambda\vect{x}-\rho\vect{x}\right)
+&amp;&amp;\knowl{./knowls/property.DSAC.knowl}{\text{Property DSAC}}\\
+&amp;=\frac{1}{\lambda-\rho}\left(A\vect{x}-A\vect{x}\right)
+&amp;&amp;\text{$\vect{x}$ eigenvector of $A$ for $\lambda$, $\rho$}\\
+&amp;=\frac{1}{\lambda-\rho}\left(\zerovector\right)\\
+&amp;=\zerovector
+&amp;&amp;\knowl{./knowls/theorem.ZVSM.knowl}{\text{Theorem ZVSM}}\\
+\end{align*}
+
+So $\vect{x}=\zerovector$, and trivially, $\vect{x}\in\set{\zerovector}$.
+</div>

@@ -1,0 +1,46 @@
+<div class="subsection" id="subsection-LINM" acro="LINM" titletext="Linear Independence and Nonsingular Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LINM</span> <span class="titletext">Linear Independence and Nonsingular Matrices</span>
+</h4>
+<p>We will now specialize to sets of $n$ vectors from $\complex{n}$.  This will put <a class="knowl" acro="MVSLD" type="Theorem" title="More Vectors than Size implies Linear Dependence" knowl="./knowls/theorem.MVSLD.knowl">Theorem MVSLD</a> off-limits, while <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a> will involve square matrices.  Let us begin by contrasting <a knowl="./knowls/archetype.A.knowl">Archetype A</a> and <a knowl="./knowls/archetype.B.knowl">Archetype B</a>.
+</p>
+<div class="example" id="example-LDCAA" acro="LDCAA" titletext="Linearly dependent columns in Archetype A"><h5 class="example">
+<a knowl="./knowls/example.LDCAA.knowl"><span class="type">Example</span> <span class="acro">LDCAA</span></a> <span class="titletext">Linearly dependent columns in Archetype A</span>
+</h5></div>
+<div class="example" id="example-LICAB" acro="LICAB" titletext="Linearly independent columns in Archetype B"><h5 class="example">
+<a knowl="./knowls/example.LICAB.knowl"><span class="type">Example</span> <span class="acro">LICAB</span></a> <span class="titletext">Linearly independent columns in Archetype B</span>
+</h5></div>
+<p>That <a knowl="./knowls/archetype.A.knowl">Archetype A</a> and <a knowl="./knowls/archetype.B.knowl">Archetype B</a> have opposite properties for the columns of their coefficient matrices is no accident.  Here is the theorem, and then we will update our equivalences for nonsingular matrices, <a class="knowl" acro="NME1" type="Theorem" title="Nonsingular Matrix Equivalences, Round 1" knowl="./knowls/theorem.NME1.knowl">Theorem NME1</a>.</p>
+<div class="theorem" id="theorem-NMLIC" acro="NMLIC" titletext="Nonsingular Matrices have Linearly Independent Columns">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NMLIC</span><span class="titletext"> Nonsingular Matrices have Linearly Independent Columns</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Then $A$ is nonsingular if and only if the columns of $A$ form a linearly independent set.</p></div>
+<div class="proof"><a knowl="./knowls/proof.NMLIC.knowl">Proof</a></div>
+</div>
+<p>Here is the update to <a class="knowl" acro="NME1" type="Theorem" title="Nonsingular Matrix Equivalences, Round 1" knowl="./knowls/theorem.NME1.knowl">Theorem NME1</a>.
+</p>
+<div class="theorem" id="theorem-NME2" acro="NME2" titletext="Nonsingular Matrix Equivalences, Round 2">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NME2</span><span class="titletext"> Nonsingular Matrix Equivalences, Round 2</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  The following are equivalent.
+<ol>
+<li> $A$ is nonsingular.
+</li>
+<li> $A$ row-reduces to the identity matrix.
+</li>
+<li> The null space of $A$ contains only the zero vector, $\nsp{A}=\set{\zerovector}$.
+</li>
+<li> The linear system $\linearsystem{A}{\vect{b}}$ has a unique solution for every possible choice of $\vect{b}$.
+</li>
+<li> The columns of $A$ form a linearly independent set.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.NME2.knowl">Proof</a></div>
+</div>
+<div class="sage" id="sage-NME2" acro="NME2" titletext="Nonsingular Matrix Equivalences, Round 2"><h5 class="sage">
+<a knowl="./knowls/sage.NME2.knowl"><span class="type">Sage</span> <span class="acro">NME2</span></a> <span class="titletext">Nonsingular Matrix Equivalences, Round 2</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LI.html#subsection-LINM" class="context" title="Section LI">(in context)</a></div>

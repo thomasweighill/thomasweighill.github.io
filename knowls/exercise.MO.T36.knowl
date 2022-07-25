@@ -1,0 +1,7 @@
+<div class="exercise" acro="MO.T36">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.T36</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Suppose $A$ is a square matrix.  Prove that there is a symmetric matrix $B$ and a skew-symmetric matrix $C$ such that $A=B+C$.  In other words, any square matrix can be decomposed into a symmetric matrix and a skew-symmetric matrix (<a class="knowl" acro="DC" type="Proof Technique" title="Decompositions" knowl="./knowls/technique.DC.knowl">Proof Technique DC</a>).  (Hint: consider building a proof on <a knowl="./knowls/exercise.MO.T34.knowl">Exercise MO.T34</a> and <a knowl="./knowls/exercise.MO.T35.knowl">Exercise MO.T35</a>.)
+</p></div>
+</div>

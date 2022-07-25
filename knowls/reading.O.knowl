@@ -1,0 +1,14 @@
+
+<ol>
+<li>Is the set
+\begin{equation*}
+\set{\colvector{1\\-1\\2},\,\colvector{5\\3\\-1},\,\colvector{8\\4\\-2}}
+\end{equation*}
+an orthogonal set?  Why?
+</li>
+<li>What is the distinction between an orthogonal set and an orthonormal set?
+</li>
+<li> What is nice about the output of the Gram-Schmidt process?
+</li>
+</ol>
+

@@ -1,0 +1,154 @@
+<div class="example" id="example-DRO" acro="DRO" titletext="Determinant by row operations">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">DRO</span> <span class="titletext">Determinant by row operations</span>
+</h5>
+<p>Suppose we desire the determinant of the $4\times 4$ matrix
+\begin{equation*}
+A=
+\begin{bmatrix}
+2 &amp; 0 &amp; 2 &amp; 3 \\
+1 &amp; 3 &amp;-1 &amp; 1 \\
+-1&amp; 1 &amp;-1 &amp; 2 \\
+3 &amp; 5 &amp; 4 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We will perform a sequence of row operations on this matrix, shooting for an upper triangular matrix, whose determinant will be simply the product of its diagonal entries.  For each row operation, we will track the effect on the determinant via <a class="knowl" acro="DRCS" type="Theorem" title="Determinant for Row or Column Swap" knowl="./knowls/theorem.DRCS.knowl">Theorem DRCS</a>, <a class="knowl" acro="DRCM" type="Theorem" title="Determinant for Row or Column Multiples" knowl="./knowls/theorem.DRCM.knowl">Theorem DRCM</a>, <a class="knowl" acro="DRCMA" type="Theorem" title="Determinant for Row or Column Multiples and Addition" knowl="./knowls/theorem.DRCMA.knowl">Theorem DRCMA</a>.
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+2 &amp; 0 &amp; 2 &amp; 3 \\
+1 &amp; 3 &amp;-1 &amp; 1 \\
+-1&amp; 1 &amp;-1 &amp; 2 \\
+3 &amp; 5 &amp; 4 &amp; 0
+\end{bmatrix}    
+&amp;&amp;\detname{A}&amp;&amp;\\
+\xrightarrow{\rowopswap{1}{2}}
+A_1&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+2 &amp; 0 &amp; 2 &amp; 3 \\
+-1&amp; 1 &amp;-1 &amp; 2 \\
+3 &amp; 5 &amp; 4 &amp; 0
+\end{bmatrix}
+&amp;
+&amp;=-\detname{A_1}&amp;&amp;\knowl{./knowls/theorem.DRCS.knowl}{\text{Theorem DRCS}}\\
+\xrightarrow{\rowopadd{-2}{1}{2}}
+A_2&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp;-6 &amp; 4 &amp; 1 \\
+-1&amp; 1 &amp;-1 &amp; 2 \\
+3 &amp; 5 &amp; 4 &amp; 0
+\end{bmatrix}
+&amp;
+&amp;=-\detname{A_2}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopadd{1}{1}{3}}
+A_3&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp;-6 &amp; 4 &amp; 1 \\
+0 &amp; 4 &amp;-2 &amp; 3 \\
+3 &amp; 5 &amp; 4 &amp; 0
+\end{bmatrix}
+&amp;
+&amp;=-\detname{A_3}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopadd{-3}{1}{4}}
+A_4&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp;-6 &amp; 4 &amp; 1 \\
+0 &amp; 4 &amp;-2 &amp; 3 \\
+0 &amp;-4 &amp; 7 &amp;-3
+\end{bmatrix}
+&amp;
+&amp;=-\detname{A_4}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopadd{1}{3}{2}}
+A_5&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp;-2 &amp; 2 &amp; 4 \\
+0 &amp; 4 &amp;-2 &amp; 3 \\
+0 &amp;-4 &amp; 7 &amp;-3
+\end{bmatrix}
+&amp;
+&amp;=-\detname{A_5}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopmult{-\frac{1}{2}}{2}}
+A_6&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 4 &amp;-2 &amp; 3 \\
+0 &amp;-4 &amp; 7 &amp;-3
+\end{bmatrix}
+&amp;
+&amp;=2\detname{A_6}&amp;&amp;\knowl{./knowls/theorem.DRCM.knowl}{\text{Theorem DRCM}}\\
+\xrightarrow{\rowopadd{-4}{2}{3}}
+A_7&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 0 &amp; 2 &amp;11 \\
+0 &amp;-4 &amp; 7 &amp;-3
+\end{bmatrix}
+&amp;
+&amp;=2\detname{A_7}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopadd{4}{2}{4}}
+A_8&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 0 &amp; 2 &amp;11 \\
+0 &amp; 0 &amp; 3 &amp;-11
+\end{bmatrix}
+&amp;
+&amp;=2\detname{A_8}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopadd{-1}{3}{4}}
+A_9&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 0 &amp; 2 &amp;11 \\
+0 &amp; 0 &amp; 1 &amp;-22
+\end{bmatrix}
+&amp;
+&amp;=2\detname{A_9}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopadd{-2}{4}{3}}
+A_{10}&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 0 &amp; 0 &amp;55 \\
+0 &amp; 0 &amp; 1 &amp;-22
+\end{bmatrix}
+&amp;
+&amp;=2\detname{A_{10}}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+\xrightarrow{\rowopswap{3}{4}}
+A_{11}&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 0 &amp; 1 &amp;-22\\
+0 &amp; 0 &amp; 0 &amp;55
+\end{bmatrix}
+&amp;
+&amp;=-2\detname{A_{11}}&amp;&amp;\knowl{./knowls/theorem.DRCS.knowl}{\text{Theorem DRCS}}\\
+\xrightarrow{\rowopmult{\frac{1}{55}}{4}}
+A_{12}&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp;-1 &amp; 1 \\
+0 &amp; 1 &amp;-1 &amp;-2 \\
+0 &amp; 0 &amp; 1 &amp;-22\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+&amp;
+&amp;=-110\detname{A_{12}}&amp;&amp;\knowl{./knowls/theorem.DRCM.knowl}{\text{Theorem DRCM}}\\
+\end{align*}
+
+</p>
+<p>The matrix $A_{12}$ is upper triangular, so expansion about the first column (repeatedly) will result in $\detname{A_{12}}=(1)(1)(1)(1)=1$ (see <a class="knowl" acro="DUTM" type="Example" title="Determinant of an upper triangular matrix" knowl="./knowls/example.DUTM.knowl">Example DUTM</a>) and thus, $\detname{A}=-110(1)=-110$.</p>
+<p>Notice that our sequence of row operations was somewhat <i>ad hoc</i>, such as the transformation to $A_5$.  We could have been even more methodical, and strictly followed the process that converts a matrix to reduced row-echelon form (<a class="knowl" acro="REMEF" type="Theorem" title="Row-Equivalent Matrix in Echelon Form" knowl="./knowls/theorem.REMEF.knowl">Theorem REMEF</a>), eventually achieving the same numerical result with a final matrix that equaled the $4\times 4$ identity matrix.  Notice too that we could have stopped with $A_8$, since at this point we could compute $\detname{A_8}$ by two expansions about first columns, followed by a simple determinant of a $2\times 2$ matrix (<a class="knowl" acro="DMST" type="Theorem" title="Determinant of Matrices of Size Two" knowl="./knowls/theorem.DMST.knowl">Theorem DMST</a>).</p>
+<p>The beauty of this approach is that computationally we should already have written a procedure to convert matrices to reduced-row echelon form, so all we need to do is track the multiplicative changes to the determinant as the algorithm proceeds.   Further, for a square matrix of size $n$ this approach requires on the order of $n^3$ multiplications, while a recursive application of expansion about a row or column (<a class="knowl" acro="DER" type="Theorem" title="Determinant Expansion about Rows" knowl="./knowls/theorem.DER.knowl">Theorem DER</a>, <a class="knowl" acro="DEC" type="Theorem" title="Determinant Expansion about Columns" knowl="./knowls/theorem.DEC.knowl">Theorem DEC</a>) will require in the vicinity of $(n-1)(n!)$ multiplications.  So even for very small matrices, a computational approach utilizing row operations will have superior run-time.  Tracking, and controlling, the effects of round-off errors is another story, best saved for a numerical linear algebra course.</p>
+<div class="context"><a href="section-PDM.html#example-DRO" class="context" title="Section PDM">(in
+context)</a></div>
+</div>

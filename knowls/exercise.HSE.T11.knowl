@@ -1,0 +1,8 @@
+<div class="exercise" acro="HSE.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that two systems of linear equations are equivalent.  Prove that if the first system is homogeneous, then the second system is homogeneous.  Notice that this will allow us to conclude that two equivalent systems are either both homogeneous or both not homogeneous.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.T11.knowl">Solution</a></p></div>
+</div>

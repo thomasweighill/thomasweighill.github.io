@@ -1,0 +1,12 @@
+<div class="exercise" acro="MR.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that the linear transformation $S$ is invertible.  Then find a formula for the inverse linear transformation, $\ltinverse{S}$, by employing a matrix inverse.
+\begin{equation*}
+\ltdefn{S}{P_1}{M_{12}},\quad \lt{S}{a+bx}=
+\begin{bmatrix} 3a+b &amp; 2a+b \end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C41.knowl">Solution</a></p></div>
+</div>

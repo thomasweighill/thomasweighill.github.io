@@ -1,0 +1,15 @@
+<div class="example" id="example-NSDAT" acro="NSDAT" titletext="Not surjective by dimension, Archetype T">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSDAT</span> <span class="titletext">Not surjective by dimension, Archetype T</span>
+</h5>
+<p>The linear transformation in <a knowl="./knowls/archetype.T.knowl">Archetype T</a> is
+\begin{equation*}
+\ltdefn{T}{P_4}{P_5},\quad
+\lt{T}{p(x)}=(x-2)p(x)
+\end{equation*}</p>
+<p>Since
+$\dimension{P_4}=5&lt;6=\dimension{P_5}$,
+$T$ cannot be surjective for then it would violate <a class="knowl" acro="SLTD" type="Theorem" title="Surjective Linear Transformations and Dimension" knowl="./knowls/theorem.SLTD.knowl">Theorem SLTD</a>.</p>
+<div class="context"><a href="section-SLT.html#example-NSDAT" class="context" title="Section SLT">(in
+context)</a></div>
+</div>

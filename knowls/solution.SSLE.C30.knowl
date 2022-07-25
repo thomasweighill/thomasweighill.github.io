@@ -1,0 +1,14 @@
+<div class="solution" acro="SSLE.C30">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SSLE.C30</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Solving each equation for $y$, we have the equivalent system
+\begin{align*}
+y &amp;= 5 - x\\
+y &amp;= 2x - 3.
+\end{align*}
+
+Setting these expressions for $y$ equal, we  have the equation
+$5 - x = 2x - 3$, which quickly leads to
+ $x = \frac{8}{3}$.  Substituting for $x$ in the first equation, we have $y = 5 - x = 5 - \frac{8}{3} = \frac{7}{3}$.
+Thus, the solution is $x = \frac{8}{3}$, $y = \frac{7}{3}$.
+</div>

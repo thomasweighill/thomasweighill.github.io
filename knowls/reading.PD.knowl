@@ -1,0 +1,19 @@
+
+<ol>
+<li>Why does <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> have the title it does?
+</li>
+<li>Why is <a class="knowl" acro="RMRT" type="Theorem" title="Rank of a Matrix is the Rank of the Transpose" knowl="./knowls/theorem.RMRT.knowl">Theorem RMRT</a> so surprising ?
+</li>
+<li>Row-reduce the matrix $A$ to reduced row-echelon form.  Without any further computations, compute the dimensions of the four subspaces, (a) $\nsp{A}$, (b) $\csp{A}$, (c) $\rsp{A}$  and  (d) $\lns{A}$.
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 1 &amp; -1 &amp; 2 &amp; 8 &amp; 5 \\
+ 1 &amp; 1 &amp; 1 &amp; 4 &amp; -1 \\
+ 0 &amp; 2 &amp; -3 &amp; -8 &amp; -6 \\
+ 2 &amp; 0 &amp; 1 &amp; 8 &amp; 4
+\end{bmatrix}
+\end{equation*}
+</li>
+</ol>
+

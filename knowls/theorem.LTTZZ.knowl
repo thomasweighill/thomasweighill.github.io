@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-LTTZZ" acro="LTTZZ" titletext="Linear Transformations Take Zero to Zero">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">LTTZZ</span><span class="titletext"> Linear Transformations Take Zero to Zero</span>
+</h5>
+<div class="statement"><p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  Then $\lt{T}{\zerovector}=\zerovector$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.LTTZZ.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#theorem-LTTZZ" class="context" title="Section LT">(in context)</a></div>

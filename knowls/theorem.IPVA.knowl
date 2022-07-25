@@ -1,0 +1,12 @@
+<div class="theorem" id="theorem-IPVA" acro="IPVA" titletext="Inner Product and Vector Addition">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IPVA</span><span class="titletext"> Inner Product and Vector Addition</span>
+</h5>
+<div class="statement"><p>Suppose $\vect{u},\,\vect{v},\,\vect{w}\in\complex{m}$.  Then
+<ol>
+<li>$\innerproduct{\vect{u}+\vect{v}}{\vect{w}}=\innerproduct{\vect{u}}{\vect{w}}+\innerproduct{\vect{v}}{\vect{w}}$</li>
+<li>$\innerproduct{\vect{u}}{\vect{v}+\vect{w}}=\innerproduct{\vect{u}}{\vect{v}}+\innerproduct{\vect{u}}{\vect{w}}$</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.IPVA.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#theorem-IPVA" class="context" title="Section O">(in context)</a></div>

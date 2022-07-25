@@ -1,0 +1,22 @@
+<div class="proof" id="proof-AIP" acro="AIP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">AIP</span>
+</h5>
+<p>
+\begin{align*}
+\innerproduct{A\vect{x}}{\vect{y}}
+&amp;=\transpose{\left(\conjugate{A\vect{x}}\right)}\vect{y}
+&amp;&amp;\knowl{./knowls/theorem.MMIP.knowl}{\text{Theorem MMIP}}\\
+&amp;=\transpose{\left(\conjugate{A}\,\conjugate{\vect{x}}\right)}\vect{y}
+&amp;&amp;\knowl{./knowls/theorem.MMCC.knowl}{\text{Theorem MMCC}}\\
+&amp;=\transpose{\conjugate{\vect{x}}}\transpose{\conjugate{A}}\vect{y}
+&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\transpose{\conjugate{\vect{x}}}\left(\adjoint{A}\vect{y}\right)
+&amp;&amp;\knowl{./knowls/definition.A.knowl}{\text{Definition A}}\\
+&amp;=\innerproduct{\vect{x}}{\adjoint{A}\vect{y}}
+&amp;&amp;\knowl{./knowls/theorem.MMIP.knowl}{\text{Theorem MMIP}}
+\end{align*}
+
+</p>
+
+</div>

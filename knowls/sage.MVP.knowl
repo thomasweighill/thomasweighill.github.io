@@ -1,0 +1,71 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-MVP', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">MVP</span> <span class="titletext">Matrix-Vector Product</span>
+</h5>
+
+
+<p>A matrix-vector product is very natural in Sage, and we can check the result against a linear combination of the columns.</p>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">A = matrix(QQ, [[1, -3,  4,  5],
+                [2,  3, -2,  0],
+                [5,  6,  8, -2]])
+v = vector(QQ, [2, -2, 1, 3])
+A*v
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">sum([v[i]*A.column(i) for i in range(len(v))])
+</script></div>
+
+<p>Notice that when a matrix is square, a vector of the correct size can be used in Sage in a product with a matrix by placing the vector on either side of the matrix.  However, the two results are <em>not</em> the same, and we will not have ocassion to place the vector on the left any time soon.  So, despite the possibility, be certain to keep your vectors on the right side of a matrix in a product.</p>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">B = matrix(QQ, [[ 1, -3,  4,  5],
+                [ 2,  3, -2,  0],
+                [ 5,  6,  8, -2],
+                [-4,  1,  1,  2]])
+w = vector(QQ, [1, 2, -3, 2])
+B*w
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">w*B
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">B*w == w*B
+</script></div>
+
+<p>Since a matrix-vector product forms a linear combination of columns of a matrix, it is now very easy to check if a vector is a solution to a system of equations.  This is basically the substance of <a class="knowl" acro="SLEMM" type="Theorem" title="Systems of Linear Equations as Matrix Multiplication" knowl="./knowls/theorem.SLEMM.knowl">Theorem SLEMM</a>.  Here we construct a system of equations and construct two solutions and one non-solution by applying <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>.  Then we use a matrix-vector product to verify that the vectors are, or are not, solutions.</p>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">coeff = matrix(QQ, [[-1,  3, -1, -1,  0,  2],
+                    [ 2, -6,  1, -2, -5, -8],
+                    [ 1, -3,  2,  5,  4,  1],
+                    [ 2, -6,  2,  2,  1, -3]])
+const = vector(QQ, [13, -25, -17, -23])
+solution1 = coeff.solve_right(const)
+coeff*solution1
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">nsp = coeff.right_kernel(basis='pivot')
+nsp
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">nspb = nsp.basis()
+solution2 = solution1 + 5*nspb[0]+(-4)*nspb[1]+2*nspb[2]
+coeff*solution2
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">nonnullspace = vector(QQ, [5, 0, 0, 0, 0, 0])
+nonnullspace in nsp
+</script></div>
+
+<br><br><div class="sage-MVP"><script type="text/x-sage">nonsolution = solution1 + nonnullspace
+coeff*nonsolution
+</script></div>
+
+<p>We can now explain the difference between “left” and “right” variants of various Sage commands for linear algebra.  Generally, the direction refers to <em>where the vector is placed</em> in a matrix-vector product.  We place a vector on the right and understand this to mean a linear combination of the columns of the matrix.  Placing a vector to the left of a matrix can be understood, in a manner totally consistent with our upcoming definition of matrix multiplication, as a linear combination of the <em>rows</em> of the matrix.</p>
+
+<p>So the difference between <span class="code">A.solve_right(v)</span> and <span class="code">A.solve_left(v)</span> is that the former asks for a vector <span class="code">x</span> such that <span class="code">A*x == v</span>, while the latter asks for a vector <span class="code">x</span> such that <span class="code">x*A == v</span>.  Given Sage's preference for rows, a direction-neutral version of a command, if it exists, will be the “left” version.  For example, there is a <span class="code">.right_kernel()</span> matrix method, while the <span class="code">.left_kernel()</span> and <span class="code">.kernel()</span> methods are identical — the names are synonyms for the exact same routine.</p>
+
+<p>So when you see a Sage command that comes in “left” and “right” variants figure out just what part of the defined object involves a matrix-vector product and form an interpretation from that.</p>
+
+<br><br><div class="sage-MVP sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

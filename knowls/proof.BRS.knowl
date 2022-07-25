@@ -1,0 +1,49 @@
+<div class="proof" id="proof-BRS" acro="BRS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">BRS</span>
+</h5>
+<p>From <a class="knowl" acro="REMRS" type="Theorem" title="Row-Equivalent Matrices have equal Row Spaces" knowl="./knowls/theorem.REMRS.knowl">Theorem REMRS</a> we know that $\rsp{A}=\rsp{B}$.  If $B$ has any zero rows, these are columns of $\transpose{B}$ that are the zero vector.  We can safely toss out the zero vector in the span construction, since it can be recreated from the nonzero vectors by a linear combination where all the scalars are zero.  So $\rsp{A}=\spn{S}$.</p>
+
+<p>Suppose $B$ has $r$ nonzero rows and let $D=\set{d_1,\,d_2,\,d_3,\,\ldots,\,d_r}$ denote the  indices of the pivot columns of $B$.  Denote the $r$ column vectors of $\transpose{B}$, the vectors in $S$, as $\vectorlist{B}{r}$.  To show that $S$ is linearly independent, start with a relation of linear dependence
+\begin{equation*}
+\lincombo{\alpha}{B}{r}=\zerovector
+\end{equation*}
+</p>
+
+<p>Now consider this vector equality in location $d_i$.  Since $B$ is in reduced row-echelon form, the entries of column $d_i$ of $B$ are all zero, except for a leading 1 in row $i$.  Thus, in $\transpose{B}$, row $d_i$ is all zeros, excepting a 1 in column $i$.   So, for $1\leq i\leq r$,
+\begin{align*}
+0
+&amp;=\vectorentry{\zerovector}{d_i}&amp;&amp;\knowl{./knowls/definition.ZCV.knowl}{\text{Definition ZCV}}\\
+&amp;=\vectorentry{\lincombo{\alpha}{B}{r}}{d_i}
+&amp;&amp;\knowl{./knowls/definition.RLDCV.knowl}{\text{Definition RLDCV}}\\
+&amp;=
+\vectorentry{\alpha_1\vect{B}_1}{d_i}+
+\vectorentry{\alpha_2\vect{B}_2}{d_i}+
+\vectorentry{\alpha_3\vect{B}_3}{d_i}+
+\cdots+
+\vectorentry{\alpha_r\vect{B}_r}{d_i}
+&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}\\
+&amp;=
+\alpha_1\vectorentry{\vect{B}_1}{d_i}+
+\alpha_2\vectorentry{\vect{B}_2}{d_i}+
+\alpha_3\vectorentry{\vect{B}_3}{d_i}+
+\cdots+
+\alpha_r\vectorentry{\vect{B}_r}{d_i}
+&amp;&amp;\knowl{./knowls/definition.MSM.knowl}{\text{Definition MSM}}\\
+&amp;=
+\alpha_1(0)+
+\alpha_2(0)+
+\alpha_3(0)+
+\cdots+
+\alpha_i(1)+
+\cdots+
+\alpha_r(0)
+&amp;&amp;\knowl{./knowls/definition.RREF.knowl}{\text{Definition RREF}}\\
+&amp;=\alpha_i
+\end{align*}
+
+</p>
+
+<p>So we conclude that $\alpha_i=0$ for all $1\leq i\leq r$, establishing the linear independence of $S$  (<a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>).</p>
+
+</div>

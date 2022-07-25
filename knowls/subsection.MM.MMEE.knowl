@@ -1,0 +1,32 @@
+<div class="subsection" id="subsection-MMEE" acro="MMEE" titletext="Matrix Multiplication, Entry-by-Entry">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">MMEE</span> <span class="titletext">Matrix Multiplication, Entry-by-Entry</span>
+</h4>
+<p>While certain “natural” properties of multiplication do not hold, many more do.  In the next subsection, we will state and prove the relevant theorems.  But first, we need a theorem that provides an alternate means of multiplying two matrices.  In many texts, this would be given as the <em>definition</em> of matrix multiplication.  We prefer to turn it around and have the following formula as a consequence of our definition.  It will prove useful for proofs of matrix equality, where we need to examine products of matrices, entry-by-entry.</p>
+<div class="theorem" id="theorem-EMP" acro="EMP" titletext="Entries of Matrix Products">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMP</span><span class="titletext"> Entries of Matrix Products</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix.  Then for $1\leq i\leq m$, $1\leq j\leq p$, the individual entries of $AB$ are given by
+\begin{align*}
+\matrixentry{AB}{ij}
+&amp;=
+\matrixentry{A}{i1}\matrixentry{B}{1j}+
+\matrixentry{A}{i2}\matrixentry{B}{2j}+
+\matrixentry{A}{i3}\matrixentry{B}{3j}+
+\cdots+
+\matrixentry{A}{in}\matrixentry{B}{nj}\\
+&amp;=
+\sum_{k=1}^{n}\matrixentry{A}{ik}\matrixentry{B}{kj}
+\end{align*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMP.knowl">Proof</a></div>
+</div>
+<div class="example" id="example-PTMEE" acro="PTMEE" titletext="Product of two matrices, entry-by-entry"><h5 class="example">
+<a knowl="./knowls/example.PTMEE.knowl"><span class="type">Example</span> <span class="acro">PTMEE</span></a> <span class="titletext">Product of two matrices, entry-by-entry</span>
+</h5></div>
+<p><a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a> is the way many people compute matrix products by hand.  It will also be very useful for the theorems we are going to prove shortly.  However, the definition (<a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>) is frequently the most useful for its connections with deeper ideas like the null space and the upcoming column space.</p>
+<div class="sage" id="sage-MM" acro="MM" titletext="Matrix Multiplication"><h5 class="sage">
+<a knowl="./knowls/sage.MM.knowl"><span class="type">Sage</span> <span class="acro">MM</span></a> <span class="titletext">Matrix Multiplication</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#subsection-MMEE" class="context" title="Section MM">(in context)</a></div>

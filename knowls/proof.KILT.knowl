@@ -1,0 +1,38 @@
+<div class="proof" id="proof-KILT" acro="KILT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">KILT</span>
+</h5>
+<p>(⇒) We assume $T$ is injective and we need to establish that two sets are equal (<a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>).  Since the kernel is a subspace (<a class="knowl" acro="KLTS" type="Theorem" title="Kernel of a Linear Transformation is a Subspace" knowl="./knowls/theorem.KLTS.knowl">Theorem KLTS</a>), $\set{\zerovector}\subseteq\krn{T}$.  To establish the opposite inclusion, suppose $\vect{x}\in\krn{T}$.
+\begin{align*}
+\lt{T}{\vect{x}}
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/definition.KLT.knowl}{\text{Definition KLT}}\\
+&amp;=\lt{T}{\zerovector}
+&amp;&amp;\knowl{./knowls/theorem.LTTZZ.knowl}{\text{Theorem LTTZZ}}
+\end{align*}
+
+</p>
+
+<p>We can apply <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a> to conclude that $\vect{x}=\zerovector$.  Therefore $\krn{T}\subseteq\set{\zerovector}$ and by <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>, $\krn{T}=\set{\zerovector}$.</p>
+
+<p>(⇐)  To establish that $T$ is injective, appeal to <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a> and begin with the assumption that $\lt{T}{\vect{x}}=\lt{T}{\vect{y}}$.  Then
+\begin{align*}
+\lt{T}{\vect{x}-\vect{y}}
+&amp;=\lt{T}{\vect{x}}-\lt{T}{\vect{y}}
+&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\zerovector
+&amp;&amp;\text{Hypothesis}
+\end{align*}
+
+</p>
+
+<p>So $\vect{x}-\vect{y}\in\krn{T}$ by <a class="knowl" acro="KLT" type="Definition" title="Kernel of a Linear Transformation" knowl="./knowls/definition.KLT.knowl">Definition KLT</a> and with the hypothesis that the kernel is trivial we conclude that $\vect{x}-\vect{y}=\zerovector$.  Then
+\begin{align*}
+\vect{y}
+=\vect{y}+\zerovector
+=\vect{y}+\left(\vect{x}-\vect{y}\right)
+=\vect{x}
+\end{align*}
+
+thus establishing that $T$ is injective by <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a>.</p>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="subsection" id="subsection-UTMR" acro="UTMR" titletext="Upper Triangular Matrix Representation">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">UTMR</span> <span class="titletext">Upper Triangular Matrix Representation</span>
+</h4>
+<p>Not every matrix is diagonalizable, but every linear transformation has a matrix representation that is an upper triangular matrix, and the basis that achieves this representation is especially pleasing.  Here is the theorem.</p>
+<div class="theorem" id="theorem-UTMR" acro="UTMR" titletext="Upper Triangular Matrix Representation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">UTMR</span><span class="titletext"> Upper Triangular Matrix Representation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{V}{V}$ is a linear transformation.  Then there is a basis $B$ for $V$ such that the matrix representation of $T$ relative to $B$, $\matrixrep{T}{B}{B}$, is an upper triangular matrix.  Each diagonal entry is an eigenvalue of $T$, and if $\lambda$ is an eigenvalue of $T$, then $\lambda$ occurs $\algmult{T}{\lambda}$ times on the diagonal.</p></div>
+<div class="proof"><a knowl="./knowls/proof.UTMR.knowl">Proof</a></div>
+</div>
+<p>A key step in this proof was the construction of the subspace $W$ with dimension strictly less than that of $V$.  This required an eigenvalue/eigenvector pair, which was guaranteed to us by <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a>.  Digging deeper, the proof of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a> requires that we can factor polynomials completely, into linear factors.  This will not always happen if our set of scalars is the reals, $\real{\null}$.  So this is our final explanation of our choice of the complex numbers, $\complexes$, as our set of scalars.  In $\complexes$ polynomials factor completely, so every matrix has at least one eigenvalue, and an inductive argument will get us to upper triangular matrix representations.</p>
+<p>In the case of linear transformations defined on $\complex{m}$, we can use the inner product (<a class="knowl" acro="IP" type="Definition" title="Inner Product" knowl="./knowls/definition.IP.knowl">Definition IP</a>) profitably to fine-tune the basis that yields an upper triangular matrix representation.  Recall that the adjoint of matrix $A$ (<a class="knowl" acro="A" type="Definition" title="Adjoint" knowl="./knowls/definition.A.knowl">Definition A</a>) is written as $\adjoint{A}$.</p>
+<div class="theorem" id="theorem-OBUTR" acro="OBUTR" titletext="Orthonormal Basis for Upper Triangular Representation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">OBUTR</span><span class="titletext"> Orthonormal Basis for Upper Triangular Representation</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Then there is a unitary matrix $U$, and an upper triangular matrix $T$, such that
+\begin{align*}
+\adjoint{U}AU=T
+\end{align*}
+
+and $T$ has the eigenvalues of $A$ as the entries of the diagonal.</p></div>
+<div class="proof"><a knowl="./knowls/proof.OBUTR.knowl">Proof</a></div>
+</div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#subsection-UTMR" class="context" title="Section OD">(in context)</a></div>

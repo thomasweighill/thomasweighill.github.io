@@ -1,0 +1,7 @@
+<div class="property" id="property-OC" acro="OC" titletext="One, Column Vectors">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">OC</span> <span class="titletext">One, Column Vectors</span>
+</h5>
+<p>
+If $\vect{u}\in\complex{m}$, then $1\vect{u}=\vect{u}$.</p>
+</div>

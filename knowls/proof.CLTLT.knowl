@@ -1,0 +1,25 @@
+<div class="proof" id="proof-CLTLT" acro="CLTLT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CLTLT</span>
+</h5>
+<p>We simply check the defining properties of a linear transformation (<a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>).
+\begin{align*}
+\lt{(\compose{S}{T})}{\vect{x}+\vect{y}}
+&amp;=\lt{S}{\lt{T}{\vect{x}+\vect{y}}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{S}{\lt{T}{\vect{x}}+\lt{T}{\vect{y}}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\text{ for }T\\
+&amp;=\lt{S}{\lt{T}{\vect{x}}}+\lt{S}{\lt{T}{\vect{y}}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\text{ for }S\\
+&amp;=\lt{(\compose{S}{T})}{\vect{x}}+\lt{(\compose{S}{T})}{\vect{y}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}
+\end{align*}
+and
+\begin{align*}
+
+\lt{(\compose{S}{T})}{\alpha\vect{x}}
+&amp;=\lt{S}{\lt{T}{\alpha\vect{x}}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{S}{\alpha\lt{T}{\vect{x}}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\text{ for }T\\
+&amp;=\alpha\lt{S}{\lt{T}{\vect{x}}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\text{ for }S\\
+&amp;=\alpha\lt{(\compose{S}{T})}{\vect{x}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}
+\end{align*}
+
+</p>
+
+</div>

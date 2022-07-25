@@ -1,0 +1,14 @@
+<div class="subsection" id="subsection-CCS" acro="CCS" titletext="Computing Column Spaces">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CCS</span> <span class="titletext">Computing Column Spaces</span>
+</h4>
+<p>We have three ways to build the column space of a matrix.  First, we can use just the definition, <a class="knowl" acro="CSM" type="Definition" title="Column Space of a Matrix" knowl="./knowls/definition.CSM.knowl">Definition CSM</a>, and express the column space as a span of the columns of the matrix.  A second approach gives us the column space as the span of <em>some</em> of the columns of the matrix, and additionally, this set is linearly independent (<a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a>).  Finally, we can transpose the matrix, row-reduce the transpose, kick out zero rows, and write the remaining rows as column vectors.  <a class="knowl" acro="CSRST" type="Theorem" title="Column Space, Row Space, Transpose" knowl="./knowls/theorem.CSRST.knowl">Theorem CSRST</a> and <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a> tell us that the resulting vectors are linearly independent and their span is the column space of the original matrix.</p>
+<p>We will now demonstrate a fourth method by way of a rather complicated example.  Study this example carefully, but realize that its main purpose is to motivate a theorem that simplifies much of the apparent complexity.  So other than an instructive exercise or two, the procedure we are about to describe will not be a usual approach to computing a column space.</p>
+<div class="example" id="example-CSANS" acro="CSANS" titletext="Column space as null space"><h5 class="example">
+<a knowl="./knowls/example.CSANS.knowl"><span class="type">Example</span> <span class="acro">CSANS</span></a> <span class="titletext">Column space as null space</span>
+</h5></div>
+<p>This example motivates the remainder of this section, so it is worth careful study.  You might attempt to mimic the second approach with the coefficient matrices of <a knowl="./knowls/archetype.I.knowl">Archetype I</a> and <a knowl="./knowls/archetype.J.knowl">Archetype J</a>.  We will see shortly that the matrix $L$ contains more information about $A$ than just the column space.</p>
+<div class="sage" id="sage-RRSM" acro="RRSM" titletext="Row-Reducing a Symbolic Matrix"><h5 class="sage">
+<a knowl="./knowls/sage.RRSM.knowl"><span class="type">Sage</span> <span class="acro">RRSM</span></a> <span class="titletext">Row-Reducing a Symbolic Matrix</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-FS.html#subsection-CCS" class="context" title="Section FS">(in context)</a></div>

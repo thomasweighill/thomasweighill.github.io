@@ -1,0 +1,17 @@
+<div class="proof" id="proof-TMSM" acro="TMSM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">TMSM</span>
+</h5>
+<p>The statement  to be proved is an equality of matrices, so we work entry-by-entry and use <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>.  Notice that the desired equality is of $n\times m$ matrices, and think carefully about the objects involved here, plus the many uses of juxtaposition.  For $1\leq i\leq m$, $1\leq j\leq n$,
+\begin{align*}
+\matrixentry{\transpose{(\alpha A)}}{ji}&amp;=
+\matrixentry{\alpha A}{ij}&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=\alpha\matrixentry{A}{ij}&amp;&amp;\knowl{./knowls/definition.MSM.knowl}{\text{Definition MSM}}\\
+&amp;=\alpha\matrixentry{\transpose{A}}{ji}&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=\matrixentry{\alpha\transpose{A}}{ji}&amp;&amp;\knowl{./knowls/definition.MSM.knowl}{\text{Definition MSM}}
+\end{align*}
+</p>
+
+<p>Since the matrices $\transpose{(\alpha A)}$ and $\alpha\transpose{A}$ agree at each entry, <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> tells us the two matrices are equal.</p>
+
+</div>

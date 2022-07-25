@@ -1,0 +1,7 @@
+<div class="proof" id="proof-RSMS" acro="RSMS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">RSMS</span>
+</h5>
+<p><a class="knowl" acro="RSM" type="Definition" title="Row Space of a Matrix" knowl="./knowls/definition.RSM.knowl">Definition RSM</a> says $\rsp{A}=\csp{\transpose{A}}$, so the row space of a matrix is a column space, and every column space is a subspace by <a class="knowl" acro="CSMS" type="Theorem" title="Column Space of a Matrix is a Subspace" knowl="./knowls/theorem.CSMS.knowl">Theorem CSMS</a>.  That's enough.</p>
+
+</div>

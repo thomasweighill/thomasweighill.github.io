@@ -1,0 +1,7 @@
+<div class="proof" id="proof-NME5" acro="NME5" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NME5</span>
+</h5>
+<p>With a new equivalence for a nonsingular matrix in <a class="knowl" acro="CNMB" type="Theorem" title="Columns of Nonsingular Matrix are a Basis" knowl="./knowls/theorem.CNMB.knowl">Theorem CNMB</a> we can expand <a class="knowl" acro="NME4" type="Theorem" title="Nonsingular Matrix Equivalences, Round 4" knowl="./knowls/theorem.NME4.knowl">Theorem NME4</a>.</p>
+
+</div>

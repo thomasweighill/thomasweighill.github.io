@@ -1,0 +1,21 @@
+<div class="proof" id="proof-MRSLT" acro="MRSLT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MRSLT</span>
+</h5>
+<p>Let $\vect{x}$ be any vector in $\complex{n}$.  Define $\vect{u}\in U$ by $\vect{u}=\vectrepinv{B}{\vect{x}}$, so $\vect{x}=\vectrep{B}{\vect{u}}$.  Then,
+\begin{align*}
+\matrixrep{T+S}{B}{C}\vect{x}&amp;=
+\matrixrep{T+S}{B}{C}\vectrep{B}{\vect{u}}&amp;&amp;\text{Substitution}\\
+&amp;=\vectrep{C}{\lt{\left(T+S\right)}{\vect{u}}}&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\vectrep{C}{\lt{T}{\vect{u}}+\lt{S}{\vect{u}}}&amp;&amp;\knowl{./knowls/definition.LTA.knowl}{\text{Definition LTA}}\\
+&amp;=\vectrep{C}{\lt{T}{\vect{u}}}+\vectrep{C}{\lt{S}{\vect{u}}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\matrixrep{T}{B}{C}\left(\vectrep{B}{\vect{u}}\right)+\matrixrep{S}{B}{C}\left(\vectrep{B}{\vect{u}}\right)&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\left(\matrixrep{T}{B}{C}+\matrixrep{S}{B}{C}\right)\vectrep{B}{\vect{u}}&amp;&amp;\knowl{./knowls/theorem.MMDAA.knowl}{\text{Theorem MMDAA}}\\
+&amp;=\left(\matrixrep{T}{B}{C}+\matrixrep{S}{B}{C}\right)\vect{x}&amp;&amp;\text{Substitution}
+\end{align*}
+
+</p>
+
+<p>Since the matrices $\matrixrep{T+S}{B}{C}$ and $\matrixrep{T}{B}{C}+\matrixrep{S}{B}{C}$ have equal matrix-vector products for <em>every</em> vector in $\complex{n}$, by <a class="knowl" acro="EMMVP" type="Theorem" title="Equal Matrices and Matrix-Vector Products" knowl="./knowls/theorem.EMMVP.knowl">Theorem EMMVP</a> they are equal matrices.  (Now would be a good time to double-back and study the proof of <a class="knowl" acro="EMMVP" type="Theorem" title="Equal Matrices and Matrix-Vector Products" knowl="./knowls/theorem.EMMVP.knowl">Theorem EMMVP</a>.  You did promise to come back to this theorem sometime, didn't you?)</p>
+
+</div>

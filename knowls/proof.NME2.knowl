@@ -1,0 +1,7 @@
+<div class="proof" id="proof-NME2" acro="NME2" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NME2</span>
+</h5>
+<p><a class="knowl" acro="NMLIC" type="Theorem" title="Nonsingular Matrices have Linearly Independent Columns" knowl="./knowls/theorem.NMLIC.knowl">Theorem NMLIC</a> is yet another equivalence for a nonsingular matrix, so we can add it to the list in <a class="knowl" acro="NME1" type="Theorem" title="Nonsingular Matrix Equivalences, Round 1" knowl="./knowls/theorem.NME1.knowl">Theorem NME1</a>.</p>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="definition" id="definition-CVSM" acro="CVSM" titletext="Column Vector Scalar Multiplication">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CVSM</span> <span class="titletext"> Column Vector Scalar Multiplication</span>
+</h5>
+<p>Suppose $\vect{u}\in\complex{m}$ and $\alpha\in\complex{\null}$, then the <em class="term">scalar multiple</em> of $\vect{u}$ by $\alpha$ is the vector $\alpha\vect{u}$ defined by
+\begin{align*}
+\vectorentry{\alpha\vect{u}}{i}
+&amp;=\alpha\vectorentry{\vect{u}}{i}
+&amp;&amp;1\leq i\leq m
+\end{align*}
+
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VO.html#definition-CVSM" class="context" title="Section VO">(in context)</a></div>

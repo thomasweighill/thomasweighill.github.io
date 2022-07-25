@@ -1,0 +1,7 @@
+<div class="solution" acro="LT.C43">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LT.C43</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The preimage $\preimage{T}{0}$ is the set of all polynomials $a + bx + cx^2 + dx^3$ so that
+$\lt{T}{a + bx + cx^2 + dx^3} = 0$.  Thus, $b + 2cx + 3dx^2 = 0$, where the $0$ represents the zero polynomial.  In order to satisfy this equation, we must have $b = 0$, $c = 0$, and $d = 0$.  Thus, $\preimage{T}{0}$ is precisely the set of all constant polynomials – polynomials of degree 0. Symbolically, this is $\preimage{T}{0} = \setparts{a}{a\in\complexes}$.<br><br>
+Does this seem familiar?  What other operation sends constant functions to 0?
+</div>

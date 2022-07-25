@@ -1,0 +1,17 @@
+<div class="theorem" id="theorem-CSS" acro="CSS" titletext="Coordinatization and Spanning Sets">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CSS</span><span class="titletext"> Coordinatization and Spanning Sets</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ is a vector space with a basis $B$ of size $n$.  Then
+\begin{align*}
+\vect{u}\in\spn{\set{\vectorlist{u}{k}}}
+\end{align*}
+
+if and only if
+\begin{align*}
+\vectrep{B}{\vect{u}}\in\spn{\set{\vectrep{B}{\vect{u}_1},\,\vectrep{B}{\vect{u}_2},\,\vectrep{B}{\vect{u}_3},\,\ldots,\,\vectrep{B}{\vect{u}_k}}}
+\end{align*}
+
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.CSS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VR.html#theorem-CSS" class="context" title="Section VR">(in context)</a></div>

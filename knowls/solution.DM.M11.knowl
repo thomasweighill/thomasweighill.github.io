@@ -1,0 +1,15 @@
+<div class="solution" acro="DM.M11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">DM.M11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>\begin{align*}
+\detname{A} &amp;=
+\begin{vmatrix}
+1 &amp; 2 &amp; 1 \\
+2 &amp; 0 &amp; 1 \\
+2&amp; 3 &amp; k
+\end{vmatrix}
+= 7 - 4k
+\end{align*}
+
+Thus, $\detname{A} = 0$ only when $k = \frac{7}{4}$.
+</div>

@@ -1,0 +1,15 @@
+<div class="example" id="example-AM" acro="AM" titletext="A matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">AM</span> <span class="titletext">A matrix</span>
+</h5>
+<p>\begin{equation*}
+B=\begin{bmatrix}
+-1&amp;2&amp;5&amp;3\\
+1&amp;0&amp;-6&amp;1\\
+-4&amp;2&amp;2&amp;-2
+\end{bmatrix}
+\end{equation*}
+is a matrix with $m=3$ rows and $n=4$ columns.  We can say that $\matrixentry{B}{2,3}=-6$ while $\matrixentry{B}{3,4}=-2$.</p>
+<div class="context"><a href="section-RREF.html#example-AM" class="context" title="Section RREF">(in
+context)</a></div>
+</div>

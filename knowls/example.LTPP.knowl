@@ -1,0 +1,21 @@
+<div class="example" id="example-LTPP" acro="LTPP" titletext="Linear transformation, polynomials to polynomials">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LTPP</span> <span class="titletext">Linear transformation, polynomials to polynomials</span>
+</h5>
+<p>Define a function $\ltdefn{S}{P_4}{P_5}$ by
+\begin{equation*}
+S(p(x))=(x-2)p(x)
+\end{equation*}
+</p>
+<p>Then
+\begin{align*}
+\lt{S}{p(x)+q(x)}&amp;=(x-2)(p(x)+q(x))\\
+&amp;=(x-2)p(x)+(x-2)q(x)=\lt{S}{p(x)}+\lt{S}{q(x)}\\
+\lt{S}{\alpha p(x)}&amp;=(x-2)(\alpha p(x))=(x-2)\alpha p(x)=\alpha(x-2)p(x)=\alpha\lt{S}{p(x)}
+\end{align*}
+
+</p>
+<p>So by <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>, $S$ is a linear transformation.</p>
+<div class="context"><a href="section-LT.html#example-LTPP" class="context" title="Section LT">(in
+context)</a></div>
+</div>

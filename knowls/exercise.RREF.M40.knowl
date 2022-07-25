@@ -1,0 +1,40 @@
+<div class="exercise" acro="RREF.M40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.M40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the two $3\times 4$ matrices below
+\begin{align*}
+B&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp; -2 &amp; 2 \\
+-1 &amp; -2 &amp; -1 &amp; -1 \\
+-1 &amp; -5 &amp; 8 &amp; -3
+\end{bmatrix}
+&amp;
+C&amp;=
+\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; 2 \\
+1 &amp; 1 &amp; 4 &amp; 0 \\
+-1 &amp; -1 &amp; -4 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+<br><br>
+<ol>
+<li>Row-reduce each matrix and determine that the reduced row-echelon forms of $B$ and $C$ are identical.  From this argue that $B$ and $C$ are row-equivalent.</li>
+<li>In the proof of <a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>, we begin by arguing that entries of row-equivalent matrices are related by way of certain scalars and sums.  In this example, we would write that entries of $B$ from row $i$ that are in column $j$ are linearly related to the entries of $C$ in column $j$ from all three rows
+\begin{align*}
+\matrixentry{B}{ij}
+&amp;=
+\delta_{i1}\matrixentry{C}{1j}+
+\delta_{i2}\matrixentry{C}{2j}+
+\delta_{i3}\matrixentry{C}{3j}
+&amp;
+1&amp;\leq j\leq 4
+\end{align*}
+
+For each $1\leq i\leq 3$ find the corresponding three scalars in this relationship.  So your answer will be nine scalars, determined three at a time.</li>
+</ol>
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.M40.knowl">Solution</a></p></div>
+</div>

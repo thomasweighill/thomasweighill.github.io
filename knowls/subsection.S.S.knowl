@@ -1,0 +1,16 @@
+<div class="subsection" id="subsection-S" acro="S" titletext="Subspaces">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">S</span> <span class="titletext">Subspaces</span>
+</h4>
+<p>Here is the principal definition for this section.</p>
+<div class="definition" id="definition-S" acro="S" titletext="Subspace">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">S</span> <span class="titletext"> Subspace</span>
+</h5>
+<p>Suppose that $V$ and $W$ are two vector spaces that have identical definitions of vector addition and scalar multiplication, and that $W$ is a subset of $V$, $W\subseteq V$.  Then $W$ is a <em class="term">subspace</em> of $V$.</p>
+</div>
+<p>Let us look at an example of a vector space inside another vector space.</p>
+<div class="example" id="example-SC3" acro="SC3" titletext="A subspace of $\complex{3}$"><h5 class="example">
+<a knowl="./knowls/example.SC3.knowl"><span class="type">Example</span> <span class="acro">SC3</span></a> <span class="titletext">A subspace of $\complex{3}$</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#subsection-S" class="context" title="Section S">(in context)</a></div>

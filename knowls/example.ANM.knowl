@@ -1,0 +1,38 @@
+<div class="example" id="example-ANM" acro="ANM" titletext="A normal matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ANM</span> <span class="titletext">A normal matrix</span>
+</h5>
+<p>Let
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+1 &amp; -1\\1 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Then
+\begin{align*}
+\begin{bmatrix}
+1 &amp; -1\\1 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 1\\-1 &amp; 1
+\end{bmatrix}
+&amp;=
+\begin{bmatrix}
+2 &amp; 0\\0 &amp; 2
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 1\\-1 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; -1\\1 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+so we see by <a class="knowl" acro="NRML" type="Definition" title="Normal Matrix" knowl="./knowls/definition.NRML.knowl">Definition NRML</a> that $A$ is normal.  However, $A$ is not symmetric (hence, as a real matrix, not Hermitian), not unitary, and not skew-symmetric.</p>
+<div class="context"><a href="section-OD.html#example-ANM" class="context" title="Section OD">(in
+context)</a></div>
+</div>

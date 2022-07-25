@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-SMS" acro="SMS" titletext="Symmetric Matrices are Square">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SMS</span><span class="titletext"> Symmetric Matrices are Square</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a symmetric matrix.  Then $A$ is square.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SMS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-SMS" class="context" title="Section MO">(in context)</a></div>

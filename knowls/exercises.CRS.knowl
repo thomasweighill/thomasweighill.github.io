@@ -1,0 +1,241 @@
+<div class="exercise" acro="CRS.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C20</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>For each matrix below, find a set of linearly independent vectors $X$ so that $\spn{X}$ equals the column space of the matrix, and a set of linearly independent vectors $Y$ so that $\spn{Y}$ equals the row space of the matrix.
+\begin{align*}A&amp;=\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 2\\ 1 &amp; -1 &amp; 2 &amp; 3 \\ 1 &amp; 1 &amp; 2 &amp; -1 \end{bmatrix}&amp;B&amp;=\begin{bmatrix}  1 &amp; 2 &amp; 1 &amp; 1 &amp; 1 \\ 3 &amp; 2 &amp; -1 &amp; 4 &amp; 5\\ 0 &amp; 1 &amp; 1 &amp; 1 &amp; 2 \end{bmatrix}&amp;C&amp;=\begin{bmatrix}  2 &amp; 1 &amp; 0 \\ 3 &amp; 0 &amp; 3\\ 1 &amp; 2 &amp; -3 \\ 1 &amp; 1 &amp; -1 \\ 1 &amp; 1 &amp; -1\end{bmatrix}\end{align*}
+
+From your results for these three matrices, can you formulate a conjecture about the sets $X$ and $Y$?
+</p></div>
+</div><div class="exercise" acro="CRS.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="CSOCD" type="Example" title="Column space, original columns, Archetype D" knowl="./knowls/example.CSOCD.knowl">Example CSOCD</a> expresses the column space of the coefficient matrix from <a knowl="./knowls/archetype.D.knowl">Archetype D</a> (call the matrix $A$ here) as the span of the first two columns of $A$.  In <a class="knowl" acro="CSMCS" type="Example" title="Column space of a matrix and consistent systems" knowl="./knowls/example.CSMCS.knowl">Example CSMCS</a> we determined that the vector
+\begin{equation*}
+\vect{c}=\colvector{2\\3\\2}
+\end{equation*}
+<em>was not</em> in the column space of $A$  and that the vector
+\begin{equation*}
+\vect{b}=\colvector{8\\-12\\4}
+\end{equation*}
+<em>was</em> in the column space of $A$.   Attempt to write $\vect{c}$ and $\vect{b}$ as linear combinations of the two vectors in the span construction for the column space in <a class="knowl" acro="CSOCD" type="Example" title="Column space, original columns, Archetype D" knowl="./knowls/example.CSOCD.knowl">Example CSOCD</a> and record your observations.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.C30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.C31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the matrix $A$ below find a set of vectors $T$ meeting the following requirements:  (1) the span of $T$ is the column space of $A$, that is, $\spn{T}=\csp{A}$, (2) $T$ is linearly independent, and (3) the elements of $T$ are columns of $A$.
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 2 &amp; 1 &amp; 4 &amp; -1 &amp; 2 \\
+ 1 &amp; -1 &amp; 5 &amp; 1 &amp; 1 \\
+ -1 &amp; 2 &amp; -7 &amp; 0 &amp; 1 \\
+ 2 &amp; -1 &amp; 8 &amp; -1 &amp; 2
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.C31.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.C32">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C32</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In <a class="knowl" acro="CSAA" type="Example" title="Column space of Archetype A" knowl="./knowls/example.CSAA.knowl">Example CSAA</a>, verify that the vector $\vect{b}$ is not in the column space of the coefficient matrix.
+</p></div>
+</div><div class="exercise" acro="CRS.C33">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C33</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find a linearly independent set $S$ so that the span of $S$, $\spn{S}$, is row space of the matrix $B$, and $S$ is linearly independent.
+\begin{equation*}
+B=
+\begin{bmatrix}
+2 &amp; 3 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 0 &amp; 1\\
+-1 &amp; 2 &amp; 3 &amp; -4
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.C33.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.C34">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C34</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the $3\times 4$ matrix $A$ and the column vector $\vect{y}\in\complex{4}$ given below, determine if $\vect{y}$ is in the row space of $A$. In other words, answer the question:  $\vect{y}\in\rsp{A}$?
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+ -2 &amp; 6 &amp; 7 &amp; -1 \\
+ 7 &amp; -3 &amp; 0 &amp; -3 \\
+ 8 &amp; 0 &amp; 7 &amp; 6
+\end{bmatrix}
+&amp;
+\vect{y}&amp;=
+\colvector{2\\1\\3\\-2}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.C34.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.C35">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C35</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the matrix $A$ below, find two different linearly independent sets whose spans equal the column space of $A$, $\csp{A}$, such that
+<ol>
+<li>the elements are each columns of $A$.</li>
+<li>the set is obtained by a procedure that is substantially different from the procedure you use in part (1).
+</li>
+</ol>
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+ 3 &amp; 5 &amp; 1 &amp; -2 \\
+ 1 &amp; 2 &amp; 3 &amp; 3 \\
+ -3 &amp; -4 &amp; 7 &amp; 13
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.C35.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are systems of equations.  For each system, write the vector of constants as a linear combination of the vectors in the span construction for the column space provided by <a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a> (these vectors are listed for each of these archetypes).<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>,
+<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>,
+<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div><div class="exercise" acro="CRS.C42">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C42</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are either matrices or systems of equations with coefficient matrices.  For each matrix, compute a set of column vectors such that (1) the vectors are columns of the matrix, (2) the set is linearly independent, and (3) the span of the set is the column space of the matrix.  See <a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a>.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a>,
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+</p></div>
+</div><div class="exercise" acro="CRS.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are either matrices or systems of equations with coefficient matrices.  For each matrix, compute a set of column vectors such that  (1) the set is linearly independent, and (2) the span of the set is the row space of the matrix.  See <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a>.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a>,
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+</p></div>
+</div><div class="exercise" acro="CRS.C51">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are either matrices or systems of equations with coefficient matrices.  For each matrix, compute the column space as the span of a linearly independent set as follows: transpose the matrix, row-reduce, toss out zero rows, convert rows into column vectors. See <a class="knowl" acro="CSROI" type="Example" title="Column space from row operations, Archetype I" knowl="./knowls/example.CSROI.knowl">Example CSROI</a>.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a>,
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+</p></div>
+</div><div class="exercise" acro="CRS.C52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are systems of equations.  For each different coefficient matrix build two new vectors of constants.  The first should lead to a consistent system and the second should lead to an inconsistent system.  Descriptions of the column space as spans of linearly independent sets of vectors with “nice patterns” of zeros and ones might be most useful and instructive in connection with this exercise. (See the end of <a class="knowl" acro="CSROI" type="Example" title="Column space from row operations, Archetype I" knowl="./knowls/example.CSROI.knowl">Example CSROI</a>.)<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div><div class="exercise" acro="CRS.M10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.M10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the matrix $E$ below, find vectors $\vect{b}$ and $\vect{c}$ so that the system $\linearsystem{E}{\vect{b}}$ is consistent and $\linearsystem{E}{\vect{c}}$ is inconsistent.
+\begin{equation*}
+E=
+\begin{bmatrix}
+-2 &amp; 1 &amp; 1 &amp; 0\\
+3 &amp; -1 &amp; 0 &amp; 2\\
+4 &amp; 1 &amp; 1 &amp; 6
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.M10.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Usually the column space and null space of a matrix contain vectors of different sizes.  For a square matrix, though, the vectors in these two sets are the same size.  Usually the two sets will be different.  Construct an example of a square matrix where the column space and null space are equal.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.M20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.M21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.M21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>We have a variety of theorems about how to create column spaces and row spaces and they frequently involve row-reducing a matrix.  Here is a procedure that some try to use to get a column space.  Begin with an $m\times n$ matrix $A$ and row-reduce to a matrix $B$ with columns $\vectorlist{B}{n}$.  Then form the column space of $A$ as
+\begin{equation*}
+\csp{A}=
+\spn{\set{\vectorlist{B}{n}}}
+=\csp{B}
+\end{equation*}
+This is <em>not</em> not a legitimate procedure, and therefore is <em>not</em> a theorem.  Construct an example to show that the procedure will not in general create the column space of $A$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.M21.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix.  Prove that the column space of $AB$ is a subset of the column space of $A$, that is $\csp{AB}\subseteq\csp{A}$.  Provide an example where the opposite is false, in other words give an example where $\csp{A}\not\subseteq\csp{AB}$.   (Compare with <a knowl="./knowls/exercise.MM.T40.knowl">Exercise MM.T40</a>.)
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.T40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.T41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.T41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $B$ is an $n\times n$ nonsingular matrix.  Prove that the column space of $A$ is equal to the column space of $AB$, that is $\csp{A}=\csp{AB}$.  (Compare with <a knowl="./knowls/exercise.MM.T41.knowl">Exercise MM.T41</a> and <a knowl="./knowls/exercise.CRS.T40.knowl">Exercise CRS.T40</a>.)
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.T41.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="CRS.T45">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.T45</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $B$ is an $n\times m$ matrix where $AB$ is a nonsingular matrix.  Prove that
+<ol>
+<li>$\nsp{B}=\set{\zerovector}$</li>
+<li>$\csp{B}\cap\nsp{A}=\set{\zerovector}$</li>
+</ol>
+Discuss the case when $m=n$ in connection with <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.T45.knowl">Solution</a></p></div>
+</div>

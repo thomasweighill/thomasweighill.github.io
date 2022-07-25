@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-AMA" acro="AMA" titletext="Adjoint and Matrix Addition">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">AMA</span><span class="titletext"> Adjoint and Matrix Addition</span>
+</h5>
+<div class="statement"><p>Suppose $A$ and $B$ are matrices of the same size.  Then $\adjoint{\left(A+B\right)}=\adjoint{A}+\adjoint{B}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.AMA.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-AMA" class="context" title="Section MO">(in context)</a></div>

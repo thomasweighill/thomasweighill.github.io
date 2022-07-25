@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-EPM" acro="EPM" titletext="Eigenvalues of the Polynomial of a Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EPM</span><span class="titletext"> Eigenvalues of the Polynomial of a Matrix</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Let $q(x)$ be a polynomial in the variable $x$.  Then $q(\lambda)$ is an eigenvalue of the matrix $q(A)$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EPM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-EPM" class="context" title="Section PEE">(in context)</a></div>

@@ -1,0 +1,12 @@
+<div class="example" id="example-VSCV" acro="VSCV" titletext="The vector space $\complex{m}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">VSCV</span> <span class="titletext">The vector space $\complex{m}$</span>
+</h5>
+<p>Set: $\complex{m}$, all column vectors of size $m$, <a class="knowl" acro="VSCV" type="Definition" title="Vector Space of Column Vectors" knowl="./knowls/definition.VSCV.knowl">Definition VSCV</a>.</p>
+<p>Equality: Entry-wise, <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>.</p>
+<p>Vector Addition:  The “usual” addition, given in <a class="knowl" acro="CVA" type="Definition" title="Column Vector Addition" knowl="./knowls/definition.CVA.knowl">Definition CVA</a>.</p>
+<p>Scalar Multiplication: The “usual” scalar multiplication, given in <a class="knowl" acro="CVSM" type="Definition" title="Column Vector Scalar Multiplication" knowl="./knowls/definition.CVSM.knowl">Definition CVSM</a>.</p>
+<p>Does this set with these operations fulfill the ten properties?  Yes.  And by design all we need to do is quote <a class="knowl" acro="VSPCV" type="Theorem" title="Vector Space Properties of Column Vectors" knowl="./knowls/theorem.VSPCV.knowl">Theorem VSPCV</a>.  That was easy.</p>
+<div class="context"><a href="section-VS.html#example-VSCV" class="context" title="Section VS">(in
+context)</a></div>
+</div>

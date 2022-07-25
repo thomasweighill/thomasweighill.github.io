@@ -1,0 +1,96 @@
+<div class="solution" acro="SD.C21">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SD.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>A calculator will provide the eigenvalues $\lambda=2,\,2,\,1,\,0$, so we can reconstruct the characteristic polynomial as
+\begin{equation*}
+\charpoly{A}{x}=(x-2)^2(x-1)x
+\end{equation*}
+so the algebraic multiplicities of the eigenvalues are
+\begin{align*}
+\algmult{A}{2}&amp;=2&amp;
+\algmult{A}{1}&amp;=1&amp;
+\algmult{A}{0}&amp;=1
+\end{align*}
+
+Now compute eigenspaces by hand, obtaining null spaces for each of the three eigenvalues by constructing the correct singular matrix (<a class="knowl" acro="EMNS" type="Theorem" title="Eigenspace of a Matrix is a Null Space" knowl="./knowls/theorem.EMNS.knowl">Theorem EMNS</a>),
+\begin{align*}
+A-2I_4&amp;=
+\begin{bmatrix}
+ -1 &amp; 9 &amp; 9 &amp; 24 \\
+ -3 &amp; -29 &amp; -29 &amp; -68 \\
+ 1 &amp; 11 &amp; 11 &amp; 26 \\
+ 1 &amp; 7 &amp; 7 &amp; 16
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; -\frac{3}{2} \\
+ 0 &amp; 1 &amp; 1 &amp; \frac{5}{2} \\
+ 0 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+\eigenspace{A}{2}&amp;=\nsp{A-2I_4}
+=\spn{\set{\colvector{\frac{3}{2}\\-\frac{5}{2}\\0\\1},\,\colvector{0\\-1\\1\\0}}}
+=\spn{\set{\colvector{3\\-5\\0\\2},\,\colvector{0\\-1\\1\\0}}}\\
+A-1I_4&amp;=
+\begin{bmatrix}
+0 &amp; 9 &amp; 9 &amp; 24 \\
+ -3 &amp; -28 &amp; -29 &amp; -68 \\
+ 1 &amp; 11 &amp; 12 &amp; 26 \\
+ 1 &amp; 7 &amp; 7 &amp; 17
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; -\frac{5}{3} \\
+ 0 &amp; 1 &amp; 0 &amp; \frac{13}{3} \\
+ 0 &amp; 0 &amp; 1 &amp; -\frac{5}{3} \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+\eigenspace{A}{1}&amp;=\nsp{A-I_4}
+=\spn{\set{\colvector{\frac{5}{3}\\-\frac{13}{3}\\\frac{5}{3}\\1}}}
+=\spn{\set{\colvector{5\\-13\\5\\3}}}\\
+A-0I_4&amp;=
+\begin{bmatrix}
+ 1 &amp; 9 &amp; 9 &amp; 24 \\
+ -3 &amp; -27 &amp; -29 &amp; -68 \\
+ 1 &amp; 11 &amp; 13 &amp; 26 \\
+ 1 &amp; 7 &amp; 7 &amp; 18
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; -3 \\
+ 0 &amp; 1 &amp; 0 &amp; 5 \\
+ 0 &amp; 0 &amp; 1 &amp; -2 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+\eigenspace{A}{0}&amp;=\nsp{A}=\spn{\set{\colvector{3\\-5\\2\\1}}}
+\end{align*}
+
+From this we can compute the dimensions of the eigenspaces to obtain the geometric multiplicities,
+\begin{align*}
+\geomult{A}{2}&amp;=2&amp;
+\geomult{A}{1}&amp;=1&amp;
+\geomult{A}{0}&amp;=1
+\end{align*}
+
+For each eigenvalue, the algebraic and geometric multiplicities are equal and so by <a class="knowl" acro="DMFE" type="Theorem" title="Diagonalizable Matrices have Full Eigenspaces" knowl="./knowls/theorem.DMFE.knowl">Theorem DMFE</a> we now know that $A$ is diagonalizable.  The construction in <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> suggests we form a matrix whose columns are eigenvectors of $A$
+\begin{equation*}
+S=
+\begin{bmatrix}
+ 3 &amp; 0 &amp; 5 &amp; 3 \\
+ -5 &amp; -1 &amp; -13 &amp; -5 \\
+ 0 &amp; 1 &amp; 5 &amp; 2 \\
+ 2 &amp; 0 &amp; 3 &amp; 1
+\end{bmatrix}
+\end{equation*}
+Since $\detname{S}=-1\neq 0$, we know that $S$ is nonsingular (<a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a>), so the columns of $S$ are a set of 4 linearly independent eigenvectors of $A$.  By the proof of <a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a> we know
+\begin{equation*}
+\similar{A}{S}=
+\begin{bmatrix}
+ 2 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 2 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 1 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+is a diagonal matrix with the eigenvalues of $A$ along the diagonal, in the same order as the associated eigenvectors appear as columns of $S$.
+</div>

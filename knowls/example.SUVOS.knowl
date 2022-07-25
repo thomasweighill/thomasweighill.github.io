@@ -1,0 +1,22 @@
+<div class="example" id="example-SUVOS" acro="SUVOS" titletext="Standard Unit Vectors are an Orthogonal Set">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SUVOS</span> <span class="titletext">Standard Unit Vectors are an Orthogonal Set</span>
+</h5>
+<p>Compute the inner product of two distinct vectors from the set of standard unit vectors (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>), say $\vect{e}_i$, $\vect{e}_j$, where $i\neq j$,
+\begin{align*}
+\innerproduct{\vect{e}_i}{\vect{e}_j}&amp;=
+\conjugate{0}0+
+\conjugate{0}0+\cdots+
+\conjugate{1}0+\cdots+
+\conjugate{0}0+\cdots+
+\conjugate{0}1+\cdots+
+\conjugate{0}0+
+\conjugate{0}0\\
+&amp;=0(0)+0(0)+\cdots+1(0)+\cdots+0(1)+\cdots+0(0)+0(0)\\
+&amp;=0
+\end{align*}
+</p>
+<p>So the set $\set{\vectorlist{e}{m}}$ is an orthogonal set.</p>
+<div class="context"><a href="section-O.html#example-SUVOS" class="context" title="Section O">(in
+context)</a></div>
+</div>

@@ -1,0 +1,8 @@
+<div class="example" id="example-SC" acro="SC" titletext="Set complement">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SC</span> <span class="titletext">Set complement</span>
+</h5>
+<p>If $U=\set{\blacklozenge,\,\bigstar,\,\blacksquare,\,\blacktriangle}$ and $S=\set{\blacklozenge,\,\bigstar,\,\blacksquare}$ then $\setcomplement{S}=\set{\blacktriangle}$.</p>
+<div class="context"><a href="section-SET.html#example-SC" class="context" title="Section SET">(in
+context)</a></div>
+</div>

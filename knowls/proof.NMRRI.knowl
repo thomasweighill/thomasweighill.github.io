@@ -1,0 +1,9 @@
+<div class="proof" id="proof-NMRRI" acro="NMRRI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NMRRI</span>
+</h5>
+<p>(⇐)  Suppose $B$ is the identity matrix.  When the augmented matrix $\augmented{A}{\zerovector}$ is row-reduced, the result is $\augmented{B}{\zerovector}=\augmented{I_n}{\zerovector}$.  The number of nonzero rows is equal to the number of variables in the linear system of equations $\linearsystem{A}{\zerovector}$, so $n=r$ and <a class="knowl" acro="FVCS" type="Theorem" title="Free Variables for Consistent Systems" knowl="./knowls/theorem.FVCS.knowl">Theorem FVCS</a> gives $n-r=0$ free variables.  Thus, the homogeneous system $\homosystem{A}$ has just one solution, which must be the trivial solution.  This is exactly the definition of a nonsingular matrix (<a class="knowl" acro="NM" type="Definition" title="Nonsingular Matrix" knowl="./knowls/definition.NM.knowl">Definition NM</a>).</p>
+
+<p>(⇒)  If $A$ is nonsingular, then the homogeneous system $\linearsystem{A}{\zerovector}$ has a unique solution, and has no free variables in the description of the solution set.  The homogeneous system is consistent (<a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>) so <a class="knowl" acro="FVCS" type="Theorem" title="Free Variables for Consistent Systems" knowl="./knowls/theorem.FVCS.knowl">Theorem FVCS</a>  applies and tells us there are $n-r$ free variables.  Thus, $n-r=0$, and so $n=r$.  So $B$ has $n$ pivot columns among its total of $n$ columns.  This is enough to force $B$ to be the $n\times n$ identity matrix $I_n$ (see <a knowl="./knowls/exercise.NM.T12.knowl">Exercise NM.T12</a>).</p>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="theorem" id="theorem-KPI" acro="KPI" titletext="Kernel and Pre-Image">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">KPI</span><span class="titletext"> Kernel and Pre-Image</span>
+</h5>
+<div class="statement"><p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation and $\vect{v}\in V$.  If the preimage $\preimage{T}{\vect{v}}$ is nonempty, and $\vect{u}\in\preimage{T}{\vect{v}}$  then
+\begin{equation*}
+\preimage{T}{\vect{v}}=
+\setparts{\vect{u}+\vect{z}}{\vect{z}\in\krn{T}}
+=\vect{u}+\krn{T}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.KPI.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-ILT.html#theorem-KPI" class="context" title="Section ILT">(in context)</a></div>

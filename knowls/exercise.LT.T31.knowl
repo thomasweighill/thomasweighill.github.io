@@ -1,0 +1,8 @@
+<div class="exercise" acro="LT.T31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Equivalence relations always create a partition of the set they are defined on, via a construction called equivalence classes.  For the relation in the previous problem, the equivalence classes are the pre-images.  Prove directly that the collection of pre-images partition $U$ by showing that (a) every $\vect{x}\in U$ is contained in some pre-image, and that (b) any two different pre-images do not have any elements in common.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.T31.knowl">Solution</a></p></div>
+</div>

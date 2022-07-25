@@ -1,0 +1,112 @@
+<div class="example" id="example-SAV" acro="SAV" titletext="Surjective, Archetype V">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SAV</span> <span class="titletext">Surjective, Archetype V</span>
+</h5>
+<p><a knowl="./knowls/archetype.V.knowl">Archetype V</a> is defined by
+\begin{equation*}
+\ltdefn{T}{P_3}{M_{22}},\quad\lt{T}{a+bx+cx^2+dx^3}=
+\begin{bmatrix}
+a+b &amp; a-2c\\
+d &amp; b-d
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>To establish that the linear transformation is surjective, begin by choosing an arbitrary output.  In this example, we need to choose an arbitrary $2\times 2$ matrix, say
+\begin{equation*}
+\vect{v}=\begin{bmatrix}x&amp;y\\z&amp;w\end{bmatrix}
+\end{equation*}
+and we would like to find an input polynomial
+\begin{equation*}
+\vect{u}=a+bx+cx^2+dx^3
+\end{equation*}
+so that $\lt{T}{\vect{u}}=\vect{v}$.  So we have,
+\begin{align*}
+\begin{bmatrix}x&amp;y\\z&amp;w\end{bmatrix}&amp;=\vect{v}\\
+&amp;=\lt{T}{\vect{u}}\\
+&amp;=\lt{T}{a+bx+cx^2+dx^3}\\
+&amp;=\begin{bmatrix}
+a+b &amp; a-2c\\
+d &amp; b-d
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Matrix equality leads us to the system of four equations in the four unknowns, $x,y,z,w$,
+\begin{align*}
+a+b&amp;=x\\
+a-2c&amp;=y\\
+d&amp;=z\\
+b-d&amp;=w
+\end{align*}
+
+which can be rewritten as a matrix equation,
+\begin{equation*}
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; 0\\
+1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 0 &amp; -1
+\end{bmatrix}
+\colvector{a\\b\\c\\d}
+=
+\colvector{x\\y\\z\\w}
+\end{equation*}
+</p>
+<p>The coefficient matrix is nonsingular, hence it has an inverse,
+\begin{equation*}
+\inverse{
+\begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; 0\\
+1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 0 &amp; -1
+\end{bmatrix}
+}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; -1 &amp; -1\\
+0 &amp; 0 &amp; 1 &amp; 1\\
+\frac{1}{2} &amp; -\frac{1}{2} &amp; -\frac{1}{2} &amp; -\frac{1}{2}\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{equation*}
+so we have
+\begin{align*}
+\colvector{a\\b\\c\\d}&amp;=
+\begin{bmatrix}
+1 &amp; 0 &amp; -1 &amp; -1\\
+0 &amp; 0 &amp; 1 &amp; 1\\
+\frac{1}{2} &amp; -\frac{1}{2} &amp; -\frac{1}{2} &amp; -\frac{1}{2}\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}
+\colvector{x\\y\\z\\w}\\%
+&amp;=
+\colvector{
+x-z-w\\
+z+w\\
+\frac{1}{2}(x-y-z-w)\\
+z
+}
+\end{align*}
+
+</p>
+<p>So the input polynomial $\vect{u}=(x-z-w)+(z+w)x+\frac{1}{2}(x-y-z-w)x^2+zx^3$ will yield the output matrix $\vect{v}$, no matter what form $\vect{v}$ takes.  This means by <a class="knowl" acro="SLT" type="Definition" title="Surjective Linear Transformation" knowl="./knowls/definition.SLT.knowl">Definition SLT</a> that $T$ is surjective.  All the same, let us do a concrete demonstration and evaluate $T$ with $\vect{u}$,
+\begin{align*}
+\lt{T}{\vect{u}}&amp;=\lt{T}{(x-z-w)+(z+w)x+\frac{1}{2}(x-y-z-w)x^2+zx^3}\\
+&amp;=
+\begin{bmatrix}
+(x-z-w)+(z+w) &amp; (x-z-w) - 2(\frac{1}{2}(x-y-z-w))\\
+z &amp; (z+w)-z
+\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+x &amp; y\\
+z &amp; w
+\end{bmatrix}\\
+&amp;=\vect{v}
+\end{align*}
+
+</p>
+<div class="context"><a href="section-SLT.html#example-SAV" class="context" title="Section SLT">(in
+context)</a></div>
+</div>

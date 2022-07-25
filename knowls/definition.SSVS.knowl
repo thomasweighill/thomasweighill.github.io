@@ -1,0 +1,6 @@
+<div class="definition" id="definition-SSVS" acro="SSVS" titletext="Spanning Set of a Vector Space">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SSVS</span> <span class="titletext"> Spanning Set of a Vector Space</span>
+</h5>
+<p>Suppose $V$ is a vector space.  A subset $S$ of $V$ is a <em class="term">spanning set</em> of $V$ if $\spn{S}=V$.  In this case, we also frequently say $S$ <em class="term">spans</em> $V$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LISS.html#definition-SSVS" class="context" title="Section LISS">(in context)</a></div>

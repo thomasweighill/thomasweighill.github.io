@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-MRCB" acro="MRCB" titletext="Matrix Representation and Change of Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRCB</span><span class="titletext"> Matrix Representation and Change of Basis</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $B$ and $C$ are bases for $U$, and $D$ and $E$ are bases for $V$.  Then
+\begin{equation*}
+\matrixrep{T}{B}{D}=\cbm{E}{D}\matrixrep{T}{C}{E}\cbm{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRCB.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CB.html#theorem-MRCB" class="context" title="Section CB">(in context)</a></div>

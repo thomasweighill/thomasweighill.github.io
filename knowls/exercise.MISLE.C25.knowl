@@ -1,0 +1,7 @@
+<div class="exercise" acro="MISLE.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>At the conclusion of <a class="knowl" acro="CMI" type="Example" title="Computing a matrix inverse" knowl="./knowls/example.CMI.knowl">Example CMI</a>, verify that $BA=I_5$ by computing the matrix product.
+</p></div>
+</div>

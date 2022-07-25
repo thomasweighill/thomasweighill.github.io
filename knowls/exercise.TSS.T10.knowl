@@ -1,0 +1,8 @@
+<div class="exercise" acro="TSS.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>An inconsistent system may have $r&gt;n$.  If we try (incorrectly!) to apply <a class="knowl" acro="FVCS" type="Theorem" title="Free Variables for Consistent Systems" knowl="./knowls/theorem.FVCS.knowl">Theorem FVCS</a> to such a system, how many free variables would we discover?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.T10.knowl">Solution</a></p></div>
+</div>

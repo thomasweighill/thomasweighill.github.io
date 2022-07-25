@@ -1,0 +1,14 @@
+<div class="example" id="example-NSAO" acro="NSAO" titletext="Not surjective, Archetype O">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSAO</span> <span class="titletext">Not surjective, Archetype O</span>
+</h5>
+<p>In <a class="knowl" acro="RAO" type="Example" title="Range, Archetype O" knowl="./knowls/example.RAO.knowl">Example RAO</a> the range of <a knowl="./knowls/archetype.O.knowl">Archetype O</a> was determined to be
+\begin{equation*}
+\rng{T}=\spn{\set{
+\colvector{1\\0\\-3\\-7\\-2},\,\colvector{0\\1\\2\\5\\1}
+}
+}\end{equation*}
+a subspace of dimension 2 in $\complex{5}$.  Since $\rng{T}\neq\complex{5}$, <a class="knowl" acro="RSLT" type="Theorem" title="Range of a Surjective Linear Transformation" knowl="./knowls/theorem.RSLT.knowl">Theorem RSLT</a> says $T$ is not surjective.</p>
+<div class="context"><a href="section-SLT.html#example-NSAO" class="context" title="Section SLT">(in
+context)</a></div>
+</div>

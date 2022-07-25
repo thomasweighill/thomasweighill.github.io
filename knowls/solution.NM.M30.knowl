@@ -1,0 +1,22 @@
+<div class="solution" acro="NM.M30">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">NM.M30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>We row-reduce the coefficient matrix of the system of equations,
+\begin{align*}
+\begin{bmatrix}
+ -1 &amp; 5 &amp; 0 &amp; 0  \\
+ -2 &amp; 5 &amp; 5 &amp; 2  \\
+ -3 &amp; -1 &amp; 3 &amp; 1  \\
+ 7 &amp; 6 &amp; 5 &amp; 1
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 0  \\
+ 0 &amp; \leading{1} &amp; 0 &amp; 0  \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0  \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{align*}
+
+Since the row-reduced version of the coefficient matrix is the $4\times 4$ identity matrix, $I_4$ (<a class="knowl" acro="IM" type="Definition" title="Identity Matrix" knowl="./knowls/definition.IM.knowl">Definition IM</a> by<a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>, we know the coefficient matrix is nonsingular.  According to <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a> we know that the system is guaranteed to have a unique solution, based only on the extra information that the coefficient matrix is nonsingular.
+</div>

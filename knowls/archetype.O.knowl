@@ -1,0 +1,16 @@
+<div class="archetype" id="archetype-O" acro="O" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">O</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Linear transformation with a domain smaller than the codomain, so it is guaranteed to not be onto.  Happens to not be one-to-one.</p>
+<p>Definition:\begin{align*}\ltdefn{T}{\complex{3}}{\complex{5}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3}}=
+\colvector{-x_1 + x_2 - 3 x_3\\
+-x_1 + 2 x_2 - 4 x_3\\
+x_1 + x_2 + x_3\\
+2 x_1 + 3 x_2 + x_3\\
+x_1 + 2 x_3
+}
+\end{align*}</p>
+<div class="context"><a href="archetype-O.html" class="context" title="Archetype O">Complete analysis of Archetype O</a></div>
+</div>

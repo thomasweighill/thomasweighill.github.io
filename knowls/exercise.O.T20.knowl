@@ -1,0 +1,8 @@
+<div class="exercise" acro="O.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\vect{u},\,\vect{v},\,\vect{w}\in\complex{n}$, $\alpha,\,\beta\in\complexes$ and $\vect{u}$ is orthogonal to both $\vect{v}$ and $\vect{w}$.  Prove that $\vect{u}$ is orthogonal to $\alpha\vect{v}+\beta\vect{w}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.O.T20.knowl">Solution</a></p></div>
+</div>

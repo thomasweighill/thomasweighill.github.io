@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DZRC" acro="DZRC" titletext="Determinant with Zero Row or Column">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DZRC</span><span class="titletext"> Determinant with Zero Row or Column</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix with a row where every entry is zero, or a column where every entry is zero.  Then $\detname{A}=0$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DZRC.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PDM.html#theorem-DZRC" class="context" title="Section PDM">(in context)</a></div>

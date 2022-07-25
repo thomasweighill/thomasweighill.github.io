@@ -1,0 +1,33 @@
+
+<ol>
+<li>Is the matrix below in reduced row-echelon form?  Why or why
+not?
+\begin{equation*}
+\begin{bmatrix}
+1 &amp; 5 &amp; 0 &amp; 6 &amp; 8\\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</li>
+<li>Use row operations to convert the matrix below to reduced
+row-echelon form and report the final matrix.
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 1 &amp; 8\\
+-1 &amp; 1 &amp; -1\\
+-2 &amp; 5 &amp; 4
+\end{bmatrix}
+\end{equation*}
+</li>
+<li>Find all the solutions to the system below by using an augmented
+matrix and row operations.  Report your final matrix in reduced row-echelon form and the set of solutions.
+\begin{align*}
+2x_1 + 3x_2 - x_3&amp;= 0\\
+x_1 + 2x_2 + x_3&amp;= 3\\
+x_1 + 3x_2 + 3x_3&amp;= 7
+\end{align*}
+
+</li>
+</ol>
+

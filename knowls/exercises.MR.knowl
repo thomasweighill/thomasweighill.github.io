@@ -1,0 +1,227 @@
+<div class="exercise" acro="MR.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="KVMR" type="Example" title="Kernel via matrix representation" knowl="./knowls/example.KVMR.knowl">Example KVMR</a> concludes with a basis for the kernel of the linear transformation $T$.  Compute the value of $T$ for each of these two basis vectors.  Did you get what you expected?
+</p></div>
+</div><div class="exercise" acro="MR.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Compute the matrix representation of $T$ relative to the bases $B$ and $C$.
+
+\begin{align*}
+\ltdefn{T}{P_3}{\complex{3}},\quad \lt{T}{a+bx+cx^2+dx^3}=
+\colvector{2a-3b+4c-2d\\a+b-c+d\\3a+2c-3d}\\
+B=\set{1,\,x,\,x^2,\,x^3}\quad\quad
+C=\set{\colvector{1\\0\\0},\,\colvector{1\\1\\0},\,\colvector{1\\1\\1}}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find a matrix representation of the linear transformation $T$ relative to the bases $B$ and $C$.
+\begin{align*}
+&amp;\ltdefn{T}{P_2}{\complex{2}},\quad \lt{T}{p(x)}=\colvector{p(1)\\p(3)}\\
+&amp;B=\set{2-5x+x^2,\,1+x-x^2,\,x^2}\\
+&amp;C=\set{\colvector{3\\4},\,\colvector{2\\3}}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C21.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $S_{22}$ be the vector space of $2\times 2$ symmetric matrices.  Build the matrix representation of the linear transformation $\ltdefn{T}{P_2}{S_{22}}$ relative to the bases $B$ and $C$ and then use this matrix representation to compute $\lt{T}{3+5x-2x^2}$.
+\begin{align*}
+B&amp;=\set{1,\,1+x,\,1+x+x^2}
+&amp;
+C&amp;=\set{
+\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 1 \\ 1 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+}\\
+\lt{T}{a+bx+cx^2}&amp;=
+\begin{bmatrix}
+2a-b+c &amp; a+3b-c \\ a+3b-c &amp; a-c
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C22.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use a matrix representation to determine if the linear transformation $\ltdefn{T}{P_3}{M_{22}}$ is surjective.
+\begin{equation*}
+\lt{T}{a+bx+cx^2+dx^3}=
+\begin{bmatrix}
+-a+4b+c+2d &amp; 4a-b+6c-d\\
+a+5b-2c+2d &amp; a+2c+5d
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C25.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find bases for the kernel and range of the linear transformation $S$ below.
+\begin{equation*}
+\ltdefn{S}{M_{22}}{P_2},\quad\lt{S}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+(a+2b+5c-4d)+(3a-b+8c+2d)x+(a+b+4c-2d)x^2
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $S_{22}$ be the set of $2\times 2$ symmetric matrices.  Verify that the linear transformation $R$ is invertible and find $\ltinverse{R}$.
+\begin{equation*}
+\ltdefn{R}{S_{22}}{P_2},\quad\lt{R}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}=
+(a-b)+(2a-3b-2c)x+(a-b+c)x^2
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that the linear transformation $S$ is invertible.  Then find a formula for the inverse linear transformation, $\ltinverse{S}$, by employing a matrix inverse.
+\begin{equation*}
+\ltdefn{S}{P_1}{M_{12}},\quad \lt{S}{a+bx}=
+\begin{bmatrix} 3a+b &amp; 2a+b \end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C41.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C42">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C42</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The linear transformation $\ltdefn{R}{M_{12}}{M_{21}}$ is invertible.  Use a matrix representation to determine a formula for the inverse linear transformation $\ltdefn{\ltinverse{R}}{M_{21}}{M_{12}}$.
+\begin{equation*}
+\lt{R}{\begin{bmatrix}a &amp; b\end{bmatrix}}
+=
+\begin{bmatrix}
+a+3b\\
+4a+11b
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C42.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use a matrix representation to find a basis for the range of the linear transformation $L$.
+\begin{equation*}
+\ltdefn{L}{M_{22}}{P_2},\quad
+\lt{T}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+(a+2b+4c+d)+(3a+c-2d)x+(-a+b+3c+3d)x^2
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C50.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.C51">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use a matrix representation to find a basis for the kernel of the linear transformation $L$.
+\begin{equation*}
+\ltdefn{L}{M_{22}}{P_2},\quad
+\lt{T}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+(a+2b+4c+d)+(3a+c-2d)x+(-a+b+3c+3d)x^2
+\end{equation*}
+</p></div>
+</div><div class="exercise" acro="MR.C52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find a basis for the kernel of the linear transformation $\ltdefn{T}{P_2}{M_{22}}$.
+\begin{equation*}
+\lt{T}{a+bx+cx^2}=
+\begin{bmatrix}
+a+2b-2c &amp; 2a+2b \\
+-a+b-4c &amp; 3a+2b+2c
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C52.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The linear transformation $D$ performs differentiation on polynomials.  Use a matrix representation of $D$ to find the rank and nullity of $D$.
+\begin{equation*}
+\ltdefn{D}{P_n}{P_n},\quad \lt{D}{p(x)}=p^\prime(x)
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.M20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $U$ and $V$ are vector spaces and define a function $\ltdefn{Z}{U}{V}$ by $\lt{T}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Then <a knowl="./knowls/exercise.IVLT.M60.knowl">Exercise IVLT.M60</a> asks you to formulate the theorem:  $Z$ is invertible if and only if $U=\set{\zerovector_U}$ and $V=\set{\zerovector_V}$.  What would a matrix representation of $Z$ look like in this case?  How does <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a> read in this case?
+</p></div>
+</div><div class="exercise" acro="MR.M80">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M80</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In light of <a class="knowl" acro="KNSI" type="Theorem" title="Kernel and Null Space Isomorphism" knowl="./knowls/theorem.KNSI.knowl">Theorem KNSI</a> and <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a>, write a short comparison of <a knowl="./knowls/exercise.MM.T40.knowl">Exercise MM.T40</a> with <a knowl="./knowls/exercise.ILT.T15.knowl">Exercise ILT.T15</a>.
+</p></div>
+</div><div class="exercise" acro="MR.M81">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M81</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In light of <a class="knowl" acro="RCSI" type="Theorem" title="Range and Column Space Isomorphism" knowl="./knowls/theorem.RCSI.knowl">Theorem RCSI</a> and <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a>, write a short comparison of <a knowl="./knowls/exercise.CRS.T40.knowl">Exercise CRS.T40</a> with <a knowl="./knowls/exercise.SLT.T15.knowl">Exercise SLT.T15</a>.
+</p></div>
+</div><div class="exercise" acro="MR.M82">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M82</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In light of <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a> and <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a>, write a short comparison of  <a class="knowl" acro="SS" type="Theorem" title="Socks and Shoes" knowl="./knowls/theorem.SS.knowl">Theorem SS</a> and <a class="knowl" acro="ICLT" type="Theorem" title="Inverse of a Composition of Linear Transformations" knowl="./knowls/theorem.ICLT.knowl">Theorem ICLT</a>.
+</p></div>
+</div><div class="exercise" acro="MR.M83">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M83</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In light of <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a> and <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a>, write a short comparison of <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a> and <a knowl="./knowls/exercise.IVLT.T40.knowl">Exercise IVLT.T40</a>.
+</p></div>
+</div><div class="exercise" acro="MR.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Construct a new solution to <a knowl="./knowls/exercise.B.T50.knowl">Exercise B.T50</a> along the following outline.  From the $n\times n$ matrix $A$, construct the linear transformation $\ltdefn{T}{\complex{n}}{\complex{n}}$, $\lt{T}{\vect{x}}=A\vect{x}$.  Use <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a>, <a class="knowl" acro="IMILT" type="Theorem" title="Invertible Matrices, Invertible Linear Transformation" knowl="./knowls/theorem.IMILT.knowl">Theorem IMILT</a> and <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> to translate between the nonsingularity of $A$ and the surjectivity/injectivity of $T$.  Then apply <a class="knowl" acro="ILTB" type="Theorem" title="Injective Linear Transformations and Bases" knowl="./knowls/theorem.ILTB.knowl">Theorem ILTB</a> and  <a class="knowl" acro="SLTB" type="Theorem" title="Surjective Linear Transformations and Bases" knowl="./knowls/theorem.SLTB.knowl">Theorem SLTB</a> to connect these properties with bases.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.T20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MR.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T40</span> <span class="contributor"><a knowl="./knowls/contributor.chilijohnson.knowl">Chili Johnson</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="VSLT" type="Theorem" title="Vector Space of Linear Transformations" knowl="./knowls/theorem.VSLT.knowl">Theorem VSLT</a> defines the vector space $\vslt{U}{V}$ containing all linear transformations with domain $U$ and codomain $V$.  Suppose $\dimension{U}=n$ and $\dimension{V}=m$.  Prove that $\vslt{U}{V}$ is isomorphic to $M_{mn}$, the vector space of all $m\times n$ matrices (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>).  (Hint: we could have suggested this exercise in <a href="chapter-LT.html" title="Linear Transformations">Chapter LT</a>, but have postponed it to this section.  Why?)
+</p></div>
+</div><div class="exercise" acro="MR.T41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T41</span> <span class="contributor"><a knowl="./knowls/contributor.chilijohnson.knowl">Chili Johnson</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="VSLT" type="Theorem" title="Vector Space of Linear Transformations" knowl="./knowls/theorem.VSLT.knowl">Theorem VSLT</a> defines the vector space $\vslt{U}{V}$ containing all linear transformations with domain $U$ and codomain $V$.  Determine a basis for $\vslt{U}{V}$.  (Hint: study <a knowl="./knowls/exercise.MR.T40.knowl">Exercise MR.T40</a> first.)
+</p></div>
+</div><div class="exercise" acro="MR.T60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Create an entirely different proof of <a class="knowl" acro="IMILT" type="Theorem" title="Invertible Matrices, Invertible Linear Transformation" knowl="./knowls/theorem.IMILT.knowl">Theorem IMILT</a>  that relies on <a class="knowl" acro="IVLT" type="Definition" title="Invertible Linear Transformations" knowl="./knowls/definition.IVLT.knowl">Definition IVLT</a> to establish the invertibility of $T$, and that relies on <a class="knowl" acro="MI" type="Definition" title="Matrix Inverse" knowl="./knowls/definition.MI.knowl">Definition MI</a> to establish the invertibility of $A$.
+</p></div>
+</div><div class="exercise" acro="MR.T80">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T80</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations, and that $B$, $C$ and $D$ are bases for $U$, $V$, and $W$.  Using only <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a> define matrix representations for $T$ and $S$.  Using these two definitions, and <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>, derive a matrix representation for the composition $\compose{S}{T}$ in terms of the entries of the matrices $\matrixrep{T}{B}{C}$ and $\matrixrep{S}{C}{D}$.  Explain how you would use this result to <em>motivate a definition</em> for matrix multiplication that is strikingly similar to <a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a>.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.T80.knowl">Solution</a></p></div>
+</div>

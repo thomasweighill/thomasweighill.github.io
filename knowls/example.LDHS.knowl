@@ -1,0 +1,38 @@
+<div class="example" id="example-LDHS" acro="LDHS" titletext="Linearly dependent, homogeneous system">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LDHS</span> <span class="titletext">Linearly dependent, homogeneous system</span>
+</h5>
+<p>Is the set of vectors
+\begin{equation*}
+S=\set{
+\colvector{2\\-1\\3\\4\\2},\,
+\colvector{6\\2\\-1\\3\\4},\,
+\colvector{4\\3\\-4\\-1\\2}
+}
+\end{equation*}
+linearly independent or linearly dependent?</p>
+<p><a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a> suggests we study the matrix, $A$, whose columns are the vectors in $S$.  Specifically, we are interested in the size of the solution set for the homogeneous system $\homosystem{A}$, so we row-reduce $A$.
+
+\begin{equation*}
+A=
+\begin{bmatrix}
+2 &amp; 6 &amp; 4\\
+-1 &amp; 2 &amp; 3\\
+3 &amp; -1 &amp; -4\\
+4 &amp; 3 &amp; -1\\
+2 &amp; 4 &amp; 2
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -1\\
+0 &amp; \leading{1} &amp; 1\\
+0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now, $r=2$, so there are $n-r=3-2=1$ free variables and we see that $\homosystem{A}$ has infinitely many solutions (<a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>, <a class="knowl" acro="FVCS" type="Theorem" title="Free Variables for Consistent Systems" knowl="./knowls/theorem.FVCS.knowl">Theorem FVCS</a>).  By <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a>, the set $S$ is linearly dependent.</p>
+<div class="context"><a href="section-LI.html#example-LDHS" class="context" title="Section LI">(in
+context)</a></div>
+</div>

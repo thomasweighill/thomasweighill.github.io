@@ -1,0 +1,6 @@
+<div class="solution" acro="MISLE.T10">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MISLE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>For a large collection of small examples, let $D$ be any $2\times 2$ matrix that has an inverse (<a class="knowl" acro="TTMI" type="Theorem" title="Two-by-Two Matrix Inverse" knowl="./knowls/theorem.TTMI.knowl">Theorem TTMI</a> can help you construct such a matrix, $I_2$ is a simple choice).  Set $A=D$ and $B=(-1)D$.  While $\inverse{A}$ and $\inverse{B}$ both exist, what is $\inverse{\left(A+B\right)}$?<br><br>
+For a large collection of examples of any size, consider $A=B=I_n$.  Can the proposed statement be salvaged to become a theorem?
+</div>

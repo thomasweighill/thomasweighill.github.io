@@ -1,0 +1,42 @@
+<div class="example" id="example-BSM22" acro="BSM22" titletext="A basis for a subspace of $M_{22}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">BSM22</span> <span class="titletext">A basis for a subspace of $M_{22}$</span>
+</h5>
+<p>In <a class="knowl" acro="SSM22" type="Example" title="Spanning set in $M_{22}$" knowl="./knowls/example.SSM22.knowl">Example SSM22</a> we discovered that
+\begin{equation*}
+Q=\set{
+\begin{bmatrix}-3&amp;1\\0&amp;0\end{bmatrix},\,
+\begin{bmatrix}1&amp;0\\-4&amp;1\end{bmatrix}
+}
+\end{equation*}
+is a spanning set for the subspace
+\begin{equation*}
+Z=\setparts{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}{a+3b-c-5d=0,\ -2a-6b+3c+14d=0}
+\end{equation*}
+of the vector space of all $2\times 2$ matrices, $M_{22}$.  If we can also determine that $Q$ is linearly independent in $Z$ (or in $M_{22}$), then it will qualify as a basis for $Z$.</p>
+<p>Let us begin with a relation of linear dependence.
+\begin{align*}
+\begin{bmatrix}0&amp;0\\0&amp;0\end{bmatrix}
+&amp;=
+\alpha_1\begin{bmatrix}-3&amp;1\\0&amp;0\end{bmatrix}+
+\alpha_2\begin{bmatrix}1&amp;0\\-4&amp;1\end{bmatrix}\\
+&amp;=\begin{bmatrix}
+-3\alpha_1 +\alpha_2  &amp; \alpha_1\\
+-4\alpha_2 &amp; \alpha_2
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Using our definition of matrix equality (<a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>) we equate entries and get a homogeneous system of four equations in two variables,
+\begin{align*}
+-3\alpha_1 +\alpha_2&amp;=0\\
+\alpha_1&amp;=0\\
+-4\alpha_2&amp;=0\\
+\alpha_2&amp;=0
+\end{align*}
+
+</p>
+<p>We could row-reduce the coefficient matrix of this homogeneous system, but it is not necessary.  The second and fourth equations tell us that $\alpha_1=0$, $\alpha_2=0$ is the <em>only</em> solution to this homogeneous system.  This qualifies the set $Q$ as being linearly independent, since the only relation of linear dependence is trivial (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>).  Therefore $Q$ is a basis for $Z$ (<a class="knowl" acro="B" type="Definition" title="Basis" knowl="./knowls/definition.B.knowl">Definition B</a>).</p>
+<div class="context"><a href="section-B.html#example-BSM22" class="context" title="Section B">(in
+context)</a></div>
+</div>

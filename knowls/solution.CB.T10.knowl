@@ -1,0 +1,15 @@
+<div class="solution" acro="CB.T10">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">CB.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Let $\vect{v}$ be an eigenvector of $T$ for the eigenvalue $\lambda$.  Then,
+\begin{align*}
+\lt{\ltinverse{T}}{\vect{v}}&amp;=
+\frac{1}{\lambda}\lambda\lt{\ltinverse{T}}{\vect{v}}&amp;&amp;\text{$\lambda\neq 0$}\\
+&amp;=\frac{1}{\lambda}\lt{\ltinverse{T}}{\lambda\vect{v}}&amp;&amp;\knowl{./knowls/theorem.ILTLT.knowl}{\text{Theorem ILTLT}}\\
+&amp;=\frac{1}{\lambda}\lt{\ltinverse{T}}{\lt{T}{\vect{v}}}&amp;&amp;\text{$\vect{v}$ eigenvector of $T$}\\
+&amp;=\frac{1}{\lambda}\lt{I_V}{\vect{v}}&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\frac{1}{\lambda}\vect{v}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}
+\end{align*}
+
+which says that $\displaystyle\frac{1}{\lambda}$ is an eigenvalue of $\ltinverse{T}$ with eigenvector $\vect{v}$.  Note that it is possible to prove that any eigenvalue of an invertible linear transformation is never zero.  So the hypothesis that $\lambda$ be nonzero is just a convenience for this problem.
+</div>

@@ -1,0 +1,17 @@
+<div class="theorem" id="theorem-ILTB" acro="ILTB" titletext="Injective Linear Transformations and Bases">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ILTB</span><span class="titletext"> Injective Linear Transformations and Bases</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and
+\begin{align*}
+B&amp;=\set{\vectorlist{u}{m}}
+\end{align*}
+
+is a basis of $U$.  Then $T$ is injective if and only if
+\begin{align*}
+C&amp;=\set{\lt{T}{\vect{u}_1},\,\lt{T}{\vect{u}_2},\,\lt{T}{\vect{u}_3},\,\ldots,\,\lt{T}{\vect{u}_m}}
+\end{align*}
+
+is a linearly independent subset of $V$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ILTB.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-ILT.html#theorem-ILTB" class="context" title="Section ILT">(in context)</a></div>

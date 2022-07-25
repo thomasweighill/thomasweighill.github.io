@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DP" acro="DP" titletext="Dimension of $P_n$">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DP</span><span class="titletext"> Dimension of $P_n$</span>
+</h5>
+<div class="statement"><p>The dimension of $P_{n}$  (<a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>) is $n+1$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DP.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-DP" class="context" title="Section D">(in context)</a></div>

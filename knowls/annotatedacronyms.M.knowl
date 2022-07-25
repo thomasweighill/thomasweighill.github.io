@@ -1,0 +1,49 @@
+<div class="annotatedacronyms" id="annotatedacronyms-M" acro="M" titletext="">
+<h5 class="annotatedacronyms">
+<span class="type">Annotated Acronyms for Chapter</span> <span class="acro">M</span>
+</h5>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="VSPM" type="Theorem" title="Vector Space Properties of Matrices" knowl="./knowls/theorem.VSPM.knowl">Theorem VSPM</a></h5></div>
+<p>
+These are the fundamental rules for working with the addition, and scalar multiplication, of matrices.  We saw something very similar in the previous chapter (<a class="knowl" acro="VSPCV" type="Theorem" title="Vector Space Properties of Column Vectors" knowl="./knowls/theorem.VSPCV.knowl">Theorem VSPCV</a>).  Together, these two definitions will provide our definition for the key definition, <a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a>.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="SLEMM" type="Theorem" title="Systems of Linear Equations as Matrix Multiplication" knowl="./knowls/theorem.SLEMM.knowl">Theorem SLEMM</a></h5></div>
+<p>
+<a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> connected linear combinations with systems of equations.  <a class="knowl" acro="SLEMM" type="Theorem" title="Systems of Linear Equations as Matrix Multiplication" knowl="./knowls/theorem.SLEMM.knowl">Theorem SLEMM</a> connects the matrix-vector product (<a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a>) and column vector equality (<a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>) with systems of equations.   We will see this one regularly.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a></h5></div>
+<p>
+This theorem is a workhorse in <a href="section-MM.html" title="Matrix Multiplication">Section MM</a> and will continue to make regular appearances.  If you want to get better at formulating proofs, the application of this theorem can be a key step in gaining that broader understanding.  While it might be hard to imagine <a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a> as a <em>definition</em> of matrix multiplication, we will see in <a knowl="./knowls/exercise.MR.T80.knowl">Exercise MR.T80</a> that in theory it is actually a <em>better</em> definition of matrix multiplication long-term.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a></h5></div>
+<p>
+The inverse of a matrix is key.  Here is how you can get one if you know how to row-reduce.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a></h5></div>
+<p>
+This theorem is a fundamental tool for proving subsequent important theorems, such as <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a>.  It may also be the best explantion for the term “nonsingular.”
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a></h5></div>
+<p>
+“Nonsingularity” or “invertibility”?  Pick your favorite, or show your versatility by using one or the other in the right context.  They mean the same thing.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a></h5></div>
+<p>
+Given a coefficient matrix, which vectors of constants create consistent systems?  This theorem tells us that the answer is exactly those column vectors in the column space.  Conversely, we also use this theorem to test for membership in the column space by checking the consistency of the appropriate system of equations.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a></h5></div>
+<p>
+Another theorem that provides a linearly independent set of vectors whose span equals some set of interest (a column space this time).
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a></h5></div>
+<p>
+Yet another theorem that provides a linearly independent set of vectors whose span equals some set of interest (a row space).
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="CSRST" type="Theorem" title="Column Space, Row Space, Transpose" knowl="./knowls/theorem.CSRST.knowl">Theorem CSRST</a></h5></div>
+<p>
+Column spaces, row spaces, transposes, rows, columns.  Many of the connections between these objects are based on the simple observation captured in this theorem.  This is not a deep result.  We state it as a theorem for convenience, so we can refer to it as needed.
+</p>
+<div class="annoacro"><h5 class="annoacro"><a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a></h5></div>
+<p>
+This theorem is inherently interesting, if not computationally satisfying.  Null space, row space, column space, left null space — here they all are, simply by row reducing the extended matrix and applying <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> and <a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a> twice (each).  Nice.
+</p>
+</div>

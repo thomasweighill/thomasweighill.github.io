@@ -1,0 +1,36 @@
+<div class="theorem" id="theorem-NME9" acro="NME9" titletext="Nonsingular Matrix Equivalences, Round 9">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">NME9</span><span class="titletext"> Nonsingular Matrix Equivalences, Round 9</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$.  The following are equivalent.
+<ol>
+<li> $A$ is nonsingular.
+</li>
+<li> $A$ row-reduces to the identity matrix.
+</li>
+<li> The null space of $A$ contains only the zero vector, $\nsp{A}=\set{\zerovector}$.
+</li>
+<li> The linear system $\linearsystem{A}{\vect{b}}$ has a unique solution for every possible choice of $\vect{b}$.
+</li>
+<li> The columns of $A$ are a linearly independent set.
+</li>
+<li> $A$ is invertible.
+</li>
+<li> The column space of $A$ is $\complex{n}$, $\csp{A}=\complex{n}$.
+</li>
+<li> The columns of $A$ are a basis for $\complex{n}$.
+</li>
+<li> The rank of $A$ is $n$, $\rank{A}=n$.
+</li>
+<li> The nullity of $A$ is zero, $\nullity{A}=0$.
+</li>
+<li> The determinant of $A$ is nonzero, $\detname{A}\neq 0$.
+</li>
+<li> $\lambda=0$ is not an eigenvalue of $A$.
+</li>
+<li> The linear transformation $\ltdefn{T}{\complex{n}}{\complex{n}}$ defined by $\lt{T}{\vect{x}}=A\vect{x}$ is invertible.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.NME9.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#theorem-NME9" class="context" title="Section MR">(in context)</a></div>

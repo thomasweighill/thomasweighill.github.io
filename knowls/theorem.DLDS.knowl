@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DLDS" acro="DLDS" titletext="Dependency in Linearly Dependent Sets">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DLDS</span><span class="titletext"> Dependency in Linearly Dependent Sets</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{u}{n}}$ is a set of vectors.  Then $S$ is a linearly dependent set if and only if there is an index $t$, $1\leq t\leq n$ such that $\vect{u_t}$ is a linear combination of the vectors $\vect{u}_1,\,\vect{u}_2,\,\vect{u}_3,\,\ldots,\,\vect{u}_{t-1},\,\vect{u}_{t+1},\,\ldots,\,\vect{u}_n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DLDS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LDS.html#theorem-DLDS" class="context" title="Section LDS">(in context)</a></div>

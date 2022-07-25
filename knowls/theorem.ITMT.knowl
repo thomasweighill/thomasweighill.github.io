@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-ITMT" acro="ITMT" titletext="Inverse of a Triangular Matrix is Triangular">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ITMT</span><span class="titletext"> Inverse of a Triangular Matrix is Triangular</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a nonsingular matrix of size $n$ that is triangular.  Then the inverse of $A$, $\inverse{A}$, is triangular of the same type.  Furthermore, the diagonal entries of $\inverse{A}$ are the reciprocals of the corresponding diagonal entries of $A$.  More precisely, $\matrixentry{\inverse{A}}{ii}=\matrixentry{A}{ii}^{-1}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ITMT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#theorem-ITMT" class="context" title="Section OD">(in context)</a></div>

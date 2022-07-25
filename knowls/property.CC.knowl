@@ -1,0 +1,7 @@
+<div class="property" id="property-CC" acro="CC" titletext="Commutativity, Column Vectors">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">CC</span> <span class="titletext">Commutativity, Column Vectors</span>
+</h5>
+<p>
+If $\vect{u},\,\vect{v}\in\complex{m}$, then $\vect{u}+\vect{v}=\vect{v}+\vect{u}$.</p>
+</div>

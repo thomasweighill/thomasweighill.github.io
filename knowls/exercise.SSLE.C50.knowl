@@ -1,0 +1,8 @@
+<div class="exercise" acro="SSLE.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SSLE.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A three-digit number has two properties.  The tens-digit and the ones-digit add up to 5.  If the number is written with the digits in the reverse order, and then subtracted from the original number, the result is $792$.  Use a system of equations to find all of the three-digit numbers with these properties.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SSLE.C50.knowl">Solution</a></p></div>
+</div>

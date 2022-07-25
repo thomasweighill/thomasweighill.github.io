@@ -1,0 +1,9 @@
+<div class="proof" id="proof-LIVHS" acro="LIVHS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">LIVHS</span>
+</h5>
+<p>(⇐)  Suppose that $\homosystem{A}$ has a unique solution.  Since it is a homogeneous system, this solution must be the trivial solution $\vect{x}=\zerovector$.  By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a>, this means that the only relation of linear dependence on $S$ is the trivial one.  So $S$ is linearly independent.</p>
+
+<p>(⇒)  We will prove the contrapositive.  Suppose that $\linearsystem{A}{\zerovector}$ does not have a unique solution.  Since it is a homogeneous system, it is consistent (<a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>), and so must have infinitely many solutions (<a class="knowl" acro="PSSLS" type="Theorem" title="Possible Solution Sets for Linear Systems" knowl="./knowls/theorem.PSSLS.knowl">Theorem PSSLS</a>).  One of these infinitely many solutions must be nontrivial (in fact, almost all of them are), so choose one.  By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> this nontrivial solution will give a nontrivial relation of linear dependence on $S$, so we can conclude that $S$ is a linearly dependent set.</p>
+
+</div>

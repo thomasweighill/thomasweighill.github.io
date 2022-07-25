@@ -1,0 +1,63 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-CEVEC', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">CEVEC</span> <span class="titletext">Computing Eigenvectors</span>
+</h5>
+
+
+<p>There are three ways to get eigenvectors in Sage.  For each eigenvalue, the method <span class="code">.eigenvectors_right()</span> will return a list of eigenvectors that is a basis for the associated eigenspace.  The method <span class="code">.eigenspaces_right()</span> will return an eigenspace (in other words, a vector space, rather than a list of vectors) for each eigenvalue.  There are also <span class="code">eigenmatrix</span> methods which we will describe at the end of the chapter in <a class="knowl" acro="MD" type="Sage" title="" knowl="./knowls/sage.MD.knowl">Sage MD</a>.</p>
+
+<p>The matrix method <span class="code">.eigenvectors_right()</span> (or equivalently the matrix method <span class="code">.right_eigenvectors()</span>) produces a list of triples, one triple per eigenvalue.  Each triple has an eigenvalue, a list, and then the algebraic multiplicity of the eigenvalue.  The list contains vectors forming a basis for the eigenspace.  Notice that the length of the list of eigenvectors will be the geometric multiplicity (and there is no easier way to get this information).</p>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage">A = matrix(QQ, [[-5,  1, 7, -15],
+                [-2,  0, 5,  -7],
+                [ 1, -5, 7,  -3],
+                [ 4, -7, 3,   4]])
+A.eigenvectors_right()
+</script></div>
+
+<p>Note that this is a good place to practice burrowing down into Sage output that is full of lists (and lists of lists).  See if you can extract just the second eigenvector for $\lambda=3$ using a single statement.  Or perhaps try obtaining the geometric multiplicity of $\lambda=-2i$.  Notice, too, that Sage has automatically upgraded to <span class="code">QQbar</span> to get the complex eigenvalues.</p>
+
+<p>The matrix method <span class="code">.eigenspaces_right()</span> (equal to <span class="code">.right_eigenspaces()</span>) produces a list of pairs, one pair per eigenvalue.  Each pair has an eigenvalue, followed by the eigenvalue's eigenspace.  Notice that the basis matrix of the eigenspace may not have the same eigenvectors you might get from other methods.  Similar to the <span class="code">eigenvectors</span> method, the dimension of the eigenspace will yield the geometric multiplicity (and there is no easier way to get this information).   If you need the algebraic multiplicities, you can supply the keyword option <span class="code">algebraic_multiplicity=True</span> to get back triples with the algebraic multiplicity in the third entry of the triple.  We will recycle the example above, and not demonstrate the algebraic multiplicity option.  (We have formatted the one-row  basis matrices over <span class="code">QQbar</span> across several lines.)</p>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage">A.eigenspaces_right()
+</script></div>
+
+<p>Notice how the output includes a subspace of dimension two over the rationals, and two subspaces of dimension one over the algebraic numbers.</p>
+
+<p>The upcoming <a class="knowl" acro="EE.ECEE" type="Subsection" title="" knowl="./knowls/subsection.EE.ECEE.knowl">Subsection EE.ECEE</a> has many examples, which mostly reflect techniques that might be possible to verify by hand.  Here is the same matrix as above, analyzed in a similar way.  Practicing the examples in this subsection, either directly with the higher-level Sage commands, and/or with more primitive commands (as below) would be an extremely  good exercise at this point.</p>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage">A = matrix(QQ, [[-5,  1, 7, -15],
+                [-2,  0, 5, -7],
+                [ 1, -5, 7, -3],
+                [ 4, -7, 3, 4]])
+# eigenvalues
+A.characteristic_polynomial()
+</script></div>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage">A.characteristic_polynomial().factor()
+</script></div>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage">A.characteristic_polynomial().roots(QQbar)
+</script></div>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage"># eigenspaces, rational
+(A-3*identity_matrix(4)).right_kernel(basis='pivot')
+</script></div>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage"># eigenspaces, complex
+B = A.change_ring(QQbar)
+(B-(2*I)*identity_matrix(4)).right_kernel(basis='pivot')
+</script></div>
+
+<br><br><div class="sage-CEVEC"><script type="text/x-sage">(B-(-2*I)*identity_matrix(4)).right_kernel(basis='pivot')
+</script></div>
+
+<p>Notice how we changed the number system to the algebraic numbers before working with the complex eigenvalues.  Also, we are using the <span class="code">basis='pivot'</span> keyword option so that bases for the eigenspaces look more like the bases described in <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a>.</p>
+
+<p>By now, it should be clear why we keep using the “right” variants of these methods.  Eigenvectors can be defined “on the right”, $A\vect{x}=\lambda\vect{x}$ as we have done, or “on the left,”  $\vect{x}A=\lambda\vect{x}$.  So use the “right” versions of the eigenvalue and eigenvector commands to stay consistent with the text.  Recognize, too, that eigenspaces may be computed with different bases than those given in the text (typically like those for null spaces with the <span class="code">basis='echelon'</span> option).</p>
+
+<p>Why does the <span class="code">.eigenvalues()</span> method not come in left and right versions?  The upcoming <a class="knowl" acro="ETM" type="Theorem" title="Eigenvalues of the Transpose of a Matrix" knowl="./knowls/theorem.ETM.knowl">Theorem ETM</a> can be used to show that the two versions would have identical output, so there is no need.</p>
+
+<br><br><div class="sage-CEVEC sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

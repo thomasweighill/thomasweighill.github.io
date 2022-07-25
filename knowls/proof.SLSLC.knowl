@@ -1,0 +1,104 @@
+<div class="proof" id="proof-SLSLC" acro="SLSLC" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SLSLC</span>
+</h5>
+<p>The proof of this theorem is as much about a change in notation as it is about making logical deductions.    Write the system of equations $\linearsystem{A}{\vect{b}}$ as
+\begin{align*}
+a_{11}x_1+a_{12}x_2+a_{13}x_3+\dots+a_{1n}x_n&amp;=b_1\\
+a_{21}x_1+a_{22}x_2+a_{23}x_3+\dots+a_{2n}x_n&amp;=b_2\\
+a_{31}x_1+a_{32}x_2+a_{33}x_3+\dots+a_{3n}x_n&amp;=b_3\\
+\vdots&amp;\\
+a_{m1}x_1+a_{m2}x_2+a_{m3}x_3+\dots+a_{mn}x_n&amp;=b_m
+\end{align*}
+</p>
+
+<p>Notice then that the entry of the coefficient matrix $A$ in row $i$ and column $j$ has two names:  $a_{ij}$ as the coefficient of $x_j$ in equation $i$ of the system and $\vectorentry{\vect{A}_j}{i}$ as the $i$-th entry of the column vector in column $j$ of the coefficient matrix $A$.  Likewise, entry $i$ of $\vect{b}$ has two names:  $b_i$ from the linear system and $\vectorentry{\vect{b}}{i}$ as an entry of a vector.  Our theorem is an equivalence (<a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a>) so we need to prove both “directions.”</p>
+
+<p>(⇐)   Suppose we have the vector equality between $\vect{b}$ and the linear combination of the columns of $A$.  Then for $1\leq i\leq m$,
+\begin{align*}
+b_i
+&amp;=\vectorentry{\vect{b}}{i}&amp;&amp;\knowl{./knowls/definition.CV.knowl}{\text{Definition CV}}\\
+&amp;=\vectorentry{
+\vectorentry{\vect{x}}{1}\vect{A}_1+
+\vectorentry{\vect{x}}{2}\vect{A}_2+
+\vectorentry{\vect{x}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{x}}{n}\vect{A}_n
+}{i}&amp;&amp;\text{Hypothesis}\\
+&amp;=
+\vectorentry{\vectorentry{\vect{x}}{1}\vect{A}_1}{i}+
+\vectorentry{\vectorentry{\vect{x}}{2}\vect{A}_2}{i}+
+\vectorentry{\vectorentry{\vect{x}}{3}\vect{A}_3}{i}+
+\cdots+
+\vectorentry{\vectorentry{\vect{x}}{n}\vect{A}_n}{i}
+&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;=
+\vectorentry{\vect{x}}{1}\vectorentry{\vect{A}_1}{i}+
+\vectorentry{\vect{x}}{2}\vectorentry{\vect{A}_2}{i}+
+\vectorentry{\vect{x}}{3}\vectorentry{\vect{A}_3}{i}+
+\cdots+
+\vectorentry{\vect{x}}{n}\vectorentry{\vect{A}_n}{i}
+&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}\\
+&amp;=
+\vectorentry{\vect{x}}{1}a_{i1}+
+\vectorentry{\vect{x}}{2}a_{i2}+
+\vectorentry{\vect{x}}{3}a_{i3}+
+\cdots+
+\vectorentry{\vect{x}}{n}a_{in}
+&amp;&amp;\knowl{./knowls/definition.CV.knowl}{\text{Definition CV}}\\
+&amp;=
+a_{i1}\vectorentry{\vect{x}}{1}+
+a_{i2}\vectorentry{\vect{x}}{2}+
+a_{i3}\vectorentry{\vect{x}}{3}+
+\cdots+
+a_{in}\vectorentry{\vect{x}}{n}
+&amp;&amp;\knowl{./knowls/property.CMCN.knowl}{\text{Property CMCN}}
+\end{align*}
+</p>
+
+<p>This says that the entries of $\vect{x}$ form a solution to equation $i$ of $\linearsystem{A}{\vect{b}}$ for all $1\leq i\leq m$, in other words, $\vect{x}$ is a solution to $\linearsystem{A}{\vect{b}}$.</p>
+
+<p>(⇒)  Suppose now that $\vect{x}$ is a solution to the linear system $\linearsystem{A}{\vect{b}}$.  Then for all $1\leq i\leq m$,
+\begin{align*}
+\vectorentry{\vect{b}}{i}
+&amp;=b_i&amp;&amp;\knowl{./knowls/definition.CV.knowl}{\text{Definition CV}}\\
+&amp;=
+a_{i1}\vectorentry{\vect{x}}{1}+
+a_{i2}\vectorentry{\vect{x}}{2}+
+a_{i3}\vectorentry{\vect{x}}{3}+
+\cdots+
+a_{in}\vectorentry{\vect{x}}{n}
+&amp;&amp;\text{Hypothesis}\\
+&amp;=
+\vectorentry{\vect{x}}{1}a_{i1}+
+\vectorentry{\vect{x}}{2}a_{i2}+
+\vectorentry{\vect{x}}{3}a_{i3}+
+\cdots+
+\vectorentry{\vect{x}}{n}a_{in}
+&amp;&amp;\knowl{./knowls/property.CMCN.knowl}{\text{Property CMCN}}\\
+&amp;=
+\vectorentry{\vect{x}}{1}\vectorentry{\vect{A}_1}{i}+
+\vectorentry{\vect{x}}{2}\vectorentry{\vect{A}_2}{i}+
+\vectorentry{\vect{x}}{3}\vectorentry{\vect{A}_3}{i}+
+\cdots+
+\vectorentry{\vect{x}}{n}\vectorentry{\vect{A}_n}{i}
+&amp;&amp;\knowl{./knowls/definition.CV.knowl}{\text{Definition CV}}\\
+&amp;=
+\vectorentry{\vectorentry{\vect{x}}{1}\vect{A}_1}{i}+
+\vectorentry{\vectorentry{\vect{x}}{2}\vect{A}_2}{i}+
+\vectorentry{\vectorentry{\vect{x}}{3}\vect{A}_3}{i}+
+\cdots+
+\vectorentry{\vectorentry{\vect{x}}{n}\vect{A}_n}{i}
+&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}\\
+&amp;=\vectorentry{
+\vectorentry{\vect{x}}{1}\vect{A}_1+
+\vectorentry{\vect{x}}{2}\vect{A}_2+
+\vectorentry{\vect{x}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{x}}{n}\vect{A}_n
+}{i}&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}
+\end{align*}
+
+So the entries of the vector $\vect{b}$, and the entries of the vector that is the linear combination of the columns of $A$, agree for all $1\leq i\leq m$.  By <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> we see that the two vectors are equal, as desired.</p>
+
+</div>

@@ -1,0 +1,58 @@
+<div class="example" id="example-MCSM" acro="MCSM" titletext="Membership in the column space of a matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">MCSM</span> <span class="titletext">Membership in the column space of a matrix</span>
+</h5>
+<p>Consider the column space of the $3\times 4$ matrix $A$,
+\begin{equation*}
+A=
+\begin{bmatrix}
+3 &amp; 2 &amp; 1 &amp; -4\\
+-1 &amp; 1 &amp; -2 &amp; 3\\
+2 &amp; -4 &amp; 6 &amp; -8
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We first show that $\vect{v}=\colvector{18\\-6\\12}$ is in the column space of $A$, $\vect{v}\in\csp{A}$.  <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> says we need only check the consistency of $\linearsystem{A}{\vect{v}}$.  Form the augmented matrix and row-reduce,
+\begin{equation*}
+\begin{bmatrix}
+3 &amp; 2 &amp; 1 &amp; -4 &amp; 18\\
+-1 &amp; 1 &amp; -2 &amp; 3 &amp; -6\\
+2 &amp; -4 &amp; 6 &amp; -8 &amp; 12
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1 &amp; -2 &amp; 6\\
+0 &amp; \leading{1} &amp; -1 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Since the final column is not a pivot column, <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> tells us the system is consistent and therefore by <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, $\vect{v}\in\csp{A}$.</p>
+<p>If we wished to demonstrate explicitly that $\vect{v}$ is a linear combination of the columns of $A$, we can find a solution (any solution) of $\linearsystem{A}{\vect{v}}$ and use <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> to construct the desired linear combination.  For example, set the free variables to $x_3=2$ and $x_4=1$.  Then a solution has $x_2=1$ and $x_1=6$.  Then by <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a>,
+\begin{equation*}
+\vect{v}=\colvector{18\\-6\\12}=
+6\colvector{3\\-1\\2}+
+1\colvector{2\\1\\-4}+
+2\colvector{1\\-2\\6}+
+1\colvector{-4\\3\\-8}
+\end{equation*}
+</p>
+<p>Now we show that $\vect{w}=\colvector{2\\1\\-3}$ is not in the column space of $A$, $\vect{w}\not\in\csp{A}$.  <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> says we need only check the consistency of $\linearsystem{A}{\vect{w}}$.  Form the augmented matrix and row-reduce,
+\begin{equation*}
+\begin{bmatrix}
+3 &amp; 2 &amp; 1 &amp; -4 &amp; 2\\
+-1 &amp; 1 &amp; -2 &amp; 3 &amp; 1\\
+2 &amp; -4 &amp; 6 &amp; -8 &amp; -3
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1 &amp; -2 &amp; 0\\
+0 &amp; \leading{1} &amp; -1 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>since the final column is a pivot column, <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> tells us the system is inconsistent and therefore by <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, $\vect{w}\not\in\csp{A}$.</p>
+<div class="context"><a href="section-CRS.html#example-MCSM" class="context" title="Section CRS">(in
+context)</a></div>
+</div>

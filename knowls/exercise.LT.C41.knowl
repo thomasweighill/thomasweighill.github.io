@@ -1,0 +1,12 @@
+<div class="exercise" acro="LT.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C41</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If $\ltdefn{T}{\complex{2}}{\complex{3}}$ satisfies
+$\lt{T}{\colvector{2\\3}} = \colvector{2\\2\\1}$
+and
+$\lt{T}{\colvector{3\\4}} = \colvector{-1\\0\\2}$,
+find the matrix representation of $T$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C41.knowl">Solution</a></p></div>
+</div>

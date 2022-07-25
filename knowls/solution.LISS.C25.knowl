@@ -1,0 +1,59 @@
+<div class="solution" acro="LISS.C25">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LISS.C25</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<ol>
+<li>
+If $S$ spans $M_{22}$, then for every $2 \times 2$ matrix
+$B = \begin{bmatrix}x &amp; y \\ z &amp; w\end{bmatrix}$,
+there exist constants $\alpha, \beta, \gamma$ so that
+\begin{align*}
+\begin{bmatrix}x &amp; y \\ z &amp; w\end{bmatrix}
+&amp;=
+\alpha\begin{bmatrix} 1&amp; 2\\2 &amp; 1 \end{bmatrix} +
+\beta\begin{bmatrix} 2 &amp; 1\\ -1 &amp; 2\end{bmatrix} +
+\gamma\begin{bmatrix} 0 &amp; 1\\ 1 &amp; 2\end{bmatrix}
+\end{align*}
+
+Applying <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>, this leads to the linear system
+\begin{align*}
+\alpha + 2\beta  &amp;= x\\
+2\alpha + \beta + \gamma &amp;= y\\
+2\alpha - \beta + \gamma &amp;= z\\
+\alpha + 2\beta + 2\gamma &amp;= w.
+\end{align*}
+
+We need to row-reduce the augmented matrix of this system by hand due to the symbols $x$, $y$, $z$, and $w$ in the vector of constants.
+\begin{align*}
+\begin{bmatrix}
+1 &amp; 2 &amp; 0 &amp; x\\
+2 &amp; 1 &amp; 1 &amp; y\\
+2 &amp; -1 &amp; 1 &amp; z\\
+1 &amp; 2 &amp; 2 &amp; w
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; x - y + z\\
+0 &amp; \leading{1} &amp; 0 &amp; \frac{1}{2}(y - z)\\
+0 &amp; 0 &amp; \leading{1} &amp; \frac{1}{2}(w - x)\\
+0 &amp; 0 &amp; 0 &amp; \frac{1}{2}(5y - 3x - 3z - w)
+\end{bmatrix}
+\end{align*}
+
+It is easy to find values of $x, y, z$ and $w$ so that the final column will become a pivot column after a few more row operations, namely any choice with $5y - 3x - 3z - w \ne 0$.  Thus, by <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> the system would be inconsistent and there is a matrix in $M_{22}$ that is not in the span of $S$.  One such matrix is $B = \begin{bmatrix} 3 &amp; 3 \\ 3 &amp; 2\end{bmatrix}$.)  So $S$ does not span $M_{22}$.
+</li>
+<li>
+To check for linear independence, we need to see if there are nontrivial coefficients $\alpha, \beta, \gamma$ that solve
+\begin{align*}
+\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 0\end{bmatrix}
+&amp;=
+\alpha\begin{bmatrix} 1&amp; 2\\2 &amp; 1 \end{bmatrix} +
+\beta\begin{bmatrix} 2 &amp; 1\\ -1 &amp; 2\end{bmatrix}+
+\gamma\begin{bmatrix} 0 &amp; 1\\ 1 &amp; 2\end{bmatrix}
+\end{align*}
+
+This requires the same work that was done in part (a), with $x = y = z = w = 0$.
+In that case, the coefficient matrix row-reduces so the first three columns are pivot columns and a row of zeros on the bottom, so we know that the only solution to the matrix equation is $\alpha = \beta = \gamma = 0$.  So the set $S$ is linearly independent.
+</li>
+</ol>
+</div>

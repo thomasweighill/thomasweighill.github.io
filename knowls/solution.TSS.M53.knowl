@@ -1,0 +1,5 @@
+<div class="solution" acro="TSS.M53">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">TSS.M53</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The system could be inconsistent.  If it is consistent, then because it has more variables than equations <a class="knowl" acro="CMVEI" type="Theorem" title="Consistent, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.CMVEI.knowl">Theorem CMVEI</a> implies that there would be infinitely many solutions.  So, of all the possibilities in <a class="knowl" acro="PSSLS" type="Theorem" title="Possible Solution Sets for Linear Systems" knowl="./knowls/theorem.PSSLS.knowl">Theorem PSSLS</a>, only the case of a unique solution can be ruled out.
+</div>

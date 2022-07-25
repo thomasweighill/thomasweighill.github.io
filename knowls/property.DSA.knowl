@@ -1,0 +1,8 @@
+<div class="property" id="property-DSA" acro="DSA" titletext="Distributivity across Scalar Addition">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">DSA</span> <span class="titletext">Distributivity across Scalar Addition</span>
+</h5>
+<p>
+If $\alpha,\,\beta\in\complex{\null}$ and $\vect{u}\in V$, then
+$(\alpha+\beta)\vect{u}=\alpha\vect{u}+\beta\vect{u}$.</p>
+</div>

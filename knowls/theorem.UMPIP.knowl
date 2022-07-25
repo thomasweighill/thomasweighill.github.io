@@ -1,0 +1,16 @@
+<div class="theorem" id="theorem-UMPIP" acro="UMPIP" titletext="Unitary Matrices Preserve Inner Products">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">UMPIP</span><span class="titletext"> Unitary Matrices Preserve Inner Products</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ is a unitary matrix of size $n$ and $\vect{u}$ and $\vect{v}$ are two vectors from $\complex{n}$.  Then
+\begin{align*}
+\innerproduct{U\vect{u}}{U\vect{v}}&amp;=\innerproduct{\vect{u}}{\vect{v}}
+&amp;
+&amp;\text{and}
+&amp;
+\norm{U\vect{v}}&amp;=\norm{\vect{v}}
+\end{align*}
+
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.UMPIP.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MINM.html#theorem-UMPIP" class="context" title="Section MINM">(in context)</a></div>

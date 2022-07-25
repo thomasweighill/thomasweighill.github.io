@@ -1,0 +1,78 @@
+<div class="example" id="example-DMS3" acro="DMS3" titletext="Diagonalizing a matrix of size 3">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">DMS3</span> <span class="titletext">Diagonalizing a matrix of size 3</span>
+</h5>
+<p>Consider the matrix
+\begin{equation*}
+F=
+\begin{bmatrix}
+-13 &amp; -8 &amp; -4\\
+12 &amp; 7 &amp; 4\\
+24 &amp; 16 &amp; 7
+\end{bmatrix}
+\end{equation*}
+of <a class="knowl" acro="CPMS3" type="Example" title="Characteristic polynomial of a matrix, size 3" knowl="./knowls/example.CPMS3.knowl">Example CPMS3</a>, <a class="knowl" acro="EMS3" type="Example" title="Eigenvalues of a matrix, size 3" knowl="./knowls/example.EMS3.knowl">Example EMS3</a> and <a class="knowl" acro="ESMS3" type="Example" title="Eigenspaces of a matrix, size 3" knowl="./knowls/example.ESMS3.knowl">Example ESMS3</a>.  $F$'s eigenvalues and eigenspaces are
+\begin{align*}
+\eigensystem{F}{3}{\colvector{-\frac{1}{2}\\\frac{1}{2}\\1}}\\
+\eigensystem{F}{-1}{\colvector{-\frac{2}{3}\\1\\0},\,\colvector{-\frac{1}{3}\\0\\1}}
+\end{align*}
+</p>
+<p>Define the matrix $S$ to be the $3\times 3$ matrix whose columns are the three basis vectors in the eigenspaces for $F$,
+\begin{equation*}
+S=
+\begin{bmatrix}
+-\frac{1}{2} &amp; -\frac{2}{3} &amp; -\frac{1}{3}\\
+\frac{1}{2} &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Check that $S$ is nonsingular (row-reduces to the identity matrix, <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> or has a nonzero determinant, <a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a>).  Then the three columns of $S$ are a linearly independent set (<a class="knowl" acro="NMLIC" type="Theorem" title="Nonsingular Matrices have Linearly Independent Columns" knowl="./knowls/theorem.NMLIC.knowl">Theorem NMLIC</a>).  By <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> we now know that $F$ is diagonalizable.  Furthermore, the construction in the proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> tells us that if we apply the matrix $S$ to $F$ in a similarity transformation, the result will be a diagonal matrix with the eigenvalues of $F$ on the diagonal.  The eigenvalues appear on the diagonal of the matrix in the same order as the eigenvectors appear in $S$.  So,
+\begin{align*}
+\similar{F}{S}&amp;=
+\inverse{
+\begin{bmatrix}
+-\frac{1}{2} &amp; -\frac{2}{3} &amp; -\frac{1}{3}\\
+\frac{1}{2} &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 1
+\end{bmatrix}
+}
+\begin{bmatrix}
+-13 &amp; -8 &amp; -4\\
+12 &amp; 7 &amp; 4\\
+24 &amp; 16 &amp; 7
+\end{bmatrix}
+\begin{bmatrix}
+-\frac{1}{2} &amp; -\frac{2}{3} &amp; -\frac{1}{3}\\
+\frac{1}{2} &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 1
+\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+6 &amp; 4 &amp; 2\\
+-3 &amp; -1 &amp; -1\\
+-6 &amp; -4 &amp; -1
+\end{bmatrix}
+\begin{bmatrix}
+-13 &amp; -8 &amp; -4\\
+12 &amp; 7 &amp; 4\\
+24 &amp; 16 &amp; 7
+\end{bmatrix}
+\begin{bmatrix}
+-\frac{1}{2} &amp; -\frac{2}{3} &amp; -\frac{1}{3}\\
+\frac{1}{2} &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 1
+\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+3 &amp; 0 &amp; 0\\
+0 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; -1
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Note that the above computations can be viewed two ways.  The proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> tells us that the four matrices ($F$, $S$, $\inverse{F}$ and the diagonal matrix) <em>will</em> interact the way we have written the equation.  Or as an example, we can actually <em>perform</em> the computations to verify what the theorem predicts.</p>
+<div class="context"><a href="section-SD.html#example-DMS3" class="context" title="Section SD">(in
+context)</a></div>
+</div>

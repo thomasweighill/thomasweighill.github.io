@@ -1,0 +1,12 @@
+<div class="theorem" id="theorem-ICBM" acro="ICBM" titletext="Inverse of Change-of-Basis Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ICBM</span><span class="titletext"> Inverse of Change-of-Basis Matrix</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space, and $B$ and $C$ are bases of $V$.
+Then the change-of-basis matrix $\cbm{B}{C}$ is nonsingular and
+\begin{equation*}
+\inverse{\cbm{B}{C}}=\cbm{C}{B}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.ICBM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CB.html#theorem-ICBM" class="context" title="Section CB">(in context)</a></div>

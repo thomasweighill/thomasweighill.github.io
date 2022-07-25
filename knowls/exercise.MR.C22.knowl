@@ -1,0 +1,22 @@
+<div class="exercise" acro="MR.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $S_{22}$ be the vector space of $2\times 2$ symmetric matrices.  Build the matrix representation of the linear transformation $\ltdefn{T}{P_2}{S_{22}}$ relative to the bases $B$ and $C$ and then use this matrix representation to compute $\lt{T}{3+5x-2x^2}$.
+\begin{align*}
+B&amp;=\set{1,\,1+x,\,1+x+x^2}
+&amp;
+C&amp;=\set{
+\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 1 \\ 1 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+}\\
+\lt{T}{a+bx+cx^2}&amp;=
+\begin{bmatrix}
+2a-b+c &amp; a+3b-c \\ a+3b-c &amp; a-c
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C22.knowl">Solution</a></p></div>
+</div>

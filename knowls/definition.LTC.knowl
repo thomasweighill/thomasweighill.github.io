@@ -1,0 +1,10 @@
+<div class="definition" id="definition-LTC" acro="LTC" titletext="Linear Transformation Composition">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LTC</span> <span class="titletext"> Linear Transformation Composition</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Then the <em class="term">composition</em> of $S$ and $T$ is the function $\ltdefn{(\compose{S}{T})}{U}{W}$ whose outputs are defined by
+\begin{equation*}
+\lt{(\compose{S}{T})}{\vect{u}}=\lt{S}{\lt{T}{\vect{u}}}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#definition-LTC" class="context" title="Section LT">(in context)</a></div>

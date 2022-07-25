@@ -1,0 +1,305 @@
+<div class="exercise" acro="TSS.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In the spirit of <a class="knowl" acro="ISSI" type="Example" title="Describing infinite solution sets, Archetype I" knowl="./knowls/example.ISSI.knowl">Example ISSI</a>, describe the infinite solution set for <a knowl="./knowls/archetype.J.knowl">Archetype J</a>.
+</p></div>
+</div><div class="exercisegroup">
+<p>For Exercises C21–C28, find the solution set of the system of linear equations. Give the values of $n$ and $r$, and interpret your answers in light of the theorems of this section.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="TSS.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C21</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 4x_2 + 3x_3 - x_4 &amp;= 5\\
+x_1 - x_2 + x_3 + 2x_4 &amp;= 6\\
+4x_1 + x_2 + 6x_3 + 5x_4 &amp;= 9
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C21.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C22</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 - 2x_2 + x_3 - x_4 &amp;= 3\\
+2x_1 - 4x_2 + x_3 + x_4 &amp;= 2\\
+x_1 - 2x_2 - 2x_3 + 3x_4 &amp;= 1
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C22.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 - 2x_2 + x_3 - x_4 &amp;= 3\\
+x_1 + x_2 + x_3 - x_4 &amp;= 1\\
+x_1 \quad + x_3 - x_4 &amp;= 2
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C23.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C24">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 - 2x_2 + x_3 - x_4 &amp;= 2\\
+x_1 + x_2 + x_3 - x_4 &amp;= 2\\
+x_1 \quad + x_3 - x_4 &amp;= 2
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C24.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C25</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 1\\
+2x_1 - x_2 + x_3 &amp;= 2\\
+3x_1 + x_2 + x_3 &amp;= 4\\
+\quad x_2 + 2x_3 &amp;= 6
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C25.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 1\\
+2x_1 - x_2 + x_3 &amp;= 2\\
+3x_1 + x_2 + x_3 &amp;= 4\\
+\quad 5x_2 + 2x_3 &amp;= 1
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C26.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C27">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C27</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 0\\
+2x_1 - x_2 + x_3 &amp;= 2\\
+x_1 - 8x_2 - 7x_3 &amp;= 1\\
+\quad x_2 + x_3 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C27.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.C28">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C28</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 1\\
+2x_1 - x_2 + x_3 &amp;= 2\\
+x_1 - 8x_2 - 7x_3 &amp;= 1\\
+\quad x_2 + x_3 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C28.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercise" acro="TSS.M45">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M45</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The details for <a knowl="./knowls/archetype.J.knowl">Archetype J</a> include several sample solutions.  Verify that one of these solutions is correct (any one, but just one).  Based <em>only</em> on this evidence, and especially without doing any row operations, explain how you know this system of linear equations has infinitely many solutions.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M45.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="TSS.M46">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M46</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Consider <a knowl="./knowls/archetype.J.knowl">Archetype J</a>, and specifically the row-reduced version of the augmented matrix of the system of equations, denoted as $B$ here, and the values of $r$, $D$ and $F$ immediately following.  Determine the values of the entries
+\begin{align*}
+\matrixentry{B}{1,d_1}&amp;
+&amp;
+\matrixentry{B}{3,d_3}&amp;
+&amp;
+\matrixentry{B}{1,d_3}&amp;
+&amp;
+\matrixentry{B}{3,d_1}&amp;
+&amp;
+\matrixentry{B}{d_1,1}&amp;
+&amp;
+\matrixentry{B}{d_3,3}&amp;
+&amp;
+\matrixentry{B}{d_1,3}&amp;
+&amp;
+\matrixentry{B}{d_3,1}&amp;
+&amp;
+\matrixentry{B}{1,f_1}&amp;
+&amp;
+\matrixentry{B}{3,f_1}&amp;
+\end{align*}
+
+(See <a knowl="./knowls/exercise.TSS.M70.knowl">Exercise TSS.M70</a> for a generalization.)
+</p></div>
+</div><div class="exercisegroup">
+<p>For Exercises M51–M57  say <b>as much as possible</b> about each system's solution set.  Be sure to make it clear which theorems you are using to reach your conclusions.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="TSS.M51">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A consistent system of 8 equations in 6 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M51.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.M52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A consistent system of 6 equations in 8 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M52.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.M53">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M53</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A system of 5 equations in 9 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M53.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.M54">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M54</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A system with 12 equations in 35 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M54.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.M56">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M56</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A system with 6 equations in 12 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M56.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="TSS.M57">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M57</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A system with 8 equations and 6 variables.  The reduced row-echelon form of the augmented matrix of the system has 7 pivot columns.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.M57.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercise" acro="TSS.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Without doing any computations, and without examining any solutions, say as much as possible about the form of the solution set for each archetype that is a system of equations.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>,
+<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>,
+<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div><div class="exercise" acro="TSS.M70">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M70</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Suppose that $B$ is a matrix in reduced row-echelon form that is equivalent to the augmented matrix of a system of equations with $m$ equations in $n$ variables.  Let $r$, $D$ and $F$ be as defined in <a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>. What can you conclude, in general, about the following entries?
+\begin{align*}
+\matrixentry{B}{1,d_1}&amp;
+&amp;
+\matrixentry{B}{3,d_3}&amp;
+&amp;
+\matrixentry{B}{1,d_3}&amp;
+&amp;
+\matrixentry{B}{3,d_1}&amp;
+&amp;
+\matrixentry{B}{d_1,1}&amp;
+&amp;
+\matrixentry{B}{d_3,3}&amp;
+&amp;
+\matrixentry{B}{d_1,3}&amp;
+&amp;
+\matrixentry{B}{d_3,1}&amp;
+&amp;
+\matrixentry{B}{1,f_1}&amp;
+&amp;
+\matrixentry{B}{3,f_1}&amp;
+\end{align*}
+
+If you cannot conclude anything about an entry, then say so.  (See <a knowl="./knowls/exercise.TSS.M46.knowl">Exercise TSS.M46</a>.)
+</p></div>
+</div><div class="exercise" acro="TSS.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>An inconsistent system may have $r&gt;n$.  If we try (incorrectly!) to apply <a class="knowl" acro="FVCS" type="Theorem" title="Free Variables for Consistent Systems" knowl="./knowls/theorem.FVCS.knowl">Theorem FVCS</a> to such a system, how many free variables would we discover?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.T10.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="TSS.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $A$ is the augmented matrix of a system of linear equations in $n$ variables.  and that $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ pivot columns.  If $r=n+1$, prove that the system of equations is inconsistent.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.T11.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="TSS.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T20</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Suppose that $B$ is a matrix in reduced row-echelon form that is equivalent to the augmented matrix of a system of equations with $m$ equations in $n$ variables.  Let $r$, $D$ and $F$ be as defined in <a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>.  Prove that $d_k\geq k$ for all $1\leq k\leq r$.  Then suppose that $r\geq 2$ and $1\leq k &lt;\ell\leq r$ and determine what can you conclude, in general, about the following entries.
+\begin{align*}
+\matrixentry{B}{k,d_k}&amp;
+&amp;
+\matrixentry{B}{k,d_\ell}&amp;
+&amp;
+\matrixentry{B}{\ell,d_k}&amp;
+&amp;
+\matrixentry{B}{d_k,k}&amp;
+&amp;
+\matrixentry{B}{d_k,\ell}&amp;
+&amp;
+\matrixentry{B}{d_\ell,k}&amp;
+&amp;
+\matrixentry{B}{d_k,f_\ell}&amp;
+&amp;
+\matrixentry{B}{d_\ell,f_k}&amp;
+\end{align*}
+
+If you cannot conclude anything about an entry, then say so.  (See <a knowl="./knowls/exercise.TSS.M46.knowl">Exercise TSS.M46</a> and <a knowl="./knowls/exercise.TSS.M70.knowl">Exercise TSS.M70</a>.)
+</p></div>
+</div><div class="exercise" acro="TSS.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that the coefficient matrix of a consistent system of linear equations has two columns that are identical.  Prove that the system has infinitely many solutions.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.T40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="TSS.T41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the system of linear equations $\linearsystem{A}{\vect{b}}$, and suppose that every element of the vector of constants $\vect{b}$ is a common multiple of the corresponding element of a certain column of $A$.  More precisely, there is a complex number $\alpha$, and a column index $j$, such that $\vectorentry{\vect{b}}{i}=\alpha\matrixentry{A}{ij}$ for all $i$.  Prove that the system is consistent.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.T41.knowl">Solution</a></p></div>
+</div>

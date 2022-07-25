@@ -1,0 +1,7 @@
+<div class="exercise" acro="CB.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CB.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In <a class="knowl" acro="CBCV" type="Example" title="Change of basis with column vectors" knowl="./knowls/example.CBCV.knowl">Example CBCV</a> we computed the vector representation of $\vect{y}$ relative to $C$, $\vectrep{C}{\vect{y}}$, as an example of <a class="knowl" acro="CB" type="Theorem" title="Change-of-Basis" knowl="./knowls/theorem.CB.knowl">Theorem CB</a>.  Compute this same representation directly.  In other words, apply <a class="knowl" acro="VR" type="Definition" title="Vector Representation" knowl="./knowls/definition.VR.knowl">Definition VR</a> rather than <a class="knowl" acro="CB" type="Theorem" title="Change-of-Basis" knowl="./knowls/theorem.CB.knowl">Theorem CB</a>.
+</p></div>
+</div>

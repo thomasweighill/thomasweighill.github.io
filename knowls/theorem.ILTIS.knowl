@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-ILTIS" acro="ILTIS" titletext="Invertible Linear Transformations are Injective and Surjective">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ILTIS</span><span class="titletext"> Invertible Linear Transformations are Injective and Surjective</span>
+</h5>
+<div class="statement"><p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  Then $T$ is invertible if and only if $T$ is injective and surjective.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ILTIS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#theorem-ILTIS" class="context" title="Section IVLT">(in context)</a></div>

@@ -1,0 +1,119 @@
+<div class="example" id="example-CAEHW" acro="CAEHW" titletext="Computing an eigenvalue the hard way">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CAEHW</span> <span class="titletext">Computing an eigenvalue the hard way</span>
+</h5>
+<p>This example illustrates the proof of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a>, and so will employ the same notation as the proof — look there for full explanations.  It is <em>not</em> meant to be an example of a reasonable computational approach to finding eigenvalues and eigenvectors.  OK, warnings in place, here we go.</p>
+<p>Consider the matrix $A$, and choose the vector $\vect{x}$,
+\begin{align*}
+A&amp;=\begin{bmatrix}
+-7 &amp; -1 &amp; 11 &amp; 0 &amp; -4\\
+4 &amp; 1 &amp; 0 &amp; 2 &amp; 0\\
+-10 &amp; -1 &amp; 14 &amp; 0 &amp; -4\\
+8 &amp; 2 &amp; -15 &amp; -1 &amp; 5\\
+-10 &amp; -1 &amp; 16 &amp; 0 &amp; -6
+\end{bmatrix}
+&amp;
+\vect{x}&amp;=\colvector{3\\0\\3\\-5\\4}
+\end{align*}
+
+</p>
+<p>It is important to notice that the choice of $\vect{x}$ could be <em>anything</em>, so long as it is <em>not</em> the zero vector.  We have not chosen $\vect{x}$ totally at random, but so as to make our illustration of the theorem as general as possible.  You could replicate this example with your own choice and the computations are guaranteed to be reasonable, provided you have a computational tool that will factor a fifth degree polynomial for you.</p>
+<p>The set
+\begin{align*}
+S&amp;=\set{\vect{x},\,A\vect{x},\,A^2\vect{x},\,A^3\vect{x},\,A^4\vect{x},\,A^5\vect{x}}\\
+&amp;=
+\set{
+\colvector{3\\0\\3\\-5\\4},\,
+\colvector{-4\\2\\-4\\4\\-6},\,
+\colvector{6\\-6\\6\\-2\\10},\,
+\colvector{-10\\14\\-10\\-2\\-18},\,
+\colvector{18\\-30\\18\\10\\34},\,
+\colvector{-34\\62\\-34\\-26\\-66}
+}
+\end{align*}
+
+is guaranteed to be linearly dependent, as it has six vectors from $\complex{5}$ (<a class="knowl" acro="MVSLD" type="Theorem" title="More Vectors than Size implies Linear Dependence" knowl="./knowls/theorem.MVSLD.knowl">Theorem MVSLD</a>).</p>
+<p>We will search for a nontrivial relation of linear dependence by solving a homogeneous system of equations whose coefficient matrix has the vectors of $S$ as columns through row operations,
+\begin{equation*}
+\begin{bmatrix}
+3 &amp; -4 &amp; 6 &amp; -10 &amp; 18 &amp; -34\\
+0 &amp; 2 &amp; -6 &amp; 14 &amp; -30 &amp; 62\\
+3 &amp; -4 &amp; 6 &amp; -10 &amp; 18 &amp; -34\\
+-5 &amp; 4 &amp; -2 &amp; -2 &amp; 10 &amp; -26\\
+4 &amp; -6 &amp; 10 &amp; -18 &amp; 34 &amp; -66
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -2 &amp; 6 &amp; -14 &amp; 30\\
+0 &amp; \leading{1} &amp; -3 &amp; 7 &amp; -15 &amp; 31\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>There are four free variables for describing solutions to this homogeneous system, so we have our pick of solutions.  The most expedient choice would be to set $x_3=1$ and $x_4=x_5=x_6=0$.  However, we will again opt to maximize the generality of our illustration of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a> and choose $x_3=-8$, $x_4=-3$, $x_5=1$ and $x_6=0$.  This leads to a solution with $x_1=16$ and $x_2=12$.</p>
+<p>This relation of linear dependence then says that
+\begin{align*}
+\zerovector&amp;=16\vect{x}+12A\vect{x}-8A^2\vect{x}-3A^3\vect{x}+A^4\vect{x}+0A^5\vect{x}\\
+\zerovector&amp;=\left(16+12A-8A^2-3A^3+A^4\right)\vect{x}
+\end{align*}
+
+</p>
+<p>So we define $p(x)=16+12x-8x^2-3x^3+x^4$, and as advertised in the proof of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a>, we have a polynomial of degree $m=4&gt;1$ such that $p(A)\vect{x}=\zerovector$.  Now we need to factor $p(x)$ over $\complex{\null}$.  If you made your own choice of $\vect{x}$ at the start, this is where you might have a fifth degree polynomial, and where you might need to use a computational tool to find roots and factors.  We have
+\begin{equation*}
+p(x)=16+12x-8x^2-3x^3+x^4=(x-4)(x+2)(x-2)(x+1)
+\end{equation*}
+</p>
+<p>So we know that
+\begin{equation*}
+\zerovector=p(A)\vect{x}=(A-4I_5)(A+2I_5)(A-2I_5)(A+1I_5)\vect{x}
+\end{equation*}
+</p>
+<p>We apply one factor at a time, until we get the zero vector, so as to determine the value of $k$ described in the proof of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a>,
+\begin{align*}
+(A+1I_5)\vect{x}&amp;=
+\begin{bmatrix}
+-6 &amp; -1 &amp; 11 &amp; 0 &amp; -4\\
+4 &amp; 2 &amp; 0 &amp; 2 &amp; 0\\
+-10 &amp; -1 &amp; 15 &amp; 0 &amp; -4\\
+8 &amp; 2 &amp; -15 &amp; 0 &amp; 5\\
+-10 &amp; -1 &amp; 16 &amp; 0 &amp; -5
+\end{bmatrix}
+\colvector{3\\0\\3\\-5\\4}
+=
+\colvector{-1\\2\\-1\\-1\\-2}\\
+(A-2I_5)(A+1I_5)\vect{x}&amp;=
+\begin{bmatrix}
+-9 &amp; -1 &amp; 11 &amp; 0 &amp; -4\\
+4 &amp; -1 &amp; 0 &amp; 2 &amp; 0\\
+-10 &amp; -1 &amp; 12 &amp; 0 &amp; -4\\
+8 &amp; 2 &amp; -15 &amp; -3 &amp; 5\\
+-10 &amp; -1 &amp; 16 &amp; 0 &amp; -8
+\end{bmatrix}
+\colvector{-1\\2\\-1\\-1\\-2}
+=
+\colvector{4\\-8\\4\\4\\8}\\
+(A+2I_5)(A-2I_5)(A+1I_5)\vect{x}&amp;=
+\begin{bmatrix}
+-5 &amp; -1 &amp; 11 &amp; 0 &amp; -4\\
+4 &amp; 3 &amp; 0 &amp; 2 &amp; 0\\
+-10 &amp; -1 &amp; 16 &amp; 0 &amp; -4\\
+8 &amp; 2 &amp; -15 &amp; 1 &amp; 5\\
+-10 &amp; -1 &amp; 16 &amp; 0 &amp; -4
+\end{bmatrix}
+\colvector{4\\-8\\4\\4\\8}
+=
+\colvector{0\\0\\0\\0\\0}\\
+\end{align*}
+
+</p>
+<p>So $k=3$ and
+\begin{equation*}
+\vect{z}=(A-2I_5)(A+1I_5)\vect{x}=\colvector{4\\-8\\4\\4\\8}
+\end{equation*}
+is an eigenvector of $A$ for the eigenvalue $\lambda=-2$, as you can check by doing the computation $A\vect{z}$.  If you work through this example with your own choice of the vector $\vect{x}$ (strongly recommended) then the  eigenvalue you will find may be different, but will be in the set $\set{3,\,0,\,1,\,-1,\,-2}$.  See <a knowl="./knowls/exercise.EE.M60.knowl">Exercise EE.M60</a> for a suggested starting vector.
+</p>
+<div class="context"><a href="section-EE.html#example-CAEHW" class="context" title="Section EE">(in
+context)</a></div>
+</div>

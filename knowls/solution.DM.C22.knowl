@@ -1,0 +1,10 @@
+<div class="solution" acro="DM.C22">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">DM.C22</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Using the formula in <a class="knowl" acro="DMST" type="Theorem" title="Determinant of Matrices of Size Two" knowl="./knowls/theorem.DMST.knowl">Theorem DMST</a> we have
+\begin{align*}
+\begin{vmatrix}1 &amp; 3 \\ 2 &amp; 6 \end{vmatrix}
+&amp;= 1 \cdot 6 - 2 \cdot 3 = 6 - 6 = 0
+\end{align*}
+
+</div>

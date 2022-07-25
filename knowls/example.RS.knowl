@@ -1,0 +1,47 @@
+<div class="example" id="example-RS" acro="RS" titletext="Reducing a span">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">RS</span> <span class="titletext">Reducing a span</span>
+</h5>
+<p>In <a class="knowl" acro="RSC5" type="Example" title="Reducing a span in $\complex{5}$" knowl="./knowls/example.RSC5.knowl">Example RSC5</a> we began with a set of $n=4$ vectors from $\complex{5}$,
+\begin{equation*}
+R=\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3,\,\vect{v}_4}
+=
+\set{
+\colvector{1\\2\\-1\\3\\2},\,
+\colvector{2\\1\\3\\1\\2},\,
+\colvector{0\\-7\\6\\-11\\-2},\,
+\colvector{4\\1\\2\\1\\6}
+}\\
+\end{equation*}
+and defined $V=\spn{R}$.  Our goal in that problem was to find a relation of linear dependence on the vectors in $R$, solve the resulting equation for one of the vectors, and re-express $V$ as the span of a set of three vectors.</p>
+<p>Here is another way to accomplish something similar.  The row space of the matrix
+\begin{equation*}
+A=\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; 3 &amp; 2\\
+2 &amp; 1 &amp; 3 &amp; 1 &amp; 2\\
+0 &amp; -7 &amp; 6 &amp; -11 &amp; -2\\
+4 &amp; 1 &amp; 2 &amp; 1 &amp; 6
+\end{bmatrix}
+\end{equation*}
+is equal to $\spn{R}$.  By <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a> we can row-reduce this matrix, ignore any zero rows, and use the nonzero rows as column vectors that are a basis for the row space of $A$.  Row-reducing $A$ creates the matrix
+\begin{equation*}
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; -\frac{1}{17} &amp; \frac{30}{17}\\
+0 &amp; 1 &amp; 0 &amp; \frac{25}{17} &amp; -\frac{2}{17}\\
+0 &amp; 0 &amp; 1 &amp; -\frac{2}{17} &amp; -\frac{8}{17}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>So
+\begin{equation*}
+\set{
+\colvector{1\\0\\0\\-\frac{1}{17}\\\frac{30}{17}},\,
+\colvector{0\\1\\0\\\frac{25}{17}\\-\frac{2}{17}},\,
+\colvector{0\\0\\1\\-\frac{2}{17}\\-\frac{8}{17}}
+}
+\end{equation*}
+is a basis for $V$.  Our theorem tells us this is a basis, there is no need to verify that the subspace spanned by three vectors (rather than four) is the identical subspace, and there is no need to verify that we have reached the limit in reducing the set, since the set of three vectors is guaranteed to be linearly independent.</p>
+<div class="context"><a href="section-B.html#example-RS" class="context" title="Section B">(in
+context)</a></div>
+</div>

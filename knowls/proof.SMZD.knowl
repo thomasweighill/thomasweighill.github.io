@@ -1,0 +1,28 @@
+<div class="proof" id="proof-SMZD" acro="SMZD" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SMZD</span>
+</h5>
+<p>Rather than jumping into the two halves of the equivalence, we first establish a few items.  Let $B$ be the unique square matrix that is row-equivalent to $A$ and in reduced row-echelon form (<a class="knowl" acro="REMEF" type="Theorem" title="Row-Equivalent Matrix in Echelon Form" knowl="./knowls/theorem.REMEF.knowl">Theorem REMEF</a>, <a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>).  For each of the row operations that converts $B$ into $A$, there is an elementary matrix $E_i$ which effects the row operation by matrix multiplication (<a class="knowl" acro="EMDRO" type="Theorem" title="Elementary Matrices Do Row Operations" knowl="./knowls/theorem.EMDRO.knowl">Theorem EMDRO</a>).  Repeated applications of <a class="knowl" acro="EMDRO" type="Theorem" title="Elementary Matrices Do Row Operations" knowl="./knowls/theorem.EMDRO.knowl">Theorem EMDRO</a> allow us to write
+\begin{equation*}
+A=E_sE_{s-1}\dots E_2E_1B
+\end{equation*}
+</p>
+
+<p>Then
+\begin{align*}
+\detname{A}
+&amp;=
+\detname{E_sE_{s-1}\dots E_2E_1B}\\
+&amp;=\detname{E_s}\detname{E_{s-1}}\dots\detname{E_2}\detname{E_1}\detname{B}
+&amp;&amp;\knowl{./knowls/theorem.DEMMM.knowl}{\text{Theorem DEMMM}}
+\end{align*}
+
+</p>
+
+<p>From <a class="knowl" acro="DEM" type="Theorem" title="Determinants of Elementary Matrices" knowl="./knowls/theorem.DEM.knowl">Theorem DEM</a> we can infer that the determinant of an elementary matrix is never zero (note the ban on $\alpha=0$ for $\elemmult{\alpha}{i}$ in <a class="knowl" acro="ELEM" type="Definition" title="Elementary Matrices" knowl="./knowls/definition.ELEM.knowl">Definition ELEM</a>).  So the product on the right is composed of nonzero scalars, with the possible exception of $\detname{B}$.  More precisely, we can argue that $\detname{A}=0$ if and only if $\detname{B}=0$.  With this established, we can take up the two halves of the equivalence.</p>
+
+<p>(⇒) If $A$ is singular, then by <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>, $B$ cannot be the identity matrix.  Because (1) the number of pivot columns is equal to the number of nonzero rows, (2) not every column is a pivot column, and (3) $B$ is square, we see that $B$ must have a zero row.  By <a class="knowl" acro="DZRC" type="Theorem" title="Determinant with Zero Row or Column" knowl="./knowls/theorem.DZRC.knowl">Theorem DZRC</a> the determinant of $B$ is zero, and by the above, we conclude that the determinant of $A$ is zero.</p>
+
+<p>(⇐) We will prove the contrapositive (<a class="knowl" acro="CP" type="Proof Technique" title="Contrapositives" knowl="./knowls/technique.CP.knowl">Proof Technique CP</a>).  So assume $A$ is nonsingular, then by  <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>, $B$ is the identity matrix and <a class="knowl" acro="DIM" type="Theorem" title="Determinant of the Identity Matrix" knowl="./knowls/theorem.DIM.knowl">Theorem DIM</a> tells us that $\detname{B}=1\neq 0$.  With the argument above, we conclude that the determinant of $A$ is nonzero as well.</p>
+
+</div>

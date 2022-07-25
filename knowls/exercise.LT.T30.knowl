@@ -1,0 +1,7 @@
+<div class="exercise" acro="LT.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Say that two vectors from $U$, $\vect{x}$ and $\vect{y}$, are <em class="term">related</em> exactly when $\lt{T}{\vect{x}}=\lt{T}{\vect{y}}$ in $V$.  Prove the three properties of an equivalence relation on $U$: (a) for any $\vect{x}\in U$, $\vect{x}$ is related to $\vect{x}$, (b) if $\vect{x}$ is related to $\vect{y}$, then $\vect{y}$ is related to $\vect{x}$, and (c) if $\vect{x}$ is related to $\vect{y}$ and $\vect{y}$ is related to $\vect{z}$, then $\vect{x}$ is related to $\vect{z}$.
+</p></div>
+</div>

@@ -1,0 +1,9 @@
+<div class="subsection" id="subsection-PM" acro="PM" titletext="Polynomials and Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">PM</span> <span class="titletext">Polynomials and Matrices</span>
+</h4>
+<p>A polynomial is a combination of powers, multiplication by scalar coefficients, and addition (with subtraction just being the inverse of addition).  We never have occasion to divide when computing the value of a polynomial.  So it is with matrices.  We can add and subtract matrices, we can multiply matrices by scalars, and we can form powers of square matrices by repeated applications of matrix multiplication.  We do not normally divide matrices (though sometimes we can multiply by an inverse).  If a matrix is square, all the operations constituting a polynomial will preserve the size of the matrix.  So it is natural to consider evaluating a polynomial with a matrix, effectively replacing the variable of the polynomial by a matrix.  We will demonstrate with an example.</p>
+<div class="example" id="example-PM" acro="PM" titletext="Polynomial of a matrix"><h5 class="example">
+<a knowl="./knowls/example.PM.knowl"><span class="type">Example</span> <span class="acro">PM</span></a> <span class="titletext">Polynomial of a matrix</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#subsection-PM" class="context" title="Section EE">(in context)</a></div>

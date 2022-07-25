@@ -1,0 +1,19 @@
+<div class="definition" id="definition-CBM" acro="CBM" titletext="Change-of-Basis Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CBM</span> <span class="titletext"> Change-of-Basis Matrix</span>
+</h5>
+<p>Suppose that $V$ is a vector space, and $\ltdefn{I_V}{V}{V}$ is the identity linear transformation on $V$.  Let $B=\set{\vectorlist{v}{n}}$ and $C$ be two bases of $V$.  Then the <em class="term">change-of-basis matrix</em> from $B$ to $C$ is the matrix representation of $I_V$ relative to $B$ and $C$,
+\begin{align*}
+\cbm{B}{C}&amp;=\matrixrep{I_V}{B}{C}\\
+&amp;=\matrixrepcolumns{I_V}{C}{v}{n}\\
+&amp;=\left\lbrack
+\left.\vectrep{C}{\vect{v}_1}\right|
+\left.\vectrep{C}{\vect{v}_2}\right|
+\left.\vectrep{C}{\vect{v}_3}\right|
+\ldots
+\left|\vectrep{C}{\vect{v}_n}\right.
+\right\rbrack
+\end{align*}
+
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CB.html#definition-CBM" class="context" title="Section CB">(in context)</a></div>

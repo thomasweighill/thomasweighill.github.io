@@ -1,0 +1,32 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-MM', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">MM</span> <span class="titletext">Matrix Multiplication</span>
+</h5>
+
+
+<p>Matrix multiplication is very natural in Sage, and is just as easy as multiplying two numbers.  We illustrate <a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a> by using it to compute the entry in the first row and third column.</p>
+
+<br><br><div class="sage-MM"><script type="text/x-sage">A = matrix(QQ, [[3, -1, 2,  5],
+                [9,  1, 2, -4]])
+B = matrix(QQ, [[1,  6, 1],
+                [0, -1, 2],
+                [5,  2, 3],
+                [1,  1, 1]])
+A*B
+</script></div>
+
+<br><br><div class="sage-MM"><script type="text/x-sage">sum([A[0,k]*B[k,2] for k in range(A.ncols())])
+</script></div>
+
+<p>Note in the final statement, we could replace <span class="code">A.ncols()</span> by <span class="code">B.nrows()</span> since these two quantities must be identical.  You can experiment with the last statement by editing it to compute any of the five other entries of the matrix product.</p>
+
+<p>Square matrices can be multiplied in either order, but the result will almost always be different.  Execute repeatedly the following products of two random $4\times 4$ matrices, with a check on the equality of the two products in either order.  It is possible, but highly unlikely, that the two products will be equal.  So if this compute cell ever produces <span class="code">True</span> it will be a minor miracle.</p>
+
+<br><br><div class="sage-MM"><script type="text/x-sage">A = random_matrix(QQ,4,4)
+B = random_matrix(QQ,4,4)
+A*B == B*A       # random, sort of
+</script></div>
+
+<br><br><div class="sage-MM sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

@@ -1,0 +1,14 @@
+<div class="exercise" acro="RREF.C19">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C19</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+ 2x_1 + x_2 &amp;= 6 \\
+ -x_1 - x_2 &amp;= -2 \\
+ 3x_1 + 4x_2 &amp;= 4 \\
+ 3x_1 + 5x_2 &amp;= 2
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C19.knowl">Solution</a></p></div>
+</div>

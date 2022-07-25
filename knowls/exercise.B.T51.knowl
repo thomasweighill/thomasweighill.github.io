@@ -1,0 +1,8 @@
+<div class="exercise" acro="B.T51">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">B.T51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use the result of <a knowl="./knowls/exercise.B.T50.knowl">Exercise B.T50</a> to build a very concise proof of <a class="knowl" acro="CNMB" type="Theorem" title="Columns of Nonsingular Matrix are a Basis" knowl="./knowls/theorem.CNMB.knowl">Theorem CNMB</a>.  (Hint: make a judicious choice for the basis $B$.)
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.B.T51.knowl">Solution</a></p></div>
+</div>

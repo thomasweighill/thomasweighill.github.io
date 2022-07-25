@@ -1,0 +1,60 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-RSM', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">RSM</span> <span class="titletext">Row Space of a Matrix</span>
+</h5>
+
+<p>Not to be outdone, and not suprisingly, Sage can compute a row space with the matrix method <span class="code">.row_space()</span>.  Indeed, given Sage's penchant for treating vectors as rows, much of Sage's infrastructure for vector spaces ultimately relies on <a class="knowl" acro="REMRS" type="Theorem" title="Row-Equivalent Matrices have equal Row Spaces" knowl="./knowls/theorem.REMRS.knowl">Theorem REMRS</a>.  More on that in <a class="knowl" acro="SUTH0" type="Sage" title="" knowl="./knowls/sage.SUTH0.knowl">Sage SUTH0</a>.  For now, we reprise <a class="knowl" acro="IAS" type="Example" title="Improving a span" knowl="./knowls/example.IAS.knowl">Example IAS</a> as an illustration.</p>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">v1 = vector(QQ, [1,  2,  1,  6,   6])
+v2 = vector(QQ, [3, -1,  2, -1,   6])
+v3 = vector(QQ, [1, -1,  0, -1,  -2])
+v4 = vector(QQ, [-3, 2, -3,  6, -10])
+X = (QQ^5).span([v1, v2, v3, v4])
+A = matrix([v1, v2, v3, v4])
+rsA = A.row_space()
+X == rsA
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">B = A.rref()
+rsB = B.row_space()
+X == rsB
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">X
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">X.basis()
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">B
+</script></div>
+
+<p>We begin with the same four vectors in <a class="knowl" acro="IAS" type="Example" title="Improving a span" knowl="./knowls/example.IAS.knowl">Example IAS</a> and create their span, the vector space <span class="code">X</span>.  The matrix <span class="code">A</span> has these four vectors as rows and <span class="code">B</span> is the reduced row-echelon form of <span class="code">A</span>.  Then the row spaces of <span class="code">A</span> and <span class="code">B</span> are equal to the vector space <span class="code">X</span> (and each other).  The way Sage describes this vector space is with a matrix whose rows <em>are the nonzero rows of the reduced row-echelon form of the matrix</em> <span class="code">A</span>.  This is <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a> in action where we go with Sage's penchant for rows and ignore the text's penchant for columns.</p>
+
+<p>We can illustrate a few other results about row spaces with Sage.  Discussion follows.</p>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">A = matrix(QQ,[[1,  1, 0, -1,  1,  1, 0],
+               [4,  5, 1, -6,  1,  6, 1],
+               [5,  5, 1, -5,  4,  5, 2],
+               [3, -1, 0,  5, 11, -5, 4]])
+A.row_space() == A.transpose().column_space()
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">B = matrix(QQ,[[ 7,  9, 2, -11,   1, 11,  2],
+               [-4, -3, 1,   2,  -7, -2,  1],
+               [16,  8, 2,   0,  30,  0, 12],
+               [ 2, 10, 2, -18, -16, 18, -4]])
+B.column_space() == B.transpose().row_space()
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">A.rref() == B.rref()
+</script></div>
+
+<br><br><div class="sage-RSM"><script type="text/x-sage">A.row_space() == B.row_space()
+</script></div>
+
+<p>We use the matrix <span class="code">A</span> to illustrate <a class="knowl" acro="RSM" type="Definition" title="Row Space of a Matrix" knowl="./knowls/definition.RSM.knowl">Definition RSM</a>, and the matrix <span class="code">B</span> to illustrate <a class="knowl" acro="CSRST" type="Theorem" title="Column Space, Row Space, Transpose" knowl="./knowls/theorem.CSRST.knowl">Theorem CSRST</a>.  <span class="code">A</span> and <span class="code">B</span> were designed to have the same reduced row-echelon form, and hence be row-equivalent, so this is not a consequence of any theorem or previous computation.  However, then <a class="knowl" acro="REMRS" type="Theorem" title="Row-Equivalent Matrices have equal Row Spaces" knowl="./knowls/theorem.REMRS.knowl">Theorem REMRS</a> guarantees that the row spaces of <span class="code">A</span> and <span class="code">B</span> are equal.</p>
+
+<br><br><div class="sage-RSM sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

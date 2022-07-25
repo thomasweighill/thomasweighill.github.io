@@ -1,0 +1,8 @@
+<div class="exercise" acro="LC.M11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LC.M11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>At the end of <a class="knowl" acro="VFS" type="Example" title="Vector form of solutions" knowl="./knowls/example.VFS.knowl">Example VFS</a>, the vector $\vect{w}$ is claimed to be a solution to the linear system under discussion.  Verify that $\vect{w}$ really is a solution.  Then determine the four scalars that express $\vect{w}$ as a linear combination of $\vect{c}$, $\vect{u}_1$, $\vect{u}_2$, $\vect{u}_3$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LC.M11.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-CCRM" acro="CCRM" titletext="Complex Conjugation Respects Multiplication">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CCRM</span><span class="titletext"> Complex Conjugation Respects Multiplication</span>
+</h5>
+<div class="statement"><p>Suppose that $\alpha$ and $\beta$ are complex numbers.  Then $\conjugate{\alpha\beta}=\conjugate{\alpha}\conjugate{\beta}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CCRM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#theorem-CCRM" class="context" title="Section CNO">(in context)</a></div>

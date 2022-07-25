@@ -1,0 +1,10 @@
+<div class="definition" id="definition-PI" acro="PI" titletext="Pre-Image">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">PI</span> <span class="titletext"> Pre-Image</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  For each $\vect{v}$, define the <em class="term">pre-image</em> of $\vect{v}$ to be the subset of $U$ given by
+\begin{equation*}
+\preimage{T}{\vect{v}}=\setparts{\vect{u}\in U}{\lt{T}{\vect{u}}=\vect{v}}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#definition-PI" class="context" title="Section LT">(in context)</a></div>

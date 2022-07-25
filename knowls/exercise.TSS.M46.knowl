@@ -1,0 +1,30 @@
+<div class="exercise" acro="TSS.M46">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.M46</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Consider <a knowl="./knowls/archetype.J.knowl">Archetype J</a>, and specifically the row-reduced version of the augmented matrix of the system of equations, denoted as $B$ here, and the values of $r$, $D$ and $F$ immediately following.  Determine the values of the entries
+\begin{align*}
+\matrixentry{B}{1,d_1}&amp;
+&amp;
+\matrixentry{B}{3,d_3}&amp;
+&amp;
+\matrixentry{B}{1,d_3}&amp;
+&amp;
+\matrixentry{B}{3,d_1}&amp;
+&amp;
+\matrixentry{B}{d_1,1}&amp;
+&amp;
+\matrixentry{B}{d_3,3}&amp;
+&amp;
+\matrixentry{B}{d_1,3}&amp;
+&amp;
+\matrixentry{B}{d_3,1}&amp;
+&amp;
+\matrixentry{B}{1,f_1}&amp;
+&amp;
+\matrixentry{B}{3,f_1}&amp;
+\end{align*}
+
+(See <a knowl="./knowls/exercise.TSS.M70.knowl">Exercise TSS.M70</a> for a generalization.)
+</p></div>
+</div>

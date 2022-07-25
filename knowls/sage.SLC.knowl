@@ -1,0 +1,43 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-SLC', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">SLC</span> <span class="titletext">Solutions and Linear Combinations</span>
+</h5>
+
+
+<p>We can easily illustrate <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> with Sage.  We will use <a knowl="./knowls/archetype.F.knowl">Archetype F</a> as an example.</p>
+
+<br><br><div class="sage-SLC"><script type="text/x-sage">coeff = matrix(QQ, [[33, -16,  10,-2],
+                    [99, -47,  27,-7],
+                    [78, -36,  17,-6],
+                    [-9,   2,   3, 4]])
+const = vector(QQ, [-27, -77, -52, 5])
+</script></div>
+
+<p>A solution to this system is $x_1=1,\,x_2=2,\,x_3=-2,\,x_4=4$.  So we will use these four values as scalars in a linear combination of the columns of the coefficient matrix.  However, we do not have to type in the columns individually, we can have Sage extract them all for us into a list with the matrix method <span class="code">.columns()</span>.</p>
+
+<br><br><div class="sage-SLC"><script type="text/x-sage">cols = coeff.columns()
+cols
+</script></div>
+
+<p>With our scalars also in a list, we can compute the linear combination of the columns, like we did in <a class="knowl" acro="LC" type="Sage" title="" knowl="./knowls/sage.LC.knowl">Sage LC</a>.</p>
+
+<br><br><div class="sage-SLC"><script type="text/x-sage">soln = [1, 2, -2, 4]
+sum([soln[i]*cols[i] for i in range(len(cols))])
+</script></div>
+
+<p>So we see that the solution gives us scalars that yield the vector of constants as a linear combination of the columns of the coefficient matrix.  Exactly as predicted by <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a>.  We can duplicate this observation with just one line:</p>
+
+<br><br><div class="sage-SLC"><script type="text/x-sage">const == sum([soln[i]*cols[i] for i in range(len(cols))])
+</script></div>
+
+<p>In a similar fashion we can test other potential solutions.  With theory we will develop later, we will be able to determine that <a knowl="./knowls/archetype.F.knowl">Archetype F</a> has only one solution.  Since <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> is an equivalence (<a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a>), any other choice for the scalars should not create the vector of constants as a linear combination.</p>
+
+<br><br><div class="sage-SLC"><script type="text/x-sage">alt_soln = [-3, 2, 4, 1]
+const == sum([alt_soln[i]*cols[i] for i in range(len(cols))])
+</script></div>
+
+<p>Now would be a good time to find another system of equations, perhaps one with infinitely many solutions, and practice the techniques above.</p>
+
+<br><br><div class="sage-SLC sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

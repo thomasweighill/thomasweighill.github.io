@@ -1,0 +1,12 @@
+<div class="solution" acro="SD.T17">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SD.T17</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The nonsingular (invertible) matrix $B$ will provide the desired similarity transformation,
+\begin{align*}
+\inverse{B}\left(BA\right)B
+&amp;=\left(\inverse{B}B\right)\left(AB\right)&amp;&amp;\knowl{./knowls/theorem.MMA.knowl}{\text{Theorem MMA}}\\
+&amp;=I_nAB&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=AB&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+\end{align*}
+
+</div>

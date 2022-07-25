@@ -1,0 +1,5 @@
+<div class="solution" acro="TSS.T11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">TSS.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>If  $r=n+1$, then $D=\set{1,\,2,\,3,\,\ldots,\,n,\,n+1}$ and every column of $B$ is a pivot column.  In particular, column $n+1$ is a pivot column.  By <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> the system is inconsistent.
+</div>

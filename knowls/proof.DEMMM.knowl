@@ -1,0 +1,40 @@
+<div class="proof" id="proof-DEMMM" acro="DEMMM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DEMMM</span>
+</h5>
+<p>The proof procedes in three parts, one for each type of elementary matrix, with each part very similar to the other two.</p>
+
+<p>First, let $B$ be the matrix obtained from $A$ by swapping rows $i$ and $j$,
+\begin{align*}
+\detname{\elemswap{i}{j}A}
+&amp;=\detname{B}&amp;&amp;\knowl{./knowls/theorem.EMDRO.knowl}{\text{Theorem EMDRO}}\\
+&amp;=-\detname{A}&amp;&amp;\knowl{./knowls/theorem.DRCS.knowl}{\text{Theorem DRCS}}\\
+&amp;=\detname{\elemswap{i}{j}}\detname{A}&amp;&amp;\knowl{./knowls/theorem.DEM.knowl}{\text{Theorem DEM}}
+\end{align*}
+
+</p>
+
+<p>Second, let $B$ be the matrix obtained from $A$ by multiplying row $i$ by $\alpha$,
+\begin{align*}
+\detname{\elemmult{\alpha}{i}A}
+&amp;=\detname{B}&amp;&amp;\knowl{./knowls/theorem.EMDRO.knowl}{\text{Theorem EMDRO}}\\
+&amp;=\alpha\detname{A}&amp;&amp;\knowl{./knowls/theorem.DRCM.knowl}{\text{Theorem DRCM}}\\
+&amp;=\detname{\elemmult{\alpha}{i}}\detname{A}&amp;&amp;\knowl{./knowls/theorem.DEM.knowl}{\text{Theorem DEM}}
+\end{align*}
+
+</p>
+
+<p>Third, let $B$ be the matrix obtained from $A$ by multiplying row $i$ by $\alpha$ and adding to row $j$,
+\begin{align*}
+\detname{\elemadd{\alpha}{i}{j}A}
+&amp;=\detname{B}&amp;&amp;\knowl{./knowls/theorem.EMDRO.knowl}{\text{Theorem EMDRO}}\\
+&amp;=\detname{A}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+&amp;=\detname{\elemadd{\alpha}{i}{j}}\detname{A}&amp;&amp;\knowl{./knowls/theorem.DEM.knowl}{\text{Theorem DEM}}
+\end{align*}
+
+</p>
+
+<p>Since the desired result holds for each variety of elementary matrix individually, we are done.
+</p>
+
+</div>

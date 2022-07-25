@@ -1,0 +1,22 @@
+<div class="example" id="example-NSR" acro="NSR" titletext="Nonsingular matrix, row-reduced">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSR</span> <span class="titletext">Nonsingular matrix, row-reduced</span>
+</h5>
+<p>We have the coefficient matrix for <a knowl="./knowls/archetype.B.knowl">Archetype B</a> and a row-equivalent matrix $B$ in reduced row-echelon form, 
+\begin{equation*}
+A=\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+\rref\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0\\
+ 0 &amp; \leading{1} &amp; 0\\
+ 0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+=B\end{equation*}
+</p>
+<p>Since $B$ is the $3\times 3$ identity matrix, <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> tells us that $A$ is a nonsingular matrix.</p>
+<div class="context"><a href="section-NM.html#example-NSR" class="context" title="Section NM">(in
+context)</a></div>
+</div>

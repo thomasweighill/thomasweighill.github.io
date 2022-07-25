@@ -1,0 +1,7 @@
+<div class="property" id="property-SC" acro="SC" titletext="Scalar Closure">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">SC</span> <span class="titletext">Scalar Closure</span>
+</h5>
+<p>
+If $\alpha\in\complex{\null}$ and $\vect{u}\in V$, then $\alpha\vect{u}\in V$.</p>
+</div>

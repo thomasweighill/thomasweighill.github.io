@@ -1,0 +1,246 @@
+<div class="example" id="example-MRBE" acro="MRBE" titletext="Matrix representation with basis of eigenvectors">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">MRBE</span> <span class="titletext">Matrix representation with basis of eigenvectors</span>
+</h5>
+<p>We return to the linear transformation $\ltdefn{T}{M_{22}}{M_{22}}$ of <a class="knowl" acro="ELTBM" type="Example" title="Eigenvectors of linear transformation between matrices" knowl="./knowls/example.ELTBM.knowl">Example ELTBM</a> defined by
+\begin{equation*}
+\lt{T}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}
+=
+\begin{bmatrix}
+-17a+11b+8c-11d
+&amp;
+-57a+35b+24c-33d
+\\
+-14a+10b+6c-10d
+&amp;
+-41a+25b+16c-23d
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>In <a class="knowl" acro="ELTBM" type="Example" title="Eigenvectors of linear transformation between matrices" knowl="./knowls/example.ELTBM.knowl">Example ELTBM</a> we showcased four eigenvectors of $T$.  We will now put these four vectors in a set,
+\begin{equation*}
+B=\set{\vect{x}_1,\,\vect{x}_2,\,\vect{x}_3,\,\vect{x}_4}
+=\set{
+\begin{bmatrix}
+ 0 &amp; 1 \\ 0 &amp; 1
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 1 &amp; 1 \\ 1 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 1 &amp; 3 \\ 2 &amp; 3
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 2 &amp; 6 \\ 1 &amp; 4
+\end{bmatrix}
+}
+\end{equation*}
+</p>
+<p>Check that $B$ is a basis of $M_{22}$ by first establishing the linear independence of $B$ and then employing <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> to get the spanning property easily.  Here is a second set of $2\times 2$ matrices, which also forms a basis of $M_{22}$ (<a class="knowl" acro="BM" type="Example" title="A basis for the vector space of matrices" knowl="./knowls/example.BM.knowl">Example BM</a>),
+\begin{equation*}
+C=\set{\vect{y}_1,\,\vect{y}_2,\,\vect{y}_3,\,\vect{y}_4}
+=\set{
+\begin{bmatrix}
+ 1 &amp; 0 \\ 0 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 0 &amp; 1 \\ 0 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 0 &amp; 0 \\ 1 &amp; 0
+\end{bmatrix}
+,\,
+\begin{bmatrix}
+ 0 &amp; 0 \\ 0 &amp; 1
+\end{bmatrix}
+}
+\end{equation*}
+</p>
+<p>We can build two matrix representations of $T$, one relative to $B$ and one relative to $C$.  Each is easy, but for wildly different reasons.  In our computation of the matrix representation relative to $B$ we borrow some of our work in <a class="knowl" acro="ELTBM" type="Example" title="Eigenvectors of linear transformation between matrices" knowl="./knowls/example.ELTBM.knowl">Example ELTBM</a>.  Here are the representations, then the explanation.
+\begin{align*}
+\vectrep{B}{\lt{T}{\vect{x}_1}}
+&amp;=
+\vectrep{B}{2\vect{x}_1}
+=\vectrep{B}{2\vect{x}_1+0\vect{x}_2+0\vect{x}_3+0\vect{x}_4}
+=\colvector{2\\0\\0\\0}\\
+\vectrep{B}{\lt{T}{\vect{x}_2}}
+&amp;=
+\vectrep{B}{2\vect{x}_2}
+=\vectrep{B}{0\vect{x}_1+2\vect{x}_2+0\vect{x}_3+0\vect{x}_4}
+=\colvector{0\\2\\0\\0}\\
+\vectrep{B}{\lt{T}{\vect{x}_3}}
+&amp;=
+\vectrep{B}{(-1)\vect{x}_3}
+=\vectrep{B}{0\vect{x}_1+0\vect{x}_2+(-1)\vect{x}_3+0\vect{x}_4}
+=\colvector{0\\0\\-1\\0}\\
+\vectrep{B}{\lt{T}{\vect{x}_4}}
+&amp;=
+\vectrep{B}{(-2)\vect{x}_4}
+=\vectrep{B}{0\vect{x}_1+0\vect{x}_2+0\vect{x}_3+(-2)\vect{x}_4}
+=\colvector{0\\0\\0\\-2}
+\end{align*}
+
+</p>
+<p>So the resulting representation is
+\begin{align*}
+\matrixrep{T}{B}{B}
+=
+\begin{bmatrix}
+2 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; -2\\
+\end{bmatrix}
+\end{align*}
+</p>
+<p>Very pretty.</p>
+<p>Now for the matrix representation relative to $C$ first compute,
+\begin{align*}
+&amp;\vectrep{C}{\lt{T}{\vect{y}_1}}
+=\vectrep{C}{\begin{bmatrix}-17&amp;-57\\-14&amp;-41\end{bmatrix}}\\
+&amp;=\vectrep{C}{
+(-17)\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+(-57)\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+(-14)\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+(-41)\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{-17\\-57\\-14\\-41}\\
+&amp;\vectrep{C}{\lt{T}{\vect{y}_2}}
+=\vectrep{C}{\begin{bmatrix}11&amp;35\\10&amp;25\end{bmatrix}}\\
+&amp;=\vectrep{C}{
+11\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+35\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+10\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+25\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{11\\35\\10\\25}\\
+&amp;\vectrep{C}{\lt{T}{\vect{y}_3}}
+=\vectrep{C}{\begin{bmatrix}8&amp;24\\6&amp;16\end{bmatrix}}\\
+&amp;=\vectrep{C}{
+8\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+24\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+6\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+16\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{8\\24\\6\\16}\\
+&amp;\vectrep{C}{\lt{T}{\vect{y}_4}}
+=\vectrep{C}{\begin{bmatrix}-11&amp;-33\\-10&amp;-23\end{bmatrix}}\\
+&amp;=\vectrep{C}{
+(-11)\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+(-33)\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+(-10)\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+(-23)\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{-11\\-33\\-10\\-23}\\
+\end{align*}
+
+</p>
+<p>So the resulting representation is
+\begin{align*}
+\matrixrep{T}{C}{C}
+=
+\begin{bmatrix}
+ -17 &amp; 11 &amp; 8 &amp; -11 \\
+ -57 &amp; 35 &amp; 24 &amp; -33 \\
+ -14 &amp; 10 &amp; 6 &amp; -10 \\
+ -41 &amp; 25 &amp; 16 &amp; -23
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Not quite as pretty.</p>
+<p>The purpose of this example is to illustrate <a class="knowl" acro="SCB" type="Theorem" title="Similarity and Change of Basis" knowl="./knowls/theorem.SCB.knowl">Theorem SCB</a>.  This theorem says that the two matrix representations, $\matrixrep{T}{B}{B}$ and $\matrixrep{T}{C}{C}$, of the one linear transformation, $T$, are related by a similarity transformation using the change-of-basis matrix $\cbm{B}{C}$.  Let us compute this change-of-basis matrix.  Notice that since $C$ is such a nice basis, this is fairly straightforward,
+\begin{align*}
+\vectrep{C}{\vect{x}_1}
+&amp;=\vectrep{C}{\begin{bmatrix}0 &amp; 1 \\ 0 &amp; 1\end{bmatrix}}
+=\vectrep{C}{
+0\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+1\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+0\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+1\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{0\\1\\0\\1}\\
+\vectrep{C}{\vect{x}_2}
+&amp;=\vectrep{C}{\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 0\end{bmatrix}}
+=\vectrep{C}{
+1\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+1\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+1\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+0\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{1\\1\\1\\0}\\
+\vectrep{C}{\vect{x}_3}
+&amp;=\vectrep{C}{\begin{bmatrix}1 &amp; 3 \\ 2 &amp; 3\end{bmatrix}}
+=\vectrep{C}{
+1\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+3\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+2\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+3\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{1\\3\\2\\3}\\
+\vectrep{C}{\vect{x}_4}
+&amp;=\vectrep{C}{\begin{bmatrix}2 &amp; 6 \\ 1 &amp; 4\end{bmatrix}}
+=\vectrep{C}{
+2\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+6\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+1\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+4\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{2\\6\\1\\4}
+\end{align*}
+
+</p>
+<p>So we have,
+\begin{equation*}
+\cbm{B}{C}
+=
+\begin{bmatrix}
+ 0 &amp; 1 &amp; 1 &amp; 2 \\
+ 1 &amp; 1 &amp; 3 &amp; 6 \\
+ 0 &amp; 1 &amp; 2 &amp; 1 \\
+ 1 &amp; 0 &amp; 3 &amp; 4
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now, according to <a class="knowl" acro="SCB" type="Theorem" title="Similarity and Change of Basis" knowl="./knowls/theorem.SCB.knowl">Theorem SCB</a> we can write,
+\begin{align*}
+\matrixrep{T}{B}{B}&amp;=\inverse{\cbm{B}{C}}\matrixrep{T}{C}{C}\cbm{B}{C}\\
+\begin{bmatrix}
+2 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; -2\\
+\end{bmatrix}
+&amp;=
+\inverse{
+\begin{bmatrix}
+ 0 &amp; 1 &amp; 1 &amp; 2 \\
+ 1 &amp; 1 &amp; 3 &amp; 6 \\
+ 0 &amp; 1 &amp; 2 &amp; 1 \\
+ 1 &amp; 0 &amp; 3 &amp; 4
+\end{bmatrix}
+}
+\begin{bmatrix}
+ -17 &amp; 11 &amp; 8 &amp; -11 \\
+ -57 &amp; 35 &amp; 24 &amp; -33 \\
+ -14 &amp; 10 &amp; 6 &amp; -10 \\
+ -41 &amp; 25 &amp; 16 &amp; -23
+\end{bmatrix}
+\begin{bmatrix}
+ 0 &amp; 1 &amp; 1 &amp; 2 \\
+ 1 &amp; 1 &amp; 3 &amp; 6 \\
+ 0 &amp; 1 &amp; 2 &amp; 1 \\
+ 1 &amp; 0 &amp; 3 &amp; 4
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>This should look and feel exactly like the process for diagonalizing a matrix, as was described in <a href="section-SD.html" title="Similarity and Diagonalization">Section SD</a>.  And it is.</p>
+<div class="context"><a href="section-CB.html#example-MRBE" class="context" title="Section CB">(in
+context)</a></div>
+</div>

@@ -1,0 +1,22 @@
+<div class="exercise" acro="OD.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">OD.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>
+<a knowl="./knowls/exercise.MM.T35.knowl">Exercise MM.T35</a> asked you to show that $A\adjoint{A}$ is Hermitian.  Prove directly that $A\adjoint{A}$ is a normal matrix.
+</p></div>
+</div><div class="exercise" acro="OD.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">OD.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>
+In the discussion following <a class="knowl" acro="OBNM" type="Theorem" title="Orthonormal Bases and Normal Matrices" knowl="./knowls/theorem.OBNM.knowl">Theorem OBNM</a> we comment that the equation $\hat{\vect{x}} = \adjoint{U}\vect{x}$ is just <a class="knowl" acro="COB" type="Theorem" title="Coordinates and Orthonormal Bases" knowl="./knowls/theorem.COB.knowl">Theorem COB</a> in disguise.  Formulate this observation more formally and prove the equivalence.
+</p></div>
+</div><div class="exercise" acro="OD.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">OD.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>
+For the proof of <a class="knowl" acro="PTMT" type="Theorem" title="Product of Triangular Matrices is Triangular" knowl="./knowls/theorem.PTMT.knowl">Theorem PTMT</a> we only show that the product of two lower triangular matrices is again lower triangular.  Provide a proof that the product of two upper triangular matrices is again upper triangular.  Look to the proof of <a class="knowl" acro="PTMT" type="Theorem" title="Product of Triangular Matrices is Triangular" knowl="./knowls/theorem.PTMT.knowl">Theorem PTMT</a> for guidance if you need a hint.
+</p></div>
+</div>

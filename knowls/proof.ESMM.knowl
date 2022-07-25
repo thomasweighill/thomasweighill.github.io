@@ -1,0 +1,16 @@
+<div class="proof" id="proof-ESMM" acro="ESMM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ESMM</span>
+</h5>
+<p>Let $\vect{x}\neq\zerovector$ be one eigenvector of $A$ for $\lambda$.  Then
+\begin{align*}
+\left(\alpha A\right)\vect{x}&amp;=\alpha\left(A\vect{x}\right)&amp;&amp;\knowl{./knowls/theorem.MMSMM.knowl}{\text{Theorem MMSMM}}\\
+&amp;=\alpha\left(\lambda\vect{x}\right)&amp;&amp;\knowl{./knowls/definition.EEM.knowl}{\text{Definition EEM}}\\
+&amp;=\left(\alpha\lambda\right)\vect{x}&amp;&amp;\knowl{./knowls/property.SMAC.knowl}{\text{Property SMAC}}
+\end{align*}
+
+</p>
+
+<p>So $\vect{x}\neq\zerovector$ is an eigenvector of $\alpha A$ for the eigenvalue $\alpha\lambda$.</p>
+
+</div>

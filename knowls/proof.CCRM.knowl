@@ -1,0 +1,13 @@
+<div class="proof" id="proof-CCRM" acro="CCRM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CCRM</span>
+</h5>
+<p>Let $\alpha=a+bi$ and $\beta=r+si$.  Then
+\begin{align*}
+\conjugate{\alpha\beta}&amp;=\conjugate{(ar-bs)+(as+br)i}=(ar-bs)-(as+br)i\\
+&amp;=(ar-(-b)(-s))+(a(-s)+(-b)r)i=(a-bi)(r-si)=\conjugate{\alpha}\conjugate{\beta}
+\end{align*}
+
+</p>
+
+</div>

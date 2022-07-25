@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-IILT" acro="IILT" titletext="Inverse of an Invertible Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IILT</span><span class="titletext"> Inverse of an Invertible Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is an invertible linear transformation.  Then $\ltinverse{T}$ is an invertible linear transformation and $\ltinverse{\left(\ltinverse{T}\right)}=T$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.IILT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#theorem-IILT" class="context" title="Section IVLT">(in context)</a></div>

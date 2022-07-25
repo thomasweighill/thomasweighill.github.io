@@ -1,0 +1,44 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-IVLT', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">IVLT</span> <span class="titletext">Invertible Linear Transformations</span>
+</h5>
+
+
+<p>Of course, Sage can compute the inverse of a linear transformation.  However, not every linear transformation has an inverse, and we will see shortly how to determine this.  For now, take this example as just an illustration of the basics (both mathematically and for Sage).</p>
+
+<br><br><div class="sage-IVLT"><script type="text/x-sage">U = QQ^4
+V = QQ^4
+x1, x2, x3, x4 = var('x1, x2, x3, x4')
+outputs = [   x1 + 2*x2 - 5*x3 - 7*x4,
+                     x2 - 3*x3 - 5*x4,
+              x1 + 2*x2 - 4*x3 - 6*x4,
+           -2*x1 - 2*x2 + 7*x3 + 8*x4 ]
+T_symbolic(x1, x2, x3, x4) = outputs
+T = linear_transformation(U, V, T_symbolic)
+S = T.inverse()
+S
+</script></div>
+
+<p>We can build the composition of <span class="code">T</span> and its inverse, <span class="code">S</span>, in both orders.  We will optimistically name these as identity linear transformations, as predicted by <a class="knowl" acro="IVLT" type="Definition" title="Invertible Linear Transformations" knowl="./knowls/definition.IVLT.knowl">Definition IVLT</a>.  Run the cells to define the compositions, then run the compute cells with the random vectors repeatedly — they should always return <span class="code">True</span>.</p>
+
+<br><br><div class="sage-IVLT"><script type="text/x-sage">IU = S*T
+IV = T*S
+</script></div>
+
+<br><br><div class="sage-IVLT"><script type="text/x-sage">u = random_vector(QQ, 4)
+IU(u) == u      # random
+</script></div>
+
+<br><br><div class="sage-IVLT"><script type="text/x-sage">v = random_vector(QQ, 4)
+IV(v) == v      # random
+</script></div>
+
+<p>We can also check that the compositions are the same as the identity linear transformation itself.  We will do one, you can try the other.</p>
+
+<br><br><div class="sage-IVLT"><script type="text/x-sage">id = linear_transformation(U, U, identity_matrix(QQ, 4))
+IU.is_equal_function(id)
+</script></div>
+
+<br><br><div class="sage-IVLT sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

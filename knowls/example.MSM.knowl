@@ -1,0 +1,23 @@
+<div class="example" id="example-MSM" acro="MSM" titletext="Scalar multiplication in $M_{32}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">MSM</span> <span class="titletext">Scalar multiplication in $M_{32}$</span>
+</h5>
+<p>If
+\begin{equation*}
+A=
+\begin{bmatrix}
+2&amp;8\\
+-3&amp;5\\0&amp;1
+\end{bmatrix}
+\end{equation*}
+and $\alpha=7$, then
+\begin{equation*}
+\alpha A=
+7\begin{bmatrix}2&amp;8\\-3&amp;5\\0&amp;1\end{bmatrix}=
+\begin{bmatrix}7(2)&amp;7(8)\\7(-3)&amp;7(5)\\7(0)&amp;7(1)\end{bmatrix}=
+\begin{bmatrix}14&amp;56\\-21&amp;35\\0&amp;7\end{bmatrix}
+\end{equation*}
+</p>
+<div class="context"><a href="section-MO.html#example-MSM" class="context" title="Section MO">(in
+context)</a></div>
+</div>

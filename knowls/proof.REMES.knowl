@@ -1,0 +1,7 @@
+<div class="proof" id="proof-REMES" acro="REMES" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">REMES</span>
+</h5>
+<p>If we perform a single row operation on an augmented matrix, it will have the same effect as if we did the analogous equation operation on the system of equations the matrix represents.  By exactly the same methods as we used in the proof of <a class="knowl" acro="EOPSS" type="Theorem" title="Equation Operations Preserve Solution Sets" knowl="./knowls/theorem.EOPSS.knowl">Theorem EOPSS</a> we can see that each of these row operations will preserve the set of solutions for the system of equations the matrix represents.</p>
+
+</div>

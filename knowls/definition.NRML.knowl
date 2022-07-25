@@ -1,0 +1,6 @@
+<div class="definition" id="definition-NRML" acro="NRML" titletext="Normal Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">NRML</span> <span class="titletext"> Normal Matrix</span>
+</h5>
+<p>The square matrix $A$ is normal if $\adjoint{A}A=A\adjoint{A}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#definition-NRML" class="context" title="Section OD">(in context)</a></div>

@@ -1,0 +1,17 @@
+<div class="proof" id="proof-SNCM" acro="SNCM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SNCM</span>
+</h5>
+<p>By <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a> we know already that $\linearsystem{A}{\vect{b}}$ has a unique solution for every choice of $\vect{b}$.  We need to show that the expression stated is indeed a solution (<em>the</em> solution).  That is easy, just “plug it in” to the vector equation representation of the system (<a class="knowl" acro="SLEMM" type="Theorem" title="Systems of Linear Equations as Matrix Multiplication" knowl="./knowls/theorem.SLEMM.knowl">Theorem SLEMM</a>),
+\begin{align*}
+A\left(\inverse{A}\vect{b}\right)
+&amp;=\left(A\inverse{A}\right)\vect{b}&amp;&amp;\knowl{./knowls/theorem.MMA.knowl}{\text{Theorem MMA}}\\
+&amp;=I_n\vect{b}&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=\vect{b}&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}
+\end{align*}
+
+</p>
+
+<p>Since $A\vect{x}=\vect{b}$ is true when we substitute $\inverse{A}\vect{b}$ for $\vect{x}$, $\inverse{A}\vect{b}$ is a (the!) solution to $\linearsystem{A}{\vect{b}}$.</p>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="proof" id="proof-CRN" acro="CRN" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CRN</span>
+</h5>
+<p><a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a> provides a basis for the column space by choosing columns of $A$ that that have the same indices as the pivot columns of $B$.  In the analysis of $B$, each leading 1 provides one nonzero row and one pivot column.  So there are $r$ column vectors in a basis for $\csp{A}$.</p>
+
+<p><a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> provides a basis for the null space by creating basis vectors of the null space of $A$ from entries of $B$, one basis vector for each column that is <em>not</em> a pivot column.  So there are $n-r$ column vectors in a basis for $\nullity{A}$.</p>
+
+</div>

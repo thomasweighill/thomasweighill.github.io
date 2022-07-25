@@ -1,0 +1,7 @@
+<div class="exercise" acro="RREF.T13">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T13</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Generalize <a knowl="./knowls/exercise.RREF.T12.knowl">Exercise RREF.T12</a> by just keeping any $k$ rows, and not requiring the rows to be adjacent.  Prove that any such matrix $C$ is in reduced row-echelon form.
+</p></div>
+</div>

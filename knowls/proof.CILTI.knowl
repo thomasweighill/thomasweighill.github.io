@@ -1,0 +1,17 @@
+<div class="proof" id="proof-CILTI" acro="CILTI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CILTI</span>
+</h5>
+<p>That the composition is a linear transformation was established in <a class="knowl" acro="CLTLT" type="Theorem" title="Composition of Linear Transformations is a Linear Transformation" knowl="./knowls/theorem.CLTLT.knowl">Theorem CLTLT</a>, so we need only establish that the composition is injective.  Applying <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a>, choose $\vect{x}$, $\vect{y}$ from $U$.  Then if $\lt{\left(\compose{S}{T}\right)}{\vect{x}}=\lt{\left(\compose{S}{T}\right)}{\vect{y}}$,
+\begin{align*}
+&amp;\Rightarrow&amp;\lt{S}{\lt{T}{\vect{x}}}&amp;=\lt{S}{\lt{T}{\vect{y}}}
+&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;\Rightarrow&amp;\lt{T}{\vect{x}}&amp;=\lt{T}{\vect{y}}
+&amp;&amp;\knowl{./knowls/definition.ILT.knowl}{\text{Definition ILT}}\text{ for }S\\
+&amp;\Rightarrow&amp;\vect{x}&amp;=\vect{y}
+&amp;&amp;\knowl{./knowls/definition.ILT.knowl}{\text{Definition ILT}}\text{ for }T
+\end{align*}
+
+</p>
+
+</div>

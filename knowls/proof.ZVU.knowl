@@ -1,0 +1,20 @@
+<div class="proof" id="proof-ZVU" acro="ZVU" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ZVU</span>
+</h5>
+<p>To prove uniqueness, a standard technique is to suppose the existence of two objects (<a class="knowl" acro="U" type="Proof Technique" title="Uniqueness" knowl="./knowls/technique.U.knowl">Proof Technique U</a>).  So let $\zerovector_1$ and $\zerovector_2$ be two zero vectors in $V$.  Then
+\begin{align*}
+\zerovector_1
+&amp;=\zerovector_1+\zerovector_2
+&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\text{ for }\zerovector_2\\
+&amp;=\zerovector_2+\zerovector_1
+&amp;&amp;\knowl{./knowls/property.C.knowl}{\text{Property C}}\\
+&amp;=\zerovector_2
+&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\text{ for }\zerovector_1
+\end{align*}
+
+</p>
+
+<p>This proves the uniqueness since the two zero vectors are really the same.</p>
+
+</div>

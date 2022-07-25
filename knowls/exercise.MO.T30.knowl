@@ -1,0 +1,7 @@
+<div class="exercise" acro="MO.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that a skew-symmetric matrix is square.  (Hint: study the proof of <a class="knowl" acro="SMS" type="Theorem" title="Symmetric Matrices are Square" knowl="./knowls/theorem.SMS.knowl">Theorem SMS</a>.)
+</p></div>
+</div>

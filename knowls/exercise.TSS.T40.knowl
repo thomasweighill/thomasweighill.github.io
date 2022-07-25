@@ -1,0 +1,8 @@
+<div class="exercise" acro="TSS.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that the coefficient matrix of a consistent system of linear equations has two columns that are identical.  Prove that the system has infinitely many solutions.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.T40.knowl">Solution</a></p></div>
+</div>

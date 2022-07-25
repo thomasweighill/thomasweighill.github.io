@@ -1,0 +1,95 @@
+<div class="proof" id="proof-UTMR" acro="UTMR" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">UTMR</span>
+</h5>
+<p>We begin with a proof by induction (<a class="knowl" acro="I" type="Proof Technique" title="Induction" knowl="./knowls/technique.I.knowl">Proof Technique I</a>) of the first statement in the conclusion of the theorem.  We use induction on the dimension of $V$ to show that if $\ltdefn{T}{V}{V}$ is a linear transformation,  then there is a basis $B$ for $V$ such that the matrix representation of $T$ relative to $B$, $\matrixrep{T}{B}{B}$, is an upper triangular matrix.</p>
+
+<p>To start suppose that $\dimension{V}=1$.  Choose any nonzero vector $\vect{v}\in V$ and realize that $V=\spn{\set{\vect{v}}}$.  Then $\lt{T}{\vect{v}}=\beta\vect{v}$ for some $\beta\in\complexes$, which determines $T$ uniquely (<a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a>).  This description of $T$ also gives us a matrix representation relative to the  basis $B=\set{\vect{v}}$ as the $1\times 1$ matrix with lone entry equal to $\beta$.  And this matrix representation is upper triangular (<a class="knowl" acro="UTM" type="Definition" title="Upper Triangular Matrix" knowl="./knowls/definition.UTM.knowl">Definition UTM</a>).</p>
+
+<p>For the induction step let $\dimension{V}=m$, and assume the theorem is true for every linear transformation defined on a vector space of dimension less than $m$.  By <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a> (suitably converted to the setting of a linear transformation), $T$ has at least one eigenvalue, and we denote this eigenvalue as $\lambda$.  (We will remark later about how critical this step is.)  We now consider properties of the linear transformation $\ltdefn{T-\lambda I_V}{V}{V}$.</p>
+
+<p>Let $\vect{x}$ be an eigenvector of $T$ for $\lambda$.  By definition $\vect{x}\neq\zerovector$.  Then
+\begin{align*}
+\lt{\left(T-\lambda I_V\right)}{\vect{x}}
+&amp;=\lt{T}{\vect{x}}-\lambda\lt{I_V}{\vect{x}}
+&amp;&amp;\knowl{./knowls/theorem.VSLT.knowl}{\text{Theorem VSLT}}\\
+&amp;=\lt{T}{\vect{x}}-\lambda\vect{x}
+&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\lambda\vect{x}-\lambda\vect{x}
+&amp;&amp;\knowl{./knowls/definition.EELT.knowl}{\text{Definition EELT}}\\
+&amp;=\zerovector
+&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}
+\end{align*}
+
+</p>
+
+<p>So $T-\lambda I_V$ is not injective, as it has a nontrivial kernel (<a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a>).  With an application of <a class="knowl" acro="RPNDD" type="Theorem" title="Rank Plus Nullity is Domain Dimension" knowl="./knowls/theorem.RPNDD.knowl">Theorem RPNDD</a> we bound the rank of $T-\lambda I_V$,
+\begin{align*}
+\rank{T-\lambda I_V}&amp;=\dimension{V}-\nullity{T-\lambda I_V}\leq m-1
+\end{align*}
+
+</p>
+
+<p>Let $W$ be the subspace of $V$ that is the range of $T-\lambda I_V$, $W=\rng{T-\lambda I_V}$, and define $k=\dimension{W}\leq m-1$.   We define a new linear transformation $S$, on $W$,
+\begin{align*}
+\ltdefn{S}{W}{W},\quad\lt{S}{\vect{w}}=\lt{T}{\vect{w}}
+\end{align*}
+
+</p>
+
+<p>This does not look we have accomplished much, since the action of $S$ is identical to the action of $T$.  For our purposes this will be a good thing.  What is different is the domain and codomain.  $S$ is defined on $W$, a vector space with dimension less than $m$, and so is susceptible to our induction hypothesis.  Verifying that $S$ is really a linear transformation is almost entirely routine, with one exception.  Employing $T$ in our definition of $S$ raises the possibility that the outputs of $S$ will not be contained within $W$ (but instead will lie inside $V$, but outside $W$).  To examine this possibility, suppose that $\vect{w}\in W$.
+\begin{align*}
+\lt{S}{\vect{w}}
+&amp;=\lt{T}{\vect{w}}\\
+&amp;=\lt{T}{\vect{w}}+\zerovector&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\\
+&amp;=\lt{T}{\vect{w}}+\left(\lambda\lt{I_V}{\vect{w}}-\lambda\lt{I_V}{\vect{w}}\right)&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}\\
+&amp;=\left(\lt{T}{\vect{w}}-\lambda\lt{I_V}{\vect{w}}\right)+\lambda\lt{I_V}{\vect{w}}&amp;&amp;\knowl{./knowls/property.AA.knowl}{\text{Property AA}}\\
+&amp;=\left(\lt{T}{\vect{w}}-\lambda\lt{I_V}{\vect{w}}\right)+\lambda\vect{w}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\lt{\left(T-\lambda I_V\right)}{\vect{w}}+\lambda\vect{w}
+&amp;&amp;\knowl{./knowls/theorem.VSLT.knowl}{\text{Theorem VSLT}}
+\end{align*}
+
+</p>
+
+<p>Since $W$ is the range of $T-\lambda I_V$, $\lt{\left(T-\lambda I_V\right)}{\vect{w}}\in W$.  And by <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a>, $\lambda\vect{w}\in W$.  Finally, applying <a class="knowl" acro="AC" type="Property" title="Additive Closure" knowl="./knowls/property.AC.knowl">Property AC</a> we see by closure that the sum is in $W$ and so we conclude that $\lt{S}{\vect{w}}\in W$.  This argument convinces us that it is legitimate to define $S$ as we did with $W$ as the codomain.</p>
+
+<p>$S$ is a linear transformation defined on a vector space with dimension $k$, less than $m$, so we can apply the induction hypothesis and conclude that $W$ has a basis, $C=\set{\vectorlist{w}{k}}$, such that the matrix representation of $S$ relative to $C$ is an upper triangular matrix.</p>
+
+<p>Beginning with the linearly independent set $C$, repeatedly apply <a class="knowl" acro="ELIS" type="Theorem" title="Extending Linearly Independent Sets" knowl="./knowls/theorem.ELIS.knowl">Theorem ELIS</a> to add vectors to $C$, maintaining a linearly independent set and spanning ever larger subspaces of $V$.  This process will end with the addition of $m-k$ vectors, which together with $C$ will span all of $V$.  Denote these vectors as $D=\set{\vectorlist{u}{{m-k}}}$.  Then $B=C\cup D$ is a basis for $V$, and is the basis we desire for the conclusion of the theorem.  So we now consider the matrix representation of $T$ relative to $B$.</p>
+
+<p>Since the definition of $T$ and $S$ agree on $W$,  the first $k$ columns of $\matrixrep{T}{B}{B}$ will have the upper triangular matrix representation of $S$ in the first $k$ rows.  The remaining $m-k$ rows of these first $k$ columns will be all zeros since the outputs of $T$ for basis vectors from $C$ are all contained in $W$ and hence are linear combinations of the basis vectors in $C$.  The situation for $T$ on the basis vectors in $D$ is not quite as pretty, but it is close.</p>
+
+<p>For $1\leq i\leq m-k$, consider
+\begin{align*}
+\vectrep{B}{\lt{T}{\vect{u}_i}}
+&amp;=\vectrep{B}{\lt{T}{\vect{u}_i}+\zerovector}&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\\
+&amp;=\vectrep{B}{\lt{T}{\vect{u}_i}+\left(\lambda\lt{I_V}{\vect{u}_i}-\lambda\lt{I_V}{\vect{u}_i}\right)}&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}\\
+&amp;=\vectrep{B}{\left(\lt{T}{\vect{u}_i}-\lambda\lt{I_V}{\vect{u}_i}\right)+\lambda\lt{I_V}{\vect{u}_i}}&amp;&amp;\knowl{./knowls/property.AA.knowl}{\text{Property AA}}\\
+&amp;=\vectrep{B}{\left(\lt{T}{\vect{u}_i}-\lambda\lt{I_V}{\vect{u}_i}\right)+\lambda\vect{u}_i}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\vectrep{B}{\lt{\left(T-\lambda I_V\right)}{\vect{u}_i}+\lambda\vect{u}_i}
+&amp;&amp;\knowl{./knowls/theorem.VSLT.knowl}{\text{Theorem VSLT}}\\
+&amp;=\vectrep{B}{\lincombo{a}{w}{k}+\lambda\vect{u}_i}
+&amp;&amp;\knowl{./knowls/definition.RLT.knowl}{\text{Definition RLT}}\\
+&amp;=\colvector{a_1\\a_2\\\vdots\\a_k\\0\\\vdots\\0\\\lambda\\0\\\vdots\\0}
+&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}
+\end{align*}
+
+</p>
+
+<p>In the penultimate equality, we have rewritten an element of the range of $T-\lambda I_V$ as a linear combination of the basis vectors, $C$, for the range of $T-\lambda I_V$, $W$, using the scalars $\scalarlist{a}{k}$.  If we incorporate these $m-k$ column vectors into the matrix representation $\matrixrep{T}{B}{B}$ we find $m-k$ occurrences of $\lambda$ on the diagonal, and any nonzero entries lying only in the first $k$ rows.  Together with the $k\times k$ upper triangular representation in the upper left-hand corner, the entire matrix representation for $T$ is clearly upper triangular.  This completes the induction step.  So for any linear transformation there is a basis that creates an upper triangular matrix representation.</p>
+
+<p>We have one more statement in the conclusion of the theorem to verify.  The eigenvalues of $T$, and their multiplicities, can be computed with the techniques of <a href="chapter-E.html" title="Eigenvalues">Chapter E</a> relative to any matrix representation (<a class="knowl" acro="EER" type="Theorem" title="Eigenvalues, Eigenvectors, Representations" knowl="./knowls/theorem.EER.knowl">Theorem EER</a>). We take this approach with our upper triangular matrix representation $\matrixrep{T}{B}{B}$.  Let $d_i$ be the diagonal entry of $\matrixrep{T}{B}{B}$ in row $i$ and column $i$.  Then the characteristic polynomial, computed as a determinant (<a class="knowl" acro="CP" type="Definition" title="Characteristic Polynomial" knowl="./knowls/definition.CP.knowl">Definition CP</a>) with repeated expansions about the first column, is
+\begin{align*}
+\charpoly{\matrixrep{T}{B}{B}}{x}&amp;=
+\left(d_1-x\right)
+\left(d_2-x\right)
+\left(d_3-x\right)
+\cdots
+\left(d_m-x\right)
+\end{align*}
+
+</p>
+
+<p>The roots of the polynomial equation $\charpoly{\matrixrep{T}{B}{B}}{x}=0$ are the eigenvalues of the linear transformation (<a class="knowl" acro="EMRCP" type="Theorem" title="Eigenvalues of a Matrix are Roots of Characteristic Polynomials" knowl="./knowls/theorem.EMRCP.knowl">Theorem EMRCP</a>).  So each diagonal entry is an eigenvalue, and is repeated on the diagonal exactly $\algmult{T}{\lambda}$ times (<a class="knowl" acro="AME" type="Definition" title="Algebraic Multiplicity of an Eigenvalue" knowl="./knowls/definition.AME.knowl">Definition AME</a>).</p>
+
+</div>

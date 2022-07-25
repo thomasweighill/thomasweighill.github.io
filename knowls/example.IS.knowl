@@ -1,0 +1,83 @@
+<div class="example" id="example-IS" acro="IS" titletext="Three equations, infinitely many solutions">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">IS</span> <span class="titletext">Three equations, infinitely many solutions</span>
+</h5>
+<p>The following system of equations made an appearance earlier in this section (<a class="knowl" acro="NSE" type="Example" title="Notation for a system of equations" knowl="./knowls/example.NSE.knowl">Example NSE</a>), where we listed <em>one</em> of its solutions.  Now, we will try to find all of the solutions to this system.  Do not concern yourself too much about why we choose this particular sequence of equation operations, just believe that the work we do is all correct.
+\begin{align*}
+x_1+2x_2 +0x_3+ x_4&amp;= 7\\
+x_1+x_2+x_3-x_4&amp;=3\\
+3x_1+x_2+5x_3-7x_4&amp;=1
+\end{align*}
+$\alpha=-1$ times equation 1, add to equation 2:
+\begin{align*}
+
+x_1+2x_2 +0x_3+ x_4&amp;= 7\\
+0x_1-x_2+x_3-2x_4&amp;=-4\\
+3x_1+x_2+5x_3-7x_4&amp;=1
+\end{align*}
+$\alpha=-3$ times equation 1, add to equation 3:
+\begin{align*}
+
+x_1+2x_2 +0x_3+ x_4&amp;= 7\\
+0x_1-x_2+x_3-2x_4&amp;=-4\\
+0x_1-5x_2+5x_3-10x_4&amp;=-20
+\end{align*}
+$\alpha=-5$ times equation 2, add to equation 3:
+\begin{align*}
+
+x_1+2x_2 +0x_3+ x_4&amp;= 7\\
+0x_1-x_2+x_3-2x_4&amp;=-4\\
+0x_1+0x_2+0x_3+0x_4&amp;=0
+\end{align*}
+$\alpha=-1$ times equation 2:
+\begin{align*}
+
+x_1+2x_2 +0x_3+ x_4&amp;= 7\\
+0x_1+x_2-x_3+2x_4&amp;=4\\
+0x_1+0x_2+0x_3+0x_4&amp;=0
+\end{align*}
+$\alpha=-2$ times equation 2, add to equation 1:
+\begin{align*}
+
+x_1+0x_2 +2x_3-3x_4&amp;= -1\\
+0x_1+x_2-x_3+2x_4&amp;=4\\
+0x_1+0x_2+0x_3+0x_4&amp;=0
+\end{align*}
+which can be written more clearly as
+\begin{align*}
+
+x_1+2x_3 - 3x_4&amp;= -1\\
+x_2-x_3+2x_4&amp;=4\\
+0&amp;=0
+\end{align*}
+</p>
+<p>What does the equation $0=0$ mean?  We can choose <em>any</em> values for $x_1$, $x_2$, $x_3$, $x_4$ and this equation will be true, so we only need to consider further the first two equations, since the third is true no matter what.  We can analyze the second equation without consideration of the variable $x_1$.  It would appear that there is considerable latitude in how we can choose $x_2$, $x_3$, $x_4$ and make this equation true.  Let us choose $x_3$ and $x_4$ to be <em>anything</em> we please, say $x_3=a$ and $x_4=b$.</p>
+<p>Now we can take these arbitrary values for $x_3$ and $x_4$, substitute them in equation 1,
+to obtain
+\begin{align*}
+x_1+2a - 3b&amp;= -1\\
+x_1&amp;=-1-2a+3b
+\end{align*}
+Similarly, equation 2 becomes
+\begin{align*}
+
+x_2-a+2b&amp;=4\\
+x_2&amp;=4 +a-2b
+\end{align*}
+
+</p>
+<p>So our arbitrary choices of values for $x_3$ and $x_4$ ($a$ and $b$) translate into specific values of $x_1$ and $x_2$.  The lone solution given in <a class="knowl" acro="NSE" type="Example" title="Notation for a system of equations" knowl="./knowls/example.NSE.knowl">Example NSE</a> was obtained by choosing $a=2$ and $b=1$.  Now we can easily and quickly find many more (infinitely more).   Suppose we choose $a=5$ and $b=-2$, then we compute
+\begin{align*}
+x_1&amp;=-1-2(5)+3(-2)=-17\\
+x_2&amp;=4+5-2(-2)=13
+\end{align*}
+
+and you can verify that $(x_1,\,x_2,\,x_3,\,x_4)=(-17,\,13,\,5,\,-2)$ makes all three equations true.  The entire solution set is written as
+\begin{equation*}
+S=\setparts{(-1-2a+3b,\,4 +a-2b,\,a,\,b)}{ a\in\complex{\null},\,b\in\complex{\null}}
+\end{equation*}
+</p>
+<p>It would be instructive to finish off your study of this example by taking the general form of the solutions given in this set and substituting them into each of the three equations and verify that they are true in each case (<a knowl="./knowls/exercise.SSLE.M40.knowl">Exercise SSLE.M40</a>).</p>
+<div class="context"><a href="section-SSLE.html#example-IS" class="context" title="Section SSLE">(in
+context)</a></div>
+</div>

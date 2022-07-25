@@ -1,0 +1,16 @@
+<div class="exercise" acro="RREF.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$, $B$ and $C$ are $m\times n$ matrices.  Use the definition of row-equivalence (<a class="knowl" acro="REM" type="Definition" title="Row-Equivalent Matrices" knowl="./knowls/definition.REM.knowl">Definition REM</a>) to prove the following three facts.
+<ol>
+<li> $A$ is row-equivalent to $A$.
+</li>
+<li> If $A$ is row-equivalent to $B$, then $B$ is row-equivalent to $A$.
+</li>
+<li> If $A$ is row-equivalent to $B$, and $B$ is row-equivalent to $C$, then $A$ is row-equivalent to $C$.
+</li>
+</ol>
+A relationship that satisfies these three properties is known as an <em class="term">equivalence relation</em>, an important idea in the study of various algebras.  This is a formal way of saying that a relationship behaves like equality, without requiring the relationship to be as strict as equality itself.   We will see it again in <a class="knowl" acro="SER" type="Theorem" title="Similarity is an Equivalence Relation" knowl="./knowls/theorem.SER.knowl">Theorem SER</a>.
+</p></div>
+</div>

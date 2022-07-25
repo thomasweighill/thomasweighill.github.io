@@ -1,0 +1,19 @@
+<div class="exercise" acro="LT.C31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the linear transformation $S$ compute the pre-images.
+\begin{align*}
+\ltdefn{S}{\complex{3}}{\complex{3}},\quad \lt{S}{\colvector{a\\b\\c}}=
+\colvector{a-2b-c\\3a-b+2c\\a+b+2c }
+\end{align*}
+
+\begin{align*}
+\preimage{S}{\colvector{-2\\5\\3}}&amp;
+&amp;
+\preimage{S}{\colvector{-5\\5\\7}}&amp;
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C31.knowl">Solution</a></p></div>
+</div>

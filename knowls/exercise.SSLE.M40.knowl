@@ -1,0 +1,11 @@
+<div class="exercise" acro="SSLE.M40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SSLE.M40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Solutions to the system in <a class="knowl" acro="IS" type="Example" title="Three equations, infinitely many solutions" knowl="./knowls/example.IS.knowl">Example IS</a> are given as
+\begin{equation*}
+(x_1,\,x_2,\,x_3,\,x_4)=(-1-2a+3b,\,4+a-2b,\,a,\,b)
+\end{equation*}
+Evaluate the three equations of the original system with these expressions in  $a$ and $b$ and verify that each equation is true, no matter what values are chosen for $a$ and $b$.
+</p></div>
+</div>

@@ -1,0 +1,13 @@
+<div class="exercise" acro="VO.C11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VO.C11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Solve the given vector equation for $x$, or explain why no solution exists:
+\begin{equation*}
+    3\colvector{1\\2\\-1}+
+   4\colvector{2\\0\\x}=
+      \colvector{11\\6\\17}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VO.C11.knowl">Solution</a></p></div>
+</div>

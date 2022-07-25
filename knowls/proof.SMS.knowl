@@ -1,0 +1,7 @@
+<div class="proof" id="proof-SMS" acro="SMS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SMS</span>
+</h5>
+<p>We start by specifying $A$'s size, without assuming it is square, since we are trying to <em>prove</em> that, so we cannot also assume it.  Suppose $A$ is an $m\times n$ matrix.  Because $A$ is symmetric, we know by <a class="knowl" acro="SYM" type="Definition" title="Symmetric Matrix" knowl="./knowls/definition.SYM.knowl">Definition SYM</a> that $A=\transpose{A}$.  So, in particular, <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> requires that $A$ and $\transpose{A}$ must have the same size.  The size of $\transpose{A}$ is $n\times m$.  Because $A$ has $m$ rows and $\transpose{A}$ has $n$ rows, we conclude that $m=n$, and hence $A$ must be square by <a class="knowl" acro="SQM" type="Definition" title="Square Matrix" knowl="./knowls/definition.SQM.knowl">Definition SQM</a>.</p>
+
+</div>

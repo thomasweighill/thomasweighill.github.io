@@ -1,0 +1,25 @@
+<div class="subsection" id="subsection-RD" acro="RD" titletext="Recycling Definitions">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">RD</span> <span class="titletext">Recycling Definitions</span>
+</h4>
+<p>When we say that $V$ is a vector space, we then know we have a set of objects (the “vectors”), but we also know we have been provided with two operations (“vector addition” and “scalar multiplication”) and these operations behave with these objects according to the ten properties of <a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a>.  One combines two vectors and produces a vector, the other takes a scalar and a vector, producing a vector as the result.  So if $\vect{u}_1,\,\vect{u}_2,\,\vect{u}_3\in V$ then an expression like
+\begin{equation*}
+5\vect{u}_1+7\vect{u}_2-13\vect{u}_3
+\end{equation*}
+would be unambiguous in <em>any</em> of the vector spaces we have discussed in this section.  And the resulting object would be another vector in the vector space.  If you were tempted to call the above expression a linear combination, you would be right.  Four of the definitions that were central to our discussions in <a href="chapter-V.html" title="Vectors">Chapter V</a> were stated in the context of vectors being <em>column vectors</em>, but were purposely kept broad enough that they could be applied in the context of any vector space.  They only rely on the presence of scalars, vectors, vector addition and scalar multiplication to make sense.  We will restate them shortly, unchanged, except that their titles and acronyms no longer refer to column vectors, and the hypothesis of being in a vector space has been added.  Take the time now to look forward and review each one, and begin to form some connections to what we have done earlier and what we will be doing in subsequent sections and chapters.  Specifically, compare the following pairs of definitions:
+    <ul>
+<li>
+<a class="knowl" acro="LCCV" type="Definition" title="Linear Combination of Column Vectors" knowl="./knowls/definition.LCCV.knowl">Definition LCCV</a> and <a class="knowl" acro="LC" type="Definition" title="Linear Combination" knowl="./knowls/definition.LC.knowl">Definition LC</a>
+</li>
+<li>
+<a class="knowl" acro="SSCV" type="Definition" title="Span of a Set of Column Vectors" knowl="./knowls/definition.SSCV.knowl">Definition SSCV</a> and <a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a>
+</li>
+<li>
+<a class="knowl" acro="RLDCV" type="Definition" title="Relation of Linear Dependence for Column Vectors" knowl="./knowls/definition.RLDCV.knowl">Definition RLDCV</a> and <a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>
+</li>
+<li>
+<a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a> and <a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>
+</li>
+</ul>
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VS.html#subsection-RD" class="context" title="Section VS">(in context)</a></div>

@@ -1,0 +1,5 @@
+<div class="solution" acro="ILT.C26">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">ILT.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>By <a class="knowl" acro="ILTD" type="Theorem" title="Injective Linear Transformations and Dimension" knowl="./knowls/theorem.ILTD.knowl">Theorem ILTD</a>, if a linear transformation $\ltdefn{T}{U}{V}$ is injective, then $\dim(U)\le\dim(V)$.  In this case, $\ltdefn{T}{\complex{5}}{\complex{4}}$, and $5=\dimension{\complex{5}} &gt; \dimension{\complex{4}}=4$.  Thus, $T$ cannot possibly be injective.
+</div>

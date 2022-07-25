@@ -1,0 +1,37 @@
+<div class="proof" id="proof-HMIP" acro="HMIP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">HMIP</span>
+</h5>
+<p>(⇒) This is the “easy half” of the proof, and makes the rationale for a definition of Hermitian matrices most obvious.  Assume $A$ is Hermitian,
+\begin{align*}
+\innerproduct{A\vect{x}}{\vect{y}}
+&amp;=\innerproduct{\vect{x}}{\adjoint{A}\vect{y}}&amp;&amp;\knowl{./knowls/theorem.AIP.knowl}{\text{Theorem AIP}}\\
+&amp;=\innerproduct{\vect{x}}{A\vect{y}}&amp;&amp;\knowl{./knowls/definition.HM.knowl}{\text{Definition HM}}\\
+\end{align*}
+
+</p>
+
+<p>(⇐) This “half” will take a bit more work.  Assume that $\innerproduct{A\vect{x}}{\vect{y}}=\innerproduct{\vect{x}}{A\vect{y}}$ for all $\vect{x},\,\vect{y}\in\complex{n}$.  We show that $A=\adjoint{A}$ by establishing that $A\vect{x}=\adjoint{A}\vect{x}$ for all $\vect{x}$, so we can then apply <a class="knowl" acro="EMMVP" type="Theorem" title="Equal Matrices and Matrix-Vector Products" knowl="./knowls/theorem.EMMVP.knowl">Theorem EMMVP</a>.  With only this much motivation, consider the inner product for any $\vect{x}\in\complex{n}$.
+\begin{align*}
+\innerproduct{A\vect{x}-\adjoint{A}\vect{x}}{A\vect{x}-\adjoint{A}\vect{x}}
+&amp;=
+\innerproduct{A\vect{x}-\adjoint{A}\vect{x}}{A\vect{x}}-
+\innerproduct{A\vect{x}-\adjoint{A}\vect{x}}{\adjoint{A}\vect{x}}
+&amp;&amp;\knowl{./knowls/theorem.IPVA.knowl}{\text{Theorem IPVA}}\\
+&amp;=
+\innerproduct{A\vect{x}-\adjoint{A}\vect{x}}{A\vect{x}}-
+\innerproduct{A\left(A\vect{x}-\adjoint{A}\vect{x}\right)}{\vect{x}}
+&amp;&amp;\knowl{./knowls/theorem.AIP.knowl}{\text{Theorem AIP}}\\
+&amp;=
+\innerproduct{A\vect{x}-\adjoint{A}\vect{x}}{A\vect{x}}-
+\innerproduct{A\vect{x}-\adjoint{A}\vect{x}}{A\vect{x}}
+&amp;&amp;\text{Hypothesis}\\
+&amp;
+=0
+&amp;&amp;\knowl{./knowls/property.AICN.knowl}{\text{Property AICN}}
+\end{align*}
+</p>
+
+<p>Because this first inner product equals zero, and has the same vector in each argument ($A\vect{x}-\adjoint{A}\vect{x}$), <a class="knowl" acro="PIP" type="Theorem" title="Positive Inner Products" knowl="./knowls/theorem.PIP.knowl">Theorem PIP</a> gives the conclusion that $A\vect{x}-\adjoint{A}\vect{x}=\zerovector$.  With $A\vect{x}=\adjoint{A}\vect{x}$ for all $\vect{x}\in\complex{n}$, <a class="knowl" acro="EMMVP" type="Theorem" title="Equal Matrices and Matrix-Vector Products" knowl="./knowls/theorem.EMMVP.knowl">Theorem EMMVP</a> says $A=\adjoint{A}$, which is the defining property of a Hermitian matrix (<a class="knowl" acro="HM" type="Definition" title="Hermitian Matrix" knowl="./knowls/definition.HM.knowl">Definition HM</a>).</p>
+
+</div>

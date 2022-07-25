@@ -1,0 +1,19 @@
+<div class="definition" id="definition-NV" acro="NV" titletext="Norm of a Vector">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">NV</span> <span class="titletext"> Norm of a Vector</span>
+</h5>
+<p>The <em class="term">norm</em> of the vector $\vect{u}$ is the scalar quantity in $\complex{\null}$
+\begin{equation*}
+\norm{\vect{u}}=
+\sqrt{
+\modulus{\vectorentry{\vect{u}}{1}}^2+
+\modulus{\vectorentry{\vect{u}}{2}}^2+
+\modulus{\vectorentry{\vect{u}}{3}}^2+
+\cdots+
+\modulus{\vectorentry{\vect{u}}{m}}^2
+}
+=
+\sqrt{\sum_{i=1}^{m}\modulus{\vectorentry{\vect{u}}{i}}^2}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#definition-NV" class="context" title="Section O">(in context)</a></div>

@@ -1,0 +1,74 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-C', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">C</span> <span class="titletext">Coordinates</span>
+</h5>
+
+
+<p>For vector spaces of column vectors, Sage can quickly determine the coordinates of a vector relative to a basis, as guaranteed by <a class="knowl" acro="VRRB" type="Theorem" title="Vector Representation Relative to a Basis" knowl="./knowls/theorem.VRRB.knowl">Theorem VRRB</a>.  We illustrate some new Sage commands with a simple example and then apply them to orthonormal bases.  The vectors <span class="code">v1</span> and <span class="code">v2</span> are linearly independent and thus span a subspace with a basis of size 2.  We first create this subspace and let Sage determine the basis, then we illustrate a new vector space method, <span class="code">.subspace_with_basis()</span>, that allows us to specify the basis.  (This method is very similar to <span class="code">.span_of_basis()</span>, except it preserves a subspace relationship with the original vector space.)  Notice how the description of the vector space makes it clear that <span class="code">W</span> has a user-specified basis.  Notice too that the actual subspace created is the same in both cases.</p>
+
+<br><br><div class="sage-C"><script type="text/x-sage">V = QQ^3
+v1 = vector(QQ,[ 2, 1, 3])
+v2 = vector(QQ,[-1, 1, 4])
+U=V.span([v1,v2])
+U
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">W = V.subspace_with_basis([v1, v2])
+W
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">U == W
+</script></div>
+
+<p>Now we manufacture a third vector in the subspace, and request a coordinatization in each vector space, which has the effect of using a different basis in each case.  The vector space method <span class="code">.coordinate_vector(v)</span> computes a vector whose entries express <span class="code">v</span> as a linear combination of basis vectors.  Verify for yourself in each case below that the components of the vector returned really give a linear combination of the basis vectors that equals <span class="code">v3</span>.</p>
+
+<br><br><div class="sage-C"><script type="text/x-sage">v3 = 4*v1 + v2; v3
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">U.coordinate_vector(v3)
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">W.coordinate_vector(v3)
+</script></div>
+
+<p>Now we can construct a more complicated example using an orthonormal basis, specifically the one from <a class="knowl" acro="CROB4" type="Example" title="Coordinatization relative to an orthonormal basis, $\complex{4}$" knowl="./knowls/example.CROB4.knowl">Example CROB4</a>, but we will compute over <span class="code">QQbar</span>, the field of algebraic numbers.  We form the four vectors of the orthonormal basis, install them as the basis of a vector space and then ask for the coordinates.  Sage treats the square roots in the scalars as “symbolic” expressions, so we need to explicitly coerce them into <span class="code">QQbar</span> before computing the scalar multiples.</p>
+
+<br><br><div class="sage-C"><script type="text/x-sage">V = QQbar^4
+x1 = vector(QQbar, [    1+I,       1,      1-I,       I])
+x2 = vector(QQbar, [  1+5*I,   6+5*I,     -7-I,   1-6*I])
+x3 = vector(QQbar, [-7+34*I, -8-23*I, -10+22*I, 30+13*I])
+x4 = vector(QQbar, [ -2-4*I,     6+I,    4+3*I,     6-I])
+v1 = QQbar(1/sqrt(6))   * x1
+v2 = QQbar(1/sqrt(174)) * x2
+v3 = QQbar(1/sqrt(3451))* x3
+v4 = QQbar(1/sqrt(119)) * x4
+W = V.subspace_with_basis([v1, v2, v3, v4])
+w = vector(QQbar, [2, -3, 1, 4])
+c = W.coordinate_vector(w); c
+</script></div>
+
+<p>Is this right?  Our exact coordinates in the text are printed differently, but we can check that they are the same numbers:</p>
+
+<br><br><div class="sage-C"><script type="text/x-sage">c[0] == 1/sqrt(6)*(-5*I)
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">c[1] == 1/sqrt(174)*(-19+30*I)
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">c[2] == 1/sqrt(3451)*(120-211*I)
+</script></div>
+
+<br><br><div class="sage-C"><script type="text/x-sage">c[3] == 1/sqrt(119)*(6+12*I)
+</script></div>
+
+<p>With an orthonormal basis, we can illustrate <a class="knowl" acro="CUMOS" type="Theorem" title="Columns of Unitary Matrices are Orthonormal Sets" knowl="./knowls/theorem.CUMOS.knowl">Theorem CUMOS</a> by making the four vectors the columns of $4\times 4$ matrix and verifying the result is a unitary matrix.</p>
+
+<br><br><div class="sage-C"><script type="text/x-sage">U = column_matrix([v1, v2, v3, v4])
+U.is_unitary()
+</script></div>
+
+<p>We will see coordinate vectors again, in a more formal setting, in <a class="knowl" acro="VR" type="Sage" title="" knowl="./knowls/sage.VR.knowl">Sage VR</a>.</p>
+
+<br><br><div class="sage-C sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

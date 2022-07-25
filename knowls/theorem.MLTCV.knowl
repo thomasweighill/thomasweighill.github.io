@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-MLTCV" acro="MLTCV" titletext="Matrix of a Linear Transformation, Column Vectors">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MLTCV</span><span class="titletext"> Matrix of a Linear Transformation, Column Vectors</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{\complex{n}}{\complex{m}}$ is a linear transformation.  Then there is an $m\times n$ matrix $A$ such that $\lt{T}{\vect{x}}=A\vect{x}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MLTCV.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#theorem-MLTCV" class="context" title="Section LT">(in context)</a></div>

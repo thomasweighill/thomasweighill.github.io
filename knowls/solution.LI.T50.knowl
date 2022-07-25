@@ -1,0 +1,57 @@
+<div class="solution" acro="LI.T50">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LI.T50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Let $A=\matrixcolumns{A}{n}$.  $\linearsystem{A}{\vect{b}}$ is consistent, so we know the system has at least one solution (<a class="knowl" acro="CS" type="Definition" title="Consistent System" knowl="./knowls/definition.CS.knowl">Definition CS</a>).  We would like to show that there are no more than one solution to the system.  Employing <a class="knowl" acro="U" type="Proof Technique" title="Uniqueness" knowl="./knowls/technique.U.knowl">Proof Technique U</a>, suppose that $\vect{x}$ and $\vect{y}$ are two solution vectors for $\linearsystem{A}{\vect{b}}$.  By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> we know we can write,
+\begin{align*}
+\vect{b}&amp;=
+\vectorentry{\vect{x}}{1}A_1+
+\vectorentry{\vect{x}}{2}A_2+
+\vectorentry{\vect{x}}{3}A_3+
+\cdots+
+\vectorentry{\vect{x}}{n}A_n\\
+\vect{b}&amp;=
+\vectorentry{\vect{y}}{1}A_1+
+\vectorentry{\vect{y}}{2}A_2+
+\vectorentry{\vect{y}}{3}A_3+
+\cdots+
+\vectorentry{\vect{y}}{n}A_n
+\end{align*}
+
+Then
+\begin{align*}
+\zerovector
+&amp;=\vect{b}-\vect{b}\\
+&amp;=
+\left(
+\vectorentry{\vect{x}}{1}A_1+
+\vectorentry{\vect{x}}{2}A_2+
+\cdots+
+\vectorentry{\vect{x}}{n}A_n
+\right)
+-
+\left(
+\vectorentry{\vect{y}}{1}A_1+
+\vectorentry{\vect{y}}{2}A_2+
+\cdots+
+\vectorentry{\vect{y}}{n}A_n
+\right)\\
+&amp;=
+\left(\vectorentry{\vect{x}}{1}-\vectorentry{\vect{y}}{1}\right)A_1+
+\left(\vectorentry{\vect{x}}{2}-\vectorentry{\vect{y}}{2}\right)A_2+
+\cdots+
+\left(\vectorentry{\vect{x}}{n}-\vectorentry{\vect{y}}{n}\right)A_n
+\end{align*}
+
+This is a relation of linear dependence (<a class="knowl" acro="RLDCV" type="Definition" title="Relation of Linear Dependence for Column Vectors" knowl="./knowls/definition.RLDCV.knowl">Definition RLDCV</a>) on a linearly independent set (the columns of $A$).  So the scalars <em>must</em> all be zero,
+\begin{align*}
+\vectorentry{\vect{x}}{1}-\vectorentry{\vect{y}}{1}&amp;=0
+&amp;
+\vectorentry{\vect{x}}{2}-\vectorentry{\vect{y}}{2}&amp;=0
+&amp;
+\dots&amp;
+&amp;
+\vectorentry{\vect{x}}{n}-\vectorentry{\vect{y}}{n}&amp;=0
+\end{align*}
+
+Rearranging these equations yields the statement that $\vectorentry{\vect{x}}{i}=\vectorentry{\vect{y}}{i}$, for $1\leq i\leq n$.  However, this is exactly how we define vector equality (<a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>), so $\vect{x}=\vect{y}$ and the system has only one solution.
+</div>

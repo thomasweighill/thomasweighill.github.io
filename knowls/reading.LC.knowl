@@ -1,0 +1,28 @@
+
+<ol>
+<li>Earlier, a reading question asked you to solve the system of equations
+\begin{align*}
+2x_1 + 3x_2 - x_3&amp;= 0\\
+x_1 + 2x_2 + x_3&amp;= 3\\
+x_1 + 3x_2 + 3x_3&amp;= 7
+\end{align*}
+
+Use a linear combination to rewrite this system of equations as a vector equality.
+</li>
+<li>Find a linear combination of the vectors
+\begin{equation*}
+S=\set{\colvector{1\\3\\-1},\,\colvector{2\\0\\4},\,\colvector{-1\\3\\-5}}
+\end{equation*}
+that equals the vector $\colvector{1\\-9\\11}$.
+</li>
+<li>The matrix below is the augmented matrix of a system of equations, row-reduced to reduced row-echelon form.  Write the vector form of the solutions to the system.
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1}&amp;3&amp;0&amp;6&amp;0&amp;9\\
+ 0&amp;0&amp;\leading{1}&amp;-2&amp;0&amp;-8\\
+ 0&amp;0&amp;0&amp;0&amp;\leading{1}&amp;3
+\end{bmatrix}
+\end{equation*}
+</li>
+</ol>
+

@@ -1,0 +1,41 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-CSCS', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">CSCS</span> <span class="titletext">Column Space and Consistent Systems</span>
+</h5>
+
+
+<p>We could compute the column space of a matrix with a span of the set of columns of the matrix, much as we did back in <a class="knowl" acro="CSS" type="Sage" title="" knowl="./knowls/sage.CSS.knowl">Sage CSS</a> when we were checking consistency of linear systems using spans of the set of columns of a coefficent matrix.  However, Sage provides a convenient matrix method to construct this same span: <span class="code">.column_space()</span>.  Here is a check.</p>
+
+<br><br><div class="sage-CSCS"><script type="text/x-sage">D = matrix(QQ, [[ 2, -1, -4],
+                [ 5,  2, -1],
+                [-3,  1,  5]])
+cs = D.column_space(); cs
+</script></div>
+
+<br><br><div class="sage-CSCS"><script type="text/x-sage">cs_span = (QQ^3).span(D.columns())
+cs == cs_span
+</script></div>
+
+<p>In <a class="knowl" acro="CSS" type="Sage" title="" knowl="./knowls/sage.CSS.knowl">Sage CSS</a> we discussed solutions to systems of equations and the membership of the vector of constants in the span of the columns of the coefficient matrix.  This discussion turned on <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a>.  We can now be slightly more efficient with <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, while still using the same ideas.  We recycle the computations from <a class="knowl" acro="CSMCS" type="Example" title="Column space of a matrix and consistent systems" knowl="./knowls/example.CSMCS.knowl">Example CSMCS</a> that use <a knowl="./knowls/archetype.D.knowl">Archetype D</a> and <a knowl="./knowls/archetype.E.knowl">Archetype E</a>.</p>
+
+<br><br><div class="sage-CSCS"><script type="text/x-sage">coeff = matrix(QQ, [[ 2, 1,  7, -7],
+                    [-3, 4, -5, -6],
+                    [ 1, 1,  4, -5]])
+constD = vector(QQ, [8, -12, 4])
+constE = vector(QQ, [2, 3, 2])
+cs = coeff.column_space()
+coeff.solve_right(constD)
+</script></div>
+
+<br><br><div class="sage-CSCS"><script type="text/x-sage">constD in cs
+</script></div>
+
+<br><br><div class="sage-CSCS"><script type="text/x-sage">coeff.solve_right(constE)
+</script></div>
+
+<br><br><div class="sage-CSCS"><script type="text/x-sage">constE in cs
+</script></div>
+
+<br><br><div class="sage-CSCS sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

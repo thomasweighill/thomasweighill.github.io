@@ -1,0 +1,17 @@
+<div class="exercise" acro="VR.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VR.M20</span> <span class="contributor"><a knowl="./knowls/contributor.tylerueltschi.knowl">Tyler Ueltschi</a></span>
+</h5>
+<div class="problem"><p>The set $B=\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3,\,\vect{v}_4}$ is a basis of the vector space $P_3$, polynomials with degree 3 or less.  Therefore $\vectrepname{B}$ is a linear transformation, according to <a class="knowl" acro="VRLT" type="Theorem" title="Vector Representation is a Linear Transformation" knowl="./knowls/theorem.VRLT.knowl">Theorem VRLT</a>.  Find a “formula” for $\vectrepname{B}$.  In other words, find an expression for $\vectrep{B}{a+bx+cx^2+dx^3}$.
+\begin{align*}
+\vect{v}_1&amp;=1 - 5x - 22x^2 + 3x^3
+&amp;
+\vect{v}_2&amp;=-2 + 11x + 49x^2 - 8x^3\\
+\vect{v}_3&amp;=-1 + 7x + 33x^2 - 8x^3
+&amp;
+\vect{v}_4&amp;=-1 + 4x + 16x^2 + x^3
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VR.M20.knowl">Solution</a></p></div>
+</div>

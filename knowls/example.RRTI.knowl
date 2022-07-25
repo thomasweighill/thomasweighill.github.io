@@ -1,0 +1,29 @@
+<div class="example" id="example-RRTI" acro="RRTI" titletext="Rank, rank of transpose, Archetype I">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">RRTI</span> <span class="titletext">Rank, rank of transpose, Archetype I</span>
+</h5>
+<p><a knowl="./knowls/archetype.I.knowl">Archetype I</a> has a $4\times 7$ coefficient matrix which row-reduces to
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 4 &amp; 0 &amp; 0 &amp; 2 &amp; 1 &amp; -3\\
+0 &amp; 0 &amp; \leading{1} &amp;  0 &amp; 1 &amp;  -3 &amp; 5\\
+0 &amp; 0 &amp;  0 &amp; \leading{1} &amp; 2 &amp;  -6 &amp; 6\\
+0 &amp; 0 &amp;  0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+so the rank is $3$.  Row-reducing the transpose yields
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; -\frac{31}{7}\\
+0 &amp; \leading{1} &amp; 0 &amp; \frac{12}{7}\\
+0 &amp; 0 &amp; \leading{1} &amp; \frac{13}{7}\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}.
+\end{equation*}
+demonstrating that the rank of the transpose is also $3$.</p>
+<div class="context"><a href="section-PD.html#example-RRTI" class="context" title="Section PD">(in
+context)</a></div>
+</div>

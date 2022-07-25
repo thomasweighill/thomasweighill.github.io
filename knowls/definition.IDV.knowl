@@ -1,0 +1,6 @@
+<div class="definition" id="definition-IDV" acro="IDV" titletext="Independent and Dependent Variables">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">IDV</span> <span class="titletext"> Independent and Dependent Variables</span>
+</h5>
+<p>Suppose $A$ is the augmented matrix of a consistent system of linear equations and $B$ is a row-equivalent matrix in reduced row-echelon form.  Suppose $j$ is the index of a pivot column of $B$.  Then the variable $x_j$ is <em class="term">dependent</em>.  A variable that is not dependent is called <em class="term">independent</em> or <em class="term">free</em>.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-TSS.html#definition-IDV" class="context" title="Section TSS">(in context)</a></div>

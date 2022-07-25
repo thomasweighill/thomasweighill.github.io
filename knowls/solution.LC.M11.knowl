@@ -1,0 +1,5 @@
+<div class="solution" acro="LC.M11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LC.M11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The coefficient of $\vect{c}$ is 1.  The coefficients of $\vect{u}_1$, $\vect{u}_2$, $\vect{u}_3$ lie in the third, fourth and seventh entries of $\vect{w}$.  Can you see why?  (Hint:  $F=\set{3,\,4,\,7,\,8}$, so the free variables are $x_3,\,x_4$ and $x_7$.)
+</div>

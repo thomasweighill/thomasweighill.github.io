@@ -1,0 +1,173 @@
+<div class="example" id="example-CMI" acro="CMI" titletext="Computing a matrix inverse">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CMI</span> <span class="titletext">Computing a matrix inverse</span>
+</h5>
+<p>Consider the matrix defined in <a class="knowl" acro="MI" type="Example" title="Matrix inverse" knowl="./knowls/example.MI.knowl">Example MI</a> as,
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 \\
+ -2 &amp; -3 &amp; 0 &amp; -5 &amp; -1 \\
+ 1 &amp; 1 &amp; 0 &amp; 2 &amp; 1 \\
+ -2 &amp; -3 &amp; -1 &amp; -3 &amp; -2 \\
+ -1 &amp; -3 &amp; -1 &amp; -3 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>For its inverse, we desire a matrix $B$ so that $AB=I_5$.  Emphasizing the structure of the columns and employing the definition of matrix multiplication <a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>,
+
+\begin{align*}    
+AB&amp;=I_5\\
+A\lbrack \vect{B}_1|\vect{B}_2|\vect{B}_3|\vect{B}_4|\vect{B}_5]&amp;=[\vect{e}_1|\vect{e}_2|\vect{e}_3|\vect{e}_4|\vect{e}_5\rbrack\\
+\lbrack A\vect{B}_1|A\vect{B}_2|A\vect{B}_3|A\vect{B}_4|A\vect{B}_5]&amp;=[\vect{e}_1|\vect{e}_2|\vect{e}_3|\vect{e}_4|\vect{e}_5\rbrack
+\end{align*}
+
+</p>
+<p>Equating the matrices column-by-column we have
+\begin{align*}
+A\vect{B}_1=\vect{e}_1&amp;&amp;
+A\vect{B}_2=\vect{e}_2&amp;&amp;
+A\vect{B}_3=\vect{e}_3&amp;&amp;
+A\vect{B}_4=\vect{e}_4&amp;&amp;
+A\vect{B}_5=\vect{e}_5.
+\end{align*}
+
+</p>
+<p>Since the matrix $B$ is what we are trying to compute, we can view each column, $\vect{B}_i$, as a column vector of unknowns.  Then we have five systems of equations to solve, each with 5 equations in 5 variables.  Notice that all 5 of these systems have the same coefficient matrix.  We will now solve each system in turn,
+
+
+\begin{align*}
+\ &amp;
+\end{align*}
+Row-reduce the augmented matrix of the linear system $\linearsystem{A}{\vect{e}_1}$,
+\begin{align*}
+
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 1\\
+ -2 &amp; -3 &amp; 0 &amp; -5 &amp; -1 &amp; 0\\
+ 1 &amp; 1 &amp; 0 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; -1 &amp; -3 &amp; -2 &amp; 0\\
+ -1 &amp; -3 &amp; -1 &amp; -3 &amp; 1 &amp; 0
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -3\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 1
+\end{bmatrix}
+;
+\vect{B}_1=\colvector{-3\\0\\1\\1\\1}\\
+\end{align*}
+Row-reduce the augmented matrix of the linear system $\linearsystem{A}{\vect{e}_2}$,
+\begin{align*}
+
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; 0 &amp; -5 &amp; -1 &amp; 1\\
+ 1 &amp; 1 &amp; 0 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; -1 &amp; -3 &amp; -2 &amp; 0\\
+ -1 &amp; -3 &amp; -1 &amp; -3 &amp; 1 &amp; 0
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; -2\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -1
+\end{bmatrix}
+;
+\vect{B}_2=\colvector{3\\-2\\2\\0\\-1}\\
+\end{align*}
+Row-reduce the augmented matrix of the linear system $\linearsystem{A}{\vect{e}_3}$,
+\begin{align*}
+
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; 0 &amp; -5 &amp; -1 &amp; 0\\
+ 1 &amp; 1 &amp; 0 &amp; 2 &amp; 1 &amp; 1\\
+ -2 &amp; -3 &amp; -1 &amp; -3 &amp; -2 &amp; 0\\
+ -1 &amp; -3 &amp; -1 &amp; -3 &amp; 1 &amp; 0
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 6\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; -5\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 4\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2
+\end{bmatrix}
+;
+\vect{B}_3=\colvector{6\\-5\\4\\1\\-2}\\
+\end{align*}
+Row-reduce the augmented matrix of the linear system $\linearsystem{A}{\vect{e}_4}$,
+\begin{align*}
+
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; 0 &amp; -5 &amp; -1 &amp; 0\\
+ 1 &amp; 1 &amp; 0 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; -1 &amp; -3 &amp; -2 &amp; 1\\
+ -1 &amp; -3 &amp; -1 &amp; -3 &amp; 1 &amp; 0
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -1\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; -1\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0
+\end{bmatrix}
+;
+\vect{B}_4=\colvector{-1\\-1\\1\\1\\0}\\
+\end{align*}
+Row-reduce the augmented matrix of the linear system $\linearsystem{A}{\vect{e}_5}$,
+\begin{align*}
+
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; 0 &amp; -5 &amp; -1 &amp; 0\\
+ 1 &amp; 1 &amp; 0 &amp; 2 &amp; 1 &amp; 0\\
+ -2 &amp; -3 &amp; -1 &amp; -3 &amp; -2 &amp; 0\\
+ -1 &amp; -3 &amp; -1 &amp; -3 &amp; 1 &amp; 1
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -2\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 1
+\end{bmatrix}
+;
+\vect{B}_5=\colvector{-2\\1\\-1\\0\\1}\\
+\end{align*}
+
+We can now collect our 5 solution vectors into the matrix $B$,
+\begin{align*}
+B=
+&amp;[\vect{B}_1|\vect{B}_2|\vect{B}_3|\vect{B}_4|\vect{B}_5]\\
+=&amp;
+\left[\colvector{-3\\0\\1\\1\\1}
+\left\lvert\colvector{3\\-2\\2\\0\\-1}\right.
+\left\lvert\colvector{6\\-5\\4\\1\\-2}\right.
+\left\lvert\colvector{-1\\-1\\1\\1\\0}\right.
+\left\lvert\colvector{-2\\1\\-1\\0\\1}\right.
+\right]\\
+&amp;=
+\begin{bmatrix}
+ -3 &amp; 3 &amp; 6 &amp; -1 &amp; -2 \\
+ 0 &amp; -2 &amp; -5 &amp; -1 &amp; 1 \\
+ 1 &amp; 2 &amp; 4 &amp; 1 &amp; -1 \\
+ 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+ 1 &amp; -1 &amp; -2 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>By this method, we know that $AB=I_5$.  Check that $BA=I_5$, and then we will know that we have the inverse of $A$.</p>
+<div class="context"><a href="section-MISLE.html#example-CMI" class="context" title="Section MISLE">(in
+context)</a></div>
+</div>

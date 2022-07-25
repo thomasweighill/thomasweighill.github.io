@@ -1,0 +1,6 @@
+<div class="definition" id="definition-ONS" acro="ONS" titletext="OrthoNormal Set">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">ONS</span> <span class="titletext"> OrthoNormal Set</span>
+</h5>
+<p>Suppose $S=\set{\vectorlist{u}{n}}$ is an orthogonal set of vectors such that $\norm{\vect{u}_i}=1$ for all $1\leq i\leq n$.  Then $S$ is an <em class="term">orthonormal</em> set of vectors.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#definition-ONS" class="context" title="Section O">(in context)</a></div>

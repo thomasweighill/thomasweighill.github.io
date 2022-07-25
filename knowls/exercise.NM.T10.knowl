@@ -1,0 +1,8 @@
+<div class="exercise" acro="NM.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">NM.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is a square matrix, and $B$ is a matrix in reduced row-echelon form that is row-equivalent to $A$.  Prove that if $A$ is singular, then the last row of $B$ is a zero row.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.NM.T10.knowl">Solution</a></p></div>
+</div>

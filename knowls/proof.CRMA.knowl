@@ -1,0 +1,19 @@
+<div class="proof" id="proof-CRMA" acro="CRMA" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CRMA</span>
+</h5>
+<p>For $1\leq i\leq m$, $1\leq j\leq n$,
+\begin{align*}
+\matrixentry{\conjugate{A+B}}{ij}
+&amp;=\conjugate{\matrixentry{A+B}{ij}}&amp;&amp;\knowl{./knowls/definition.CCM.knowl}{\text{Definition CCM}}\\
+&amp;=\conjugate{\matrixentry{A}{ij}+\matrixentry{B}{ij}}&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}\\
+&amp;=\conjugate{\matrixentry{A}{ij}}+\conjugate{\matrixentry{B}{ij}}&amp;&amp;\knowl{./knowls/theorem.CCRA.knowl}{\text{Theorem CCRA}}\\
+&amp;=\matrixentry{\conjugate{A}}{ij}+\matrixentry{\conjugate{B}}{ij}&amp;&amp;\knowl{./knowls/definition.CCM.knowl}{\text{Definition CCM}}\\
+&amp;=\matrixentry{\conjugate{A}+\conjugate{B}}{ij}&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}
+\end{align*}
+
+</p>
+
+<p>Since the matrices  $\conjugate{A+B}$ and $\conjugate{A}+\conjugate{B}$  are equal in each entry, <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> says that $\conjugate{A+B}=\conjugate{A}+\conjugate{B}$.</p>
+
+</div>

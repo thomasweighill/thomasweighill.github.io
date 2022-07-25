@@ -1,0 +1,204 @@
+<div class="exercise" acro="MISLE.C16">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C16</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If it exists, find the inverse of
+$A = \begin{bmatrix} 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ 2 &amp; -1 &amp; 1\end{bmatrix}$,
+and check your answer.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C16.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C17">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C17</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If it exists, find the inverse of
+$A = \begin{bmatrix}  2 &amp; -1 &amp; 1\\ 1 &amp; 2 &amp; 1\\3 &amp; 1 &amp; 2\end{bmatrix}$,
+and check your answer.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C17.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C18">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C18</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If it exists, find the inverse of
+$A = \begin{bmatrix} 1 &amp; 3 &amp; 1 \\ 1 &amp; 2 &amp; 1 \\ 2 &amp; 2 &amp; 1\end{bmatrix}$,
+and check your answer.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C18.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C19">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C19</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If it exists, find the inverse of
+$A = \begin{bmatrix}  1 &amp; 3 &amp; 1 \\ 0 &amp; 2 &amp; 1 \\ 2 &amp; 2 &amp; 1\end{bmatrix}$,
+and check your answer.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C19.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Verify that $B$ is the inverse of $A$.
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+1 &amp; 1 &amp; -1 &amp; 2\\
+-2 &amp; -1 &amp; 2 &amp; -3\\
+1 &amp; 1 &amp; 0 &amp; 2\\
+-1 &amp; 2 &amp; 0 &amp; 2
+\end{bmatrix}
+&amp;
+B&amp;=
+\begin{bmatrix}
+4 &amp; 2 &amp; 0 &amp; -1\\
+8 &amp; 4 &amp; -1 &amp; -1\\
+-1 &amp; 0 &amp; 1 &amp; 0\\
+-6 &amp; -3 &amp; 1 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C21.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Recycle the matrices $A$ and $B$ from <a knowl="./knowls/exercise.MISLE.C21.knowl">Exercise MISLE.C21</a> and set
+\begin{align*}
+\vect{c}&amp;=\colvector{2\\1\\-3\\2}&amp;\vect{d}&amp;=\colvector{1\\1\\1\\1}
+\end{align*}
+
+Employ the matrix $B$ to solve the two linear systems $\linearsystem{A}{\vect{c}}$ and $\linearsystem{A}{\vect{d}}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C22.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C23</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>If it exists, find the inverse of the $2\times 2$ matrix
+\begin{align*}
+A=\begin{bmatrix}
+7&amp;3\\5&amp;2
+\end{bmatrix}
+\end{align*}
+
+and check your answer.  (See <a class="knowl" acro="TTMI" type="Theorem" title="Two-by-Two Matrix Inverse" knowl="./knowls/theorem.TTMI.knowl">Theorem TTMI</a>.)
+</p></div>
+</div><div class="exercise" acro="MISLE.C24">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C24</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>If it exists, find the inverse of the $2\times 2$ matrix
+\begin{align*}
+A=\begin{bmatrix}
+6&amp;3\\4&amp;2
+\end{bmatrix}
+\end{align*}
+
+and check your answer.  (See <a class="knowl" acro="TTMI" type="Theorem" title="Two-by-Two Matrix Inverse" knowl="./knowls/theorem.TTMI.knowl">Theorem TTMI</a>.)
+</p></div>
+</div><div class="exercise" acro="MISLE.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>At the conclusion of <a class="knowl" acro="CMI" type="Example" title="Computing a matrix inverse" knowl="./knowls/example.CMI.knowl">Example CMI</a>, verify that $BA=I_5$ by computing the matrix product.
+</p></div>
+</div><div class="exercise" acro="MISLE.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C26</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let
+\begin{equation*}
+D=\begin{bmatrix}
+1 &amp; -1 &amp; 3 &amp; -2 &amp; 1\\
+-2 &amp; 3 &amp; -5 &amp; 3 &amp; 0\\
+1 &amp; -1 &amp; 4 &amp; -2 &amp; 2\\
+-1 &amp; 4 &amp; -1 &amp; 0 &amp; 4\\
+1 &amp; 0 &amp; 5 &amp; -2 &amp; 5
+\end{bmatrix}
+\end{equation*}
+Compute the inverse of $D$, $\inverse{D}$, by forming the $5\times 10$ matrix $\augmented{D}{I_5}$ and row-reducing (<a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a>).  Then use a calculator to compute $\inverse{D}$ directly.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C26.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C27">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C27</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let
+\begin{equation*}
+E=\begin{bmatrix}
+1 &amp; -1 &amp; 3 &amp; -2 &amp; 1\\
+-2 &amp; 3 &amp; -5 &amp; 3 &amp; -1\\
+1 &amp; -1 &amp; 4 &amp; -2 &amp; 2\\
+-1 &amp; 4 &amp; -1 &amp; 0 &amp; 2\\
+1 &amp; 0 &amp; 5 &amp; -2 &amp; 4
+\end{bmatrix}
+\end{equation*}
+Compute the inverse of $E$, $\inverse{E}$, by forming the $5\times 10$ matrix $\augmented{E}{I_5}$ and row-reducing (<a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a>).  Then use a calculator to compute $\inverse{E}$ directly.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C27.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C28">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C28</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let
+\begin{equation*}
+C=
+\begin{bmatrix}
+ 1 &amp; 1 &amp; 3 &amp; 1\\
+ -2 &amp; -1 &amp; -4 &amp; -1\\
+ 1 &amp; 4 &amp; 10 &amp; 2\\
+ -2 &amp; 0 &amp; -4 &amp; 5
+\end{bmatrix}
+\end{equation*}
+Compute the inverse of $C$, $\inverse{C}$, by forming the $4\times 8$ matrix $\augmented{C}{I_4}$ and row-reducing (<a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a>).  Then use a calculator to compute $\inverse{C}$ directly.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C28.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find all solutions to the system of equations below, making use of the matrix inverse found in <a knowl="./knowls/exercise.MISLE.C28.knowl">Exercise MISLE.C28</a>.
+\begin{align*}
+x_1+x_2+3x_3+x_4&amp;=-4\\
+ -2x_1-x_2-4x_3-x_4&amp;=4\\
+ x_1+4x_2+10x_3+2x_4&amp;=-20\\
+ -2x_1-4x_3+5x_4&amp;=9
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use the inverse of a matrix to find all the solutions to the following system of equations.
+\begin{align*}
+x_1 + 2 x_2 - x_3 &amp;= -3\\
+2 x_1 + 5 x_2 - x_3 &amp;= -4\\
+-x_1 - 4 x_2 &amp;= 2
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C41.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.C42">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C42</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use a matrix inverse to solve the linear system of equations.
+\begin{align*}
+x_1-x_2+2x_3&amp;=5\\
+x_1-2x_3&amp;=-8\\
+2x_1-x_2-x_3&amp;=-6
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C42.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="MISLE.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Construct an example to demonstrate that $\inverse{(A+B)}=\inverse{A}+\inverse{B}$ is not true for all square matrices $A$ and $B$ of the same size.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.T10.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,56 @@
+<div class="example" id="example-SC3" acro="SC3" titletext="A subspace of $\complex{3}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SC3</span> <span class="titletext">A subspace of $\complex{3}$</span>
+</h5>
+<p>We know that $\complex{3}$ is a vector space (<a class="knowl" acro="VSCV" type="Example" title="The vector space $\complex{m}$" knowl="./knowls/example.VSCV.knowl">Example VSCV</a>).  Consider the subset,
+\begin{equation*}
+W=\setparts{\colvector{x_1\\x_2\\x_3}}{2x_1-5x_2+7x_3=0}
+\end{equation*}</p>
+<p>It is clear that $W\subseteq\complex{3}$, since the objects in $W$ are column vectors of size 3.  But is $W$ a vector space?  Does it satisfy the ten properties of <a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a> when we use the same operations?  That is the main question.</p>
+<p>Suppose $\vect{x}=\colvector{x_1\\x_2\\x_3}$ and $\vect{y}=\colvector{y_1\\y_2\\y_3}$ are vectors from $W$.  Then we know that these vectors cannot be totally arbitrary, they must have gained membership in $W$ by virtue of meeting the membership test.  For example, we know that $\vect{x}$ must satisfy $2x_1-5x_2+7x_3=0$ while $\vect{y}$ must satisfy $2y_1-5y_2+7y_3=0$.  Our first property (<a class="knowl" acro="AC" type="Property" title="Additive Closure" knowl="./knowls/property.AC.knowl">Property AC</a>) asks the question, is $\vect{x}+\vect{y}\in W$?  When our set of vectors was $\complex{3}$, this was an easy question to answer.  Now it is not so obvious.  Notice first that
+\begin{equation*}
+\vect{x}+\vect{y}=\colvector{x_1\\x_2\\x_3}+\colvector{y_1\\y_2\\y_3}=
+\colvector{x_1+y_1\\x_2+y_2\\x_3+y_3}
+\end{equation*}
+and we can test this vector for membership in $W$ as follows.  Because $\vect{x}\in W$ we know $2x_1-5x_2+7x_3=0$ and because $\vect{y}\in W$ we know $2y_1-5y_2+7y_3=0$.  Therefore,
+\begin{align*}
+2(x_1+y_1)-5(x_2+y_2)+7(x_3+y_3)
+&amp;=2x_1+2y_1-5x_2-5y_2+7x_3+7y_3\\
+&amp;=(2x_1-5x_2+7x_3)+(2y_1-5y_2+7y_3)\\
+&amp;=0 + 0\\
+&amp;=0
+\end{align*}
+
+and by this computation we see that $\vect{x}+\vect{y}\in W$.  One property down, nine to go.</p>
+<p>If $\alpha$ is a scalar and $\vect{x}\in W$, is it always true that $\alpha\vect{x}\in W$?  This is what we need to establish <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a>.  Again, the answer is not as obvious as it was when our set of vectors was all of $\complex{3}$.  Let us see.  First, note that because $\vect{x}\in W$ we know $2x_1-5x_2+7x_3=0$.  Therefore,
+\begin{equation*}
+\alpha\vect{x}=\alpha\colvector{x_1\\x_2\\x_3}=\colvector{\alpha x_1\\\alpha x_2\\\alpha x_3}
+\end{equation*}
+and we can test this vector for membership in $W$.  First, note that because $\vect{x}\in W$ we know $2x_1-5x_2+7x_3=0$.  Therefore,
+\begin{align*}
+2(\alpha x_1)-5(\alpha x_2)+7(\alpha x_3)
+&amp;=\alpha(2x_1-5x_2+7x_3)\\
+&amp;=\alpha 0\\
+&amp;=0
+\end{align*}
+
+and we see that indeed $\alpha\vect{x}\in W$.  Always.</p>
+<p>If $W$ has a zero vector, it will be unique (<a class="knowl" acro="ZVU" type="Theorem" title="Zero Vector is Unique" knowl="./knowls/theorem.ZVU.knowl">Theorem ZVU</a>).  The zero vector for $\complex{3}$ should also perform the required duties when added to elements of $W$.  So the likely candidate for a zero vector in $W$ is the same zero vector that we know $\complex{3}$ has.  You can check that $\zerovector=\colvector{0\\0\\0}$ is a zero vector in $W$ too (<a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>).</p>
+<p>With a zero vector, we can now ask about additive inverses (<a class="knowl" acro="AI" type="Property" title="Additive Inverses" knowl="./knowls/property.AI.knowl">Property AI</a>).  As you might suspect, the natural candidate for an additive inverse in $W$ is the same as the additive inverse from $\complex{3}$.  However, we must insure that these additive inverses actually are elements of $W$.  Given $\vect{x}\in W$, is $\vect{-x}\in W$?
+\begin{equation*}
+\vect{-x}=\colvector{-x_1\\-x_2\\-x_3}
+\end{equation*}
+and we can test this vector for membership in $W$.  As before, because $\vect{x}\in W$ we know $2x_1-5x_2+7x_3=0$.
+\begin{align*}
+2(-x_1)-5(-x_2)+7(-x_3)
+&amp;=-(2x_1-5x_2+7x_3)\\
+&amp;=-0\\
+&amp;=0
+\end{align*}
+
+and we now believe that $\vect{-x}\in W$.</p>
+<p>Is the vector addition in $W$ commutative (<a class="knowl" acro="C" type="Property" title="Commutativity" knowl="./knowls/property.C.knowl">Property C</a>)?  Is $\vect{x}+\vect{y}=\vect{y}+\vect{x}$?  Of course!  Nothing about restricting the scope of our set of vectors will prevent the operation from still being commutative.  Indeed, the remaining five properties are unaffected by the transition to a smaller set of vectors, and so remain true.  That was convenient.</p>
+<p>So $W$ satisfies all ten properties, is therefore a vector space, and thus earns the title of being a subspace of $\complex{3}$.</p>
+<div class="context"><a href="section-S.html#example-SC3" class="context" title="Section S">(in
+context)</a></div>
+</div>

@@ -1,0 +1,19 @@
+<div class="solution" acro="LT.C42">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LT.C42</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The preimage $\preimage{T}{3}$ is the set of all matrices
+$\begin{bmatrix} a &amp; b\\c &amp; d\end{bmatrix}$
+so that
+$\lt{T}{\begin{bmatrix}a &amp; b \\ c &amp; d \end{bmatrix}} = 3$.
+A matrix
+$\begin{bmatrix} a &amp; b\\ c &amp; d \end{bmatrix}$
+is in the preimage if
+$a + b + c - d = 3$,
+i.e.  $d = a + b + c - 3$.
+This is the set. (But the set is <em>not</em> a vector space. Why not?)
+\begin{align*}
+\preimage{T}{3} &amp;=
+\setparts{\begin{bmatrix} a &amp; b \\ c &amp; a + b + c - 3\end{bmatrix}}{a,b,c\in\complexes}
+\end{align*}
+
+</div>

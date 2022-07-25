@@ -1,0 +1,23 @@
+
+<ol>
+<li>Let  S  be the set of three vectors below.
+\begin{equation*}
+S=\set{\colvector{1\\2\\-1},\,\colvector{3\\-4\\2},\,\colvector{4\\-2\\1}}
+\end{equation*}
+Let $W=\spn{S}$ be the span of  S. Is the vector $\colvector{-1\\8\\-4}$ in $W$?  Give an explanation of the reason for your answer.
+</li>
+<li>Use  $S$ and $W$  from the previous question.
+Is the vector $\colvector{6\\5\\-1}$ in $W$?  Give an explanation of the reason for your answer.
+</li>
+<li>For the matrix $A$ below, find a set $S$ so that $\spn{S}=\nsp{A}$, where $\nsp{A}$ is the null space of $A$.  (See <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>.)
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; 3 &amp; 1 &amp; 9\\
+2 &amp; 1 &amp; -3 &amp; 8\\
+1 &amp; 1 &amp; -1 &amp; 5
+\end{bmatrix}
+\end{equation*}
+</li>
+</ol>
+

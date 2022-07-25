@@ -1,0 +1,44 @@
+<div class="example" id="example-LNS" acro="LNS" titletext="Left null space">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LNS</span> <span class="titletext">Left null space</span>
+</h5>
+<p>We will find the left null space of
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 1 &amp; -3 &amp; 1 \\
+ -2 &amp; 1 &amp; 1 \\
+ 1 &amp; 5 &amp; 1 \\
+ 9 &amp; -4 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We transpose $A$ and row-reduce,
+\begin{equation*}
+\transpose{A}=
+\begin{bmatrix}
+ 1 &amp; -2 &amp; 1 &amp; 9 \\
+ -3 &amp; 1 &amp; 5 &amp; -4 \\
+ 1 &amp; 1 &amp; 1 &amp; 0
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 2 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; -3 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Applying <a class="knowl" acro="LNS" type="Definition" title="Left Null Space" knowl="./knowls/definition.LNS.knowl">Definition LNS</a> and <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> we have
+\begin{equation*}
+\lns{A}=\nsp{\transpose{A}}=
+\spn{\set{
+\colvector{-2\\3\\-1\\1}
+}}
+\end{equation*}
+</p>
+<p>If you row-reduce $A$ you will discover one zero row in the reduced row-echelon form.  This zero row is created by a sequence of row operations, which in total amounts to a linear combination, with scalars $a_1=-2$, $a_2=3$, $a_3=-1$ and $a_4=1$, on the rows of $A$ and which results in the zero vector (check this!).  So the components of the vector describing the left null space of $A$ provide a relation of linear dependence on the rows of $A$.
+</p>
+<div class="context"><a href="section-FS.html#example-LNS" class="context" title="Section FS">(in
+context)</a></div>
+</div>

@@ -1,0 +1,54 @@
+<div class="subsection" id="subsection-CIM" acro="CIM" titletext="Computing the Inverse of a Matrix">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CIM</span> <span class="titletext">Computing the Inverse of a Matrix</span>
+</h4>
+<p>We have seen that the matrices from <a knowl="./knowls/archetype.B.knowl">Archetype B</a> and <a knowl="./knowls/archetype.K.knowl">Archetype K</a> both have inverses, but these inverse matrices have just dropped from the sky.  How would we compute an inverse?  And just when is a matrix invertible, and when is it not?  Writing a putative inverse with $n^2$ unknowns and solving the resultant $n^2$ equations is one approach.  Applying this approach to $2\times 2$ matrices can get us somewhere, so just for fun, let us do it.</p>
+<div class="theorem" id="theorem-TTMI" acro="TTMI" titletext="Two-by-Two Matrix Inverse">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">TTMI</span><span class="titletext"> Two-by-Two Matrix Inverse</span>
+</h5>
+<div class="statement">
+<p>Suppose
+\begin{equation*}
+A=
+\begin{bmatrix}
+a&amp;b\\
+c&amp;d
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Then $A$ is invertible if and only if $ad-bc\neq 0$.  When $A$ is invertible, then
+\begin{equation*}
+\inverse{A}=\frac{1}{ad-bc}
+\begin{bmatrix}
+d&amp;-b\\
+-c&amp;a
+\end{bmatrix}
+\end{equation*}
+</p>
+</div>
+<div class="proof"><a knowl="./knowls/proof.TTMI.knowl">Proof</a></div>
+</div>
+<p>There are several ways one could try to prove this theorem, but there is a continual temptation to divide by one of the eight entries involved ($a$ through $f$), but we can never be sure if these numbers are zero or not.  This could lead to an analysis by cases, which is messy, messy, messy.  Note how the above proof never divides, but always multiplies, and how zero/nonzero considerations are handled.  Pay attention to the expression $ad-bc$, as we will see it again in a while (<a href="chapter-D.html" title="Determinants">Chapter D</a>).</p>
+<p>This theorem is cute, and it is nice to have a formula for the inverse, and a condition that tells us when we can use it.  However, this approach becomes impractical for larger matrices, even though it is possible to demonstrate that, in theory, there is a general formula.  (Think for a minute about extending this result to just $3\times 3$ matrices.  For starters, we need 18 letters!)  Instead, we will work column-by-column.  Let us first work an example that will motivate the main theorem and remove some of the previous mystery.</p>
+<div class="example" id="example-CMI" acro="CMI" titletext="Computing a matrix inverse"><h5 class="example">
+<a knowl="./knowls/example.CMI.knowl"><span class="type">Example</span> <span class="acro">CMI</span></a> <span class="titletext">Computing a matrix inverse</span>
+</h5></div>
+<p>Notice how the five systems of equations in the preceding example were all solved by <em>exactly</em> the same sequence of row operations.  Would it not be nice to avoid this obvious duplication of effort?  Our main theorem for this section follows, and it mimics this previous example, while also avoiding all the overhead.</p>
+<div class="theorem" id="theorem-CINM" acro="CINM" titletext="Computing the Inverse of a Nonsingular Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CINM</span><span class="titletext"> Computing the Inverse of a Nonsingular Matrix</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a nonsingular square matrix of size $n$.  Create the $n\times 2n$ matrix $M$ by placing the $n\times n$ identity matrix $I_n$ to the right of the matrix $A$.  Let $N$ be a matrix that is row-equivalent to $M$ and in reduced row-echelon form.  Finally,  let $J$ be the matrix formed from the final $n$ columns of $N$. Then $AJ=I_n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CINM.knowl">Proof</a></div>
+</div>
+<p>We have to be just a bit careful here about both what this theorem says and what it does not say.  If $A$ is a nonsingular matrix, then we are guaranteed a matrix $B$ such that $AB=I_n$, and the proof gives us a process for constructing $B$.   However, the definition of the inverse of a matrix (<a class="knowl" acro="MI" type="Definition" title="Matrix Inverse" knowl="./knowls/definition.MI.knowl">Definition MI</a>) requires that $BA=I_n$ also.  So at this juncture we must compute the matrix product in the “opposite” order before we claim $B$ as the inverse of $A$.  However, we will soon see that this is <em>always</em> the case, in <a class="knowl" acro="OSIS" type="Theorem" title="One-Sided Inverse is Sufficient" knowl="./knowls/theorem.OSIS.knowl">Theorem OSIS</a>, so the title of this theorem is not inaccurate.</p>
+<p>What if $A$ is singular?  At this point we only know that <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> cannot be applied.  The question of $A$'s inverse is still open.  (But see <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a> in the next section.)</p>
+<p>We will finish by computing the inverse for the coefficient matrix of <a knowl="./knowls/archetype.B.knowl">Archetype B</a>, the one we just pulled from a hat in <a class="knowl" acro="SABMI" type="Example" title="Solutions to Archetype B with a matrix inverse" knowl="./knowls/example.SABMI.knowl">Example SABMI</a>.  There are more examples in the Archetypes (<a href="archetypes.html" title="Archetypes">Archetypes</a>) to practice with, though notice that it is silly to ask for the inverse of a rectangular matrix (the sizes are not right) and not every square matrix has an inverse (remember <a class="knowl" acro="MWIAA" type="Example" title="A matrix without an inverse, Archetype A" knowl="./knowls/example.MWIAA.knowl">Example MWIAA</a>?).</p>
+<div class="example" id="example-CMIAB" acro="CMIAB" titletext="Computing a matrix inverse, Archetype B"><h5 class="example">
+<a knowl="./knowls/example.CMIAB.knowl"><span class="type">Example</span> <span class="acro">CMIAB</span></a> <span class="titletext">Computing a matrix inverse, Archetype B</span>
+</h5></div>
+<div class="sage" id="sage-MISLE" acro="MISLE" titletext="Matrix Inverse, Systems of Equations"><h5 class="sage">
+<a knowl="./knowls/sage.MISLE.knowl"><span class="type">Sage</span> <span class="acro">MISLE</span></a> <span class="titletext">Matrix Inverse, Systems of Equations</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MISLE.html#subsection-CIM" class="context" title="Section MISLE">(in context)</a></div>

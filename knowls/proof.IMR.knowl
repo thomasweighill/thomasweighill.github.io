@@ -1,0 +1,105 @@
+<div class="proof" id="proof-IMR" acro="IMR" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">IMR</span>
+</h5>
+<p>(⇒)  Suppose $T$ is invertible, so the inverse linear transformation $\ltdefn{\ltinverse{T}}{V}{U}$ exists (<a class="knowl" acro="IVLT" type="Definition" title="Invertible Linear Transformations" knowl="./knowls/definition.IVLT.knowl">Definition IVLT</a>).  Both linear transformations have matrix representations relative to the bases of $U$ and $V$, namely $\matrixrep{T}{B}{C}$ and $\matrixrep{\ltinverse{T}}{C}{B}$ (<a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>).  </p>
+
+<p>Then
+\begin{align*}
+\matrixrep{\ltinverse{T}}{C}{B}\matrixrep{T}{B}{C}
+&amp;=\matrixrep{\compose{\ltinverse{T}}{T}}{B}{B}
+&amp;&amp;\knowl{./knowls/theorem.MRCLT.knowl}{\text{Theorem MRCLT}}\\
+&amp;=\matrixrep{I_U}{B}{B}
+&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\left[
+\left.\vectrep{B}{\lt{I_U}{\vect{u}_1}}\right|
+\left.\vectrep{B}{\lt{I_U}{\vect{u}_2}}\right|
+\ldots
+\left|\vectrep{B}{\lt{I_U}{\vect{u}_n}}\right.
+\right]
+&amp;&amp;\knowl{./knowls/definition.MR.knowl}{\text{Definition MR}}\\
+&amp;=\left[
+\left.\vectrep{B}{\vect{u}_1}\right|
+\left.\vectrep{B}{\vect{u}_2}\right|
+\left.\vectrep{B}{\vect{u}_3}\right|
+\ldots
+\left|\vectrep{B}{\vect{u}_n}\right.
+\right]
+&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\matrixcolumns{e}{n}
+&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}\\
+&amp;=I_n
+&amp;&amp;\knowl{./knowls/definition.IM.knowl}{\text{Definition IM}}
+\end{align*}
+
+</p>
+
+<p>And
+\begin{align*}
+\matrixrep{T}{B}{C}\matrixrep{\ltinverse{T}}{C}{B}&amp;=
+\matrixrep{\compose{T}{\ltinverse{T}}}{C}{C}
+&amp;&amp;\knowl{./knowls/theorem.MRCLT.knowl}{\text{Theorem MRCLT}}\\
+&amp;=\matrixrep{I_V}{C}{C}
+&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\left[
+\left.\vectrep{C}{\lt{I_V}{\vect{v}_1}}\right|
+\left.\vectrep{C}{\lt{I_V}{\vect{v}_2}}\right|
+\ldots
+\left|\vectrep{C}{\lt{I_V}{\vect{v}_n}}\right.
+\right]
+&amp;&amp;\knowl{./knowls/definition.MR.knowl}{\text{Definition MR}}\\
+&amp;=\left[
+\left.\vectrep{C}{\vect{v}_1}\right|
+\left.\vectrep{C}{\vect{v}_2}\right|
+\left.\vectrep{C}{\vect{v}_3}\right|
+\ldots
+\left|\vectrep{C}{\vect{v}_n}\right.
+\right]&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\matrixcolumns{e}{n}
+&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}\\
+&amp;=I_n
+&amp;&amp;\knowl{./knowls/definition.IM.knowl}{\text{Definition IM}}
+\end{align*}
+
+</p>
+
+<p>These two equations show that $\matrixrep{T}{B}{C}$ and $\matrixrep{\ltinverse{T}}{C}{B}$ are inverse matrices (<a class="knowl" acro="MI" type="Definition" title="Matrix Inverse" knowl="./knowls/definition.MI.knowl">Definition MI</a>) and establish that when $T$ is invertible, then $\matrixrep{\ltinverse{T}}{C}{B}=\inverse{\left(\matrixrep{T}{B}{C}\right)}$.</p>
+
+<p>(⇐)
+Suppose now that $\matrixrep{T}{B}{C}$ is an invertible matrix and hence nonsingular (<a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a>).  We compute the nullity of $T$,
+\begin{align*}
+\nullity{T}
+&amp;=\dimension{\krn{T}}
+&amp;&amp;\knowl{./knowls/definition.KLT.knowl}{\text{Definition KLT}}\\
+&amp;=\dimension{\nsp{\matrixrep{T}{B}{C}}}
+&amp;&amp;\knowl{./knowls/theorem.KNSI.knowl}{\text{Theorem KNSI}}\\
+&amp;=\nullity{\matrixrep{T}{B}{C}}
+&amp;&amp;\knowl{./knowls/definition.NOM.knowl}{\text{Definition NOM}}\\
+&amp;=0
+&amp;&amp;\knowl{./knowls/theorem.RNNM.knowl}{\text{Theorem RNNM}}
+\end{align*}
+
+</p>
+
+<p>So the kernel of $T$ is trivial, and by <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a>, $T$ is injective.</p>
+
+<p>We now compute the rank of $T$,
+\begin{align*}
+\rank{T}
+&amp;=\dimension{\rng{T}}
+&amp;&amp;\knowl{./knowls/definition.RLT.knowl}{\text{Definition RLT}}\\
+&amp;=\dimension{\csp{\matrixrep{T}{B}{C}}}
+&amp;&amp;\knowl{./knowls/theorem.RCSI.knowl}{\text{Theorem RCSI}}\\
+&amp;=\rank{\matrixrep{T}{B}{C}}
+&amp;&amp;\knowl{./knowls/definition.ROM.knowl}{\text{Definition ROM}}\\
+&amp;=\dimension{V}
+&amp;&amp;\knowl{./knowls/theorem.RNNM.knowl}{\text{Theorem RNNM}}
+\end{align*}
+
+</p>
+
+<p>Since the dimension of the range of $T$ equals the dimension of the codomain $V$, by <a class="knowl" acro="EDYES" type="Theorem" title="Equal Dimensions Yields Equal Subspaces" knowl="./knowls/theorem.EDYES.knowl">Theorem EDYES</a>, $\rng{T}=V$.  Which says that $T$ is surjective by <a class="knowl" acro="RSLT" type="Theorem" title="Range of a Surjective Linear Transformation" knowl="./knowls/theorem.RSLT.knowl">Theorem RSLT</a>.</p>
+
+<p>Because $T$ is both injective and surjective, by <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a>, $T$ is invertible.</p>
+
+</div>

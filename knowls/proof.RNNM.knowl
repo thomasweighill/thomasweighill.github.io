@@ -1,0 +1,18 @@
+<div class="proof" id="proof-RNNM" acro="RNNM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">RNNM</span>
+</h5>
+<p>(1 $\Rightarrow$ 2)  <a class="knowl" acro="CSNM" type="Theorem" title="Column Space of a Nonsingular Matrix" knowl="./knowls/theorem.CSNM.knowl">Theorem CSNM</a> says that if $A$ is nonsingular then $\csp{A}=\complex{n}$.  If $\csp{A}=\complex{n}$, then the column space has dimension $n$ by <a class="knowl" acro="DCM" type="Theorem" title="Dimension of $\complex{m}$" knowl="./knowls/theorem.DCM.knowl">Theorem DCM</a>, so the rank of $A$ is $n$.</p>
+
+<p>(2 $\Rightarrow$ 3)  Suppose $\rank{A}=n$.  Then <a class="knowl" acro="RPNC" type="Theorem" title="Rank Plus Nullity is Columns" knowl="./knowls/theorem.RPNC.knowl">Theorem RPNC</a> gives
+\begin{align*}
+\nullity{A}&amp;=n-\rank{A}&amp;&amp;\knowl{./knowls/theorem.RPNC.knowl}{\text{Theorem RPNC}}\\
+&amp;=n-n&amp;&amp;\text{Hypothesis}\\
+&amp;=0
+\end{align*}
+
+</p>
+
+<p>(3 $\Rightarrow$ 1)  Suppose $\nullity{A}=0$, so a basis for the null space of $A$ is the empty set.  This implies that $\nsp{A}=\set{\zerovector}$ and <a class="knowl" acro="NMTNS" type="Theorem" title="Nonsingular Matrices have Trivial Null Spaces" knowl="./knowls/theorem.NMTNS.knowl">Theorem NMTNS</a> says $A$ is nonsingular.</p>
+
+</div>

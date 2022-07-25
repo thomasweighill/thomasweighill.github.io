@@ -1,0 +1,14 @@
+<div class="exercise" acro="IVLT.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The archetypes below are linear transformations of the form $\ltdefn{T}{U}{V}$ that are invertible.  For each, the inverse linear transformation is given explicitly as part of the archetype's description.  Verify for each linear transformation that
+\begin{align*}
+\compose{\ltinverse{T}}{T}&amp;=I_U &amp; \compose{T}{\ltinverse{T}}&amp;=I_V
+\end{align*}
+
+<a knowl="./knowls/archetype.R.knowl">Archetype R</a>,
+<a knowl="./knowls/archetype.V.knowl">Archetype V</a>,
+<a knowl="./knowls/archetype.W.knowl">Archetype W</a>
+</p></div>
+</div>

@@ -1,0 +1,6 @@
+<div class="definition" id="definition-CV" acro="CV" titletext="Column Vector">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CV</span> <span class="titletext"> Column Vector</span>
+</h5>
+<p>A <em class="term">column vector</em> of <em class="term">size</em> $m$ is an ordered list of $m$ numbers, which is written in order vertically, starting at the top and proceeding to the bottom.  At times, we will refer to a column vector as simply a <em class="term">vector</em>.  Column vectors will be written in bold, usually with lower case Latin letter from the end of the alphabet such as $\vect{u}$, $\vect{v}$, $\vect{w}$, $\vect{x}$, $\vect{y}$, $\vect{z}$.  Some books like to write vectors with arrows, such as $\vec{u}$.  Writing by hand, some like to put arrows on top of the symbol, or a tilde underneath the symbol, as in $\underset{\sim}{\textstyle u}$.  To refer to the <em class="term">entry</em> or <em class="term">component</em> of vector $\vect{v}$ in location $i$ of the list, we write $\vectorentry{\vect{v}}{i}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-CV" class="context" title="Section RREF">(in context)</a></div>

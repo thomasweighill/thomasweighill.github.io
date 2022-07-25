@@ -1,0 +1,16 @@
+<div class="theorem" id="theorem-SER" acro="SER" titletext="Similarity is an Equivalence Relation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SER</span><span class="titletext"> Similarity is an Equivalence Relation</span>
+</h5>
+<div class="statement"><p>Suppose $A$, $B$ and $C$ are square matrices of size $n$.  Then
+<ol>
+<li> $A$ is similar to $A$.  (Reflexive)
+</li>
+<li> If $A$ is similar to $B$, then $B$ is similar to $A$.  (Symmetric)
+</li>
+<li> If $A$ is similar to $B$ and $B$ is similar to $C$, then $A$ is similar to $C$.  (Transitive)
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.SER.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#theorem-SER" class="context" title="Section SD">(in context)</a></div>

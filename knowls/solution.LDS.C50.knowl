@@ -1,0 +1,17 @@
+<div class="solution" acro="LDS.C50">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LDS.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>To apply <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>, we formulate a matrix $A$ whose columns are $\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3,\,\vect{v}_4,\,\vect{v}_5$.  Then we row-reduce $A$.  After row-reducing, we obtain
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 2 &amp; -1\\
+0 &amp; \leading{1} &amp; 0 &amp; 1 &amp; -2\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+From this we see that the pivot columns are $D=\set{1,\,2,\,3}$.  Thus
+\begin{equation*}
+T=\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3}=\set{\colvector{2\\1\\1},\,\colvector{-1\\-1\\1},\,\colvector{1\\2\\3}}
+\end{equation*}
+is a linearly independent set and $\spn{T}=W$.  Compare this problem with <a knowl="./knowls/exercise.LI.M50.knowl">Exercise LI.M50</a>.
+</div>

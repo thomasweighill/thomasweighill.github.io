@@ -1,0 +1,35 @@
+<div class="example" id="example-DAB" acro="DAB" titletext="Diagonalization of Archetype B">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">DAB</span> <span class="titletext">Diagonalization of Archetype B</span>
+</h5>
+<p><a knowl="./knowls/archetype.B.knowl">Archetype B</a> has a $3\times 3$ coefficient matrix
+\begin{equation*}
+B=\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+\end{equation*}
+and is similar to a diagonal matrix, as can be seen by the following computation with the nonsingular matrix $S$,
+\begin{align*}
+\similar{B}{S}&amp;=
+\inverse{\begin{bmatrix}-5&amp;-3&amp;-2\\3&amp;2&amp;1\\1&amp;1&amp;1\end{bmatrix}}\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+\begin{bmatrix}-5&amp;-3&amp;-2\\3&amp;2&amp;1\\1&amp;1&amp;1\end{bmatrix}\\
+&amp;=\begin{bmatrix}-1&amp;-1&amp;-1\\2&amp;3&amp;1\\-1&amp;-2&amp;1\end{bmatrix}\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+\begin{bmatrix}-5&amp;-3&amp;-2\\3&amp;2&amp;1\\1&amp;1&amp;1\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}-1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;2\end{bmatrix}
+\end{align*}
+
+</p>
+<div class="context"><a href="section-SD.html#example-DAB" class="context" title="Section SD">(in
+context)</a></div>
+</div>

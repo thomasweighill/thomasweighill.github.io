@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-MRMLT" acro="MRMLT" titletext="Matrix Representation of a Multiple of a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRMLT</span><span class="titletext"> Matrix Representation of a Multiple of a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $\alpha\in\complex{\null}$, $B$ is a basis of $U$ and $C$ is a basis of $V$.  Then
+\begin{equation*}
+\matrixrep{\alpha T}{B}{C}=\alpha\matrixrep{T}{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRMLT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#theorem-MRMLT" class="context" title="Section MR">(in context)</a></div>

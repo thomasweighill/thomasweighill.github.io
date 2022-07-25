@@ -1,0 +1,24 @@
+<div class="proof" id="proof-DERC" acro="DERC" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DERC</span>
+</h5>
+<p>Suppose that $A$ is a square matrix of size $n$ where the two rows $s$ and $t$ are equal.  Form the matrix $B$ by swapping rows $s$ and $t$.  Notice that as a consequence of our hypothesis, $A=B$.  Then
+\begin{align*}
+\detname{A}
+&amp;=
+\frac{1}{2}\left(\detname{A}+\detname{A}\right)\\
+&amp;=
+\frac{1}{2}\left(\detname{A}-\detname{B}\right)
+&amp;&amp;\knowl{./knowls/theorem.DRCS.knowl}{\text{Theorem DRCS}}\\
+&amp;=
+\frac{1}{2}\left(\detname{A}-\detname{A}\right)
+&amp;&amp;\text{Hypothesis, $A=B$}\\
+&amp;=
+\frac{1}{2}\,(0)=0
+\end{align*}
+
+</p>
+
+<p>The proof for the case of two equal columns is entirely similar, or could be derived from an application of <a class="knowl" acro="DT" type="Theorem" title="Determinant of the Transpose" knowl="./knowls/theorem.DT.knowl">Theorem DT</a> employing the transpose of the matrix.</p>
+
+</div>

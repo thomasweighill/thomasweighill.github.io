@@ -1,0 +1,46 @@
+<div class="example" id="example-MFLT" acro="MFLT" titletext="Matrix from a linear transformation">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">MFLT</span> <span class="titletext">Matrix from a linear transformation</span>
+</h5>
+<p>Define the function $\ltdefn{R}{\complex{3}}{\complex{4}}$ by
+\begin{equation*}
+\lt{R}{\colvector{x_1\\x_2\\x_3}}=
+\colvector{2x_1-3x_2+4x_3\\x_1+x_2+x_3\\-x_1+5x_2-3x_3\\x_2-4x_3}
+\end{equation*}</p>
+<p>You could verify that $R$ is a linear transformation by applying the definition, but we will instead massage the expression defining a typical output until we recognize the form of a known class of linear transformations.
+\begin{align*}
+\lt{R}{\colvector{x_1\\x_2\\x_3}}&amp;=
+\colvector{2x_1-3x_2+4x_3\\x_1+x_2+x_3\\-x_1+5x_2-3x_3\\x_2-4x_3}\\
+&amp;=
+\colvector{2x_1\\x_1\\-x_1\\0}+
+\colvector{-3x_2\\x_2\\5x_2\\x_2}+
+\colvector{4x_3\\x_3\\-3x_3\\-4x_3}&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;=
+x_1\colvector{2\\1\\-1\\0}+
+x_2\colvector{-3\\1\\5\\1}+\
+x_3\colvector{4\\1\\-3\\-4}&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}\\
+&amp;=
+\begin{bmatrix}
+2&amp;-3&amp;4\\
+1&amp;1&amp;1\\
+-1&amp;5&amp;-3\\
+0&amp;1&amp;-4
+\end{bmatrix}
+\colvector{x_1\\x_2\\x_3}&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}
+\end{align*}
+
+</p>
+<p>So if we define the matrix
+\begin{equation*}
+B=
+\begin{bmatrix}
+2&amp;-3&amp;4\\
+1&amp;1&amp;1\\
+-1&amp;5&amp;-3\\
+0&amp;1&amp;-4
+\end{bmatrix}
+\end{equation*}
+then $\lt{R}{\vect{x}}=B\vect{x}$.  By <a class="knowl" acro="MBLT" type="Theorem" title="Matrices Build Linear Transformations" knowl="./knowls/theorem.MBLT.knowl">Theorem MBLT</a>, we can easily recognize $R$ as a linear transformation since it has the form described in the hypothesis of the theorem.</p>
+<div class="context"><a href="section-LT.html#example-MFLT" class="context" title="Section LT">(in
+context)</a></div>
+</div>

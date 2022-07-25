@@ -1,0 +1,22 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-NME2', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">NME2</span> <span class="titletext">Nonsingular Matrix Equivalences, Round 2</span>
+</h5>
+
+
+<p>As will be our habit, we can illustrate properties of nonsingular matrices with random square matrices.  Review <a class="knowl" acro="NME1" type="Sage" title="" knowl="./knowls/sage.NME1.knowl">Sage NME1</a> for a refresher on generating these matrices.  Here we will illustrate the fifth condition, half of <a class="knowl" acro="NMLIC" type="Theorem" title="Nonsingular Matrices have Linearly Independent Columns" knowl="./knowls/theorem.NMLIC.knowl">Theorem NMLIC</a>.</p>
+
+<br><br><div class="sage-NME2"><script type="text/x-sage">n = 6
+A = random_matrix(QQ, n, algorithm='unimodular')
+A                                  # random
+</script></div>
+
+<br><br><div class="sage-NME2"><script type="text/x-sage">V = QQ^n
+V.linear_dependence(A.columns()) == []
+</script></div>
+
+<p>You should always get an empty list (<span class="code">[]</span>) as the result of the second compute cell, no matter which random (unimodular) matrix you produce prior.  Note that the list of vectors created using <span class="code">.columns()</span> is exactly the list we want to feed to <span class="code">.linear_dependence()</span>.</p>
+
+<br><br><div class="sage-NME2 sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

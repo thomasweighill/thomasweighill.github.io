@@ -1,0 +1,15 @@
+<div class="exercise" acro="MR.C52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find a basis for the kernel of the linear transformation $\ltdefn{T}{P_2}{M_{22}}$.
+\begin{equation*}
+\lt{T}{a+bx+cx^2}=
+\begin{bmatrix}
+a+2b-2c &amp; 2a+2b \\
+-a+b-4c &amp; 3a+2b+2c
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C52.knowl">Solution</a></p></div>
+</div>

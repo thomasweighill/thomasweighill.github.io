@@ -1,0 +1,9 @@
+<div class="solution" acro="MM.C33">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MM.C33</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>We quickly compute
+$A^2 = \begin{bmatrix} 0 &amp; 0 &amp; 1\\ 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0\end{bmatrix}$,
+and we then see that
+$A^3$ and all subsequent powers of $A$ are the $3 \times 3$ zero matrix;
+that is, $A^n = \zeromatrix_{3,3}$ for $n\ge 3$.
+</div>

@@ -1,0 +1,6 @@
+<div class="definition" id="definition-C" acro="C" titletext="Cardinality">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">C</span> <span class="titletext"> Cardinality</span>
+</h5>
+<p>Suppose $S$ is a finite set.  Then the number of elements in $S$ is called the <em class="term">cardinality</em> or <em class="term">size</em> of $S$, and is denoted $\card{S}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SET.html#definition-C" class="context" title="Section SET">(in context)</a></div>

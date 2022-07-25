@@ -1,0 +1,8 @@
+<div class="exercise" acro="ILT.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">ILT.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  For which vectors $\vect{v}\in V$ is $\preimage{T}{\vect{v}}$ a subspace of $U$?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.ILT.T10.knowl">Solution</a></p></div>
+</div>

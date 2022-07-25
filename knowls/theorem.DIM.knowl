@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DIM" acro="DIM" titletext="Determinant of the Identity Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DIM</span><span class="titletext"> Determinant of the Identity Matrix</span>
+</h5>
+<div class="statement"><p>For every $n\geq 1$, $\detname{I_n}=1$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DIM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PDM.html#theorem-DIM" class="context" title="Section PDM">(in context)</a></div>

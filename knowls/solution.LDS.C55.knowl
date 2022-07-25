@@ -1,0 +1,47 @@
+<div class="solution" acro="LDS.C55">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LDS.C55</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Let $A$ be the matrix whose columns are the vectors in $T$.  Then row-reduce $A$,
+\begin{equation*}
+A\rref B=
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 2 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; -1 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 1
+\end{bmatrix}
+\end{equation*}
+From <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> we can form $R$ by choosing the columns of $A$ that have the same indices as the pivot columns of $B$.  <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> also guarantees that $R$ will be linearly independent.
+\begin{equation*}
+R=\set{
+\colvector{1 \\ -1 \\ 2},\,
+\colvector{3 \\ 0 \\ 1},\,
+\colvector{4 \\ 2 \\ 3}
+}
+\end{equation*}
+That was easy.  To find $S$ will require a bit more work.  From $B$ we can obtain a solution to $\homosystem{A}$, which by <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> will provide a nontrivial relation of linear dependence on the columns of $A$, which are the vectors in $T$.  To wit,  choose the free variable $x_4$ to be 1, then $x_1=-2$, $x_2=1$, $x_3=-1$, and so
+\begin{equation*}
+(-2)\colvector{1 \\ -1 \\ 2}+
+(1)\colvector{3 \\ 0 \\ 1}+
+(-1)\colvector{4 \\ 2 \\ 3}+
+(1)\colvector{3 \\ 0 \\ 6}
+=
+\colvector{0\\0\\0}
+\end{equation*}
+this equation can be rewritten with the second vector staying put, and the other three moving to the other side of the equality,
+\begin{equation*}
+\colvector{3 \\ 0 \\ 1}
+=
+(2)\colvector{1 \\ -1 \\ 2}+
+(1)\colvector{4 \\ 2 \\ 3}+
+(-1)\colvector{3 \\ 0 \\ 6}
+\end{equation*}
+We could have chosen other vectors to stay put, but may have then needed to divide by a nonzero scalar.   This equation is enough to conclude that the second vector in $T$ is “surplus” and can be replaced (see the careful argument in <a class="knowl" acro="RSC5" type="Example" title="Reducing a span in $\complex{5}$" knowl="./knowls/example.RSC5.knowl">Example RSC5</a>).  So set
+\begin{equation*}
+S=\set{
+\colvector{1 \\ -1 \\ 2},\,
+\colvector{4 \\ 2 \\ 3},\,
+\colvector{3 \\ 0 \\ 6}
+}
+\end{equation*}
+and then $\spn{S}=\spn{T}$.  $T$ is also a linearly independent set, which we can show directly.  Make a matrix $C$ whose columns are the vectors in $S$.  Row-reduce $C$ and you will obtain the identity matrix $I_3$.  By <a class="knowl" acro="LIVRN" type="Theorem" title="Linearly Independent Vectors, $r$ and $n$" knowl="./knowls/theorem.LIVRN.knowl">Theorem LIVRN</a>, the set $S$ is linearly independent.
+</div>

@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DRMM" acro="DRMM" titletext="Determinant Respects Matrix Multiplication">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DRMM</span><span class="titletext"> Determinant Respects Matrix Multiplication</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ and $B$ are square matrices of the same size.  Then $\detname{AB}=\detname{A}\detname{B}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DRMM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PDM.html#theorem-DRMM" class="context" title="Section PDM">(in context)</a></div>

@@ -1,0 +1,21 @@
+<div class="example" id="example-ACN" acro="ACN" titletext="Arithmetic of complex numbers">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ACN</span> <span class="titletext">Arithmetic of complex numbers</span>
+</h5>
+<p>
+\begin{align*}
+(2+5i)+(6-4i)&amp;=(2+6)+(5+(-4))i=8+i\\
+(2+5i)-(6-4i)&amp;=(2-6)+(5-(-4))i=-4+9i\\
+(2+5i)(6-4i)&amp;=(2)(6)+(5i)(6)+(2)(-4i)+(5i)(-4i)=12+30i-8i-20i^2\\
+&amp;=12+22i-20(-1)=32+22i
+\end{align*}
+Division takes just a bit more care.  We multiply the denominator by a complex number chosen to produce a real number and then we can produce a complex number as a result.
+\begin{align*}
+
+\frac{2+5i}{6-4i}&amp;=\frac{2+5i}{6-4i}\frac{6+4i}{6+4i}=\frac{-8+38i}{52}=-\frac{8}{52}+\frac{38}{52}i=-\frac{2}{13}+\frac{19}{26}i
+\end{align*}
+
+</p>
+<div class="context"><a href="section-CNO.html#example-ACN" class="context" title="Section CNO">(in
+context)</a></div>
+</div>

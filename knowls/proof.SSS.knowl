@@ -1,0 +1,56 @@
+<div class="proof" id="proof-SSS" acro="SSS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SSS</span>
+</h5>
+<p>By <a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a>, the span contains linear combinations of vectors from the vector space $V$, so by repeated use of the closure properties, <a class="knowl" acro="AC" type="Property" title="Additive Closure" knowl="./knowls/property.AC.knowl">Property AC</a> and <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a>, $\spn{S}$ can be seen to be a subset of $V$.</p>
+
+<p>We will then verify the three conditions of <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a>.  First,
+\begin{align*}
+\zerovector
+&amp;=\zerovector+\zerovector+\zerovector+\ldots+\zerovector&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\\
+&amp;=0\vect{u}_1+0\vect{u}_2+0\vect{u}_3+\cdots+0\vect{u}_t&amp;&amp;\knowl{./knowls/theorem.ZSSM.knowl}{\text{Theorem ZSSM}}
+\end{align*}
+
+</p>
+
+<p>So we have written $\zerovector$ as a linear combination of the vectors in $S$ and by <a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a>$, \zerovector\in\spn{S}$ and therefore $\spn{S}\neq\emptyset$.</p>
+
+<p>Second, suppose $\vect{x}\in\spn{S}$ and $\vect{y}\in\spn{S}$.  Can we conclude that $\vect{x}+\vect{y}\in\spn{S}$?  What do we know about $\vect{x}$ and $\vect{y}$ by virtue of their membership in $\spn{S}$?  There must be scalars from $\complex{\null}$,
+$\alpha_1,\,\alpha_2,\,\alpha_3,\,\ldots,\,\alpha_t$ and
+$\beta_1,\,\beta_2,\,\beta_3,\,\ldots,\,\beta_t$ so that
+\begin{align*}
+\vect{x}&amp;=\lincombo{\alpha}{u}{t}\\
+\vect{y}&amp;=\lincombo{\beta}{u}{t}
+\end{align*}
+
+Then
+\begin{align*}
+\vect{x}+\vect{y}&amp;=\lincombo{\alpha}{u}{t}\\
+&amp;\quad\quad+\lincombo{\beta}{u}{t}\\
+&amp;=\alpha_1\vect{u}_1+\beta_1\vect{u}_1+\alpha_2\vect{u}_2+\beta_2\vect{u}_2\\
+&amp;\quad\quad+\alpha_3\vect{u}_3+\beta_3\vect{u}_3+\cdots+\alpha_t\vect{u}_t+\beta_t\vect{u}_t&amp;&amp;\knowl{./knowls/property.AA.knowl}{\text{Property AA}}, \knowl{./knowls/property.C.knowl}{\text{Property C}}\\
+&amp;=(\alpha_1+\beta_1)\vect{u}_1+(\alpha_2+\beta_2)\vect{u}_2\\
+&amp;\quad\quad+(\alpha_3+\beta_3)\vect{u}_3+\cdots+(\alpha_t+\beta_t)\vect{u}_t&amp;&amp;\knowl{./knowls/property.DSA.knowl}{\text{Property DSA}}
+\end{align*}
+
+Since each $\alpha_i+\beta_i$ is again a scalar from $\complex{\null}$ we have expressed the vector sum $\vect{x}+\vect{y}$ as a linear combination of the vectors from $S$, and therefore by <a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a> we can say that $\vect{x}+\vect{y}\in\spn{S}$.</p>
+
+<p>Third, suppose $\alpha\in\complex{\null}$ and $\vect{x}\in\spn{S}$.  Can we conclude that $\alpha\vect{x}\in\spn{S}$?  What do we know about $\vect{x}$  by virtue of its membership in $\spn{S}$?  There must be scalars from $\complex{\null}$,
+$\alpha_1,\,\alpha_2,\,\alpha_3,\,\ldots,\,\alpha_t$ so that
+\begin{align*}
+\vect{x}&amp;=\lincombo{\alpha}{u}{t}\\
+\end{align*}
+
+Then
+\begin{align*}
+\alpha\vect{x}&amp;=\alpha\left(\lincombo{\alpha}{u}{t}\right)\\
+&amp;=\alpha(\alpha_1\vect{u}_1)+\alpha(\alpha_2\vect{u}_2)+\alpha(\alpha_3\vect{u}_3)+\cdots+\alpha(\alpha_t\vect{u}_t)&amp;&amp;\knowl{./knowls/property.DVA.knowl}{\text{Property DVA}}\\
+&amp;=(\alpha\alpha_1)\vect{u}_1+(\alpha\alpha_2)\vect{u}_2+(\alpha\alpha_3)\vect{u}_3+\cdots+(\alpha\alpha_t)\vect{u}_t&amp;&amp;\knowl{./knowls/property.SMA.knowl}{\text{Property SMA}}\\
+\end{align*}
+
+Since each $\alpha\alpha_i$ is again a scalar from $\complex{\null}$ we have expressed the scalar multiple $\alpha\vect{x}$ as a linear combination of the vectors from $S$, and therefore by <a class="knowl" acro="SS" type="Definition" title="Span of a Set" knowl="./knowls/definition.SS.knowl">Definition SS</a> we can say that $\alpha\vect{x}\in\spn{S}$.</p>
+
+<p>With the three conditions of <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a> met, we can say that $\spn{S}$ is a subspace (and so is also a vector space, <a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a>).
+(See <a knowl="./knowls/exercise.SS.T20.knowl">Exercise SS.T20</a>, <a knowl="./knowls/exercise.SS.T21.knowl">Exercise SS.T21</a>, <a knowl="./knowls/exercise.SS.T22.knowl">Exercise SS.T22</a>.)</p>
+
+</div>

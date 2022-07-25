@@ -1,0 +1,16 @@
+<div class="definition" id="definition-MR" acro="MR" titletext="Matrix Representation">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">MR</span> <span class="titletext"> Matrix Representation</span>
+</h5>
+<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $B=\set{\vectorlist{u}{n}}$ is a basis for $U$ of size $n$, and $C$ is a basis for $V$ of size $m$.  Then the <em class="term">matrix representation</em> of $T$ relative to $B$ and $C$ is the $m\times n$ matrix,
+\begin{equation*}
+\matrixrep{T}{B}{C}=\left[
+\left.\vectrep{C}{\lt{T}{\vect{u}_1}}\right|
+\left.\vectrep{C}{\lt{T}{\vect{u}_2}}\right|
+\left.\vectrep{C}{\lt{T}{\vect{u}_3}}\right|
+\ldots
+\left|\vectrep{C}{\lt{T}{\vect{u}_n}}\right.
+\right]
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#definition-MR" class="context" title="Section MR">(in context)</a></div>

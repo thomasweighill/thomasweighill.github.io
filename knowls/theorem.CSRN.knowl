@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-CSRN" acro="CSRN" titletext="Consistent Systems, $r$ and $n$">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CSRN</span><span class="titletext"> Consistent Systems, $r$ and $n$</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is the augmented matrix of a <em>consistent</em> system of linear equations with $n$ variables.  Suppose also that $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ pivot columns.  Then $r\leq n$.  If $r=n$, then the system has a unique solution, and if $r&lt;n$, then the system has infinitely many solutions.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CSRN.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-TSS.html#theorem-CSRN" class="context" title="Section TSS">(in context)</a></div>

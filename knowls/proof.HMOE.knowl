@@ -1,0 +1,34 @@
+<div class="proof" id="proof-HMOE" acro="HMOE" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">HMOE</span>
+</h5>
+<p>Let $\vect{x}$ be an eigenvector of $A$ for $\lambda$ and let $\vect{y}$ be an eigenvector of $A$ for a different eigenvalue $\rho$.   So we have $\lambda-\rho\neq 0$.  Then
+\begin{align*}
+\innerproduct{\vect{x}}{\vect{y}}
+&amp;=\frac{1}{\lambda-\rho}\left(\lambda-\rho\right)\innerproduct{\vect{x}}{\vect{y}}
+&amp;&amp;\knowl{./knowls/property.MICN.knowl}{\text{Property MICN}}\\
+&amp;=\frac{1}{\lambda-\rho}
+\left(\lambda\innerproduct{\vect{x}}{\vect{y}}-\rho\innerproduct{\vect{x}}{\vect{y}}\right)
+&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\frac{1}{\lambda-\rho}
+\left(\innerproduct{\conjugate{\lambda}\vect{x}}{\vect{y}}-\innerproduct{\vect{x}}{\rho\vect{y}}\right)
+&amp;&amp;\knowl{./knowls/theorem.IPSM.knowl}{\text{Theorem IPSM}}\\
+&amp;=\frac{1}{\lambda-\rho}
+\left(\innerproduct{\lambda\vect{x}}{\vect{y}}-\innerproduct{\vect{x}}{\rho\vect{y}}\right)
+&amp;&amp;\knowl{./knowls/theorem.HMRE.knowl}{\text{Theorem HMRE}}\\
+&amp;=\frac{1}{\lambda-\rho}
+\left(\innerproduct{A\vect{x}}{\vect{y}}-\innerproduct{\vect{x}}{A\vect{y}}\right)
+&amp;&amp;\knowl{./knowls/definition.EEM.knowl}{\text{Definition EEM}}\\
+&amp;=\frac{1}{\lambda-\rho}
+\left(\innerproduct{A\vect{x}}{\vect{y}}-\innerproduct{A\vect{x}}{\vect{y}}\right)
+&amp;&amp;\knowl{./knowls/theorem.HMIP.knowl}{\text{Theorem HMIP}}\\
+&amp;=\frac{1}{\lambda-\rho}\left(0\right)
+&amp;&amp;\knowl{./knowls/property.AICN.knowl}{\text{Property AICN}}\\
+&amp;=0
+\end{align*}
+
+</p>
+
+<p>This equality says that $\vect{x}$ and $\vect{y}$ are orthogonal vectors (<a class="knowl" acro="OV" type="Definition" title="Orthogonal Vectors" knowl="./knowls/definition.OV.knowl">Definition OV</a>).</p>
+
+</div>

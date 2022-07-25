@@ -1,0 +1,22 @@
+<div class="example" id="example-SRR" acro="SRR" titletext="Singular matrix, row-reduced">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SRR</span> <span class="titletext">Singular matrix, row-reduced</span>
+</h5>
+<p>We have the coefficient matrix for <a knowl="./knowls/archetype.A.knowl">Archetype A</a> and a row-equivalent matrix $B$ in reduced row-echelon form, 
+\begin{equation*}
+A=\begin{bmatrix}
+1 &amp; -1 &amp; 2\\
+2 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 0
+\end{bmatrix}
+\rref\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1\\
+0 &amp; \leading{1} &amp; -1\\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+=B\end{equation*}
+</p>
+<p>Since $B$ is not the $3\times 3$ identity matrix, <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> tells us that $A$ is a singular matrix.</p>
+<div class="context"><a href="section-NM.html#example-SRR" class="context" title="Section NM">(in
+context)</a></div>
+</div>

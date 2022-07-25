@@ -1,0 +1,7 @@
+<div class="exercise" acro="PD.T05">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">PD.T05</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Trivially, if $U$ and $V$ are two subspaces of $W$ with $U = V$, then $\dimension{U}=\dimension{V}$.  Combine this fact, <a class="knowl" acro="PSSD" type="Theorem" title="Proper Subspaces have Smaller Dimension" knowl="./knowls/theorem.PSSD.knowl">Theorem PSSD</a>, and <a class="knowl" acro="EDYES" type="Theorem" title="Equal Dimensions Yields Equal Subspaces" knowl="./knowls/theorem.EDYES.knowl">Theorem EDYES</a> all into one grand combined theorem.  You might look to <a class="knowl" acro="PIP" type="Theorem" title="Positive Inner Products" knowl="./knowls/theorem.PIP.knowl">Theorem PIP</a> for stylistic inspiration.  (Notice this problem does not ask you to prove anything.  It just asks you to roll up three theorems into one compact, logically equivalent statement.)
+</p></div>
+</div>

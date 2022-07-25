@@ -1,0 +1,16 @@
+
+<ol>
+<li>Suppose $A$ is the $2\times 2$ matrix
+\begin{equation*}
+A=\begin{bmatrix}
+-5 &amp; 8\\-4 &amp; 7
+\end{bmatrix}
+\end{equation*}
+Find the eigenvalues of $A$.
+</li>
+<li>For each eigenvalue of $A$, find the corresponding eigenspace.
+</li>
+<li>For the polynomial $p(x)=3x^2-x+2$ and $A$ from above, compute $p(A)$.
+</li>
+</ol>
+

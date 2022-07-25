@@ -1,0 +1,7 @@
+<div class="proof" id="proof-DCM" acro="DCM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DCM</span>
+</h5>
+<p><a class="knowl" acro="SUVB" type="Theorem" title="Standard Unit Vectors are a Basis" knowl="./knowls/theorem.SUVB.knowl">Theorem SUVB</a> provides a basis with $m$ vectors.</p>
+
+</div>

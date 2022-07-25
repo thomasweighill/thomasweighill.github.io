@@ -1,0 +1,7 @@
+<div class="exercise" acro="MR.T60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Create an entirely different proof of <a class="knowl" acro="IMILT" type="Theorem" title="Invertible Matrices, Invertible Linear Transformation" knowl="./knowls/theorem.IMILT.knowl">Theorem IMILT</a>  that relies on <a class="knowl" acro="IVLT" type="Definition" title="Invertible Linear Transformations" knowl="./knowls/definition.IVLT.knowl">Definition IVLT</a> to establish the invertibility of $T$, and that relies on <a class="knowl" acro="MI" type="Definition" title="Matrix Inverse" knowl="./knowls/definition.MI.knowl">Definition MI</a> to establish the invertibility of $A$.
+</p></div>
+</div>

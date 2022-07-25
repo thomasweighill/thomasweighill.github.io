@@ -1,0 +1,14 @@
+<div class="solution" acro="CRS.T40">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">CRS.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Choose $\vect{x}\in\csp{AB}$.  Then by <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> there is a vector $\vect{w}$ that is a solution to $\linearsystem{AB}{\vect{x}}$.  Define the vector $\vect{y}$ by $\vect{y}=B\vect{w}$.  We are set,
+\begin{align*}
+A\vect{y}
+&amp;=A\left(B\vect{w}\right)&amp;&amp;\text{Definition of $\vect{y}$}\\
+&amp;=\left(AB\right)\vect{w}&amp;&amp;\knowl{./knowls/theorem.MMA.knowl}{\text{Theorem MMA}}\\
+&amp;=\vect{x}&amp;&amp;\text{$\vect{w}$ solution to $\linearsystem{AB}{\vect{x}}$}\\
+\end{align*}
+
+This says that $\linearsystem{A}{\vect{x}}$ is a consistent system, and by <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>, we see that $\vect{x}\in\csp{A}$ and therefore $\csp{AB}\subseteq\csp{A}$.<br><br>
+For an example where $\csp{A}\not\subseteq\csp{AB}$ choose $A$ to be any nonzero matrix and choose $B$ to be a zero matrix.  Then $\csp{A}\neq\set{\zerovector}$ and $\csp{AB}=\csp{\zeromatrix}=\set{\zerovector}$.
+</div>

@@ -1,0 +1,7 @@
+<div class="exercise" acro="LDS.C70">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LDS.C70</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Reprise <a class="knowl" acro="RES" type="Example" title="Reworking elements of a span" knowl="./knowls/example.RES.knowl">Example RES</a> by creating a new version of the vector $\vect{y}$.  In other words, form a new, different linear combination of the vectors in $R$ to create a new vector $\vect{y}$ (but do not simplify the problem too much by choosing any of the five new scalars to be zero).  Then express this new $\vect{y}$ as a combination of the vectors in $P$.
+</p></div>
+</div>

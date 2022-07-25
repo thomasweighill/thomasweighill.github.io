@@ -1,0 +1,59 @@
+<div class="example" id="example-CSTW" acro="CSTW" titletext="Column space, two ways">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CSTW</span> <span class="titletext">Column space, two ways</span>
+</h5>
+<p>Consider the $5\times 7$ matrix $A$,
+\begin{equation*}
+\begin{bmatrix}
+ 2 &amp; 4 &amp; 1 &amp; -1 &amp; 1 &amp; 4 &amp; 4 \\
+ 1 &amp; 2 &amp; 1 &amp; 0 &amp; 2 &amp; 4 &amp; 7 \\
+ 0 &amp; 0 &amp; 1 &amp; 4 &amp; 1 &amp; 8 &amp; 7 \\
+ 1 &amp; 2 &amp; -1 &amp; 2 &amp; 1 &amp; 9 &amp; 6 \\
+ -2 &amp; -4 &amp; 1 &amp; 3 &amp; -1 &amp; -2 &amp; -2
+\end{bmatrix}
+\end{equation*}</p>
+<p>According to the definition (<a class="knowl" acro="CSM" type="Definition" title="Column Space of a Matrix" knowl="./knowls/definition.CSM.knowl">Definition CSM</a>), the column space of $A$ is
+\begin{equation*}
+\csp{A}=
+\spn{\set{
+\colvector{ 2 \\ 1 \\ 0 \\ 1 \\ -2 },\,
+\colvector{ 4 \\ 2 \\ 0 \\ 2 \\ -4 },\,
+\colvector{ 1 \\ 1 \\ 1 \\ -1 \\ 1 },\,
+\colvector{ -1 \\ 0 \\ 4 \\ 2 \\ 3 },\,
+\colvector{ 1 \\ 2 \\ 1 \\ 1 \\ -1 },\,
+\colvector{ 4 \\ 4 \\ 8 \\ 9 \\ -2 },\,
+\colvector{ 4 \\ 7 \\ 7 \\ 6 \\ -2 }
+}}
+\end{equation*}</p>
+<p>While this is a concise description of an infinite set, we might be able to describe the span with fewer than seven vectors.  This is the substance of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>.  So we take these seven vectors and make them the columns of a matrix, which is simply the original matrix $A$ again.  Now we row-reduce,
+\begin{equation*}
+\begin{bmatrix}
+ 2 &amp; 4 &amp; 1 &amp; -1 &amp; 1 &amp; 4 &amp; 4 \\
+ 1 &amp; 2 &amp; 1 &amp; 0 &amp; 2 &amp; 4 &amp; 7 \\
+ 0 &amp; 0 &amp; 1 &amp; 4 &amp; 1 &amp; 8 &amp; 7 \\
+ 1 &amp; 2 &amp; -1 &amp; 2 &amp; 1 &amp; 9 &amp; 6 \\
+ -2 &amp; -4 &amp; 1 &amp; 3 &amp; -1 &amp; -2 &amp; -2
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 1 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; -1 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 2 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 1 &amp; 3 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>The pivot columns are $D=\set{1,\,3,\,4,\,5}$, so we can create the set
+\begin{equation*}
+T=\set{
+\colvector{ 2 \\ 1 \\ 0 \\ 1 \\ -2 },\,
+\colvector{ 1 \\ 1 \\ 1 \\ -1 \\ 1 },\,
+\colvector{ -1 \\ 0 \\ 4 \\ 2 \\ 3 },\,
+\colvector{ 1 \\ 2 \\ 1 \\ 1 \\ -1 }
+}
+\end{equation*}
+and know that $\csp{A}=\spn{T}$ and $T$ is a linearly independent set of columns from the set of columns of $A$.</p>
+<div class="context"><a href="section-CRS.html#example-CSTW" class="context" title="Section CRS">(in
+context)</a></div>
+</div>

@@ -1,0 +1,8 @@
+<div class="exercise" acro="SSLE.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SSLE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="D" type="Proof Technique" title="Definitions" knowl="./knowls/technique.D.knowl">Proof Technique D</a> asks you to formulate a definition of what it means for a whole number to be odd.  What is your definition?  (Do not say “the opposite of even.”)  Is $6$ odd?  Is $11$ odd?  Justify your answers by using your definition.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SSLE.T10.knowl">Solution</a></p></div>
+</div>

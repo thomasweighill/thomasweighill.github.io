@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-CSRST" acro="CSRST" titletext="Column Space, Row Space, Transpose">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CSRST</span><span class="titletext"> Column Space, Row Space, Transpose</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a matrix.  Then $\csp{A}=\rsp{\transpose{A}}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CSRST.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#theorem-CSRST" class="context" title="Section CRS">(in context)</a></div>

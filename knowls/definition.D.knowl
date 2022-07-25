@@ -1,0 +1,6 @@
+<div class="definition" id="definition-D" acro="D" titletext="Dimension">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">D</span> <span class="titletext"> Dimension</span>
+</h5>
+<p>Suppose that $V$ is a vector space and $\set{\vectorlist{v}{t}}$ is a basis of $V$.  Then the <em class="term">dimension</em> of $V$ is defined by $\dimension{V}=t$.  If $V$ has no finite bases, we say $V$ has infinite dimension.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#definition-D" class="context" title="Section D">(in context)</a></div>

@@ -1,0 +1,13 @@
+<div class="solution" acro="LI.C20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LI.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>With three vectors from $\complex{3}$, we can form a square matrix by making these three vectors the columns of a matrix.  We do so, and row-reduce to obtain,
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{equation*}
+the $3\times 3$ identity matrix.  So by <a class="knowl" acro="NME2" type="Theorem" title="Nonsingular Matrix Equivalences, Round 2" knowl="./knowls/theorem.NME2.knowl">Theorem NME2</a> the original matrix is nonsingular and its columns are therefore a linearly independent set.
+</div>

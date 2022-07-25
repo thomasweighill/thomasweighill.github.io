@@ -1,0 +1,13 @@
+<div class="exercise" acro="DM.M10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">DM.M10</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find a value of $k$ so that the matrix
+$A =
+\begin{bmatrix}
+2 &amp; 4 \\
+3 &amp; k\end{bmatrix}$
+has $\det(A) = 0$, or explain why it is not possible.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.DM.M10.knowl">Solution</a></p></div>
+</div>

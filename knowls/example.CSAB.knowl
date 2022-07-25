@@ -1,0 +1,8 @@
+<div class="example" id="example-CSAB" acro="CSAB" titletext="Column space of Archetype B">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CSAB</span> <span class="titletext">Column space of Archetype B</span>
+</h5>
+<p>The coefficient matrix in <a knowl="./knowls/archetype.B.knowl">Archetype B</a>, call it $B$ here,  is known to be nonsingular (see <a class="knowl" acro="NM" type="Example" title="A nonsingular matrix, Archetype B" knowl="./knowls/example.NM.knowl">Example NM</a>).  By <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>, the linear system $\linearsystem{B}{\vect{b}}$ has a (unique) solution for every choice of $\vect{b}$.  <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> then says that $\vect{b}\in\csp{B}$ for all $\vect{b}\in\complex{3}$.  Stated differently, there is no way to build an inconsistent system with the coefficient matrix $B$, but then we knew that already from <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>.</p>
+<div class="context"><a href="section-CRS.html#example-CSAB" class="context" title="Section CRS">(in
+context)</a></div>
+</div>

@@ -1,0 +1,8 @@
+<div class="exercise" acro="VO.T32">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VO.T32</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that vector subtraction obeys a distributive property.  Specifically, prove that $\alpha\left(\vect{u}-\vect{v}\right)=\alpha\vect{u}-\alpha\vect{v}$.<br>
+Can you give two different proofs? Distinguish your two proofs by using the alternate descriptions of vector subtraction provided by <a knowl="./knowls/exercise.VO.T30.knowl">Exercise VO.T30</a>.
+</p></div>
+</div>

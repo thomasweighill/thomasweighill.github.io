@@ -1,0 +1,10 @@
+<div class="definition" id="definition-RLT" acro="RLT" titletext="Range of a Linear Transformation">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">RLT</span> <span class="titletext"> Range of a Linear Transformation</span>
+</h5>
+<p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  Then the <em class="term">range</em> of $T$ is the set
+\begin{equation*}
+\rng{T}=\setparts{\lt{T}{\vect{u}}}{\vect{u}\in U}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SLT.html#definition-RLT" class="context" title="Section SLT">(in context)</a></div>

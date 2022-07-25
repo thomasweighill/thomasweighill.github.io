@@ -1,0 +1,7 @@
+<div class="exercise" acro="SS.T22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SS.T22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $S$ is a set of vectors from $\complex{m}$, $\alpha\in\complex{\null}$, and $\vect{x}\in\spn{S}$.  Prove that $\alpha\vect{x}\in\spn{S}$.
+</p></div>
+</div>

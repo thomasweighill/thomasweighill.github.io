@@ -1,0 +1,15 @@
+<div class="archetype" id="archetype-I" acro="I" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">I</span> <span class="titletext"></span>
+</h4>
+<p>Summary: System with four equations, seven variables.  Consistent.  Null space of coefficient matrix has dimension 4.</p>
+<p>Definition:\begin{align*}
+x_1 +4x_2  - x_4  + 7x_6 - 9x_7 &amp;= 3\\
+2x_1 + 8x_2 - x_3 + 3x_4 + 9x_5 - 13x_6 + 7x_7 &amp;= 9\\
+ 2x_3 -3x_4 -4x_5 +12x_6 -8x_7 &amp;= 1\\
+-x_1  - 4x_2 + 2x_3 +4x_4 + 8x_5 - 31x_6 + 37x_7 &amp;= 4
+\end{align*}
+
+</p>
+<div class="context"><a href="archetype-I.html" class="context" title="Archetype I">Complete analysis of Archetype I</a></div>
+</div>

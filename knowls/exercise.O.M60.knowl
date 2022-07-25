@@ -1,0 +1,7 @@
+<div class="exercise" acro="O.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.M60</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\set{\vect{u},\,\vect{v},\,\vect{w}}\subseteq\complex{n}$ is an orthonormal set.  Prove that $\vect{u}+\vect{v}$ is not orthogonal to $\vect{v}+\vect{w}$.
+</p></div>
+</div>

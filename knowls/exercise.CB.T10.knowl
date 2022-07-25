@@ -1,0 +1,8 @@
+<div class="exercise" acro="CB.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CB.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{V}{V}$ is an invertible linear transformation with a nonzero eigenvalue $\lambda$.  Prove that $\displaystyle\frac{1}{\lambda}$ is an eigenvalue of $\ltinverse{T}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CB.T10.knowl">Solution</a></p></div>
+</div>

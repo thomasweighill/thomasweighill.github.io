@@ -1,0 +1,16 @@
+<div class="solution" acro="SD.T16">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SD.T16</span> <span class="contributor"><a knowl="./knowls/contributor.stevecanfield.knowl">Steve Canfield</a></span>
+</h5>$A$ being similar to $B$ means that there exists an $S$ such that $A=\inverse{S}BS$. So, $B=SA\inverse{S}$ and because $S$, $A$, and $\inverse{S}$ are nonsingular, by <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>, $B$ is nonsingular.
+\begin{align*}
+\inverse{A}
+&amp;= \inverse{\left(\inverse{S}BS\right)}
+&amp;&amp;\knowl{./knowls/definition.SIM.knowl}{\text{Definition SIM}}\\
+&amp;= \inverse{S}\inverse{B}\inverse{\left(\inverse{S}\right)}
+&amp;&amp;\knowl{./knowls/theorem.SS.knowl}{\text{Theorem SS}}\\
+&amp;= \inverse{S}\inverse{B}S
+&amp;&amp;\knowl{./knowls/theorem.MIMI.knowl}{\text{Theorem MIMI}}
+\end{align*}
+
+Then by <a class="knowl" acro="SIM" type="Definition" title="Similar Matrices" knowl="./knowls/definition.SIM.knowl">Definition SIM</a>, $\inverse{A}$ is similar to $\inverse{B}$.
+</div>

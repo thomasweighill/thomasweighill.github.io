@@ -1,0 +1,9 @@
+<div class="definition" id="definition-CCM" acro="CCM" titletext="Complex Conjugate of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CCM</span> <span class="titletext"> Complex Conjugate of a Matrix</span>
+</h5>
+<p>Suppose $A$ is an $m\times n$ matrix.  Then the <em class="term">conjugate</em> of $A$, written $\conjugate{A}$ is an $m\times n$ matrix defined by
+\begin{equation*}
+\matrixentry{\conjugate{A}}{ij}=\conjugate{\matrixentry{A}{ij}}
+\end{equation*}</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-CCM" class="context" title="Section MO">(in context)</a></div>

@@ -1,0 +1,14 @@
+<div class="solution" acro="DM.C28">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">DM.C28</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Expanding along the first row, we have
+\begin{align*}
+\begin{vmatrix} 1 &amp; 0 &amp; 1 &amp; 1 \\ 2 &amp; -1 &amp; -1 &amp; 1\\ 2 &amp; 5 &amp; 3 &amp; 0\\ 1 &amp; -1 &amp; 0 &amp; 1 \end{vmatrix}
+&amp;=
+\begin{vmatrix} -1 &amp; -1 &amp; 1\\5 &amp; 3 &amp; 0\\-1 &amp; 0 &amp; 1 \end{vmatrix} - 0 +
+\begin{vmatrix} 2 &amp; -1 &amp; 1\\ 2 &amp; 5 &amp; 0\\1 &amp; -1 &amp; 1 \end{vmatrix} -
+\begin{vmatrix}2 &amp; -1 &amp; -1\\2 &amp; 5 &amp; 3\\ 1 &amp; -1 &amp; 0 \end{vmatrix}\\
+&amp;= 5 - 0 + 5 - 10 = 0.
+\end{align*}
+
+</div>

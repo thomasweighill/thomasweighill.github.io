@@ -1,0 +1,42 @@
+<div class="theorem" id="theorem-VSPM" acro="VSPM" titletext="Vector Space Properties of Matrices">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VSPM</span><span class="titletext"> Vector Space Properties of Matrices</span>
+</h5>
+<div class="statement"><p>Suppose that $M_{mn}$ is the set of all $m\times n$ matrices (<a class="knowl" acro="VSM" type="Definition" title="Vector Space of $m\times n$ Matrices" knowl="./knowls/definition.VSM.knowl">Definition VSM</a>) with addition and scalar multiplication as defined in <a class="knowl" acro="MA" type="Definition" title="Matrix Addition" knowl="./knowls/definition.MA.knowl">Definition MA</a> and <a class="knowl" acro="MSM" type="Definition" title="Matrix Scalar Multiplication" knowl="./knowls/definition.MSM.knowl">Definition MSM</a>.  Then
+<ul>
+<li>ACM Additive Closure, Matrices<br>
+If $A,\,B\in M_{mn}$, then $A+B\in M_{mn}$.<br><br>
+</li>
+<li>SCM Scalar Closure, Matrices<br>
+If $\alpha\in\complex{\null}$ and $A\in M_{mn}$, then $\alpha A\in M_{mn}$.<br><br>
+</li>
+<li>CM Commutativity, Matrices<br>
+If $A,\,B\in M_{mn}$, then $A+B=B+A$.<br><br>
+</li>
+<li>AAM Additive Associativity, Matrices<br>
+If $A,\,B,\,C\in M_{mn}$, then $A+\left(B+C\right)=\left(A+B\right)+C$.<br><br>
+</li>
+<li>ZM Zero Matrix, Matrices<br>
+There is a matrix, $\zeromatrix$, called the zero matrix, such that  $A+\zeromatrix=A$  for all $A\in M_{mn}$.<br><br>
+</li>
+<li>AIM Additive Inverses, Matrices<br>
+If $A\in M_{mn}$, then there exists a matrix $-A\in M_{mn}$ so that $A+(-A)=\zeromatrix$.<br><br>
+</li>
+<li>SMAM Scalar Multiplication Associativity, Matrices<br>
+If $\alpha,\,\beta\in\complex{\null}$ and $A\in M_{mn}$, then $\alpha(\beta A)=(\alpha\beta)A$.<br><br>
+</li>
+<li>DMAM Distributivity across Matrix Addition, Matrices<br>
+If $\alpha\in\complex{\null}$ and $A,\,B\in M_{mn}$, then $\alpha(A+B)=\alpha A+\alpha B$.<br><br>
+</li>
+<li>DSAM Distributivity across Scalar Addition, Matrices<br>
+If $\alpha,\,\beta\in\complex{\null}$ and $A\in M_{mn}$, then
+$(\alpha+\beta)A=\alpha A+\beta A$.<br><br>
+</li>
+<li>OM One, Matrices<br>
+If $A\in M_{mn}$, then $1A=A$.<br><br>
+</li>
+</ul>
+
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.VSPM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-VSPM" class="context" title="Section MO">(in context)</a></div>

@@ -1,0 +1,14 @@
+<div class="exercise" acro="TSS.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">TSS.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 1\\
+2x_1 - x_2 + x_3 &amp;= 2\\
+3x_1 + x_2 + x_3 &amp;= 4\\
+\quad 5x_2 + 2x_3 &amp;= 1
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.TSS.C26.knowl">Solution</a></p></div>
+</div>

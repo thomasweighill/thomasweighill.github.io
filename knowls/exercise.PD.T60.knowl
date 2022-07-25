@@ -1,0 +1,8 @@
+<div class="exercise" acro="PD.T60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">PD.T60</span> <span class="contributor"><a knowl="./knowls/contributor.joeriegsecker.knowl">Joe Riegsecker</a></span>
+</h5>
+<div class="problem"><p>Suppose that $W$ is a vector space with dimension 5, and $U$ and $V$ are subspaces of $W$, each of dimension 3.  Prove that $U\cap V$ contains a nonzero vector.  State a more general result.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.PD.T60.knowl">Solution</a></p></div>
+</div>

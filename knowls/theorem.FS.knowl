@@ -1,0 +1,18 @@
+<div class="theorem" id="theorem-FS" acro="FS" titletext="Four Subsets">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">FS</span><span class="titletext"> Four Subsets</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix with extended echelon form $N$.  Suppose the reduced row-echelon form of $A$ has $r$ nonzero rows.  Then $C$ is the submatrix of $N$ formed from the first $r$ rows and the first $n$ columns and $L$ is the submatrix of $N$ formed from the last $m$ columns and the last $m-r$ rows.  Then
+<ol>
+<li> The null space of $A$ is the null space of $C$, $\nsp{A}=\nsp{C}$.
+</li>
+<li> The row space of $A$ is the row space of $C$, $\rsp{A}=\rsp{C}$.
+</li>
+<li> The column space of $A$ is the null space of $L$, $\csp{A}=\nsp{L}$.
+</li>
+<li> The left null space of $A$ is the row space of $L$, $\lns{A}=\rsp{L}$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.FS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-FS.html#theorem-FS" class="context" title="Section FS">(in context)</a></div>

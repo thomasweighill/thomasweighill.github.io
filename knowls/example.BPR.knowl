@@ -1,0 +1,14 @@
+<div class="example" id="example-BPR" acro="BPR" titletext="Bases for $P_n$, reprised">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">BPR</span> <span class="titletext">Bases for $P_n$, reprised</span>
+</h5>
+<p>In <a class="knowl" acro="BP" type="Example" title="Bases for $P_n$" knowl="./knowls/example.BP.knowl">Example BP</a> we claimed that
+\begin{align*}
+B&amp;=\set{1,\,x,\,x^2,\,x^3,\,\ldots,\,x^n}\\
+C&amp;=\set{1,\,1+x,\,1+x+x^2,\,1+x+x^2+x^3,\,\ldots,\,1+x+x^2+x^3+\cdots+x^n}.
+\end{align*}
+
+were both bases for $P_n$ (<a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>).  Suppose we had first verified that $B$ was a basis, so we would then know that $\dimension{P_n}=n+1$.  The size of $C$ is $n+1$, the right size to be a basis.  We could then verify that $C$ is linearly independent.  We would not have to make any special efforts to prove that $C$ spans $P_n$, since <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> would allow us to conclude this property of $C$ directly.  Then we would be able to say that $C$ is a basis of $P_n$ also.</p>
+<div class="context"><a href="section-PD.html#example-BPR" class="context" title="Section PD">(in
+context)</a></div>
+</div>

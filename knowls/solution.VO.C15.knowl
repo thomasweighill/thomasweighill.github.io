@@ -1,0 +1,31 @@
+<div class="solution" acro="VO.C15">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VO.C15</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Performing the indicated operations (<a class="knowl" acro="CVA" type="Definition" title="Column Vector Addition" knowl="./knowls/definition.CVA.knowl">Definition CVA</a>, <a class="knowl" acro="CVSM" type="Definition" title="Column Vector Scalar Multiplication" knowl="./knowls/definition.CVSM.knowl">Definition CVSM</a>), we obtain the vector equations
+\begin{align*}
+\colvector{5\\0}
+&amp;= \alpha\colvector{2\\1} + \beta\colvector{1\\3}
+= \colvector{2\alpha + \beta \\ \alpha + 3\beta}
+\end{align*}
+
+Since the entries of the vectors must be equal by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>, we obtain the system of equations
+\begin{align*}
+2\alpha + \beta &amp;= 5\\
+\alpha + 3\beta &amp;= 0.
+\end{align*}
+
+which we can solve by row-reducing the augmented matrix of the system,
+\begin{align*}
+\begin{bmatrix}
+2 &amp; 1 &amp; 5\\
+1 &amp; 3 &amp; 0
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 3\\
+0 &amp; \leading{1} &amp; -1
+\end{bmatrix}
+\end{align*}
+
+Thus, the only solution is $\alpha = 3$, $\beta = -1$.
+</div>

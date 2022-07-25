@@ -1,0 +1,7 @@
+<div class="exercise" acro="LISS.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LISS.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In <a class="knowl" acro="LIM32" type="Example" title="Linear independence in $M_{32}$" knowl="./knowls/example.LIM32.knowl">Example LIM32</a>, find another nontrivial relation of linear dependence on the linearly dependent set of $3\times 2$ matrices, $S$.
+</p></div>
+</div>

@@ -1,0 +1,13 @@
+<div class="exercise" acro="EE.C11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">EE.C11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find the characteristic polynomial of the matrix
+$A = \begin{bmatrix}
+3 &amp; 2 &amp; 1\\
+0 &amp; 1 &amp; 1\\
+1 &amp; 2 &amp; 0
+\end{bmatrix}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.EE.C11.knowl">Solution</a></p></div>
+</div>

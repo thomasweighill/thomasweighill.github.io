@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-ESMM" acro="ESMM" titletext="Eigenvalues of a Scalar Multiple of a Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">ESMM</span><span class="titletext"> Eigenvalues of a Scalar Multiple of a Matrix</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then $\alpha\lambda$ is an eigenvalue of $\alpha A$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.ESMM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-ESMM" class="context" title="Section PEE">(in context)</a></div>

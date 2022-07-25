@@ -1,0 +1,32 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-ENDO', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">ENDO</span> <span class="titletext">Endomorphisms</span>
+</h5>
+
+
+<p>An <em class="term">endomorphism</em> is an “operation-preserving” function (a “morphism”) whose domain and codomain are equal.  Sage takes this definition one step further for linear transformations and requires that the domain and codomain have the same bases (either a default echelonized basis or the same user basis).  When a linear transformation meets this extra requirement, several natural methods become available.</p>
+
+<p>Principally, we can compute the eigenvalues provided by <a class="knowl" acro="EELT" type="Definition" title="Eigenvalue and Eigenvector of a Linear Transformation" knowl="./knowls/definition.EELT.knowl">Definition EELT</a>.  We also get a natural notion of a characteristic polynomial.</p>
+
+<br><br><div class="sage-ENDO"><script type="text/x-sage">x1, x2, x3, x4 = var('x1, x2, x3, x4')
+outputs = [ 4*x1 + 2*x2 -   x3 + 8*x4,
+            3*x1 - 5*x2 - 9*x3       ,
+                   6*x2 + 7*x3 + 6*x4,
+           -3*x1 + 2*x2 + 5*x3 - 3*x4]
+T_symbolic(x1, x2, x3, x4) = outputs
+T = linear_transformation(QQ^4, QQ^4, T_symbolic)
+T.eigenvalues()
+</script></div>
+
+<br><br><div class="sage-ENDO"><script type="text/x-sage">cp = T.characteristic_polynomial()
+cp
+</script></div>
+
+<br><br><div class="sage-ENDO"><script type="text/x-sage">cp.factor()
+</script></div>
+
+<p>Now the question of eigenvalues being elements of the set of scalars used for the vector space becomes even more obvious.  If we define an endomorphism on a vector space whose scalars are the rational numbers, should we “allow” irrational or complex eigenvalues?  You will now recognize our use of the complex numbers in the text for the gross convenience that it is.</p>
+
+<br><br><div class="sage-ENDO sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

@@ -1,0 +1,14 @@
+<div class="solution" acro="EE.C26">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Since we are given that the characteristic polynomial of $A$ is $\charpoly{A}{x} = (4-x)(1-x)^2$, we see that the eigenvalues are
+$\lambda = 4$ with algebraic multiplicity $\algmult{A}{4} = 1$ and
+$\lambda = 1$ with algebraic multiplicity $\algmult{A}{1} = 2$.
+The corresponding eigenspaces are
+\begin{align*}
+\eigenspace{A}{4} &amp;= \spn{\colvector{1\\1\\1}}
+&amp;
+\eigenspace{A}{1} &amp;= \spn{\colvector{1\\-1\\0},\colvector{1\\0\\-1}}
+\end{align*}
+
+</div>

@@ -1,0 +1,6 @@
+<div class="solution" acro="SLT.C29">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SLT.C29</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>If we transform the basis of $P_2$, then <a class="knowl" acro="SSRLT" type="Theorem" title="Spanning Set for Range of a Linear Transformation" knowl="./knowls/theorem.SSRLT.knowl">Theorem SSRLT</a> guarantees we will have a spanning set of $\rng{T}$.  A basis of $P_2$ is $\set{1, x, x^2}$.  If we transform the elements of this set, we get the set $\set{x^2, x^3, x^4}$ which is a spanning set for $\rng{T}$.  These three vectors are linearly independent, so $\set{x^2, x^3, x^4}$ is a basis of $\rng{T}$.<br><br>
+
+Since $\rng{T}$ has dimension $3$, and the codomain has dimension $5$, they cannot be equal.  So <a class="knowl" acro="RSLT" type="Theorem" title="Range of a Surjective Linear Transformation" knowl="./knowls/theorem.RSLT.knowl">Theorem RSLT</a> says $T$ is not surjective.</div>

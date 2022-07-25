@@ -1,0 +1,16 @@
+<div class="solution" acro="MO.T13">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MO.T13</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>For all $A,\,B\in M_{mn}$ and for all $1\leq i\leq m$,  $1\leq j\leq n$,
+\begin{align*}
+\matrixentry{A+B}{ij}
+&amp;=\matrixentry{A}{ij}+\matrixentry{B}{ij}
+&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}\\
+&amp;=\matrixentry{B}{ij}+\matrixentry{A}{ij}
+&amp;&amp;\text{Commutativity in $\complex{\null}$}\\
+&amp;=\matrixentry{B+A}{ij}
+&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}
+\end{align*}
+
+With equality of each entry of the matrices $A+B$ and $B+A$ being equal <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> tells us the two matrices are equal.
+</div>

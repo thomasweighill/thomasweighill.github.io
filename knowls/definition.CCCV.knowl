@@ -1,0 +1,13 @@
+<div class="definition" id="definition-CCCV" acro="CCCV" titletext="Complex Conjugate of a Column Vector">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CCCV</span> <span class="titletext"> Complex Conjugate of a Column Vector</span>
+</h5>
+<p>Suppose that $\vect{u}$ is a vector from $\complex{m}$.  Then the conjugate of the vector, $\conjugate{\vect{u}}$, is defined by
+\begin{align*}
+\vectorentry{\conjugate{\vect{u}}}{i}
+&amp;=\conjugate{\vectorentry{\vect{u}}{i}}
+&amp;&amp;\text{$1\leq i\leq m$}
+\end{align*}
+
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#definition-CCCV" class="context" title="Section O">(in context)</a></div>

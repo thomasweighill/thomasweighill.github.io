@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DERC" acro="DERC" titletext="Determinant with Equal Rows or Columns">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DERC</span><span class="titletext"> Determinant with Equal Rows or Columns</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix with two equal rows, or two equal columns.  Then $\detname{A}=0$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DERC.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PDM.html#theorem-DERC" class="context" title="Section PDM">(in context)</a></div>

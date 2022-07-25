@@ -1,0 +1,55 @@
+<div class="subsection" id="subsection-DD" acro="DD" titletext="Definition of the Determinant">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">DD</span> <span class="titletext">Definition of the Determinant</span>
+</h4>
+<p>We will now turn to the definition of a determinant and do some sample computations.  The definition of the determinant function is <em class="term">recursive</em>, that is, the determinant of a large matrix is defined in terms of the determinant of smaller matrices.  To this end, we will make a few definitions.</p>
+<div class="definition" id="definition-SM" acro="SM" titletext="SubMatrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SM</span> <span class="titletext"> SubMatrix</span>
+</h5>
+<p>Suppose that $A$ is an $m\times n$ matrix.  Then the <em class="term">submatrix</em> $\submatrix{A}{i}{j}$ is the $(m-1)\times (n-1)$ matrix obtained from $A$ by removing row $i$ and column $j$.</p>
+</div>
+<div class="example" id="example-SS" acro="SS" titletext="Some submatrices"><h5 class="example">
+<a knowl="./knowls/example.SS.knowl"><span class="type">Example</span> <span class="acro">SS</span></a> <span class="titletext">Some submatrices</span>
+</h5></div>
+<div class="definition" id="definition-DM" acro="DM" titletext="Determinant of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">DM</span> <span class="titletext"> Determinant of a Matrix</span>
+</h5>
+<p>Suppose $A$ is a square matrix.  Then its <em class="term">determinant</em>, $\detname{A}=\detbars{A}$, is an element of $\complex{\null}$ defined recursively by:
+<ol>
+<li>If $A$ is a $1\times 1$ matrix, then $\detname{A}=\matrixentry{A}{11}$.
+</li>
+<li>If $A$ is a matrix of size $n$ with $n\geq 2$, then
+\begin{align*}
+\detname{A}&amp;=
+\matrixentry{A}{11}\detname{\submatrix{A}{1}{1}}
+-\matrixentry{A}{12}\detname{\submatrix{A}{1}{2}}
++\matrixentry{A}{13}\detname{\submatrix{A}{1}{3}}-\\
+&amp;\quad \matrixentry{A}{14}\detname{\submatrix{A}{1}{4}}
++\cdots
++(-1)^{n+1}\matrixentry{A}{1n}\detname{\submatrix{A}{1}{n}}
+\end{align*}
+
+</li>
+</ol>
+</p>
+</div>
+<p>So to compute the determinant of a $5\times 5$ matrix we must build 5 submatrices, each of size $4$.  To compute the determinants of each the $4\times 4$ matrices we need to create 4 submatrices each, these now of size $3$ and so on.  To compute the determinant of a $10\times 10$ matrix would require computing the determinant of $10!=10\times 9\times 8\times 7\times 6\times 5\times 4\times 3\times 2=3,628,800$
+$1\times 1$ matrices.  Fortunately there are better ways.  However this does suggest an excellent computer programming exercise to write a recursive procedure to compute a determinant.</p>
+<p>Let us compute the determinant of a reasonably sized matrix by hand.</p>
+<div class="example" id="example-D33M" acro="D33M" titletext="Determinant of a $3\times 3$ matrix"><h5 class="example">
+<a knowl="./knowls/example.D33M.knowl"><span class="type">Example</span> <span class="acro">D33M</span></a> <span class="titletext">Determinant of a $3\times 3$ matrix</span>
+</h5></div>
+<p>In practice it is a bit silly to decompose a $2\times 2$ matrix down into a couple of $1\times 1$ matrices and then compute the exceedingly easy determinant of these puny matrices.  So here is a simple theorem.</p>
+<div class="theorem" id="theorem-DMST" acro="DMST" titletext="Determinant of Matrices of Size Two">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DMST</span><span class="titletext"> Determinant of Matrices of Size Two</span>
+</h5>
+<div class="statement"><p>Suppose that
+$A=\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}$.
+Then $\detname{A}=ad-bc$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DMST.knowl">Proof</a></div>
+</div>
+<p>Do you recall seeing the expression $ad-bc$ before?  (Hint:  <a class="knowl" acro="TTMI" type="Theorem" title="Two-by-Two Matrix Inverse" knowl="./knowls/theorem.TTMI.knowl">Theorem TTMI</a>)</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-DM.html#subsection-DD" class="context" title="Section DM">(in context)</a></div>

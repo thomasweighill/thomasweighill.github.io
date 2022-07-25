@@ -1,0 +1,27 @@
+<div class="solution" acro="TSS.C22">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">TSS.C22</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The augmented matrix for the given linear system and its row-reduced form are:
+\begin{align*}
+\begin{bmatrix}
+1 &amp; -2 &amp; 1 &amp; -1 &amp; 3\\
+2 &amp; -4 &amp; 1 &amp; 1 &amp; 2\\
+1 &amp; -2 &amp; -2 &amp; 3 &amp; 1
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1}  &amp; -2 &amp; 0 &amp; 0 &amp; 3\\
+0 &amp; 0 &amp; \leading{1}  &amp; 0 &amp; -2\\
+0 &amp; 0 &amp; 0 &amp; \leading{1}  &amp; -2
+\end{bmatrix}.
+\end{align*}
+
+Thus, we see we have an equivalent system for any scalar $x_2$:
+\begin{align*}
+x_1 &amp;= 3 + 2x_2\\
+x_3 &amp;= -2\\
+x_4 &amp;= -2.
+\end{align*}
+
+For this system, $n = 4$ and $r = 3$.  Since it is a consistent system by <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>,  <a class="knowl" acro="CSRN" type="Theorem" title="Consistent Systems, $r$ and $n$" knowl="./knowls/theorem.CSRN.knowl">Theorem CSRN</a> guarantees an infinite number of solutions.
+</div>

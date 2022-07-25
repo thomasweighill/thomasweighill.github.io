@@ -1,0 +1,109 @@
+<div class="example" id="example-CIVLT" acro="CIVLT" titletext="Computing the Inverse of a Linear Transformations">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CIVLT</span> <span class="titletext">Computing the Inverse of a Linear Transformations</span>
+</h5>
+<p>Consider the linear transformation  $\ltdefn{T}{S_{22}}{P_2}$ defined by
+\begin{align*}
+\lt{T}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}
+&amp;=
+\left(a+b+c\right)
++
+\left(-a+2c\right)x
++
+\left(2a+3b+6c\right)x^2
+\end{align*}
+</p>
+<p>$T$ is invertible, which you are able to verify, perhaps by determining that the kernel of $T$ is trivial and the range of $T$ is all of $P_2$.  This will be easier once we have <a class="knowl" acro="RPNDD" type="Theorem" title="Rank Plus Nullity is Domain Dimension" knowl="./knowls/theorem.RPNDD.knowl">Theorem RPNDD</a>, which appears later in this section.</p>
+<p>By <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> we know $\ltinverse{T}$ exists, and it will be critical shortly to realize that $\ltinverse{T}$ is automatically known to be a linear transformation as well (<a class="knowl" acro="ILTLT" type="Theorem" title="Inverse of a Linear Transformation is a Linear Transformation" knowl="./knowls/theorem.ILTLT.knowl">Theorem ILTLT</a>).  To determine the complete behavior of $\ltdefn{\ltinverse{T}}{P_2}{S_{22}}$ we can simply determine its action on a basis for the domain, $P_2$.  This is the substance of <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a>, and an excellent example of its application.   Choose any basis of $P_2$, the simpler the better, such as $B=\set{1,\,x,\,x^2}$.  Values of $\ltinverse{T}$ for these three basis elements will be the single elements of their preimages.  In turn, we have
+\begin{align*}
+\preimage{T}{1}:&amp;\\
+&amp;&amp;\lt{T}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}
+&amp;=1+0x+0x^2\\
+&amp;&amp;\begin{bmatrix}
+ 1 &amp; 1 &amp; 1 &amp; 1\\
+ -1 &amp; 0 &amp; 2 &amp; 0\\
+ 2 &amp; 3 &amp; 6 &amp; 0
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+1 &amp; 0 &amp; 0&amp; -6 \\
+0 &amp; 1 &amp; 0&amp; 10 \\
+0 &amp; 0 &amp; 1&amp; -3
+\end{bmatrix}
+\\
+&amp;\text{(preimage)}&amp;\preimage{T}{1}
+&amp;=\set{\begin{bmatrix}-6&amp;10\\10&amp;-3\end{bmatrix}}\\
+&amp;\text{(function)}&amp;\lt{\ltinverse{T}}{1}
+&amp;=
+\begin{bmatrix}-6&amp;10\\10&amp;-3\end{bmatrix}\\
+\preimage{T}{x}:&amp;\\
+&amp;&amp;\lt{T}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}
+&amp;=0+1x+0x^2\\
+&amp;&amp;\begin{bmatrix}
+ 1 &amp; 1 &amp; 1 &amp; 0\\
+ -1 &amp; 0 &amp; 2 &amp; 1\\
+ 2 &amp; 3 &amp; 6 &amp; 0
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+1 &amp; 0 &amp; 0&amp; -3 \\
+0 &amp; 1 &amp; 0&amp; 4 \\
+0 &amp; 0 &amp; 1&amp;  -1
+\end{bmatrix}
+\\
+&amp;\text{(preimage)}&amp;\preimage{T}{x}
+&amp;=\set{\begin{bmatrix}-3&amp;4\\4&amp;-1\end{bmatrix}}\\
+&amp;\text{(function)}&amp;\lt{\ltinverse{T}}{x}
+&amp;=
+\begin{bmatrix}-3&amp;4\\4&amp;-1\end{bmatrix}\\
+\preimage{T}{x^2}:&amp;\\
+&amp;&amp;\lt{T}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}
+&amp;=0+0x+1x^2\\
+&amp;&amp;\begin{bmatrix}
+ 1 &amp; 1 &amp; 1 &amp; 0\\
+ -1 &amp; 0 &amp; 2 &amp; 0\\
+ 2 &amp; 3 &amp; 6 &amp; 1
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+1 &amp; 0 &amp; 0&amp; 2 \\
+0 &amp; 1 &amp; 0&amp; -3 \\
+0 &amp; 0 &amp; 1&amp;  1
+\end{bmatrix}
+\\
+&amp;\text{(preimage)}&amp;\preimage{T}{x^2}
+&amp;=\set{\begin{bmatrix}2&amp;-3\\-3&amp;1\end{bmatrix}}\\
+&amp;\text{(function)}&amp;\lt{\ltinverse{T}}{x^2}
+&amp;=
+\begin{bmatrix}2&amp;-3\\-3&amp;1\end{bmatrix}
+\end{align*}
+
+</p>
+<p><a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> says, informally, “it is enough to know what a linear transformation does to a basis.”  Formally, we have the outputs of $\ltinverse{T}$ for a basis, so by <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> there is a unique linear transformation with these outputs.  So we put this information to work.  The key step here is that we can convert any element of $P_2$ into a linear combination of the elements of the basis $B$ (<a class="knowl" acro="VRRB" type="Theorem" title="Vector Representation Relative to a Basis" knowl="./knowls/theorem.VRRB.knowl">Theorem VRRB</a>).  We are after a “formula” for the value of $\ltinverse{T}$ on a generic element of $P_2$, say $p+qx+rx^2$.
+\begin{align*}
+\lt{\ltinverse{T}}{p+qx+rx^2}
+&amp;=
+\lt{\ltinverse{T}}{p(1)+q(x)+r(x^2)}
+&amp;&amp;\knowl{./knowls/theorem.VRRB.knowl}{\text{Theorem VRRB}}\\
+&amp;=
+p\lt{\ltinverse{T}}{1}+
+q\lt{\ltinverse{T}}{x}+
+r\lt{\ltinverse{T}}{x^2}
+&amp;&amp;\knowl{./knowls/theorem.LTLC.knowl}{\text{Theorem LTLC}}\\
+&amp;=
+p\begin{bmatrix}-6&amp;10\\10&amp;-3\end{bmatrix}+
+q\begin{bmatrix}-3&amp;4\\4&amp;-1\end{bmatrix}+
+r\begin{bmatrix}2&amp;-3\\-3&amp;1\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+-6p-3q+2r &amp; 10p+4q-3r \\
+10p+4q-3r &amp; -3p -q + r
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Notice how a linear combination in the domain of $\ltinverse{T}$ has been translated into a linear combination in the codomain of $\ltinverse{T}$ since we know $\ltinverse{T}$ is a linear transformation by <a class="knowl" acro="ILTLT" type="Theorem" title="Inverse of a Linear Transformation is a Linear Transformation" knowl="./knowls/theorem.ILTLT.knowl">Theorem ILTLT</a>.</p>
+<p>Also, notice how the augmented matrices used to determine the three pre-images could be combined into one calculation of a matrix in extended echelon form, reminiscent of a procedure we know for computing the inverse of a matrix (see <a class="knowl" acro="CMI" type="Example" title="Computing a matrix inverse" knowl="./knowls/example.CMI.knowl">Example CMI</a>).  Hmmmm.</p>
+<div class="context"><a href="section-IVLT.html#example-CIVLT" class="context" title="Section IVLT">(in
+context)</a></div>
+</div>

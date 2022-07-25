@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-KLTS" acro="KLTS" titletext="Kernel of a Linear Transformation is a Subspace">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">KLTS</span><span class="titletext"> Kernel of a Linear Transformation is a Subspace</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then the kernel of $T$, $\krn{T}$, is a subspace of $U$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.KLTS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-ILT.html#theorem-KLTS" class="context" title="Section ILT">(in context)</a></div>

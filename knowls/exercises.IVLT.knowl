@@ -1,0 +1,159 @@
+<div class="exercise" acro="IVLT.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The archetypes below are linear transformations of the form $\ltdefn{T}{U}{V}$ that are invertible.  For each, the inverse linear transformation is given explicitly as part of the archetype's description.  Verify for each linear transformation that
+\begin{align*}
+\compose{\ltinverse{T}}{T}&amp;=I_U &amp; \compose{T}{\ltinverse{T}}&amp;=I_V
+\end{align*}
+
+<a knowl="./knowls/archetype.R.knowl">Archetype R</a>,
+<a knowl="./knowls/archetype.V.knowl">Archetype V</a>,
+<a knowl="./knowls/archetype.W.knowl">Archetype W</a>
+</p></div>
+</div><div class="exercise" acro="IVLT.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Determine if the linear transformation $\ltdefn{T}{P_2}{M_{22}}$ is (a) injective, (b) surjective, (c) invertible.
+\begin{equation*}
+\lt{T}{a+bx+cx^2}=
+\begin{bmatrix}
+a+2b-2c &amp; 2a+2b \\
+-a+b-4c &amp; 3a+2b+2c
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.C20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Determine if the linear transformation $\ltdefn{S}{P_3}{M_{22}}$ is (a) injective, (b) surjective, (c) invertible.
+\begin{equation*}
+\lt{S}{a+bx+cx^2+dx^3}=
+\begin{bmatrix}
+-a+4b+c+2d &amp; 4a-b+6c-d\\
+a+5b-2c+2d &amp; a+2c+5d
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.C21.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.C25</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>For each linear transformation below:
+(a) Find the matrix representation of $T$,
+(b) Calculate $n(T)$,
+(c) Calculate $r(T)$,
+(d) Graph the image in either $\real{2}$ or $\real{3}$ as appropriate,
+(e) How many dimensions are lost?, and
+(f) How many dimensions are preserved?
+<ol>
+<li> $\ltdefn{T}{\complex{3}}{\complex{3}}$ given by
+$\lt{T}{\colvector{x\\y\\z}} = \colvector{x\\x\\x}$
+</li>
+<li> $\ltdefn{T}{\complex{3}}{\complex{3}}$ given by
+$\lt{T}{\colvector{x\\y\\z}} = \colvector{x\\y\\0}$
+</li>
+<li> $\ltdefn{T}{\complex{3}}{\complex{2}}$ given by
+$\lt{T}{\colvector{x\\y\\z}} = \colvector{x\\x}$
+</li>
+<li> $\ltdefn{T}{\complex{3}}{\complex{2}}$ given by
+$\lt{T}{\colvector{x\\y\\z}} = \colvector{x\\y}$
+</li>
+<li> $\ltdefn{T}{\complex{2}}{\complex{3}}$ given by
+$\lt{T}{\colvector{x\\y}} = \colvector{x\\y\\0}$
+</li>
+<li> $\ltdefn{T}{\complex{2}}{\complex{3}}$ given by
+$\lt{T}{\colvector{x\\y}} = \colvector{x\\y\\x+y}$
+</li>
+</ol>
+</p></div>
+</div><div class="exercise" acro="IVLT.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the linear transformation $\ltdefn{S}{M_{12}}{P_1}$ from the set of $1\times 2$ matrices to the set of polynomials of degree at most 1, defined by
+\begin{equation*}
+\lt{S}{\begin{bmatrix}a &amp; b\end{bmatrix}}=(3a+b)+(5a+2b)x
+\end{equation*}
+Prove that $S$ is invertible.  Then show that the linear transformation
+\begin{equation*}
+\ltdefn{R}{P_1}{M_{12}},\quad \lt{R}{r+sx}=\begin{bmatrix}(2r-s) &amp; (-5r+3s)\end{bmatrix}
+\end{equation*}
+is the inverse of $S$, that is $\ltinverse{S}=R$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.C50.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.M30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.M30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The linear transformation $S$ below is invertible.  Find a formula for the inverse linear transformation, $\ltinverse{S}$.
+\begin{equation*}
+\ltdefn{S}{P_1}{M_{12}},\quad \lt{S}{a+bx}=\begin{bmatrix} 3a+b &amp; 2a+b \end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.M30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.M31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.M31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The linear transformation $\ltdefn{R}{M_{12}}{M_{21}}$ is invertible.  Determine a formula for the inverse linear transformation $\ltdefn{\ltinverse{R}}{M_{21}}{M_{12}}$.
+\begin{equation*}
+\lt{R}{\begin{bmatrix}a &amp; b\end{bmatrix}}
+=
+\begin{bmatrix}
+a+3b\\
+4a+11b
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.M31.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.M50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.M50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Rework <a class="knowl" acro="CIVLT" type="Example" title="Computing the Inverse of a Linear Transformations" knowl="./knowls/example.CIVLT.knowl">Example CIVLT</a>, only in place of the basis $B$ for $P_2$, choose instead to use the basis $C=\set{1,\,1+x,\,1+x+x^2}$.  This will complicate writing a generic element of the domain of $\ltinverse{T}$ as a linear combination of the basis elements, and the algebra will be a bit messier, but in the end you should obtain the same formula for $\ltinverse{T}$.  The inverse linear transformation is what it is, and the choice of a particular basis should not influence the outcome.
+</p></div>
+</div><div class="exercise" acro="IVLT.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $U$ and $V$ are vector spaces.  Define the function $\ltdefn{Z}{U}{V}$ by $\lt{Z}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Then by <a knowl="./knowls/exercise.LT.M60.knowl">Exercise LT.M60</a>, $Z$ is a linear transformation.  Formulate a condition on $U$ and $V$ that is equivalent to $Z$ being an invertible linear transformation.   In other words, fill in the blank to complete the following statement (and then give a proof):  $Z$ is invertible if and only if $U$ and $V$ are  $\Rule{1in}{1pt}{0pt}$. (See <a knowl="./knowls/exercise.ILT.M60.knowl">Exercise ILT.M60</a>, <a knowl="./knowls/exercise.SLT.M60.knowl">Exercise SLT.M60</a>, <a knowl="./knowls/exercise.MR.M60.knowl">Exercise MR.M60</a>.)
+</p></div>
+</div><div class="exercise" acro="IVLT.T05">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T05</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that the identity linear transformation (<a class="knowl" acro="IDLT" type="Definition" title="Identity Linear Transformation" knowl="./knowls/definition.IDLT.knowl">Definition IDLT</a>) is both injective and surjective, and hence invertible.
+</p></div>
+</div><div class="exercise" acro="IVLT.T15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ is a surjective linear transformation and $\dimension{U}=\dimension{V}$.  Prove that $T$ is injective.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.T15.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.T16">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T16</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ is an injective linear transformation and $\dimension{U}=\dimension{V}$.  Prove that $T$ is surjective.
+</p></div>
+</div><div class="exercise" acro="IVLT.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $U$ and $V$ are isomorphic vector spaces, not of dimension zero.  Prove that there are infinitely many isomorphisms between $U$ and $V$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.T30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="IVLT.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations and $\dimension{U}=\dimension{V}=\dimension{W}$.  Suppose that $\compose{S}{T}$ is invertible.  Prove that $S$ and $T$ are individually invertible (this could be construed as a converse of <a class="knowl" acro="CIVLT" type="Theorem" title="Composition of Invertible Linear Transformations" knowl="./knowls/theorem.CIVLT.knowl">Theorem CIVLT</a>).
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.IVLT.T40.knowl">Solution</a></p></div>
+</div>

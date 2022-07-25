@@ -1,0 +1,7 @@
+<div class="exercise" acro="LDS.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LDS.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Verify that the set $R^\prime=\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_4}$ at the end of <a class="knowl" acro="RSC5" type="Example" title="Reducing a span in $\complex{5}$" knowl="./knowls/example.RSC5.knowl">Example RSC5</a> is linearly independent.
+</p></div>
+</div>

@@ -1,0 +1,6 @@
+<div class="definition" id="definition-SLT" acro="SLT" titletext="Surjective Linear Transformation">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SLT</span> <span class="titletext"> Surjective Linear Transformation</span>
+</h5>
+<p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  Then $T$ is <em class="term">surjective</em> if for every $\vect{v}\in V$ there exists a $\vect{u}\in U$ so that $\lt{T}{\vect{u}}=\vect{v}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SLT.html#definition-SLT" class="context" title="Section SLT">(in context)</a></div>

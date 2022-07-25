@@ -1,0 +1,75 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-ILT', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">ILT</span> <span class="titletext">Injective Linear Transformations</span>
+</h5>
+
+
+<p>By now, you have probably already figured out how to determine if a linear transformation is injective, and what its kernel is.  You may also now begin to understand why Sage calls the null space of a matrix a kernel.  Here are two examples, first a reprise of <a class="knowl" acro="NKAO" type="Example" title="Nontrivial kernel, Archetype O" knowl="./knowls/example.NKAO.knowl">Example NKAO</a>.</p>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">U = QQ^3
+V = QQ^5
+x1, x2, x3 = var('x1, x2, x3')
+outputs = [ -x1 +   x2 - 3*x3,
+            -x1 + 2*x2 - 4*x3,
+             x1 +   x2 +   x3,
+           2*x1 + 3*x2 +   x3,
+             x1        + 2*x3]
+T_symbolic(x1, x2, x3) = outputs
+T = linear_transformation(U, V, T_symbolic)
+T.is_injective()
+</script></div>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">T.kernel()
+</script></div>
+
+<p>So we have a concrete demonstration of one half of <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a>.  Here is the second example, a do-over for <a class="knowl" acro="TKAP" type="Example" title="Trivial kernel, Archetype P" knowl="./knowls/example.TKAP.knowl">Example TKAP</a>, but renamed as S.</p>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">U = QQ^3
+V = QQ^5
+x1, x2, x3 = var('x1, x2, x3')
+outputs = [  -x1 +   x2 +   x3,
+             -x1 + 2*x2 + 2*x3,
+              x1 +   x2 + 3*x3,
+            2*x1 + 3*x2 +   x3,
+           -2*x1 +   x2 + 3*x3]
+S_symbolic(x1, x2, x3) = outputs
+S = linear_transformation(U, V, S_symbolic)
+S.is_injective()
+</script></div>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">S.kernel()
+</script></div>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">S.kernel() == U.subspace([])
+</script></div>
+
+<p>And so we have a concrete demonstration of the other half of <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a>.</p>
+
+<p>Now that we have <a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a>, we can return to our discussion from <a class="knowl" acro="PI" type="Sage" title="" knowl="./knowls/sage.PI.knowl">Sage PI</a>.  The <span class="code">.preimage_representative()</span> method of a linear transformation will give us a <em>single</em> element of the pre-image, with no other guarantee about the nature of that element.  That is fine, since this is all <a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a> requires (in addition to the kernel).  Remember that not every element of the codomain may have a nonempty pre-image (as indicated in the hypotheses of <a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a>).  Here is an example using <span class="code">T</span> from above, with a choice of a codomain element that has a nonempty pre-image.</p>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">TK = T.kernel()
+v = vector(QQ, [2, 3, 0, 1, -1])
+u = T.preimage_representative(v)
+u
+</script></div>
+
+<p>Now the following will create random elements of the preimage of <span class="code">v</span>, which can be verified by the test always returning <span class="code">True</span>.  Use the compute cell just below if you are curious what <span class="code">p</span> looks like.</p>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">p = u + TK.random_element()
+T(p) == v
+</script></div>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">p                 # random
+</script></div>
+
+<p>As suggested, some choices of <span class="code">v</span> can lead to empty pre-images, in which case <a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a> does not even apply.</p>
+
+<br><br><div class="sage-ILT"><script type="text/x-sage">v = vector(QQ, [4, 6, 3, 1, -2])
+u = T.preimage_representative(v)
+</script></div>
+
+<p>The situation is less interesting for an injective linear transformation.  Still, pre-images may be empty, but when they are nonempty, they are just singletons (a single element) since the kernel is empty.  So a repeat of the above example, with <span class="code">S</span> rather than <span class="code">T</span>, would not be very informative.</p>
+
+<br><br><div class="sage-ILT sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

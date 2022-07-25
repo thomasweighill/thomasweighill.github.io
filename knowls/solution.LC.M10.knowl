@@ -1,0 +1,6 @@
+<div class="solution" acro="LC.M10">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LC.M10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>No, it is not possible to create $\vect{w}$ as a linear combination
+of the four vectors $\vect{u}_1,\,\vect{u}_2,\,\vect{u}_3,\,\vect{u}_4$.  By creating the desired linear combination with unknowns as scalars, <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> provides a system of equations that has no solution.  This one computation is enough to show us that it is not possible to create all the vectors of $\complex{6}$ through linear combinations of the four vectors $\vect{u}_1,\,\vect{u}_2,\,\vect{u}_3,\,\vect{u}_4$.
+</div>

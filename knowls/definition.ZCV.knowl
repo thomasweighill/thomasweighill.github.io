@@ -1,0 +1,12 @@
+<div class="definition" id="definition-ZCV" acro="ZCV" titletext="Zero Column Vector">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">ZCV</span> <span class="titletext"> Zero Column Vector</span>
+</h5>
+<p>The <em class="term">zero vector</em> of size $m$ is the column vector of size $m$ where each entry is the number zero,
+\begin{align*}
+\zerovector=
+\colvector{0\\0\\0\\\vdots\\0}
+\end{align*}
+
+or defined much more compactly, $\vectorentry{\zerovector}{i}=0$ for $1\leq i\leq m$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-ZCV" class="context" title="Section RREF">(in context)</a></div>

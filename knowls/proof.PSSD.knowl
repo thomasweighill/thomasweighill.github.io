@@ -1,0 +1,10 @@
+<div class="proof" id="proof-PSSD" acro="PSSD" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">PSSD</span>
+</h5>
+<p>
+Suppose that $\dimension{U}=m$ and $\dimension{V}=t$.  Then $U$ has a basis $B$ of size $m$.  If $m&gt;t$, then by <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a>, $B$ is linearly dependent, which is a contradiction.  If $m=t$, then by <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a>, $B$ spans $V$.  Then $U=\spn{B}=V$, also a contradiction.
+All that remains is that $m&lt;t$, which is the desired conclusion.
+</p>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="proof" id="proof-IPVA" acro="IPVA" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">IPVA</span>
+</h5>
+<p>The proofs of the two parts are very similar, with the second one requiring just a bit more effort due to the conjugation that occurs.  We will prove part 1 and you can prove part 2 (<a knowl="./knowls/exercise.O.T10.knowl">Exercise O.T10</a>).
+\begin{align*}
+\innerproduct{\vect{u}+\vect{v}}{\vect{w}}
+&amp;=\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{u}+\vect{v}}{i}}\vectorentry{\vect{w}}{i}
+&amp;&amp;\knowl{./knowls/definition.IP.knowl}{\text{Definition IP}}\\
+&amp;=\sum_{i=1}^{m}\left(\conjugate{\vectorentry{\vect{u}}{i}+
+\vectorentry{\vect{v}}{i}}\right)\vectorentry{\vect{w}}{i}
+&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;=\sum_{i=1}^{m}\left(\conjugate{\vectorentry{\vect{u}}{i}}+
+\conjugate{\vectorentry{\vect{v}}{i}}\right)\vectorentry{\vect{w}}{i}
+&amp;&amp;\knowl{./knowls/theorem.CCRA.knowl}{\text{Theorem CCRA}}\\
+&amp;=\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{u}}{i}}\vectorentry{\vect{w}}{i}
+              + \conjugate{\vectorentry{\vect{v}}{i}}\vectorentry{\vect{w}}{i}
+&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{u}}{i}}\vectorentry{\vect{w}}{i}
+ +\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{v}}{i}}\vectorentry{\vect{w}}{i}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=\innerproduct{\vect{u}}{\vect{w}}+\innerproduct{\vect{v}}{\vect{w}}&amp;&amp;\knowl{./knowls/definition.IP.knowl}{\text{Definition IP}}
+\end{align*}
+
+</p>
+
+</div>

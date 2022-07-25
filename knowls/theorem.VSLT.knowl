@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-VSLT" acro="VSLT" titletext="Vector Space of Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VSLT</span><span class="titletext"> Vector Space of Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ and $V$ are vector spaces.  Then the set of all linear transformations from $U$ to $V$, $\vslt{U}{V}$, is a vector space when the operations are those given in <a class="knowl" acro="LTA" type="Definition" title="Linear Transformation Addition" knowl="./knowls/definition.LTA.knowl">Definition LTA</a> and <a class="knowl" acro="LTSM" type="Definition" title="Linear Transformation Scalar Multiplication" knowl="./knowls/definition.LTSM.knowl">Definition LTSM</a>.</p></div>
+<div class="proof"><a knowl="./knowls/proof.VSLT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#theorem-VSLT" class="context" title="Section LT">(in context)</a></div>

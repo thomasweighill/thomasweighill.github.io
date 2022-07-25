@@ -1,0 +1,17 @@
+<div class="exercise" acro="S.C17">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">S.C17</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Working within the vector space $\complex{4}$, determine if
+$\vect{b} = \colvector{2\\1\\2\\1}$ is in the subspace $W$,
+\begin{equation*}
+W = \spn{\set{
+\colvector{1\\2\\0\\2},
+\colvector{1\\0\\3\\1},
+\colvector{0\\1\\0\\2},
+\colvector{1\\1\\2\\0}
+}}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.S.C17.knowl">Solution</a></p></div>
+</div>

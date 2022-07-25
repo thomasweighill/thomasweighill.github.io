@@ -1,0 +1,12 @@
+<div class="technique" id="technique-N" acro="N" titletext="Negation">
+<h5 class="technique">
+<span class="type">Proof Technique</span> <span class="acro">N</span> <span class="titletext">Negation</span>
+</h5>
+
+<p>When we construct the contrapositive of a theorem (<a class="knowl" acro="CP" type="Proof Technique" title="Contrapositives" knowl="./knowls/technique.CP.knowl">Proof Technique CP</a>), we need to negate the two statements in the implication.  And when we construct a proof by contradiction (<a class="knowl" acro="CD" type="Proof Technique" title="Contradiction" knowl="./knowls/technique.CD.knowl">Proof Technique CD</a>), we need to negate the conclusion of the theorem.  One way to construct a converse (<a class="knowl" acro="CV" type="Proof Technique" title="Converses" knowl="./knowls/technique.CV.knowl">Proof Technique CV</a>) is to simultaneously negate the hypothesis and conclusion of an implication (but remember that this is not guaranteed to be a true statement).  So we often have the need to negate statements, and in some situations it can be tricky.</p>
+
+<p>If a statement says that a set is empty, then its negation is the statement that the set is nonempty.  That is straightforward.  Suppose a statement says “something-happens” for all $i$, or every $i$, or any $i$.  Then the negation is that  “something-does-not-happen” for at least one value of $i$.  If a statement says that there exists at least one “thing,” then the negation is the statement that there is no “thing.”  If a statement says that a “thing” is unique, then the negation is that there is zero, or more than one, of the “thing.”</p>
+
+<p>We are not covering all of the possibilities, but we wish to make the point that logical qualifiers like “there exists” or “for every” must be handled with care when negating statements.  Studying the proofs which employ contradiction (as listed in <a class="knowl" acro="CD" type="Proof Technique" title="Contradiction" knowl="./knowls/technique.CD.knowl">Proof Technique CD</a>) is a good first step towards understanding the range of possibilities.</p>
+
+</div>

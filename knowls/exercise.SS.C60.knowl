@@ -1,0 +1,16 @@
+<div class="exercise" acro="SS.C60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SS.C60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the matrix $A$ below, find a set of vectors $S$ so that the span of $S$ equals the null space of $A$, $\spn{S}=\nsp{A}$.
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; 1 &amp; 6 &amp; -8\\
+1 &amp; -2 &amp; 0 &amp; 1\\
+-2 &amp; 1 &amp; -6 &amp; 7
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SS.C60.knowl">Solution</a></p></div>
+</div>

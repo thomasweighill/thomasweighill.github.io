@@ -1,0 +1,6 @@
+<div class="definition" id="definition-LICV" acro="LICV" titletext="Linear Independence of Column Vectors">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LICV</span> <span class="titletext"> Linear Independence of Column Vectors</span>
+</h5>
+<p>The set of vectors $S=\set{\vectorlist{u}{n}}$ is <em class="term">linearly dependent</em> if there is a relation of linear dependence on $S$ that is not trivial.  In the case where the <em>only</em> relation of linear dependence on $S$ is the trivial one, then $S$ is a <em class="term">linearly independent</em> set of vectors.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LI.html#definition-LICV" class="context" title="Section LI">(in context)</a></div>

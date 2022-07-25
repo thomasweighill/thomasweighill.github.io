@@ -1,0 +1,33 @@
+<div class="example" id="example-RNSM" acro="RNSM" titletext="Rank and nullity of a square matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">RNSM</span> <span class="titletext">Rank and nullity of a square matrix</span>
+</h5>
+<p>The matrix
+\begin{equation*}
+E=\begin{bmatrix}
+0 &amp; 4 &amp; -1 &amp; 2 &amp; 2 &amp; 3 &amp; 1\\
+2 &amp; -2 &amp; 1 &amp; -1 &amp; 0 &amp; -4 &amp; -3\\
+-2 &amp; -3 &amp; 9 &amp; -3 &amp; 9 &amp; -1 &amp; 9\\
+-3 &amp; -4 &amp; 9 &amp; 4 &amp; -1 &amp; 6 &amp; -2\\
+-3 &amp; -4 &amp; 6 &amp; -2 &amp; 5 &amp; 9 &amp; -4\\
+9 &amp; -3 &amp; 8 &amp; -2 &amp; -4 &amp; 2 &amp; 4\\
+8 &amp; 2 &amp; 2 &amp; 9 &amp; 3 &amp; 0 &amp; 9
+\end{bmatrix}
+\end{equation*}
+is row-equivalent to the matrix in reduced row-echelon form,
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>With $n=7$ columns and $r=7$ nonzero rows <a class="knowl" acro="CRN" type="Theorem" title="Computing Rank and Nullity" knowl="./knowls/theorem.CRN.knowl">Theorem CRN</a> tells us the rank is $\rank{E}=7$ and the nullity is $\nullity{E}=7-7=0$.</p>
+<div class="context"><a href="section-D.html#example-RNSM" class="context" title="Section D">(in
+context)</a></div>
+</div>

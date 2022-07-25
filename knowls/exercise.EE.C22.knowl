@@ -1,0 +1,15 @@
+<div class="exercise" acro="EE.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">EE.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Without using a calculator, find the eigenvalues of the matrix $B$.
+\begin{equation*}
+B=
+\begin{bmatrix}
+ 2 &amp; -1 \\
+ 1 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.EE.C22.knowl">Solution</a></p></div>
+</div>

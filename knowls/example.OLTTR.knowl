@@ -1,0 +1,196 @@
+<div class="example" id="example-OLTTR" acro="OLTTR" titletext="One linear transformation, three representations">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">OLTTR</span> <span class="titletext">One linear transformation, three representations</span>
+</h5>
+<p>Consider the linear transformation, $\ltdefn{S}{P_3}{M_{22}}$, given by
+\begin{align*}
+\lt{S}{a+bx+cx^2+dx^3}=
+\begin{bmatrix}
+3a+7b-2c-5d &amp; 8a+14b-2c-11d\\
+-4a-8b+2c+6d &amp; 12a+22b-4c-17d
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>First, we build a representation relative to the bases,
+ \begin{align*}
+B&amp;=\set{1+2x+x^2-x^3,\,1+3x+x^2+x^3,\,-1-2x+2x^3,\,2+3x+2x^2-5x^3}\\
+C&amp;=\set{
+\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 2\end{bmatrix},\,
+\begin{bmatrix}2 &amp; 3 \\ 2 &amp; 5\end{bmatrix},\,
+\begin{bmatrix}-1 &amp; -1 \\ 0 &amp; -2\end{bmatrix},\,
+\begin{bmatrix}-1 &amp; -4 \\ -2 &amp; -4\end{bmatrix}
+}
+\end{align*}
+
+</p>
+<p>We evaluate $S$ with each element of the basis for the domain, $B$, and coordinatize the result relative to the vectors in the basis for the codomain, $C$.  Notice here how we take elements of vector spaces and decompose them into linear combinations of basis elements as the key step in constructing coordinatizations of vectors.  There is a system of equations involved almost every time, but we will omit these details since this should be a routine exercise at this stage.
+\begin{align*}
+&amp;\vectrep{C}{\lt{S}{1+2x+x^2-x^3}}
+=\vectrep{C}{\begin{bmatrix}20 &amp; 45 \\ -24 &amp; 69\end{bmatrix}}\\
+&amp;\quad=\vectrep{C}{
+(-90)\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 2\end{bmatrix}+
+37\begin{bmatrix}2 &amp; 3 \\ 2 &amp; 5\end{bmatrix}+
+(-40)\begin{bmatrix}-1 &amp; -1 \\ 0 &amp; -2\end{bmatrix}+
+4\begin{bmatrix}-1 &amp; -4 \\ -2 &amp; -4\end{bmatrix}
+}
+=\colvector{-90\\37\\-40\\4}\\
+&amp;\vectrep{C}{\lt{S}{1+3x+x^2+x^3}}
+=\vectrep{C}{\begin{bmatrix}17 &amp; 37 \\ -20 &amp; 57\end{bmatrix}}\\
+&amp;\quad=\vectrep{C}{
+(-72)\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 2\end{bmatrix}+
+29\begin{bmatrix}2 &amp; 3 \\ 2 &amp; 5\end{bmatrix}+
+(-34)\begin{bmatrix}-1 &amp; -1 \\ 0 &amp; -2\end{bmatrix}+
+3\begin{bmatrix}-1 &amp; -4 \\ -2 &amp; -4\end{bmatrix}
+}
+=\colvector{-72\\29\\-34\\3}\\
+&amp;\vectrep{C}{\lt{S}{-1-2x+2x^3}}
+=\vectrep{C}{\begin{bmatrix}-27 &amp; -58 \\ 32 &amp; -90\end{bmatrix}}\\
+&amp;\quad=\vectrep{C}{
+114\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 2\end{bmatrix}+
+(-46)\begin{bmatrix}2 &amp; 3 \\ 2 &amp; 5\end{bmatrix}+
+54\begin{bmatrix}-1 &amp; -1 \\ 0 &amp; -2\end{bmatrix}+
+(-5)\begin{bmatrix}-1 &amp; -4 \\ -2 &amp; -4\end{bmatrix}
+}
+=\colvector{114\\-46\\54\\-5}\\
+&amp;\vectrep{C}{\lt{S}{2+3x+2x^2-5x^3}}
+=\vectrep{C}{\begin{bmatrix}48 &amp; 109 \\ -58 &amp; 167\end{bmatrix}}\\
+&amp;\quad=\vectrep{C}{
+-220\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 2\end{bmatrix}+
+91\begin{bmatrix}2 &amp; 3 \\ 2 &amp; 5\end{bmatrix}+
+(-96)\begin{bmatrix}-1 &amp; -1 \\ 0 &amp; -2\end{bmatrix}+
+10\begin{bmatrix}-1 &amp; -4 \\ -2 &amp; -4\end{bmatrix}
+}
+=\colvector{-220\\91\\-96\\10}\\
+\end{align*}
+
+</p>
+<p>Thus, employing <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>
+\begin{equation*}
+\matrixrep{S}{B}{C}=
+\begin{bmatrix}
+ -90 &amp; -72 &amp; 114 &amp; -220 \\
+ 37 &amp; 29 &amp; -46 &amp; 91 \\
+ -40 &amp; -34 &amp; 54 &amp; -96 \\
+ 4 &amp; 3 &amp; -5 &amp; 10
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Often we use “nice” bases to build matrix representations and the work involved is much easier.  Suppose we take bases
+\begin{align*}
+D&amp;=\set{1,\,x,\,x^2,\,x^3}
+&amp;
+E&amp;=\set{
+\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix},\,
+\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix},\,
+\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix},\,
+\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}}
+\end{align*}
+
+</p>
+<p>The evaluation of $S$ at the elements of $D$ is easy and coordinatization relative to $E$ can be done on sight,
+\begin{align*}
+\vectrep{E}{\lt{S}{1}}
+&amp;=\vectrep{E}{\begin{bmatrix}3 &amp; 8 \\ -4 &amp; 12\end{bmatrix}}\\
+&amp;=\vectrep{E}{
+3\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+8\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+(-4)\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+12\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{3 \\ 8 \\ -4 \\ 12}\\
+\vectrep{E}{\lt{S}{x}}
+&amp;=\vectrep{E}{\begin{bmatrix}7 &amp; 14 \\ -8 &amp; 22\end{bmatrix}}\\
+&amp;=\vectrep{E}{
+7\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+14\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+(-8)\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+22\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{7 \\ 14 \\ -8 \\ 22}\\
+\vectrep{E}{\lt{S}{x^2}}
+&amp;=\vectrep{E}{\begin{bmatrix}-2 &amp; -2 \\ 2 &amp; -4\end{bmatrix}}\\
+&amp;=\vectrep{E}{
+(-2)\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+(-2)\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+2\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+(-4)\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}
+=\colvector{-2 \\ -2 \\ 2 \\ -4}\\
+\vectrep{E}{\lt{S}{x^3}}
+&amp;=\vectrep{E}{\begin{bmatrix}-5 &amp; -11 \\ 6 &amp; -17\end{bmatrix}}\\
+&amp;=\vectrep{E}{
+(-5)\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+(-11)\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+6\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+(-17)\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}
+}\\
+&amp;=\colvector{-5 \\ -11 \\ 6 \\ -17}
+\end{align*}
+
+</p>
+<p>So the matrix representation of $S$ relative to $D$ and $E$ is
+\begin{equation*}
+\matrixrep{S}{D}{E}=
+\begin{bmatrix}
+ 3 &amp; 7 &amp; -2 &amp; -5 \\
+ 8 &amp; 14 &amp; -2 &amp; -11 \\
+ -4 &amp; -8 &amp; 2 &amp; 6 \\
+ 12 &amp; 22 &amp; -4 &amp; -17
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>One more time, but now let us use bases
+\begin{align*}
+F&amp;=\set{1+x-x^2+2x^3,\,-1+2x+2x^3,\,2+x-2x^2+3x^3,\,1+x+2x^3}\\
+G&amp;=\set{
+\begin{bmatrix}1&amp;1\\-1&amp;2\end{bmatrix},\,
+\begin{bmatrix}-1&amp;2\\0&amp;2\end{bmatrix},\,
+\begin{bmatrix}2&amp;1\\-2&amp;3\end{bmatrix},\,
+\begin{bmatrix}1&amp;1\\0&amp;2\end{bmatrix}
+}
+\end{align*}
+
+and evaluate $S$ with the elements of $F$, then coordinatize the results relative to $G$,
+\begin{align*}
+\vectrep{G}{\lt{S}{1+x-x^2+2x^3}}
+&amp;=\vectrep{G}{\begin{bmatrix}2 &amp; 2 \\ -2 &amp; 4\end{bmatrix}}
+=\vectrep{G}{
+2\begin{bmatrix}1&amp;1\\-1&amp;2\end{bmatrix}
+}
+=\colvector{2\\0\\0\\0}\\
+\vectrep{G}{\lt{S}{-1+2x+2x^3}}
+&amp;=\vectrep{G}{\begin{bmatrix}1 &amp; -2 \\ 0 &amp; -2\end{bmatrix}}
+=\vectrep{G}{
+(-1)\begin{bmatrix}-1&amp;2\\0&amp;2\end{bmatrix}
+}
+=\colvector{0\\-1\\0\\0}\\
+\vectrep{G}{\lt{S}{2+x-2x^2+3x^3}}
+&amp;=\vectrep{G}{\begin{bmatrix}2 &amp; 1 \\ -2 &amp; 3\end{bmatrix}}
+=\vectrep{G}{
+\begin{bmatrix}2&amp;1\\-2&amp;3\end{bmatrix}
+}
+=\colvector{0\\0\\1\\0}\\
+\vectrep{G}{\lt{S}{1+x+2x^3}}
+&amp;=\vectrep{G}{\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 0\end{bmatrix}}
+=\vectrep{G}{
+0\begin{bmatrix}1&amp;1\\0&amp;2\end{bmatrix}
+}
+=\colvector{0\\0\\0\\0}\\
+\end{align*}
+
+</p>
+<p>So we arrive at an especially economical matrix representation,
+\begin{equation*}
+\matrixrep{S}{F}{G}=
+\begin{bmatrix}
+2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<div class="context"><a href="section-MR.html#example-OLTTR" class="context" title="Section MR">(in
+context)</a></div>
+</div>

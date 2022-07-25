@@ -1,0 +1,24 @@
+<div class="example" id="example-EENS" acro="EENS" titletext="Equal eigenvalues, not similar">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">EENS</span> <span class="titletext">Equal eigenvalues, not similar</span>
+</h5>
+<p>Define
+\begin{align*}
+A&amp;=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}
+&amp;
+B&amp;=\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix}
+\end{align*}
+
+and check that
+\begin{equation*}
+\charpoly{A}{x}=\charpoly{B}{x}=1-2x+x^2=(x-1)^2
+\end{equation*}
+and so $A$ and $B$ have equal characteristic polynomials.  If the converse of <a class="knowl" acro="SMEE" type="Theorem" title="Similar Matrices have Equal Eigenvalues" knowl="./knowls/theorem.SMEE.knowl">Theorem SMEE</a> were true, then $A$ and $B$ would be similar.  Suppose this is the case. More precisely, suppose there is a nonsingular matrix $S$ so that $A=\similar{B}{S}$.</p>
+<p>Then
+\begin{equation*}
+A=\similar{B}{S}=\similar{I_2}{S}=\inverse{S}S=I_2
+\end{equation*}</p>
+<p>Clearly $A\neq I_2$ and this contradiction tells us that the converse of <a class="knowl" acro="SMEE" type="Theorem" title="Similar Matrices have Equal Eigenvalues" knowl="./knowls/theorem.SMEE.knowl">Theorem SMEE</a> is false.</p>
+<div class="context"><a href="section-SD.html#example-EENS" class="context" title="Section SD">(in
+context)</a></div>
+</div>

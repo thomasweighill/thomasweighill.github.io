@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-MLTLT" acro="MLTLT" titletext="Multiple of a Linear Transformation is a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MLTLT</span><span class="titletext"> Multiple of a Linear Transformation is a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation and $\alpha\in\complex{\null}$.  Then $\ltdefn{(\alpha T)}{U}{V}$ is a linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MLTLT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#theorem-MLTLT" class="context" title="Section LT">(in context)</a></div>

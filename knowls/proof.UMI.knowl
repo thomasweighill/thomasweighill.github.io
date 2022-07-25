@@ -1,0 +1,9 @@
+<div class="proof" id="proof-UMI" acro="UMI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">UMI</span>
+</h5>
+<p>By <a class="knowl" acro="UM" type="Definition" title="Unitary Matrices" knowl="./knowls/definition.UM.knowl">Definition UM</a>, we know that $\adjoint{U}U=I_n$.  The matrix $I_n$ is nonsingular (since it row-reduces easily to $I_n$, <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>).  So by <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>, $U$ and $\adjoint{U}$ are both nonsingular matrices.</p>
+
+<p>The equation $\adjoint{U}U=I_n$ gets us halfway to an inverse of $U$, and <a class="knowl" acro="OSIS" type="Theorem" title="One-Sided Inverse is Sufficient" knowl="./knowls/theorem.OSIS.knowl">Theorem OSIS</a> tells us that then $U\adjoint{U}=I_n$ also.  So $U$ and $\adjoint{U}$ are inverses of each other (<a class="knowl" acro="MI" type="Definition" title="Matrix Inverse" knowl="./knowls/definition.MI.knowl">Definition MI</a>).</p>
+
+</div>

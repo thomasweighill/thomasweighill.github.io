@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-RSMS" acro="RSMS" titletext="Row Space of a Matrix is a Subspace">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">RSMS</span><span class="titletext"> Row Space of a Matrix is a Subspace</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then $\rsp{A}$ is a subspace of $\complex{n}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.RSMS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#theorem-RSMS" class="context" title="Section S">(in context)</a></div>

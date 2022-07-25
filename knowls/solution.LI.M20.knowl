@@ -1,0 +1,31 @@
+<div class="solution" acro="LI.M20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LI.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>By <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>, we can complete this problem by finding scalars, $\alpha_1,\,\alpha_2,\,\alpha_3$, not all zero, such that
+\begin{align*}
+\alpha_1\left(2\vect{v}_1+3\vect{v}_2+\vect{v}_3\right)+
+\alpha_2\left(\vect{v}_1-\vect{v}_2-2\vect{v}_3\right)+
+\alpha_3\left(2\vect{v}_1+\vect{v}_2-\vect{v}_3\right)
+&amp;=
+\zerovector
+\end{align*}
+
+Using various properties in <a class="knowl" acro="VSPCV" type="Theorem" title="Vector Space Properties of Column Vectors" knowl="./knowls/theorem.VSPCV.knowl">Theorem VSPCV</a>, we can rearrange this vector equation to
+\begin{align*}
+\left(2\alpha_1+\alpha_2+2\alpha_3\right)\vect{v}_1+
+\left(3\alpha_1-\alpha_2+\alpha_3\right)\vect{v}_2+
+\left(\alpha_1-2\alpha_2-\alpha_3\right)\vect{v}_3
+&amp;=
+\zerovector
+\end{align*}
+
+We can certainly make this vector equation true if we can determine values for the $\alpha$'s such that
+\begin{align*}
+2\alpha_1+\alpha_2+2\alpha_3&amp;=0\\
+3\alpha_1-\alpha_2+\alpha_3&amp;=0\\
+\alpha_1-2\alpha_2-\alpha_3&amp;=0
+\end{align*}
+
+Aah, a homogeneous system of equations.  And it has infinitely many nonzero solutions.  By the now familiar techniques, one such solution is $\alpha_1=3$, $\alpha_2=4$, $\alpha_3=-5$, which you can check in the original relation of linear dependence on $T$ above.<br><br>
+Note that simply writing down the three scalars, and demonstrating that they provide a nontrivial relation of linear dependence on $T$, could be considered an ironclad solution.  But it would not have been very informative for you if we had only done just that here.  Compare this solution very carefully with <a knowl="./knowls/solution.LI.M21.knowl">Solution LI.M21</a>.
+</div>

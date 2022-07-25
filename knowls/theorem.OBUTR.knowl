@@ -1,0 +1,12 @@
+<div class="theorem" id="theorem-OBUTR" acro="OBUTR" titletext="Orthonormal Basis for Upper Triangular Representation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">OBUTR</span><span class="titletext"> Orthonormal Basis for Upper Triangular Representation</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Then there is a unitary matrix $U$, and an upper triangular matrix $T$, such that
+\begin{align*}
+\adjoint{U}AU=T
+\end{align*}
+
+and $T$ has the eigenvalues of $A$ as the entries of the diagonal.</p></div>
+<div class="proof"><a knowl="./knowls/proof.OBUTR.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#theorem-OBUTR" class="context" title="Section OD">(in context)</a></div>

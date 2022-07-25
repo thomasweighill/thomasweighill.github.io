@@ -1,0 +1,17 @@
+<div class="proof" id="proof-CINM" acro="CINM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CINM</span>
+</h5>
+<p>$A$ is nonsingular, so by <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> there is a sequence of row operations that will convert $A$ into $I_n$.  It is this same sequence of row operations that will convert $M$ into $N$, since having the identity matrix in the first $n$ columns of $N$ is sufficient to guarantee that $N$ is in reduced row-echelon form.</p>
+
+<p>If we consider the systems of linear equations, $\linearsystem{A}{\vect{e}_i}$, $1\leq i\leq n$, we see that the aforementioned sequence of row operations will also bring the augmented matrix of each of these systems into reduced row-echelon form.  Furthermore, the unique solution to $\linearsystem{A}{\vect{e}_i}$ appears in column $n+1$ of the row-reduced augmented matrix of the system and is identical to column $n+i$ of $N$.  Let $\vectorlist{N}{2n}$ denote the columns of $N$.  So we find,
+\begin{align*}
+AJ=&amp;A[\vect{N}_{n+1}|\vect{N}_{n+2}|\vect{N}_{n+3}|\ldots|\vect{N}_{n+n}]\\
+=&amp;[A\vect{N}_{n+1}|A\vect{N}_{n+2}|A\vect{N}_{n+3}|\ldots|A\vect{N}_{n+n}]&amp;&amp;\knowl{./knowls/definition.MM.knowl}{\text{Definition MM}}\\
+=&amp;[\vect{e}_1|\vect{e}_2|\vect{e}_3|\ldots|\vect{e}_n]\\
+=&amp;I_n&amp;&amp;\knowl{./knowls/definition.IM.knowl}{\text{Definition IM}}
+\end{align*}
+
+as desired.</p>
+
+</div>

@@ -1,0 +1,172 @@
+<div class="example" id="example-LIM32" acro="LIM32" titletext="Linear independence in $M_{32}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LIM32</span> <span class="titletext">Linear independence in $M_{32}$</span>
+</h5>
+<p>Consider the two sets of vectors $R$ and $S$ from the vector space of all $3\times 2$ matrices, $M_{32}$ (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>)
+\begin{align*}
+R&amp;=\set{
+\begin{bmatrix}
+3 &amp; -1\\1 &amp; 4\\6 &amp; -6
+\end{bmatrix},\,
+\begin{bmatrix}
+-2 &amp; 3\\1 &amp; -3\\-2 &amp; -6
+\end{bmatrix},\,
+\begin{bmatrix}
+6 &amp; -6\\-1 &amp; 0\\7 &amp; -9
+\end{bmatrix},\,
+\begin{bmatrix}
+7 &amp; 9\\-4 &amp; -5\\2 &amp; 5
+\end{bmatrix}
+}\\
+S&amp;=\set{
+\begin{bmatrix}
+2 &amp; 0\\ 1 &amp; -1\\ 1 &amp; 3
+\end{bmatrix},\,
+\begin{bmatrix}
+-4 &amp; 0\\ -2 &amp; 2\\ -2 &amp; -6
+\end{bmatrix},\,
+\begin{bmatrix}
+1 &amp; 1\\ -2 &amp; 1\\ 2 &amp; 4
+\end{bmatrix},\,
+\begin{bmatrix}
+-5 &amp; 3\\ -10 &amp; 7\\ 2 &amp; 0
+\end{bmatrix}
+}
+\end{align*}
+</p>
+<p>One set is linearly independent, the other is not.  Which is which?  Let us examine $R$ first.  Build a generic relation of linear dependence (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>),
+\begin{equation*}
+\alpha_1\begin{bmatrix}
+3 &amp; -1\\1 &amp; 4\\6 &amp; -6
+\end{bmatrix}+
+\alpha_2\begin{bmatrix}
+-2 &amp; 3\\1 &amp; -3\\-2 &amp; -6
+\end{bmatrix}+
+\alpha_3\begin{bmatrix}
+6 &amp; -6\\-1 &amp; 0\\7 &amp; -9
+\end{bmatrix}+
+\alpha_4\begin{bmatrix}
+7 &amp; 9\\-4 &amp; -5\\2 &amp; 5
+\end{bmatrix}=
+\zerovector
+\end{equation*}
+</p>
+<p>Massaging the left-hand side with our definitions of vector addition and scalar multiplication in $M_{32}$ (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>) we obtain,
+\begin{equation*}
+\begin{bmatrix}
+3\alpha_1-2\alpha_2+6\alpha_3+7\alpha_4 &amp;
+-\alpha_1+3\alpha_2-6\alpha_3+9\alpha_4 \\
+\alpha_1+\alpha_2-\alpha_3-4\alpha_4 &amp;
+4\alpha_1-3\alpha_2+            -5\alpha_4 \\
+6\alpha_1-2\alpha_2+7\alpha_3+2\alpha_4 &amp;
+-6\alpha_1-6\alpha_2-9\alpha_3+5\alpha_4
+\end{bmatrix}
+=\begin{bmatrix}
+0&amp;0\\0&amp;0\\0&amp;0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Using our definition of matrix equality (<a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>) to equate entries we get the homogeneous system of six equations in four variables,
+\begin{align*}
+3\alpha_1-2\alpha_2+6\alpha_3+7\alpha_4&amp;=0\\
+-\alpha_1+3\alpha_2-6\alpha_3+9\alpha_4&amp;=0\\
+\alpha_1+\alpha_2-\alpha_3-4\alpha_4&amp;=0\\
+4\alpha_1-3\alpha_2+            -5\alpha_4&amp;=0\\
+6\alpha_1-2\alpha_2+7\alpha_3+2\alpha_4&amp;=0\\
+-6\alpha_1-6\alpha_2-9\alpha_3+5\alpha_4&amp;=0
+\end{align*}
+
+</p>
+<p>Form the coefficient matrix of this homogeneous system and row-reduce to obtain
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \leading{1}\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Analyzing this matrix we are led to conclude that $\alpha_1=0$, $\alpha_2=0$, $\alpha_3=0$, $\alpha_4=0$.  This means there is <em>only</em> a trivial relation of linear dependence on the vectors of $R$ and so we call $R$ a linearly independent set (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>).</p>
+<p>So it must be that $S$ is linearly dependent.  Let us see if we can find a nontrivial relation of linear dependence on $S$.  We will begin as with $R$, by constructing a relation of linear dependence (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>) with unknown scalars,
+\begin{equation*}
+\alpha_1\begin{bmatrix}
+2 &amp; 0\\ 1 &amp; -1\\ 1 &amp; 3
+\end{bmatrix}+
+\alpha_2\begin{bmatrix}
+-4 &amp; 0\\ -2 &amp; 2\\ -2 &amp; -6
+\end{bmatrix}+
+\alpha_3\begin{bmatrix}
+1 &amp; 1\\ -2 &amp; 1\\ 2 &amp; 4
+\end{bmatrix}+
+\alpha_4\begin{bmatrix}
+-5 &amp; 3\\ -10 &amp; 7\\ 2 &amp; 0
+\end{bmatrix}=
+\zerovector
+\end{equation*}
+</p>
+<p>Massaging the left-hand side with our definitions of vector addition and scalar multiplication in $M_{32}$ (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>) we obtain,
+\begin{equation*}
+\begin{bmatrix}
+2\alpha_1-4\alpha_2+\alpha_3-5\alpha_4&amp;
+                              \alpha_3+3\alpha_4\\
+\alpha_1-2\alpha_2-2\alpha_3-10\alpha_4&amp;
+-\alpha_1+2\alpha_2+\alpha_3+7\alpha_4\\
+\alpha_1-2\alpha_2+2\alpha_3+2\alpha_4&amp;
+3\alpha_1-6\alpha_2+4\alpha_3
+\end{bmatrix}
+=\begin{bmatrix}
+0&amp;0\\0&amp;0\\0&amp;0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Using our definition of matrix equality (<a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>) to equate entries we get the homogeneous system of six equations in four variables,
+\begin{align*}
+2\alpha_1-4\alpha_2+\alpha_3-5\alpha_4&amp;=0\\
+\alpha_3+3\alpha_4&amp;=0\\
+\alpha_1-2\alpha_2-2\alpha_3-10\alpha_4&amp;=0\\
+-\alpha_1+2\alpha_2+\alpha_3+7\alpha_4&amp;=0\\
+\alpha_1-2\alpha_2+2\alpha_3+2\alpha_4&amp;=0\\
+3\alpha_1-6\alpha_2+4\alpha_3         &amp;=0
+\end{align*}
+
+</p>
+<p>Form the coefficient matrix of this homogeneous system and row-reduce to obtain
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; -2 &amp; 0 &amp; -4\\
+0 &amp; 0 &amp; \leading{1} &amp; 3\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Analyzing this we see that the system is consistent (we expected this since the system is homogeneous, <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>) and has $n-r=4-2=2$ free variables, namely $\alpha_2$ and $\alpha_4$.  This means there are infinitely many solutions, and in particular, we can find a nontrivial solution, so long as we do not pick all of our free variables to be zero.  The mere presence of a nontrivial solution for these scalars is enough to conclude that  $S$ is a linearly dependent set (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>).  But let us go ahead and explicitly construct a nontrivial relation of linear dependence.</p>
+<p>Choose $\alpha_2=1$ and $\alpha_4=-1$.  There is nothing special about this choice, there are infinitely many possibilities, some “easier” than this one, just avoid picking both variables to be zero.  (Why not?) Then we find the dependent variables to have values $\alpha_1=-2$ and $\alpha_3=3$.  So the relation of linear dependence,
+\begin{equation*}
+(-2)\begin{bmatrix}
+2 &amp; 0\\ 1 &amp; -1\\ 1 &amp; 3
+\end{bmatrix}+
+(1)\begin{bmatrix}
+-4 &amp; 0\\ -2 &amp; 2\\ -2 &amp; -6
+\end{bmatrix}+
+(3)\begin{bmatrix}
+1 &amp; 1\\ -2 &amp; 1\\ 2 &amp; 4
+\end{bmatrix}+
+(-1)\begin{bmatrix}
+-5 &amp; 3\\ -10 &amp; 7\\ 2 &amp; 0
+\end{bmatrix}
+=
+\begin{bmatrix}
+0&amp;0\\0&amp;0\\0&amp;0
+\end{bmatrix}
+\end{equation*}
+is an iron-clad demonstration that $S$ is linearly dependent.  Can you construct another such demonstration?
+</p>
+<div class="context"><a href="section-LISS.html#example-LIM32" class="context" title="Section LISS">(in
+context)</a></div>
+</div>

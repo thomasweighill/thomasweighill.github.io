@@ -1,0 +1,28 @@
+<div class="solution" acro="MO.M24">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MO.M24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Since any symmetric matrix is of the form
+\begin{align*}
+\begin{bmatrix} a &amp; b &amp; c \\ b &amp; d &amp; e \\ c &amp; e &amp; f \end{bmatrix}
+&amp;=
+\begin{bmatrix} a &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} +
+\begin{bmatrix} 0 &amp; b &amp; 0 \\ b &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} +
+\begin{bmatrix} 0 &amp; 0 &amp; c \\ 0 &amp; 0 &amp; 0 \\ c &amp; 0 &amp; 0 \end{bmatrix} +
+\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; d &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} +
+\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; e \\ 0 &amp; e &amp; 0 \end{bmatrix} +
+\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; f \end{bmatrix},
+\end{align*}
+
+Any symmetric matrix is a linear combination of the linearly independent vectors in set $T$ below, so that $\spn{T} = Y$:
+\begin{equation*}
+T = \set{
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix},
+\begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix},
+\begin{bmatrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 \end{bmatrix},
+\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix},
+\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \end{bmatrix},
+\begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+}
+\end{equation*}
+(Something to think about:  How do we know that these matrices are linearly independent?)
+</div>

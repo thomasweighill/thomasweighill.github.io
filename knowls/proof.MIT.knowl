@@ -1,0 +1,25 @@
+<div class="proof" id="proof-MIT" acro="MIT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MIT</span>
+</h5>
+<p>As with the proof of <a class="knowl" acro="SS" type="Theorem" title="Socks and Shoes" knowl="./knowls/theorem.SS.knowl">Theorem SS</a>, we see if $\transpose{(\inverse{A})}$ is a suitable inverse for $\transpose{A}$. Apply <a class="knowl" acro="MMT" type="Theorem" title="Matrix Multiplication and Transposes" knowl="./knowls/theorem.MMT.knowl">Theorem MMT</a> to see that
+\begin{align*}
+\transpose{(\inverse{A})}\transpose{A}
+&amp;=\transpose{(A\inverse{A})}&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\transpose{I_n}&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=I_n&amp;&amp;\knowl{./knowls/definition.SYM.knowl}{\text{Definition SYM}}
+\end{align*}
+and
+\begin{align*}
+
+\transpose{A}\transpose{(\inverse{A})}
+&amp;=\transpose{(\inverse{A}A)}&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\transpose{I_n}&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=I_n&amp;&amp;\knowl{./knowls/definition.SYM.knowl}{\text{Definition SYM}}
+\end{align*}
+
+</p>
+
+<p>The matrix $\transpose{(\inverse{A})}$ has met all the requirements to be the inverse of $\transpose{A}$, and so is invertible and we can write $\inverse{(\transpose{A})}=\transpose{(\inverse{A})}$.</p>
+
+</div>

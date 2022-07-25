@@ -1,0 +1,14 @@
+<div class="exercise" acro="VO.C14">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VO.C14</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find $\alpha$ and $\beta$ that solve the vector equation.
+\begin{equation*}
+\alpha\colvector{1\\0}+
+\beta\colvector{0\\1}
+=
+\colvector{3\\2}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VO.C14.knowl">Solution</a></p></div>
+</div>

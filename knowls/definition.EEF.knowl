@@ -1,0 +1,15 @@
+<div class="definition" id="definition-EEF" acro="EEF" titletext="Extended Echelon Form">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EEF</span> <span class="titletext"> Extended Echelon Form</span>
+</h5>
+<p>Suppose $A$ is an $m\times n$ matrix.  Extend $A$ on its right side with the addition of an $m\times m$ identity matrix to form an $m\times (n + m)$ matrix $M$.  Use row operations to bring $M$ to reduced row-echelon form and call the result $N$.  $N$ is the <em class="term">extended reduced row-echelon form</em> of $A$, and we will standardize on names for five submatrices ($B$, $C$, $J$, $K$, $L$) of $N$.</p>
+<p>Let $B$ denote the $m\times n$ matrix formed from the first $n$ columns of $N$ and let $J$ denote the $m\times m$ matrix formed from the last $m$ columns of $N$.  Suppose that $B$ has $r$ nonzero rows.  Further partition $N$ by letting $C$ denote the $r\times n$ matrix formed from all of the nonzero rows of $B$.  Let $K$ be the $r\times m$ matrix formed from the first $r$ rows of $J$, while $L$ will be the $(m-r)\times m$ matrix formed from the bottom $m-r$ rows of $J$.  Pictorially,
+\begin{equation*}
+M=[A\vert I_m]
+\rref
+N=[B\vert J]
+=
+\left[\begin{array}{c|c}C&amp;K\\\hline0&amp;L\end{array}\right]
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-FS.html#definition-EEF" class="context" title="Section FS">(in context)</a></div>

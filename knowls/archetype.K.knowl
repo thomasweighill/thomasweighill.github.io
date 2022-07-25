@@ -1,0 +1,15 @@
+<div class="archetype" id="archetype-K" acro="K" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">K</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Square matrix of size 5.  Nonsingular.  3 distinct eigenvalues, 2 of multiplicity 2.</p>
+<p>Definition:\begin{bmatrix}
+10 &amp; 18 &amp; 24 &amp; 24 &amp; -12 \\
+12 &amp; -2 &amp;  -6 &amp; 0 &amp; -18 \\
+-30 &amp;  -21 &amp; -23 &amp;  -30 &amp; 39 \\
+27 &amp; 30 &amp;  36 &amp; 37 &amp;  -30 \\
+18 &amp; 24 &amp; 30 &amp;  30 &amp; -20
+\end{bmatrix}
+</p>
+<div class="context"><a href="archetype-K.html" class="context" title="Archetype K">Complete analysis of Archetype K</a></div>
+</div>

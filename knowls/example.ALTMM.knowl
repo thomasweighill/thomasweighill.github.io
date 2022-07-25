@@ -1,0 +1,122 @@
+<div class="example" id="example-ALTMM" acro="ALTMM" titletext="A linear transformation as matrix multiplication">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ALTMM</span> <span class="titletext">A linear transformation as matrix multiplication</span>
+</h5>
+<p>In <a class="knowl" acro="OLTTR" type="Example" title="One linear transformation, three representations" knowl="./knowls/example.OLTTR.knowl">Example OLTTR</a> we found three representations of the linear transformation $S$.  In this example, we will compute a single output of $S$ in four different ways.  First “normally,” then three times over using <a class="knowl" acro="FTMR" type="Theorem" title="Fundamental Theorem of Matrix Representation" knowl="./knowls/theorem.FTMR.knowl">Theorem FTMR</a>.</p>
+<p>Choose $p(x)=3-x+2x^2-5x^3$, for no particular reason.  Then the straightforward application of $S$ to $p(x)$ yields
+\begin{align*}
+\lt{S}{p(x)}
+&amp;=\lt{S}{3-x+2x^2-5x^3}\\
+&amp;=
+\begin{bmatrix}
+3(3)+7(-1)-2(2)-5(-5) &amp; 8(3)+14(-1)-2(2)-11(-5)\\
+-4(3)-8(-1)+2(2)+6(-5) &amp; 12(3)+22(-1)-4(2)-17(-5)
+\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+23 &amp; 61 \\ -30 &amp; 91
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Now use the representation of $S$ relative to the bases $B$ and $C$ and <a class="knowl" acro="FTMR" type="Theorem" title="Fundamental Theorem of Matrix Representation" knowl="./knowls/theorem.FTMR.knowl">Theorem FTMR</a>.  Note that we will employ the following linear combination in moving from the second line to the third,
+\begin{align*}
+3-x+2x^2-5x^3
+&amp;= 48(1+2x+x^2-x^3)+(-20)(1+3x+x^2+x^3)+\\
+&amp;\quad\quad (-1)(-1-2x+2x^3)+(-13)(2+3x+2x^2-5x^3)
+\end{align*}
+
+</p>
+<p>\begin{align*}
+\lt{S}{p(x)}
+&amp;=\vectrepinv{C}{\matrixrep{S}{B}{C}\vectrep{B}{p(x)}}\\
+&amp;=\vectrepinv{C}{\matrixrep{S}{B}{C}\vectrep{B}{3-x+2x^2-5x^3}}\\
+&amp;=\vectrepinv{C}{\matrixrep{S}{B}{C}\colvector{48\\-20\\-1\\-13}}\\
+&amp;=\vectrepinv{C}{
+\begin{bmatrix}
+ -90 &amp; -72 &amp; 114 &amp; -220 \\
+ 37 &amp; 29 &amp; -46 &amp; 91 \\
+ -40 &amp; -34 &amp; 54 &amp; -96 \\
+ 4 &amp; 3 &amp; -5 &amp; 10
+\end{bmatrix}
+\colvector{48\\-20\\-1\\-13}}\\
+&amp;=\vectrepinv{C}{\colvector{-134\\59\\-46\\7}}\\
+&amp;=
+(-134)\begin{bmatrix}1 &amp; 1 \\ 1 &amp; 2\end{bmatrix}+
+59\begin{bmatrix}2 &amp; 3 \\ 2 &amp; 5\end{bmatrix}+
+(-46)\begin{bmatrix}-1 &amp; -1 \\ 0 &amp; -2\end{bmatrix}+
+7\begin{bmatrix}-1 &amp; -4 \\ -2 &amp; -4\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+23 &amp; 61 \\ -30 &amp; 91
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Again, but now with “nice” bases like $D$ and $E$, and the computations are more transparent.
+\begin{align*}
+\lt{S}{p(x)}
+&amp;=\vectrepinv{E}{\matrixrep{S}{D}{E}\vectrep{D}{p(x)}}\\
+&amp;=\vectrepinv{E}{\matrixrep{S}{D}{E}\vectrep{D}{3-x+2x^2-5x^3}}\\
+&amp;=\vectrepinv{E}{\matrixrep{S}{D}{E}\vectrep{D}{3(1)+(-1)(x)+2(x^2)+(-5)(x^3)}}\\
+&amp;=\vectrepinv{E}{\matrixrep{S}{D}{E}\colvector{3\\-1\\2\\-5}}\\
+&amp;=\vectrepinv{E}{
+\begin{bmatrix}
+ 3 &amp; 7 &amp; -2 &amp; -5 \\
+ 8 &amp; 14 &amp; -2 &amp; -11 \\
+ -4 &amp; -8 &amp; 2 &amp; 6 \\
+ 12 &amp; 22 &amp; -4 &amp; -17
+\end{bmatrix}
+\colvector{3\\-1\\2\\-5}
+}\\
+&amp;=\vectrepinv{E}{\colvector{23 \\ 61 \\ -30 \\ 91}}\\
+&amp;=
+23\begin{bmatrix}1&amp;0\\0&amp;0\end{bmatrix}+
+61\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix}+
+(-30)\begin{bmatrix}0&amp;0\\1&amp;0\end{bmatrix}+
+91\begin{bmatrix}0&amp;0\\0&amp;1\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+23 &amp; 61 \\ -30 &amp; 91
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>OK, last time, now with the bases $F$ and $G$.  The coordinatizations will take some work this time, but the matrix-vector product (<a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a>) (which is the actual action of the linear transformation) will be especially easy, given the diagonal nature of the matrix representation, $\matrixrep{S}{F}{G}$.  Here we go,
+\begin{align*}
+\lt{S}{p(x)}
+&amp;=\vectrepinv{G}{\matrixrep{S}{F}{G}\vectrep{F}{p(x)}}\\
+&amp;=\vectrepinv{G}{\matrixrep{S}{F}{G}\vectrep{F}{3-x+2x^2-5x^3}}\\
+&amp;=\vectrepinvname{G}\left(\matrixrep{S}{F}{G}\vectrepname{F}\left(
+32(1+x-x^2+2x^3)
+-7(-1+2x+2x^3)\right.\right.\\
+&amp;\left.\left.\quad\quad\quad\quad\quad\quad\quad -17(2+x-2x^2+3x^3)
+-2(1+x+2x^3)
+\right)\right)\\
+&amp;=\vectrepinv{G}{\matrixrep{S}{F}{G}\colvector{32\\-7\\-17\\-2}}\\
+&amp;=\vectrepinv{G}{
+\begin{bmatrix}
+2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\colvector{32\\-7\\-17\\-2}
+}\\
+&amp;=\vectrepinv{G}{\colvector{64 \\ 7 \\ -17 \\ 0}}\\
+&amp;=
+64\begin{bmatrix}1&amp;1\\-1&amp;2\end{bmatrix}+
+7\begin{bmatrix}-1&amp;2\\0&amp;2\end{bmatrix}+
+(-17)\begin{bmatrix}2&amp;1\\-2&amp;3\end{bmatrix}+
+0\begin{bmatrix}1&amp;1\\0&amp;2\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+23 &amp; 61 \\ -30 &amp; 91
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>This example is not meant to necessarily illustrate that any one of these four computations is simpler than the others.  Instead, it is meant to illustrate the many different ways we can arrive at the same result, with the last three all employing a matrix representation to effect the linear transformation.</p>
+<div class="context"><a href="section-MR.html#example-ALTMM" class="context" title="Section MR">(in
+context)</a></div>
+</div>

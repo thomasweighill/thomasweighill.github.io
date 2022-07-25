@@ -1,0 +1,37 @@
+<div class="example" id="example-CSIP" acro="CSIP" titletext="Computing some inner products">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CSIP</span> <span class="titletext">Computing some inner products</span>
+</h5>
+<p>The inner product of
+\begin{align*}
+\vect{u}=\colvector{2+3i\\5+2i\\-3+i}&amp;&amp;\text{and}&amp;&amp;
+\vect{v}=\colvector{1+2i\\-4+5i\\0+5i}
+\end{align*}
+
+is
+\begin{align*}
+\innerproduct{\vect{u}}{\vect{v}}
+&amp;=(\conjugate{2+3i})(1+2i)+(\conjugate{5+2i})(-4+5i)+(\conjugate{-3+i})(0+5i)\\
+&amp;=(2-3i)(1+2i)+(5-2i)(-4+5i)+(-3-i)(0+5i)\\
+&amp;=(8+i)+(-10+33i)+(5-15i)\\
+&amp;=3+19i
+\end{align*}
+
+</p>
+<p>The inner product of
+\begin{align*}
+\vect{w}=\colvector{2\\4\\-3\\2\\8}&amp;&amp;\text{and}&amp;&amp;
+\vect{x}=\colvector{3\\1\\0\\-1\\-2}
+\end{align*}
+
+is
+\begin{align*}
+\innerproduct{\vect{w}}{\vect{x}}&amp;=
+(\conjugate{2})3+(\conjugate{4})1+(\conjugate{-3})0+(\conjugate{2})(-1)+(\conjugate{8})(-2)\\
+&amp;=2(3)+4(1)+(-3)0+2(-1)+8(-2)=-8.
+\end{align*}
+
+</p>
+<div class="context"><a href="section-O.html#example-CSIP" class="context" title="Section O">(in
+context)</a></div>
+</div>

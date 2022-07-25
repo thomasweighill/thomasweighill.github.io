@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-RPNC" acro="RPNC" titletext="Rank Plus Nullity is Columns">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">RPNC</span><span class="titletext"> Rank Plus Nullity is Columns</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then $\rank{A}+\nullity{A}=n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.RPNC.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-RPNC" class="context" title="Section D">(in context)</a></div>

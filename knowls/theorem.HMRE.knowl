@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-HMRE" acro="HMRE" titletext="Hermitian Matrices have Real Eigenvalues">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">HMRE</span><span class="titletext"> Hermitian Matrices have Real Eigenvalues</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a Hermitian matrix and $\lambda$ is an eigenvalue of $A$.  Then $\lambda\in{\mathbb R}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.HMRE.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-HMRE" class="context" title="Section PEE">(in context)</a></div>

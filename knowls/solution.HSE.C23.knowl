@@ -1,0 +1,24 @@
+<div class="solution" acro="HSE.C23">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">HSE.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>The augmented matrix for the given linear system and its row-reduced form are:
+\begin{align*}
+\begin{bmatrix}
+1 &amp; -2 &amp; 1 &amp; -1 &amp; 0\\
+1 &amp; 1 &amp; 1 &amp; -1 &amp; 0\\
+1 &amp; 0 &amp; 1 &amp; -1 &amp; 0
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1 &amp; -1 &amp; 0\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0  &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}.
+\end{align*}
+
+Thus, we see that the system is consistent (as predicted by <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>) and has an infinite number of solutions (as predicted by <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a>).  With suitable choices of $x_3$ and $x_4$, each solution can be written as
+\begin{align*}
+\colvector{-x_3 + x_4 \\ 0 \\ x_3 \\ x_4}
+\end{align*}
+
+</div>

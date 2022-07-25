@@ -1,0 +1,26 @@
+<div class="solution" acro="LDS.C51">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LDS.C51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> says we can make a matrix with these four vectors as columns, row-reduce, and just keep the columns with indices in the set $D$.  Here we go, forming the relevant matrix and row-reducing,
+\begin{equation*}
+\begin{bmatrix}
+ 2 &amp; 3 &amp; 1 &amp; 5 \\
+ -1 &amp; 0 &amp; 1 &amp; -1 \\
+ 2 &amp; 1 &amp; -1 &amp; 3
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; -1 &amp; 1 \\
+ 0 &amp; \leading{1} &amp; 1 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+Analyzing the row-reduced version of this matrix, we see that the first two columns are pivot columns, so $D=\set{1,2}$.  <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> says we need only “keep” the first two columns to create a set with the requisite properties,
+\begin{equation*}
+T=\set{
+\colvector{2\\-1\\2},\,
+\colvector{3\\0\\1}
+}
+\end{equation*}
+</div>

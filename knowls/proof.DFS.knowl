@@ -1,0 +1,29 @@
+<div class="proof" id="proof-DFS" acro="DFS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DFS</span>
+</h5>
+<p>If $A$ row-reduces to a matrix in reduced row-echelon form with $r$ nonzero rows, then the matrix $C$ of extended echelon form (<a class="knowl" acro="EEF" type="Definition" title="Extended Echelon Form" knowl="./knowls/definition.EEF.knowl">Definition EEF</a>) will be an $r\times n$ matrix in reduced row-echelon form with no zero rows and $r$ pivot columns (<a class="knowl" acro="PEEF" type="Theorem" title="Properties of Extended Echelon Form" knowl="./knowls/theorem.PEEF.knowl">Theorem PEEF</a>).  Similarly, the matrix $L$ of extended echelon form (<a class="knowl" acro="EEF" type="Definition" title="Extended Echelon Form" knowl="./knowls/definition.EEF.knowl">Definition EEF</a>) will be an $m-r\times m$ matrix in reduced row-echelon form with no zero rows and $m-r$ pivot columns (<a class="knowl" acro="PEEF" type="Theorem" title="Properties of Extended Echelon Form" knowl="./knowls/theorem.PEEF.knowl">Theorem PEEF</a>).</p>
+
+<p>
+\begin{align*}
+\dimension{\nsp{A}}
+&amp;=\dimension{\nsp{C}}&amp;&amp;\knowl{./knowls/theorem.FS.knowl}{\text{Theorem FS}}\\
+&amp;=n-r&amp;&amp;\knowl{./knowls/theorem.BNS.knowl}{\text{Theorem BNS}}\\
+\ \\
+\dimension{\csp{A}}
+&amp;=\dimension{\nsp{L}}&amp;&amp;\knowl{./knowls/theorem.FS.knowl}{\text{Theorem FS}}\\
+&amp;=m-(m-r)&amp;&amp;\knowl{./knowls/theorem.BNS.knowl}{\text{Theorem BNS}}\\
+&amp;=r\\
+\ \\
+\dimension{\rsp{A}}
+&amp;=\dimension{\rsp{C}}&amp;&amp;\knowl{./knowls/theorem.FS.knowl}{\text{Theorem FS}}\\
+&amp;=r&amp;&amp;\knowl{./knowls/theorem.BRS.knowl}{\text{Theorem BRS}}\\
+\ \\
+\dimension{\lns{A}}
+&amp;=\dimension{\rsp{L}}&amp;&amp;\knowl{./knowls/theorem.FS.knowl}{\text{Theorem FS}}\\
+&amp;=m-r&amp;&amp;\knowl{./knowls/theorem.BRS.knowl}{\text{Theorem BRS}}\\
+\end{align*}
+
+</p>
+
+</div>

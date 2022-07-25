@@ -1,0 +1,13 @@
+<div class="example" id="example-NSLIL" acro="NSLIL" titletext="Null space spanned by linearly independent set,  Archetype L">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSLIL</span> <span class="titletext">Null space spanned by linearly independent set,  Archetype L</span>
+</h5>
+<p>In <a class="knowl" acro="VFSAL" type="Example" title="Vector form of solutions for Archetype L" knowl="./knowls/example.VFSAL.knowl">Example VFSAL</a> we previewed <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a> by finding a set of two vectors such that their span was the null space for the matrix in <a knowl="./knowls/archetype.L.knowl">Archetype L</a>.  Writing the matrix as $L$, we have
+\begin{equation*}
+\nsp{L}=
+\spn{\set{\colvector{-1\\2\\-2\\1\\0},\,\colvector{2\\-2\\1\\0\\1}}
+}\end{equation*}
+Solving the homogeneous system $\homosystem{L}$ resulted in recognizing $x_4$ and $x_5$ as the free variables.  So look in entries 4 and 5 of the two vectors above and notice the pattern of zeros and ones that provides the linear independence of the set.</p>
+<div class="context"><a href="section-LI.html#example-NSLIL" class="context" title="Section LI">(in
+context)</a></div>
+</div>

@@ -1,0 +1,13 @@
+
+<ol>
+<li>Comment on how the vector space $\complex{m}$ went from a theorem (<a class="knowl" acro="VSPCV" type="Theorem" title="Vector Space Properties of Column Vectors" knowl="./knowls/theorem.VSPCV.knowl">Theorem VSPCV</a>) to an example (<a class="knowl" acro="VSCV" type="Example" title="The vector space $\complex{m}$" knowl="./knowls/example.VSCV.knowl">Example VSCV</a>).
+</li>
+<li>In the crazy vector space, $C$, (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>) compute the linear combination
+\begin{equation*}
+2(3,\,4)+(-6)(1,\,2).
+\end{equation*}
+</li>
+<li>Suppose that $\alpha$ is a scalar and $\zerovector$ is the zero vector. Why should we prove anything as obvious as $\alpha\zerovector=\zerovector$ such as we did in <a class="knowl" acro="ZVSM" type="Theorem" title="Zero Vector in Scalar Multiplication" knowl="./knowls/theorem.ZVSM.knowl">Theorem ZVSM</a>?
+</li>
+</ol>
+

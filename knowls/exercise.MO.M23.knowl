@@ -1,0 +1,23 @@
+<div class="exercise" acro="MO.M23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.M23</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Determine if the matrix $A$ is in the span of $S$.  In other words, is  $A\in\spn{S}$?  If so write $A$ as a linear combination of the elements of $S$.
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+-13 &amp; 24 &amp; 2\\
+-8 &amp; -2 &amp; -20
+\end{bmatrix}\\
+S&amp;=\set{
+\begin{bmatrix} -2 &amp; 3 &amp; 4 \\ -1 &amp; 3 &amp; -2 \end{bmatrix},\,
+\begin{bmatrix} 4 &amp; -2 &amp; 2 \\ 0 &amp; -1 &amp; 1 \end{bmatrix},\,
+\begin{bmatrix}-1 &amp; -2 &amp; -2 \\ 2 &amp; 2 &amp; 2 \end{bmatrix},\,
+\begin{bmatrix}-1 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; -2 \end{bmatrix},\,
+\begin{bmatrix}-1 &amp; 2 &amp; -2 \\ 0 &amp; -1 &amp; -2 \end{bmatrix}
+}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MO.M23.knowl">Solution</a></p></div>
+</div>

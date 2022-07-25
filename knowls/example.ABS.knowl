@@ -1,0 +1,146 @@
+<div class="example" id="example-ABS" acro="ABS" titletext="A basic span">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ABS</span> <span class="titletext">A basic span</span>
+</h5>
+<p>Consider the set of 5 vectors, $S$, from $\complex{4}$
+\begin{equation*}
+S=\set{
+ \colvector{1 \\ 1 \\ 3 \\ 1},\,
+ \colvector{2 \\ 1 \\ 2 \\ -1},\,
+ \colvector{7 \\ 3 \\ 5 \\ -5},\,
+ \colvector{1 \\ 1 \\ -1 \\ 2},\,
+ \colvector{-1 \\ 0 \\ 9 \\ 0}
+}
+\end{equation*}
+and consider the infinite set of vectors $\spn{S}$ formed from all possible linear combinations of the elements of $S$.  Here are four vectors we definitely know are elements of $\spn{S}$, since we will construct them in accordance with <a class="knowl" acro="SSCV" type="Definition" title="Span of a Set of Column Vectors" knowl="./knowls/definition.SSCV.knowl">Definition SSCV</a>,
+\begin{equation*}
+\vect{w}=
+(2)\colvector{1 \\ 1 \\ 3 \\ 1}+
+(1)\colvector{2 \\ 1 \\ 2 \\ -1}+
+(-1)\colvector{7 \\ 3 \\ 5 \\ -5}+
+(2)\colvector{1 \\ 1 \\ -1 \\ 2}+
+(3)\colvector{-1 \\ 0 \\ 9 \\ 0}
+=
+\colvector{-4\\2\\28\\10}
+\end{equation*}
+\begin{equation*}
+\vect{x}=
+(5)\colvector{1 \\ 1 \\ 3 \\ 1}+
+(-6)\colvector{2 \\ 1 \\ 2 \\ -1}+
+(-3)\colvector{7 \\ 3 \\ 5 \\ -5}+
+(4)\colvector{1 \\ 1 \\ -1 \\ 2}+
+(2)\colvector{-1 \\ 0 \\ 9 \\ 0}
+=
+\colvector{-26\\-6\\2\\34}
+\end{equation*}
+\begin{equation*}
+\vect{y}=
+(1)\colvector{1 \\ 1 \\ 3 \\ 1}+
+(0)\colvector{2 \\ 1 \\ 2 \\ -1}+
+(1)\colvector{7 \\ 3 \\ 5 \\ -5}+
+(0)\colvector{1 \\ 1 \\ -1 \\ 2}+
+(1)\colvector{-1 \\ 0 \\ 9 \\ 0}
+=
+\colvector{7\\4\\17\\-4}
+\end{equation*}
+\begin{equation*}
+\vect{z}=
+(0)\colvector{1 \\ 1 \\ 3 \\ 1}+
+(0)\colvector{2 \\ 1 \\ 2 \\ -1}+
+(0)\colvector{7 \\ 3 \\ 5 \\ -5}+
+(0)\colvector{1 \\ 1 \\ -1 \\ 2}+
+(0)\colvector{-1 \\ 0 \\ 9 \\ 0}
+=
+\colvector{0\\0\\0\\0}
+\end{equation*}
+</p>
+<p>The purpose of a set is to collect objects with some common property, and to exclude objects without that property.  So the most fundamental question about a set is if a given object is an element of the set or not.  Let us learn more about $\spn{S}$ by investigating which vectors are elements of the set, and which are not.</p>
+<p>First, is $\vect{u}=\colvector{-15\\-6\\19\\5}$ an element of $\spn{S}$?  We are asking if there are scalars $\alpha_1,\,\alpha_2,\,\alpha_3,\,\alpha_4,\,\alpha_5$ such that
+\begin{equation*}
+\alpha_1\colvector{1 \\ 1 \\ 3 \\ 1}+
+\alpha_2\colvector{2 \\ 1 \\ 2 \\ -1}+
+\alpha_3\colvector{7 \\ 3 \\ 5 \\ -5}+
+\alpha_4\colvector{1 \\ 1 \\ -1 \\ 2}+
+\alpha_5\colvector{-1 \\ 0 \\ 9 \\ 0}
+=\vect{u}
+=\colvector{-15\\-6\\19\\5}
+\end{equation*}
+</p>
+<p>Applying <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> we recognize the search for these scalars as a solution to a linear system of equations with augmented matrix
+\begin{equation*}
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 7 &amp; 1 &amp; -1 &amp; -15 \\
+ 1 &amp; 1 &amp; 3 &amp; 1 &amp; 0 &amp; -6 \\
+ 3 &amp; 2 &amp; 5 &amp; -1 &amp; 9 &amp; 19 \\
+ 1 &amp; -1 &amp; -5 &amp; 2 &amp; 0 &amp; 5
+\end{bmatrix}
+\end{equation*}
+which row-reduces to
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; -1 &amp; 0 &amp; 3 &amp; 10 \\
+ 0 &amp; \leading{1} &amp; 4 &amp; 0 &amp; -1 &amp; -9 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2 &amp; -7 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>At this point, we see that the system is consistent (<a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>), so we know there <em>is</em> a solution for the five scalars $\alpha_1,\,\alpha_2,\,\alpha_3,\,\alpha_4,\,\alpha_5$.  This is enough evidence for us to say that $\vect{u}\in\spn{S}$.  If we wished further evidence, we could compute an actual solution, say
+\begin{align*}
+\alpha_1&amp;=2
+&amp;
+\alpha_2&amp;=1
+&amp;
+\alpha_3&amp;=-2
+&amp;
+\alpha_4&amp;=-3
+&amp;
+\alpha_5&amp;=2
+\end{align*}
+
+</p>
+<p>This particular solution allows us to write
+\begin{equation*}
+(2)\colvector{1 \\ 1 \\ 3 \\ 1}+
+(1)\colvector{2 \\ 1 \\ 2 \\ -1}+
+(-2)\colvector{7 \\ 3 \\ 5 \\ -5}+
+(-3)\colvector{1 \\ 1 \\ -1 \\ 2}+
+(2)\colvector{-1 \\ 0 \\ 9 \\ 0}
+=\vect{u}
+=\colvector{-15\\-6\\19\\5}
+\end{equation*}
+making it even more obvious that $\vect{u}\in\spn{S}$.</p>
+<p>Let us do it again.   Is $\vect{v}=\colvector{3\\1\\2\\-1}$ an element of $\spn{S}$?  We are asking if there are scalars $\alpha_1,\,\alpha_2,\,\alpha_3,\,\alpha_4,\,\alpha_5$ such that
+\begin{equation*}
+\alpha_1\colvector{1 \\ 1 \\ 3 \\ 1}+
+\alpha_2\colvector{2 \\ 1 \\ 2 \\ -1}+
+\alpha_3\colvector{7 \\ 3 \\ 5 \\ -5}+
+\alpha_4\colvector{1 \\ 1 \\ -1 \\ 2}+
+\alpha_5\colvector{-1 \\ 0 \\ 9 \\ 0}
+=\vect{v}
+=\colvector{3\\1\\2\\-1}
+\end{equation*}
+</p>
+<p>Applying <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> we recognize the search for these scalars as a solution to a linear system of equations with augmented matrix
+\begin{equation*}
+\begin{bmatrix}
+ 1 &amp; 2 &amp; 7 &amp; 1 &amp; -1 &amp; 3 \\
+ 1 &amp; 1 &amp; 3 &amp; 1 &amp; 0 &amp; 1 \\
+ 3 &amp; 2 &amp; 5 &amp; -1 &amp; 9 &amp; 2 \\
+ 1 &amp; -1 &amp; -5 &amp; 2 &amp; 0 &amp; -1
+\end{bmatrix}
+\end{equation*}
+which row-reduces to
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; -1 &amp; 0 &amp; 3 &amp; 0 \\
+ 0 &amp; \leading{1} &amp; 4 &amp; 0 &amp; -1 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>At this point, we see that the system is inconsistent by <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>, so we know there <em>is not</em> a solution for the five scalars $\alpha_1,\,\alpha_2,\,\alpha_3,\,\alpha_4,\,\alpha_5$.  This is enough evidence for us to say that $\vect{v}\not\in\spn{S}$.  End of story.</p>
+<div class="context"><a href="section-SS.html#example-ABS" class="context" title="Section SS">(in
+context)</a></div>
+</div>

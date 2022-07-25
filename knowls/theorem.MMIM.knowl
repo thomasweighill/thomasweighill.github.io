@@ -1,0 +1,14 @@
+<div class="theorem" id="theorem-MMIM" acro="MMIM" titletext="Matrix Multiplication and Identity Matrix">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MMIM</span><span class="titletext"> Matrix Multiplication and Identity Matrix</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix.  Then
+<ol>
+<li> $AI_n=A$
+</li>
+<li> $I_mA=A$
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MMIM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-MMIM" class="context" title="Section MM">(in context)</a></div>

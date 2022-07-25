@@ -1,0 +1,29 @@
+<div class="proof" id="proof-NSMS" acro="NSMS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NSMS</span>
+</h5>
+<p>We will examine the three requirements of <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a>.  Recall that <a class="knowl" acro="NSM" type="Definition" title="Null Space of a Matrix" knowl="./knowls/definition.NSM.knowl">Definition NSM</a> can be formulated as $\nsp{A}=\setparts{\vect{x}\in\complex{n}}{A\vect{x}=\zerovector}$.</p>
+
+<p>First, $\zerovector\in\nsp{A}$, which can be inferred as a consequence of <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>.  So $\nsp{A}\neq\emptyset$.</p>
+
+<p>Second, check additive closure by supposing that $\vect{x}\in\nsp{A}$ and $\vect{y}\in\nsp{A}$.  So we know a little something about $\vect{x}$ and $\vect{y}$:  $A\vect{x}=\zerovector$ and $A\vect{y}=\zerovector$, and that is all we know.  Question:  Is $\vect{x}+\vect{y}\in\nsp{A}$?  Let us check.
+\begin{align*}
+A(\vect{x}+\vect{y})&amp;=A\vect{x}+A\vect{y}&amp;&amp;\knowl{./knowls/theorem.MMDAA.knowl}{\text{Theorem MMDAA}}\\
+&amp;=\zerovector+\zerovector&amp;&amp;\vect{x}\in\nsp{A},\ \vect{y}\in\nsp{A}\\
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/theorem.VSPCV.knowl}{\text{Theorem VSPCV}}
+\end{align*}
+
+So, yes, $\vect{x}+\vect{y}$ qualifies for membership in $\nsp{A}$.</p>
+
+<p>Third, check scalar multiplication closure by supposing that $\alpha\in\complex{\null}$ and $\vect{x}\in\nsp{A}$.  So we know a little something about $\vect{x}$:  $A\vect{x}=\zerovector$, and that is all we know.  Question:  Is $\alpha\vect{x}\in\nsp{A}$?  Let us check.
+\begin{align*}
+A(\alpha\vect{x})&amp;=\alpha(A\vect{x})&amp;&amp;\knowl{./knowls/theorem.MMSMM.knowl}{\text{Theorem MMSMM}}\\
+&amp;=\alpha\zerovector&amp;&amp;\vect{x}\in\nsp{A}\\
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/theorem.ZVSM.knowl}{\text{Theorem ZVSM}}
+\end{align*}
+
+So, yes, $\alpha\vect{x}$ qualifies for membership in $\nsp{A}$.</p>
+
+<p>Having met the three conditions in <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a> we can now say that the null space of a matrix is a subspace (and hence a vector space in its own right!).</p>
+
+</div>

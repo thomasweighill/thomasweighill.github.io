@@ -1,0 +1,70 @@
+<div class="example" id="example-IAR" acro="IAR" titletext="Injective, Archetype R">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">IAR</span> <span class="titletext">Injective, Archetype R</span>
+</h5>
+<p><a knowl="./knowls/archetype.R.knowl">Archetype R</a> is the linear transformation
+\begin{equation*}
+\ltdefn{T}{\complex{5}}{\complex{5}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3\\x_4\\x_5}}=
+\colvector{-65 x_1 + 128 x_2 + 10 x_3 - 262 x_4 + 40 x_5\\
+36 x_1 - 73 x_2 - x_3 + 151 x_4 - 16 x_5\\
+-44 x_1 + 88 x_2 + 5 x_3 - 180 x_4 + 24 x_5\\
+34 x_1 - 68 x_2 - 3 x_3 + 140 x_4 - 18 x_5\\
+12 x_1 - 24 x_2 - x_3 + 49 x_4 - 5 x_5}
+\end{equation*}
+</p>
+<p>To establish that $R$ is injective we must begin with the assumption that $\lt{T}{\vect{x}}=\lt{T}{\vect{y}}$ and somehow arrive at the conclusion that $\vect{x}=\vect{y}$.  Here we go,
+\begin{align*}
+\colvector{0\\0\\0\\0\\0}
+&amp;=\lt{T}{\vect{x}}-\lt{T}{\vect{y}}\\
+&amp;=\lt{T}{\colvector{x_1\\x_2\\x_3\\x_4\\x_5}}-\lt{T}{\colvector{y_1\\y_2\\y_3\\y_4\\y_5}}\\
+&amp;=
+\colvector{-65 x_1 + 128 x_2 + 10 x_3 - 262 x_4 + 40 x_5\\
+36 x_1 - 73 x_2 - x_3 + 151 x_4 - 16 x_5\\
+-44 x_1 + 88 x_2 + 5 x_3 - 180 x_4 + 24 x_5\\
+34 x_1 - 68 x_2 - 3 x_3 + 140 x_4 - 18 x_5\\
+12 x_1 - 24 x_2 - x_3 + 49 x_4 - 5 x_5}\\
+&amp;\quad\quad-
+\colvector{-65 y_1 + 128 y_2 + 10 y_3 - 262 y_4 + 40 y_5\\
+36 y_1 - 73 y_2 - y_3 + 151 y_4 - 16 y_5\\
+-44 y_1 + 88 y_2 + 5 y_3 - 180 y_4 + 24 y_5\\
+34 y_1 - 68 y_2 - 3 y_3 + 140 y_4 - 18 y_5\\
+12 y_1 - 24 y_2 - y_3 + 49 y_4 - 5 y_5}\\
+&amp;=
+\colvector{-65 (x_1-y_1) + 128 (x_2-y_2) + 10 (x_3-y_3) - 262 (x_4-y_4) + 40 (x_5-y_5)\\
+36 (x_1-y_1) - 73 (x_2-y_2) - (x_3-y_3) + 151 (x_4-y_4) - 16 (x_5-y_5)\\
+-44 (x_1-y_1) + 88 (x_2-y_2) + 5 (x_3-y_3) - 180 (x_4-y_4) + 24 (x_5-y_5)\\
+34 (x_1-y_1) - 68 (x_2-y_2) - 3 (x_3-y_3) + 140 (x_4-y_4) - 18 (x_5-y_5)\\
+12 (x_1-y_1) - 24 (x_2-y_2) - (x_3-y_3) + 49 (x_4-y_4) - 5 (x_5-y_5)}\\
+&amp;=
+\begin{bmatrix}
+-65&amp;128&amp;10&amp;-262&amp;40\\
+36&amp;-73&amp;-1&amp;151&amp;-16\\
+-44&amp;88&amp;5&amp;-180&amp;24\\
+34&amp;-68&amp;-3&amp;140&amp;-18\\
+12&amp;-24&amp;-1&amp;49&amp;-5
+\end{bmatrix}
+\colvector{x_1-y_1\\x_2-y_2\\x_3-y_3\\x_4-y_4\\x_5-y_5}
+\end{align*}
+
+</p>
+<p>Now we recognize that we have a homogeneous system of 5 equations in 5 variables (the terms $x_i-y_i$ are the variables), so we row-reduce the coefficient matrix to
+\begin{equation*}
+\begin{bmatrix}
+\leading{1}&amp;0&amp;0&amp;0&amp;0\\
+0&amp;\leading{1}&amp;0&amp;0&amp;0\\
+0&amp;0&amp;\leading{1}&amp;0&amp;0\\
+0&amp;0&amp;0&amp;\leading{1}&amp;0\\
+0&amp;0&amp;0&amp;0&amp;\leading{1}
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>So the only solution is the trivial solution
+\begin{align*}
+x_1-y_1&amp;=0&amp;x_2-y_2&amp;=0&amp;x_3-y_3&amp;=0&amp;x_4-y_4&amp;=0&amp;x_5-y_5&amp;=0
+\end{align*}
+
+and we conclude that indeed $\vect{x}=\vect{y}$.  By <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a>, $T$ is injective.</p>
+<div class="context"><a href="section-ILT.html#example-IAR" class="context" title="Section ILT">(in
+context)</a></div>
+</div>

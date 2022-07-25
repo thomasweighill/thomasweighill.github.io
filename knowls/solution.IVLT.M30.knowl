@@ -1,0 +1,31 @@
+<div class="solution" acro="IVLT.M30">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">IVLT.M30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>(Another approach to this solution would follow <a class="knowl" acro="CIVLT" type="Example" title="Computing the Inverse of a Linear Transformations" knowl="./knowls/example.CIVLT.knowl">Example CIVLT</a>.)<br><br>
+Suppose that $\ltdefn{\ltinverse{S}}{M_{12}}{P_1}$ has a form given by
+\begin{equation*}
+\lt{\ltinverse{S}}{\begin{bmatrix}z &amp; w\end{bmatrix}}=\left(rz+sw\right)+\left(pz+qw\right)x
+\end{equation*}
+where $r,\,s,\,p,\,q$ are unknown scalars.  Then
+\begin{align*}
+a+bx
+&amp;=\lt{\ltinverse{S}}{\lt{S}{a+bx}}\\
+&amp;=\lt{\ltinverse{S}}{\begin{bmatrix} 3a+b &amp; 2a+b \end{bmatrix}}\\
+&amp;=\left(r(3a+b)+s(2a+b)\right)+\left(p(3a+b)+q(2a+b)\right)x\\
+&amp;=\left((3r+2s)a+(r+s)b\right)+\left((3p+2q)a+(p+q)b\right)x
+\end{align*}
+
+Equating coefficients of these two polynomials, and then equating coefficients on $a$ and $b$, gives rise to 4 equations in 4 variables,
+\begin{align*}
+3r+2s&amp;=1\\
+r+s&amp;=0\\
+3p+2q&amp;=0\\
+p+q&amp;=1\\
+\end{align*}
+
+This system has a unique solution: $r=1$, $s=-1$, $p=-2$, $q=3$.  So the desired inverse linear transformation is
+\begin{equation*}
+\lt{\ltinverse{S}}{\begin{bmatrix}z &amp; w\end{bmatrix}}=\left(z-w\right)+\left(-2z+3w\right)x
+\end{equation*}
+Notice that the system of 4 equations in 4 variables could be split into two systems, each with two equations in two variables (and identical coefficient matrices).  After making this split, the solution might feel like computing the inverse of a matrix (<a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a>).   Hmmmm.
+</div>

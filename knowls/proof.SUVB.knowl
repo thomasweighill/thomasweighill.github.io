@@ -1,0 +1,29 @@
+<div class="proof" id="proof-SUVB" acro="SUVB" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SUVB</span>
+</h5>
+<p>We must show that the set $B$ is both linearly independent and a spanning set for
+$\complex{m}$.  First, the vectors in $B$ are, by <a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>, the columns of the identity matrix, which we know is nonsingular (since it row-reduces to the identity matrix, <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>).  And the columns of a nonsingular matrix are linearly independent by <a class="knowl" acro="NMLIC" type="Theorem" title="Nonsingular Matrices have Linearly Independent Columns" knowl="./knowls/theorem.NMLIC.knowl">Theorem NMLIC</a>.</p>
+
+<p>Suppose we grab an arbitrary vector from $\complex{m}$, say
+\begin{equation*}
+\vect{v}=\colvector{v_1\\v_2\\v_3\\\vdots\\v_m}.
+\end{equation*}
+</p>
+
+<p>Can we write $\vect{v}$ as a linear combination of the vectors in $B$?  Yes, and quite simply.
+\begin{align*}
+\colvector{v_1\\v_2\\v_3\\\vdots\\v_m}&amp;=
+v_1\colvector{1\\0\\0\\\vdots\\0}+
+v_2\colvector{0\\1\\0\\\vdots\\0}+
+v_3\colvector{0\\0\\1\\\vdots\\0}+
+\cdots+
+v_m\colvector{0\\0\\0\\\vdots\\1}\\
+\vect{v}&amp;=v_1\vect{e}_1+v_2\vect{e}_2+v_3\vect{e}_3+\cdots+v_m\vect{e}_m
+\end{align*}
+
+</p>
+
+<p>This shows that $\complex{m}\subseteq\spn{B}$, which is sufficient to show that $B$ is a spanning set for $\complex{m}$.</p>
+
+</div>

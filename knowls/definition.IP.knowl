@@ -1,0 +1,17 @@
+<div class="definition" id="definition-IP" acro="IP" titletext="Inner Product">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">IP</span> <span class="titletext"> Inner Product</span>
+</h5>
+<p>Given the vectors $\vect{u},\,\vect{v}\in\complex{m}$ the <em class="term">inner product</em> of $\vect{u}$ and $\vect{v}$ is the scalar quantity in $\complex{\null}$,
+\begin{equation*}
+\innerproduct{\vect{u}}{\vect{v}}=
+\conjugate{\vectorentry{\vect{u}}{1}}\vectorentry{\vect{v}}{1}+
+\conjugate{\vectorentry{\vect{u}}{2}}\vectorentry{\vect{v}}{2}+
+\conjugate{\vectorentry{\vect{u}}{3}}\vectorentry{\vect{v}}{3}+
+\cdots+
+\conjugate{\vectorentry{\vect{u}}{m}}\vectorentry{\vect{v}}{m}
+=
+\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{u}}{i}}\vectorentry{\vect{v}}{i}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#definition-IP" class="context" title="Section O">(in context)</a></div>

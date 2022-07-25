@@ -1,0 +1,14 @@
+<div class="theorem" id="theorem-MMDAA" acro="MMDAA" titletext="Matrix Multiplication Distributes Across Addition">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MMDAA</span><span class="titletext"> Matrix Multiplication Distributes Across Addition</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix and $B$ and $C$ are $n\times p$ matrices and $D$ is a $p\times s$ matrix.    Then
+<ol>
+<li> $A(B+C)=AB+AC$
+</li>
+<li> $(B+C)D=BD+CD$
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MMDAA.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-MMDAA" class="context" title="Section MM">(in context)</a></div>

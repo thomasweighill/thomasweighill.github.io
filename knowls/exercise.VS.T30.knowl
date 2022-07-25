@@ -1,0 +1,8 @@
+<div class="exercise" acro="VS.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VS.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $V$ is a vector space and $\alpha\in\complexes$ is a scalar such that $\alpha\vect{x}=\vect{x}$ for every $\vect{x}\in V$.  Prove that $\alpha = 1$.  In other words, <a class="knowl" acro="O" type="Property" title="One" knowl="./knowls/property.O.knowl">Property O</a> is not duplicated for any other scalar but the “special” scalar, 1.  (This question was suggested by James Gallagher.)
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VS.T30.knowl">Solution</a></p></div>
+</div>

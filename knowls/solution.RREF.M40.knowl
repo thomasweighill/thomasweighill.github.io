@@ -1,0 +1,119 @@
+<div class="solution" acro="RREF.M40">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">RREF.M40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<ol>
+<li>Let $R$ be the common reduced row-echelon form of $B$ and $C$.  A sequence of row operations converts $B$ to $R$ and a second sequence of row operations converts $C$ to $R$. If we “reverse” the second sequence's order, and reverse each individual row operation (see <a knowl="./knowls/exercise.RREF.T10.knowl">Exercise RREF.T10</a>) then we can begin with $B$, convert to $R$ with the first sequence, and then convert to $C$ with the reversed sequence.  Satisfying <a class="knowl" acro="REM" type="Definition" title="Row-Equivalent Matrices" knowl="./knowls/definition.REM.knowl">Definition REM</a> we can say $B$ and $C$ are row-equivalent matrices.</li>
+<li>We will work this carefully for the first row of $B$ and just give the solution for the next two rows.  For row 1 of $B$ take $i=1$ and we have
+\begin{align*}
+\matrixentry{B}{1j}
+&amp;=
+\delta_{11}\matrixentry{C}{1j}+
+\delta_{12}\matrixentry{C}{2j}+
+\delta_{13}\matrixentry{C}{3j}
+&amp;
+1&amp;\leq j\leq 4
+\end{align*}
+
+If we substitute the four values for $j$ we arrive at four linear equations in the three unknowns $\delta_{11}, \delta_{12}, \delta_{13}$,
+\begin{align*}
+(j=1)&amp;
+&amp;
+\matrixentry{B}{11}
+&amp;=
+\delta_{11}\matrixentry{C}{11}+
+\delta_{12}\matrixentry{C}{21}+
+\delta_{13}\matrixentry{C}{31}
+&amp;
+&amp;\Rightarrow
+&amp;
+1
+&amp;=
+\delta_{11}(1)+
+\delta_{12}(1)+
+\delta_{13}(-1)\\
+(j=2)&amp;
+&amp;
+\matrixentry{B}{12}
+&amp;=
+\delta_{11}\matrixentry{C}{12}+
+\delta_{12}\matrixentry{C}{22}+
+\delta_{13}\matrixentry{C}{32}
+&amp;
+&amp;\Rightarrow
+&amp;
+3
+&amp;=
+\delta_{11}(2)+
+\delta_{12}(1)+
+\delta_{13}(-1)\\
+(j=3)&amp;
+&amp;
+\matrixentry{B}{13}
+&amp;=
+\delta_{11}\matrixentry{C}{13}+
+\delta_{12}\matrixentry{C}{23}+
+\delta_{13}\matrixentry{C}{33}
+&amp;
+&amp;\Rightarrow
+&amp;
+-2
+&amp;=
+\delta_{11}(1)+
+\delta_{12}(4)+
+\delta_{13}(-4)\\
+(j=4)&amp;
+&amp;
+\matrixentry{B}{14}
+&amp;=
+\delta_{11}\matrixentry{C}{14}+
+\delta_{12}\matrixentry{C}{24}+
+\delta_{13}\matrixentry{C}{34}
+&amp;
+&amp;\Rightarrow
+&amp;
+2
+&amp;=
+\delta_{11}(2)+
+\delta_{12}(0)+
+\delta_{13}(1)
+\end{align*}
+
+We form the augmented matrix of this system and row-reduce to find the solutions,
+\begin{align*}
+\begin{bmatrix}
+1 &amp; 1 &amp; -1 &amp; 1 \\
+2 &amp; 1 &amp; -1 &amp; 3 \\
+1 &amp; 4 &amp; -4 &amp; -2 \\
+2 &amp; 0 &amp; 1 &amp; 2
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; \leading{1} &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; \leading{1} &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{align*}
+
+So the unique solution is $\delta_{11}=2$, $\delta_{12}=-3$, $\delta_{13}=-2$.  Entirely similar work will lead you to
+\begin{align*}
+\delta_{21}&amp;=-1
+&amp;
+\delta_{22}&amp;=1
+&amp;
+\delta_{23}&amp;=1
+\end{align*}
+and
+\begin{align*}
+
+\delta_{31}&amp;=-4
+&amp;
+\delta_{32}&amp;=8
+&amp;
+\delta_{33}&amp;=5
+\end{align*}
+
+</li>
+</ol>
+</div>

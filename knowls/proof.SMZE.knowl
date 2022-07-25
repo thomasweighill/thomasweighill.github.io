@@ -1,0 +1,14 @@
+<div class="proof" id="proof-SMZE" acro="SMZE" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SMZE</span>
+</h5>
+<p>We have the following equivalences:
+\begin{align*}
+\text{$A$ is singular}&amp;\iff\text{there exists $\vect{x}\neq\zerovector$, $A\vect{x}=\zerovector$}&amp;&amp;\knowl{./knowls/definition.NM.knowl}{\text{Definition NM}}\\
+&amp;\iff\text{there exists $\vect{x}\neq\zerovector$, $A\vect{x}=0\vect{x}$}&amp;&amp;\knowl{./knowls/theorem.ZSSM.knowl}{\text{Theorem ZSSM}}\\
+&amp;\iff\text{$\lambda=0$ is an eigenvalue of $A$}&amp;&amp;\knowl{./knowls/definition.EEM.knowl}{\text{Definition EEM}}
+\end{align*}
+
+</p>
+
+</div>

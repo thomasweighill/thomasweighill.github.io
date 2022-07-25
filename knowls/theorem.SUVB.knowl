@@ -1,0 +1,9 @@
+<div class="theorem" id="theorem-SUVB" acro="SUVB" titletext="Standard Unit Vectors are a Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SUVB</span><span class="titletext"> Standard Unit Vectors are a Basis</span>
+</h5>
+<div class="statement"><p>The set of standard unit vectors for $\complex{m}$ (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>),
+$B=\setparts{\vect{e}_i}{1\leq i\leq m}$
+is a basis for the vector space $\complex{m}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SUVB.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-B.html#theorem-SUVB" class="context" title="Section B">(in context)</a></div>

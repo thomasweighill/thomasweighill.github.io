@@ -1,0 +1,61 @@
+<div class="example" id="example-LDS" acro="LDS" titletext="Linearly dependent set in $\complex{5}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LDS</span> <span class="titletext">Linearly dependent set in $\complex{5}$</span>
+</h5>
+<p>Consider the set of $n=4$ vectors from $\complex{5}$,
+\begin{equation*}
+S=\set{
+\colvector{2\\-1\\3\\1\\2},\,
+\colvector{1\\2\\-1\\5\\2},\,
+\colvector{2\\1\\-3\\6\\1},\,
+\colvector{-6\\7\\-1\\0\\1}
+}
+\end{equation*}
+</p>
+<p>To determine linear independence we first form a relation of linear dependence,
+\begin{equation*}
+\alpha_1\colvector{2\\-1\\3\\1\\2}+
+\alpha_2\colvector{1\\2\\-1\\5\\2}+
+\alpha_3\colvector{2\\1\\-3\\6\\1}+
+\alpha_4\colvector{-6\\7\\-1\\0\\1}
+=\zerovector
+\end{equation*}
+</p>
+<p>We know that $\alpha_1=\alpha_2=\alpha_3=\alpha_4=0$ is a solution to this equation, but that is of no interest whatsoever.  That is <em>always</em> the case, no matter what four vectors we might have chosen.  We are curious to know if there are other, nontrivial, solutions.  <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> tells us that we can find such solutions as solutions to the homogeneous system $\homosystem{A}$ where the coefficient matrix has these four vectors as columns, which we then row-reduce
+\begin{equation*}
+A=
+\begin{bmatrix}
+2&amp;1&amp;2&amp;-6\\
+-1&amp;2&amp;1&amp;7\\
+3&amp;-1&amp;-3&amp;-1\\
+1&amp;5&amp;6&amp;0\\
+2&amp;2&amp;1&amp;1
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1}&amp;0&amp;0&amp;-2\\
+0&amp;\leading{1}&amp;0&amp;4\\
+0&amp;0&amp;\leading{1}&amp;-3\\
+0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We could solve this homogeneous system completely, but for this example all we need is one nontrivial solution.  Setting the lone free variable to any nonzero value, such as $x_4=1$, yields the nontrivial solution
+\begin{equation*}
+\vect{x}=\colvector{2\\-4\\3\\1}
+\end{equation*}
+completing our application of <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a>, we have
+\begin{equation*}
+2\colvector{2\\-1\\3\\1\\2}+
+(-4)\colvector{1\\2\\-1\\5\\2}+
+3\colvector{2\\1\\-3\\6\\1}+
+1\colvector{-6\\7\\-1\\0\\1}
+=\zerovector
+\end{equation*}
+</p>
+<p>This is a relation of linear dependence on $S$ that is not trivial, so we conclude that $S$ is linearly dependent.
+</p>
+<div class="context"><a href="section-LI.html#example-LDS" class="context" title="Section LI">(in
+context)</a></div>
+</div>

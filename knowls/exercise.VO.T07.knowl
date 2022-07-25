@@ -1,0 +1,21 @@
+<div class="exercise" acro="VO.T07">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VO.T07</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Provide reasons (mostly vector space properties) as justification for each of the six steps of the following proof.<br><br>
+<b>Theorem</b>
+For any scalar $c$,  $c\,\zerovector = \zerovector$.<br><br>
+<b>Proof</b>: Let $c$ be an arbitrary scalar.<br><br>
+\begin{align*}
+\zerovector
+&amp;= c\zerovector + (-c\zerovector)\\
+&amp;= c(\zerovector + \zerovector) + (-c\zerovector)\\
+&amp;= (c\zerovector + c\zerovector) + (-c\zerovector)\\
+&amp;= c\zerovector + (c\zerovector + (-c\zerovector))\\
+&amp;= c\zerovector + \zerovector\\
+&amp;= c\zerovector
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VO.T07.knowl">Solution</a></p></div>
+</div>

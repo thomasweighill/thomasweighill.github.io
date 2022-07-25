@@ -1,0 +1,53 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-SSNS', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">SSNS</span> <span class="titletext">Spanning Sets for Null Spaces</span>
+</h5>
+
+
+<p>We have seen that we can create a null space in Sage with the <span class="code">.right_kernel()</span> method for matrices.  We use the optional argument <span class="code">basis='pivot'</span>, so we get exactly the spanning set $\set{\vectorlist{z}{n-r}}$ described in <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>.  This optional argument will overide Sage's default spanning set, whose purpose we will explain fully in <a class="knowl" acro="SUTH0" type="Sage" title="" knowl="./knowls/sage.SUTH0.knowl">Sage SUTH0</a>.  Here is <a class="knowl" acro="SSNS" type="Example" title="Spanning set of a null space" knowl="./knowls/example.SSNS.knowl">Example SSNS</a> again, along with a few extras we will comment on afterwards.</p>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">A = matrix(QQ, [[ 1,  3,  3, -1, -5],
+                [ 2,  5,  7,  1,  1],
+                [ 1,  1,  5,  1,  5],
+                [-1, -4, -2,  0,  4]])
+nsp = A.right_kernel(basis='pivot')
+N = nsp.basis()
+N
+</script></div>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">z1 = N[0]
+z2 = N[1]
+z = 4*z1 +(-3)*z2
+z
+</script></div>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">z in nsp
+</script></div>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">sum([z[i]*A.column(i) for i in range(A.ncols())])
+</script></div>
+
+<p>We built the null space as <span class="code">nsp</span>, and then asked for its <span class="code">.basis()</span>.  For now, a “basis” will give us a spanning set, and with more theory we will understand it better.  This is a set of vectors that form a spanning set for the null space, and with the <span class="code">basis='pivot'</span> argument we have asked for the spanning set in the format described in <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>.  The spanning set <span class="code">N</span> is a list of vectors, which we have extracted and named as <span class="code">z1</span> and <span class="code">z2</span>.  The linear combination of these two vectors, named <span class="code">z</span>, will also be in the null space since <span class="code">N</span> is a spanning set for <span class="code">nsp</span>.  As verification, we have have used the five entries of <span class="code">z</span> in a linear combination of the columns of <span class="code">A</span>, yielding the zero vector (with four entries) as we expect.</p>
+
+<p>We can also just ask Sage if <span class="code">z</span> is in <span class="code">nsp</span>:</p>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">z in nsp
+</script></div>
+
+<p>Now is an appropriate time to comment on how Sage displays a null space when we just ask about it alone.  Just as with a span, the number system and the number of entries are easy to see.  Again, <span class="code">dimension</span> should wait for a bit.  But you will notice now that the <span class="code">Basis matrix</span> has been replaced by <span class="code">User basis matrix</span>.  This is a consequence of our request for something other than the default basis (the <span class="code">'pivot'</span> basis).  As part of its standard information about a null space, or a span, Sage spits out the basis matrix.  This is a matrix, whose <em>rows</em> are vectors in a spanning set.  This matrix can be requested by itself, using the method <span class="code">.basis_matrix()</span>.  It is important to notice that this is very different than the output of <span class="code">.basis()</span> which is a list of vectors.  The two objects print very similarly, but even this is different — compare the organization of the brackets and parentheses.  Finally the last command should print true for <em>any</em> span or null space Sage creates.  If you rerun the commands below, be sure the null space <span class="code">nsp</span> is defined from the code just above.</p>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">nsp
+</script></div>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">nsp.basis_matrix()
+</script></div>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">nsp.basis()
+</script></div>
+
+<br><br><div class="sage-SSNS"><script type="text/x-sage">nsp.basis() == nsp.basis_matrix().rows()
+</script></div>
+
+<br><br><div class="sage-SSNS sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

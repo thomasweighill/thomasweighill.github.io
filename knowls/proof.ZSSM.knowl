@@ -1,0 +1,18 @@
+<div class="proof" id="proof-ZSSM" acro="ZSSM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ZSSM</span>
+</h5>
+<p>Notice that $0$ is a scalar, $\vect{u}$ is a vector, so <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a> says $0\vect{u}$ is again a vector.  As such, $0\vect{u}$ has an additive inverse, $-(0\vect{u})$ by <a class="knowl" acro="AI" type="Property" title="Additive Inverses" knowl="./knowls/property.AI.knowl">Property AI</a>.
+\begin{align*}
+0\vect{u}
+&amp;=\zerovector+0\vect{u}&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\\
+&amp;=\left(-(0\vect{u}) + 0\vect{u}\right)+0\vect{u}&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}\\
+&amp;=-(0\vect{u}) + \left(0\vect{u}+0\vect{u}\right)&amp;&amp;\knowl{./knowls/property.AA.knowl}{\text{Property AA}}\\
+&amp;=-(0\vect{u}) + (0+0)\vect{u}&amp;&amp;\knowl{./knowls/property.DSA.knowl}{\text{Property DSA}}\\
+&amp;=-(0\vect{u}) + 0\vect{u}&amp;&amp;\knowl{./knowls/property.ZCN.knowl}{\text{Property ZCN}}\\
+&amp;=\zerovector&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}
+\end{align*}
+
+</p>
+
+</div>

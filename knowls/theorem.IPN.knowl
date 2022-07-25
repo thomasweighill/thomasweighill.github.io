@@ -1,0 +1,9 @@
+<div class="theorem" id="theorem-IPN" acro="IPN" titletext="Inner Products and Norms">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IPN</span><span class="titletext"> Inner Products and Norms</span>
+</h5>
+<div class="statement"><p>Suppose that $\vect{u}$ is a vector in $\complex{m}$.  Then
+$\norm{\vect{u}}^2=\innerproduct{\vect{u}}{\vect{u}}$.
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.IPN.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#theorem-IPN" class="context" title="Section O">(in context)</a></div>

@@ -1,0 +1,14 @@
+<div class="example" id="example-VSF" acro="VSF" titletext="The vector space of functions">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">VSF</span> <span class="titletext">The vector space of functions</span>
+</h5>
+<p>Let $X$ be any set.</p>
+<p>Set: $F=\setparts{f}{f:X\rightarrow\complex{\null}}$.</p>
+<p>Equality: $f=g$ if and only if $f(x)=g(x)$ for all $x\in X$.</p>
+<p>Vector Addition:  $f+g$ is the function with outputs defined by $(f+g)(x)=f(x)+g(x)$.</p>
+<p>Scalar Multiplication: $\alpha f$ is the function with outputs defined by $(\alpha f)(x)=\alpha f(x)$.</p>
+<p>So this is the set of all functions of one variable that take elements of the set $X$ to a complex number.  You might have studied functions of one variable that take a real number to a real number, and that might be a more natural set to use as $X$.  But since we are allowing our scalars to be complex numbers, we need to specify that the range of our functions is the complex numbers.  Study carefully how the definitions of the operation are made, and think about the different uses of “+” and juxtaposition.  As an example of what is required when verifying that this is a vector space, consider that  the zero vector (<a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>) is the function $z$ whose definition is $z(x)=0$ for every input $x\in X$.</p>
+<p>Vector spaces of functions are very important in mathematics and physics, where the field of scalars may be the real numbers, so the ranges of the functions can in turn also be the set of real numbers.</p>
+<div class="context"><a href="section-VS.html#example-VSF" class="context" title="Section VS">(in
+context)</a></div>
+</div>

@@ -1,0 +1,7 @@
+<div class="proof" id="proof-NME9" acro="NME9" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NME9</span>
+</h5>
+<p>By <a class="knowl" acro="IMILT" type="Theorem" title="Invertible Matrices, Invertible Linear Transformation" knowl="./knowls/theorem.IMILT.knowl">Theorem IMILT</a>, the new addition to this list is equivalent to the statement that $A$ is invertible, so we can expand <a class="knowl" acro="NME8" type="Theorem" title="Nonsingular Matrix Equivalences, Round 8" knowl="./knowls/theorem.NME8.knowl">Theorem NME8</a>.</p>
+
+</div>

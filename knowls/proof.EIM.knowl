@@ -1,0 +1,22 @@
+<div class="proof" id="proof-EIM" acro="EIM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">EIM</span>
+</h5>
+<p>Notice that since $A$ is assumed nonsingular, $\inverse{A}$ exists by <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a>, but more importantly, $\lambda^{-1}=1/\lambda$  does not involve division by zero since <a class="knowl" acro="SMZE" type="Theorem" title="Singular Matrices have Zero Eigenvalues" knowl="./knowls/theorem.SMZE.knowl">Theorem SMZE</a> prohibits this possibility.</p>
+
+<p>Let $\vect{x}\neq\zerovector$ be one eigenvector of $A$ for $\lambda$. Suppose $A$ has size $n$.  Then
+\begin{align*}
+\inverse{A}\vect{x}&amp;=\inverse{A}(1\vect{x})&amp;&amp;\knowl{./knowls/property.OC.knowl}{\text{Property OC}}\\
+&amp;=\inverse{A}(\frac{1}{\lambda}\lambda\vect{x})&amp;&amp;\knowl{./knowls/property.MICN.knowl}{\text{Property MICN}}\\
+&amp;=\frac{1}{\lambda}\inverse{A}(\lambda\vect{x})&amp;&amp;\knowl{./knowls/theorem.MMSMM.knowl}{\text{Theorem MMSMM}}\\
+&amp;=\frac{1}{\lambda}\inverse{A}(A\vect{x})&amp;&amp;\knowl{./knowls/definition.EEM.knowl}{\text{Definition EEM}}\\
+&amp;=\frac{1}{\lambda}(\inverse{A}A)\vect{x}&amp;&amp;\knowl{./knowls/theorem.MMA.knowl}{\text{Theorem MMA}}\\
+&amp;=\frac{1}{\lambda}I_n\vect{x}&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=\frac{1}{\lambda}\vect{x}&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}
+\end{align*}
+
+</p>
+
+<p>So $\vect{x}\neq 0$ is an eigenvector of $\inverse{A}$ for the eigenvalue $\frac{1}{\lambda}$.</p>
+
+</div>

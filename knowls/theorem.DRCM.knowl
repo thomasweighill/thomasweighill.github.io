@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DRCM" acro="DRCM" titletext="Determinant for Row or Column Multiples">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DRCM</span><span class="titletext"> Determinant for Row or Column Multiples</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Let $B$ be the square matrix obtained from $A$ by multiplying a single row by the scalar $\alpha$, or by multiplying a single column by the scalar $\alpha$.  Then $\detname{B}=\alpha\detname{A}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DRCM.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PDM.html#theorem-DRCM" class="context" title="Section PDM">(in context)</a></div>

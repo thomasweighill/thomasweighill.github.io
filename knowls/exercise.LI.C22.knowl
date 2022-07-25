@@ -1,0 +1,14 @@
+<div class="exercise" acro="LI.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LI.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>$\set{%
+\colvector{-2\\-1\\-1},\,
+\colvector{1\\0\\-1},\,
+\colvector{3\\3\\6},\,
+\colvector{-5\\-4\\-6},\,
+\colvector{4\\4\\7}%
+}$
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LI.C22.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,15 @@
+<div class="exercise" acro="NM.C31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">NM.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{equation*}
+\begin{bmatrix}
+2 &amp; 3 &amp; 1 &amp; 4\\
+1 &amp; 1 &amp; 1 &amp; 0\\
+-1 &amp; 2 &amp; 3 &amp; 5\\
+1 &amp; 2 &amp; 1 &amp; 3
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.NM.C31.knowl">Solution</a></p></div>
+</div>

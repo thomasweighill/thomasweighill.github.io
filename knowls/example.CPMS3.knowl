@@ -1,0 +1,51 @@
+<div class="example" id="example-CPMS3" acro="CPMS3" titletext="Characteristic polynomial of a matrix, size 3">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CPMS3</span> <span class="titletext">Characteristic polynomial of a matrix, size 3</span>
+</h5>
+<p>Consider
+\begin{equation*}
+F=
+\begin{bmatrix}
+-13 &amp; -8 &amp; -4\\
+12 &amp; 7 &amp; 4\\
+24 &amp; 16 &amp; 7
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Then
+\begin{align*}
+\charpoly{F}{x}&amp;=\detname{F-xI_3}\\
+&amp;=
+\begin{vmatrix}
+-13-x &amp; -8 &amp; -4\\
+12 &amp; 7-x &amp; 4\\
+24 &amp; 16 &amp; 7-x
+\end{vmatrix}&amp;&amp;\knowl{./knowls/definition.CP.knowl}{\text{Definition CP}}\\
+&amp;=
+(-13-x)
+\begin{vmatrix}
+7-x &amp; 4\\
+16 &amp; 7-x
+\end{vmatrix}
++(-8)(-1)
+\begin{vmatrix}
+12  &amp; 4\\
+24  &amp; 7-x
+\end{vmatrix}&amp;&amp;\knowl{./knowls/definition.DM.knowl}{\text{Definition DM}}\\
+&amp;\quad\quad
++(-4)
+\begin{vmatrix}
+12 &amp; 7-x\\
+24 &amp; 16
+\end{vmatrix}\\
+&amp;=(-13-x)((7-x)(7-x)-4(16))&amp;&amp;\knowl{./knowls/theorem.DMST.knowl}{\text{Theorem DMST}}\\
+&amp;\quad\quad +(-8)(-1)(12(7-x)-4(24))\\
+&amp;\quad\quad +(-4)(12(16)-(7-x)(24))\\
+&amp;=3+5x+x^2-x^3\\
+&amp;=-(x-3)(x+1)^2
+\end{align*}
+
+</p>
+<div class="context"><a href="section-EE.html#example-CPMS3" class="context" title="Section EE">(in
+context)</a></div>
+</div>

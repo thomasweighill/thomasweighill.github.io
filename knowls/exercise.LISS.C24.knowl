@@ -1,0 +1,11 @@
+<div class="exercise" acro="LISS.C24">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LISS.C24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>In the vector space of real-valued functions $F = \setparts{f}{f:\mathbb{R}\rightarrow\mathbb{R}}$, determine if the following set $S$  is linearly independent.
+\begin{equation*}
+S = \set{\sin^2{x}, \cos^2{x}, 2}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LISS.C24.knowl">Solution</a></p></div>
+</div>

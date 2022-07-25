@@ -1,0 +1,9 @@
+<div class="exercise" acro="B.T50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">B.T50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="UMCOB" type="Theorem" title="Unitary Matrices Convert Orthonormal Bases" knowl="./knowls/theorem.UMCOB.knowl">Theorem UMCOB</a> says that unitary matrices are characterized as those matrices that “carry” orthonormal bases to orthonormal bases.  This problem asks you to prove a similar result:  nonsingular matrices are characterized as those matrices that “carry” bases to bases.<br><br>
+More precisely, suppose that $A$ is a square matrix of size $n$ and $B=\set{\vectorlist{x}{n}}$ is a basis of $\complex{n}$.  Prove that $A$ is nonsingular if and only if $C=\set{A\vect{x}_1,\,A\vect{x}_2,\,A\vect{x}_3,\,\dots,\,A\vect{x}_n}$ is a basis of $\complex{n}$.  (See also <a knowl="./knowls/exercise.PD.T33.knowl">Exercise PD.T33</a>, <a knowl="./knowls/exercise.MR.T20.knowl">Exercise MR.T20</a>.)
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.B.T50.knowl">Solution</a></p></div>
+</div>

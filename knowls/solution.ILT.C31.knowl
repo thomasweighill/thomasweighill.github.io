@@ -1,0 +1,31 @@
+<div class="solution" acro="ILT.C31">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">ILT.C31</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>We have
+\begin{align*}
+\lt{T}{\vect{e}_1} &amp;= \colvector{2\\0\\1}
+&amp;
+\lt{T}{\vect{e}_2} &amp;= \colvector{1\\2\\0}
+&amp;
+\lt{T}{\vect{e}_3} &amp;= \colvector{0\\1\\2}
+\end{align*}
+
+Let us put these vectors into a matrix and row reduce to test their linear independence.
+\begin{align*}
+\begin{bmatrix}
+2 &amp; 1 &amp; 0\\
+0 &amp; 2 &amp; 1\\
+1 &amp; 0 &amp; 2
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{align*}
+
+so the set of vectors
+$\set{\lt{T}{\vect{e}_1},\, \lt{T}{\vect{e}_1},\,\lt{T}{\vect{e}_1}}$
+is linearly independent.
+</div>

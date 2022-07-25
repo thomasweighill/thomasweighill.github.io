@@ -1,0 +1,5 @@
+<div class="solution" acro="D.C37">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">D.C37</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>This matrix $A$ row reduces to the $5\times 5$ identity matrix, so it has full rank.  The rank of $A$ is 5, and the nullity is $0$.
+</div>

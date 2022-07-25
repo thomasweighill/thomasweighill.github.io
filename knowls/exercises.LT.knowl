@@ -1,0 +1,178 @@
+<div class="exercise" acro="LT.C15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The archetypes below are all linear transformations whose domains and codomains are vector spaces of column vectors (<a class="knowl" acro="VSCV" type="Definition" title="Vector Space of Column Vectors" knowl="./knowls/definition.VSCV.knowl">Definition VSCV</a>).  For each one, compute the matrix representation described in the proof of <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>.<br><br>
+<a knowl="./knowls/archetype.M.knowl">Archetype M</a>,
+<a knowl="./knowls/archetype.N.knowl">Archetype N</a>,
+<a knowl="./knowls/archetype.O.knowl">Archetype O</a>,
+<a knowl="./knowls/archetype.P.knowl">Archetype P</a>,
+<a knowl="./knowls/archetype.Q.knowl">Archetype Q</a>,
+<a knowl="./knowls/archetype.R.knowl">Archetype R</a>
+</p></div>
+</div><div class="exercise" acro="LT.C16">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C16</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find the matrix representation of $\ltdefn{T}{\complex{3}}{\complex{4}}$,
+$\lt{T}{\colvector{x\\y\\z}} = \colvector{3x + 2y + z\\ x + y + z \\ x - 3y \\2x + 3y + z }$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C16.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $\vect{w}=\colvector{-3\\1\\4}$.  Referring to <a class="knowl" acro="MOLT" type="Example" title="Matrix of a linear transformation" knowl="./knowls/example.MOLT.knowl">Example MOLT</a>, compute $\lt{S}{\vect{w}}$ two different ways.  First use the definition of $S$, then compute the matrix-vector product $C\vect{w}$ (<a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a>).
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Define the linear transformation
+\begin{equation*}
+\ltdefn{T}{\complex{3}}{\complex{2}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3}}=\colvector{2x_1-x_2+5x_3\\-4x_1+2x_2-10x_3}
+\end{equation*}
+Verify that $T$ is a linear transformation.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C25.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C26</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Verify that the function below is a linear transformation.
+\begin{equation*}
+\ltdefn{T}{P_2}{\complex{2}},\quad \lt{T}{a+bx+cx^2}=\colvector{2a-b\\b+c}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C26.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Define the linear transformation
+\begin{equation*}
+\ltdefn{T}{\complex{3}}{\complex{2}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3}}=\colvector{2x_1-x_2+5x_3\\-4x_1+2x_2-10x_3}
+\end{equation*}
+Compute the preimages, $\preimage{T}{\colvector{2\\3}}$ and $\preimage{T}{\colvector{4\\-8}}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the linear transformation $S$ compute the pre-images.
+\begin{align*}
+\ltdefn{S}{\complex{3}}{\complex{3}},\quad \lt{S}{\colvector{a\\b\\c}}=
+\colvector{a-2b-c\\3a-b+2c\\a+b+2c }
+\end{align*}
+
+\begin{align*}
+\preimage{S}{\colvector{-2\\5\\3}}&amp;
+&amp;
+\preimage{S}{\colvector{-5\\5\\7}}&amp;
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C31.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C40</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If $\ltdefn{T}{\complex{2}}{\complex{2}}$ satisfies
+$\lt{T}{\colvector{2\\1}} = \colvector{3\\4}$
+and
+$\lt{T}{\colvector{1\\1}} = \colvector{-1\\2}$,
+find
+$\lt{T}{\colvector{4\\3}}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C41</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If $\ltdefn{T}{\complex{2}}{\complex{3}}$ satisfies
+$\lt{T}{\colvector{2\\3}} = \colvector{2\\2\\1}$
+and
+$\lt{T}{\colvector{3\\4}} = \colvector{-1\\0\\2}$,
+find the matrix representation of $T$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C41.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C42">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C42</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Define $\ltdefn{T}{M_{22}}{\complex{1}}$ by
+$\lt{T}{\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}} = a + b + c - d$.
+Find the pre-image $\preimage{T}{3}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C42.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.C43">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C43</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Define $\ltdefn{T}{P_3}{P_2}$ by
+$\lt{T}{a + bx + cx^2 + dx^3} = b + 2cx + 3dx^2$.
+Find the pre-image of $\mathbf{0}$.
+Does this linear transformation seem familiar?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C43.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.M10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.M10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Define two linear transformations, $\ltdefn{T}{\complex{4}}{\complex{3}}$ and $\ltdefn{S}{\complex{3}}{\complex{2}}$ by
+\begin{align*}
+\lt{S}{\colvector{x_1\\x_2\\x_3}}
+&amp;=
+\colvector{
+x_1-2x_2+3x_3\\
+5x_1+4x_2+2x_3
+}
+&amp;
+\lt{T}{\colvector{x_1\\x_2\\x_3\\x_4}}
+&amp;=
+\colvector{
+-x_1+3x_2+x_3+9x_4\\
+2x_1+x_3+7x_4\\
+4x_1+2x_2+x_3+2x_4
+}
+\end{align*}
+
+Using the proof of <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a> compute the matrix representations of the three linear transformations $T$, $S$ and $\compose{S}{T}$.  Discover and comment on the relationship between these three matrices.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.M10.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="LT.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $U$ and $V$ are vector spaces and define a function $\ltdefn{Z}{U}{V}$ by $\lt{Z}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Prove that $Z$ is a (stupid) linear transformation.  (See <a knowl="./knowls/exercise.ILT.M60.knowl">Exercise ILT.M60</a>, <a knowl="./knowls/exercise.SLT.M60.knowl">Exercise SLT.M60</a>, <a knowl="./knowls/exercise.IVLT.M60.knowl">Exercise IVLT.M60</a>.)
+</p></div>
+</div><div class="exercise" acro="LT.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use the conclusion of <a class="knowl" acro="LTLC" type="Theorem" title="Linear Transformations and Linear Combinations" knowl="./knowls/theorem.LTLC.knowl">Theorem LTLC</a> to motivate a new definition of a linear transformation.  Then prove that your new definition is equivalent to <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>.  (<a class="knowl" acro="D" type="Proof Technique" title="Definitions" knowl="./knowls/technique.D.knowl">Proof Technique D</a> and <a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a> might be helpful if you are not sure what you are being asked to prove here.)
+</p></div>
+</div><div class="exercisegroup">
+<p><a class="knowl" acro="SER" type="Theorem" title="Similarity is an Equivalence Relation" knowl="./knowls/theorem.SER.knowl">Theorem SER</a> established three properties of matrix similarity that are collectively known as the defining properties of an “equivalence relation”.  Exercises T30 and T31 extend this idea to linear transformations.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="LT.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Say that two vectors from $U$, $\vect{x}$ and $\vect{y}$, are <em class="term">related</em> exactly when $\lt{T}{\vect{x}}=\lt{T}{\vect{y}}$ in $V$.  Prove the three properties of an equivalence relation on $U$: (a) for any $\vect{x}\in U$, $\vect{x}$ is related to $\vect{x}$, (b) if $\vect{x}$ is related to $\vect{y}$, then $\vect{y}$ is related to $\vect{x}$, and (c) if $\vect{x}$ is related to $\vect{y}$ and $\vect{y}$ is related to $\vect{z}$, then $\vect{x}$ is related to $\vect{z}$.
+</p></div>
+</div>
+<div class="exercise" acro="LT.T31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Equivalence relations always create a partition of the set they are defined on, via a construction called equivalence classes.  For the relation in the previous problem, the equivalence classes are the pre-images.  Prove directly that the collection of pre-images partition $U$ by showing that (a) every $\vect{x}\in U$ is contained in some pre-image, and that (b) any two different pre-images do not have any elements in common.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.T31.knowl">Solution</a></p></div>
+</div>
+</div>
+</div>

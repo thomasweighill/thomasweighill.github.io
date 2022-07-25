@@ -1,0 +1,31 @@
+<div class="example" id="example-MOLT" acro="MOLT" titletext="Matrix of a linear transformation">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">MOLT</span> <span class="titletext">Matrix of a linear transformation</span>
+</h5>
+<p>Suppose $\ltdefn{S}{\complex{3}}{\complex{4}}$ is defined by
+\begin{equation*}
+\lt{S}{\colvector{x_1\\x_2\\x_3}}=\colvector{3x_1-2x_2+5x_3\\x_1+x_2+x_3\\9x_1-2x_2+5x_3\\4x_2}
+\end{equation*}
+</p>
+<p>Then
+\begin{align*}
+\vect{C}_1&amp;=\lt{S}{\vect{e_1}}=\lt{S}{\colvector{1\\0\\0}}=\colvector{3\\1\\9\\0}\\
+\vect{C}_2&amp;=\lt{S}{\vect{e_2}}=\lt{S}{\colvector{0\\1\\0}}=\colvector{-2\\1\\-2\\4}\\
+\vect{C}_3&amp;=\lt{S}{\vect{e_3}}=\lt{S}{\colvector{0\\0\\1}}=\colvector{5\\1\\5\\0}
+\end{align*}
+
+so define
+\begin{equation*}
+C=\left[C_1|C_2|C_3\right]=
+\begin{bmatrix}
+3&amp;-2&amp;5\\
+1&amp;1&amp;1\\
+9&amp;-2&amp;5\\
+0&amp;4&amp;0
+\end{bmatrix}
+\end{equation*}
+and <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a> guarantees that $\lt{S}{\vect{x}}=C\vect{x}$.</p>
+<p>As an illuminating exercise, let $\vect{z}=\colvector{2\\-3\\3}$ and compute $\lt{S}{\vect{z}}$ two different ways.  First, return to the definition of $S$ and evaluate $\lt{S}{\vect{z}}$ directly.  Then do the matrix-vector product $C\vect{z}$.  In both cases you should obtain the vector $\lt{S}{\vect{z}}=\colvector{27\\2\\39\\-12}$.</p>
+<div class="context"><a href="section-LT.html#example-MOLT" class="context" title="Section LT">(in
+context)</a></div>
+</div>

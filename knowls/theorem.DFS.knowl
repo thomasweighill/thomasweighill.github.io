@@ -1,0 +1,18 @@
+<div class="theorem" id="theorem-DFS" acro="DFS" titletext="Dimensions of Four Subspaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DFS</span><span class="titletext"> Dimensions of Four Subspaces</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix, and $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ nonzero rows.  Then
+<ol>
+<li> $\dimension{\nsp{A}}=n-r$
+</li>
+<li> $\dimension{\csp{A}}=r$
+</li>
+<li> $\dimension{\rsp{A}}=r$
+</li>
+<li> $\dimension{\lns{A}}=m-r$
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.DFS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PD.html#theorem-DFS" class="context" title="Section PD">(in context)</a></div>

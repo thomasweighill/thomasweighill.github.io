@@ -1,0 +1,8 @@
+<div class="example" id="example-ASC" acro="ASC" titletext="A subspace characterized">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ASC</span> <span class="titletext">A subspace characterized</span>
+</h5>
+<p>In <a class="knowl" acro="DSP4" type="Example" title="Dimension of a subspace of $P_4$" knowl="./knowls/example.DSP4.knowl">Example DSP4</a> we determined that a certain subspace $W$ of $P_4$ has dimension $4$.  By <a class="knowl" acro="CFDVS" type="Theorem" title="Characterization of Finite Dimensional Vector Spaces" knowl="./knowls/theorem.CFDVS.knowl">Theorem CFDVS</a>, $W$ is isomorphic to $\complex{4}$.</p>
+<div class="context"><a href="section-VR.html#example-ASC" class="context" title="Section VR">(in
+context)</a></div>
+</div>

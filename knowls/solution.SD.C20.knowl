@@ -1,0 +1,43 @@
+<div class="solution" acro="SD.C20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SD.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Using a calculator, we find that $A$ has three distinct eigenvalues, $\lambda=3,\,2,\,-1$, with $\lambda=2$ having algebraic multiplicity two, $\algmult{A}{2}=2$.  The eigenvalues $\lambda=3,\,-1$ have algebraic multiplicity one, and so by <a class="knowl" acro="ME" type="Theorem" title="Multiplicities of an Eigenvalue" knowl="./knowls/theorem.ME.knowl">Theorem ME</a> we can conclude that their geometric multiplicities are one as well.  Together with the computation of the geometric multiplicity of $\lambda=2$ from <a knowl="./knowls/exercise.EE.C20.knowl">Exercise EE.C20</a>, we know
+\begin{align*}
+\geomult{A}{3}&amp;=\algmult{A}{3}=1&amp;
+\geomult{A}{2}&amp;=\algmult{A}{2}=2&amp;
+\geomult{A}{-1}&amp;=\algmult{A}{-1}=1
+\end{align*}
+
+This satisfies the hypotheses of <a class="knowl" acro="DMFE" type="Theorem" title="Diagonalizable Matrices have Full Eigenspaces" knowl="./knowls/theorem.DMFE.knowl">Theorem DMFE</a>, and so we can conclude that $A$ is diagonalizable.<br><br>
+A calculator will give us four eigenvectors of $A$, the two for $\lambda=2$ being linearly independent presumably.  Or, by hand, we could find basis vectors for the three eigenspaces.  For $\lambda=3,\,-1$ the eigenspaces have dimension one, and so any eigenvector for these eigenvalues will be multiples of the ones we use below.  For $\lambda=2$ there are many different bases for the eigenspace, so your answer could vary.  Our eigenvectors are the basis vectors we would have obtained if we had actually constructed a basis in <a knowl="./knowls/exercise.EE.C20.knowl">Exercise EE.C20</a> rather than just computing the dimension.<br><br>
+By the construction in the proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a>, the required matrix $S$ has columns that are four linearly independent eigenvectors of $A$ and the diagonal matrix has the eigenvalues on the diagonal (in the same order as the eigenvectors in $S$).  Here are the pieces, “doing” the diagonalization,
+\begin{equation*}
+\inverse{
+\begin{bmatrix}
+-1 &amp; 0 &amp; -3 &amp; 6\\
+-2 &amp; -1 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; -3\\
+1 &amp; 1 &amp; 0 &amp; 1
+\end{bmatrix}
+}
+\begin{bmatrix}
+18 &amp; -15 &amp; 33 &amp; -15\\
+-4 &amp; 8 &amp; -6 &amp; 6\\
+-9 &amp; 9 &amp; -16 &amp; 9\\
+5 &amp; -6 &amp; 9 &amp; -4
+\end{bmatrix}
+\begin{bmatrix}
+-1 &amp; 0 &amp; -3 &amp; 6\\
+-2 &amp; -1 &amp; -1 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; -3\\
+1 &amp; 1 &amp; 0 &amp; 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 2 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; -1
+\end{bmatrix}
+\end{equation*}
+</div>

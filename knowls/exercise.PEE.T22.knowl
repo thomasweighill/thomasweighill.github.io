@@ -1,0 +1,7 @@
+<div class="exercise" acro="PEE.T22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">PEE.T22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $U$ is a unitary matrix with eigenvalue $\lambda$.  Prove that $\lambda$ has modulus 1, i.e.  $\modulus{\lambda}=1$.  This says that all of the eigenvalues of a unitary matrix lie on the unit circle of the complex plane.
+</p></div>
+</div>

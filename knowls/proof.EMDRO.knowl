@@ -1,0 +1,121 @@
+<div class="proof" id="proof-EMDRO" acro="EMDRO" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">EMDRO</span>
+</h5>
+<p>In each of the three conclusions, performing the row operation on $A$ will create the matrix $B$ where only one or two rows will have changed.  So we will establish the equality of the matrix entries row by row, first for the unchanged rows, then for the changed rows, showing in each case that the result of the matrix product is the same as the result of the row operation.  Here we go.</p>
+
+<p>Row $k$ of the product $\elemswap{i}{j}A$, where $k\neq i$, $k\neq j$, is unchanged from $A$,
+\begin{align*}
+\matrixentry{\elemswap{i}{j}A}{k\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemswap{i}{j}}{kp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemswap{i}{j}}{kk}\matrixentry{A}{k\ell}+
+\sum_{\substack{p=1\\p\neq k}}^{n}\matrixentry{\elemswap{i}{j}}{kp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=1\matrixentry{A}{k\ell}+
+\sum_{\substack{p=1\\p\neq k}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\matrixentry{A}{k\ell}
+\end{align*}
+
+</p>
+
+<p>Row $i$ of the product $\elemswap{i}{j}A$ is row $j$ of $A$,
+\begin{align*}
+\matrixentry{\elemswap{i}{j}A}{i\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemswap{i}{j}}{ip}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemswap{i}{j}}{ij}\matrixentry{A}{j\ell}+
+\sum_{\substack{p=1\\p\neq j}}^{n}\matrixentry{\elemswap{i}{j}}{ip}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=1\matrixentry{A}{j\ell}+
+\sum_{\substack{p=1\\p\neq j}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\matrixentry{A}{j\ell}
+\end{align*}
+
+</p>
+
+<p>Row $j$ of the product  $\elemswap{i}{j}A$ is row $i$ of $A$,
+\begin{align*}
+\matrixentry{\elemswap{i}{j}A}{j\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemswap{i}{j}}{jp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemswap{i}{j}}{ji}\matrixentry{A}{i\ell}+
+\sum_{\substack{p=1\\p\neq i}}^{n}\matrixentry{\elemswap{i}{j}}{jp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=1\matrixentry{A}{i\ell}+\sum_{\substack{p=1\\p\neq i}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\matrixentry{A}{i\ell}
+\end{align*}
+
+</p>
+
+<p>So the matrix product $\elemswap{i}{j}A$ is the same as the row operation that swaps rows $i$ and $j$.</p>
+
+<p>Row $k$ of the product $\elemmult{\alpha}{i}A$, where $k\neq i$, is unchanged from $A$,
+\begin{align*}
+\matrixentry{\elemmult{\alpha}{i}A}{k\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemmult{\alpha}{i}}{kp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemmult{\alpha}{i}}{kk}\matrixentry{A}{k\ell}+
+\sum_{\substack{p=1\\p\neq k}}^{n}\matrixentry{\elemmult{\alpha}{i}}{kp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=1\matrixentry{A}{k\ell}+\sum_{\substack{p=1\\p\neq k}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\matrixentry{A}{k\ell}
+\end{align*}
+
+</p>
+
+<p>Row $i$ of the product  $\elemmult{\alpha}{i}A$ is $\alpha$ times row $i$ of $A$,
+\begin{align*}
+\matrixentry{\elemmult{\alpha}{i}A}{i\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemmult{\alpha}{i}}{ip}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemmult{\alpha}{i}}{ii}\matrixentry{A}{i\ell}+
+\sum_{\substack{p=1\\p\neq i}}^{n}\matrixentry{\elemmult{\alpha}{i}}{ip}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=\alpha\matrixentry{A}{i\ell}+\sum_{\substack{p=1\\p\neq i}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\alpha\matrixentry{A}{i\ell}
+\end{align*}
+
+</p>
+
+<p>So the matrix product $\elemmult{\alpha}{i}A$ is the same as the row operation that swaps multiplies row $i$ by $\alpha$.</p>
+
+<p>Row $k$ of the product $\elemadd{\alpha}{i}{j}A$, where $k\neq j$, is unchanged from $A$,
+\begin{align*}
+\matrixentry{\elemadd{\alpha}{i}{j}A}{k\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemadd{\alpha}{i}{j}}{kp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemadd{\alpha}{i}{j}}{kk}\matrixentry{A}{k\ell}+
+\sum_{\substack{p=1\\p\neq k}}^{n}\matrixentry{\elemadd{\alpha}{i}{j}}{kp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=1\matrixentry{A}{k\ell}+\sum_{\substack{p=1\\p\neq k}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\matrixentry{A}{k\ell}
+\end{align*}
+
+</p>
+
+<p>Row $j$ of the product $\elemadd{\alpha}{i}{j}A$, is $\alpha$ times row $i$ of $A$ and then added to row $j$ of $A$,
+\begin{align*}
+\matrixentry{\elemadd{\alpha}{i}{j}A}{j\ell}
+&amp;=\sum_{p=1}^{n}\matrixentry{\elemadd{\alpha}{i}{j}}{jp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\matrixentry{\elemadd{\alpha}{i}{j}}{jj}\matrixentry{A}{j\ell}+\\
+&amp;\quad\quad\matrixentry{\elemadd{\alpha}{i}{j}}{ji}\matrixentry{A}{i\ell}+
+\sum_{\substack{p=1\\p\neq j,i}}^{n}\matrixentry{\elemadd{\alpha}{i}{j}}{jp}\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=1\matrixentry{A}{j\ell}+\alpha\matrixentry{A}{i\ell}+\sum_{\substack{p=1\\p\neq j,i}}^{n}0\matrixentry{A}{p\ell}
+&amp;&amp;\knowl{./knowls/definition.ELEM.knowl}{\text{Definition ELEM}}\\
+&amp;=\matrixentry{A}{j\ell}+\alpha\matrixentry{A}{i\ell}
+\end{align*}
+
+</p>
+
+<p>So the matrix product $\elemadd{\alpha}{i}{j}A$ is the same as the row operation that multiplies row $i$ by $\alpha$ and adds the result to row $j$.</p>
+
+</div>

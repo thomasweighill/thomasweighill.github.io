@@ -1,0 +1,23 @@
+<div class="example" id="example-CCM" acro="CCM" titletext="Complex conjugate of a matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CCM</span> <span class="titletext">Complex conjugate of a matrix</span>
+</h5>
+<p>If
+\begin{equation*}
+A=
+\begin{bmatrix}
+2-i &amp; 3 &amp; 5+4i\\
+-3+6i &amp; 2-3i &amp; 0
+\end{bmatrix}
+\end{equation*}
+then
+\begin{equation*}
+\conjugate{A}=
+\begin{bmatrix}
+2+i &amp; 3 &amp; 5-4i\\
+-3-6i &amp; 2+3i &amp; 0
+\end{bmatrix}
+\end{equation*}</p>
+<div class="context"><a href="section-MO.html#example-CCM" class="context" title="Section MO">(in
+context)</a></div>
+</div>

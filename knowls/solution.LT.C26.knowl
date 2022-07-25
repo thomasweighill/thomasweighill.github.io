@@ -1,0 +1,27 @@
+<div class="solution" acro="LT.C26">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LT.C26</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Check the two conditions of <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>.
+\begin{align*}
+\lt{T}{\vect{u}+\vect{v}}
+&amp;=\lt{T}{\left(a+bx+cx^2\right)+\left(d+ex+fx^2\right)}\\
+&amp;=\lt{T}{\left(a+d\right)+\left(b+e\right)x+\left(c+f\right)x^2}\\
+&amp;=\colvector{2(a+d)-(b+e)\\(b+e)+(c+f)}\\
+&amp;=\colvector{(2a-b)+(2d-e)\\(b+c)+(e+f)}\\
+&amp;=\colvector{2a-b\\b+c}+\colvector{2d-e\\e+f}\\
+&amp;=\lt{T}{\vect{u}}+\lt{T}{\vect{v}}
+\end{align*}
+and
+\begin{align*}
+
+\lt{T}{\alpha\vect{u}}
+&amp;=\lt{T}{\alpha\left(a+bx+cx^2\right)}\\
+&amp;=\lt{T}{\left(\alpha a\right)+\left(\alpha b\right)x+\left(\alpha c\right)x^2}\\
+&amp;=\colvector{2(\alpha a)-(\alpha b)\\(\alpha b)+(\alpha c)}\\
+&amp;=\colvector{\alpha(2a-b)\\\alpha(b+c)}\\
+&amp;=\alpha\colvector{2a-b\\b+c}\\
+&amp;=\alpha\lt{T}{\vect{u}}
+\end{align*}
+
+So $T$ is indeed a linear transformation.
+</div>

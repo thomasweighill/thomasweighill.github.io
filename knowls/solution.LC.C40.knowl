@@ -1,0 +1,21 @@
+<div class="solution" acro="LC.C40">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LC.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Row-reduce the augmented matrix representing this system, to find
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; -2 &amp; 0 &amp; 6 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; \leading{1} &amp; -4 &amp; 0 &amp; 3\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -5\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+The system is consistent (no pivot column in column 6, <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>). $x_2$ and $x_4$ are the free variables.  Now apply <a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a> directly, or follow the three-step process of <a class="knowl" acro="VFS" type="Example" title="Vector form of solutions" knowl="./knowls/example.VFS.knowl">Example VFS</a>, <a class="knowl" acro="VFSAD" type="Example" title="Vector form of solutions for Archetype D" knowl="./knowls/example.VFSAD.knowl">Example VFSAD</a>, <a class="knowl" acro="VFSAI" type="Example" title="Vector form of solutions for Archetype I" knowl="./knowls/example.VFSAI.knowl">Example VFSAI</a>, or <a class="knowl" acro="VFSAL" type="Example" title="Vector form of solutions for Archetype L" knowl="./knowls/example.VFSAL.knowl">Example VFSAL</a> to obtain
+\begin{equation*}
+\colvector{x_1\\x_2\\x_3\\x_4\\x_5}
+=
+\colvector{1\\0\\3\\0\\-5}+
+x_2\colvector{2\\1\\0\\0\\0}+
+x_4\colvector{-6\\0\\4\\1\\0}
+\end{equation*}
+</div>

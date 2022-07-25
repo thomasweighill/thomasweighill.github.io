@@ -1,0 +1,49 @@
+<div class="technique" id="technique-CD" acro="CD" titletext="Contradiction">
+<h5 class="technique">
+<span class="type">Proof Technique</span> <span class="acro">CD</span> <span class="titletext">Contradiction</span>
+</h5>
+
+<p>Another proof technique is known as “proof by contradiction” and it can be a powerful (and satisfying) approach.  Simply put, suppose you wish to prove the implication, “If $A$, then $B$.”   As usual, we assume that $A$ is true, but we also make the additional assumption that $B$ is false.  If our original implication is true, then these twin assumptions should lead us to a logical inconsistency.  In practice we assume the negation of $B$ to be true (see <a class="knowl" acro="N" type="Proof Technique" title="Negation" knowl="./knowls/technique.N.knowl">Proof Technique N</a>).  So we argue from the assumptions $A$ and $\text{not}(B)$ looking for some obviously false conclusion such as $1=6$, or a set is simultaneously empty and nonempty, or a matrix is both nonsingular and singular.</p>
+
+<p>You should be careful about formulating proofs that look like proofs by contradiction, but really are not.  This happens when you assume $A$ and $\text{not}(B)$ and proceed to give a “normal” and direct proof that $B$ is true by only using the assumption that $A$ is true.  Your last step is to then claim that $B$ is true and you then appeal to the assumption that $\text{not}(B)$ is true, thus getting the desired contradiction.  Instead, you could have avoided the overhead of a proof by contradiction and just run with the direct proof.  This stylistic flaw is known, quite graphically, as “setting up the strawman to knock him down.”</p>
+
+<p>Here is a simple example of a proof by contradiction.  There are direct proofs that are just about as easy, but this will demonstrate the point, while narrowly avoiding knocking down the straw man.</p>
+
+<p>Theorem:  If $a$ and $b$ are odd integers, then their product, $ab$, is odd.</p>
+
+<p>Proof:  To begin a proof by contradiction, assume the hypothesis, that $a$ and $b$ are odd.  Also assume the negation of the conclusion, in this case, that $ab$ is even.  Then there are integers, $j$, $k$, $\ell$ so that $a=2j+1$, $b=2k+1$, $ab=2\ell$.  Then
+\begin{align*}
+0
+&amp;=ab-ab\\
+&amp;=(2j+1)(2k+1)-(2\ell)\\
+&amp;=4jk+2j+2k-2\ell+1\\
+&amp;=2\left(2jk+j+k-\ell\right)+1\\
+\end{align*}
+
+</p>
+
+<p>Again, we do not offer this example as the <em>best</em> proof of this fact about even and odd numbers, but rather it is a simple illustration of a proof by contradiction.  You can find examples of proofs by contradiction in
+
+
+
+
+
+
+
+
+
+
+<a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>,
+<a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>,
+<a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>,
+<a class="knowl" acro="TTMI" type="Theorem" title="Two-by-Two Matrix Inverse" knowl="./knowls/theorem.TTMI.knowl">Theorem TTMI</a>,
+<a class="knowl" acro="GSP" type="Theorem" title="Gram-Schmidt Procedure" knowl="./knowls/theorem.GSP.knowl">Theorem GSP</a>,
+<a class="knowl" acro="ELIS" type="Theorem" title="Extending Linearly Independent Sets" knowl="./knowls/theorem.ELIS.knowl">Theorem ELIS</a>,
+<a class="knowl" acro="EDYES" type="Theorem" title="Equal Dimensions Yields Equal Subspaces" knowl="./knowls/theorem.EDYES.knowl">Theorem EDYES</a>,
+<a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a>,
+<a class="knowl" acro="EDELI" type="Theorem" title="Eigenvectors with Distinct Eigenvalues are Linearly Independent" knowl="./knowls/theorem.EDELI.knowl">Theorem EDELI</a>,
+and
+<a class="knowl" acro="DMFE" type="Theorem" title="Diagonalizable Matrices have Full Eigenspaces" knowl="./knowls/theorem.DMFE.knowl">Theorem DMFE</a>,
+in addition to several examples and solutions to exercises.</p>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="proof" id="proof-MNEM" acro="MNEM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MNEM</span>
+</h5>
+<p>Suppose that $A$ has $k$ distinct eigenvalues, $\scalarlist{\lambda}{k}$.  Then
+\begin{align*}
+k&amp;=\sum_{i=1}^{k}1\\
+&amp;\leq\sum_{i=1}^{k}\algmult{A}{\lambda_i}&amp;&amp;\knowl{./knowls/theorem.ME.knowl}{\text{Theorem ME}}\\
+&amp;=n&amp;&amp;\knowl{./knowls/theorem.NEM.knowl}{\text{Theorem NEM}}
+\end{align*}
+
+</p>
+
+</div>

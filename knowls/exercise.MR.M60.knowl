@@ -1,0 +1,7 @@
+<div class="exercise" acro="MR.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose $U$ and $V$ are vector spaces and define a function $\ltdefn{Z}{U}{V}$ by $\lt{T}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Then <a knowl="./knowls/exercise.IVLT.M60.knowl">Exercise IVLT.M60</a> asks you to formulate the theorem:  $Z$ is invertible if and only if $U=\set{\zerovector_U}$ and $V=\set{\zerovector_V}$.  What would a matrix representation of $Z$ look like in this case?  How does <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a> read in this case?
+</p></div>
+</div>

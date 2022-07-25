@@ -1,0 +1,22 @@
+<div class="definition" id="definition-RREF" acro="RREF" titletext="Reduced Row-Echelon Form">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">RREF</span> <span class="titletext"> Reduced Row-Echelon Form</span>
+</h5>
+<p>A matrix is in <em class="term">reduced row-echelon form</em> if it meets all of the following conditions:
+<ol>
+<li> If there is a row where every entry is zero, then this row lies below any other row that contains a nonzero entry.
+</li>
+<li> The leftmost nonzero entry of a row is equal to 1.
+</li>
+<li> The leftmost nonzero entry of a row is the only nonzero entry in its column.
+</li>
+<li> Consider any two different leftmost nonzero entries, one located in row $i$, column $j$ and the other located in row $s$, column $t$.  If $s&gt;i$, then $t&gt;j$.
+</li>
+</ol>
+A row of only zero entries is called a <em class="term">zero row</em> and the leftmost nonzero entry of a nonzero row is a <em class="term">leading 1</em>.  A column containing a leading 1 will be called a <em class="term">pivot column</em>.  The number of nonzero rows will be denoted by $r$, which is also equal to the number of leading 1's and the number of pivot columns.</p>
+<p>The set of column indices for the pivot columns will be denoted by $D=\set{d_1,\,d_2,\,d_3,\,\ldots,\,d_r}$ where
+$d_1&lt;d_2&lt;d_3&lt;\cdots&lt;d_r$,
+while the columns that are not pivot columns will be denoted as $F=\set{f_1,\,f_2,\,f_3,\,\ldots,\,f_{n-r}}$ where
+$f_1&lt;f_2&lt;f_3&lt;\cdots&lt;f_{n-r}$.
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-RREF" class="context" title="Section RREF">(in context)</a></div>

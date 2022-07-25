@@ -1,0 +1,6 @@
+<div class="definition" id="definition-REM" acro="REM" titletext="Row-Equivalent Matrices">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">REM</span> <span class="titletext"> Row-Equivalent Matrices</span>
+</h5>
+<p>Two matrices, $A$ and $B$, are <em class="term">row-equivalent</em> if one can be obtained from the other by a sequence of row operations.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-REM" class="context" title="Section RREF">(in context)</a></div>

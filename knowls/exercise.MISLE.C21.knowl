@@ -1,0 +1,26 @@
+<div class="exercise" acro="MISLE.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MISLE.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Verify that $B$ is the inverse of $A$.
+\begin{align*}
+A&amp;=
+\begin{bmatrix}
+1 &amp; 1 &amp; -1 &amp; 2\\
+-2 &amp; -1 &amp; 2 &amp; -3\\
+1 &amp; 1 &amp; 0 &amp; 2\\
+-1 &amp; 2 &amp; 0 &amp; 2
+\end{bmatrix}
+&amp;
+B&amp;=
+\begin{bmatrix}
+4 &amp; 2 &amp; 0 &amp; -1\\
+8 &amp; 4 &amp; -1 &amp; -1\\
+-1 &amp; 0 &amp; 1 &amp; 0\\
+-6 &amp; -3 &amp; 1 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MISLE.C21.knowl">Solution</a></p></div>
+</div>

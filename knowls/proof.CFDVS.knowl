@@ -1,0 +1,7 @@
+<div class="proof" id="proof-CFDVS" acro="CFDVS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CFDVS</span>
+</h5>
+<p>Since $V$ has dimension $n$ we can find a basis of $V$ of size $n$ (<a class="knowl" acro="D" type="Definition" title="Dimension" knowl="./knowls/definition.D.knowl">Definition D</a>) which we will call $B$.  The linear transformation $\vectrepname{B}$ is an invertible linear transformation from $V$ to $\complex{n}$, so by <a class="knowl" acro="IVS" type="Definition" title="Isomorphic Vector Spaces" knowl="./knowls/definition.IVS.knowl">Definition IVS</a>, we have that $V$ and $\complex{n}$ are isomorphic.</p>
+
+</div>

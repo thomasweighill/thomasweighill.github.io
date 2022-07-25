@@ -1,0 +1,78 @@
+<div class="example" id="example-SABMI" acro="SABMI" titletext="Solutions to Archetype B with a matrix inverse">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SABMI</span> <span class="titletext">Solutions to Archetype B with a matrix inverse</span>
+</h5>
+<p><a knowl="./knowls/archetype.B.knowl">Archetype B</a> is the system of $m=3$ linear equations in $n=3$ variables,
+\begin{align*}
+-7x_1 -6 x_2 - 12x_3 &amp;=-33\\
+ 5x_1  + 5x_2 + 7x_3 &amp;=24\\
+ x_1 +4x_3 &amp;=5
+\end{align*}
+
+
+</p>
+<p>By <a class="knowl" acro="SLEMM" type="Theorem" title="Systems of Linear Equations as Matrix Multiplication" knowl="./knowls/theorem.SLEMM.knowl">Theorem SLEMM</a> we can represent this system of equations as
+\begin{equation*}
+A\vect{x}=\vect{b}
+\end{equation*}
+where
+\begin{align*}
+A=\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+&amp;&amp;\vect{x}=\colvector{x_1\\x_2\\x_3}&amp;&amp;\vect{b}=\colvector{-33\\24\\5}
+\end{align*}
+
+</p>
+<p>Now, entirely unmotivated, we define the $3\times 3$ matrix $B$,
+\begin{equation*}
+B=\begin{bmatrix}
+-10 &amp; -12 &amp; -9\\
+\frac{13}{2} &amp; 8 &amp; \frac{11}{2}\\
+\frac{5}{2} &amp; 3 &amp; \frac{5}{2}
+\end{bmatrix}\end{equation*}
+and note the remarkable fact that
+\begin{equation*}
+BA=\begin{bmatrix}
+-10 &amp; -12 &amp; -9\\
+\frac{13}{2} &amp; 8 &amp; \frac{11}{2}\\
+\frac{5}{2} &amp; 3 &amp; \frac{5}{2}
+\end{bmatrix}\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now apply this computation to the problem of solving the system of equations,
+\begin{align*}
+\vect{x}
+&amp;=I_3\vect{x}&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+&amp;=(BA)\vect{x}&amp;&amp;\text{Substitution}\\
+&amp;=B(A\vect{x})&amp;&amp;\knowl{./knowls/theorem.MMA.knowl}{\text{Theorem MMA}}\\
+&amp;=B\vect{b}&amp;&amp;\text{Substitution}\\
+\end{align*}
+
+</p>
+<p>So we have
+\begin{equation*}
+\vect{x}=B\vect{b}=
+\begin{bmatrix}
+-10 &amp; -12 &amp; -9\\
+\frac{13}{2} &amp; 8 &amp; \frac{11}{2}\\
+\frac{5}{2} &amp; 3 &amp; \frac{5}{2}
+\end{bmatrix}\colvector{-33\\24\\5}=
+\colvector{-3\\5\\2}
+\end{equation*}</p>
+<p>So with the help and assistance of $B$ we have been able to determine a solution to the system represented by $A\vect{x}=\vect{b}$ through judicious use of matrix multiplication.  We know by <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a> that since the coefficient matrix in this example is nonsingular, there would be a unique solution, no matter what the choice of $\vect{b}$.  The derivation above amplifies this result, since we were <em>forced</em> to conclude that $\vect{x}=B\vect{b}$ and the solution could not be anything else.  You should notice that this argument would hold for any particular choice of $\vect{b}$.</p>
+<div class="context"><a href="section-MISLE.html#example-SABMI" class="context" title="Section MISLE">(in
+context)</a></div>
+</div>

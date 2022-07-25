@@ -1,0 +1,7 @@
+<div class="proof" id="proof-HMVEI" acro="HMVEI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">HMVEI</span>
+</h5>
+<p>We are assuming the system is homogeneous, so <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a> says it is consistent.  Then the hypothesis that $n&gt;m$, together with <a class="knowl" acro="CMVEI" type="Theorem" title="Consistent, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.CMVEI.knowl">Theorem CMVEI</a>, gives infinitely many solutions.</p>
+
+</div>

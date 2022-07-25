@@ -1,0 +1,45 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-SS3', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">SS3</span> <span class="titletext">Solving Systems, Part 3</span>
+</h5>
+
+
+<p>We have deferred several mysteries and postponed some explanations of the terms Sage uses to describe certain objects.  This is because Sage is a comprehensive tool that you can use throughout your mathematical career, and Sage assumes you already know a lot of linear algebra.  Do not worry, you already know <em>some</em> linear algebra and will very soon will know a <em>whole lot more</em>.  And we know enough now that we can now solve one mystery.  How can we create <em>all</em> of the solutions to a linear system of equations when the solution set is infinite?</p>
+
+<p><a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a> described elements of a solution set as a single vector $\vect{c}$, plus linear combinations of vectors $\vectorlist{u}{n-r}$.  The vectors $\vect{u}_j$ are identical to the vectors $\vect{z}_j$ in the description of the spanning set of a null space in <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a>, suitably adjusted from the setting of a general system and the relevant homogeneous system for a null space.  We can get the single vector $\vect{c}$ from the <span class="code">.solve_right()</span> method of a coefficient matrix, once supplied with the vector of constants.  The vectors $\set{\vectorlist{z}{n-r}}$ come from Sage in the basis returned by the <span class="code">.right_kernel(basis='pivot')</span> method applied to the coefficient matrix.  <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a> amplifies and generalizes this discussion, making it clear that the choice of the particular particular solution $\vect{c}$ (Sage's choice, and your author's choice) is just a matter of convenience.</p>
+
+<p>In our previous discussion, we used the system from <a class="knowl" acro="ISSI" type="Example" title="Describing infinite solution sets, Archetype I" knowl="./knowls/example.ISSI.knowl">Example ISSI</a>.  We will use it one more time.</p>
+
+<br><br><div class="sage-SS3"><script type="text/x-sage">coeff = matrix(QQ, [[ 1,  4,  0, -1,  0,   7, -9],
+                    [ 2,  8, -1,  3,  9, -13,  7],
+                    [ 0,  0,  2, -3, -4,  12, -8],
+                    [-1, -4,  2,  4,  8, -31, 37]])
+n = coeff.ncols()
+const = vector(QQ, [3, 9, 1, 4])
+c = coeff.solve_right(const)
+c
+</script></div>
+
+<br><br><div class="sage-SS3"><script type="text/x-sage">N = coeff.right_kernel(basis='pivot').basis()
+z1 = N[0]
+z2 = N[1]
+z3 = N[2]
+z4 = N[3]
+soln = c + 2*z1 - 3*z2 - 5*z3 + 8*z4
+soln
+</script></div>
+
+<br><br><div class="sage-SS3"><script type="text/x-sage">check = sum([soln[i]*coeff.column(i) for i in range(n)])
+check
+</script></div>
+
+<br><br><div class="sage-SS3"><script type="text/x-sage">check == const
+</script></div>
+
+<p>So we can describe the infinitely many solutions with just five items: the specific solution, $\vect{c}$, and the four vectors of the spanning set.  Boom!</p>
+
+<p>As an exercise in understanding <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>, you might begin with <span class="code">soln</span> and add a linear combination of the spanning set for the null space to create another solution (which you can check).</p>
+
+<br><br><div class="sage-SS3 sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

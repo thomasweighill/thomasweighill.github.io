@@ -1,0 +1,8 @@
+<div class="property" id="property-DSAM" acro="DSAM" titletext="Distributivity across Scalar Addition, Matrices">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">DSAM</span> <span class="titletext">Distributivity across Scalar Addition, Matrices</span>
+</h5>
+<p>
+If $\alpha,\,\beta\in\complex{\null}$ and $A\in M_{mn}$, then
+$(\alpha+\beta)A=\alpha A+\beta A$.</p>
+</div>

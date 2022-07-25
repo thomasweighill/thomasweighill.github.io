@@ -1,0 +1,7 @@
+<div class="exercise" acro="PDM.M30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">PDM.M30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Construct an example to show that the following statement is not true for all square matrices $A$ and $B$ of the same size: $\detname{A+B}=\detname{A}+\detname{B}$.
+</p></div>
+</div>

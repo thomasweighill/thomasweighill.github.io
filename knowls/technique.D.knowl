@@ -1,0 +1,20 @@
+<div class="technique" id="technique-D" acro="D" titletext="Definitions">
+<h5 class="technique">
+<span class="type">Proof Technique</span> <span class="acro">D</span> <span class="titletext">Definitions</span>
+</h5>
+
+<p>A definition is a made-up term, used as a kind of shortcut for some typically more complicated idea.  For example, we say a whole number is <em class="term">even</em> as a shortcut for saying that when we divide the number by two we get a remainder of zero.  With a precise definition, we can answer certain questions unambiguously.  For example, did you ever wonder if zero was an even number?  Now the answer should be clear since we have a precise definition of what we mean by the term even.</p>
+
+<p>A single term might have several possible definitions.  For example, we could say that the whole number $n$ is even if there is some whole number $k$ such that $n=2k$.  We say this is an equivalent definition since it categorizes even numbers the same way our first definition does.</p>
+
+<p>Definitions are like two-way streets — we can use a definition to replace something rather complicated by its definition (if it fits) <em>and</em> we can replace a definition by its more complicated description.  A definition is usually written as some form of an implication, such as “If something-nice-happens, then <b>blatzo</b>.”  However, this also means that “If blatzo, then something-nice-happens,” even though this may not be formally stated.  This is what we mean when we say a definition is a two-way street — it is really two implications, going in opposite “directions.”</p>
+
+<p>Anybody (including you) can make up a definition, so long as it is unambiguous, but the real test of a definition's utility is whether or not it is useful for concisely describing interesting or frequent situations.  We will try to restrict our definitions to parts of speech that are nouns (e.g.  “matrix”) or adjectives (e.g.  “nonsingular” matrix), and so avoid definitions that are verbs or adverbs.  Therefore our definitions will describe an object (noun) or a property of an object (adjective).</p>
+
+<p>We will talk about theorems later (and especially equivalences).  For now, be sure not to confuse the notion of a definition with that of a theorem.</p>
+
+<p>In this book, we will display every new definition carefully set-off from the text, and the term being defined will be written thus: <em class="term">definition</em>.  Additionally, there is a full list of all the definitions, in order of their appearance located in the reference section of the same name (<a href="definitions.html" title="Definitions">Definitions</a>).  Definitions are critical to doing mathematics and proving theorems, so we have given you lots of ways to locate a definition should you forget its… uh, well, … definition.</p>
+
+<p>Can you formulate a precise definition for what it means for a number to be <em class="term">odd</em>?  (do not just say it is the opposite of even.  Act as if you do not have a definition for even yet.)  Can you formulate your definition a second, equivalent, way?  Can you employ your definition to test an odd and an even number for “odd-ness”?</p>
+
+</div>

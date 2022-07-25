@@ -1,0 +1,25 @@
+
+<ol>
+<li> Compute the inverse of the matrix below.
+\begin{equation*}
+\begin{bmatrix}
+-2 &amp; 3\\
+-3 &amp; 4
+\end{bmatrix}
+\end{equation*}
+</li>
+<li>Compute the inverse of the matrix below.
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 3 &amp; 1\\
+1 &amp; -2 &amp; -3\\
+-2 &amp; 4 &amp; 6
+\end{bmatrix}
+\end{equation*}
+</li>
+<li> Explain why <a class="knowl" acro="SS" type="Theorem" title="Socks and Shoes" knowl="./knowls/theorem.SS.knowl">Theorem SS</a> has the title it does. (Do not just state
+the theorem, explain the choice of the title making reference to the
+theorem itself.)
+</li>
+</ol>
+

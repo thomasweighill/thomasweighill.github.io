@@ -1,0 +1,175 @@
+<div class="proof" id="proof-FS" acro="FS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">FS</span>
+</h5>
+<p>First, $\nsp{A}=\nsp{B}$ since $B$ is row-equivalent to $A$ (<a class="knowl" acro="REMES" type="Theorem" title="Row-Equivalent Matrices represent Equivalent Systems" knowl="./knowls/theorem.REMES.knowl">Theorem REMES</a>).  The zero rows of $B$ represent equations that are always true in the homogeneous system $\homosystem{B}$, so the removal of these equations will not change the solution set.  Thus, in turn, $\nsp{B}=\nsp{C}$.</p>
+
+<p>Second, $\rsp{A}=\rsp{B}$ since $B$ is row-equivalent to $A$ (<a class="knowl" acro="REMRS" type="Theorem" title="Row-Equivalent Matrices have equal Row Spaces" knowl="./knowls/theorem.REMRS.knowl">Theorem REMRS</a>).  The zero rows of $B$ contribute nothing to the span that is the row space of $B$, so the removal of these rows will not change the row space.  Thus, in turn, $\rsp{B}=\rsp{C}$.</p>
+
+<p>Third, we prove the set equality $\csp{A}=\nsp{L}$ with <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>.  Begin by showing that $\csp{A}\subseteq\nsp{L}$.  Choose $\vect{y}\in\csp{A}\subseteq\complex{m}$.  Then there exists a vector $\vect{x}\in\complex{n}$ such that $A\vect{x}=\vect{y}$ (<a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>).  Then for $1\leq k\leq m-r$,
+\begin{align*}
+\vectorentry{L\vect{y}}{k}
+&amp;=\vectorentry{J\vect{y}}{r+k}
+&amp;&amp;\text{$L$ a submatrix of $J$}\\
+&amp;=\vectorentry{B\vect{x}}{r+k}
+&amp;&amp;\knowl{./knowls/theorem.PEEF.knowl}{\text{Theorem PEEF}}\\
+&amp;=\vectorentry{\zeromatrix\vect{x}}{k}
+&amp;&amp;\text{Zero matrix a submatrix of $B$}\\
+&amp;=\vectorentry{\zerovector}{k}
+&amp;&amp;\knowl{./knowls/theorem.MMZM.knowl}{\text{Theorem MMZM}}
+\end{align*}
+
+</p>
+
+<p>So, for all $1\leq k\leq m-r$, $\vectorentry{L\vect{y}}{k}=\vectorentry{\zerovector}{k}$.  So by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> we have $L\vect{y}=\zerovector$ and thus $\vect{y}\in\nsp{L}$.</p>
+
+<p>Now, show that $\nsp{L}\subseteq\csp{A}$.  Choose $\vect{y}\in\nsp{L}\subseteq\complex{m}$.  Form the vector $K\vect{y}\in\complex{r}$.  The linear system $\linearsystem{C}{K\vect{y}}$ is consistent since $C$ is in reduced row-echelon form and has no zero rows (<a class="knowl" acro="PEEF" type="Theorem" title="Properties of Extended Echelon Form" knowl="./knowls/theorem.PEEF.knowl">Theorem PEEF</a>).  Let $\vect{x}\in\complex{n}$ denote a solution to $\linearsystem{C}{K\vect{y}}$.</p>
+
+<p>Then for $1\leq j\leq r$,
+\begin{align*}
+\vectorentry{B\vect{x}}{j}
+&amp;=\vectorentry{C\vect{x}}{j}
+&amp;&amp;\text{$C$ a submatrix of $B$}\\
+&amp;=\vectorentry{K\vect{y}}{j}
+&amp;&amp;\text{$\vect{x}$ a solution to $\linearsystem{C}{K\vect{y}}$}\\
+&amp;=\vectorentry{J\vect{y}}{j}
+&amp;&amp;\text{$K$ a submatrix of $J$}\\
+\end{align*}
+
+</p>
+
+<p>And for $r+1\leq k\leq m$,
+\begin{align*}
+\vectorentry{B\vect{x}}{k}
+&amp;=\vectorentry{\zeromatrix\vect{x}}{k-r}
+&amp;&amp;\text{Zero matrix a submatrix of $B$}\\
+&amp;=\vectorentry{\zerovector}{k-r}
+&amp;&amp;\knowl{./knowls/theorem.MMZM.knowl}{\text{Theorem MMZM}}\\
+&amp;=\vectorentry{L\vect{y}}{k-r}
+&amp;&amp;\text{$\vect{y}$ in $\nsp{L}$}\\
+&amp;=\vectorentry{J\vect{y}}{k}
+&amp;&amp;\text{$L$ a submatrix of $J$}\\
+\end{align*}
+
+</p>
+
+<p>So for all $1\leq i\leq m$, $\vectorentry{B\vect{x}}{i}=\vectorentry{J\vect{y}}{i}$ and by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> we have $B\vect{x}=J\vect{y}$.  From <a class="knowl" acro="PEEF" type="Theorem" title="Properties of Extended Echelon Form" knowl="./knowls/theorem.PEEF.knowl">Theorem PEEF</a> we know then that $A\vect{x}=\vect{y}$, and therefore $\vect{y}\in\csp{A}$ (<a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>).  By <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a> we now have $\csp{A}=\nsp{L}$.</p>
+
+<p>Fourth, we prove the set equality $\lns{A}=\rsp{L}$ with <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a>.  Begin by showing that $\rsp{L}\subseteq\lns{A}$.  Choose $\vect{y}\in\rsp{L}\subseteq\complex{m}$.  Then there exists a vector $\vect{w}\in\complex{m-r}$ such that $\vect{y}=\transpose{L}\vect{w}$ (<a class="knowl" acro="RSM" type="Definition" title="Row Space of a Matrix" knowl="./knowls/definition.RSM.knowl">Definition RSM</a>, <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a>).  Then for $1\leq i\leq n$,
+\begin{align*}
+\vectorentry{\transpose{A}\vect{y}}{i}
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{A}}{ik}\vectorentry{\vect{y}}{k}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{A}}{ik}\vectorentry{\transpose{L}\vect{w}}{k}
+&amp;&amp;\text{Definition of $\vect{w}$}\\
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{A}}{ik}\sum_{\ell=1}^{m-r}\matrixentry{\transpose{L}}{k\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{k=1}^{m}\sum_{\ell=1}^{m-r}\matrixentry{\transpose{A}}{ik}\matrixentry{\transpose{L}}{k\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\sum_{\ell=1}^{m-r}\sum_{k=1}^{m}\matrixentry{\transpose{A}}{ik}\matrixentry{\transpose{L}}{k\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=\sum_{\ell=1}^{m-r}\left(\sum_{k=1}^{m}\matrixentry{\transpose{A}}{ik}\matrixentry{\transpose{L}}{k\ell}\right)\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\sum_{\ell=1}^{m-r}\left(\sum_{k=1}^{m}\matrixentry{\transpose{A}}{ik}\matrixentry{\transpose{J}}{k,r+\ell}\right)\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\text{$L$ a submatrix of $J$}\\
+&amp;=\sum_{\ell=1}^{m-r}\matrixentry{\transpose{A}\transpose{J}}{i,r+\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{\ell=1}^{m-r}\matrixentry{\transpose{\left(JA\right)}}{i,r+\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\sum_{\ell=1}^{m-r}\matrixentry{\transpose{B}}{i,r+\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/theorem.PEEF.knowl}{\text{Theorem PEEF}}\\
+&amp;=\sum_{\ell=1}^{m-r}0\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\text{Zero rows in $B$}\\
+&amp;=0
+&amp;&amp;\knowl{./knowls/property.ZCN.knowl}{\text{Property ZCN}}\\
+&amp;=\vectorentry{\zerovector}{i}
+&amp;&amp;\knowl{./knowls/definition.ZCV.knowl}{\text{Definition ZCV}}
+\end{align*}
+
+</p>
+
+<p>Since $\vectorentry{\transpose{A}\vect{y}}{i}=\vectorentry{\zerovector}{i}$ for $1\leq i\leq n$, <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> implies that $\transpose{A}\vect{y}=\zerovector$.  This means that $\vect{y}\in\nsp{\transpose{A}}$.</p>
+
+<p>Now, show that $\lns{A}\subseteq\rsp{L}$.  Choose $\vect{y}\in\lns{A}\subseteq\complex{m}$.  The matrix $J$ is nonsingular (<a class="knowl" acro="PEEF" type="Theorem" title="Properties of Extended Echelon Form" knowl="./knowls/theorem.PEEF.knowl">Theorem PEEF</a>), so $\transpose{J}$ is also nonsingular (<a class="knowl" acro="MIT" type="Theorem" title="Matrix Inverse of a Transpose" knowl="./knowls/theorem.MIT.knowl">Theorem MIT</a>) and therefore the linear system $\linearsystem{\transpose{J}}{\vect{y}}$ has a unique solution.  Denote this solution as $\vect{x}\in\complex{m}$.  We will need to work with two “halves” of $\vect{x}$, which we will denote as $\vect{z}$ and $\vect{w}$ with formal definitions given by
+\begin{align*}
+\vectorentry{z}{j}&amp;=\vectorentry{x}{i}
+&amp;
+&amp;1\leq j\leq r,
+&amp;&amp;&amp;
+\vectorentry{w}{k}&amp;=\vectorentry{x}{r+k}
+&amp;
+&amp;1\leq k\leq m-r
+\end{align*}
+
+</p>
+
+<p>Now, for $1\leq j\leq r$,
+\begin{align*}
+\vectorentry{\transpose{C}\vect{z}}{j}
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{C}}{jk}\vectorentry{\vect{z}}{k}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{C}}{jk}\vectorentry{\vect{z}}{k}+
+\sum_{\ell=1}^{m-r}\matrixentry{\zeromatrix}{j\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\knowl{./knowls/definition.ZM.knowl}{\text{Definition ZM}}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{B}}{jk}\vectorentry{\vect{z}}{k}+
+\sum_{\ell=1}^{m-r}\matrixentry{\transpose{B}}{j,r+\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\text{$C$, $\zeromatrix$ submatrices of $B$}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{B}}{jk}\vectorentry{\vect{x}}{k}+
+\sum_{\ell=1}^{m-r}\matrixentry{\transpose{B}}{j,r+\ell}\vectorentry{\vect{x}}{r+\ell}
+&amp;&amp;\text{Definitions of $\vect{z}$ and $\vect{w}$}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{B}}{jk}\vectorentry{\vect{x}}{k}+
+\sum_{k=r+1}^{m}\matrixentry{\transpose{B}}{jk}\vectorentry{\vect{x}}{k}
+&amp;&amp;\text{Re-index second sum}\\
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{B}}{jk}\vectorentry{\vect{x}}{k}
+&amp;&amp;\text{Combine sums}\\
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{\left(JA\right)}}{jk}\vectorentry{\vect{x}}{k}
+&amp;&amp;\knowl{./knowls/theorem.PEEF.knowl}{\text{Theorem PEEF}}\\
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{A}\transpose{J}}{jk}\vectorentry{\vect{x}}{k}
+&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\sum_{k=1}^{m}\sum_{\ell=1}^{m}\matrixentry{\transpose{A}}{j\ell}\matrixentry{\transpose{J}}{\ell k}\vectorentry{\vect{x}}{k}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{\ell=1}^{m}\sum_{k=1}^{m}\matrixentry{\transpose{A}}{j\ell}\matrixentry{\transpose{J}}{\ell k}\vectorentry{\vect{x}}{k}
+&amp;&amp;\knowl{./knowls/property.CACN.knowl}{\text{Property CACN}}\\
+&amp;=\sum_{\ell=1}^{m}\matrixentry{\transpose{A}}{j\ell}\left(\sum_{k=1}^{m}\matrixentry{\transpose{J}}{\ell k}\vectorentry{\vect{x}}{k}\right)
+&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=\sum_{\ell=1}^{m}\matrixentry{\transpose{A}}{j\ell}\vectorentry{\transpose{J}\vect{x}}{\ell}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{\ell=1}^{m}\matrixentry{\transpose{A}}{j\ell}\vectorentry{\vect{y}}{\ell}
+&amp;&amp;\text{Definition of $\vect{x}$}\\
+&amp;=\vectorentry{\transpose{A}\vect{y}}{j}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\vectorentry{\zerovector}{j}
+&amp;&amp;\text{$\vect{y}\in\lns{A}$}
+\end{align*}
+
+</p>
+
+<p>So, by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>, $\transpose{C}\vect{z}=\zerovector$ and the vector $\vect{z}$ gives us a linear combination of the columns of $\transpose{C}$ that equals the zero vector.  In other words, $\vect{z}$ gives a relation of linear dependence on the the rows of $C$.  However, the rows of $C$ are a linearly independent set by <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a>.  According to <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a> we must conclude that the entries of $\vect{z}$ are all zero, i.e.  $\vect{z}=\zerovector$.</p>
+
+<p>Now, for $1\leq i\leq m$, we have
+\begin{align*}
+\vectorentry{\vect{y}}{i}
+&amp;=\vectorentry{\transpose{J}\vect{x}}{i}
+&amp;&amp;\text{Definition of $\vect{x}$}\\
+&amp;=\sum_{k=1}^{m}\matrixentry{\transpose{J}}{ik}\vectorentry{\vect{x}}{k}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{J}}{ik}\vectorentry{\vect{x}}{k}+
+\sum_{k=r+1}^{m}\matrixentry{\transpose{J}}{ik}\vectorentry{\vect{x}}{k}
+&amp;&amp;\text{Break apart sum}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{J}}{ik}\vectorentry{\vect{z}}{k}+
+\sum_{k=r+1}^{m}\matrixentry{\transpose{J}}{ik}\vectorentry{\vect{w}}{k-r}
+&amp;&amp;\text{Definition of $\vect{z}$ and $\vect{w}$}\\
+&amp;=\sum_{k=1}^{r}\matrixentry{\transpose{J}}{ik}0+
+\sum_{\ell=1}^{m-r}\matrixentry{\transpose{J}}{i,r+\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\text{$\vect{z}=\zerovector$, re-index}\\
+&amp;=0+\sum_{\ell=1}^{m-r}\matrixentry{\transpose{L}}{i,\ell}\vectorentry{\vect{w}}{\ell}
+&amp;&amp;\text{$L$ a submatrix of $J$}\\
+&amp;=\vectorentry{\transpose{L}\vect{w}}{i}
+&amp;&amp;\knowl{./knowls/theorem.EMP.knowl}{\text{Theorem EMP}}\\
+\end{align*}
+
+</p>
+
+<p>So by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a>, $\vect{y}=\transpose{L}\vect{w}$.  The existence of $\vect{w}$ implies that $\vect{y}\in\rsp{L}$, and therefore $\lns{A}\subseteq\rsp{L}$.  So by <a class="knowl" acro="SE" type="Definition" title="Set Equality" knowl="./knowls/definition.SE.knowl">Definition SE</a> we have $\lns{A}=\rsp{L}$.</p>
+
+</div>

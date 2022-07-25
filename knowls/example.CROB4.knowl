@@ -1,0 +1,62 @@
+<div class="example" id="example-CROB4" acro="CROB4" titletext="Coordinatization relative to an orthonormal basis, $\complex{4}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CROB4</span> <span class="titletext">Coordinatization relative to an orthonormal basis, $\complex{4}$</span>
+</h5>
+<p>The set
+\begin{equation*}
+\set{\vect{x}_1,\,\vect{x}_2,\,\vect{x}_3,\,\vect{x}_4}=
+\set{
+\colvector{1+i\\1\\1-i\\i},\,
+\colvector{1+5i\\6+5i\\-7-i\\1-6i},\,
+\colvector{-7+34i\\-8-23i\\-10+22i\\30+13i},\,
+\colvector{-2-4i\\6+i\\4+3i\\6-i}
+}
+\end{equation*}
+was proposed, and partially verified, as an orthogonal set in <a class="knowl" acro="AOS" type="Example" title="An orthogonal set" knowl="./knowls/example.AOS.knowl">Example AOS</a>.  Let us scale each vector to norm 1, so as to form an orthonormal set in $\complex{4}$.  Then by <a class="knowl" acro="OSLI" type="Theorem" title="Orthogonal Sets are Linearly Independent" knowl="./knowls/theorem.OSLI.knowl">Theorem OSLI</a> the set will be linearly independent, and by <a class="knowl" acro="NME5" type="Theorem" title="Nonsingular Matrix Equivalences, Round 5" knowl="./knowls/theorem.NME5.knowl">Theorem NME5</a> the set will be a basis for $\complex{4}$.  So, once scaled to norm 1, the adjusted set will be an orthonormal basis of $\complex{4}$.  The norms are,
+\begin{align*}
+\norm{\vect{x}_1}=\sqrt{6}
+&amp;&amp;
+\norm{\vect{x}_2}=\sqrt{174}
+&amp;&amp;
+\norm{\vect{x}_3}=\sqrt{3451}
+&amp;&amp;
+\norm{\vect{x}_4}=\sqrt{119}
+\end{align*}
+
+</p>
+<p>So an orthonormal basis is
+\begin{align*}
+B&amp;=
+\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3,\,\vect{v}_4}\\
+&amp;=\set{
+\frac{1}{\sqrt{6}}\colvector{1+i\\1\\1-i\\i},\,
+\frac{1}{\sqrt{174}}\colvector{1+5i\\6+5i\\-7-i\\1-6i},\,
+\frac{1}{\sqrt{3451}}\colvector{-7+34i\\-8-23i\\-10+22i\\30+13i},\,
+\frac{1}{\sqrt{119}}\colvector{-2-4i\\6+i\\4+3i\\6-i}
+}
+\end{align*}
+
+</p>
+<p>Now, to illustrate <a class="knowl" acro="COB" type="Theorem" title="Coordinates and Orthonormal Bases" knowl="./knowls/theorem.COB.knowl">Theorem COB</a>, choose any vector from $\complex{4}$, say $\vect{w}=\colvector{2\\-3\\1\\4}$, and compute
+\begin{align*}
+\innerproduct{\vect{v}_1}{\vect{w}}&amp;=\frac{-5i}{\sqrt{6}}&amp;
+\innerproduct{\vect{v}_2}{\vect{w}}&amp;=\frac{-19+30i}{\sqrt{174}}\\
+\innerproduct{\vect{v}_3}{\vect{w}}&amp;=\frac{120-211i}{\sqrt{3451}}&amp;
+\innerproduct{\vect{v}_4}{\vect{w}}&amp;=\frac{6+12i}{\sqrt{119}}
+\end{align*}
+
+</p>
+<p>Then <a class="knowl" acro="COB" type="Theorem" title="Coordinates and Orthonormal Bases" knowl="./knowls/theorem.COB.knowl">Theorem COB</a> guarantees that
+\begin{align*}
+\colvector{2\\-3\\1\\4}&amp;=
+\frac{-5i}{\sqrt{6}}\left(\frac{1}{\sqrt{6}}\colvector{1+i\\1\\1-i\\i}\right)+
+\frac{-19+30i}{\sqrt{174}}\left(\frac{1}{\sqrt{174}}\colvector{1+5i\\6+5i\\-7-i\\1-6i}\right)\\
+&amp;\quad\quad+
+\frac{120-211i}{\sqrt{3451}}\left(\frac{1}{\sqrt{3451}}\colvector{-7+34i\\-8-23i\\-10+22i\\30+13i}\right)+
+\frac{6+12i}{\sqrt{119}}\left(\frac{1}{\sqrt{119}}\colvector{-2-4i\\6+i\\4+3i\\6-i}\right)
+\end{align*}
+
+as you might want to check (if you have unlimited patience).</p>
+<div class="context"><a href="section-B.html#example-CROB4" class="context" title="Section B">(in
+context)</a></div>
+</div>

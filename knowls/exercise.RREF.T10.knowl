@@ -1,0 +1,8 @@
+<div class="exercise" acro="RREF.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that each of the three row operations (<a class="knowl" acro="RO" type="Definition" title="Row Operations" knowl="./knowls/definition.RO.knowl">Definition RO</a>) is reversible.  More precisely, if the matrix $B$ is obtained from $A$ by application of a single row operation, show that there is a single row operation that will transform $B$ back into $A$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.T10.knowl">Solution</a></p></div>
+</div>

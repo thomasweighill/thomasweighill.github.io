@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DED" acro="DED" titletext="Distinct Eigenvalues implies Diagonalizable">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DED</span><span class="titletext"> Distinct Eigenvalues implies Diagonalizable</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix of size $n$ with $n$ distinct eigenvalues.  Then $A$ is diagonalizable.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DED.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#theorem-DED" class="context" title="Section SD">(in context)</a></div>

@@ -1,0 +1,7 @@
+<div class="property" id="property-AICN" acro="AICN" titletext="Additive Inverse, Complex Numbers">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">AICN</span> <span class="titletext">Additive Inverse, Complex Numbers</span>
+</h5>
+<p>
+For every $\alpha\in\complexes$ there exists $-\alpha\in\complexes$ so that $\alpha+\left(-\alpha\right)=0$.</p>
+</div>

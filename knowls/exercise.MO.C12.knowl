@@ -1,0 +1,14 @@
+<div class="exercise" acro="MO.C12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.C12</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Solve the given matrix equation for $\alpha$, or explain why no solution exists:
+\begin{equation*}
+\alpha\begin{bmatrix} 1 &amp; 3 &amp; 4 \\ 2 &amp; 1 &amp; -1 \end{bmatrix} +
+\begin{bmatrix} 4 &amp; 3 &amp; -6 \\ 0 &amp; 1 &amp; 1 \end{bmatrix}
+=
+\begin{bmatrix} 7 &amp; 12 &amp; 6 \\ 6 &amp; 4 &amp; -2 \end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MO.C12.knowl">Solution</a></p></div>
+</div>

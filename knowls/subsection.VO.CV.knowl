@@ -1,0 +1,17 @@
+<div class="subsection" id="subsection-CV" acro="CV" titletext="Column Vectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">CV</span> <span class="titletext">Column Vectors</span>
+</h4>
+<div class="definition" id="definition-VSCV" acro="VSCV" titletext="Vector Space of Column Vectors">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">VSCV</span> <span class="titletext"> Vector Space of Column Vectors</span>
+</h5>
+<p>The vector space $\complex{m}$ is the set of all column vectors (<a class="knowl" acro="CV" type="Definition" title="Column Vector" knowl="./knowls/definition.CV.knowl">Definition CV</a>) of size $m$ with entries from the set of complex numbers, $\complex{\null}$.</p>
+</div>
+<p>When a set similar to this is defined using only column vectors where all the entries are from the real numbers, it is written as ${\mathbb R}^m$ and is known as <em class="term">Euclidean $m$-space</em>.</p>
+<p>The term <em class="term">vector</em> is used in a variety of different ways.  We have defined it as an ordered list written vertically.  It could simply be an ordered list of numbers, and perhaps written as $\left\langle 2,\,3,\,-1,\,6\right\rangle$.  Or it could be interpreted as a point in $m$ dimensions, such as $\left(3,\,4,\,-2\right)$ representing a point in three dimensions relative to $x$, $y$ and $z$ axes.  With an interpretation as a point, we can construct an arrow from the origin to the point which is consistent with the notion that a vector has direction and magnitude.</p>
+<p>All of these ideas can be shown to be related and equivalent, so keep that in mind as you connect the ideas of this course with ideas from other disciplines.  For now, we will stick with the idea that a vector is just a list of numbers, in some particular order.</p>
+<div class="sage" id="sage-VSCV" acro="VSCV" titletext="Vector Spaces of Column Vectors"><h5 class="sage">
+<a knowl="./knowls/sage.VSCV.knowl"><span class="type">Sage</span> <span class="acro">VSCV</span></a> <span class="titletext">Vector Spaces of Column Vectors</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VO.html#subsection-CV" class="context" title="Section VO">(in context)</a></div>

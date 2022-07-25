@@ -1,0 +1,22 @@
+<div class="solution" acro="ILT.C28">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">ILT.C28</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Since $T$ is given by matrix multiplication, $\krn{T} = \nsp{A}$.  We have
+\begin{align*}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; 1\\
+2 &amp; -1 &amp; 1 &amp; 0\\
+1 &amp; 2 &amp; -1 &amp; -2 \\
+1 &amp; 3 &amp; 2 &amp; 1
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \leading{1}
+\end{bmatrix}
+\end{align*}
+
+The nullspace of $A$ is $\set{\zerovector}$, so the kernel of $T$ is also trivial:  $\krn{T} = \set{\zerovector}$.
+</div>

@@ -1,0 +1,17 @@
+
+<ol>
+<li>The matrix below is nonsingular.  What can you now say about its columns?
+\begin{equation*}
+A= \begin{bmatrix}
+-3 &amp; 0 &amp; 1\\
+1 &amp; 2 &amp; 1\\
+5 &amp; 1 &amp; 6
+\end{bmatrix}
+\end{equation*}
+</li>
+<li>Write the vector $\vect{w}=\colvector{6\\6\\15}$ as a linear combination of the columns of the matrix $A$ above.  How many ways are there to answer this question?
+</li>
+<li>Why is an orthonormal basis desirable?
+</li>
+</ol>
+

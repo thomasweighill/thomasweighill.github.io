@@ -1,0 +1,42 @@
+<div class="proof" id="proof-VRLT" acro="VRLT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">VRLT</span>
+</h5>
+<p>We will take a novel approach in this proof.  We will construct another function, which we will easily determine is a linear transformation, and then show that this second function is really $\vectrepname{B}$ in disguise.  Here we go.</p>
+
+<p>Since $B$ is a basis, we can define $\ltdefn{T}{V}{\complex{n}}$ to be the unique linear transformation such that $\lt{T}{\vect{v}_i}=\vect{e}_i$, $1\leq i\leq n$, as guaranteed by <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a>, and where the $\vect{e}_i$ are the standard unit vectors (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>).  Then suppose for an arbitrary $\vect{w}\in V$ we have,
+\begin{align*}
+\vectorentry{\lt{T}{\vect{w}}}{i}
+&amp;=
+\vectorentry{\lt{T}{\sum_{j=1}^{n}\vectorentry{\vectrep{B}{\vect{w}}}{j}\vect{v}_j}}{i}
+&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}\\
+&amp;=
+\vectorentry{\sum_{j=1}^{n}\vectorentry{\vectrep{B}{\vect{w}}}{j}\lt{T}{\vect{v}_j}}{i}
+&amp;&amp;\knowl{./knowls/theorem.LTLC.knowl}{\text{Theorem LTLC}}\\
+&amp;=
+\vectorentry{\sum_{j=1}^{n}\vectorentry{\vectrep{B}{\vect{w}}}{j}\vect{e}_j}{i}\\
+&amp;=
+\sum_{j=1}^{n}\vectorentry{\vectorentry{\vectrep{B}{\vect{w}}}{j}\vect{e}_j}{i}
+&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;=
+\sum_{j=1}^{n}\vectorentry{\vectrep{B}{\vect{w}}}{j}\vectorentry{\vect{e}_j}{i}
+&amp;&amp;\knowl{./knowls/definition.CVSM.knowl}{\text{Definition CVSM}}\\
+&amp;=
+\vectorentry{\vectrep{B}{\vect{w}}}{i}\vectorentry{\vect{e}_i}{i}
++
+\sum_{\substack{j=1\\j\neq i}}^{n}\vectorentry{\vectrep{B}{\vect{w}}}{j}\vectorentry{\vect{e}_j}{i}
+&amp;&amp;\knowl{./knowls/property.CC.knowl}{\text{Property CC}}\\
+&amp;=
+\vectorentry{\vectrep{B}{\vect{w}}}{i}\left(1\right)
++
+\sum_{\substack{j=1\\j\neq i}}^{n}\vectorentry{\vectrep{B}{\vect{w}}}{j}\left(0\right)
+&amp;&amp;\knowl{./knowls/definition.SUV.knowl}{\text{Definition SUV}}\\
+&amp;=
+\vectorentry{\vectrep{B}{\vect{w}}}{i}
+\end{align*}
+
+</p>
+
+<p>As column vectors, <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> implies that $\lt{T}{\vect{w}}=\vectrep{B}{\vect{w}}$.  Since $\vect{w}$ was an arbitrary element of $V$, as functions $T=\vectrepname{B}$.  Now, since $T$ is known to be a linear transformation, it must follow that $\vectrepname{B}$ is also a linear transformation.</p>
+
+</div>

@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-CSMS" acro="CSMS" titletext="Column Space of a Matrix is a Subspace">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CSMS</span><span class="titletext"> Column Space of a Matrix is a Subspace</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then $\csp{A}$ is a subspace of $\complex{m}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CSMS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#theorem-CSMS" class="context" title="Section S">(in context)</a></div>

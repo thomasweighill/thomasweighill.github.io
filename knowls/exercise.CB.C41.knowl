@@ -1,0 +1,21 @@
+<div class="exercise" acro="CB.C41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CB.C41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $S_{22}$ be the vector space of $2\times 2$ symmetric matrices.  Find a basis for $S_{22}$ composed of eigenvectors of the linear transformation $\ltdefn{Q}{S_{22}}{S_{22}}$.
+\begin{equation*}
+\lt{Q}{
+\begin{bmatrix}
+ a  &amp;  b\\
+ b  &amp;  c
+\end{bmatrix}
+}
+=
+\begin{bmatrix}
+ 25a + 18b + 30c  &amp;  -16a - 11b - 20c\\
+ -16a - 11b - 20c  &amp;  -11a - 9b - 12c
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CB.C41.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,7 @@
+<div class="proof" id="proof-NME3" acro="NME3" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NME3</span>
+</h5>
+<p>We can update our list of equivalences for nonsingular matrices (<a class="knowl" acro="NME2" type="Theorem" title="Nonsingular Matrix Equivalences, Round 2" knowl="./knowls/theorem.NME2.knowl">Theorem NME2</a>) with the equivalent condition from <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a>.</p>
+
+</div>

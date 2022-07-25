@@ -1,0 +1,17 @@
+<div class="exercise" acro="LI.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LI.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3,\,\vect{v}_4}$ is a linearly independent set in $\complex{35}$.  Prove that
+\begin{equation*}
+\set{
+\vect{v}_1,\,
+\vect{v}_1+\vect{v}_2,\,
+\vect{v}_1+\vect{v}_2+\vect{v}_3,\,
+\vect{v}_1+\vect{v}_2+\vect{v}_3+\vect{v}_4
+}
+\end{equation*}
+is a linearly independent set.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LI.T20.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,7 @@
+<div class="proof" id="proof-LNSMS" acro="LNSMS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">LNSMS</span>
+</h5>
+<p><a class="knowl" acro="LNS" type="Definition" title="Left Null Space" knowl="./knowls/definition.LNS.knowl">Definition LNS</a> says $\lns{A}=\nsp{\transpose{A}}$, so the left null space is a null space, and every null space is a subspace by <a class="knowl" acro="NSMS" type="Theorem" title="Null Space of a Matrix is a Subspace" knowl="./knowls/theorem.NSMS.knowl">Theorem NSMS</a>.  Done.</p>
+
+</div>

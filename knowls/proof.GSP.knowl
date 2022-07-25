@@ -1,0 +1,95 @@
+<div class="proof" id="proof-GSP" acro="GSP" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">GSP</span>
+</h5>
+<p>We will prove the result by using induction on $p$ (<a class="knowl" acro="I" type="Proof Technique" title="Induction" knowl="./knowls/technique.I.knowl">Proof Technique I</a>).  To begin, we prove that $T$ has the desired properties when $p=1$.  In this case $\vect{u}_1=\vect{v}_1$ and $T=\set{\vect{u}_1}=\set{\vect{v}_1}=S$.  Because $S$ and $T$ are equal, $\spn{S}=\spn{T}$.  Equally trivial, $T$ is an orthogonal set.  If $\vect{u}_1=\zerovector$, then $S$ would be a linearly dependent set, a contradiction.</p>
+
+<p>Suppose that the theorem is true for any set of $p-1$ linearly independent vectors.  Let $S=\set{\vectorlist{v}{p}}$ be a linearly independent set of $p$ vectors.  Then $S^\prime=\set{\vectorlist{v}{p-1}}$ is also linearly independent.  So we can apply the theorem to $S^\prime$ and construct the vectors $T^\prime=\set{\vectorlist{u}{p-1}}$.  $T^\prime$ is therefore an orthogonal set of nonzero vectors and $\spn{S^\prime}=\spn{T^\prime}$.  Define
+\begin{equation*}
+\vect{u}_p=\vect{v}_p
+-\frac{\innerproduct{\vect{u}_1}{\vect{v}_p}}{\innerproduct{\vect{u}_1}{\vect{u}_1}}\vect{u}_1
+-\frac{\innerproduct{\vect{u}_2}{\vect{v}_p}}{\innerproduct{\vect{u}_2}{\vect{u}_2}}\vect{u}_2
+-\frac{\innerproduct{\vect{u}_3}{\vect{v}_p}}{\innerproduct{\vect{u}_3}{\vect{u}_3}}\vect{u}_3
+-\cdots
+-\frac{\innerproduct{\vect{u}_{p-1}}{\vect{v}_p}}{\innerproduct{\vect{u}_{p-1}}{\vect{u}_{p-1}}}\vect{u}_{p-1}
+\end{equation*}
+and let $T=T^\prime\cup\set{\vect{u}_p}$.  We need to now show that $T$ has several properties by building on what we know about $T^\prime$.  But first notice that the above equation has no problems with the denominators ($\innerproduct{\vect{u}_i}{\vect{u}_i}$) being zero, since the $\vect{u}_i$ are from $T^\prime$, which is composed of nonzero vectors.</p>
+
+<p>We show that $\spn{T}=\spn{S}$, by first establishing that $\spn{T}\subseteq\spn{S}$.  Suppose $\vect{x}\in\spn{T}$, so
+\begin{equation*}
+\vect{x}=\lincombo{a}{u}{p}
+\end{equation*}
+The term $a_p\vect{u}_p$ is a linear combination of vectors from $T^\prime$ and the vector $\vect{v}_p$, while the remaining terms are a linear combination of vectors from $T^\prime$.  Since $\spn{T^\prime}=\spn{S^\prime}$, any term that is a multiple of a vector from $T^\prime$ can be rewritten as a linear combination of vectors from $S^\prime$.  The remaining term $a_p\vect{v}_p$ is a multiple of a vector in $S$.  So we see that $\vect{x}$ can be rewritten as a linear combination of vectors from $S$, i.e.  $\vect{x}\in\spn{S}$.</p>
+
+<p>To show that $\spn{S}\subseteq\spn{T}$, begin with $\vect{y}\in\spn{S}$, so
+\begin{equation*}
+\vect{y}=\lincombo{a}{v}{p}
+\end{equation*}
+</p>
+
+<p>Rearrange our defining equation for $\vect{u}_p$ by solving for $\vect{v}_p$.  Then the term $a_p\vect{v}_p$ is a multiple of a linear combination of elements of $T$.  The remaining terms are a linear combination of $\vectorlist{v}{p-1}$, hence an element of $\spn{S^\prime}=\spn{T^\prime}$.  Thus these remaining terms can be written as a linear combination of the vectors in $T^\prime$.   So $\vect{y}$ is a linear combination of vectors from $T$, i.e.  $\vect{y}\in\spn{T}$.</p>
+
+<p>The elements of $T^\prime$ are nonzero, but what about $\vect{u}_p$?  Suppose to the contrary that $\vect{u}_p=\zerovector$,
+\begin{align*}
+\zerovector&amp;=\vect{u}_p=\vect{v}_p
+-\frac{\innerproduct{\vect{u}_1}{\vect{v}_p}}{\innerproduct{\vect{u}_1}{\vect{u}_1}}\vect{u}_1
+-\frac{\innerproduct{\vect{u}_2}{\vect{v}_p}}{\innerproduct{\vect{u}_2}{\vect{u}_2}}\vect{u}_2
+-\frac{\innerproduct{\vect{u}_3}{\vect{v}_p}}{\innerproduct{\vect{u}_3}{\vect{u}_3}}\vect{u}_3
+-\cdots
+-\frac{\innerproduct{\vect{u}_{p-1}}{\vect{v}_p}}{\innerproduct{\vect{u}_{p-1}}{\vect{u}_{p-1}}}\vect{u}_{p-1}\\
+&amp;\vect{v}_p=
+ \frac{\innerproduct{\vect{u}_1}{\vect{v}_p}}{\innerproduct{\vect{u}_1}{\vect{u}_1}}\vect{u}_1
++\frac{\innerproduct{\vect{u}_2}{\vect{v}_p}}{\innerproduct{\vect{u}_2}{\vect{u}_2}}\vect{u}_2
++\frac{\innerproduct{\vect{u}_3}{\vect{v}_p}}{\innerproduct{\vect{u}_3}{\vect{u}_3}}\vect{u}_3
++\cdots
++\frac{\innerproduct{\vect{u}_{p-1}}{\vect{v}_p}}{\innerproduct{\vect{u}_{p-1}}{\vect{u}_{p-1}}}\vect{u}_{p-1}
+\end{align*}
+</p>
+
+<p>Since $\spn{S^\prime}=\spn{T^\prime}$ we can write the vectors $\vectorlist{u}{p-1}$ on the right side of this equation in terms of the vectors $\vectorlist{v}{p-1}$ and we then have the vector $\vect{v}_p$ expressed as a linear combination of the other $p-1$ vectors in $S$, implying that $S$ is a linearly dependent set (<a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a>), contrary to our lone hypothesis about $S$.</p>
+
+<p>Finally, it is a simple matter to establish that $T$ is an orthogonal set, though it will not appear so simple looking.  Think about your objects as you work through the following — what is a vector and what is a scalar.  Since $T^\prime$ is an orthogonal set by induction, most pairs of elements in $T$ are already known to be orthogonal.  We just need to test “new” inner products, between $\vect{u}_p$ and $\vect{u}_i$, for $1\leq i\leq p-1$.  Here we go, using summation notation,
+\begin{align*}
+\innerproduct{\vect{u}_i}{\vect{u}_p}&amp;=
+\innerproduct{\vect{u}_i}{
+\vect{v}_p-\sum_{k=1}^{p-1}\frac{\innerproduct{\vect{u}_k}{\vect{v}_p}}{\innerproduct{\vect{u}_k}{\vect{u}_k}}\vect{u}_k
+}
+\\
+&amp;=
+\innerproduct{\vect{u}_i}{\vect{v}_p}
+-
+\innerproduct{\vect{u}_i}{
+\sum_{k=1}^{p-1}\frac{\innerproduct{\vect{u}_k}{\vect{v}_p}}{\innerproduct{\vect{u}_k}{\vect{u}_k}}\vect{u}_k
+}
+&amp;&amp;\knowl{./knowls/theorem.IPVA.knowl}{\text{Theorem IPVA}}\\
+&amp;=
+\innerproduct{\vect{u}_i}{\vect{v}_p}
+-
+\sum_{k=1}^{p-1}\innerproduct{\vect{u}_i}{
+\frac{\innerproduct{\vect{u}_k}{\vect{v}_p}}{\innerproduct{\vect{u}_k}{\vect{u}_k}}\vect{u}_k
+}
+&amp;&amp;\knowl{./knowls/theorem.IPVA.knowl}{\text{Theorem IPVA}}\\
+&amp;=
+\innerproduct{\vect{u}_i}{\vect{v}_p}
+-
+\sum_{k=1}^{p-1}\frac{\innerproduct{\vect{u}_k}{\vect{v}_p}}{\innerproduct{\vect{u}_k}{\vect{u}_k}}\innerproduct{\vect{u}_i}{\vect{u}_k}
+&amp;&amp;\knowl{./knowls/theorem.IPSM.knowl}{\text{Theorem IPSM}}\\
+&amp;=
+\innerproduct{\vect{u}_i}{\vect{v}_p}
+-
+\frac{\innerproduct{\vect{u}_i}{\vect{v}_p}}{\innerproduct{\vect{u}_i}{\vect{u}_i}}\innerproduct{\vect{u}_i}{\vect{u}_i}
+-
+\sum_{k\neq i}\frac{\innerproduct{\vect{u}_k}{\vect{v}_p}}{\innerproduct{\vect{u}_k}{\vect{u}_k}}(0)
+&amp;&amp;\text{Induction Hypothesis}\\
+&amp;=
+\innerproduct{\vect{u}_i}{\vect{v}_p}
+-
+\innerproduct{\vect{u}_i}{\vect{v}_p}
+-
+\sum_{k\neq i}0\\
+&amp;=0
+\end{align*}
+
+</p>
+
+</div>

@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-SMEZV" acro="SMEZV" titletext="Scalar Multiplication Equals the Zero Vector">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SMEZV</span><span class="titletext"> Scalar Multiplication Equals the Zero Vector</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space and $\alpha\in\complex{\null}$.  If $\alpha\vect{u}=\zerovector$, then either $\alpha=0$ or $\vect{u}=\zerovector$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SMEZV.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VS.html#theorem-SMEZV" class="context" title="Section VS">(in context)</a></div>

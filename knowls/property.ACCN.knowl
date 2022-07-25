@@ -1,0 +1,7 @@
+<div class="property" id="property-ACCN" acro="ACCN" titletext="Additive Closure, Complex Numbers">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">ACCN</span> <span class="titletext">Additive Closure, Complex Numbers</span>
+</h5>
+<p>
+If $\alpha,\beta\in\complexes$, then $\alpha+\beta\in\complexes$.</p>
+</div>

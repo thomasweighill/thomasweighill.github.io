@@ -1,0 +1,14 @@
+<div class="solution" acro="NM.C30">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">NM.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The matrix row-reduces to
+\begin{equation*}
+\begin{bmatrix}
+\leading{1}&amp;  0 &amp;  0 &amp;  0\\
+0 &amp; \leading{1} &amp;  0 &amp;  0\\
+0 &amp;  0 &amp; \leading{1} &amp;  0\\
+0 &amp;  0 &amp;  0 &amp; \leading{1}
+\end{bmatrix}
+\end{equation*}
+which is the $4\times 4$ identity matrix.  By <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> the original matrix must be nonsingular.
+</div>

@@ -1,0 +1,30 @@
+
+<ol>
+<li>Compute the inverse of the coefficient matrix of the system of
+equations below and use the inverse to solve the system.
+\begin{align*}
+4x_1 + 10x_2 &amp;= 12\\
+2x_1 + 6x_2 &amp;= 4
+\end{align*}
+
+</li>
+<li> In the reading questions for <a href="section-MISLE.html" title="Matrix Inverses and Systems of Linear Equations">Section MISLE</a> you were asked to find the  inverse of the $3\times 3$ matrix below.
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 3 &amp; 1\\
+1 &amp; -2 &amp; -3\\
+-2 &amp; 4 &amp; 6
+\end{bmatrix}
+\end{equation*}
+Because the matrix was not nonsingular, you had no theorems at that point that would allow you to compute the inverse.  Explain why you now know that the inverse does not exist (which is different than not being able to compute it) by quoting the relevant theorem's acronym.
+</li>
+<li> Is the matrix $A$ unitary?  Why?
+\begin{equation*}
+A=\begin{bmatrix}
+\frac{1}{\sqrt{22}}\left(4+2i\right) &amp; \frac{1}{\sqrt{374}}\left(5+3i\right) \\
+\frac{1}{\sqrt{22}}\left(-1-i\right) &amp; \frac{1}{\sqrt{374}}\left(12+14i\right) \\
+\end{bmatrix}
+\end{equation*}
+</li>
+</ol>
+

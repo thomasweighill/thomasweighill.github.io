@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-MVSLD" acro="MVSLD" titletext="More Vectors than Size implies Linear Dependence">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MVSLD</span><span class="titletext"> More Vectors than Size implies Linear Dependence</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{u}{n}}\subseteq\complex{m}$ and $n&gt;m$. Then $S$ is a linearly dependent set.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MVSLD.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LI.html#theorem-MVSLD" class="context" title="Section LI">(in context)</a></div>

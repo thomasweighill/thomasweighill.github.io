@@ -1,0 +1,6 @@
+<div class="definition" id="definition-SE" acro="SE" titletext="Set Equality">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">SE</span> <span class="titletext"> Set Equality</span>
+</h5>
+<p>Two sets, $S$ and $T$, are equal, if $S\subseteq T$ and $T\subseteq S$.  In this case, we write $S=T$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SET.html#definition-SE" class="context" title="Section SET">(in context)</a></div>

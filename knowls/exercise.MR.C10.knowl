@@ -1,0 +1,7 @@
+<div class="exercise" acro="MR.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="KVMR" type="Example" title="Kernel via matrix representation" knowl="./knowls/example.KVMR.knowl">Example KVMR</a> concludes with a basis for the kernel of the linear transformation $T$.  Compute the value of $T$ for each of these two basis vectors.  Did you get what you expected?
+</p></div>
+</div>

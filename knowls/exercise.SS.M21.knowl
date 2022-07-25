@@ -1,0 +1,8 @@
+<div class="exercise" acro="SS.M21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SS.M21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In the spirit of <a class="knowl" acro="SCAD" type="Example" title="Span of the columns of Archetype D" knowl="./knowls/example.SCAD.knowl">Example SCAD</a>, begin with the four columns of the coefficient matrix of <a knowl="./knowls/archetype.C.knowl">Archetype C</a>, and use these columns in a span construction to build the set $S$.  Argue that $S$ can be expressed as the span of just three of the columns of the coefficient matrix (saying exactly which three) and in the spirit of <a knowl="./knowls/exercise.SS.M20.knowl">Exercise SS.M20</a> argue that no one of these three vectors can be removed and still have a span construction create $S$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SS.M21.knowl">Solution</a></p></div>
+</div>

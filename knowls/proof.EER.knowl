@@ -1,0 +1,27 @@
+<div class="proof" id="proof-EER" acro="EER" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">EER</span>
+</h5>
+<p>(⇒) Assume that $\vect{v}\in V$ is an eigenvector of $T$ for the eigenvalue $\lambda$.  Then
+\begin{align*}
+\matrixrep{T}{B}{B}\vectrep{B}{\vect{v}}
+&amp;=\vectrep{B}{\lt{T}{\vect{v}}}&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\vectrep{B}{\lambda\vect{v}}&amp;&amp;\knowl{./knowls/definition.EELT.knowl}{\text{Definition EELT}}\\
+&amp;=\lambda\vectrep{B}{\vect{v}}&amp;&amp;\knowl{./knowls/theorem.VRLT.knowl}{\text{Theorem VRLT}}
+\end{align*}
+
+which by <a class="knowl" acro="EEM" type="Definition" title="Eigenvalues and Eigenvectors of a Matrix" knowl="./knowls/definition.EEM.knowl">Definition EEM</a> says that $\vectrep{B}{\vect{v}}$ is an eigenvector of the matrix $\matrixrep{T}{B}{B}$ for the eigenvalue $\lambda$.</p>
+
+<p>(⇐)  Assume that $\vectrep{B}{\vect{v}}$ is an eigenvector of $\matrixrep{T}{B}{B}$ for the eigenvalue $\lambda$.  Then
+\begin{align*}
+\lt{T}{\vect{v}}
+&amp;=\vectrepinv{B}{\vectrep{B}{\lt{T}{\vect{v}}}}&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\vectrepinv{B}{\matrixrep{T}{B}{B}\vectrep{B}{\vect{v}}}&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\vectrepinv{B}{\lambda\vectrep{B}{\vect{v}}}&amp;&amp;\knowl{./knowls/definition.EEM.knowl}{\text{Definition EEM}}\\
+&amp;=\lambda\vectrepinv{B}{\vectrep{B}{\vect{v}}}&amp;&amp;\knowl{./knowls/theorem.ILTLT.knowl}{\text{Theorem ILTLT}}\\
+&amp;=\lambda\vect{v}&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}
+\end{align*}
+
+which by <a class="knowl" acro="EELT" type="Definition" title="Eigenvalue and Eigenvector of a Linear Transformation" knowl="./knowls/definition.EELT.knowl">Definition EELT</a> says $\vect{v}$ is an eigenvector of $T$ for the eigenvalue $\lambda$.</p>
+
+</div>

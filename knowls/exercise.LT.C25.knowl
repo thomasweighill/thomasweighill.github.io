@@ -1,0 +1,13 @@
+<div class="exercise" acro="LT.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LT.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Define the linear transformation
+\begin{equation*}
+\ltdefn{T}{\complex{3}}{\complex{2}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3}}=\colvector{2x_1-x_2+5x_3\\-4x_1+2x_2-10x_3}
+\end{equation*}
+Verify that $T$ is a linear transformation.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LT.C25.knowl">Solution</a></p></div>
+</div>

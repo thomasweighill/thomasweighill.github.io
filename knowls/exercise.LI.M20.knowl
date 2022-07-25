@@ -1,0 +1,18 @@
+<div class="exercise" acro="LI.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LI.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $S=\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3}$ is a set of three vectors from $\complex{873}$.  Prove that the set
+\begin{align*}
+T&amp;=
+\set{
+2\vect{v}_1+3\vect{v}_2+\vect{v}_3,\,
+\vect{v}_1-\vect{v}_2-2\vect{v}_3,\,
+2\vect{v}_1+\vect{v}_2-\vect{v}_3
+}
+\end{align*}
+
+is linearly dependent.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LI.M20.knowl">Solution</a></p></div>
+</div>

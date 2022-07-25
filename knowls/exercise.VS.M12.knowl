@@ -1,0 +1,12 @@
+<div class="exercise" acro="VS.M12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VS.M12</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $V$ be the set $\complex{2}$ with the usual scalar multiplication, but with vector addition defined by
+\begin{equation*}
+\colvector{x\\y} + \colvector{z\\w} = \colvector{y + w \\ x + z}
+\end{equation*}
+Determine whether or not $V$ is a vector space with these operations.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VS.M12.knowl">Solution</a></p></div>
+</div>

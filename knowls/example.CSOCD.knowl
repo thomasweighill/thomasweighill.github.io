@@ -1,0 +1,37 @@
+<div class="example" id="example-CSOCD" acro="CSOCD" titletext="Column space, original columns, Archetype D">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CSOCD</span> <span class="titletext">Column space, original columns, Archetype D</span>
+</h5>
+<p>Let us determine a compact expression for the entire column space of the coefficient matrix of the system of equations that is <a knowl="./knowls/archetype.D.knowl">Archetype D</a>.  Notice that in <a class="knowl" acro="CSMCS" type="Example" title="Column space of a matrix and consistent systems" knowl="./knowls/example.CSMCS.knowl">Example CSMCS</a> we were only determining if individual vectors were in the column space or not, now we are describing the entire column space.</p>
+<p>To start with the application of <a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a>, call the coefficient matrix $A$ and row-reduce it to reduced row-echelon form $B$,
+\begin{align*}A&amp;=\begin{bmatrix}
+2 &amp; 1 &amp; 7 &amp; -7\\
+-3 &amp; 4 &amp;  -5 &amp; -6\\
+1 &amp; 1 &amp; 4 &amp;  -5
+\end{bmatrix}
+&amp;B&amp;=\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 3 &amp; -2\\
+0 &amp; \leading{1} &amp; 1 &amp;  -3\\
+0 &amp; 0 &amp; 0 &amp;  0
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Since columns 1 and 2 are pivot columns, $D=\{1,\,2\}$.  To construct a set that spans $\csp{A}$, just grab the columns of $A$ with indices in $D$, so
+\begin{equation*}
+\csp{A}=\spn{\set{\colvector{2\\-3\\1},\,\colvector{1\\4\\1}}}.
+\end{equation*}
+That's it.</p>
+<p>In <a class="knowl" acro="CSMCS" type="Example" title="Column space of a matrix and consistent systems" knowl="./knowls/example.CSMCS.knowl">Example CSMCS</a> we determined that the vector
+\begin{equation*}
+\vect{c}=\colvector{2\\3\\2}
+\end{equation*}
+<em>was not</em> in the column space of $A$.  Try to write $\vect{c}$ as a linear combination of the first two columns of $A$.  What happens?</p>
+<p>Also in <a class="knowl" acro="CSMCS" type="Example" title="Column space of a matrix and consistent systems" knowl="./knowls/example.CSMCS.knowl">Example CSMCS</a> we determined that the vector
+\begin{equation*}
+\vect{b}=\colvector{8\\-12\\4}
+\end{equation*}
+<em>was</em> in the column space of $A$.  Try to write $\vect{b}$ as a linear combination of the first two columns of $A$.  What happens?  Did you find a unique solution to this question?  Hmmmm.</p>
+<div class="context"><a href="section-CRS.html#example-CSOCD" class="context" title="Section CRS">(in
+context)</a></div>
+</div>

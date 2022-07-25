@@ -1,0 +1,7 @@
+<div class="exercise" acro="MO.T37">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.T37</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Prove that the decomposition in <a knowl="./knowls/exercise.MO.T36.knowl">Exercise MO.T36</a> is unique (see <a class="knowl" acro="U" type="Proof Technique" title="Uniqueness" knowl="./knowls/technique.U.knowl">Proof Technique U</a>).  (Hint: a proof can turn on <a knowl="./knowls/exercise.MO.T31.knowl">Exercise MO.T31</a>.)
+</p></div>
+</div>

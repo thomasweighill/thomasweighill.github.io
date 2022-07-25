@@ -1,0 +1,94 @@
+<div class="example" id="example-FS2" acro="FS2" titletext="Four subsets, no. 2">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">FS2</span> <span class="titletext">Four subsets, no. 2</span>
+</h5>
+<p>Now let us return to the matrix $A$ that we used to motivate this section in <a class="knowl" acro="CSANS" type="Example" title="Column space as null space" knowl="./knowls/example.CSANS.knowl">Example CSANS</a>,
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 10 &amp; 0 &amp; 3 &amp; 8 &amp; 7 \\
+ -16 &amp; -1 &amp; -4 &amp; -10 &amp; -13 \\
+ -6 &amp; 1 &amp; -3 &amp; -6 &amp; -6 \\
+ 0 &amp; 2 &amp; -2 &amp; -3 &amp; -2 \\
+ 3 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+ -1 &amp; -1 &amp; 1 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{equation*}</p>
+<p>We form the matrix $M$ by adjoining the $6\times 6$ identity matrix $I_6$,
+\begin{equation*}
+M=
+\begin{bmatrix}
+ 10 &amp; 0 &amp; 3 &amp; 8 &amp; 7 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+ -16 &amp; -1 &amp; -4 &amp; -10 &amp; -13 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+ -6 &amp; 1 &amp; -3 &amp; -6 &amp; -6 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 2 &amp; -2 &amp; -3 &amp; -2 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+ 3 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+ -1 &amp; -1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{equation*}
+and row-reduce to obtain $N$
+\begin{equation*}
+N=
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; -1 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; -3 &amp; 0 &amp; 0 &amp; -2 &amp; 3 &amp; -3 &amp; 3 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 3 &amp; 3 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2 &amp; 0 &amp; 0 &amp; -2 &amp; 1 &amp; -4 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 3 &amp; -1 &amp; 3 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2 &amp; 1 &amp; 1 &amp; -1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>To find the four subsets for $A$, we only need identify the $4\times 5$ matrix $C$ and the $2\times 6$ matrix $L$,
+\begin{align*}
+C&amp;=
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 2\\
+ 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; -3\\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 1\\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2
+\end{bmatrix}
+&amp;
+L&amp;=
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 3 &amp; -1 &amp; 3 &amp; 1 \\
+ 0 &amp; \leading{1} &amp; -2 &amp; 1 &amp; 1 &amp; -1
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Then we apply <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a>,
+\begin{align*}
+\nsp{A}&amp;=\nsp{C}=
+\spn{\set{
+\colvector{-2\\3\\-1\\2\\1}
+}}
+&amp;&amp;\knowl{./knowls/theorem.BNS.knowl}{\text{Theorem BNS}}\\
+\rsp{A}&amp;=\rsp{C}=
+\spn{\set{
+\colvector{1 \\ 0 \\ 0 \\ 0 \\ 2},\,
+\colvector{0 \\ 1 \\ 0 \\ 0 \\ -3},\,
+\colvector{0 \\ 0 \\ 1 \\ 0 \\ 1},\,
+\colvector{0 \\ 0 \\ 0 \\ 1 \\ -2}
+}}
+&amp;&amp;\knowl{./knowls/theorem.BRS.knowl}{\text{Theorem BRS}}\\
+\csp{A}&amp;=\nsp{L}=
+\spn{\set{
+\colvector{-3\\2\\1\\0\\0\\0},\,
+\colvector{1\\-1\\0\\1\\0\\0},\,
+\colvector{-3\\-1\\0\\0\\1\\0},\,
+\colvector{-1\\1\\0\\0\\0\\1}
+}}
+&amp;&amp;\knowl{./knowls/theorem.BNS.knowl}{\text{Theorem BNS}}\\
+\lns{A}&amp;=\rsp{L}=
+\spn{\set{
+\colvector{1 \\ 0 \\ 3 \\ -1 \\ 3 \\ 1},\,
+\colvector{0 \\ 1 \\ -2 \\ 1 \\ 1 \\ -1}
+}}
+&amp;&amp;\knowl{./knowls/theorem.BRS.knowl}{\text{Theorem BRS}}
+\end{align*}
+
+</p>
+<div class="context"><a href="section-FS.html#example-FS2" class="context" title="Section FS">(in
+context)</a></div>
+</div>

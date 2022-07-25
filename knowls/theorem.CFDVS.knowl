@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-CFDVS" acro="CFDVS" titletext="Characterization of Finite Dimensional Vector Spaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">CFDVS</span><span class="titletext"> Characterization of Finite Dimensional Vector Spaces</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space with dimension $n$.  Then $V$ is isomorphic to $\complex{n}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.CFDVS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VR.html#theorem-CFDVS" class="context" title="Section VR">(in context)</a></div>

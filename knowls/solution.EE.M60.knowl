@@ -1,0 +1,35 @@
+<div class="solution" acro="EE.M60">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Form the matrix $C$ whose columns are $\vect{x},\,A\vect{x},\,A^2\vect{x},\,A^3\vect{x},\,A^4\vect{x},\,A^5\vect{x}$ and row-reduce the matrix,
+\begin{equation*}
+\begin{bmatrix}
+ 0 &amp; 6 &amp; 32 &amp; 102 &amp; 320 &amp; 966 \\
+ 8 &amp; 10 &amp; 24 &amp; 58 &amp; 168 &amp; 490 \\
+ 2 &amp; 12 &amp; 50 &amp; 156 &amp; 482 &amp; 1452 \\
+ 1 &amp; -5 &amp; -47 &amp; -149 &amp; -479 &amp; -1445 \\
+ 2 &amp; 12 &amp; 50 &amp; 156 &amp; 482 &amp; 1452
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; -3 &amp; -9 &amp; -30 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 3 &amp; 10 &amp; 30 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+The simplest possible relation of linear dependence on the columns of $C$ comes from using scalars $\alpha_4=1$ and $\alpha_5=\alpha_6=0$ for the free variables in a solution to $\homosystem{C}$.  The remainder of this solution is $\alpha_1=3$, $\alpha_2=-1$, $\alpha_3=-3$.  This solution gives rise to the polynomial
+\begin{equation*}
+p(x)=3-x-3x^2+x^3=(x-3)(x-1)(x+1)
+\end{equation*}
+which then has the property that $p(A)\vect{x}=\zerovector$.<br><br>
+No matter how you choose to order the factors of $p(x)$, the value of $k$ (in the language of <a class="knowl" acro="EMHE" type="Theorem" title="Every Matrix Has an Eigenvalue" knowl="./knowls/theorem.EMHE.knowl">Theorem EMHE</a> and <a class="knowl" acro="CAEHW" type="Example" title="Computing an eigenvalue the hard way" knowl="./knowls/example.CAEHW.knowl">Example CAEHW</a>) is $k=2$.  For each of the  three possibilities, we list the resulting eigenvector and the associated eigenvalue:
+\begin{align*}
+(C-3I_5)(C-I_5)\vect{z}&amp;=\colvector{8\\8\\8\\-24\\8}&amp;\lambda&amp;=-1\\
+(C-3I_5)(C+I_5)\vect{z}&amp;=\colvector{20\\-20\\20\\-40\\20}&amp;\lambda&amp;=1\\
+(C+I_5)(C-I_5)\vect{z}&amp;=\colvector{32\\16\\48\\-48\\48}&amp;\lambda&amp;=3
+\end{align*}
+
+Note that each of these eigenvectors can be simplified by an appropriate scalar multiple, but we have shown here the actual vector obtained by the product specified in the theorem.
+</div>

@@ -1,0 +1,41 @@
+<div class="example" id="example-CNS1" acro="CNS1" titletext="Computing a null space, no. 1">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CNS1</span> <span class="titletext">Computing a null space, no. 1</span>
+</h5>
+<p>Let us compute the null space of
+\begin{equation*}
+A=\begin{bmatrix}
+ 2 &amp; -1 &amp; 7 &amp; -3 &amp; -8 \\
+ 1 &amp; 0 &amp; 2 &amp; 4 &amp; 9 \\
+ 2 &amp; 2 &amp; -2 &amp; -1 &amp; 8
+\end{bmatrix}
+\end{equation*}
+which we write as $\nsp{A}$.   Translating <a class="knowl" acro="NSM" type="Definition" title="Null Space of a Matrix" knowl="./knowls/definition.NSM.knowl">Definition NSM</a>, we simply desire to solve the homogeneous system $\homosystem{A}$.  So we row-reduce the augmented matrix to obtain
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 2 &amp; 0 &amp; 1 &amp; 0 \\
+ 0 &amp; \leading{1} &amp; -3 &amp; 0 &amp; 4 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; 2 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>The variables (of the homogeneous system) $x_3$ and $x_5$ are free (since columns 1, 2 and 4 are pivot columns), so we arrange the equations represented by the matrix in reduced row-echelon form to
+\begin{align*}
+x_1&amp;=-2x_3-x_5\\
+x_2&amp;=3x_3-4x_5\\
+x_4&amp;=-2x_5\\
+\end{align*}
+
+</p>
+<p>So we can write the infinite solution set as sets using column vectors,
+\begin{equation*}
+\nsp{A}=\setparts{
+\colvector{-2x_3-x_5\\3x_3-4x_5\\x_3\\-2x_5\\x_5}
+}{
+x_3,\,x_5\in\complex{\null}
+}
+\end{equation*}
+</p>
+<div class="context"><a href="section-HSE.html#example-CNS1" class="context" title="Section HSE">(in
+context)</a></div>
+</div>

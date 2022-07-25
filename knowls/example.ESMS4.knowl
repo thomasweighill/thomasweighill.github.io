@@ -1,0 +1,76 @@
+<div class="example" id="example-ESMS4" acro="ESMS4" titletext="Eigenvalues, symmetric matrix of size 4">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ESMS4</span> <span class="titletext">Eigenvalues, symmetric matrix of size 4</span>
+</h5>
+<p>Consider the matrix
+\begin{equation*}
+C=
+\begin{bmatrix}
+1 &amp;  0 &amp;  1 &amp;  1\\
+0 &amp;  1 &amp;  1 &amp;  1\\
+1 &amp;  1 &amp;  1 &amp;  0\\
+1 &amp;  1 &amp;  0 &amp;  1
+\end{bmatrix}
+\end{equation*}
+then
+\begin{equation*}
+\charpoly{C}{x}=-3+4x+2x^2-4x^3+x^4=(x-3)(x-1)^2(x+1)
+\end{equation*}
+So the eigenvalues are $\lambda=3,\,1,\,-1$ with algebraic multiplicities $\algmult{C}{3}=1$, $\algmult{C}{1}=2$ and $\algmult{C}{-1}=1$.</p>
+<p>Computing eigenvectors,
+\begin{align*}
+\lambda&amp;=3&amp;C- 3I_4&amp;=
+\begin{bmatrix}
+-2 &amp; 0 &amp; 1 &amp; 1\\
+0 &amp; -2 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; -2 &amp; 0\\
+1 &amp; 1 &amp; 0 &amp; -2
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; -1\\
+0 &amp; \leading{1} &amp; 0 &amp; -1\\
+0 &amp; 0 &amp; \leading{1} &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{C}{3}&amp;=\nsp{C-3I_4}
+=\spn{\set{\colvector{1\\1\\1\\1}}}\\
+\lambda&amp;=1&amp;C-1I_4&amp;=
+\begin{bmatrix}
+0 &amp; 0 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 0 &amp; 0\\
+1 &amp; 1 &amp; 0 &amp; 0
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{C}{1}&amp;=\nsp{C-1I_4}
+=\spn{\set{\colvector{-1\\1\\0\\0},\,\colvector{0\\0\\-1\\1}}}\\
+\lambda&amp;=-1&amp;C+1I_4&amp;=
+\begin{bmatrix}
+2 &amp; 0 &amp; 1 &amp; 1\\
+0 &amp; 2 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 2 &amp; 0\\
+1 &amp; 1 &amp; 0 &amp; 2
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; \leading{1} &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; \leading{1} &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{C}{-1}&amp;=\nsp{C+1I_4}
+=\spn{\set{\colvector{-1\\-1\\1\\1}}}\\
+\end{align*}
+
+</p>
+<p>So the eigenspace dimensions yield geometric multiplicities $\geomult{C}{3}=1$, $\geomult{C}{1}=2$ and $\geomult{C}{-1}=1$, the same as for the algebraic multiplicities.  This example is of interest because $A$ is a symmetric matrix, and will be the subject of <a class="knowl" acro="HMRE" type="Theorem" title="Hermitian Matrices have Real Eigenvalues" knowl="./knowls/theorem.HMRE.knowl">Theorem HMRE</a>.</p>
+<div class="context"><a href="section-EE.html#example-ESMS4" class="context" title="Section EE">(in
+context)</a></div>
+</div>

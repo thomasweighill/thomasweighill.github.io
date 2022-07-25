@@ -1,0 +1,10 @@
+<div class="exercise" acro="MM.C33">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MM.C33</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>For the matrix
+$A = \begin{bmatrix} 0 &amp; 1 &amp; 2 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 \end{bmatrix}$,
+find $A^2$, $A^3$, $A^4$.  Find a general formula for $A^n$ for any positive integer $n$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MM.C33.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,17 @@
+<div class="example" id="example-NM" acro="NM" titletext="A nonsingular matrix, Archetype B">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NM</span> <span class="titletext">A nonsingular matrix, Archetype B</span>
+</h5>
+<p><a class="knowl" acro="HUSAB" type="Example" title="Homogeneous, unique solution, Archetype B" knowl="./knowls/example.HUSAB.knowl">Example HUSAB</a> shows that the coefficient matrix derived from <a knowl="./knowls/archetype.B.knowl">Archetype B</a>, specifically the $3\times 3$ matrix,
+\begin{equation*}
+B=\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+\end{equation*}
+is a nonsingular matrix since the homogeneous system, $\homosystem{B}$, has only the trivial solution.
+</p>
+<div class="context"><a href="section-NM.html#example-NM" class="context" title="Section NM">(in
+context)</a></div>
+</div>

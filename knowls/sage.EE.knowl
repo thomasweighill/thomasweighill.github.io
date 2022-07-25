@@ -1,0 +1,29 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-EE', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">EE</span> <span class="titletext">Eigenvalues and Eigenvectors</span>
+</h5>
+
+
+<p>Sage can compute eigenvalues and eigenvectors of matrices.  We will see shortly that there are subtleties involved with using these routines, but here is a quick example to begin with.  These two commands should be enough to get you started with most of the early examples in this section.  See the end of the section for more comprehensive advice.</p>
+
+<p>For a square matrix, the methods <span class="code">.eigenvalues()</span> and <span class="code">.eigenvectors_right()</span> will produce what you expect, though the format of the eigenvector output requires some explanation.  Here is <a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a> from the start of this chapter.</p>
+
+<br><br><div class="sage-EE"><script type="text/x-sage">A = matrix(QQ, [[ 204,   98, -26, -10],
+                [-280, -134,  36,  14],
+                [ 716,  348, -90, -36],
+                [-472, -232,  60,  28]])
+A.eigenvalues()
+</script></div>
+
+<br><br><div class="sage-EE"><script type="text/x-sage">A.eigenvectors_right()
+</script></div>
+
+<p>The three eigenvalues we know are included in the output of <span class="code">eigenvalues()</span>, though for some reason the eigenvalue $\lambda=2$ shows up twice.</p>
+
+<p>The output of the <span class="code">eigenvectors_right()</span> method is a list of triples.  Each triple begins with an eigenvalue.  This is followed by a list of eigenvectors for that eigenvalue.  Notice the first eigenvector is identical to the one we described in <a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a>.  The eigenvector for $\lambda=0$ is different, but is just a scalar multiple of the one from <a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a>.  For $\lambda=2$, we now get two eigenvectors, and neither looks like either of the ones from <a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a>.  (Hint: try writing the eigenvectors from the example as linear combinations of the two in the Sage output.)  An explanation of the the third part of each triple (an integer) will have to wait, though it can be optionally surpressed if desired.</p>
+
+One cautionary note:  The word <span class="code">lambda</span> has a special purpose <p>in Sage, so do not try to use this as a name for your eigenvalues.</p>
+
+<br><br><div class="sage-EE sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

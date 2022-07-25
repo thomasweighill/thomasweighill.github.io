@@ -1,0 +1,16 @@
+<div class="theorem" id="theorem-TSS" acro="TSS" titletext="Testing Subsets for Subspaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">TSS</span><span class="titletext"> Testing Subsets for Subspaces</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space and $W$ is a subset of $V$, $W\subseteq V$.  Endow $W$ with the same operations as $V$.  Then $W$ is a subspace if and only if three conditions are met
+<ol>
+<li> $W$ is nonempty, $W\neq\emptyset$.
+</li>
+<li> If $\vect{x}\in W$ and $\vect{y}\in W$, then $\vect{x}+\vect{y}\in W$.
+</li>
+<li> If $\alpha\in\complex{\null}$ and $\vect{x}\in W$, then $\alpha\vect{x}\in W$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.TSS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#theorem-TSS" class="context" title="Section S">(in context)</a></div>

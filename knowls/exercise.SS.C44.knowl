@@ -1,0 +1,13 @@
+<div class="exercise" acro="SS.C44">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SS.C44</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $S=\set{
+\colvector{-1 \\ 2 \\ 1},\,
+\colvector{ 3 \\ 1 \\ 2},\,
+\colvector{ 1 \\ 5 \\ 4},\,
+\colvector{-6 \\ 5 \\ 1}
+}$. Let $W=\spn{S}$ and let $\vect{y}=\colvector{-5\\3\\0}$.  Is $\vect{y}\in W$?  If so, provide an explicit linear combination that demonstrates this.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SS.C44.knowl">Solution</a></p></div>
+</div>

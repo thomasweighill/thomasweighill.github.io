@@ -1,0 +1,31 @@
+<div class="solution" acro="CB.C21">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">CB.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Apply <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>,
+\begin{align*}
+&amp;\vectrep{D}{\lt{Q}{\begin{bmatrix}5&amp;-3\\-3&amp;-2\end{bmatrix}}}
+=\vectrep{D}{19+14x-2x^2-28x^3}\\
+&amp;=\vectrep{D}{(-39)(2+x-2x^2+3x^3)+62(-1-2x^2+3x^3)+(-53)(-3-x+x^3)+(-44)(-x^2+x^3)}\\
+&amp;=\colvector{-39\\62\\-53\\-44}\\
+&amp;\vectrep{D}{\lt{Q}{\begin{bmatrix}2&amp;-3\\-3&amp;0\end{bmatrix}}}
+=\vectrep{D}{16+9x-7x^2-14x^3}\\
+&amp;=\vectrep{D}{(-23)(2+x-2x^2+3x^3)+(34)(-1-2x^2+3x^3)+(-32)(-3-x+x^3)+(-15)(-x^2+x^3)}\\
+&amp;=\colvector{-23\\34\\-32\\-15}\\
+&amp;\vectrep{D}{\lt{Q}{\begin{bmatrix}1&amp;2\\2&amp;4\end{bmatrix}}}
+=\vectrep{D}{25+9x+3x^2+4x^3}\\
+&amp;=\vectrep{D}{(14)(2+x-2x^2+3x^3)+(-12)(-1-2x^2+3x^3)+5(-3-x+x^3)+(-7)(-x^2+x^3)}\\
+&amp;=\colvector{14\\-12\\5\\-7}\\
+\end{align*}
+
+These three vectors are the columns of the matrix representation,
+\begin{equation*}
+\matrixrep{Q}{B}{D}=
+\begin{bmatrix}
+ -39 &amp; -23 &amp; 14 \\
+ 62 &amp; 34 &amp; -12 \\
+ -53 &amp; -32 &amp; 5 \\
+ -44 &amp; -15 &amp; -7
+\end{bmatrix}
+\end{equation*}
+which coincides with the result obtained in <a class="knowl" acro="MRCM" type="Example" title="Matrix representations and change-of-basis matrices" knowl="./knowls/example.MRCM.knowl">Example MRCM</a>.
+</div>

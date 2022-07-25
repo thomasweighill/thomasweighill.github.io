@@ -1,0 +1,7 @@
+<div class="proof" id="proof-NME8" acro="NME8" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NME8</span>
+</h5>
+<p>The equivalence of the first and last statements is <a class="knowl" acro="SMZE" type="Theorem" title="Singular Matrices have Zero Eigenvalues" knowl="./knowls/theorem.SMZE.knowl">Theorem SMZE</a>, reformulated by negating each statement in the equivalence.  So we are able to improve on <a class="knowl" acro="NME7" type="Theorem" title="Nonsingular Matrix Equivalences, Round 7" knowl="./knowls/theorem.NME7.knowl">Theorem NME7</a> with this addition.</p>
+
+</div>

@@ -1,0 +1,6 @@
+<div class="definition" id="definition-CNE" acro="CNE" titletext="Complex Number Equality">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">CNE</span> <span class="titletext"> Complex Number Equality</span>
+</h5>
+<p>The complex numbers $\alpha=a+bi$ and $\beta=c+di$ are <em class="term">equal</em>, denoted $\alpha=\beta$, if $a=c$ and $b=d$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#definition-CNE" class="context" title="Section CNO">(in context)</a></div>

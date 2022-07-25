@@ -1,0 +1,76 @@
+<div class="example" id="example-LIP4" acro="LIP4" titletext="Linear independence in $P_4$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LIP4</span> <span class="titletext">Linear independence in $P_4$</span>
+</h5>
+<p>In the vector space of polynomials with degree 4 or less, $P_4$ (<a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>) consider the set $S$ below
+\begin{align*}
+\set{
+2x^4+3x^3+2x^2-x+10,\,
+-x^4-2x^3+x^2+5x-8,\,
+2x^4+x^3+10x^2+17x-2
+}
+\end{align*}
+
+</p>
+<p>Is this set of vectors linearly independent or dependent?  Consider that
+\begin{align*}
+&amp;3\left(2x^4+3x^3+2x^2-x+10\right)
++4\left(-x^4-2x^3+x^2+5x-8\right)\\
+&amp;\quad +(-1)\left(2x^4+x^3+10x^2+17x-2\right)
+=0x^4+0x^3+0x^2+0x+0=\zerovector
+\end{align*}
+
+This is a nontrivial relation of linear dependence (<a class="knowl" acro="RLD" type="Definition" title="Relation of Linear Dependence" knowl="./knowls/definition.RLD.knowl">Definition RLD</a>) on the set $S$ and so convinces us that $S$ is linearly dependent (<a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>).</p>
+<p>Now, I hear you say, “Where did <em>those</em> scalars come from?”  Do not worry about that right now, just be sure you understand why the above explanation is sufficient to prove that $S$ is linearly dependent.  The remainder of the example will demonstrate how we might find these scalars if they had not been provided so readily.</p>
+<p>Let us look at another set of vectors (polynomials) from $P_4$.  Let
+\begin{align*}
+T&amp;=\left\{
+3x^4-2x^3+4x^2+6x-1,\,
+-3x^4+1x^3+0x^2+4x+2,\right.\\
+&amp;\quad \left.4x^4+5x^3-2x^2+3x+1,\,
+2x^4-7x^3+4x^2+2x+1\right\}
+\end{align*}
+
+</p>
+<p>Suppose we have a relation of linear dependence on this set,
+\begin{align*}
+\zerovector&amp;=0x^4+0x^3+0x^2+0x+0\\
+&amp;=\alpha_1\left(3x^4-2x^3+4x^2+6x-1\right)+\alpha_2\left(-3x^4+1x^3+0x^2+4x+2\right)\\
+&amp;\quad +\alpha_3\left(4x^4+5x^3-2x^2+3x+1\right)+\alpha_4\left(2x^4-7x^3+4x^2+2x+1\right)
+\end{align*}
+
+</p>
+<p>Using our definitions of vector addition and scalar multiplication in $P_4$ (<a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>), we arrive at,
+\begin{align*}
+&amp;0x^4+0x^3+0x^2+0x+0=\\
+&amp;\quad\left(3\alpha_1-3\alpha_2+4\alpha_3+2\alpha_4\right)x^4 + \left(-2\alpha_1+\alpha_2+5\alpha_3-7\alpha_4\right)x^3 +\ \\
+&amp;\quad\left(4\alpha_1-2\alpha_3+4\alpha_4\right)x^2+\left(6\alpha_1+4\alpha_2+3\alpha_3+2\alpha_4\right)x + \left(-\alpha_1+2\alpha_2+\alpha_3+\alpha_4\right)
+\end{align*}
+
+</p>
+<p>Equating coefficients, we arrive at the homogeneous system of equations,
+\begin{align*}
+3\alpha_1-3\alpha_2+4\alpha_3+2\alpha_4&amp;=0\\
+-2\alpha_1+\alpha_2+5\alpha_3-7\alpha_4&amp;=0\\
+4\alpha_1-2\alpha_3+4\alpha_4&amp;=0\\
+6\alpha_1+4\alpha_2+3\alpha_3+2\alpha_4&amp;=0\\
+-\alpha_1+2\alpha_2+\alpha_3+\alpha_4&amp;=0
+\end{align*}
+
+</p>
+<p>We form the coefficient matrix of this homogeneous system of equations and row-reduce to find
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \leading{1}\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We expected the system to be consistent (<a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>) and so can compute $n-r=4-4=0$ and <a class="knowl" acro="CSRN" type="Theorem" title="Consistent Systems, $r$ and $n$" knowl="./knowls/theorem.CSRN.knowl">Theorem CSRN</a> tells us that the solution is unique.  Since this is a homogeneous system, this unique solution is the trivial solution (<a class="knowl" acro="TSHSE" type="Definition" title="Trivial Solution to Homogeneous Systems of Equations" knowl="./knowls/definition.TSHSE.knowl">Definition TSHSE</a>),  $\alpha_1=0$, $\alpha_2=0$, $\alpha_3=0$, $\alpha_4=0$.  So by <a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a> the set $T$ is linearly independent.</p>
+<p>A few observations.  If we had discovered infinitely many solutions, then we could have used one of the nontrivial solutions to provide a linear combination in the manner we used to show that $S$ was linearly dependent.  It is important to realize that it is not interesting that we can create a relation of linear dependence with zero scalars — we can <em>always</em> do that — but for $T$, this is the <em>only</em> way to create a relation of linear dependence.  It was no accident that we arrived at a homogeneous system of equations in this example, it is related to our use of the zero vector in defining a relation of linear dependence.  It is easy to present a convincing statement that a set is linearly dependent (just exhibit a nontrivial relation of linear dependence) but a convincing statement of linear independence requires demonstrating that there is no relation of linear dependence other than the trivial one.  Notice how we relied on theorems from <a href="chapter-SLE.html" title="Systems of Linear Equations">Chapter SLE</a> to provide this demonstration.  Whew!  There is a lot going on in this example.  Spend some time with it, we will be waiting patiently right here when you get back.</p>
+<div class="context"><a href="section-LISS.html#example-LIP4" class="context" title="Section LISS">(in
+context)</a></div>
+</div>

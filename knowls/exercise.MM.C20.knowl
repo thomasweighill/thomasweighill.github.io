@@ -1,0 +1,22 @@
+<div class="exercise" acro="MM.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MM.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Compute the product of the two matrices below, $AB$.  Do this using the definitions of the matrix-vector product (<a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a>) and the definition of matrix multiplication (<a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>).
+\begin{align*}
+A=
+\begin{bmatrix}
+2&amp;5\\
+-1&amp;3\\
+2&amp;-2
+\end{bmatrix}
+&amp;&amp;
+B=\begin{bmatrix}
+1&amp;5&amp;-3&amp;4\\
+2&amp;0&amp;2&amp;-3
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MM.C20.knowl">Solution</a></p></div>
+</div>

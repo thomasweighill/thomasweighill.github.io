@@ -1,0 +1,60 @@
+<div class="solution" acro="MM.C20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MM.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>By <a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>,
+\begin{align*}
+AB&amp;=
+\left[
+\left.
+\begin{bmatrix}
+2&amp;5\\
+-1&amp;3\\
+2&amp;-2
+\end{bmatrix}
+\colvector{1\\2}
+\right\vert\
+\left.
+\begin{bmatrix}
+2&amp;5\\
+-1&amp;3\\
+2&amp;-2
+\end{bmatrix}
+\colvector{5\\0}
+\right\vert\
+\left.
+\begin{bmatrix}
+2&amp;5\\
+-1&amp;3\\
+2&amp;-2
+\end{bmatrix}
+\colvector{-3\\2}
+\right\vert\
+\left.
+\begin{bmatrix}
+2&amp;5\\
+-1&amp;3\\
+2&amp;-2
+\end{bmatrix}
+\colvector{4\\-3}
+\right.
+\right]
+\end{align*}
+Repeated applications of <a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a> give
+\begin{align*}
+
+&amp;=
+\left[
+\left.1\colvector{2\\-1\\2}+2\colvector{5\\3\\-2}\right\vert\
+\left.5\colvector{2\\-1\\2}+0\colvector{5\\3\\-2}\right\vert\
+\left.-3\colvector{2\\-1\\2}+2\colvector{5\\3\\-2}\right\vert\
+\left.4\colvector{2\\-1\\2}+(-3)\colvector{5\\3\\-2}\right.
+\right]\\
+&amp;=
+\begin{bmatrix}
+12 &amp; 10 &amp; 4 &amp; -7\\
+5 &amp; -5 &amp; 9 &amp; -13\\
+-2 &amp; 10 &amp; -10 &amp; 14
+\end{bmatrix}
+\end{align*}
+
+</div>

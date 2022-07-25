@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-MMCC" acro="MMCC" titletext="Matrix Multiplication and Complex Conjugation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MMCC</span><span class="titletext"> Matrix Multiplication and Complex Conjugation</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix.  Then $\conjugate{AB}=\conjugate{A}\,\conjugate{B}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.MMCC.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-MMCC" class="context" title="Section MM">(in context)</a></div>

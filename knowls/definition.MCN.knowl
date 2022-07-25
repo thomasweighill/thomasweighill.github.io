@@ -1,0 +1,10 @@
+<div class="definition" id="definition-MCN" acro="MCN" titletext="Modulus of a Complex Number">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">MCN</span> <span class="titletext"> Modulus of a Complex Number</span>
+</h5>
+<p>The <em class="term">modulus</em> of the complex number $\alpha=a+bi\in\complex{\null}$, is the nonnegative real number
+\begin{equation*}
+\modulus{\alpha}=\sqrt{\conjugate{\alpha}\alpha}=\sqrt{a^2+b^2}.
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#definition-MCN" class="context" title="Section CNO">(in context)</a></div>

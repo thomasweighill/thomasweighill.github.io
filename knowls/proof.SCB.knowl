@@ -1,0 +1,14 @@
+<div class="proof" id="proof-SCB" acro="SCB" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SCB</span>
+</h5>
+<p>In the conclusion of <a class="knowl" acro="MRCB" type="Theorem" title="Matrix Representation and Change of Basis" knowl="./knowls/theorem.MRCB.knowl">Theorem MRCB</a>, replace $D$ by $B$, and replace $E$ by $C$,
+\begin{align*}
+\matrixrep{T}{B}{B}
+&amp;=\cbm{C}{B}\matrixrep{T}{C}{C}\cbm{B}{C}&amp;&amp;\knowl{./knowls/theorem.MRCB.knowl}{\text{Theorem MRCB}}\\
+&amp;=\inverse{\cbm{B}{C}}\matrixrep{T}{C}{C}\cbm{B}{C}&amp;&amp;\knowl{./knowls/theorem.ICBM.knowl}{\text{Theorem ICBM}}
+\end{align*}
+
+</p>
+
+</div>

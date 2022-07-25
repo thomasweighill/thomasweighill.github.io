@@ -1,0 +1,22 @@
+<div class="proof" id="proof-SMEE" acro="SMEE" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">SMEE</span>
+</h5>
+<p>Let $n$ denote the size of $A$ and $B$.  Since $A$ and $B$ are similar, there exists a nonsingular matrix $S$, such that $A=\similar{B}{S}$ (<a class="knowl" acro="SIM" type="Definition" title="Similar Matrices" knowl="./knowls/definition.SIM.knowl">Definition SIM</a>).  Then
+\begin{align*}
+\charpoly{A}{x}&amp;=\detname{A-xI_n}&amp;&amp;\knowl{./knowls/definition.CP.knowl}{\text{Definition CP}}\\
+&amp;=\detname{\similar{B}{S}-xI_n}&amp;&amp;\knowl{./knowls/definition.SIM.knowl}{\text{Definition SIM}}\\
+&amp;=\detname{\similar{B}{S}-x\similar{I_n}{S}}&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+&amp;=\detname{\similar{B}{S}-\inverse{S}xI_nS}&amp;&amp;\knowl{./knowls/theorem.MMSMM.knowl}{\text{Theorem MMSMM}}\\
+&amp;=\detname{\similar{\left(B-xI_n\right)}{S}}&amp;&amp;\knowl{./knowls/theorem.MMDAA.knowl}{\text{Theorem MMDAA}}\\
+&amp;=\detname{\inverse{S}}\detname{B-xI_n}\detname{S}&amp;&amp;\knowl{./knowls/theorem.DRMM.knowl}{\text{Theorem DRMM}}\\
+&amp;=\detname{\inverse{S}}\detname{S}\detname{B-xI_n}&amp;&amp;\knowl{./knowls/property.CMCN.knowl}{\text{Property CMCN}}\\
+&amp;=\detname{\inverse{S}S}\detname{B-xI_n}&amp;&amp;\knowl{./knowls/theorem.DRMM.knowl}{\text{Theorem DRMM}}\\
+&amp;=\detname{I_n}\detname{B-xI_n}&amp;&amp;\knowl{./knowls/definition.MI.knowl}{\text{Definition MI}}\\
+&amp;=1\detname{B-xI_n}&amp;&amp;\knowl{./knowls/definition.DM.knowl}{\text{Definition DM}}\\
+&amp;=\charpoly{B}{x}&amp;&amp;\knowl{./knowls/definition.CP.knowl}{\text{Definition CP}}
+\end{align*}
+
+</p>
+
+</div>

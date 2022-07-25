@@ -1,0 +1,33 @@
+<div class="solution" acro="IVLT.C50">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">IVLT.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Determine the kernel of $S$ first.  The condition that $\lt{S}{\begin{bmatrix}a &amp; b\end{bmatrix}}=\zerovector$ becomes $(3a+b)+(5a+2b)x=0+0x$.  Equating coefficients of these polynomials yields the system
+\begin{align*}
+3a+b&amp;=0\\
+5a+2b&amp;=0
+\end{align*}
+
+This homogeneous system has a nonsingular coefficient matrix, so the only solution is $a=0$, $b=0$ and thus
+\begin{equation*}
+\krn{S}=\set{\begin{bmatrix}0 &amp; 0\end{bmatrix}}
+\end{equation*}
+By <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a>, we know $S$ is injective.  With $\nullity{S}=0$ we employ <a class="knowl" acro="RPNDD" type="Theorem" title="Rank Plus Nullity is Domain Dimension" knowl="./knowls/theorem.RPNDD.knowl">Theorem RPNDD</a> to find
+\begin{equation*}
+\rank{S}=\rank{S}+0=\rank{S}+\nullity{S}=\dimension{M_{12}}=2=\dimension{P_1}
+\end{equation*}
+Since $\rng{S}\subseteq P_1$ and $\dimension{\rng{S}}=\dimension{P_1}$, we can apply <a class="knowl" acro="EDYES" type="Theorem" title="Equal Dimensions Yields Equal Subspaces" knowl="./knowls/theorem.EDYES.knowl">Theorem EDYES</a> to obtain the set equality $\rng{S}=P_1$ and therefore $S$ is surjective. <br><br>
+One of the two defining conditions of an invertible linear transformation is (<a class="knowl" acro="IVLT" type="Definition" title="Invertible Linear Transformations" knowl="./knowls/definition.IVLT.knowl">Definition IVLT</a>)
+\begin{align*}
+\lt{\left(\compose{S}{R}\right)}{a+bx}&amp;=\lt{S}{\lt{R}{a+bx}}\\
+&amp;=\lt{S}{\begin{bmatrix}(2a-b) &amp; (-5a+3b)\end{bmatrix}}\\
+&amp;=\left(3(2a-b)+(-5a+3b)\right)+\left(5(2a-b)+2(-5a+3b)\right)x\\
+&amp;=\left((6a-3b)+(-5a+3b)\right)+\left((10a-5b)+(-10a+6b)\right)x\\
+&amp;=a+bx\\
+&amp;=\lt{I_{P_1}}{a+bx}
+\end{align*}
+
+That
+$\lt{\left(\compose{R}{S}\right)}{\begin{bmatrix}a &amp; b\end{bmatrix}}=
+\lt{I_{M_{12}}}{\begin{bmatrix}a &amp; b\end{bmatrix}}$
+is similar.
+</div>

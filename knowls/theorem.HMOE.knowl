@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-HMOE" acro="HMOE" titletext="Hermitian Matrices have Orthogonal Eigenvectors">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">HMOE</span><span class="titletext"> Hermitian Matrices have Orthogonal Eigenvectors</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a Hermitian matrix and $\vect{x}$ and $\vect{y}$ are two eigenvectors of $A$ for different eigenvalues.  Then $\vect{x}$ and $\vect{y}$ are orthogonal vectors.</p></div>
+<div class="proof"><a knowl="./knowls/proof.HMOE.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-HMOE" class="context" title="Section PEE">(in context)</a></div>

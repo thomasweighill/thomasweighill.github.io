@@ -1,0 +1,8 @@
+<div class="solution" acro="EE.C24">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.C24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Eigenvalue: $\lambda = 0$<br>
+$\eigenspace{A}{0} = \spn{\colvector{1\\1\\0},\colvector{-1\\0\\1}}$, $\algmult{A}{0} = 2$, $\geomult{A}{0} = 2$<br>
+Eigenvalue: $\lambda = 3$<br>
+$\eigenspace{A}{3} =\spn{\colvector{1\\-1\\1}}$, $\algmult{A}{3} = 1$, $\geomult{A}{3} = 1$
+</div>

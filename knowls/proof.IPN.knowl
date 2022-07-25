@@ -1,0 +1,20 @@
+<div class="proof" id="proof-IPN" acro="IPN" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">IPN</span>
+</h5>
+<p>
+\begin{align*}
+\norm{\vect{u}}^2
+&amp;=\left(\sqrt{\sum_{i=1}^{m}\modulus{\vectorentry{\vect{u}}{i}}^2}\right)^2
+&amp;&amp;\knowl{./knowls/definition.NV.knowl}{\text{Definition NV}}\\
+&amp;=\sum_{i=1}^{m}\modulus{\vectorentry{\vect{u}}{i}}^2
+&amp;&amp;\text{Inverse functions}\\
+&amp;=\sum_{i=1}^{m}\conjugate{\vectorentry{\vect{u}}{i}}\vectorentry{\vect{u}}{i}
+&amp;&amp;\knowl{./knowls/definition.MCN.knowl}{\text{Definition MCN}}\\
+&amp;=\innerproduct{\vect{u}}{\vect{u}}
+&amp;&amp;\knowl{./knowls/definition.IP.knowl}{\text{Definition IP}}
+\end{align*}
+
+</p>
+
+</div>

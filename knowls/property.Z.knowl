@@ -1,0 +1,7 @@
+<div class="property" id="property-Z" acro="Z" titletext="Zero Vector">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">Z</span> <span class="titletext">Zero Vector</span>
+</h5>
+<p>
+There is a vector, $\zerovector$, called the zero vector, such that  $\vect{u}+\zerovector=\vect{u}$  for all $\vect{u}\in V$.</p>
+</div>

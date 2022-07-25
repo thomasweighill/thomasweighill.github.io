@@ -1,0 +1,5 @@
+<div class="solution" acro="VS.M13">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VS.M13</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Since scalar multiplication remains unchanged, we only need to consider the axioms that involve vector addition.  Since every sum is the zero matrix, the first 4 properties hold easily.  However, there is no zero vector in this set.  Suppose that there was.  Then there is a matrix $Z$ so that $A + Z = A$ for any $2\times 2$ matrix $A$.  However, $A + Z = \zeromatrix_{2,2}$, which is in general not equal to $A$, so <a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a> fails and this set is not a vector space.
+</div>

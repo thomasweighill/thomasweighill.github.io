@@ -1,0 +1,89 @@
+<div class="example" id="example-SCAB" acro="SCAB" titletext="Span of the columns of Archetype B">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SCAB</span> <span class="titletext">Span of the columns of Archetype B</span>
+</h5>
+<p>Begin with the finite set of three vectors of size $3$ that are the columns of the coefficient matrix in <a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+\begin{equation*}
+R=\{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3\}
+=\left\{
+\colvector{-7\\5\\1},\,\colvector{-6\\5\\0},\,\colvector{-12\\7\\4}
+\right\}
+\end{equation*}
+and consider the infinite set $\spn{R}$.</p>
+<p>First, as an example, note that
+\begin{equation*}
+\vect{x}=(2)\colvector{-7\\5\\1}+(4)\colvector{-6\\5\\0}+(-3)\colvector{-12\\7\\4}=
+\colvector{-2\\9\\-10}
+\end{equation*}
+is in $\spn{R}$, since it is a linear combination of $\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3$.  In other words, $\vect{x}\in\spn{R}$.  Try some different values of $\alpha_1,\,\alpha_2,\,\alpha_3$ yourself, and see what vectors you can create as elements of $\spn{R}$.</p>
+<p>Now ask if a given vector is an element of $\spn{R}$.  For example, is $\vect{z}=\colvector{-33\\24\\5}$ in $\spn{R}$?   Is $\vect{z}\in\spn{R}$?</p>
+<p>To answer this question, we will look for scalars $\alpha_1,\,\alpha_2,\,\alpha_3$ so that
+\begin{align*}
+\alpha_1\vect{v}_1+\alpha_2\vect{v}_2+\alpha_3\vect{v}_3&amp;=\vect{z}\\
+\end{align*}
+By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> solutions to this vector equation are the solutions to the system of equations
+\begin{align*}
+
+-7\alpha_1-6\alpha_2-12\alpha_3&amp;=-33\\
+5\alpha_1+5\alpha_2+7\alpha_3&amp;=24\\
+\alpha_1+4\alpha_3&amp;=5
+\end{align*}
+Building the augmented matrix for this linear system, and row-reducing, gives
+\begin{align*}
+
+\begin{bmatrix}
+\leading{1}&amp;0&amp;0&amp;-3\\
+0&amp;\leading{1}&amp;0&amp;5\\
+0&amp;0&amp;\leading{1}&amp;2
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>This system has a unique solution,
+\begin{align*}
+\alpha_1 = -3&amp;&amp;\alpha_2 = 5&amp;&amp;\alpha_3 = 2
+\end{align*}
+
+telling us that
+\begin{equation*}
+(-3)\vect{v}_1+(5)\vect{v}_2+(2)\vect{v}_3=\vect{z}
+\end{equation*}
+so we are convinced that $\vect{z}$ really is in $\spn{R}$.  Notice that in this case we have only one way to answer the question affirmatively since the solution is unique.</p>
+<p>Let us ask about another vector, say is $\vect{x}=\colvector{-7\\8\\-3}$ in $\spn{R}$?   Is $\vect{x}\in\spn{R}$?</p>
+<p>We desire scalars $\alpha_1,\,\alpha_2,\,\alpha_3$ so that
+\begin{align*}
+\alpha_1\vect{v}_1+\alpha_2\vect{v}_2+\alpha_3\vect{v}_3&amp;=\vect{x}\\
+\end{align*}
+By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> solutions to this vector equation are the solutions to the system of equations
+\begin{align*}
+
+-7\alpha_1-6\alpha_2-12\alpha_3&amp;=-7\\
+5\alpha_1+5\alpha_2+7\alpha_3&amp;=8\\
+\alpha_1+4\alpha_3&amp;=-3
+\end{align*}
+Building the augmented matrix for this linear system, and row-reducing, gives
+\begin{align*}
+
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 1 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; 2 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; -1
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>This system has a unique solution,
+\begin{align*}
+\alpha_1 = 1&amp;&amp;\alpha_2 = 2&amp;&amp;\alpha_3 = -1
+\end{align*}
+
+telling us that
+\begin{equation*}
+(1)\vect{v}_1+(2)\vect{v}_2+(-1)\vect{v}_3=\vect{x}
+\end{equation*}
+so we are convinced that $\vect{x}$ really is in $\spn{R}$.  Notice that in this case we again have only one way to answer the question affirmatively since the solution is again unique.</p>
+<p>We could continue to test other vectors for membership in $\spn{R}$, but there is no point.   A question about membership in $\spn{R}$ inevitably leads to a system of three equations in the three variables $\alpha_1,\,\alpha_2,\,\alpha_3$ with a coefficient matrix whose columns are the vectors $\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3$.  This particular coefficient matrix is nonsingular, so by <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>, the system is guaranteed to have a solution.  (This solution is unique, but that is not critical here.)  So <em>no matter</em> which vector we might have chosen for $\vect{z}$, we would have been <em>certain</em> to discover that it was an element of $\spn{R}$.  Stated differently, every vector of size 3 is in $\spn{R}$, or $\spn{R}=\complex{3}$.</p>
+<p>Compare this example with <a class="knowl" acro="SCAA" type="Example" title="Span of the columns of Archetype A" knowl="./knowls/example.SCAA.knowl">Example SCAA</a>, and see if you can connect $\vect{z}$ with some aspects of the write-up for <a knowl="./knowls/archetype.B.knowl">Archetype B</a>.</p>
+<div class="context"><a href="section-SS.html#example-SCAB" class="context" title="Section SS">(in
+context)</a></div>
+</div>

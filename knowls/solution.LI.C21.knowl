@@ -1,0 +1,15 @@
+<div class="solution" acro="LI.C21">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">LI.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<a class="knowl" acro="LIVRN" type="Theorem" title="Linearly Independent Vectors, $r$ and $n$" knowl="./knowls/theorem.LIVRN.knowl">Theorem LIVRN</a> says we can answer this question by putting theses vectors into a matrix as columns and row-reducing.  Doing this we obtain,
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0\\
+0 &amp; \leading{1} &amp; 0\\
+0 &amp; 0 &amp; \leading{1}\\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+With $n=3$ (3 vectors, 3 columns) and $r=3$ (3 pivot columns) we have $n=r$ and the theorem says the vectors are linearly independent.
+</div>

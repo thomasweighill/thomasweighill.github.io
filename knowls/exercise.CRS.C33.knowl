@@ -1,0 +1,16 @@
+<div class="exercise" acro="CRS.C33">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">CRS.C33</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find a linearly independent set $S$ so that the span of $S$, $\spn{S}$, is row space of the matrix $B$, and $S$ is linearly independent.
+\begin{equation*}
+B=
+\begin{bmatrix}
+2 &amp; 3 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 0 &amp; 1\\
+-1 &amp; 2 &amp; 3 &amp; -4
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.CRS.C33.knowl">Solution</a></p></div>
+</div>

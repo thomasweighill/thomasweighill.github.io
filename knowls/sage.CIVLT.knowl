@@ -1,0 +1,44 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-CIVLT', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">CIVLT</span> <span class="titletext">Computing the Inverse of a Linear Transformations</span>
+</h5>
+
+
+<p><a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> gives us a straightforward condition equivalence for an invertible linear transformation, but of course, it is even easier in Sage.</p>
+
+<br><br><div class="sage-CIVLT"><script type="text/x-sage">U = QQ^4
+V = QQ^4
+x1, x2, x3, x4 = var('x1, x2, x3, x4')
+outputs = [   x1 + 2*x2 - 5*x3 - 7*x4,
+                     x2 - 3*x3 - 5*x4,
+              x1 + 2*x2 - 4*x3 - 6*x4,
+           -2*x1 - 2*x2 + 7*x3 + 8*x4 ]
+T_symbolic(x1, x2, x3, x4) = outputs
+T = linear_transformation(U, V, T_symbolic)
+T.is_invertible()
+</script></div>
+
+<p>As easy as that is, it is still instructive to walk through an example similar to <a class="knowl" acro="CIVLT" type="Example" title="Computing the Inverse of a Linear Transformations" knowl="./knowls/example.CIVLT.knowl">Example CIVLT</a> using Sage, as a further illustration of the second half of the proof of <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a>.  Since T is surjective, every element of the codomain has a nonempty pre-image, and since T is injective, the pre-image of each element is a single element.  Keep these facts in mind and convince yourself that the procedure below would never raise an error, and always has a unique result.</p>
+
+<p>We first compute the pre-image of each element of a basis of the codomain.</p>
+
+<br><br><div class="sage-CIVLT"><script type="text/x-sage">preimages = [T.preimage_representative(v) for v in V.basis()]
+preimages
+</script></div>
+
+<p>Then we define a new linear transformation, from <span class="code">V</span> to <span class="code">U</span>, which turns it around and uses the preimages as a set of images defining the new linear transformation.  Explain to yourself how we know that <span class="code">preimages</span> is a basis for <span class="code">U</span>, and why this will create an invertible linear transformation.</p>
+
+<br><br><div class="sage-CIVLT"><script type="text/x-sage">S = linear_transformation(V, U, preimages)
+S
+</script></div>
+
+<br><br><div class="sage-CIVLT"><script type="text/x-sage">S.is_equal_function(T.inverse())
+</script></div>
+
+<p>While this is a simple two-step procedure (form preimages, construct linear transformation), realize that this is <em>not</em> the process that Sage uses internally.</p>
+
+<p>Notice that the essence of this construction is that when we work with an invertible linear transformation, the method <span class="code">.preimage_representative()</span> behaves as a function (we mean the precise mathematical definition here) — it is always defined and always produces just one well-defined output.  Here the <span class="code">linear_transformation()</span> constructor is extending it to a linear function based on its action on a (finite) basis of the domain.</p>
+
+<br><br><div class="sage-CIVLT sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

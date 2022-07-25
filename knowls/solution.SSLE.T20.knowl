@@ -1,0 +1,8 @@
+<div class="solution" acro="SSLE.T20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SSLE.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<a class="knowl" acro="EO" type="Definition" title="Equation Operations" knowl="./knowls/definition.EO.knowl">Definition EO</a> is engineered to make <a class="knowl" acro="EOPSS" type="Theorem" title="Equation Operations Preserve Solution Sets" knowl="./knowls/theorem.EOPSS.knowl">Theorem EOPSS</a> true.  If we were to allow a zero scalar to multiply an equation then that equation would be transformed to the equation $0=0$, which is true for any possible values of the variables.  Any restrictions on the solution set imposed by the original equation would be lost.<br><br>
+However, in the third operation, it is allowed to choose a zero scalar, multiply an equation by this scalar and add the transformed equation to a second equation (leaving the first unchanged).  The result?  Nothing.  The second equation is the same as it was before.  So the theorem is true in this case, the two systems are equivalent.  But in practice, this would be a silly thing to actually ever do!  We still allow it though, in order to keep our theorem as general as possible.<br><br>
+Notice the location in the proof of <a class="knowl" acro="EOPSS" type="Theorem" title="Equation Operations Preserve Solution Sets" knowl="./knowls/theorem.EOPSS.knowl">Theorem EOPSS</a> where the expression $\frac{1}{\alpha}$ appears — this explains the prohibition on $\alpha=0$ in the second equation operation.
+</div>

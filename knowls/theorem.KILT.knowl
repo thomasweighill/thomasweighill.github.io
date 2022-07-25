@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-KILT" acro="KILT" titletext="Kernel of an Injective Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">KILT</span><span class="titletext"> Kernel of an Injective Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then $T$ is injective if and only if the kernel of $T$ is trivial, $\krn{T}=\set{\zerovector}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.KILT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-ILT.html#theorem-KILT" class="context" title="Section ILT">(in context)</a></div>

@@ -1,0 +1,13 @@
+<div class="exercise" acro="SLT.C24">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SLT.C24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Determine whether or not the linear transformation $\ltdefn{T}{P_3}{\complex{5}}$ below is surjective:
+\begin{align*}
+\lt{T}{a + bx + cx^2 + dx^3} &amp;= \colvector{a + b \\ b + c \\ c + d \\ a + c\\ b + d}.
+\end{align*}
+
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SLT.C24.knowl">Solution</a></p></div>
+</div>

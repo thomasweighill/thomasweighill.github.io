@@ -1,0 +1,50 @@
+<div class="exercise" acro="O.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Complete <a class="knowl" acro="AOS" type="Example" title="An orthogonal set" knowl="./knowls/example.AOS.knowl">Example AOS</a> by verifying that the four remaining inner products are zero.
+</p></div>
+</div><div class="exercise" acro="O.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Verify that the set $T$ created in <a class="knowl" acro="GSTV" type="Example" title="Gram-Schmidt of three vectors" knowl="./knowls/example.GSTV.knowl">Example GSTV</a> by the Gram-Schmidt Procedure is an orthogonal set.
+</p></div>
+</div><div class="exercise" acro="O.M60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.M60</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\set{\vect{u},\,\vect{v},\,\vect{w}}\subseteq\complex{n}$ is an orthonormal set.  Prove that $\vect{u}+\vect{v}$ is not orthogonal to $\vect{v}+\vect{w}$.
+</p></div>
+</div><div class="exercise" acro="O.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove part 2 of the conclusion of <a class="knowl" acro="IPVA" type="Theorem" title="Inner Product and Vector Addition" knowl="./knowls/theorem.IPVA.knowl">Theorem IPVA</a>.
+</p></div>
+</div><div class="exercise" acro="O.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove part 2 of the conclusion of <a class="knowl" acro="IPSM" type="Theorem" title="Inner Product and Scalar Multiplication" knowl="./knowls/theorem.IPSM.knowl">Theorem IPSM</a>.
+</p></div>
+</div><div class="exercise" acro="O.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\vect{u},\,\vect{v},\,\vect{w}\in\complex{n}$, $\alpha,\,\beta\in\complexes$ and $\vect{u}$ is orthogonal to both $\vect{v}$ and $\vect{w}$.  Prove that $\vect{u}$ is orthogonal to $\alpha\vect{v}+\beta\vect{w}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.O.T20.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="O.T30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.T30</span> <span class="contributor"><a knowl="./knowls/contributor.stevecanfield.knowl">Steve Canfield</a></span>
+</h5>
+<div class="problem"><p>Suppose that the set $S$ in the hypothesis of <a class="knowl" acro="GSP" type="Theorem" title="Gram-Schmidt Procedure" knowl="./knowls/theorem.GSP.knowl">Theorem GSP</a> is not just linearly independent, but is also orthogonal.  Prove that the set $T$ created by the Gram-Schmidt procedure is equal to $S$.  (Note that we are getting a stronger conclusion than $\spn{T}=\spn{S}$ — the conclusion is that $T=S$.)  In other words, it is pointless to apply the Gram-Schmidt procedure to a set that is already orthogonal.
+</p></div>
+</div><div class="exercise" acro="O.T31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that the set $S$ is linearly independent. Apply the Gram-Schmidt procedure (<a class="knowl" acro="GSP" type="Theorem" title="Gram-Schmidt Procedure" knowl="./knowls/theorem.GSP.knowl">Theorem GSP</a>) twice, creating first the linearly independent set $T_1$ from $S$, and then creating $T_2$ from $T_1$.  As a consequence of <a knowl="./knowls/exercise.O.T30.knowl">Exercise O.T30</a>, prove that $T_1=T_2$.  In other words, it is pointless to apply the Gram-Schmidt procedure twice.
+</p></div>
+</div>

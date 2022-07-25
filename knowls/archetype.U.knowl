@@ -1,0 +1,11 @@
+<div class="archetype" id="archetype-U" acro="U" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">U</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Domain is matrices, codomain is column vectors.  Domain has dimension 6, while codomain has dimension 4.  Cannot be injective, is surjective.</p>
+<p>Definition:\begin{align*}\ltdefn{T}{M_{23}}{\complex{4}},\quad
+\lt{T}{\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix}}=
+\colvector{a+2b+12c-3d+e+6f\\2a-b-c+d-11f\\a+b+7c+2d+e-3f\\a+2b+12c+5e-5f}
+\end{align*}</p>
+<div class="context"><a href="archetype-U.html" class="context" title="Archetype U">Complete analysis of Archetype U</a></div>
+</div>

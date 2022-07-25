@@ -1,0 +1,56 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-SUTH1', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">SUTH1</span> <span class="titletext">Sage Under The Hood, Round 1</span>
+</h5>
+
+
+<p>We can parallel the above discussion about systems of linear equations and linear transformations using Sage.  We begin with a matrix that we will use as a coefficient matrix for systems of equations, and then use the same matrix to define the associated linear transformation (acting on vectors placed to the right of the matrix).</p>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">A = matrix(QQ, [[-1, 0, 2],
+                [ 1, 3, 7],
+                [ 1, 1, 1],
+                [ 2, 3, 5]])
+T = linear_transformation(QQ^3, QQ^4, A, side='right')
+</script></div>
+
+<p>We solve a linear system using the coefficient matrix, and compute an element of the pre-image of the linear transformation.</p>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">v = vector(QQ, [1, 2, 0, 1])
+A.solve_right(v)
+</script></div>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">T.preimage_representative(v)
+</script></div>
+
+<p>We compute a null space of the coefficient matrix and a kernel of the linear transformation, so as to understand the full solution set or the full preimage set.</p>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">A.right_kernel()
+</script></div>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">T.kernel()
+</script></div>
+
+<p>We compute a column space of the coefficient matrix and an image (range) of the linear transformation to help us build an inconsistent system.</p>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">A.column_space()
+</script></div>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">T.image()
+</script></div>
+
+<p>A vector that creates a system with no solution is a vector that has an empty pre-image.</p>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">v = vector(QQ, [1, 2, 1, 1])
+A.solve_right(v)
+</script></div>
+
+<br><br><div class="sage-SUTH1"><script type="text/x-sage">T.preimage_representative(v)
+</script></div>
+
+<p>Note that we could redo the above, replacing uses of “right” by “left” and uses of “column” by “row.”  The output would not change.</p>
+
+<p>We suggest in the text that one could develop the theory of linear transformations from scratch, and then obtain many of our initial results about systems of equations and matrices as a consequence.  In Sage it is the reverse.  Sage implements many advanced concepts from various areas of mathematics by translating fundamental computations into the language of linear algebra.  In turn, many of Sage's linear algebra routines ultimately depend on very fast algorithms for basic operations on matrices, such as computing an echelon form, a null space, or a span.</p>
+
+<br><br><div class="sage-SUTH1 sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

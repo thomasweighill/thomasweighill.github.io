@@ -1,0 +1,17 @@
+<div class="exercise" acro="FS.C43">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">FS.C43</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>The following archetypes are either matrices or systems of equations with coefficient matrices.  For each matrix, compute the extended echelon form $N$ and identify the matrices $C$ and $L$.  Using <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a>,  <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> and <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a> express the null space, the row space, the column space and left null space of each coefficient matrix as a span of a linearly independent set.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>,
+<a knowl="./knowls/archetype.K.knowl">Archetype K</a>,
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a>
+</p></div>
+</div>

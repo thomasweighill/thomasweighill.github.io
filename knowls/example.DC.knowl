@@ -1,0 +1,8 @@
+<div class="example" id="example-DC" acro="DC" titletext="Dimension of the crazy vector space">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">DC</span> <span class="titletext">Dimension of the crazy vector space</span>
+</h5>
+<p>In <a class="knowl" acro="BC" type="Example" title="Basis for the crazy vector space" knowl="./knowls/example.BC.knowl">Example BC</a>  we determined that the set $R=\set{(1,\,0),\,(6,\,3)}$ from the crazy vector space, $C$ (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>), is a basis for $C$.  By <a class="knowl" acro="D" type="Definition" title="Dimension" knowl="./knowls/definition.D.knowl">Definition D</a> we see that $C$ has dimension 2, $\dimension{C}=2$.</p>
+<div class="context"><a href="section-D.html#example-DC" class="context" title="Section D">(in
+context)</a></div>
+</div>

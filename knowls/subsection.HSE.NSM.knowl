@@ -1,0 +1,29 @@
+<div class="subsection" id="subsection-NSM" acro="NSM" titletext="Null Space of a Matrix">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">NSM</span> <span class="titletext">Null Space of a Matrix</span>
+</h4>
+<p>The set of solutions to a homogeneous system (which by <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a> is never empty) is of enough interest to warrant its own name.  However, we define it as a property of the coefficient matrix, not as a property of some system of equations.</p>
+<div class="definition" id="definition-NSM" acro="NSM" titletext="Null Space of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">NSM</span> <span class="titletext"> Null Space of a Matrix</span>
+</h5>
+<p>The <em class="term">null space</em> of a matrix $A$, denoted $\nsp{A}$, is the set of all the vectors that are solutions to the homogeneous system $\homosystem{A}$.</p>
+</div>
+<p>In the Archetypes (<a href="archetypes.html" title="Archetypes">Archetypes</a>) each example that is a system of equations also has a corresponding homogeneous system of equations listed, and several sample solutions are given.  These solutions will be elements of the null space of the coefficient matrix.  We will look at one example.</p>
+<div class="example" id="example-NSEAI" acro="NSEAI" titletext="Null space elements of Archetype I"><h5 class="example">
+<a knowl="./knowls/example.NSEAI.knowl"><span class="type">Example</span> <span class="acro">NSEAI</span></a> <span class="titletext">Null space elements of Archetype I</span>
+</h5></div>
+<p>Here are two (prototypical) examples of the computation of the null space of a matrix.</p>
+<div class="example" id="example-CNS1" acro="CNS1" titletext="Computing a null space, no. 1"><h5 class="example">
+<a knowl="./knowls/example.CNS1.knowl"><span class="type">Example</span> <span class="acro">CNS1</span></a> <span class="titletext">Computing a null space, no. 1</span>
+</h5></div>
+<div class="example" id="example-CNS2" acro="CNS2" titletext="Computing a null space, no. 2"><h5 class="example">
+<a knowl="./knowls/example.CNS2.knowl"><span class="type">Example</span> <span class="acro">CNS2</span></a> <span class="titletext">Computing a null space, no. 2</span>
+</h5></div>
+<div class="sage" id="sage-NS" acro="NS" titletext="Null Space"><h5 class="sage">
+<a knowl="./knowls/sage.NS.knowl"><span class="type">Sage</span> <span class="acro">NS</span></a> <span class="titletext">Null Space</span>
+</h5></div>
+<div class="sage" id="sage-SH" acro="SH" titletext="Sage Help"><h5 class="sage">
+<a knowl="./knowls/sage.SH.knowl"><span class="type">Sage</span> <span class="acro">SH</span></a> <span class="titletext">Sage Help</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-HSE.html#subsection-NSM" class="context" title="Section HSE">(in context)</a></div>

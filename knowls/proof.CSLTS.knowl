@@ -1,0 +1,18 @@
+<div class="proof" id="proof-CSLTS" acro="CSLTS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CSLTS</span>
+</h5>
+<p>That the composition is a linear transformation was established in <a class="knowl" acro="CLTLT" type="Theorem" title="Composition of Linear Transformations is a Linear Transformation" knowl="./knowls/theorem.CLTLT.knowl">Theorem CLTLT</a>, so we need only establish that the composition is surjective.  Applying <a class="knowl" acro="SLT" type="Definition" title="Surjective Linear Transformation" knowl="./knowls/definition.SLT.knowl">Definition SLT</a>, choose $\vect{w}\in W$.</p>
+
+<p>Because $S$ is surjective, there must be a vector $\vect{v}\in V$, such that $\lt{S}{\vect{v}}=\vect{w}$.  With the existence of $\vect{v}$ established, that $T$ is surjective guarantees a vector $\vect{u}\in U$ such that $\lt{T}{\vect{u}}=\vect{v}$.  Now,
+\begin{align*}
+\lt{\left(\compose{S}{T}\right)}{\vect{u}}&amp;=\lt{S}{\lt{T}{\vect{u}}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{S}{\vect{v}}&amp;&amp;\text{Definition of $\vect{u}$}\\
+&amp;=\vect{w}&amp;&amp;\text{Definition of $\vect{v}$}
+\end{align*}
+
+</p>
+
+<p>This establishes that any element of the codomain ($\vect{w}$) can be created by evaluating $\compose{S}{T}$ with the right input ($\vect{u}$).  Thus, by <a class="knowl" acro="SLT" type="Definition" title="Surjective Linear Transformation" knowl="./knowls/definition.SLT.knowl">Definition SLT</a>, $\compose{S}{T}$ is surjective.</p>
+
+</div>

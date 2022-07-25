@@ -1,0 +1,35 @@
+<div class="proof" id="proof-DEM" acro="DEM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">DEM</span>
+</h5>
+<p>Swapping rows $i$ and $j$ of the identity matrix will create $\elemswap{i}{j}$  (<a class="knowl" acro="ELEM" type="Definition" title="Elementary Matrices" knowl="./knowls/definition.ELEM.knowl">Definition ELEM</a>), so
+\begin{align*}
+\detname{\elemswap{i}{j}}
+&amp;=-\detname{I_n}&amp;&amp;\knowl{./knowls/theorem.DRCS.knowl}{\text{Theorem DRCS}}\\
+&amp;=-1&amp;&amp;\knowl{./knowls/theorem.DIM.knowl}{\text{Theorem DIM}}\\
+\end{align*}
+
+</p>
+
+
+<p>Multiplying row $i$ of the identity matrix by $\alpha$ will create $\elemmult{\alpha}{i}$ (<a class="knowl" acro="ELEM" type="Definition" title="Elementary Matrices" knowl="./knowls/definition.ELEM.knowl">Definition ELEM</a>), so
+\begin{align*}
+\detname{\elemmult{\alpha}{i}}
+&amp;=\alpha\detname{I_n}&amp;&amp;\knowl{./knowls/theorem.DRCM.knowl}{\text{Theorem DRCM}}\\
+&amp;=\alpha(1)=\alpha&amp;&amp;\knowl{./knowls/theorem.DIM.knowl}{\text{Theorem DIM}}\\
+\end{align*}
+
+</p>
+
+
+<p>Multiplying row $i$ of the identity matrix by $\alpha$ and adding to row $j$ will create $\elemadd{\alpha}{i}{j}$ (<a class="knowl" acro="ELEM" type="Definition" title="Elementary Matrices" knowl="./knowls/definition.ELEM.knowl">Definition ELEM</a>), so
+\begin{align*}
+\detname{\elemadd{\alpha}{i}{j}}
+&amp;=\detname{I_n}&amp;&amp;\knowl{./knowls/theorem.DRCMA.knowl}{\text{Theorem DRCMA}}\\
+&amp;=1&amp;&amp;\knowl{./knowls/theorem.DIM.knowl}{\text{Theorem DIM}}\\
+\end{align*}
+
+</p>
+
+
+</div>

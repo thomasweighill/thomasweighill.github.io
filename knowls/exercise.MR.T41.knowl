@@ -1,0 +1,7 @@
+<div class="exercise" acro="MR.T41">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.T41</span> <span class="contributor"><a knowl="./knowls/contributor.chilijohnson.knowl">Chili Johnson</a></span>
+</h5>
+<div class="problem"><p><a class="knowl" acro="VSLT" type="Theorem" title="Vector Space of Linear Transformations" knowl="./knowls/theorem.VSLT.knowl">Theorem VSLT</a> defines the vector space $\vslt{U}{V}$ containing all linear transformations with domain $U$ and codomain $V$.  Determine a basis for $\vslt{U}{V}$.  (Hint: study <a knowl="./knowls/exercise.MR.T40.knowl">Exercise MR.T40</a> first.)
+</p></div>
+</div>

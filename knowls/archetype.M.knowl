@@ -1,0 +1,13 @@
+<div class="archetype" id="archetype-M" acro="M" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">M</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Linear transformation with bigger domain than codomain, so it is guaranteed to not be injective.  Happens to not be surjective.</p>
+<p>Definition:\begin{align*}\ltdefn{T}{\complex{5}}{\complex{3}},\quad
+\lt{T}{\colvector{x_1\\x_2\\x_3\\x_4\\x_5}}=
+\colvector{x_1 + 2 x_2 + 3 x_3 + 4 x_4 + 4 x_5\\
+3 x_1 + x_2 + 4 x_3 - 3 x_4 + 7 x_5\\
+x_1 - x_2 - 5 x_4 + x_5}
+\end{align*}</p>
+<div class="context"><a href="archetype-M.html" class="context" title="Archetype M">Complete analysis of Archetype M</a></div>
+</div>

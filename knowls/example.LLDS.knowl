@@ -1,0 +1,35 @@
+<div class="example" id="example-LLDS" acro="LLDS" titletext="Large linearly dependent set in $\complex{4}$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LLDS</span> <span class="titletext">Large linearly dependent set in $\complex{4}$</span>
+</h5>
+<p>Consider the set of $n=9$ vectors from $\complex{4}$,
+\begin{equation*}
+R=\set{
+\colvector{-1\\3\\1\\2},\,
+\colvector{7\\1\\-3\\6},\,
+\colvector{1\\2\\-1\\-2},\,
+\colvector{0\\4\\2\\9},\,
+\colvector{5\\-2\\4\\3},\,
+\colvector{2\\1\\-6\\4},\,
+\colvector{3\\0\\-3\\1},\,
+\colvector{1\\1\\5\\3},\,
+\colvector{-6\\-1\\1\\1}
+}.
+\end{equation*}
+</p>
+<p>To employ <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a>, we form a $4\times 9$ matrix, $C$, whose columns are the vectors in $R$
+\begin{equation*}
+C=
+\begin{bmatrix}
+-1&amp;7&amp;1&amp;0&amp;5&amp;2&amp;3&amp;1&amp;-6\\
+3&amp;1&amp;2&amp;4&amp;-2&amp;1&amp;0&amp;1&amp;-1\\
+1&amp;-3&amp;-1&amp;2&amp;4&amp;-6&amp;-3&amp;5&amp;1\\
+2&amp;6&amp;-2&amp;9&amp;3&amp;4&amp;1&amp;3&amp;1
+\end{bmatrix}.
+\end{equation*}
+</p>
+<p>To determine if the homogeneous system $\homosystem{C}$ has a unique solution or not, we would normally row-reduce this matrix.  But in this particular example, we can do better.  <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a> tells us that since the system is homogeneous with $n=9$ variables in $m=4$ equations, and $n&gt;m$, there must be infinitely many solutions.  Since there is not a unique solution, <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a> says the set is linearly dependent.
+</p>
+<div class="context"><a href="section-LI.html#example-LLDS" class="context" title="Section LI">(in
+context)</a></div>
+</div>

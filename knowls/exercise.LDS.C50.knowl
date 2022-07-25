@@ -1,0 +1,19 @@
+<div class="exercise" acro="LDS.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LDS.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the set of vectors from $\complex{3}$, $W$, given below.  Find a linearly independent set $T$ that contains three vectors from $W$ and such that $\spn{W}=\spn{T}$.
+\begin{equation*}
+W=
+\set{\vect{v}_1,\,\vect{v}_2,\,\vect{v}_3,\,\vect{v}_4,\,\vect{v}_5}
+=\set{
+\colvector{2\\1\\1},\,
+\colvector{-1\\-1\\1},\,
+\colvector{1\\2\\3},\,
+\colvector{3\\1\\3},\,
+\colvector{0\\1\\-3}
+}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LDS.C50.knowl">Solution</a></p></div>
+</div>

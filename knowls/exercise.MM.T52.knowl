@@ -1,0 +1,8 @@
+<div class="exercise" acro="MM.T52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MM.T52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\vect{x},\,\vect{y}\in\complex{n}$, $\vect{b}\in\complex{m}$ and $A$ is an $m\times n$ matrix.  If $\vect{x}$, $\vect{y}$ and $\vect{x}+\vect{y}$ are each a solution to the linear system $\linearsystem{A}{\vect{b}}$, what can you say that is interesting about $\vect{b}$?  Form an implication with the existence of the three solutions as the hypothesis and an interesting statement about $\linearsystem{A}{\vect{b}}$ as the conclusion, and then give a proof.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MM.T52.knowl">Solution</a></p></div>
+</div>

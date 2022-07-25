@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-OD" acro="OD" titletext="Orthonormal Diagonalization">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">OD</span><span class="titletext"> Orthonormal Diagonalization</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.   Then there is a unitary matrix $U$ and a diagonal matrix $D$, with diagonal entries equal to the eigenvalues of $A$, such that $\adjoint{U}AU=D$ if and only if $A$ is a normal matrix.</p></div>
+<div class="proof"><a knowl="./knowls/proof.OD.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#theorem-OD" class="context" title="Section OD">(in context)</a></div>

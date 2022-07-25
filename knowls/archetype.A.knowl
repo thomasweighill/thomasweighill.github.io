@@ -1,0 +1,14 @@
+<div class="archetype" id="archetype-A" acro="A" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">A</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Linear system of three equations, three unknowns.  Singular coefficient matrix with dimension 1 null space.  Integer eigenvalues and a degenerate eigenspace for coefficient matrix.</p>
+<p>Definition:\begin{align*}
+x_1 -x_2 +2x_3 &amp; =1\\
+2x_1+ x_2 + x_3 &amp; =8\\
+x_1 + x_2 &amp; =5
+\end{align*}
+
+</p>
+<div class="context"><a href="archetype-A.html" class="context" title="Archetype A">Complete analysis of Archetype A</a></div>
+</div>

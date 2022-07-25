@@ -1,0 +1,19 @@
+<div class="proof" id="proof-AISM" acro="AISM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">AISM</span>
+</h5>
+<p>\begin{align*}
+\vect{-u}
+&amp;=\vect{-u}+\zerovector&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}\\
+&amp;=\vect{-u}+0\vect{u}&amp;&amp;\knowl{./knowls/theorem.ZSSM.knowl}{\text{Theorem ZSSM}}\\
+&amp;=\vect{-u}+\left(1+(-1)\right)\vect{u}&amp;&amp;\knowl{./knowls/property.AICN.knowl}{\text{Property AICN}}\\
+&amp;=\vect{-u}+\left(1\vect{u}+(-1)\vect{u}\right)&amp;&amp;\knowl{./knowls/property.DSA.knowl}{\text{Property DSA}}\\
+&amp;=\vect{-u}+\left(\vect{u}+(-1)\vect{u}\right)&amp;&amp;\knowl{./knowls/property.O.knowl}{\text{Property O}}\\
+&amp;=\left(\vect{-u}+\vect{u}\right)+(-1)\vect{u}&amp;&amp;\knowl{./knowls/property.AA.knowl}{\text{Property AA}}\\
+&amp;=\zerovector+(-1)\vect{u}&amp;&amp;\knowl{./knowls/property.AI.knowl}{\text{Property AI}}\\
+&amp;=(-1)\vect{u}&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}
+\end{align*}
+
+</p>
+
+</div>

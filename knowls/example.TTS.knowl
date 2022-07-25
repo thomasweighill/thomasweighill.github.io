@@ -1,0 +1,31 @@
+<div class="example" id="example-TTS" acro="TTS" titletext="Three typical systems">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">TTS</span> <span class="titletext">Three typical systems</span>
+</h5>
+<p>Consider the system of two equations with two variables,
+\begin{align*}
+2x_1+3x_2&amp;=3\\
+x_1-x_2&amp;=4
+\end{align*}
+
+</p>
+<p>If we plot the solutions to each of these equations separately on the $x_{1}x_{2}$-plane, we get two lines, one with negative slope, the other with positive slope.  They have exactly one point in common, $(x_1,\,x_2)=(3,\,-1)$, which is the solution $x_1=3$, $x_2=-1$.  From the geometry, we believe that this is the only solution to the system of equations, and so we say it is unique.</p>
+<p>Now adjust the system with a different second equation,
+\begin{align*}
+2x_1+3x_2&amp;=3\\
+4x_1+6x_2&amp;=6
+\end{align*}
+
+</p>
+<p>A plot of the solutions to these equations individually results in two lines, one on top of the other!  There are infinitely many pairs of points that make both equations true.  We will learn shortly how to describe this infinite solution set precisely (see <a class="knowl" acro="SAA" type="Example" title="Solutions for Archetype A" knowl="./knowls/example.SAA.knowl">Example SAA</a>, <a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a>).  Notice now how the second equation is just a multiple of the first.</p>
+<p>One more minor adjustment provides a third system of linear equations,
+\begin{align*}
+2x_1+3x_2&amp;=3\\
+4x_1+6x_2&amp;=10
+\end{align*}
+
+</p>
+<p>A plot now reveals two lines with identical slopes, i.e.  parallel lines.  They have no points in common, and so the system has a solution set that is empty, $S=\emptyset$.</p>
+<div class="context"><a href="section-SSLE.html#example-TTS" class="context" title="Section SSLE">(in
+context)</a></div>
+</div>

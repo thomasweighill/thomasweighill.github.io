@@ -1,0 +1,17 @@
+<div class="proof" id="proof-CCM" acro="CCM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CCM</span>
+</h5>
+<p>For $1\leq i\leq m$, $1\leq j\leq n$,
+\begin{align*}
+\matrixentry{\conjugate{\left(\conjugate{A}\right)}}{ij}
+&amp;=\conjugate{\matrixentry{\conjugate{A}}{ij}}&amp;&amp;\knowl{./knowls/definition.CCM.knowl}{\text{Definition CCM}}\\
+&amp;=\conjugate{\conjugate{\matrixentry{A}{ij}}}&amp;&amp;\knowl{./knowls/definition.CCM.knowl}{\text{Definition CCM}}\\
+&amp;=\matrixentry{A}{ij}&amp;&amp;\knowl{./knowls/theorem.CCT.knowl}{\text{Theorem CCT}}%
+\end{align*}
+
+</p>
+
+<p>Since the matrices  $\conjugate{\left(\conjugate{A}\right)}$ and $A$  are equal in each entry, <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> says that $\conjugate{\left(\conjugate{A}\right)}=A$.</p>
+
+</div>

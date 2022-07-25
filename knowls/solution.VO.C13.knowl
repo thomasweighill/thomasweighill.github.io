@@ -1,0 +1,20 @@
+<div class="solution" acro="VO.C13">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VO.C13</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Performing the indicated operations (<a class="knowl" acro="CVA" type="Definition" title="Column Vector Addition" knowl="./knowls/definition.CVA.knowl">Definition CVA</a>, <a class="knowl" acro="CVSM" type="Definition" title="Column Vector Scalar Multiplication" knowl="./knowls/definition.CVSM.knowl">Definition CVSM</a>), we obtain the vector equations
+\begin{align*}
+\colvector{3\alpha \\ 2\alpha\\ - 2\alpha} + \colvector{6\\1\\2}
+&amp;= \colvector{3\alpha + 6 \\ 2\alpha + 1\\ -2\alpha + 2}
+ = \colvector{0\\-3\\6}
+\end{align*}
+
+Thus, if a solution $\alpha$ exists, by <a class="knowl" acro="CVE" type="Definition" title="Column Vector Equality" knowl="./knowls/definition.CVE.knowl">Definition CVE</a> then $\alpha$ must satisfy the three equations:
+\begin{align*}
+3\alpha + 6 &amp;= 0\\
+2\alpha + 1 &amp;= -3\\
+-2 \alpha + 2 &amp;= 6
+\end{align*}
+
+which leads to $3\alpha = -6$, $2\alpha = -4$ and $-2\alpha = 4$.
+And thus, the solution to the given vector equation is $\alpha = -2$.
+</div>

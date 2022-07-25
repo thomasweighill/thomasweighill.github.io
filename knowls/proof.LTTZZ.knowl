@@ -1,0 +1,18 @@
+<div class="proof" id="proof-LTTZZ" acro="LTTZZ" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">LTTZZ</span>
+</h5>
+<p>The two zero vectors in the conclusion of the theorem are different.  The first is from $U$ while the second is from $V$.  We will subscript the zero vectors in this proof to highlight the distinction.  Think about your objects.  (This proof is contributed by <a knowl="./knowls/contributor.markshoemaker.knowl">Mark Shoemaker</a>).
+\begin{align*}
+\lt{T}{\zerovector_U}
+&amp;=\lt{T}{0\zerovector_U}
+&amp;&amp;\knowl{./knowls/theorem.ZSSM.knowl}{\text{Theorem ZSSM}}\text{ in }U\\
+&amp;=0\lt{T}{\zerovector_U}
+&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\zerovector_V
+&amp;&amp;\knowl{./knowls/theorem.ZSSM.knowl}{\text{Theorem ZSSM}}\text{ in }V
+\end{align*}
+
+</p>
+
+</div>

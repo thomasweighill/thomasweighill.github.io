@@ -1,0 +1,48 @@
+<div class="example" id="example-BRLT" acro="BRLT" titletext="A basis for the range of a linear transformation">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">BRLT</span> <span class="titletext">A basis for the range of a linear transformation</span>
+</h5>
+<p>Define the linear transformation $\ltdefn{T}{M_{22}}{P_2}$ by
+\begin{equation*}
+\lt{T}{ \begin{bmatrix} a&amp;b\\c&amp;d \end{bmatrix}}
+=\left(a+2b+8c+d\right)+\left(-3a+2b+5d\right)x+\left(a+b+5c\right)x^2
+\end{equation*}
+</p>
+<p>A convenient spanning set for $M_{22}$ is the basis
+\begin{equation*}
+S=\set{
+\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix},\,
+\begin{bmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{bmatrix},\,
+\begin{bmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{bmatrix},\,
+\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}
+}
+\end{equation*}
+</p>
+<p>So by <a class="knowl" acro="SSRLT" type="Theorem" title="Spanning Set for Range of a Linear Transformation" knowl="./knowls/theorem.SSRLT.knowl">Theorem SSRLT</a>, a spanning set for $\rng{T}$ is
+\begin{align*}
+R
+&amp;=\set{
+\lt{T}{\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}},\,
+\lt{T}{\begin{bmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{bmatrix}},\,
+\lt{T}{\begin{bmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{bmatrix}},\,
+\lt{T}{\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}}
+}\\
+&amp;=\set{1-3x+x^2,\,2+2x+x^2,\,8+5x^2,\,1+5x}
+\end{align*}
+
+</p>
+<p>The set $R$ is not linearly independent, so if we desire a basis for $\rng{T}$, we need to eliminate some redundant vectors.  Two particular relations of linear dependence on $R$ are
+\begin{align*}
+(-2)(1-3x+x^2)+(-3)(2+2x+x^2)+(8+5x^2)&amp;=0+0x+0x^2=\zerovector\\
+(1-3x+x^2)+(-1)(2+2x+x^2)+(1+5x)&amp;=0+0x+0x^2=\zerovector
+\end{align*}
+
+</p>
+<p>These, individually, allow us to remove $8+5x^2$ and $1+5x$ from $R$ without destroying the property that $R$ spans $\rng{T}$.  The two remaining vectors are linearly independent (check this!), so we can write
+\begin{equation*}
+\rng{T}=\spn{\set{1-3x+x^2,\,2+2x+x^2}}
+\end{equation*}
+and see that $\dimension{\rng{T}}=2$.</p>
+<div class="context"><a href="section-SLT.html#example-BRLT" class="context" title="Section SLT">(in
+context)</a></div>
+</div>

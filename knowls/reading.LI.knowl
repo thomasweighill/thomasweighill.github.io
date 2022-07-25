@@ -1,0 +1,25 @@
+
+<ol>
+<li>Let  $S$  be the set of three vectors below.
+\begin{equation*}
+S=\set{\colvector{1\\2\\-1},\,\colvector{3\\-4\\2},\,\colvector{4\\-2\\1}}
+\end{equation*}
+Is  $S$  linearly independent or linearly dependent?  Explain why.
+</li>
+<li> Let  $S$  be the set of  three vectors below.
+\begin{equation*}
+S=\set{\colvector{1\\-1\\0},\,\colvector{3\\2\\2},\,\colvector{4\\3\\-4}}
+\end{equation*}
+Is  $S$  linearly independent or linearly dependent?  Explain why.
+</li>
+<li>Is the matrix below singular or nonsingular?  Explain your answer using only the final conclusion you reached in the previous question, along with one new theorem.
+\begin{equation*}
+\begin{bmatrix}
+ 1  &amp;3  &amp;4\\
+-1  &amp;2  &amp;3\\
+ 0  &amp;2 &amp;-4
+ \end{bmatrix}
+\end{equation*}
+</li>
+</ol>
+

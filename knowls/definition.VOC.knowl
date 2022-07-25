@@ -1,0 +1,26 @@
+<div class="definition" id="definition-VOC" acro="VOC" titletext="Vector of Constants">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">VOC</span> <span class="titletext"> Vector of Constants</span>
+</h5>
+<p>For a system of linear equations,
+\begin{align*}
+a_{11}x_1+a_{12}x_2+a_{13}x_3+\dots+a_{1n}x_n&amp;=b_1\\
+a_{21}x_1+a_{22}x_2+a_{23}x_3+\dots+a_{2n}x_n&amp;=b_2\\
+a_{31}x_1+a_{32}x_2+a_{33}x_3+\dots+a_{3n}x_n&amp;=b_3\\
+\vdots&amp;\\
+a_{m1}x_1+a_{m2}x_2+a_{m3}x_3+\dots+a_{mn}x_n&amp;=b_m
+\end{align*}
+
+the <em class="term">vector of constants</em> is the column vector of size $m$
+\begin{equation*}
+\vect{b}=
+\begin{bmatrix}
+b_1\\
+b_2\\
+b_3\\
+\vdots\\
+b_m\\
+\end{bmatrix}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-VOC" class="context" title="Section RREF">(in context)</a></div>

@@ -1,0 +1,16 @@
+<div class="example" id="example-BP" acro="BP" titletext="Bases for $P_n$">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">BP</span> <span class="titletext">Bases for $P_n$</span>
+</h5>
+<p>The vector space of polynomials with degree at most $n$, $P_n$, has the basis
+\begin{equation*}
+B=\set{1,\,x,\,x^2,\,x^3,\,\ldots,\,x^n}.
+\end{equation*}</p>
+<p>Another nice basis for $P_n$ is
+\begin{equation*}
+C=\set{1,\,1+x,\,1+x+x^2,\,1+x+x^2+x^3,\,\ldots,\,1+x+x^2+x^3+\cdots+x^n}.
+\end{equation*}</p>
+<p>Checking that each of $B$ and $C$ is a linearly independent spanning set are good exercises.</p>
+<div class="context"><a href="section-B.html#example-BP" class="context" title="Section B">(in
+context)</a></div>
+</div>

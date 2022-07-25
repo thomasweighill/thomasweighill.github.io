@@ -1,0 +1,58 @@
+<div class="proof" id="proof-ILTIS" acro="ILTIS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ILTIS</span>
+</h5>
+<p>(⇒)  Since $T$ is presumed invertible, we can employ its inverse, $\ltinverse{T}$ (<a class="knowl" acro="IVLT" type="Definition" title="Invertible Linear Transformations" knowl="./knowls/definition.IVLT.knowl">Definition IVLT</a>).  To see that $T$ is injective, suppose $\vect{x},\,\vect{y}\in U$ and assume that $\lt{T}{\vect{x}}=\lt{T}{\vect{y}}$,
+\begin{align*}
+\vect{x}
+&amp;=\lt{I_U}{\vect{x}}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\lt{\left(\compose{\ltinverse{T}}{T}\right)}{\vect{x}}&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\lt{\ltinverse{T}}{\lt{T}{\vect{x}}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{\ltinverse{T}}{\lt{T}{\vect{y}}}&amp;&amp;\knowl{./knowls/definition.ILT.knowl}{\text{Definition ILT}}\\
+&amp;=\lt{\left(\compose{\ltinverse{T}}{T}\right)}{\vect{y}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{I_U}{\vect{y}}&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\vect{y}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}
+\end{align*}
+
+So by <a class="knowl" acro="ILT" type="Definition" title="Injective Linear Transformation" knowl="./knowls/definition.ILT.knowl">Definition ILT</a> $T$ is injective.</p>
+
+<p>To check that $T$ is surjective, suppose $\vect{v}\in V$.  Then $\lt{\ltinverse{T}}{\vect{v}}$ is a vector in $U$.  Compute
+\begin{align*}
+\lt{T}{\lt{\ltinverse{T}}{\vect{v}}}
+&amp;=\lt{\left(\compose{T}{\ltinverse{T}}\right)}{\vect{v}}&amp;&amp;\knowl{./knowls/definition.LTC.knowl}{\text{Definition LTC}}\\
+&amp;=\lt{I_V}{\vect{v}}&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\vect{v}&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}
+\end{align*}
+
+So there is an element from $U$, when used as an input to $T$ (namely $\lt{\ltinverse{T}}{\vect{v}}$) that produces the desired output, $\vect{v}$, and hence $T$ is surjective by <a class="knowl" acro="SLT" type="Definition" title="Surjective Linear Transformation" knowl="./knowls/definition.SLT.knowl">Definition SLT</a>.</p>
+
+<p>(⇐)  Now assume that $T$ is both injective and surjective.  We will build a function $\ltdefn{S}{V}{U}$ that will establish that $T$ is invertible.  To this end, choose any $\vect{v}\in V$.  Since $T$ is surjective, <a class="knowl" acro="RSLT" type="Theorem" title="Range of a Surjective Linear Transformation" knowl="./knowls/theorem.RSLT.knowl">Theorem RSLT</a> says $\rng{T}=V$, so we have $\vect{v}\in\rng{T}$.  <a class="knowl" acro="RPI" type="Theorem" title="Range and Pre-Image" knowl="./knowls/theorem.RPI.knowl">Theorem RPI</a> says that the pre-image of $\vect{v}$, $\preimage{T}{\vect{v}}$, is nonempty.  So we can choose a vector from the pre-image of $\vect{v}$, say $\vect{u}$.  In other words, there exists $\vect{u}\in\preimage{T}{\vect{v}}$.</p>
+
+<p>Since $\preimage{T}{\vect{v}}$ is nonempty, <a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a> then says that
+\begin{equation*}
+\preimage{T}{\vect{v}}=\setparts{\vect{u}+\vect{z}}{\vect{z}\in\krn{T}}
+\end{equation*}
+</p>
+
+<p>However, because $T$ is injective, by <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a> the kernel is trivial, $\krn{T}=\set{\zerovector}$.  So the pre-image is a set with just one element, $\preimage{T}{\vect{v}}=\set{\vect{u}}$.  Now we can define $S$ by $\lt{S}{\vect{v}}=\vect{u}$.  This is the key to this half of this proof.  Normally the preimage of a vector from the codomain might be an empty set, or an infinite set.  But surjectivity requires that the preimage not be empty, and then injectivity limits the preimage to a singleton.  Since our choice of $\vect{v}$ was arbitrary, we know that every pre-image for $T$ is a set with a single element.  This allows us to construct $S$ as a <em>function</em>.  Now that it is defined, verifying that it is the inverse of $T$ will be easy.  Here we go.</p>
+
+<p>Choose $\vect{u}\in U$.  Define $\vect{v}=\lt{T}{\vect{u}}$.  Then $\preimage{T}{\vect{v}}=\set{\vect{u}}$, so that $\lt{S}{\vect{v}}=\vect{u}$ and,
+\begin{equation*}
+\lt{\left(\compose{S}{T}\right)}{\vect{u}}
+=\lt{S}{\lt{T}{\vect{u}}}
+=\lt{S}{\vect{v}}
+=\vect{u}
+=\lt{I_U}{\vect{u}}
+\end{equation*}
+and since our choice of $\vect{u}$ was arbitrary we have function equality, $\compose{S}{T}=I_U$.</p>
+
+<p>Now choose $\vect{v}\in V$.  Define $\vect{u}$ to be the single vector in the set $\preimage{T}{\vect{v}}$, in other words, $\vect{u}=\lt{S}{\vect{v}}$.  Then $\lt{T}{\vect{u}}=\vect{v}$, so
+\begin{equation*}
+\lt{\left(\compose{T}{S}\right)}{\vect{v}}
+=\lt{T}{\lt{S}{\vect{v}}}
+=\lt{T}{\vect{u}}
+=\vect{v}
+=\lt{I_V}{\vect{v}}
+\end{equation*}
+and since our choice of $\vect{v}$ was arbitrary we have function equality, $\compose{T}{S}=I_V$.</p>
+</div>

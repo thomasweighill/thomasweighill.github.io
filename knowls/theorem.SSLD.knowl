@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-SSLD" acro="SSLD" titletext="Spanning Sets and Linear Dependence">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SSLD</span><span class="titletext"> Spanning Sets and Linear Dependence</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{v}{t}}$ is a finite set of vectors which spans the vector space $V$.  Then any set of $t+1$ or more vectors from $V$ is linearly dependent.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SSLD.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-SSLD" class="context" title="Section D">(in context)</a></div>

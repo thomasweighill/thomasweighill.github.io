@@ -1,0 +1,5 @@
+<div class="solution" acro="TSS.M51">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">TSS.M51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Consistent means there is at least one solution (<a class="knowl" acro="CS" type="Definition" title="Consistent System" knowl="./knowls/definition.CS.knowl">Definition CS</a>).  It will have either a unique solution or infinitely many solutions (<a class="knowl" acro="PSSLS" type="Theorem" title="Possible Solution Sets for Linear Systems" knowl="./knowls/theorem.PSSLS.knowl">Theorem PSSLS</a>).
+</div>

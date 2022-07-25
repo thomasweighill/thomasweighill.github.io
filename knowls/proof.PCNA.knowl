@@ -1,0 +1,9 @@
+<div class="proof" id="proof-PCNA" acro="PCNA" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">PCNA</span>
+</h5>
+<p>We could derive each of these properties of complex numbers with a proof that builds on the identical properties of the real numbers.  The only proof that might be at all interesting would be to show <a class="knowl" acro="MICN" type="Property" title="Multiplicative Inverse, Complex Numbers" knowl="./knowls/property.MICN.knowl">Property MICN</a> since we would need to trot out a conjugate.  For this property, and especially for the others, we might be tempted to construct proofs of the identical properties for the reals.  This would take us way too far afield, so we will draw a line in the sand right here and just agree that these nine fundamental behaviors are true.  OK?</p>
+
+<p>Mostly we have stated these nine properties carefully so that we can make reference to them later in other proofs.  So we will be linking back here often.</p>
+
+</div>

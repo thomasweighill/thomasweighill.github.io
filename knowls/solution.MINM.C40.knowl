@@ -1,0 +1,29 @@
+<div class="solution" acro="MINM.C40">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MINM.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The coefficient matrix and vector of constants for the system are
+\begin{align*}
+\begin{bmatrix}
+1 &amp; 1 &amp; 3 &amp; 1\\
+-2 &amp; -1 &amp; -4 &amp; -1\\
+1 &amp; 4 &amp; 10 &amp; 2\\
+-2 &amp; 0 &amp; -4 &amp; 5
+\end{bmatrix}&amp;&amp;
+\vect{b}=\colvector{5\\-7\\9\\9}
+\end{align*}
+
+$\inverse{A}$ can be computed by using a calculator, or by the method of <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a>.
+Then <a class="knowl" acro="SNCM" type="Theorem" title="Solution with Nonsingular Coefficient Matrix" knowl="./knowls/theorem.SNCM.knowl">Theorem SNCM</a> says the unique solution is
+\begin{equation*}
+\inverse{A}\vect{b}=
+\begin{bmatrix}
+38 &amp; 18 &amp; -5 &amp; -2\\
+96 &amp; 47 &amp; -12 &amp; -5\\
+-39 &amp; -19 &amp; 5 &amp; 2\\
+-16 &amp; -8 &amp; 2 &amp; 1
+\end{bmatrix}
+\colvector{5\\-7\\9\\9}
+=
+\colvector{1\\-2\\1\\3}
+\end{equation*}
+</div>

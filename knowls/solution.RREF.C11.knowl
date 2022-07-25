@@ -1,0 +1,13 @@
+<div class="solution" acro="RREF.C11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">RREF.C11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The augmented matrix row-reduces to
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp;  0 &amp;  1 &amp;  4/5 &amp;  0\\
+0 &amp;  \leading{1} &amp;  -1 &amp;  -1/10 &amp;  0\\
+0 &amp;  0 &amp;  0 &amp;  0 &amp;  \leading{1}
+\end{bmatrix}
+\end{equation*}
+Row 3 represents the equation $0=1$, which is patently false, so the original system has no solutions.  We can express the solution set as the empty set, $\emptyset=\set{\ }$.
+</div>

@@ -1,0 +1,5 @@
+<div class="solution" acro="NM.C32">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">NM.C32</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The matrix is not square, so neither term is applicable.  See <a class="knowl" acro="NM" type="Definition" title="Nonsingular Matrix" knowl="./knowls/definition.NM.knowl">Definition NM</a>, which is stated for just square matrices.
+</div>

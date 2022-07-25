@@ -1,0 +1,27 @@
+<div class="example" id="example-PCVS" acro="PCVS" titletext="Properties for the Crazy Vector Space">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">PCVS</span> <span class="titletext">Properties for the Crazy Vector Space</span>
+</h5>
+<p>Several of the above theorems have interesting demonstrations when applied to the crazy vector space, $C$ (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>).  We are not proving anything new here, or learning anything we did not know already about $C$.  It is just plain fun to see how these general theorems apply in a specific instance.  For most of our examples, the applications are obvious or trivial, but not with $C$.</p>
+<p>Suppose $\vect{u}\in C$.  Then, as given by <a class="knowl" acro="ZSSM" type="Theorem" title="Zero Scalar in Scalar Multiplication" knowl="./knowls/theorem.ZSSM.knowl">Theorem ZSSM</a>,
+\begin{equation*}
+0\vect{u}=0(x_1,\,x_2)=(0x_1+0-1,\,0x_2+0-1)=(-1,-1)=\zerovector
+\end{equation*}
+And as given by <a class="knowl" acro="ZVSM" type="Theorem" title="Zero Vector in Scalar Multiplication" knowl="./knowls/theorem.ZVSM.knowl">Theorem ZVSM</a>,
+\begin{align*}
+\alpha\zerovector
+&amp;=\alpha(-1,\,-1)=(\alpha(-1)+\alpha-1,\,\alpha(-1)+\alpha-1)\\
+&amp;=(-\alpha+\alpha-1,\,-\alpha+\alpha-1)=(-1,\,-1)=\zerovector
+\end{align*}
+
+Finally, as given by <a class="knowl" acro="AISM" type="Theorem" title="Additive Inverses from Scalar Multiplication" knowl="./knowls/theorem.AISM.knowl">Theorem AISM</a>,
+\begin{align*}
+(-1)\vect{u}
+&amp;=(-1)(x_1,\,x_2)=((-1)x_1+(-1)-1,\,(-1)x_2+(-1)-1)\\
+&amp;=(-x_1-2,\,-x_2-2)=-\vect{u}
+\end{align*}
+
+</p>
+<div class="context"><a href="section-VS.html#example-PCVS" class="context" title="Section VS">(in
+context)</a></div>
+</div>

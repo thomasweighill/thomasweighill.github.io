@@ -1,0 +1,33 @@
+<div class="solution" acro="SS.C42">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">SS.C42</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Form a linear combination, with unknown scalars, of $R$ that equals $\vect{y}$,
+\begin{equation*}
+a_1\colvector{2\\-1\\3\\4\\0}+
+a_2\colvector{1\\1\\2\\2\\-1}+
+a_3\colvector{3\\-1\\0\\3\\-2}
+=
+\colvector{1\\-1\\-8\\-4\\-3}
+\end{equation*}
+We want to know if there are values for the scalars that make the vector equation true since that is the definition of membership in $\spn{R}$.  By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> any such values will also be solutions to the linear system represented by the augmented matrix,
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 1 &amp; 3 &amp; 1\\
+-1 &amp; 1 &amp; -1 &amp; -1\\
+3 &amp; 2 &amp; 0 &amp; -8\\
+4 &amp; 2 &amp; 3 &amp; -4\\
+0 &amp; -1 &amp; -2 &amp; -3
+\end{bmatrix}
+\end{equation*}
+Row-reducing the matrix yields,
+\begin{equation*}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; -2\\
+0 &amp; \leading{1} &amp; 0 &amp; -1\\
+0 &amp; 0 &amp; \leading{1} &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+From this we  see that the system of equations is consistent (<a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>), and has a unique solution.  This solution will provide a linear combination of the vectors in $R$ that equals $\vect{y}$. So $\vect{y}\in R$.
+</div>

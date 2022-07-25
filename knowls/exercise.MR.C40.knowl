@@ -1,0 +1,12 @@
+<div class="exercise" acro="MR.C40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $S_{22}$ be the set of $2\times 2$ symmetric matrices.  Verify that the linear transformation $R$ is invertible and find $\ltinverse{R}$.
+\begin{equation*}
+\ltdefn{R}{S_{22}}{P_2},\quad\lt{R}{\begin{bmatrix}a&amp;b\\b&amp;c\end{bmatrix}}=
+(a-b)+(2a-3b-2c)x+(a-b+c)x^2
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C40.knowl">Solution</a></p></div>
+</div>

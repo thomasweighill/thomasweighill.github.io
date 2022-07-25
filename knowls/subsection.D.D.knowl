@@ -1,0 +1,34 @@
+<div class="subsection" id="subsection-D" acro="D" titletext="Dimension">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">D</span> <span class="titletext">Dimension</span>
+</h4>
+<div class="definition" id="definition-D" acro="D" titletext="Dimension">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">D</span> <span class="titletext"> Dimension</span>
+</h5>
+<p>Suppose that $V$ is a vector space and $\set{\vectorlist{v}{t}}$ is a basis of $V$.  Then the <em class="term">dimension</em> of $V$ is defined by $\dimension{V}=t$.  If $V$ has no finite bases, we say $V$ has infinite dimension.</p>
+</div>
+<p>This is a very simple definition, which belies its power.  Grab a basis, any basis, and count up the number of vectors it contains.  That is the dimension.  However, this simplicity causes a problem.  Given a vector space, you and I could each construct different bases — remember that a vector space might have many bases.  And what if your basis and my basis had different sizes?  Applying <a class="knowl" acro="D" type="Definition" title="Dimension" knowl="./knowls/definition.D.knowl">Definition D</a> we would arrive at different numbers!  With our current knowledge about vector spaces, we would have to say that dimension is not “well-defined.”  Fortunately, there is a theorem that will correct this problem.</p>
+<p>In a strictly logical progression, the next two theorems would <em>precede</em> the definition of dimension.  Many subsequent theorems will trace their lineage back to the following fundamental result.</p>
+<div class="theorem" id="theorem-SSLD" acro="SSLD" titletext="Spanning Sets and Linear Dependence">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SSLD</span><span class="titletext"> Spanning Sets and Linear Dependence</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{v}{t}}$ is a finite set of vectors which spans the vector space $V$.  Then any set of $t+1$ or more vectors from $V$ is linearly dependent.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SSLD.knowl">Proof</a></div>
+</div>
+<p>Notice how the swap of the two summations is so much easier in the third step above, as opposed to all the rearranging and regrouping that takes place in the previous proof.  And using only about half the space.  And there are no ellipses (…).</p>
+<p><a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a> can be viewed as a generalization of <a class="knowl" acro="MVSLD" type="Theorem" title="More Vectors than Size implies Linear Dependence" knowl="./knowls/theorem.MVSLD.knowl">Theorem MVSLD</a>.  We know that $\complex{m}$ has a basis with $m$ vectors in it (<a class="knowl" acro="SUVB" type="Theorem" title="Standard Unit Vectors are a Basis" knowl="./knowls/theorem.SUVB.knowl">Theorem SUVB</a>), so it is a set of $m$ vectors that spans $\complex{m}$.  By <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>, any set of more than $m$ vectors from $\complex{m}$ will be linearly dependent.  But this is exactly the conclusion we have in <a class="knowl" acro="MVSLD" type="Theorem" title="More Vectors than Size implies Linear Dependence" knowl="./knowls/theorem.MVSLD.knowl">Theorem MVSLD</a>.  Maybe this is not a total shock, as the proofs of both theorems rely heavily on <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a>.   The beauty of <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a> is that it applies in any vector space.  We illustrate the generality of this theorem, and hint at its power, in the next example.</p>
+<div class="example" id="example-LDP4" acro="LDP4" titletext="Linearly dependent set in $P_4$"><h5 class="example">
+<a knowl="./knowls/example.LDP4.knowl"><span class="type">Example</span> <span class="acro">LDP4</span></a> <span class="titletext">Linearly dependent set in $P_4$</span>
+</h5></div>
+<p><a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a> is indeed powerful, but our main purpose in proving it right now was to make sure that our definition of dimension (<a class="knowl" acro="D" type="Definition" title="Dimension" knowl="./knowls/definition.D.knowl">Definition D</a>) is well-defined.  Here is the theorem.</p>
+<div class="theorem" id="theorem-BIS" acro="BIS" titletext="Bases have Identical Sizes">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">BIS</span><span class="titletext"> Bases have Identical Sizes</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space with a finite basis $B$ and a second basis $C$.  Then $B$ and $C$ have the same size.</p></div>
+<div class="proof"><a knowl="./knowls/proof.BIS.knowl">Proof</a></div>
+</div>
+<p><a class="knowl" acro="BIS" type="Theorem" title="Bases have Identical Sizes" knowl="./knowls/theorem.BIS.knowl">Theorem BIS</a> tells us that if we find one finite basis in a vector space, then they all have the same size.  This (finally) makes <a class="knowl" acro="D" type="Definition" title="Dimension" knowl="./knowls/definition.D.knowl">Definition D</a> unambiguous.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#subsection-D" class="context" title="Section D">(in context)</a></div>

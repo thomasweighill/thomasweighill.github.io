@@ -1,0 +1,17 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-SH', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">SH</span> <span class="titletext">Sage Help</span>
+</h5>
+
+
+<p>There are many ways to learn about, or remind yourself of, how various Sage commands behave.  Now that we have learned a few, it is a good time to show you the most direct methods of obtaining help.  These work throughout Sage, so can be useful if you want to apply Sage to other areas of mathematics.</p>
+
+<p>The first hurdle is to learn how to make a mathematical object in Sage.  We know now how to make matrices and vectors (and null spaces).  This is enough to help us explore relevant commands in Sage for linear algebra.  First, define a very simple matrix <span class="code">A</span>, with maybe one with one row and two columns.  The number system you choose will have some effect on the results, so use <span class="code">QQ</span> for now.  In the notebook, enter <span class="code">A.</span> (assuming you called your matrix <span class="code">A</span>, and be sure to include the period).  Now hit the “tab” key and you will get a long list of all the possible methods you can apply to <span class="code">A</span> using the dot notation.</p>
+
+<p>You can click directly on one of these commands (the word, not the blue highlight) to enter it into the cell.  Now instead of adding parentheses to the command, place a single question mark (<span class="code">?</span>) on the end and hit the tab key again.  You should get some nicely formatted documentation, along with example uses.  (Try <span class="code">A.rref?</span> below for a good example of this.)  You can replace the single question mark by two question marks, and as Sage is an open source program you can see the actual computer instructions for the method, which at first includes all the documentation again.  Note that now the documentation is enclosed in a pair of triple quotation marks (<span class="code">""","""</span>) as part of the source code, and is not specially formatted.</p>
+
+<p>These methods of learning about Sage are generally referred to as “tab-completion” and we will use this term going forward.  To learn about the use of Sage in other areas of mathematics, you just need to find out how to create the relevant objects via a “constructor” function, such as <span class="code">matrix()</span> and <span class="code">vector()</span> for linear algebra.  Sage has a comprehensive Reference Manual and there is a Linear Algebra Quick Reference sheet.  These should be easily located online via sagemath.org or with an internet search leading with the terms “sage math” (use “math” to avoid confusion with other websites for things named “Sage”).</p>
+
+<br><br><div class="sage-SH sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

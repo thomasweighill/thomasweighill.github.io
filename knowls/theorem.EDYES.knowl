@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-EDYES" acro="EDYES" titletext="Equal Dimensions Yields Equal Subspaces">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EDYES</span><span class="titletext"> Equal Dimensions Yields Equal Subspaces</span>
+</h5>
+<div class="statement"><p>Suppose that $U$ and $V$ are subspaces of the vector space $W$, such that $U\subseteq V$ and $\dimension{U}=\dimension{V}$.  Then $U=V$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EDYES.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PD.html#theorem-EDYES" class="context" title="Section PD">(in context)</a></div>

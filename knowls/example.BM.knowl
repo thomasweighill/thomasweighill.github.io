@@ -1,0 +1,21 @@
+<div class="example" id="example-BM" acro="BM" titletext="A basis for the vector space of matrices">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">BM</span> <span class="titletext">A basis for the vector space of matrices</span>
+</h5>
+<p>In the vector space $M_{mn}$ of matrices (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>)  define the matrices $B_{k\ell}$, $1\leq k\leq m$, $1\leq\ell\leq n$ by
+\begin{equation*}
+\matrixentry{B_{k\ell}}{ij}=\begin{cases}
+1&amp;\text{if }k=i,\,\ell=j\\
+0&amp;\text{otherwise}
+\end{cases}
+\end{equation*}
+</p>
+<p>So these matrices have entries that are all zeros, with the exception of a lone entry that is one.  The set of all $mn$ of them,
+\begin{equation*}
+B=\setparts{B_{k\ell}}{1\leq k\leq m,\ 1\leq\ell\leq n}
+\end{equation*}
+forms a basis for $M_{mn}$.  See <a knowl="./knowls/exercise.B.M20.knowl">Exercise B.M20</a>.
+</p>
+<div class="context"><a href="section-B.html#example-BM" class="context" title="Section B">(in
+context)</a></div>
+</div>

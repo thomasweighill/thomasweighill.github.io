@@ -1,0 +1,30 @@
+<div class="solution" acro="RREF.M50">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">RREF.M50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Let $c,\,t,\,m,\,b$ denote the number of cars, trucks, motorcycles, and bicycles.  Then the statements from the problem yield the equations:
+\begin{align*}
+c+t+m+b&amp;=66\\
+c-4t&amp;=0\\
+4c+4t+2m+2b&amp;=252
+\end{align*}
+
+We form the augmented matrix for this system and row-reduce
+\begin{align*}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 66\\
+1 &amp; -4 &amp; 0 &amp; 0 &amp; 0\\
+4 &amp; 4 &amp; 2 &amp; 2 &amp; 252
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 48\\
+0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; 12\\
+0 &amp; 0 &amp; \leading{1} &amp; 1 &amp; 6
+\end{bmatrix}
+\end{align*}
+
+The first  row of the matrix represents the equation $c=48$, so there are 48 cars.
+The second row of the matrix represents the equation $t=12$, so there are 12 trucks.
+The third  row of the matrix represents the equation $m+b=6$ so there are anywhere from 0 to 6 bicycles.
+We can also say that $b$ is a free variable, but the context of the problem limits it to 7 integer values since you cannot have a negative number of motorcycles.
+</div>

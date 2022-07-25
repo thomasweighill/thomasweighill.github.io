@@ -1,0 +1,159 @@
+<div class="example" id="example-CBP" acro="CBP" titletext="Change of basis with polynomials">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CBP</span> <span class="titletext">Change of basis with polynomials</span>
+</h5>
+<p>The vector space $P_4$ (<a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>) has two nice bases (<a class="knowl" acro="BP" type="Example" title="Bases for $P_n$" knowl="./knowls/example.BP.knowl">Example BP</a>),
+\begin{align*}
+B&amp;=\set{1,x,x^2,x^3,x^4}\\
+C&amp;=\set{1,1+x,1+x+x^2,1+x+x^2+x^3,1+x+x^2+x^3+x^4}
+\end{align*}
+
+</p>
+<p>To build the change-of-basis matrix between $B$ and $C$, we must first build a vector representation of each vector in $B$ relative to $C$,
+\begin{align*}
+\vectrep{C}{1}
+&amp;=\vectrep{C}{(1)\left(1\right)}
+=\colvector{1\\0\\0\\0\\0}\\
+\vectrep{C}{x}
+&amp;=\vectrep{C}{(-1)\left(1\right)+(1)\left(1+x\right)}
+=\colvector{-1\\1\\0\\0\\0}\\
+\vectrep{C}{x^2}
+&amp;=\vectrep{C}{(-1)\left(1+x\right)+(1)\left(1+x+x^2\right)}
+=\colvector{0\\-1\\1\\0\\0}\\
+\vectrep{C}{x^3}
+&amp;=\vectrep{C}{(-1)\left(1+x+x^2\right)+(1)\left(1+x+x^2+x^3\right)}
+=\colvector{0\\0\\-1\\1\\0}\\
+\vectrep{C}{x^4}
+&amp;=\vectrep{C}{(-1)\left(1+x+x^2+x^3\right)+(1)\left(1+x+x^2+x^3+x^4\right)}
+=\colvector{0\\0\\0\\-1\\1}
+\end{align*}
+
+</p>
+<p>Then we package up these vectors as the columns of a matrix,
+\begin{equation*}
+\cbm{B}{C}=
+\begin{bmatrix}
+1 &amp;-1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp;-1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp;-1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp;-1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Now, to illustrate <a class="knowl" acro="CB" type="Theorem" title="Change-of-Basis" knowl="./knowls/theorem.CB.knowl">Theorem CB</a>, consider the vector $\vect{u}=5-3x+2x^2+8x^3-3x^4$.  We can build the representation of $\vect{u}$ relative to $B$ easily,
+\begin{equation*}
+\vectrep{B}{\vect{u}}=
+\vectrep{B}{5-3x+2x^2+8x^3-3x^4}=
+\colvector{5\\-3\\2\\8\\-3}
+\end{equation*}
+</p>
+<p>Applying <a class="knowl" acro="CB" type="Theorem" title="Change-of-Basis" knowl="./knowls/theorem.CB.knowl">Theorem CB</a>, we obtain a second representation of $\vect{u}$, but now relative to $C$,
+\begin{align*}
+\vectrep{C}{\vect{u}}
+&amp;=\cbm{B}{C}\vectrep{B}{\vect{u}}&amp;&amp;\knowl{./knowls/theorem.CB.knowl}{\text{Theorem CB}}\\
+&amp;=
+\begin{bmatrix}
+1 &amp;-1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp;-1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp;-1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp;-1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+\colvector{5\\-3\\2\\8\\-3}\\
+&amp;=\colvector{8\\-5\\-6\\11\\-3}&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}
+\end{align*}
+
+</p>
+<p>We can check our work by unraveling this second representation,
+\begin{align*}
+\vect{u}
+&amp;=\vectrepinv{C}{\vectrep{C}{\vect{u}}}
+&amp;&amp;\knowl{./knowls/definition.IVLT.knowl}{\text{Definition IVLT}}\\
+&amp;=\vectrepinv{C}{\colvector{8\\-5\\-6\\11\\-3}}\\
+&amp;=8(1)+(-5)(1+x)+(-6)(1+x+x^2)\\
+&amp;\quad\quad+(11)(1+x+x^2+x^3)+(-3)(1+x+x^2+x^3+x^4)
+&amp;&amp;\knowl{./knowls/definition.VR.knowl}{\text{Definition VR}}\\
+&amp;=5-3x+2x^2+8x^3-3x^4
+\end{align*}
+
+</p>
+<p>The change-of-basis matrix from $C$ to $B$ is actually easier to build.  Grab each vector in the basis $C$ and form its representation relative to $B$
+\begin{align*}
+\vectrep{B}{1}
+&amp;=\vectrep{B}{(1)1}
+=\colvector{1\\0\\0\\0\\0}\\
+\vectrep{B}{1+x}
+&amp;=\vectrep{B}{(1)1+(1)x}
+=\colvector{1\\1\\0\\0\\0}\\
+\vectrep{B}{1+x+x^2}
+&amp;=\vectrep{B}{(1)1+(1)x+(1)x^2}
+=\colvector{1\\1\\1\\0\\0}\\
+\vectrep{B}{1+x+x^2+x^3}
+&amp;=\vectrep{B}{(1)1+(1)x+(1)x^2+(1)x^3}
+=\colvector{1\\1\\1\\1\\0}\\
+\vectrep{B}{1+x+x^2+x^3+x^4}
+&amp;=\vectrep{B}{(1)1+(1)x+(1)x^2+(1)x^3+(1)x^4}
+=\colvector{1\\1\\1\\1\\1}\\
+\end{align*}
+
+</p>
+<p>Then we package up these vectors as the columns of a matrix,
+\begin{equation*}
+\cbm{C}{B}=
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We formed two representations of the vector $\vect{u}$ above, so we can again provide a check on our computations by converting from the representation of $\vect{u}$ relative to $C$ to the representation of $\vect{u}$ relative to $B$,
+\begin{align*}
+\vectrep{B}{\vect{u}}
+&amp;=\cbm{C}{B}\vectrep{C}{\vect{u}}&amp;&amp;\knowl{./knowls/theorem.CB.knowl}{\text{Theorem CB}}\\
+&amp;=
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+\colvector{8\\-5\\-6\\11\\-3}\\
+&amp;=\colvector{5\\-3\\2\\8\\-3}&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}\\
+\end{align*}
+
+</p>
+<p>One more computation that is either a check on our work, or an illustration of a theorem.  The two change-of-basis matrices, $\cbm{B}{C}$ and $\cbm{C}{B}$, should be inverses of each other, according to <a class="knowl" acro="ICBM" type="Theorem" title="Inverse of Change-of-Basis Matrix" knowl="./knowls/theorem.ICBM.knowl">Theorem ICBM</a>.  Here we go,
+\begin{equation*}
+\cbm{B}{C}\cbm{C}{B}=
+\begin{bmatrix}
+1 &amp;-1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp;-1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp;-1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp;-1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1\\
+\end{bmatrix}
+\end{equation*}
+</p>
+<div class="context"><a href="section-CB.html#example-CBP" class="context" title="Section CB">(in
+context)</a></div>
+</div>

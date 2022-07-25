@@ -1,0 +1,19 @@
+<div class="example" id="example-NSNM" acro="NSNM" titletext="Null space of a nonsingular matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSNM</span> <span class="titletext">Null space of a nonsingular matrix</span>
+</h5>
+<p>Given the nonsingular coefficient matrix from <a knowl="./knowls/archetype.B.knowl">Archetype B</a>, the solution set to the homogeneous system $\homosystem{A}$ is constructed in <a class="knowl" acro="HUSAB" type="Example" title="Homogeneous, unique solution, Archetype B" knowl="./knowls/example.HUSAB.knowl">Example HUSAB</a> and contains only the trivial solution, so the null space of $A$ has only a single element,
+
+\begin{align*}
+A&amp;=\begin{bmatrix}
+-7&amp;-6&amp;-12\\
+ 5&amp;5&amp;7\\
+ 1&amp;0&amp;4
+\end{bmatrix}
+&amp;\nsp{A}&amp;=\set{\colvector{0\\0\\0}}
+\end{align*}
+
+</p>
+<div class="context"><a href="section-NM.html#example-NSNM" class="context" title="Section NM">(in
+context)</a></div>
+</div>

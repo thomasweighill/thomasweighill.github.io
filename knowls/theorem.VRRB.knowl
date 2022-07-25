@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-VRRB" acro="VRRB" titletext="Vector Representation Relative to a Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">VRRB</span><span class="titletext"> Vector Representation Relative to a Basis</span>
+</h5>
+<div class="statement"><p>Suppose that $V$ is a vector space and $B=\set{\vectorlist{v}{m}}$ is a linearly independent set that spans $V$.  Let $\vect{w}$ be any vector in $V$.  Then there exist <em>unique</em> scalars $a_1,\,a_2,\,a_3,\,\ldots,\,a_m$ such that
+\begin{equation*}
+\vect{w}=\lincombo{a}{v}{m}.
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.VRRB.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LISS.html#theorem-VRRB" class="context" title="Section LISS">(in context)</a></div>

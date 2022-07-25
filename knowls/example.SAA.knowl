@@ -1,0 +1,84 @@
+<div class="example" id="example-SAA" acro="SAA" titletext="Solutions for Archetype A">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">SAA</span> <span class="titletext">Solutions for Archetype A</span>
+</h5>
+<p>Let us find the solutions to the following system of equations,
+\begin{align*}
+x_1 -x_2 +2x_3 &amp; =1\\
+2x_1+ x_2 + x_3 &amp; =8\\
+x_1 + x_2 &amp; =5
+\end{align*}
+
+</p>
+<p>First, form the augmented matrix,
+\begin{align*}
+\begin{bmatrix}
+1 &amp; -1 &amp; 2 &amp; 1\\
+2 &amp; 1 &amp; 1 &amp; 8\\
+1 &amp; 1 &amp; 0 &amp; 5
+\end{bmatrix}
+\end{align*}
+
+and work to reduced row-echelon form, first with $j=1$,
+\begin{align*}
+\xrightarrow{\rowopadd{-2}{1}{2}}
+&amp;
+\begin{bmatrix}
+1 &amp; -1 &amp; 2 &amp; 1\\
+0 &amp; 3 &amp; -3 &amp; 6\\
+1 &amp; 1 &amp; 0 &amp; 5
+\end{bmatrix}
+\xrightarrow{\rowopadd{-1}{1}{3}}
+\begin{bmatrix}
+\leading{1} &amp; -1 &amp; 2 &amp; 1\\
+0 &amp; 3 &amp; -3 &amp; 6\\
+0 &amp; 2 &amp; -2 &amp; 4
+\end{bmatrix}
+\end{align*}
+Now, with $j=2$,
+\begin{align*}
+
+\xrightarrow{\rowopmult{\frac{1}{3}}{2}}
+&amp;
+\begin{bmatrix}
+\leading{1} &amp; -1 &amp; 2 &amp; 1\\
+0 &amp; 1 &amp; -1 &amp; 2\\
+0 &amp; 2 &amp; -2 &amp; 4
+\end{bmatrix}
+\xrightarrow{\rowopadd{1}{2}{1}}
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1 &amp; 3\\
+0 &amp; 1 &amp; -1 &amp; 2\\
+0 &amp; 2 &amp; -2 &amp; 4
+\end{bmatrix}\\
+\xrightarrow{\rowopadd{-2}{2}{3}}
+&amp;
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 1 &amp; 3\\
+0 &amp; \leading{1} &amp; -1 &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{align*}
+</p>
+<p>The system of equations represented by this augmented matrix needs to be considered a bit differently than that for Archetype B.  First, the last row of the matrix is the equation $0=0$, which is <em>always</em> true, so it imposes no restrictions on our possible solutions and therefore we can safely ignore it as we analyze the other two equations.  These equations are,
+\begin{align*}
+x_1+x_3&amp;=3\\
+x_2-x_3&amp;=2.
+\end{align*}
+</p>
+<p>While this system is fairly easy to solve, it also appears to have a multitude of solutions.  For example, choose $x_3=1$ and see that then $x_1=2$ and $x_2=3$ will together form a solution.  Or choose $x_3=0$, and then discover that $x_1=3$ and $x_2=2$ lead to a solution.  Try it yourself: pick <em>any</em> value of $x_3$ you please, and figure out what $x_1$ and $x_2$ should be to make the first and second equations (respectively) true.  We'll wait while you do that.  Because of this behavior, we say that $x_3$ is a “free” or “independent” variable.  But why do we vary $x_3$ and not some other variable?  For now, notice that the third column of the augmented matrix is not a pivot column.  With this idea, we can rearrange the two equations, solving each for the variable whose index is the same as the column index of a pivot column.
+\begin{align*}
+x_1&amp;=3-x_3\\
+x_2&amp;=2+x_3
+\end{align*}
+
+</p>
+<p>To write the set of solution vectors in set notation, we have
+\begin{align*}
+S&amp;=\setparts{\colvector{3-x_3\\2+x_3\\x_3}}{x_3\in\complex{\null}}
+\end{align*}
+</p>
+<p>We will learn more in the next section about systems with infinitely many solutions and how to express their solution sets.  Right now, you might look back at  <a class="knowl" acro="IS" type="Example" title="Three equations, infinitely many solutions" knowl="./knowls/example.IS.knowl">Example IS</a>.</p>
+<div class="context"><a href="section-RREF.html#example-SAA" class="context" title="Section RREF">(in
+context)</a></div>
+</div>

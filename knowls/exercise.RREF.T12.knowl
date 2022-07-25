@@ -1,0 +1,7 @@
+<div class="exercise" acro="RREF.T12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T12</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $B$ is an $m\times n$ matrix in reduced row-echelon form.  Build a new, likely smaller, $k\times\ell$ matrix $C$ as follows.  Keep any collection of $k$ adjacent rows, $k\leq m$.  From these rows, keep columns $1$ through $\ell$, $\ell\leq n$.  Prove that $C$ is in reduced row-echelon form.
+</p></div>
+</div>

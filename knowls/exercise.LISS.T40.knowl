@@ -1,0 +1,8 @@
+<div class="exercise" acro="LISS.T40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LISS.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove the following variant of <a class="knowl" acro="EMMVP" type="Theorem" title="Equal Matrices and Matrix-Vector Products" knowl="./knowls/theorem.EMMVP.knowl">Theorem EMMVP</a> that has a weaker hypothesis:  Suppose that $C=\set{\vectorlist{u}{p}}$ is a linearly independent spanning set for $\complex{n}$.  Suppose also that $A$ and $B$ are $m\times n$ matrices such that $A\vect{u}_i=B\vect{u}_i$ for every $1\leq i\leq n$.  Then $A=B$.<br><br>
+Can you weaken the hypothesis even further while still preserving the conclusion?
+</p></div>
+</div>

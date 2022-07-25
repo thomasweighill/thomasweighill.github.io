@@ -1,0 +1,11 @@
+
+<ol>
+<li>Suppose $\ltdefn{T}{\complex{8}}{\complex{5}}$ is a linear transformation.  Why is $T$ not injective?
+</li>
+<li>Describe the kernel of an injective linear transformation.
+</li>
+<li>
+<a class="knowl" acro="KPI" type="Theorem" title="Kernel and Pre-Image" knowl="./knowls/theorem.KPI.knowl">Theorem KPI</a> should remind you of <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a>.  Why do we say this?
+</li>
+</ol>
+

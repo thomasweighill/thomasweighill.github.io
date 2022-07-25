@@ -1,0 +1,6 @@
+<div class="definition" id="definition-AM" acro="AM" titletext="Augmented Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">AM</span> <span class="titletext"> Augmented Matrix</span>
+</h5>
+<p>Suppose we have a system of $m$ equations in $n$ variables, with coefficient matrix $A$ and vector of constants $\vect{b}$.  Then the <em class="term">augmented matrix</em> of the system of equations is the $m\times(n+1)$ matrix whose first $n$ columns are the columns of $A$ and whose last column ($n+1$) is the column vector $\vect{b}$.  This matrix will be written as $\augmented{A}{\vect{b}}$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#definition-AM" class="context" title="Section RREF">(in context)</a></div>

@@ -1,0 +1,28 @@
+<script>
+$(function () {sagecell.makeSagecell({inputLocation: '.sage-NM', linked: true});});
+</script><h5 class="sage">
+<span class="type">Sage</span> <span class="acro">NM</span> <span class="titletext">Nonsingular Matrix</span>
+</h5>
+
+
+<p>Being nonsingular is an important matrix property, and in such cases Sage contains commands that quickly and easily determine if the mathematical object does, or does not, have the property.  The names of these types of methods universally begin with <span class="code">.is_</span>, and these might be referred to as “predicates” or “queries.”.  In the Sage notebook, define a simple matrix <span class="code">A</span>, and then in a cell type <span class="code">A.is_</span>, followed by pressing the tab key rather than evaluating the cell.  You will get a list of numerous properties that you can investigate for the matrix <span class="code">A</span>.  (This will not work as advertised with the Sage cell server.)</p>
+
+<p>The other convention is to name these properties in a positive way, so the relevant command for nonsingular matrices is <span class="code">.is_singular()</span>.  We will redo <a class="knowl" acro="S" type="Example" title="A singular matrix, Archetype A" knowl="./knowls/example.S.knowl">Example S</a> and <a class="knowl" acro="NM" type="Example" title="A nonsingular matrix, Archetype B" knowl="./knowls/example.NM.knowl">Example NM</a>.  Note the use of <span class="code">not</span> in the last compute cell.</p>
+
+<br><br><div class="sage-NM"><script type="text/x-sage">A = matrix(QQ, [[1, -1, 2],
+                [2,  1, 1],
+                [1,  1, 0]])
+A.is_singular()
+</script></div>
+
+<br><br><div class="sage-NM"><script type="text/x-sage">B = matrix(QQ, [[-7, -6, -12],
+                [ 5,  5,   7],
+                [ 1,  0,   4]])
+B.is_singular()
+</script></div>
+
+<br><br><div class="sage-NM"><script type="text/x-sage">not(B.is_singular())
+</script></div>
+
+<br><br><div class="sage-NM sagecell-practice"><script type="text/x-sage"># Sage practice area
+</script></div>

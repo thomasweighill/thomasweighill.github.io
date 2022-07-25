@@ -1,0 +1,7 @@
+<div class="property" id="property-ZM" acro="ZM" titletext="Zero Matrix, Matrices">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">ZM</span> <span class="titletext">Zero Matrix, Matrices</span>
+</h5>
+<p>
+There is a matrix, $\zeromatrix$, called the zero matrix, such that  $A+\zeromatrix=A$  for all $A\in M_{mn}$.</p>
+</div>

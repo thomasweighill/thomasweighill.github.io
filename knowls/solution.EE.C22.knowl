@@ -1,0 +1,19 @@
+<div class="solution" acro="EE.C22">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The characteristic polynomial (<a class="knowl" acro="CP" type="Definition" title="Characteristic Polynomial" knowl="./knowls/definition.CP.knowl">Definition CP</a>) is
+\begin{align*}
+\charpoly{B}{x}
+&amp;=\detname{B-xI_2}\\
+&amp;=
+\begin{vmatrix}
+2-x &amp; -1\\
+1 &amp; 1-x
+\end{vmatrix}\\
+&amp;=(2-x)(1-x)-(1)(-1)&amp;&amp;\knowl{./knowls/theorem.DMST.knowl}{\text{Theorem DMST}}\\
+&amp;=x^2-3x+3\\
+&amp;=\left(x-\frac{3+\sqrt{3}i}{2}\right)\left(x-\frac{3-\sqrt{3}i}{2}\right)
+\end{align*}
+
+where the factorization can be obtained by finding the roots of $\charpoly{B}{x}=0$ with the quadratic equation.  By <a class="knowl" acro="EMRCP" type="Theorem" title="Eigenvalues of a Matrix are Roots of Characteristic Polynomials" knowl="./knowls/theorem.EMRCP.knowl">Theorem EMRCP</a> the eigenvalues of $B$ are the complex numbers $\lambda_1=\frac{3+\sqrt{3}i}{2}$ and $\lambda_2=\frac{3-\sqrt{3}i}{2}$.
+</div>

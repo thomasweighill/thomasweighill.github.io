@@ -1,0 +1,19 @@
+<div class="exercise" acro="LDS.C52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LDS.C52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $W$ be the span of the set of vectors $S$ below, $W=\spn{S}$.  Find a set $T$ so that 1) the span of $T$ is $W$, $\spn{T}=W$, (2) $T$ is a linearly independent set, and (3) $T$ is a subset of $S$.
+\begin{align*}
+S&amp;=
+\set{
+\colvector{1 \\ 2 \\ -1},\,
+\colvector{2 \\ -3 \\ 1},\,
+\colvector{4 \\ 1 \\ -1},\,
+\colvector{3 \\ 1 \\ 1},\,
+\colvector{3 \\ -1 \\ 0}
+}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LDS.C52.knowl">Solution</a></p></div>
+</div>

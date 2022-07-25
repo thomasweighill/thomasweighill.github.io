@@ -1,0 +1,15 @@
+<div class="definition" id="definition-EO" acro="EO" titletext="Equation Operations">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EO</span> <span class="titletext"> Equation Operations</span>
+</h5>
+<p>Given a system of linear equations, the following three operations will transform the system into a different one, and each operation is known as an <em class="term">equation operation</em>.
+<ol>
+<li> Swap the locations of two equations in the list of equations.
+</li>
+<li> Multiply each term of an equation by a nonzero quantity.
+</li>
+<li> Multiply each term of one equation by some quantity, and add these terms to a second equation, on both sides of the equality.  Leave the first equation the same after this operation, but replace the second equation by the new one.
+</li>
+</ol>
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SSLE.html#definition-EO" class="context" title="Section SSLE">(in context)</a></div>

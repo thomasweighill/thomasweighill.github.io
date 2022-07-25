@@ -1,0 +1,12 @@
+<div class="proof" id="proof-IFDVS" acro="IFDVS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">IFDVS</span>
+</h5>
+<p>(⇒)  This is just the statement proved in <a class="knowl" acro="IVSED" type="Theorem" title="Isomorphic Vector Spaces have Equal Dimension" knowl="./knowls/theorem.IVSED.knowl">Theorem IVSED</a>.</p>
+
+<p>(⇐)  This is the advertised converse of <a class="knowl" acro="IVSED" type="Theorem" title="Isomorphic Vector Spaces have Equal Dimension" knowl="./knowls/theorem.IVSED.knowl">Theorem IVSED</a>.  We will assume $U$ and $V$ have equal dimension and discover that they are isomorphic vector spaces.  Let $n$ be the common dimension of $U$ and $V$.  Then by <a class="knowl" acro="CFDVS" type="Theorem" title="Characterization of Finite Dimensional Vector Spaces" knowl="./knowls/theorem.CFDVS.knowl">Theorem CFDVS</a> there are isomorphisms $\ltdefn{T}{U}{\complex{n}}$ and $\ltdefn{S}{V}{\complex{n}}$.</p>
+
+<p>$T$ is therefore an invertible linear transformation by <a class="knowl" acro="IVS" type="Definition" title="Isomorphic Vector Spaces" knowl="./knowls/definition.IVS.knowl">Definition IVS</a>.  Similarly, $S$ is an invertible linear transformation, and so $\ltinverse{S}$ is  an invertible linear transformation (<a class="knowl" acro="IILT" type="Theorem" title="Inverse of an Invertible Linear Transformation" knowl="./knowls/theorem.IILT.knowl">Theorem IILT</a>).  The composition of invertible linear transformations is again invertible (<a class="knowl" acro="CIVLT" type="Theorem" title="Composition of Invertible Linear Transformations" knowl="./knowls/theorem.CIVLT.knowl">Theorem CIVLT</a>)
+so the composition of $\ltinverse{S}$ with $T$ is invertible.  Then $\ltdefn{\left(\compose{\ltinverse{S}}{T}\right)}{U}{V}$ is an invertible linear transformation from $U$ to $V$ and <a class="knowl" acro="IVS" type="Definition" title="Isomorphic Vector Spaces" knowl="./knowls/definition.IVS.knowl">Definition IVS</a> says $U$ and $V$ are isomorphic.</p>
+
+</div>

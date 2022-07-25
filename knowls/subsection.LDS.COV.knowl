@@ -1,0 +1,42 @@
+<div class="subsection" id="subsection-COV" acro="COV" titletext="Casting Out Vectors">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">COV</span> <span class="titletext">Casting Out Vectors</span>
+</h4>
+<p>In <a class="knowl" acro="RSC5" type="Example" title="Reducing a span in $\complex{5}$" knowl="./knowls/example.RSC5.knowl">Example RSC5</a> we used four vectors to create a span.  With a relation of linear dependence in hand, we were able to “toss out” one of these four vectors and create the same span from a subset of just three vectors from the original set of four.  We did have to take some care as to just which vector we tossed out.  In the next example, we will be more methodical about just how we choose to eliminate vectors from a linearly dependent set while preserving a span.</p>
+<div class="example" id="example-COV" acro="COV" titletext="Casting out vectors"><h5 class="example">
+<a knowl="./knowls/example.COV.knowl"><span class="type">Example</span> <span class="acro">COV</span></a> <span class="titletext">Casting out vectors</span>
+</h5></div>
+<div class="sage" id="sage-COV" acro="COV" titletext="Casting Out Vectors"><h5 class="sage">
+<a knowl="./knowls/sage.COV.knowl"><span class="type">Sage</span> <span class="acro">COV</span></a> <span class="titletext">Casting Out Vectors</span>
+</h5></div>
+<p><a class="knowl" acro="COV" type="Example" title="Casting out vectors" knowl="./knowls/example.COV.knowl">Example COV</a> deserves your careful attention, since this important example motivates the following very fundamental theorem.</p>
+<div class="theorem" id="theorem-BS" acro="BS" titletext="Basis of a Span">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">BS</span><span class="titletext"> Basis of a Span</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{v}{n}}$ is a set of column vectors.  Define $W=\spn{S}$ and let $A$ be the matrix whose columns are the vectors from $S$.  Let $B$ be the reduced row-echelon form of $A$, with $D=\set{\scalarlist{d}{r}}$ the set of indices for the pivot columns of $B$.  Then
+<ol>
+<li> $T=\set{\vect{v}_{d_1},\,\vect{v}_{d_2},\,\vect{v}_{d_3},\,\ldots\,\vect{v}_{d_r}}$ is a linearly independent set.
+</li>
+<li> $W=\spn{T}$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.BS.knowl">Proof</a></div>
+</div>
+<p>In <a class="knowl" acro="COV" type="Example" title="Casting out vectors" knowl="./knowls/example.COV.knowl">Example COV</a>, we tossed-out vectors one at a time.  But in each instance, we rewrote the offending vector as a linear combination of those vectors with the column indices of the pivot columns of the reduced row-echelon form of the matrix of columns.  In the proof of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>, we accomplish this reduction in one big step.  In <a class="knowl" acro="COV" type="Example" title="Casting out vectors" knowl="./knowls/example.COV.knowl">Example COV</a> we arrived at a linearly independent set at exactly the same moment that we ran out of free variables to exploit.  This was not a coincidence, it is the substance of our conclusion of linear independence in <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>.</p>
+<p>Here is a straightforward application of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a>.
+</p>
+<div class="example" id="example-RSC4" acro="RSC4" titletext="Reducing a span in $\complex{4}$"><h5 class="example">
+<a knowl="./knowls/example.RSC4.knowl"><span class="type">Example</span> <span class="acro">RSC4</span></a> <span class="titletext">Reducing a span in $\complex{4}$</span>
+</h5></div>
+<div class="sage" id="sage-RS" acro="RS" titletext="Reducing a Span"><h5 class="sage">
+<a knowl="./knowls/sage.RS.knowl"><span class="type">Sage</span> <span class="acro">RS</span></a> <span class="titletext">Reducing a Span</span>
+</h5></div>
+<div class="example" id="example-RES" acro="RES" titletext="Reworking elements of a span"><h5 class="example">
+<a knowl="./knowls/example.RES.knowl"><span class="type">Example</span> <span class="acro">RES</span></a> <span class="titletext">Reworking elements of a span</span>
+</h5></div>
+<div class="sage" id="sage-RES" acro="RES" titletext="Reworking a Span"><h5 class="sage">
+<a knowl="./knowls/sage.RES.knowl"><span class="type">Sage</span> <span class="acro">RES</span></a> <span class="titletext">Reworking a Span</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LDS.html#subsection-COV" class="context" title="Section LDS">(in context)</a></div>

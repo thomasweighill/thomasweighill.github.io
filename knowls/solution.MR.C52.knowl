@@ -1,0 +1,82 @@
+<div class="solution" acro="MR.C52">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MR.C52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Choose bases $B$ and $C$ for the matrix representation,
+\begin{align*}
+B&amp;=\set{1,\,x,\,x^2}
+&amp;
+C&amp;=\set{
+\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 1 \\ 0 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 0 \\ 1 &amp; 0\end{bmatrix},\,
+\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+}\\
+\end{align*}
+
+Input to $T$ the vectors of the basis $B$ and coordinatize the outputs relative to $C$,
+\begin{align*}
+\vectrep{C}{\lt{T}{1}}&amp;=
+\vectrep{C}{\begin{bmatrix}1 &amp; 2 \\ -1 &amp; 3\end{bmatrix}}
+=
+\vectrep{C}{
+1\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 0\end{bmatrix}+
+2\begin{bmatrix}0 &amp; 1 \\ 0 &amp; 0\end{bmatrix}+
+(-1)\begin{bmatrix}0 &amp; 0 \\ 1 &amp; 0\end{bmatrix}+
+3\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+}
+=
+\colvector{1\\2\\-1\\3}\\
+\vectrep{C}{\lt{T}{x}}&amp;=
+\vectrep{C}{\begin{bmatrix}2 &amp; 2 \\ 1 &amp; 2 \end{bmatrix}}
+=
+\vectrep{C}{
+2\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 0\end{bmatrix}+
+2\begin{bmatrix}0 &amp; 1 \\ 0 &amp; 0\end{bmatrix}+
+1\begin{bmatrix}0 &amp; 0 \\ 1 &amp; 0\end{bmatrix}+
+2\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+}
+=
+\colvector{2\\2\\1\\2}\\
+\vectrep{C}{\lt{T}{x^2}}&amp;=
+\vectrep{C}{\begin{bmatrix}-2 &amp; 0 \\ -4 &amp; 2\end{bmatrix}}
+=
+\vectrep{C}{
+(-2)\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 0\end{bmatrix}+
+0\begin{bmatrix}0 &amp; 1 \\ 0 &amp; 0\end{bmatrix}+
+(-4)\begin{bmatrix}0 &amp; 0 \\ 1 &amp; 0\end{bmatrix}+
+2\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+}
+=
+\colvector{-2\\0\\-4\\2}\\
+\end{align*}
+
+Applying <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a> we have the matrix representation
+\begin{equation*}
+\matrixrep{T}{B}{C}=
+\begin{bmatrix}
+ 1 &amp; 2 &amp; -2 \\
+ 2 &amp; 2 &amp; 0 \\
+ -1 &amp; 1 &amp; -4 \\
+ 3 &amp; 2 &amp; 2
+\end{bmatrix}
+\end{equation*}
+The null space of the matrix representation is isomorphic (via $\vectrepname{B}$) to the kernel of the linear transformation (<a class="knowl" acro="KNSI" type="Theorem" title="Kernel and Null Space Isomorphism" knowl="./knowls/theorem.KNSI.knowl">Theorem KNSI</a>).  So we compute the null space of the matrix representation by first row-reducing the matrix to,
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 2 \\
+ 0 &amp; \leading{1} &amp; -2 \\
+ 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+Employing <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> we have
+\begin{equation*}
+\nsp{\matrixrep{T}{B}{C}}=\spn{\set{\colvector{-2\\2\\1}}}
+\end{equation*}
+We only need to uncoordinatize this one basis vector to get a basis for $\krn{T}$,
+\begin{equation*}
+\krn{T}
+=\spn{\set{\vectrepinv{B}{\colvector{-2\\2\\1}}}}
+=\spn{\set{-2+2x+x^2}}
+\end{equation*}
+</div>

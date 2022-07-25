@@ -1,0 +1,7 @@
+<div class="exercise" acro="O.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">O.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Verify that the set $T$ created in <a class="knowl" acro="GSTV" type="Example" title="Gram-Schmidt of three vectors" knowl="./knowls/example.GSTV.knowl">Example GSTV</a> by the Gram-Schmidt Procedure is an orthogonal set.
+</p></div>
+</div>

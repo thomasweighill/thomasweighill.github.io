@@ -1,0 +1,18 @@
+<div class="proof" id="proof-G" acro="G" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">G</span>
+</h5>
+<p>Let $B$ be a basis of $V$.  Since $\dimension{V}=t$, <a class="knowl" acro="B" type="Definition" title="Basis" knowl="./knowls/definition.B.knowl">Definition B</a> and <a class="knowl" acro="BIS" type="Theorem" title="Bases have Identical Sizes" knowl="./knowls/theorem.BIS.knowl">Theorem BIS</a> imply that $B$ is a linearly independent set of $t$ vectors that spans $V$.
+<ol>
+<li> Suppose to the contrary that $S$ is linearly independent.  Then $B$ is a smaller set of vectors that spans $V$.   This contradicts <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.
+</li>
+<li> Suppose to the contrary that $S$ does span $V$.  Then $B$ is a larger set of vectors that is linearly independent.   This contradicts <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.
+</li>
+<li> Suppose to the contrary that $S$ does not span $V$.  Then we can choose a vector $\vect{w}$ such that $\vect{w}\in V$ and $\vect{w}\not\in\spn{S}$.  By <a class="knowl" acro="ELIS" type="Theorem" title="Extending Linearly Independent Sets" knowl="./knowls/theorem.ELIS.knowl">Theorem ELIS</a>, the set $S^\prime=S\cup\set{\vect{w}}$ is again linearly independent.  Then $S^\prime$ is a set of $m+1=t+1$ vectors that are linearly independent, while $B$ is a set of $t$ vectors that span $V$.    This contradicts <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.
+</li>
+<li> Suppose to the contrary that $S$ is linearly dependent.  Then by <a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a> (which can be upgraded, with no changes in the proof, to the setting of a general vector space), there is a vector in $S$, say $\vect{v}_k$ that is equal to a linear combination of the other vectors in $S$.  Let $S^\prime=S\setminus\set{\vect{v}_k}$, the set of “other” vectors in $S$.  Then it is easy to show that $V=\spn{S}=\spn{S^\prime}$.  So $S^\prime$ is a set of $m-1=t-1$ vectors that spans $V$, while $B$ is a set of $t$ linearly independent vectors in $V$.  This contradicts <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.
+</li>
+</ol>
+</p>
+
+</div>

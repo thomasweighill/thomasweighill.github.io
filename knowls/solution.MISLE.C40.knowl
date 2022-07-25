@@ -1,0 +1,19 @@
+<div class="solution" acro="MISLE.C40">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MISLE.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>View this system as $\linearsystem{C}{\vect{b}}$, where $C$ is the $4\times 4$ matrix from <a knowl="./knowls/exercise.MISLE.C28.knowl">Exercise MISLE.C28</a> and $\vect{b}=\colvector{-4\\4\\-20\\9}$.
+Since $C$ was seen to be nonsingular in <a knowl="./knowls/exercise.MISLE.C28.knowl">Exercise MISLE.C28</a> <a class="knowl" acro="SNCM" type="Theorem" title="Solution with Nonsingular Coefficient Matrix" knowl="./knowls/theorem.SNCM.knowl">Theorem SNCM</a> says the  solution, which is unique by <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>, is given by
+\begin{equation*}
+\inverse{C}\vect{b}=
+\begin{bmatrix}
+38 &amp; 18 &amp; -5 &amp; -2\\
+96 &amp; 47 &amp; -12 &amp; -5\\
+-39 &amp; -19 &amp; 5 &amp; 2\\
+-16 &amp; -8 &amp; 2 &amp; 1
+\end{bmatrix}
+\colvector{-4\\4\\-20\\9}
+=
+\colvector{2\\-1\\-2\\1}
+\end{equation*}
+Notice that this solution can be easily checked in the original system of equations.
+</div>

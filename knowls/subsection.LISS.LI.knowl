@@ -1,0 +1,35 @@
+<div class="subsection" id="subsection-LI" acro="LI" titletext="Linear Independence">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LI</span> <span class="titletext">Linear Independence</span>
+</h4>
+<p>Our previous definition of linear independence (<a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>) employed a relation of linear dependence that was a linear combination on one side of an equality and a zero vector on the other side.  As a linear combination in a vector space (<a class="knowl" acro="LC" type="Definition" title="Linear Combination" knowl="./knowls/definition.LC.knowl">Definition LC</a>) depends only on vector addition and scalar multiplication, and every vector space must have a zero vector (<a class="knowl" acro="Z" type="Property" title="Zero Vector" knowl="./knowls/property.Z.knowl">Property Z</a>), we can extend our definition of linear independence from the setting of $\complex{m}$ to the setting of a general vector space $V$ with almost no changes.  Compare these next two definitions with <a class="knowl" acro="RLDCV" type="Definition" title="Relation of Linear Dependence for Column Vectors" knowl="./knowls/definition.RLDCV.knowl">Definition RLDCV</a> and <a class="knowl" acro="LICV" type="Definition" title="Linear Independence of Column Vectors" knowl="./knowls/definition.LICV.knowl">Definition LICV</a>.</p>
+<div class="definition" id="definition-RLD" acro="RLD" titletext="Relation of Linear Dependence">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">RLD</span> <span class="titletext"> Relation of Linear Dependence</span>
+</h5>
+<p>Suppose that $V$ is a vector space.
+Given a set of vectors $S=\set{\vectorlist{u}{n}}$, an equation of the form
+\begin{equation*}
+\lincombo{\alpha}{u}{n}=\zerovector
+\end{equation*}
+is a <em class="term">relation of linear dependence</em> on $S$.  If this equation is formed in a trivial fashion, i.e.  $\alpha_i=0$, $1\leq i\leq n$, then we say it is a <em class="term">trivial relation of linear dependence</em> on $S$.
+</p>
+</div>
+<div class="definition" id="definition-LI" acro="LI" titletext="Linear Independence">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LI</span> <span class="titletext"> Linear Independence</span>
+</h5>
+<p>Suppose that $V$ is a vector space.
+The set of vectors $S=\set{\vectorlist{u}{n}}$ from $V$ is <em class="term">linearly dependent</em> if there is a relation of linear dependence on $S$ that is not trivial.  In the case where the <em>only</em> relation of linear dependence on $S$ is the trivial one, then $S$ is a <em class="term">linearly independent</em> set of vectors.</p>
+</div>
+<p>Notice the emphasis on the word “only.”  This might remind you of the definition of a nonsingular matrix, where if the matrix is employed as the coefficient matrix of a homogeneous system then the <em>only</em> solution is the <em>trivial</em> one.</p>
+<div class="example" id="example-LIP4" acro="LIP4" titletext="Linear independence in $P_4$"><h5 class="example">
+<a knowl="./knowls/example.LIP4.knowl"><span class="type">Example</span> <span class="acro">LIP4</span></a> <span class="titletext">Linear independence in $P_4$</span>
+</h5></div>
+<div class="example" id="example-LIM32" acro="LIM32" titletext="Linear independence in $M_{32}$"><h5 class="example">
+<a knowl="./knowls/example.LIM32.knowl"><span class="type">Example</span> <span class="acro">LIM32</span></a> <span class="titletext">Linear independence in $M_{32}$</span>
+</h5></div>
+<div class="example" id="example-LIC" acro="LIC" titletext="Linearly independent set in the crazy vector space"><h5 class="example">
+<a knowl="./knowls/example.LIC.knowl"><span class="type">Example</span> <span class="acro">LIC</span></a> <span class="titletext">Linearly independent set in the crazy vector space</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LISS.html#subsection-LI" class="context" title="Section LISS">(in context)</a></div>

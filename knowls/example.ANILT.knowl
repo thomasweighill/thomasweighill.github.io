@@ -1,0 +1,68 @@
+<div class="example" id="example-ANILT" acro="ANILT" titletext="A non-invertible linear transformation">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">ANILT</span> <span class="titletext">A non-invertible linear transformation</span>
+</h5>
+<p>Consider the linear transformation $\ltdefn{T}{\complex{3}}{M_{22}}$ defined by
+\begin{equation*}
+\lt{T}{\colvector{a\\b\\c}}=\begin{bmatrix}
+a-b&amp;2a+2b+c\\3a+b+c&amp;-2a-6b-2c
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Suppose we were to search for an inverse function $\ltdefn{S}{M_{22}}{\complex{3}}$.</p>
+<p>First verify that the $2\times 2$ matrix
+$A=\begin{bmatrix}
+5&amp;3\\8&amp;2
+\end{bmatrix}
+$
+is not in the range of $T$.  This will amount to finding an input to $T$, $\colvector{a\\b\\c}$, such that
+\begin{align*}
+a-b&amp;=5\\
+2a+2b+c&amp;=3\\
+3a+b+c&amp;=8\\
+-2a-6b-2c&amp;=2
+\end{align*}
+
+</p>
+<p>As this system of equations is inconsistent, there is no input column vector, and $A\not\in\rng{T}$.  How should we define $\lt{S}{A}$?  Note that
+\begin{equation*}
+\lt{T}{\lt{S}{A}}=\lt{\left(\compose{T}{S}\right)}{A}=
+\lt{I_{M_{22}}}{A}=A
+\end{equation*}
+</p>
+<p>So any definition we would provide for $\lt{S}{A}$ must then be a column vector that $T$ sends to $A$ and we would have $A\in\rng{T}$, contrary to the definition of $T$.  This is enough to see that there is no function $S$ that will allow us to conclude that $T$ is invertible, since we cannot provide a consistent definition for $\lt{S}{A}$ if we assume $T$ is invertible.</p>
+<p>Even though we now know that $T$ is not invertible, let us not leave this example just yet.  Check that
+\begin{align*}
+\lt{T}{\colvector{1\\-2\\4}}&amp;=\begin{bmatrix}3&amp;2\\5&amp;2\end{bmatrix}=B&amp;
+\lt{T}{\colvector{0\\-3\\8}}&amp;=\begin{bmatrix}3&amp;2\\5&amp;2\end{bmatrix}=B
+\end{align*}
+
+</p>
+<p>How would we define $\lt{S}{B}$?
+\begin{align*}
+\lt{S}{B}&amp;=\lt{S}{\lt{T}{\colvector{1\\-2\\4}}}
+=\lt{\left(\compose{S}{T}\right)}{\colvector{1\\-2\\4}}
+=\lt{I_{\complex{3}}}{\colvector{1\\-2\\4}}=\colvector{1\\-2\\4}
+\end{align*}
+or
+\begin{align*}
+
+\lt{S}{B}&amp;=\lt{S}{\lt{T}{\colvector{0\\-3\\8}}}
+=\lt{\left(\compose{S}{T}\right)}{\colvector{0\\-3\\8}}
+=\lt{I_{\complex{3}}}{\colvector{0\\-3\\8}}=\colvector{0\\-3\\8}
+\end{align*}
+
+</p>
+<p>Which definition should we provide for $\lt{S}{B}$?  Both are necessary.  But then $S$ is not a function.  So we have a second reason to know that there is no function $S$ that will allow us to conclude that $T$ is invertible.  It happens that there are infinitely many column vectors that $S$ would have to take to $B$.  Construct the kernel of $T$,
+\begin{equation*}
+\krn{T}=\spn{\set{\colvector{-1\\-1\\4}}}
+\end{equation*}
+</p>
+<p>Now choose either of the two inputs used above for $T$ and add to it a scalar multiple of the basis vector for the kernel of $T$.  For example,
+\begin{equation*}
+\vect{x}=\colvector{1\\-2\\4}+(-2)\colvector{-1\\-1\\4}=\colvector{3\\0\\-4}
+\end{equation*}
+then verify that $\lt{T}{\vect{x}}=B$.  Practice creating a few more inputs for $T$ that would be sent to $B$, and see why it is hopeless to think that we could ever provide a reasonable definition for $\lt{S}{B}$!  There is a “whole subspace's worth” of values that $\lt{S}{B}$ would have to take on.</p>
+<div class="context"><a href="section-IVLT.html#example-ANILT" class="context" title="Section IVLT">(in
+context)</a></div>
+</div>

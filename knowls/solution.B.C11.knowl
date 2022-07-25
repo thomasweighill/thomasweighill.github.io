@@ -1,0 +1,53 @@
+<div class="solution" acro="B.C11">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">B.C11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>We can rewrite an arbitrary vector of $W$ as
+\begin{align*}
+\colvector{a + b - 2c\\ a + b - 2c + d\\ -2a + 2b + 4c - d\\ b + d}
+&amp; = \colvector{a\\a\\-2a\\0} +
+\colvector{b\\b\\2b\\b} +
+\colvector{-2c\\-2c\\4c\\0} +
+\colvector{0\\d\\-d\\d}\\
+&amp;= a\colvector{1\\1\\-2\\0} +
+b\colvector{1\\1\\2\\1} +
+c\colvector{-2\\-2\\4\\0} +
+d\colvector{0\\1\\-1\\1}
+\end{align*}
+
+Thus, we can write $W$ as
+\begin{align*}
+W &amp;= \spn{\set{
+\colvector{1\\1\\-2\\0},
+\colvector{1\\1\\2\\1},
+\colvector{-2\\-2\\4\\0},
+\colvector{0\\1\\-1\\1}
+}}
+\end{align*}
+
+These four vectors span $W$, but we also need to determine if they are linearly independent (turns out they are not).  With an application of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> we can see that the arrive at a basis employing three of these vectors,
+\begin{align*}
+\begin{bmatrix}
+1 &amp; 1 &amp; -2 &amp; 0\\
+1 &amp; 1 &amp; -2 &amp; 1\\
+-2 &amp; 2 &amp; 4 &amp; -1\\
+0 &amp; 1 &amp; 0 &amp; 1
+\end{bmatrix}
+&amp;\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -2 &amp; 0\\
+0 &amp; \leading{1} &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; \leading{1}\\
+0 &amp; 0 &amp; 0 &amp;0
+\end{bmatrix}
+\end{align*}
+
+Thus, we have the following basis of $W$,
+\begin{align*}
+B &amp;= \set{
+\colvector{1\\1\\-2\\0},
+\colvector{1\\1\\2\\1},
+\colvector{0\\1\\-1\\1}
+}
+\end{align*}
+
+</div>

@@ -1,0 +1,15 @@
+<div class="exercise" acro="LDS.C55">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LDS.C55</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Let $T$ be the set of vectors
+$T=\set{
+\colvector{1 \\ -1 \\ 2},\,
+\colvector{3 \\ 0 \\ 1},\,
+\colvector{4 \\ 2 \\ 3},\,
+\colvector{3 \\ 0 \\ 6}
+}$.
+Find two different subsets of $T$, named $R$ and $S$, so that $R$ and $S$ each contain three vectors, and so that $\spn{R}=\spn{T}$ and $\spn{S}=\spn{T}$.  Prove that both $R$ and $S$ are linearly independent.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LDS.C55.knowl">Solution</a></p></div>
+</div>

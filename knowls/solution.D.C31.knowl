@@ -1,0 +1,27 @@
+<div class="solution" acro="D.C31">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">D.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>We will appeal to <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> (or you could consider this an appeal to <a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a>).  Put the three column vectors of this spanning set into a matrix as columns and row-reduce.
+\begin{equation*}
+\begin{bmatrix}
+ 2 &amp; 3 &amp; -4 \\
+ -3 &amp; 0 &amp; -3 \\
+ 4 &amp; 1 &amp; 2 \\
+ 1 &amp; -2 &amp; 5
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 1 \\
+ 0 &amp; \leading{1} &amp; -2 \\
+ 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+The pivot columns are $D=\set{1,2}$ so we can “keep” the vectors of $W$ with the same indices and set
+\begin{equation*}
+T=\set{
+\colvector{2\\-3\\4\\1},\,
+\colvector{3\\0\\1\\-2}}
+\end{equation*}
+and conclude that $W=\spn{T}$ and $T$ is linearly independent.  In other words, $T$ is a basis with two vectors, so $W$ has dimension 2.
+</div>

@@ -1,0 +1,47 @@
+<div class="subsection" id="subsection-LTLC" acro="LTLC" titletext="Linear Transformations and Linear Combinations">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LTLC</span> <span class="titletext">Linear Transformations and Linear Combinations</span>
+</h4>
+<p>It is the interaction between linear transformations and linear combinations that lies at the heart of many of the important theorems of linear algebra.  The next theorem distills the essence of this.  The proof is not deep, the result is hardly startling, but it will be referenced frequently.  We have already passed by one occasion to employ it, in the proof of <a class="knowl" acro="MLTCV" type="Theorem" title="Matrix of a Linear Transformation, Column Vectors" knowl="./knowls/theorem.MLTCV.knowl">Theorem MLTCV</a>.  Paraphrasing, this theorem says that we can “push” linear transformations “down into” linear combinations, or “pull” linear transformations “up out” of linear combinations.  We will have opportunities to both push and pull.</p>
+<div class="theorem" id="theorem-LTLC" acro="LTLC" titletext="Linear Transformations and Linear Combinations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">LTLC</span><span class="titletext"> Linear Transformations and Linear Combinations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $\vectorlist{u}{t}$ are vectors from $U$ and $\scalarlist{a}{t}$ are scalars from $\complex{\null}$.  Then
+\begin{equation*}
+\lt{T}{\lincombo{a}{u}{t}}
+=
+a_1\lt{T}{\vect{u}_1}+
+a_2\lt{T}{\vect{u}_2}+
+a_3\lt{T}{\vect{u}_3}+\cdots+
+a_t\lt{T}{\vect{u}_t}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.LTLC.knowl">Proof</a></div>
+</div>
+<p>Some authors, especially in more advanced texts, take the conclusion of <a class="knowl" acro="LTLC" type="Theorem" title="Linear Transformations and Linear Combinations" knowl="./knowls/theorem.LTLC.knowl">Theorem LTLC</a> as the defining condition of a linear transformation.  This has the appeal of being a single condition, rather than the two-part condition of <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>.  (See <a knowl="./knowls/exercise.LT.T20.knowl">Exercise LT.T20</a>).</p>
+<p>Our next theorem says, informally, that it is enough to know how a linear transformation behaves for inputs from any basis of the domain, and <em>all</em> the other outputs are described by a linear combination of these few values.  Again, the statement of the theorem, and its proof, are not remarkable, but the insight that goes along with it is very fundamental.</p>
+<div class="theorem" id="theorem-LTDB" acro="LTDB" titletext="Linear Transformation Defined on a Basis">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">LTDB</span><span class="titletext"> Linear Transformation Defined on a Basis</span>
+</h5>
+<div class="statement"><p>Suppose $U$ is a vector space with basis $B=\set{\vectorlist{u}{n}}$ and the vector space $V$ contains the vectors $\vectorlist{v}{n}$ (which may not be distinct).   Then there is a unique linear transformation, $\ltdefn{T}{U}{V}$, such that $\lt{T}{\vect{u}_i}=\vect{v}_i$, $1\leq i\leq n$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.LTDB.knowl">Proof</a></div>
+</div>
+<p>You might recall facts from analytic geometry, such as “any two points determine a line” and “any three non-collinear points determine a parabola.”  <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> has much of the same feel.  By specifying the $n$ outputs for inputs from a basis, an entire linear transformation is determined.  The analogy is not perfect, but the style of these facts are not very dissimilar from <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a>.</p>
+<p>Notice that the statement of <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> asserts the <em>existence</em> of a linear transformation with certain properties, while the proof shows us exactly how to define the desired linear transformation. The next two examples show how to compute values of linear transformations that we create this way.</p>
+<div class="example" id="example-LTDB1" acro="LTDB1" titletext="Linear transformation defined on a basis"><h5 class="example">
+<a knowl="./knowls/example.LTDB1.knowl"><span class="type">Example</span> <span class="acro">LTDB1</span></a> <span class="titletext">Linear transformation defined on a basis</span>
+</h5></div>
+<div class="example" id="example-LTDB2" acro="LTDB2" titletext="Linear transformation defined on a basis"><h5 class="example">
+<a knowl="./knowls/example.LTDB2.knowl"><span class="type">Example</span> <span class="acro">LTDB2</span></a> <span class="titletext">Linear transformation defined on a basis</span>
+</h5></div>
+<p>Here is a third example of a linear transformation defined by its action on a basis, only with more abstract vector spaces involved.</p>
+<div class="example" id="example-LTDB3" acro="LTDB3" titletext="Linear transformation defined on a basis"><h5 class="example">
+<a knowl="./knowls/example.LTDB3.knowl"><span class="type">Example</span> <span class="acro">LTDB3</span></a> <span class="titletext">Linear transformation defined on a basis</span>
+</h5></div>
+<p>Informally, we can describe <a class="knowl" acro="LTDB" type="Theorem" title="Linear Transformation Defined on a Basis" knowl="./knowls/theorem.LTDB.knowl">Theorem LTDB</a> by saying “it is enough to know what a linear transformation does to a basis (of the domain).”</p>
+<div class="sage" id="sage-LTB" acro="LTB" titletext="Linear Transformations, Bases"><h5 class="sage">
+<a knowl="./knowls/sage.LTB.knowl"><span class="type">Sage</span> <span class="acro">LTB</span></a> <span class="titletext">Linear Transformations, Bases</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#subsection-LTLC" class="context" title="Section LT">(in context)</a></div>

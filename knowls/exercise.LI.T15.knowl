@@ -1,0 +1,13 @@
+<div class="exercise" acro="LI.T15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LI.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $\set{\vectorlist{v}{n}}$ is a set of vectors.   Prove that
+\begin{align*}
+\set{\vect{v}_1-\vect{v}_2,\,\vect{v}_2-\vect{v}_3,\,\vect{v}_3-\vect{v}_4,\,\dots,\,\vect{v}_n-\vect{v}_1}
+\end{align*}
+
+ is a linearly dependent set.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LI.T15.knowl">Solution</a></p></div>
+</div>

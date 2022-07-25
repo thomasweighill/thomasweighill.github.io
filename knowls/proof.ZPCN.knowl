@@ -1,0 +1,14 @@
+<div class="proof" id="proof-ZPCN" acro="ZPCN" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ZPCN</span>
+</h5>
+<p>\begin{align*}
+0\alpha&amp;=0\alpha+0&amp;&amp;\knowl{./knowls/property.ZCN.knowl}{\text{Property ZCN}}\\
+&amp;=0\alpha+\left(0\alpha-\left(0\alpha\right)\right)&amp;&amp;\knowl{./knowls/property.AICN.knowl}{\text{Property AICN}}\\
+&amp;=\left(0\alpha+0\alpha\right)-\left(0\alpha\right)&amp;&amp;\knowl{./knowls/property.AACN.knowl}{\text{Property AACN}}\\
+&amp;=\left(0+0\right)\alpha-\left(0\alpha\right)&amp;&amp;\knowl{./knowls/property.DCN.knowl}{\text{Property DCN}}\\
+&amp;=0\alpha-\left(0\alpha\right)&amp;&amp;\knowl{./knowls/property.ZCN.knowl}{\text{Property ZCN}}\\
+&amp;=0&amp;&amp;\knowl{./knowls/property.AICN.knowl}{\text{Property AICN}}
+\end{align*}
+</p>
+</div>

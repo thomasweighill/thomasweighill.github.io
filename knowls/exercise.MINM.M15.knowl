@@ -1,0 +1,8 @@
+<div class="exercise" acro="MINM.M15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MINM.M15</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>If $A$ and $B$ are $n \times n$ matrices, $A$ is nonsingular, and $B$ is singular, show directly that $AB$ is singular, without using <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MINM.M15.knowl">Solution</a></p></div>
+</div>

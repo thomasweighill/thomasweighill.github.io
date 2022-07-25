@@ -1,0 +1,7 @@
+<div class="exercise" acro="MO.T33">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.T33</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
+</h5>
+<div class="problem"><p>Suppose $A$ and $B$ are both skew-symmetric matrices of the same size and $\alpha,\,\beta\in\complexes$.  Prove that $\alpha A + \beta B$ is a skew-symmetric matrix.
+</p></div>
+</div>

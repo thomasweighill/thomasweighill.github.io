@@ -1,0 +1,8 @@
+<div class="exercise" acro="D.M21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">D.M21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A $2\times 2$ matrix $B$ is upper triangular if $\matrixentry{B}{21}=0$.  Let $UT_2$ be the set of all $2\times 2$ upper triangular matrices.  Then $UT_2$ is a subspace of the vector space of all $2\times 2$ matrices, $M_{22}$ (you may assume this).  Determine the dimension of $UT_2$ providing <em>all</em> of the necessary justifications for your answer.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.D.M21.knowl">Solution</a></p></div>
+</div>

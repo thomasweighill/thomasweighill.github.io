@@ -1,0 +1,10 @@
+<div class="archetype" id="archetype-T" acro="T" titletext="">
+<h4 class="archetype">
+<span class="type">Archetype</span> <span class="acro">T</span> <span class="titletext"></span>
+</h4>
+<p>Summary: Domain and codomain are polynomials.  Domain has dimension 5, while codomain has dimension 6.  Is injective, can not be surjective.</p>
+<p>Definition:\begin{align*}\ltdefn{T}{P_4}{P_5},\quad
+\lt{T}{p(x)}=(x-2)p(x)
+\end{align*}</p>
+<div class="context"><a href="archetype-T.html" class="context" title="Archetype T">Complete analysis of Archetype T</a></div>
+</div>

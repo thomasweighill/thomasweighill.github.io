@@ -1,0 +1,18 @@
+<div class="proof" id="proof-CB" acro="CB" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CB</span>
+</h5>
+<p>
+\begin{align*}
+\vectrep{C}{\vect{v}}
+&amp;=\vectrep{C}{\lt{I_V}{\vect{v}}}
+&amp;&amp;\knowl{./knowls/definition.IDLT.knowl}{\text{Definition IDLT}}\\
+&amp;=\matrixrep{I_V}{B}{C}\vectrep{B}{\vect{v}}
+&amp;&amp;\knowl{./knowls/theorem.FTMR.knowl}{\text{Theorem FTMR}}\\
+&amp;=\cbm{B}{C}\vectrep{B}{\vect{v}}
+&amp;&amp;\knowl{./knowls/definition.CBM.knowl}{\text{Definition CBM}}
+\end{align*}
+
+</p>
+
+</div>

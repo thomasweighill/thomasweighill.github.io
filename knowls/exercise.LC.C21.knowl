@@ -1,0 +1,18 @@
+<div class="exercise" acro="LC.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">LC.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider each archetype that is a system of equations. For individual solutions listed (both for the original system and the corresponding homogeneous system) express the vector of constants as a linear combination of the columns of the coefficient matrix, as guaranteed by <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a>.  Verify this equality by computing the linear combination.  For systems with no solutions, recognize that it is then impossible to write the vector of constants as a linear combination of the columns of the coefficient matrix.  Note too, for homogeneous systems, that the solutions give rise to linear combinations that equal the zero vector.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>,
+<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>,
+<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.LC.C21.knowl">Solution</a></p></div>
+</div>

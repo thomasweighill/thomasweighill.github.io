@@ -1,0 +1,24 @@
+<div class="subsection" id="subsection-EEM" acro="EEM" titletext="Eigenvalues and Eigenvectors of a Matrix">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">EEM</span> <span class="titletext">Eigenvalues and Eigenvectors of a Matrix</span>
+</h4>
+<p>We start with the principal definition for this chapter.</p>
+<div class="definition" id="definition-EEM" acro="EEM" titletext="Eigenvalues and Eigenvectors of a Matrix">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">EEM</span> <span class="titletext"> Eigenvalues and Eigenvectors of a Matrix</span>
+</h5>
+<p>Suppose that $A$ is a square matrix of size $n$, $\vect{x}\neq\zerovector$ is a vector in $\complex{n}$, and $\lambda$ is a scalar in $\complex{\null}$.   Then we say $\vect{x}$ is an <em class="term">eigenvector</em> of $A$ with <em class="term">eigenvalue</em> $\lambda$ if
+\begin{equation*}
+A\vect{x}=\lambda\vect{x}
+\end{equation*}
+</p>
+</div>
+<p>Before going any further, perhaps we should convince you that such things ever happen at all.  Understand the next example, but do not concern yourself with where the pieces come from.  We will have methods soon enough to be able to discover these eigenvectors ourselves.</p>
+<div class="example" id="example-SEE" acro="SEE" titletext="Some eigenvalues and eigenvectors"><h5 class="example">
+<a knowl="./knowls/example.SEE.knowl"><span class="type">Example</span> <span class="acro">SEE</span></a> <span class="titletext">Some eigenvalues and eigenvectors</span>
+</h5></div>
+<div class="sage" id="sage-EE" acro="EE" titletext="Eigenvalues and Eigenvectors"><h5 class="sage">
+<a knowl="./knowls/sage.EE.knowl"><span class="type">Sage</span> <span class="acro">EE</span></a> <span class="titletext">Eigenvalues and Eigenvectors</span>
+</h5></div>
+<p><a class="knowl" acro="SEE" type="Example" title="Some eigenvalues and eigenvectors" knowl="./knowls/example.SEE.knowl">Example SEE</a> hints at a number of intriguing properties, and there are many more.  We will explore the general properties of eigenvalues and eigenvectors in <a href="section-PEE.html" title="Properties of Eigenvalues and Eigenvectors">Section PEE</a>, but in this section we will concern ourselves with the question of actually computing eigenvalues and eigenvectors.  First we need a bit of background material on polynomials and matrices.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#subsection-EEM" class="context" title="Section EE">(in context)</a></div>

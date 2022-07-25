@@ -1,0 +1,5 @@
+<div class="solution" acro="VS.M21">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VS.M21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Additive closure will hold, but scalar closure will not.  The best way to convince yourself of this is to construct a counterexample.  Such as, $\frac{1}{2}\in\complexes$ and $\colvector{1\\0}\in\mathbb{Z}^2$, however $\frac{1}{2}\colvector{1\\0}=\colvector{\frac{1}{2}\\0}\not\in\mathbb{Z}^2$, which violates <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a>.  So $\mathbb{Z}^2$ is not a vector space.
+</div>

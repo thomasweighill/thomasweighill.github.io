@@ -1,0 +1,6 @@
+<div class="definition" id="definition-B" acro="B" titletext="Basis">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">B</span> <span class="titletext"> Basis</span>
+</h5>
+<p>Suppose $V$ is a vector space.  Then a subset $S\subseteq V$ is a <em class="term">basis</em> of $V$ if it is linearly independent and spans $V$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-B.html#definition-B" class="context" title="Section B">(in context)</a></div>

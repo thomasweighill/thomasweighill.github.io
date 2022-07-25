@@ -1,0 +1,8 @@
+<div class="exercise" acro="S.T31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">S.T31</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Let $P$ be the set of all polynomials, of any degree.  The set $P$ is a vector space.  Let $F$ be the subset of $P$ consisting of all polynomials with only terms of odd degree.  Prove or disprove:  the set $F$ is a subspace of $P$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.S.T31.knowl">Solution</a></p></div>
+</div>

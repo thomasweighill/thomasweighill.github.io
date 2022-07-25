@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-IMILT" acro="IMILT" titletext="Invertible Matrices, Invertible Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IMILT</span><span class="titletext"> Invertible Matrices, Invertible Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$ and $\ltdefn{T}{\complex{n}}{\complex{n}}$ is the linear transformation defined by $\lt{T}{\vect{x}}=A\vect{x}$.  Then $A$ is an invertible matrix if and only if $T$ is an invertible linear transformation.</p></div>
+<div class="proof"><a knowl="./knowls/proof.IMILT.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#theorem-IMILT" class="context" title="Section MR">(in context)</a></div>

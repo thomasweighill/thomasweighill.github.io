@@ -1,0 +1,30 @@
+<div class="example" id="example-CNS2" acro="CNS2" titletext="Computing a null space, no. 2">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CNS2</span> <span class="titletext">Computing a null space, no. 2</span>
+</h5>
+<p>Let us compute the null space of
+\begin{equation*}
+C=\begin{bmatrix}
+ -4 &amp; 6 &amp; 1 \\
+ -1 &amp; 4 &amp; 1 \\
+ 5 &amp; 6 &amp; 7 \\
+ 4 &amp; 7 &amp; 1
+\end{bmatrix}
+\end{equation*}
+which we write as $\nsp{C}$.   Translating <a class="knowl" acro="NSM" type="Definition" title="Null Space of a Matrix" knowl="./knowls/definition.NSM.knowl">Definition NSM</a>, we simply desire to solve the homogeneous system $\homosystem{C}$.  So we row-reduce the augmented matrix to obtain
+\begin{equation*}
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>There are no free variables in the homogeneous system represented by the row-reduced matrix, so there is only the trivial solution, the zero vector, $\zerovector$.  So we can write the (trivial) solution set as
+\begin{equation*}
+\nsp{C}=\set{\zerovector}=\set{\colvector{0\\0\\0}}
+\end{equation*}</p>
+<div class="context"><a href="section-HSE.html#example-CNS2" class="context" title="Section HSE">(in
+context)</a></div>
+</div>

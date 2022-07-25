@@ -1,0 +1,5 @@
+<div class="solution" acro="B.T51">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">B.T51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Choose $B$ to be the set of standard unit vectors, a particularly nice basis of $\complex{n}$ (<a class="knowl" acro="SUVB" type="Theorem" title="Standard Unit Vectors are a Basis" knowl="./knowls/theorem.SUVB.knowl">Theorem SUVB</a>).  For a vector $\vect{e}_j$ (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>) from this basis, what is $A\vect{e}_j$?
+</div>

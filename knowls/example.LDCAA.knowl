@@ -1,0 +1,19 @@
+<div class="example" id="example-LDCAA" acro="LDCAA" titletext="Linearly dependent columns in Archetype A">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">LDCAA</span> <span class="titletext">Linearly dependent columns in Archetype A</span>
+</h5>
+<p><a knowl="./knowls/archetype.A.knowl">Archetype A</a> is a system of linear equations with coefficient matrix,
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; -1 &amp; 2\\
+2 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>Do the columns of this matrix form a linearly independent or dependent set?  By <a class="knowl" acro="S" type="Example" title="A singular matrix, Archetype A" knowl="./knowls/example.S.knowl">Example S</a> we know that $A$ is singular.  According to the definition of nonsingular matrices, <a class="knowl" acro="NM" type="Definition" title="Nonsingular Matrix" knowl="./knowls/definition.NM.knowl">Definition NM</a>, the homogeneous system $\homosystem{A}$ has infinitely many solutions.  So by <a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a>, the columns of $A$ form a linearly dependent set.
+</p>
+<div class="context"><a href="section-LI.html#example-LDCAA" class="context" title="Section LI">(in
+context)</a></div>
+</div>

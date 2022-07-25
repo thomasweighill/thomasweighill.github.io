@@ -1,0 +1,7 @@
+<div class="exercise" acro="IVLT.M50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">IVLT.M50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Rework <a class="knowl" acro="CIVLT" type="Example" title="Computing the Inverse of a Linear Transformations" knowl="./knowls/example.CIVLT.knowl">Example CIVLT</a>, only in place of the basis $B$ for $P_2$, choose instead to use the basis $C=\set{1,\,1+x,\,1+x+x^2}$.  This will complicate writing a generic element of the domain of $\ltinverse{T}$ as a linear combination of the basis elements, and the algebra will be a bit messier, but in the end you should obtain the same formula for $\ltinverse{T}$.  The inverse linear transformation is what it is, and the choice of a particular basis should not influence the outcome.
+</p></div>
+</div>

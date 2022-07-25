@@ -1,0 +1,15 @@
+
+<ol>
+<li>The change-of-basis matrix is a matrix representation of which linear transformation?
+</li>
+<li>Find the change-of-basis matrix, $\cbm{B}{C}$, for the two bases of $\complex{2}$
+\begin{align*}
+B&amp;=\set{\colvector{2\\3},\,\colvector{-1\\2}}&amp;
+C&amp;=\set{\colvector{1\\0},\,\colvector{1\\1}}
+\end{align*}
+
+</li>
+<li>What is the third “surprise,” and why is it surprising?
+</li>
+</ol>
+

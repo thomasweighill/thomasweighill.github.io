@@ -1,0 +1,84 @@
+<div class="example" id="example-PM" acro="PM" titletext="Polynomial of a matrix">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">PM</span> <span class="titletext">Polynomial of a matrix</span>
+</h5>
+<p>Let
+\begin{align*}
+p(x)=14+19x-3x^2-7x^3+x^4
+&amp;&amp;
+D=\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}
+\end{align*}
+
+and we will compute $p(D)$.</p>
+<p>First, the necessary powers of $D$.  Notice that $D^0$ is defined to be the multiplicative identity, $I_3$, as will be the case in general.
+\begin{align*}
+D^0&amp;=I_3=\begin{bmatrix}1 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 1\end{bmatrix}\\
+D^1&amp;=D=\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}\\
+D^2&amp;=DD^1=
+\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}
+\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}
+=
+\begin{bmatrix}-2 &amp; -1 &amp; -6\\5 &amp; 1 &amp; 0\\1 &amp; -8 &amp; -7\end{bmatrix}\\
+D^3&amp;=DD^2=
+\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}
+\begin{bmatrix}-2 &amp; -1 &amp; -6\\5 &amp; 1 &amp; 0\\1 &amp; -8 &amp; -7\end{bmatrix}
+=
+\begin{bmatrix}19 &amp; -12 &amp; -8\\-4 &amp; 15 &amp; 8\\12 &amp; -4 &amp; 11\end{bmatrix}\\
+D^4&amp;=DD^3=
+\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}
+\begin{bmatrix}19 &amp; -12 &amp; -8\\-4 &amp; 15 &amp; 8\\12 &amp; -4 &amp; 11\end{bmatrix}
+=
+\begin{bmatrix}-7 &amp; 49 &amp; 54\\-5 &amp; -4 &amp; -30\\-49 &amp; 47 &amp; 43\end{bmatrix}\\
+\end{align*}
+
+</p>
+<p>Then
+\begin{align*}
+p(D)&amp;=14+19D-3D^2-7D^3+D^4\\
+&amp;=
+  14\begin{bmatrix}1 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 1\end{bmatrix}
++19\begin{bmatrix}-1 &amp; 3 &amp; 2\\1 &amp; 0 &amp; -2\\-3 &amp; 1 &amp; 1\end{bmatrix}
+   -3\begin{bmatrix}-2 &amp; -1 &amp; -6\\5 &amp; 1 &amp; 0\\1 &amp; -8 &amp; -7\end{bmatrix}\\
+&amp;\quad\quad
+   -7\begin{bmatrix}19 &amp; -12 &amp; -8\\-4 &amp; 15 &amp; 8\\12 &amp; -4 &amp; 11\end{bmatrix}
+    +\begin{bmatrix}-7 &amp; 49 &amp; 54\\-5 &amp; -4 &amp; -30\\-49 &amp; 47 &amp; 43\end{bmatrix}\\
+&amp;=
+\begin{bmatrix}
+-139 &amp; 193 &amp; 166\\
+27 &amp; -98 &amp; -124\\
+-193 &amp; 118 &amp; 20
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Notice that $p(x)$ factors as
+\begin{equation*}
+p(x)=14+19x-3x^2-7x^3+x^4=(x-2)(x-7)(x+1)^2
+\end{equation*}
+</p>
+<p>Because $D$ commutes with itself ($DD=DD$), we can use distributivity of matrix multiplication across matrix addition (<a class="knowl" acro="MMDAA" type="Theorem" title="Matrix Multiplication Distributes Across Addition" knowl="./knowls/theorem.MMDAA.knowl">Theorem MMDAA</a>) without being careful with any of the matrix products, and just as easily evaluate $p(D)$ using the factored form of $p(x)$,
+\begin{align*}
+p(D)&amp;=14+19D-3D^2-7D^3+D^4=(D-2I_3)(D-7I_3)(D+I_3)^2\\
+&amp;=
+\begin{bmatrix}
+-3 &amp; 3 &amp; 2\\ 1 &amp; -2 &amp; -2\\ -3 &amp; 1 &amp; -1
+\end{bmatrix}\,
+\begin{bmatrix}
+-8 &amp; 3 &amp; 2\\ 1 &amp; -7 &amp; -2\\ -3 &amp; 1 &amp; -6
+\end{bmatrix}\,
+\begin{bmatrix}
+0 &amp; 3 &amp; 2\\ 1 &amp; 1 &amp; -2\\ -3 &amp; 1 &amp; 2
+\end{bmatrix}^2\\
+&amp;=
+\begin{bmatrix}
+-139 &amp; 193 &amp; 166\\
+27 &amp; -98 &amp; -124\\
+-193 &amp; 118 &amp; 20
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>This example is not meant to be too profound.  It <em>is</em> meant to show you that it is natural to evaluate a polynomial with a matrix, and that the factored form of the polynomial is as good as (or maybe better than) the expanded form.  And do not forget that constant terms in polynomials are really multiples of the identity matrix when we are evaluating the polynomial with a matrix.</p>
+<div class="context"><a href="section-EE.html#example-PM" class="context" title="Section EE">(in
+context)</a></div>
+</div>

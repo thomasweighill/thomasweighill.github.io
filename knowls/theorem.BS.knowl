@@ -1,0 +1,14 @@
+<div class="theorem" id="theorem-BS" acro="BS" titletext="Basis of a Span">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">BS</span><span class="titletext"> Basis of a Span</span>
+</h5>
+<div class="statement"><p>Suppose that $S=\set{\vectorlist{v}{n}}$ is a set of column vectors.  Define $W=\spn{S}$ and let $A$ be the matrix whose columns are the vectors from $S$.  Let $B$ be the reduced row-echelon form of $A$, with $D=\set{\scalarlist{d}{r}}$ the set of indices for the pivot columns of $B$.  Then
+<ol>
+<li> $T=\set{\vect{v}_{d_1},\,\vect{v}_{d_2},\,\vect{v}_{d_3},\,\ldots\,\vect{v}_{d_r}}$ is a linearly independent set.
+</li>
+<li> $W=\spn{T}$.
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.BS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LDS.html#theorem-BS" class="context" title="Section LDS">(in context)</a></div>

@@ -1,0 +1,14 @@
+<div class="solution" acro="VO.T07">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VO.T07</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>\begin{align*}
+\zerovector
+&amp;= c\zerovector + (-c\zerovector)&amp;&amp;\knowl{./knowls/property.AIC.knowl}{\text{Property AIC}}\\
+&amp;= c(\zerovector + \zerovector) + (-c\zerovector)&amp;&amp;\knowl{./knowls/property.ZC.knowl}{\text{Property ZC}}\\
+&amp;= (c\zerovector + c\zerovector) + (-c\zerovector)&amp;&amp;\knowl{./knowls/property.DVAC.knowl}{\text{Property DVAC}}\\
+&amp;= c\zerovector + (c\zerovector + (-c\zerovector))&amp;&amp;\knowl{./knowls/property.AAC.knowl}{\text{Property AAC}}\\
+&amp;= c\zerovector + \zerovector&amp;&amp;\knowl{./knowls/property.AIC.knowl}{\text{Property AIC}}\\
+&amp;= c\zerovector&amp;&amp;\knowl{./knowls/property.ZC.knowl}{\text{Property ZC}}
+\end{align*}
+
+</div>

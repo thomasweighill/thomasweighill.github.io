@@ -1,0 +1,5 @@
+<div class="solution" acro="NM.M52">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">NM.M52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>Any system with a nonsingular coefficient matrix will have a unique solution by <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>.  If the system is not homogeneous, the solution cannot be the zero vector (<a knowl="./knowls/exercise.HSE.T10.knowl">Exercise HSE.T10</a>).
+</div>

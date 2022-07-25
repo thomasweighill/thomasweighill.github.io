@@ -1,0 +1,107 @@
+<div class="proof" id="proof-PSPHS" acro="PSPHS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">PSPHS</span>
+</h5>
+<p>Let $\vectorlist{A}{n}$ be the columns of the coefficient matrix $A$.</p>
+
+<p>(⇐)  Suppose $\vect{y}=\vect{w}+\vect{z}$ and $\vect{z}\in\nsp{A}$. Then
+\begin{align*}
+\vect{b}
+&amp;=
+\vectorentry{\vect{w}}{1}\vect{A}_1+
+\vectorentry{\vect{w}}{2}\vect{A}_2+
+\vectorentry{\vect{w}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{w}}{n}\vect{A}_n
+&amp;&amp;\knowl{./knowls/theorem.SLSLC.knowl}{\text{Theorem SLSLC}}\\
+&amp;=
+\vectorentry{\vect{w}}{1}\vect{A}_1+
+\vectorentry{\vect{w}}{2}\vect{A}_2+
+\vectorentry{\vect{w}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{w}}{n}\vect{A}_n
++\zerovector
+&amp;&amp;\knowl{./knowls/property.ZC.knowl}{\text{Property ZC}}\\
+&amp;=
+\vectorentry{\vect{w}}{1}\vect{A}_1+
+\vectorentry{\vect{w}}{2}\vect{A}_2+
+\vectorentry{\vect{w}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{w}}{n}\vect{A}_n
+&amp;&amp;\knowl{./knowls/theorem.SLSLC.knowl}{\text{Theorem SLSLC}}\\
+&amp;\quad\quad
++
+\vectorentry{\vect{z}}{1}\vect{A}_1+
+\vectorentry{\vect{z}}{2}\vect{A}_2+
+\vectorentry{\vect{z}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{z}}{n}\vect{A}_n\\
+&amp;=
+\left(\vectorentry{\vect{w}}{1}+\vectorentry{\vect{z}}{1}\right)\vect{A}_1+
+\left(\vectorentry{\vect{w}}{2}+\vectorentry{\vect{z}}{2}\right)\vect{A}_2
+&amp;&amp;\knowl{./knowls/theorem.VSPCV.knowl}{\text{Theorem VSPCV}}\\
+&amp;\quad\quad
+\left(\vectorentry{\vect{w}}{3}+\vectorentry{\vect{z}}{3}\right)\vect{A}_3+
+\cdots+
+\left(\vectorentry{\vect{w}}{n}+\vectorentry{\vect{z}}{n}\right)\vect{A}_n\\
+&amp;=
++\vectorentry{\vect{w}+\vect{z}}{1}\vect{A}_1+
+\vectorentry{\vect{w}+\vect{z}}{2}\vect{A}_2+
+\cdots+
+\vectorentry{\vect{w}+\vect{z}}{n}\vect{A}_n
+&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;=
+\vectorentry{\vect{y}}{1}\vect{A}_1+
+\vectorentry{\vect{y}}{2}\vect{A}_2+
+\vectorentry{\vect{y}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{y}}{n}\vect{A}_n
+&amp;&amp;\text{Definition of $\vect{y}$}
+\end{align*}
+
+Applying <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> we see that the vector $\vect{y}$ is a solution to $\linearsystem{A}{\vect{b}}$.</p>
+
+<p>(⇒)  Suppose $\vect{y}$ is a solution to $\linearsystem{A}{\vect{b}}$.  Then
+\begin{align*}
+\zerovector
+&amp;=
+\vect{b}-\vect{b}&amp;&amp;\text{}\\
+&amp;=
+\vectorentry{\vect{y}}{1}\vect{A}_1+
+\vectorentry{\vect{y}}{2}\vect{A}_2+
+\vectorentry{\vect{y}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{y}}{n}\vect{A}_n
+&amp;&amp;\knowl{./knowls/theorem.SLSLC.knowl}{\text{Theorem SLSLC}}\\
+&amp;\quad\quad
+-
+\left(
+\vectorentry{\vect{w}}{1}\vect{A}_1+
+\vectorentry{\vect{w}}{2}\vect{A}_2+
+\vectorentry{\vect{w}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{w}}{n}\vect{A}_n
+\right)\\
+&amp;=
+\left(\vectorentry{\vect{y}}{1}-\vectorentry{\vect{w}}{1}\right)\vect{A}_1+
+\left(\vectorentry{\vect{y}}{2}-\vectorentry{\vect{w}}{2}\right)\vect{A}_2
+&amp;&amp;\knowl{./knowls/theorem.VSPCV.knowl}{\text{Theorem VSPCV}}\\
+&amp;\quad\quad
++
+\left(\vectorentry{\vect{y}}{3}-\vectorentry{\vect{w}}{3}\right)\vect{A}_3+
+\cdots+
+\left(\vectorentry{\vect{y}}{n}-\vectorentry{\vect{w}}{n}\right)\vect{A}_n\\
+&amp;=
+\vectorentry{\vect{y}-\vect{w}}{1}\vect{A}_1+
+\vectorentry{\vect{y}-\vect{w}}{2}\vect{A}_2
+&amp;&amp;\knowl{./knowls/definition.CVA.knowl}{\text{Definition CVA}}\\
+&amp;\quad\quad
++\vectorentry{\vect{y}-\vect{w}}{3}\vect{A}_3+
+\cdots+
+\vectorentry{\vect{y}-\vect{w}}{n}\vect{A}_n
+\end{align*}
+
+By <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> we see that the vector $\vect{y}-\vect{w}$ is a solution to the homogeneous system $\homosystem{A}$ and by <a class="knowl" acro="NSM" type="Definition" title="Null Space of a Matrix" knowl="./knowls/definition.NSM.knowl">Definition NSM</a>, $\vect{y}-\vect{w}\in\nsp{A}$.  In other words, $\vect{y}-\vect{w}=\vect{z}$ for some vector $\vect{z}\in\nsp{A}$.  Rewritten, this is
+$\vect{y}=\vect{w}+\vect{z}$, as desired.</p>
+
+</div>

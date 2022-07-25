@@ -1,0 +1,45 @@
+<div class="example" id="example-TREM" acro="TREM" titletext="Two row-equivalent matrices">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">TREM</span> <span class="titletext">Two row-equivalent matrices</span>
+</h5>
+<p>The matrices
+\begin{align*}
+A=\begin{bmatrix}
+2&amp;-1&amp;3&amp;4\\
+5&amp;2&amp;-2&amp;3\\
+1&amp;1&amp;0&amp;6
+\end{bmatrix}
+&amp;&amp;
+B=\begin{bmatrix}
+1&amp;1&amp;0&amp;6\\
+3&amp;0&amp;-2&amp;-9\\
+2&amp;-1&amp;3&amp;4
+\end{bmatrix}
+\end{align*}
+
+are row-equivalent as can be seen from
+\begin{align*}
+\begin{bmatrix}
+2&amp;-1&amp;3&amp;4\\
+5&amp;2&amp;-2&amp;3\\
+1&amp;1&amp;0&amp;6
+\end{bmatrix}
+\xrightarrow{\rowopswap{1}{3}}
+\begin{bmatrix}
+1&amp;1&amp;0&amp;6\\
+5&amp;2&amp;-2&amp;3\\
+2&amp;-1&amp;3&amp;4
+\end{bmatrix}
+&amp;
+\xrightarrow{\rowopadd{-2}{1}{2}}
+\begin{bmatrix}
+1&amp;1&amp;0&amp;6\\
+3&amp;0&amp;-2&amp;-9\\
+2&amp;-1&amp;3&amp;4
+\end{bmatrix}
+\end{align*}
+
+We can also say that any pair of these three matrices are row-equivalent.</p>
+<div class="context"><a href="section-RREF.html#example-TREM" class="context" title="Section RREF">(in
+context)</a></div>
+</div>

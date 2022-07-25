@@ -1,0 +1,74 @@
+<div class="solution" acro="FS.C60">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">FS.C60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The definition of the column space is the span of the set of columns (<a class="knowl" acro="CSM" type="Definition" title="Column Space of a Matrix" knowl="./knowls/definition.CSM.knowl">Definition CSM</a>).  So the desired set is just the four columns of $B$,
+\begin{equation*}
+S=\set{
+\colvector{2\\1\\-1},\,
+\colvector{3\\1\\2},\,
+\colvector{1\\0\\3},\,
+\colvector{1\\1\\-4}
+}
+\end{equation*}
+<a class="knowl" acro="BCS" type="Theorem" title="Basis of the Column Space" knowl="./knowls/theorem.BCS.knowl">Theorem BCS</a> suggests row-reducing the matrix and using the columns of $B$ with the same indices as the pivot columns.
+\begin{equation*}
+B\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -1 &amp; 2\\
+0 &amp; \leading{1} &amp; 1 &amp; -1\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+So the pivot columns are numbered by elements of $D=\set{1,\,2}$, so the requested set is
+\begin{equation*}
+S=\set{
+\colvector{2\\1\\-1},\,
+\colvector{3\\1\\2}}
+\end{equation*}
+We can find this set by row-reducing the transpose of $B$, deleting the zero rows, and using the nonzero rows as column vectors in the set.  This is an application of <a class="knowl" acro="CSRST" type="Theorem" title="Column Space, Row Space, Transpose" knowl="./knowls/theorem.CSRST.knowl">Theorem CSRST</a> followed by <a class="knowl" acro="BRS" type="Theorem" title="Basis for the Row Space" knowl="./knowls/theorem.BRS.knowl">Theorem BRS</a>.
+\begin{equation*}
+\transpose{B}\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; 3\\
+0 &amp; \leading{1} &amp; -7\\
+0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+So the requested set is
+\begin{equation*}
+S=\set{
+\colvector{1\\0\\3},\,
+\colvector{0\\1\\-7}
+}
+\end{equation*}
+With the column space expressed as a null space, the vectors obtained via <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> will be of the desired shape.  So we first proceed with <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a> and create the extended echelon form,
+\begin{equation*}
+\augmented{B}{I_3}=
+\begin{bmatrix}
+2 &amp; 3 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0\\
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0\\
+-1 &amp; 2 &amp; 3 &amp; -4 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; 0 &amp; -1 &amp; 2 &amp; 0 &amp; \frac{2}{3} &amp; \frac{-1}{3}\\
+0 &amp; \leading{1} &amp; 1 &amp; -1 &amp; 0 &amp; \frac{1}{3} &amp; \frac{1}{3}\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; \frac{-7}{3} &amp; \frac{-1}{3}
+\end{bmatrix}
+\end{equation*}
+So, employing <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a>, we have $\csp{B}=\nsp{L}$, where
+\begin{equation*}
+L=
+\begin{bmatrix}
+\leading{1} &amp; \frac{-7}{3} &amp; \frac{-1}{3}
+\end{bmatrix}
+\end{equation*}
+We can find the desired set of vectors from <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> as
+\begin{equation*}
+S=\set{
+\colvector{\frac{7}{3}\\1\\0},\,
+\colvector{\frac{1}{3}\\0\\1}
+}
+\end{equation*}
+</div>

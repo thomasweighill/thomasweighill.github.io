@@ -1,0 +1,7 @@
+<div class="property" id="property-AAM" acro="AAM" titletext="Additive Associativity, Matrices">
+<h5 class="property">
+<span class="type">Property</span> <span class="acro">AAM</span> <span class="titletext">Additive Associativity, Matrices</span>
+</h5>
+<p>
+If $A,\,B,\,C\in M_{mn}$, then $A+\left(B+C\right)=\left(A+B\right)+C$.</p>
+</div>

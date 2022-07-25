@@ -1,0 +1,132 @@
+<div class="example" id="example-FSCF" acro="FSCF" titletext="Fibonacci sequence, closed form">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">FSCF</span> <span class="titletext">Fibonacci sequence, closed form</span>
+</h5>
+<p>The <em class="term">Fibonacci sequence</em> is a sequence of integers defined recursively by
+\begin{align*}
+a_0&amp;=0
+&amp;
+a_1&amp;=1
+&amp;
+a_{n+1}&amp;=a_n+a_{n-1},\quad n\geq 1
+\end{align*}
+</p>
+<p>So the initial portion of the sequence is $0,\,1,\,1,\,2,\,3,\,5,\,8,\,13,\,21,\,\ldots$.  In this subsection we will illustrate an application of eigenvalues and diagonalization through the determination of a closed-form expression for an arbitrary term of this sequence.</p>
+<p>To begin, verify that for any $n\geq 1$ the recursive statement above establishes the truth of the statement
+\begin{align*}
+\colvector{a_n\\a_{n+1}}
+&amp;=
+\begin{bmatrix}0&amp;1\\1&amp;1\end{bmatrix}
+\colvector{a_{n-1}\\a_n}
+\end{align*}
+
+</p>
+<p>Let $A$ denote this $2\times 2$ matrix.  Through repeated applications of the statement above we have
+\begin{align*}
+\colvector{a_n\\a_{n+1}}
+&amp;
+=A\colvector{a_{n-1}\\a_n}
+=A^2\colvector{a_{n-2}\\a_{n-1}}
+=A^3\colvector{a_{n-3}\\a_{n-2}}
+=\cdots
+=A^n\colvector{a_{0}\\a_{1}}
+\end{align*}
+</p>
+<p>In preparation for working with this high power of $A$, not unlike in <a class="knowl" acro="HPDM" type="Example" title="High power of a diagonalizable matrix" knowl="./knowls/example.HPDM.knowl">Example HPDM</a>, we will diagonalize $A$.  The characteristic polynomial of $A$ is $\charpoly{A}{x}=x^2-x-1$, with roots  (the eigenvalues of $A$ by <a class="knowl" acro="EMRCP" type="Theorem" title="Eigenvalues of a Matrix are Roots of Characteristic Polynomials" knowl="./knowls/theorem.EMRCP.knowl">Theorem EMRCP</a>)
+\begin{align*}
+\rho&amp;=\frac{1+\sqrt{5}}{2}
+&amp;
+\delta&amp;=\frac{1-\sqrt{5}}{2}
+\end{align*}
+
+</p>
+<p>With two distinct eigenvalues, <a class="knowl" acro="DED" type="Theorem" title="Distinct Eigenvalues implies Diagonalizable" knowl="./knowls/theorem.DED.knowl">Theorem DED</a> implies that $A$ is diagonalizable.  It will be easier to compute with these eigenvalues once you confirm the following properties (all but the last can be derived from the fact that $\rho$ and $\delta$ are roots of the characteristic polynomial, in a factored or unfactored form)
+\begin{align*}
+\rho+\delta&amp;=1
+&amp;
+\rho\delta&amp;=-1
+&amp;
+1+\rho&amp;=\rho^2
+&amp;
+1+\delta&amp;=\delta^2
+&amp;
+\rho-\delta&amp;=\sqrt{5}
+\end{align*}
+
+</p>
+<p>Then eigenvectors of $A$ (for $\rho$ and $\delta$, respectively) are
+\begin{align*}
+&amp;\colvector{1\\\rho}
+&amp;
+&amp;\colvector{1\\\delta}
+\end{align*}
+
+which can be easily confirmed, as we demonstrate for the eigenvector for $\rho$,
+\begin{align*}
+\begin{bmatrix}0&amp;1\\1&amp;1\end{bmatrix}\colvector{1\\\rho}
+&amp;
+=\colvector{\rho\\1+\rho}
+=\colvector{\rho\\\rho^2}
+=\rho\colvector{1\\\rho}
+\end{align*}
+
+</p>
+<p>From the proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> we know $A$ can be diagonalized by a matrix $S$ with these eigenvectors as columns, giving $D=\inverse{S}AS$.  We list $S$, $\inverse{S}$ and the diagonal matrix $D$,
+\begin{align*}
+S&amp;=\begin{bmatrix}1&amp;1\\\rho&amp;\delta\end{bmatrix}
+&amp;
+\inverse{S}&amp;=\frac{1}{\rho-\delta}\begin{bmatrix}-\delta&amp;1\\\rho&amp;-1\end{bmatrix}
+&amp;
+D&amp;=\begin{bmatrix}\rho&amp;0\\0&amp;\delta\end{bmatrix}
+\end{align*}
+
+</p>
+<p>OK, we have everything in place now.  The main step in the following is to replace $A$ by $SD\inverse{S}$. Here we go,
+\begin{align*}
+\colvector{a_n\\a_{n+1}}
+&amp;=A^n\colvector{a_{0}\\a_{1}}\\
+&amp;=\left(SD\inverse{S}\right)^n\colvector{a_{0}\\a_{1}}\\
+&amp;=SD\inverse{S}SD\inverse{S}SD\inverse{S}\cdots SD\inverse{S}\colvector{a_{0}\\a_{1}}\\
+&amp;=SDDD\cdots D\inverse{S}\colvector{a_{0}\\a_{1}}\\
+&amp;=SD^n\inverse{S}\colvector{a_{0}\\a_{1}}\\
+&amp;=
+\begin{bmatrix}1&amp;1\\\rho&amp;\delta\end{bmatrix}
+\begin{bmatrix}\rho&amp;0\\0&amp;\delta\end{bmatrix}^n
+\frac{1}{\rho-\delta}\begin{bmatrix}-\delta&amp;1\\\rho&amp;-1\end{bmatrix}
+\colvector{a_{0}\\a_{1}}\\
+&amp;=
+\frac{1}{\rho-\delta}
+\begin{bmatrix}1&amp;1\\\rho&amp;\delta\end{bmatrix}
+\begin{bmatrix}\rho^n&amp;0\\0&amp;\delta^n\end{bmatrix}
+\begin{bmatrix}-\delta&amp;1\\\rho&amp;-1\end{bmatrix}
+\colvector{0\\1}\\
+&amp;=
+\frac{1}{\rho-\delta}
+\begin{bmatrix}1&amp;1\\\rho&amp;\delta\end{bmatrix}
+\begin{bmatrix}\rho^n&amp;0\\0&amp;\delta^n\end{bmatrix}
+\colvector{1\\-1}\\
+&amp;=
+\frac{1}{\rho-\delta}
+\begin{bmatrix}1&amp;1\\\rho&amp;\delta\end{bmatrix}
+\colvector{\rho^n\\-\delta^n}\\
+&amp;=
+\frac{1}{\rho-\delta}
+\colvector{\rho^n-\delta^n\\\rho^{n+1}-\delta^{n+1}}
+\end{align*}
+
+</p>
+<p>Performing the scalar multiplication and equating the first entries of the two vectors, we arrive at the closed form expression
+\begin{align*}
+a_n&amp;=\frac{1}{\rho-\delta}\left(\rho^n-\delta^n\right)\\
+&amp;=\frac{1}{\sqrt{5}}
+\left(\left(\frac{1+\sqrt{5}}{2}\right)^n-\left(\frac{1-\sqrt{5}}{2}\right)^n\right)\\
+&amp;=\frac{1}{2^n\sqrt{5}}
+\left(\left(1+\sqrt{5}\right)^n-\left(1-\sqrt{5}\right)^n\right)
+\end{align*}
+
+</p>
+<p>Notice that it does not matter whether we use the equality of the first or second entries of the vectors, we will arrive at the same formula, once in terms of $n$ and again in terms of $n+1$.  Also, our definition clearly describes a sequence that will only contain integers, yet the presence of the irrational number $\sqrt{5}$ might make us suspicious.  But no, our expression for $a^n$ will always yield an integer!</p>
+<p>The Fibonacci sequence, and generalizations of it, have been extensively studied (Fibonacci lived in the 12th and 13th centuries).  There are many ways to derive the closed-form expression we just found, and our approach may not be the most efficient route.  But it is a nice demonstration of how diagonalization can be used to solve a problem outside the field of linear algebra.</p>
+<div class="context"><a href="section-SD.html#example-FSCF" class="context" title="Section SD">(in
+context)</a></div>
+</div>

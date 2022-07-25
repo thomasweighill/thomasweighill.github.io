@@ -1,0 +1,8 @@
+<div class="theorem" id="theorem-EMRCP" acro="EMRCP" titletext="Eigenvalues of a Matrix are Roots of Characteristic Polynomials">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMRCP</span><span class="titletext"> Eigenvalues of a Matrix are Roots of Characteristic Polynomials</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is a square matrix.
+Then $\lambda$ is an eigenvalue of $A$ if and only if $\charpoly{A}{\lambda}=0$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMRCP.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#theorem-EMRCP" class="context" title="Section EE">(in context)</a></div>

@@ -1,0 +1,13 @@
+<div class="exercise" acro="SSLE.C34">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SSLE.C34</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find all solutions to the linear system:
+\begin{align*}
+ x + y - z &amp;= -5\\
+ x - y - z &amp;= -3\\
+ x + y - z &amp;= 0
+\end{align*}
+
+</p></div>
+</div>

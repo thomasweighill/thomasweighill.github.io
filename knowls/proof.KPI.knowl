@@ -1,0 +1,26 @@
+<div class="proof" id="proof-KPI" acro="KPI" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">KPI</span>
+</h5>
+<p>Let $M=\setparts{\vect{u}+\vect{z}}{\vect{z}\in\krn{T}}$.  First, we show that $M\subseteq\preimage{T}{\vect{v}}$.  Suppose that $\vect{w}\in M$, so $\vect{w}$ has the form $\vect{w}=\vect{u}+\vect{z}$, where $\vect{z}\in\krn{T}$.  Then
+\begin{align*}
+\lt{T}{\vect{w}}&amp;=\lt{T}{\vect{u}+\vect{z}}\\
+&amp;=\lt{T}{\vect{u}}+\lt{T}{\vect{z}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\vect{v}+\zerovector&amp;&amp;\vect{u}\in\preimage{T}{\vect{v}},\ \vect{z}\in\krn{T}\\
+&amp;=\vect{v}&amp;&amp;\knowl{./knowls/property.Z.knowl}{\text{Property Z}}
+\end{align*}
+
+which qualifies $\vect{w}$ for membership in the preimage of $\vect{v}$, $\vect{w}\in\preimage{T}{\vect{v}}$.</p>
+
+<p>For the opposite inclusion, suppose $\vect{x}\in\preimage{T}{\vect{v}}$.  Then,
+\begin{align*}
+\lt{T}{\vect{x}-\vect{u}}&amp;=\lt{T}{\vect{x}}-\lt{T}{\vect{u}}&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=\vect{v}-\vect{v}&amp;&amp;\vect{x},\,\vect{u}\in\preimage{T}{\vect{v}}\\
+&amp;=\zerovector
+\end{align*}
+
+</p>
+
+<p>This qualifies $\vect{x}-\vect{u}$ for membership in the kernel of $T$, $\krn{T}$.  So there is a vector $\vect{z}\in\krn{T}$ such that $\vect{x}-\vect{u}=\vect{z}$.  Rearranging this equation gives $\vect{x}=\vect{u}+\vect{z}$ and so $\vect{x}\in M$.  So $\preimage{T}{\vect{v}}\subseteq M$ and we see that $M=\preimage{T}{\vect{v}}$, as desired.</p>
+
+</div>

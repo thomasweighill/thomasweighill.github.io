@@ -1,0 +1,8 @@
+<div class="example" id="example-BC" acro="BC" titletext="Basis for the crazy vector space">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">BC</span> <span class="titletext">Basis for the crazy vector space</span>
+</h5>
+<p>In <a class="knowl" acro="LIC" type="Example" title="Linearly independent set in the crazy vector space" knowl="./knowls/example.LIC.knowl">Example LIC</a> and <a class="knowl" acro="SSC" type="Example" title="Spanning set in the crazy vector space" knowl="./knowls/example.SSC.knowl">Example SSC</a> we determined that the set $R=\set{(1,\,0),\,(6,\,3)}$ from the crazy vector space, $C$ (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>), is linearly independent and is a spanning set for $C$.  By <a class="knowl" acro="B" type="Definition" title="Basis" knowl="./knowls/definition.B.knowl">Definition B</a> we see that $R$ is a basis for $C$.</p>
+<div class="context"><a href="section-B.html#example-BC" class="context" title="Section B">(in
+context)</a></div>
+</div>

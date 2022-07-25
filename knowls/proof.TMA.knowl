@@ -1,0 +1,18 @@
+<div class="proof" id="proof-TMA" acro="TMA" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">TMA</span>
+</h5>
+<p>The statement to be proved is an equality of matrices, so we work entry-by-entry and use <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a>.  Think carefully about the objects involved here, and the many uses of the plus sign.  Realize too that while $A$ and $B$ are $m\times n$ matrices, the conclusion is a statement about the equality of two $n\times m$ matrices.  So we begin with: for $1\leq i\leq n$, $1\leq j\leq m$,
+\begin{align*}
+\matrixentry{\transpose{(A+B)}}{ij}
+&amp;=\matrixentry{A+B}{ji}&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=\matrixentry{A}{ji}+\matrixentry{B}{ji}&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}\\
+&amp;=\matrixentry{\transpose{A}}{ij}+\matrixentry{\transpose{B}}{ij}&amp;&amp;\knowl{./knowls/definition.TM.knowl}{\text{Definition TM}}\\
+&amp;=\matrixentry{\transpose{A}+\transpose{B}}{ij}&amp;&amp;\knowl{./knowls/definition.MA.knowl}{\text{Definition MA}}
+\end{align*}
+
+</p>
+
+<p>Since the matrices $\transpose{(A+B)}$ and $\transpose{A}+\transpose{B}$ agree at each entry, <a class="knowl" acro="ME" type="Definition" title="Matrix Equality" knowl="./knowls/definition.ME.knowl">Definition ME</a> tells us the two matrices are equal.</p>
+
+</div>

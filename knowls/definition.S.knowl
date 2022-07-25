@@ -1,0 +1,6 @@
+<div class="definition" id="definition-S" acro="S" titletext="Subspace">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">S</span> <span class="titletext"> Subspace</span>
+</h5>
+<p>Suppose that $V$ and $W$ are two vector spaces that have identical definitions of vector addition and scalar multiplication, and that $W$ is a subset of $V$, $W\subseteq V$.  Then $W$ is a <em class="term">subspace</em> of $V$.</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#definition-S" class="context" title="Section S">(in context)</a></div>

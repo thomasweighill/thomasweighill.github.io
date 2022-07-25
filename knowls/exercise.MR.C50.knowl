@@ -1,0 +1,13 @@
+<div class="exercise" acro="MR.C50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MR.C50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Use a matrix representation to find a basis for the range of the linear transformation $L$.
+\begin{equation*}
+\ltdefn{L}{M_{22}}{P_2},\quad
+\lt{T}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+(a+2b+4c+d)+(3a+c-2d)x+(-a+b+3c+3d)x^2
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MR.C50.knowl">Solution</a></p></div>
+</div>

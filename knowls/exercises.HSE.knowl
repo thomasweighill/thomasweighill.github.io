@@ -1,0 +1,215 @@
+<div class="exercise" acro="HSE.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Each Archetype (<a href="archetypes.html" title="Archetypes">Archetypes</a>) that is a system of equations has a corresponding homogeneous system with the same coefficient matrix.  Compute the set of solutions for each.  Notice that these solution sets are the null spaces of the coefficient matrices.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div><div class="exercise" acro="HSE.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p><a knowl="./knowls/archetype.K.knowl">Archetype K</a> and
+<a knowl="./knowls/archetype.L.knowl">Archetype L</a> are simply $5\times 5$ matrices (i.e. they are not systems of equations).  Compute the null space of each matrix.
+</p></div>
+</div><div class="exercisegroup">
+<p>For Exercises C21-C23, solve the given homogeneous linear system.  Compare your results to the results of the corresponding exercise in <a href="section-TSS.html" title="Types of Solution Sets">Section TSS</a>.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="HSE.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C21</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 4x_2 + 3x_3 - x_4 &amp;= 0\\
+x_1 - x_2 + x_3 + 2x_4 &amp;= 0\\
+4x_1 + x_2 + 6x_3 + 5x_4 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C21.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="HSE.C22">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C22</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 - 2x_2 + x_3 - x_4 &amp;= 0\\
+2x_1 - 4x_2 + x_3 + x_4 &amp;= 0\\
+x_1 - 2x_2 - 2x_3 + 3x_4 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C22.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="HSE.C23">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C23</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 - 2x_2 + x_3 - x_4 &amp;= 0\\
+x_1 + x_2 + x_3 - x_4 &amp;= 0\\
+x_1 \quad + x_3 - x_4 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C23.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercisegroup">
+<p>For Exercises C25-C27, solve the given homogeneous linear system.  Compare your results to the results of the corresponding exercise in <a href="section-TSS.html" title="Types of Solution Sets">Section TSS</a>.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="HSE.C25">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C25</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 0\\
+2x_1 - x_2 + x_3 &amp;= 0\\
+3x_1 + x_2 + x_3 &amp;= 0\\
+\quad x_2 + 2x_3 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C25.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="HSE.C26">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C26</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 0\\
+2x_1 - x_2 + x_3 &amp;= 0\\
+3x_1 + x_2 + x_3 &amp;= 0\\
+\quad 5x_2 + 2x_3 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C26.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="HSE.C27">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C27</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1 + 2x_2 + 3x_3 &amp;= 0\\
+2x_1 - x_2 + x_3 &amp;= 0\\
+x_1 - 8x_2 - 7x_3 &amp;= 0\\
+\quad x_2 + x_3 &amp;= 0
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C27.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercise" acro="HSE.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Compute the null space of the matrix $A$, $\nsp{A}$.
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 2 &amp; 4 &amp; 1 &amp; 3 &amp; 8 \\
+ -1 &amp; -2 &amp; -1 &amp; -1 &amp; 1 \\
+ 2 &amp; 4 &amp; 0 &amp; -3 &amp; 4 \\
+ 2 &amp; 4 &amp; -1 &amp; -7 &amp; 4
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C30.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="HSE.C31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Find the null space of the matrix $B$, $\nsp{B}$.
+\begin{align*}
+B&amp;=
+\begin{bmatrix}
+ -6 &amp; 4 &amp; -36 &amp; 6 \\
+ 2 &amp; -1 &amp; 10 &amp; -1 \\
+ -3 &amp; 2 &amp; -18 &amp; 3
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.C31.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="HSE.M45">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.M45</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Without doing any computations, and without examining any solutions, say as much as possible about the form of the solution set for corresponding homogeneous system of equations of each archetype that is a system of equations.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>/<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>/<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div><div class="exercisegroup">
+<p>For Exercises M50–M52  say <b>as much as possible</b> about each system's solution set.  Be sure to make it clear which theorems you are using to reach your conclusions.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="HSE.M50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.M50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A homogeneous system of 8 equations in 8 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.M50.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="HSE.M51">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.M51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A homogeneous system of 8 equations in 9 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.M51.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="HSE.M52">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.M52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A homogeneous system of 8 equations in 7 variables.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.M52.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercise" acro="HSE.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.martinjackson.knowl">Martin Jackson</a></span>
+</h5>
+<div class="problem"><p>Prove or disprove:  A system of linear equations is homogeneous if and only if the system has the zero vector as a solution.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.T10.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="HSE.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that two systems of linear equations are equivalent.  Prove that if the first system is homogeneous, then the second system is homogeneous.  Notice that this will allow us to conclude that two equivalent systems are either both homogeneous or both not homogeneous.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.T11.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="HSE.T12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.T12</span> <span class="contributor"><a knowl="./knowls/contributor.ivankessler.knowl">Ivan Kessler</a></span>
+</h5>
+<div class="problem"><p>Give an alternate proof of <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a> that uses <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>.
+</p></div>
+</div><div class="exercise" acro="HSE.T20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">HSE.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the homogeneous system of linear equations $\homosystem{A}$, and suppose that
+$\vect{u}=\colvector{u_1\\u_2\\u_3\\\vdots\\u_n}$
+is one solution to the system of equations.  Prove that
+$\vect{v}=\colvector{4u_1\\4u_2\\4u_3\\\vdots\\4u_n}$ is also a solution to $\homosystem{A}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.HSE.T20.knowl">Solution</a></p></div>
+</div>

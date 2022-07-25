@@ -1,0 +1,11 @@
+<div class="proof" id="proof-CCT" acro="CCT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">CCT</span>
+</h5>
+<p>Let $\alpha=a+bi$.  Then
+\begin{equation*}
+\conjugate{\conjugate{\alpha}}=\conjugate{a-bi}=a-(-bi)=a+bi=\alpha
+\end{equation*}
+</p>
+
+</div>

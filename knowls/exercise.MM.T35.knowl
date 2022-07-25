@@ -1,0 +1,7 @@
+<div class="exercise" acro="MM.T35">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MM.T35</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$ is an $n\times n$ matrix.  Prove that $\adjoint{A}A$ and $A\adjoint{A}$ are Hermitian matrices.
+</p></div>
+</div>

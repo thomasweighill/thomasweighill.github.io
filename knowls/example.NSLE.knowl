@@ -1,0 +1,28 @@
+<div class="example" id="example-NSLE" acro="NSLE" titletext="Notation for systems of linear equations">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSLE</span> <span class="titletext">Notation for systems of linear equations</span>
+</h5>
+<p>The system of linear equations
+\begin{align*}
+2x_1+4x_2-3x_3+5x_4+x_5&amp;=9\\
+3x_1+x_2+\quad\quad x_4-3x_5&amp;=0\\
+-2x_1+7x_2-5x_3+2x_4+2x_5&amp;=-3
+\end{align*}
+
+has coefficient matrix
+\begin{equation*}
+A=
+\begin{bmatrix}
+2 &amp; 4 &amp; -3 &amp; 5 &amp; 1\\
+3 &amp; 1 &amp; 0 &amp; 1 &amp; -3\\
+-2 &amp; 7 &amp; -5 &amp; 2 &amp; 2
+\end{bmatrix}
+\end{equation*}
+and vector of constants
+\begin{equation*}
+\vect{b}=\colvector{9\\0\\-3}
+\end{equation*}
+and so will be referenced as $\linearsystem{A}{\vect{b}}$.</p>
+<div class="context"><a href="section-RREF.html#example-NSLE" class="context" title="Section RREF">(in
+context)</a></div>
+</div>

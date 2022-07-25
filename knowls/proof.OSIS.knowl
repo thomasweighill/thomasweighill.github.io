@@ -1,0 +1,20 @@
+<div class="proof" id="proof-OSIS" acro="OSIS" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">OSIS</span>
+</h5>
+<p>The matrix $I_n$ is nonsingular (since it row-reduces easily to $I_n$, <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>).  So $A$ and $B$ are nonsingular by <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a>, so in particular $B$ is nonsingular.  We can therefore apply <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> to assert the existence of a matrix $C$ so that $BC=I_n$.  This application of <a class="knowl" acro="CINM" type="Theorem" title="Computing the Inverse of a Nonsingular Matrix" knowl="./knowls/theorem.CINM.knowl">Theorem CINM</a> could be a bit confusing, mostly because of the names of the matrices involved.  $B$ is nonsingular, so there must be a “right-inverse” for $B$, and we are calling it $C$.</p>
+
+<p>Now
+\begin{align*}
+BA
+&amp;=(BA)I_n&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+&amp;=(BA)(BC)&amp;&amp;\knowl{./knowls/theorem.CINM.knowl}{\text{Theorem CINM}}\\
+&amp;=B(AB)C&amp;&amp;\knowl{./knowls/theorem.MMA.knowl}{\text{Theorem MMA}}\\
+&amp;=BI_nC&amp;&amp;\text{Hypothesis}\\
+&amp;=BC&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+&amp;=I_n&amp;&amp;\knowl{./knowls/theorem.CINM.knowl}{\text{Theorem CINM}}
+\end{align*}
+
+which is the desired conclusion.</p>
+
+</div>

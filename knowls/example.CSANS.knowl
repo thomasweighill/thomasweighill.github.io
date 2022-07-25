@@ -1,0 +1,144 @@
+<div class="example" id="example-CSANS" acro="CSANS" titletext="Column space as null space">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">CSANS</span> <span class="titletext">Column space as null space</span>
+</h5>
+<p>Let us find the column space of the matrix $A$ below with a new approach.
+\begin{equation*}
+A=
+\begin{bmatrix}
+ 10 &amp; 0 &amp; 3 &amp; 8 &amp; 7 \\
+ -16 &amp; -1 &amp; -4 &amp; -10 &amp; -13 \\
+ -6 &amp; 1 &amp; -3 &amp; -6 &amp; -6 \\
+ 0 &amp; 2 &amp; -2 &amp; -3 &amp; -2 \\
+ 3 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+ -1 &amp; -1 &amp; 1 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>By <a class="knowl" acro="CSCS" type="Theorem" title="Column Spaces and Consistent Systems" knowl="./knowls/theorem.CSCS.knowl">Theorem CSCS</a> we know that the column vector $\vect{b}$ is in the column space of $A$ if and only if the linear system $\linearsystem{A}{\vect{b}}$ is consistent.  So let us try to solve this system in full generality, using a vector of variables for the vector of constants.  In other words, which vectors $\vect{b}$ lead to consistent systems?  Begin by forming the augmented matrix $\augmented{A}{\vect{b}}$ with a general version of $\vect{b}$,
+\begin{equation*}
+\augmented{A}{\vect{b}}=
+\begin{bmatrix}
+ 10 &amp; 0 &amp; 3 &amp; 8 &amp; 7 &amp; b_1 \\
+ -16 &amp; -1 &amp; -4 &amp; -10 &amp; -13 &amp; b_2 \\
+ -6 &amp; 1 &amp; -3 &amp; -6 &amp; -6 &amp; b_3 \\
+ 0 &amp; 2 &amp; -2 &amp; -3 &amp; -2 &amp; b_4 \\
+ 3 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; b_ 5\\
+ -1 &amp; -1 &amp; 1 &amp; 1 &amp; 0 &amp; b_ 6
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>To identify solutions we will bring this matrix to reduced row-echelon form.  Despite the presence of variables in the last column, there is nothing to stop us from doing this, except numerical computational routines cannot be used, and even some of the symbolic algebra routines do some unexpected maneuvers with this computation.  So do it by hand.  Yes, it is a bit of work.  But worth it.  We'll still be here when you get back.  Notice along the way that the row operations are <em>exactly</em> the same ones you would do if you were just row-reducing the coefficient matrix alone, say in connection with a homogeneous system of equations.  The column with the $b_i$ acts as a sort of bookkeeping device.  There are many different possibilities for the result, depending on what order you choose to perform the row operations, but shortly we will all be on the same page.  If you want to match our work right now, use row 5 to remove any occurrence of $b_1$ from the other entries of the last column, and use row 6 to remove any occurrence of $b_2$ from the last columns. We have:
+\begin{align*}
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; b_3 - b_4 + 2 b_5 - b_6\\
+ 0 &amp; \leading{1} &amp; 0 &amp; 0 &amp; -3 &amp; -2 b_3 + 3 b_4 - 3 b_5 + 3 b_6\\
+ 0 &amp; 0 &amp; \leading{1} &amp; 0 &amp; 1 &amp; b_3 + b_4 + 3 b_5 + 3 b_6\\
+ 0 &amp; 0 &amp; 0 &amp; \leading{1} &amp; -2 &amp; -2 b_3 + b_4 - 4 b_5\\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; b_1 + 3 b_3 - b_4 + 3 b_5 + b_6\\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; b_2 - 2 b_3 + b_4 + b_5 - b_6
+\end{bmatrix}
+\end{align*}
+
+</p>
+<p>Our goal is to identify those vectors $\vect{b}$ which make $\linearsystem{A}{\vect{b}}$ consistent.  By <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> we know that the consistent systems are precisely those without a pivot column in the last column.  Are the expressions in the last column of rows 5 and 6 equal to zero, or are they leading 1's?  The answer is: maybe.  It depends on $\vect{b}$.  With a nonzero value for either of these expressions, we would scale the row and produce a leading 1.   So we get a consistent system, and $\vect{b}$ is in the column space, if and only if these two expressions are both simultaneously zero.  In other words, members of the column space of $A$ are exactly those vectors $\vect{b}$ that satisfy
+\begin{align*}
+b_1 + 3 b_3 - b_4 + 3 b_5 + b_6 &amp; = 0\\
+b_2 - 2 b_3 + b_4 + b_5 - b_6 &amp; = 0
+\end{align*}
+
+</p>
+<p>Hmmm.  Looks suspiciously like a homogeneous system of two equations with six variables.  If you have been playing along (and we hope you have) then you may have a slightly different system, but you should have just two equations.  Form the coefficient matrix and row-reduce (notice that the system above has a coefficient matrix that is already in reduced row-echelon form).  We should all be together now with the same matrix,
+\begin{equation*}
+L=
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; 3 &amp; -1 &amp; 3 &amp; 1 \\
+ 0 &amp; \leading{1} &amp; -2 &amp; 1 &amp; 1 &amp; -1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>So, $\csp{A}=\nsp{L}$ and we can apply <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a> to obtain a linearly independent set to use in a span construction,
+\begin{equation*}
+\csp{A}=\nsp{L}=\spn{\set{
+\colvector{-3\\2\\1\\0\\0\\0},\,
+\colvector{1\\-1\\0\\1\\0\\0},\,
+\colvector{-3\\-1\\0\\0\\1\\0},\,
+\colvector{-1\\1\\0\\0\\0\\1}
+}}
+\end{equation*}
+</p>
+<p>Whew!  As a postscript to this central example, you may wish to convince yourself that the four vectors above really are elements of the column space.  Do they create consistent systems with $A$ as coefficient matrix?  Can you recognize the constant vector in your description of these solution sets?</p>
+<p>OK, that was so much fun, let us do it again.  But simpler this time.  And we will all get the same results all the way through.  Doing row operations by hand with variables can be a bit error prone, so let us see if we can improve the process some.  Rather than row-reduce a column vector $\vect{b}$ full of variables, let us write $\vect{b}=I_6\vect{b}$ and we will row-reduce the matrix $I_6$ and when we finish row-reducing, <em>then</em> we will compute the matrix-vector product.  You should first convince yourself that we can operate like this (this is the subject of a future homework exercise).
+
+Rather than augmenting $A$ with $\vect{b}$, we will instead augment it with $I_6$ (does this feel familiar?),
+\begin{equation*}
+M=
+\begin{bmatrix}
+ 10 &amp; 0 &amp; 3 &amp; 8 &amp; 7 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+ -16 &amp; -1 &amp; -4 &amp; -10 &amp; -13 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+ -6 &amp; 1 &amp; -3 &amp; -6 &amp; -6 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 2 &amp; -2 &amp; -3 &amp; -2 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+ 3 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+ -1 &amp; -1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We want to row-reduce the left-hand side of this matrix, but we will apply the same row operations to the right-hand side as well.  And once we get the left-hand side in reduced row-echelon form, we will continue on to put leading 1's in the final two rows, as well as making pivot columns that contain these two additional leading 1's.  It is these additional row operations that will ensure that we all get to the same place, since the reduced row-echelon form is unique (<a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>),
+\begin{equation*}
+N=
+\begin{bmatrix}
+ 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; -1 \\
+ 0 &amp; 1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 &amp; 0 &amp; -2 &amp; 3 &amp; -3 &amp; 3 \\
+ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 3 &amp; 3 \\
+ 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 &amp; 0 &amp; 0 &amp; -2 &amp; 1 &amp; -4 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 3 &amp; -1 &amp; 3 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -2 &amp; 1 &amp; 1 &amp; -1
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We are after the final six columns of this matrix, which we will multiply by $\vect{b}$
+\begin{equation*}
+J=
+\begin{bmatrix}
+ 0 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; -1 \\
+0 &amp; 0 &amp; -2 &amp; 3 &amp; -3 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 3 &amp; 3 \\
+0 &amp; 0 &amp; -2 &amp; 1 &amp; -4 &amp; 0 \\
+1 &amp; 0 &amp; 3 &amp; -1 &amp; 3 &amp; 1 \\
+0 &amp; 1 &amp; -2 &amp; 1 &amp; 1 &amp; -1
+\end{bmatrix}
+\end{equation*}
+so
+\begin{equation*}
+J\vect{b}=
+\begin{bmatrix}
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; -1 \\
+0 &amp; 0 &amp; -2 &amp; 3 &amp; -3 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 3 &amp; 3 \\
+0 &amp; 0 &amp; -2 &amp; 1 &amp; -4 &amp; 0 \\
+1 &amp; 0 &amp; 3 &amp; -1 &amp; 3 &amp; 1 \\
+0 &amp; 1 &amp; -2 &amp; 1 &amp; 1 &amp; -1
+\end{bmatrix}
+\colvector{b_1\\b_2\\b_3\\b_4\\b_5\\b_6}
+=
+\colvector{
+b_3 - b_4 + 2 b_5 - b_6\\
+-2 b_3 + 3 b_4 - 3 b_5 + 3 b_6\\
+b_3 + b_4 + 3 b_5 + 3 b_6\\
+-2 b_3 + b_4 - 4 b_5\\
+b_1 + 3 b_3 - b_4 + 3 b_5 + b_6\\
+b_2 - 2 b_3 + b_4 + b_5 - b_6\\
+}
+\end{equation*}
+</p>
+<p>So by applying  the same row operations that row-reduce $A$ to the identity matrix (which we could do computationally once $I_6$ is placed alongside of $A$), we can then arrive at the result of row-reducing a column of symbols where the vector of constants usually resides.  Since the row-reduced version of $A$ has two zero rows, for a consistent system we require that
+\begin{align*}
+b_1 + 3 b_3 - b_4 + 3 b_5 + b_6 &amp; = 0\\
+b_2 - 2 b_3 + b_4 + b_5 - b_6 &amp; = 0
+\end{align*}
+
+</p>
+<p>Now we are exactly back where we were on the first go-round.  Notice that we obtain the matrix $L$ as simply the last two rows and last six columns of $N$.</p>
+<div class="context"><a href="section-FS.html#example-CSANS" class="context" title="Section FS">(in
+context)</a></div>
+</div>

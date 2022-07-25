@@ -1,0 +1,19 @@
+<div class="theorem" id="theorem-EMP" acro="EMP" titletext="Entries of Matrix Products">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">EMP</span><span class="titletext"> Entries of Matrix Products</span>
+</h5>
+<div class="statement"><p>Suppose $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix.  Then for $1\leq i\leq m$, $1\leq j\leq p$, the individual entries of $AB$ are given by
+\begin{align*}
+\matrixentry{AB}{ij}
+&amp;=
+\matrixentry{A}{i1}\matrixentry{B}{1j}+
+\matrixentry{A}{i2}\matrixentry{B}{2j}+
+\matrixentry{A}{i3}\matrixentry{B}{3j}+
+\cdots+
+\matrixentry{A}{in}\matrixentry{B}{nj}\\
+&amp;=
+\sum_{k=1}^{n}\matrixentry{A}{ik}\matrixentry{B}{kj}
+\end{align*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.EMP.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-EMP" class="context" title="Section MM">(in context)</a></div>

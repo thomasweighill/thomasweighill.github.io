@@ -1,0 +1,17 @@
+<div class="exercise" acro="SD.C20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">SD.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the matrix $A$ below.  First, show that $A$ is diagonalizable by computing the geometric multiplicities of the eigenvalues and quoting the relevant theorem.  Second, find a diagonal matrix $D$ and a nonsingular matrix $S$ so that $\similar{A}{S}=D$.  (See <a knowl="./knowls/exercise.EE.C20.knowl">Exercise EE.C20</a> for some of the necessary computations.)
+\begin{equation*}
+A=
+\begin{bmatrix}
+18 &amp; -15 &amp; 33 &amp; -15\\
+-4 &amp; 8 &amp; -6 &amp; 6\\
+-9 &amp; 9 &amp; -16 &amp; 9\\
+5 &amp; -6 &amp; 9 &amp; -4
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.SD.C20.knowl">Solution</a></p></div>
+</div>

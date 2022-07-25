@@ -1,0 +1,102 @@
+<div class="example" id="example-KVMR" acro="KVMR" titletext="Kernel via matrix representation">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">KVMR</span> <span class="titletext">Kernel via matrix representation</span>
+</h5>
+<p>Consider the kernel of the linear transformation, $\ltdefn{T}{M_{22}}{P_2}$, given by
+\begin{equation*}
+\lt{T}{\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}}=
+(2a-b+c-5d)+(a+4b+5c+2d)x+(3a-2b+c-8d)x^2
+\end{equation*}
+</p>
+<p>We will begin with a matrix representation of $T$ relative to the bases for $M_{22}$ and $P_2$ (respectively),
+\begin{align*}
+B&amp;=\set{
+\begin{bmatrix}1 &amp; 2 \\ -1 &amp; -1\end{bmatrix},\,
+\begin{bmatrix}1 &amp; 3 \\ -1 &amp; -4\end{bmatrix},\,
+\begin{bmatrix}1 &amp; 2 \\ 0 &amp; -2\end{bmatrix},\,
+\begin{bmatrix}2 &amp; 5 \\ -2 &amp; -4\end{bmatrix}
+}\\
+C&amp;=\set{1+x+x^2,\,2+3x,\,-1-2x^2}
+\end{align*}
+
+</p>
+<p>Then,
+\begin{align*}
+\vectrep{C}{\lt{T}{\begin{bmatrix}1 &amp; 2 \\ -1 &amp; -1\end{bmatrix}}}
+&amp;=\vectrep{C}{4+2x+6x^2}\\
+&amp;=\vectrep{C}{2(1+x+x^2)+0(2+3x)+(-2)(-1-2x^2)}\\
+&amp;=\colvector{2\\0\\-2}\\
+\vectrep{C}{\lt{T}{\begin{bmatrix}1 &amp; 3 \\ -1 &amp; -4\end{bmatrix}}}
+&amp;=\vectrep{C}{18+28x^2}\\
+&amp;=\vectrep{C}{(-24)(1+x+x^2)+8(2+3x)+(-26)(-1-2x^2)}\\
+&amp;=\colvector{-24\\8\\-26}\\
+\vectrep{C}{\lt{T}{\begin{bmatrix}1 &amp; 2 \\ 0 &amp; -2\end{bmatrix}}}
+&amp;=\vectrep{C}{10+5x+15x^2}\\
+&amp;=\vectrep{C}{5(1+x+x^2)+0(2+3x)+(-5)(-1-2x^2)}\\
+&amp;=\colvector{5\\0\\-5}\\
+\vectrep{C}{\lt{T}{\begin{bmatrix}2 &amp; 5 \\ -2 &amp; -4\end{bmatrix}}}
+&amp;=\vectrep{C}{17+4x+26x^2}\\
+&amp;=\vectrep{C}{(-8)(1+x+x^2)+(4)(2+3x)+(-17)(-1-2x^2)}\\
+&amp;=\colvector{-8\\4\\-17}
+\end{align*}
+
+</p>
+<p>So the matrix representation of $T$ (relative to $B$ and $C$) is
+\begin{equation*}
+\matrixrep{T}{B}{C}
+=
+\begin{bmatrix}
+ 2 &amp; -24 &amp; 5 &amp; -8 \\
+ 0 &amp; 8 &amp; 0 &amp; 4 \\
+ -2 &amp; -26 &amp; -5 &amp; -17
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>We know from <a class="knowl" acro="KNSI" type="Theorem" title="Kernel and Null Space Isomorphism" knowl="./knowls/theorem.KNSI.knowl">Theorem KNSI</a> that the kernel of the linear transformation $T$ is isomorphic to the null space of the matrix representation $\matrixrep{T}{B}{C}$ and by studying the proof of <a class="knowl" acro="KNSI" type="Theorem" title="Kernel and Null Space Isomorphism" knowl="./knowls/theorem.KNSI.knowl">Theorem KNSI</a> we learn that $\vectrepname{B}$ is an isomorphism between these null spaces. Rather than trying to compute the kernel of $T$ using definitions and techniques from <a href="chapter-LT.html" title="Linear Transformations">Chapter LT</a> we will instead analyze the null space of $\matrixrep{T}{B}{C}$ using techniques from way back in <a href="chapter-V.html" title="Vectors">Chapter V</a>.  First row-reduce $\matrixrep{T}{B}{C}$,
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; -24 &amp; 5 &amp; -8 \\
+0 &amp; 8 &amp; 0 &amp; 4 \\
+-2 &amp; -26 &amp; -5 &amp; -17
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+ \leading{1} &amp; 0 &amp; \frac{5}{2} &amp; 2 \\
+ 0 &amp; \leading{1} &amp; 0 &amp; \frac{1}{2} \\
+ 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</p>
+<p>So, by <a class="knowl" acro="BNS" type="Theorem" title="Basis for Null Spaces" knowl="./knowls/theorem.BNS.knowl">Theorem BNS</a>, a basis for $\nsp{\matrixrep{T}{B}{C}}$ is
+\begin{equation*}
+\set{\colvector{-\frac{5}{2}\\0\\1\\0},\,\colvector{-2\\-\frac{1}{2}\\0\\1}}
+\end{equation*}
+</p>
+<p>We can  now convert this basis of $\nsp{\matrixrep{T}{B}{C}}$ into a basis of $\krn{T}$ by applying $\vectrepinvname{B}$ to each element of the basis,
+\begin{align*}
+\vectrepinv{B}{\colvector{-\frac{5}{2}\\0\\1\\0}}&amp;=
+(-\frac{5}{2})\begin{bmatrix}1 &amp; 2 \\ -1 &amp; -1\end{bmatrix}+
+0\begin{bmatrix}1 &amp; 3 \\ -1 &amp; -4\end{bmatrix}+
+1\begin{bmatrix}1 &amp; 2 \\ 0 &amp; -2\end{bmatrix}+
+0\begin{bmatrix}2 &amp; 5 \\ -2 &amp; -4\end{bmatrix}\\
+&amp;=\begin{bmatrix}-\frac{3}{2} &amp; -3 \\ \frac{5}{2} &amp; \frac{1}{2}\end{bmatrix}\\
+\vectrepinv{B}{\colvector{-2\\-\frac{1}{2}\\0\\1}}&amp;=
+(-2)\begin{bmatrix}1 &amp; 2 \\ -1 &amp; -1\end{bmatrix}+
+(-\frac{1}{2})\begin{bmatrix}1 &amp; 3 \\ -1 &amp; -4\end{bmatrix}+
+0\begin{bmatrix}1 &amp; 2 \\ 0 &amp; -2\end{bmatrix}+
+1\begin{bmatrix}2 &amp; 5 \\ -2 &amp; -4\end{bmatrix}\\
+&amp;=\begin{bmatrix}-\frac{1}{2} &amp; -\frac{1}{2} \\ \frac{1}{2} &amp;0\end{bmatrix}
+\end{align*}
+
+</p>
+<p>So the set
+\begin{equation*}
+\set{
+\begin{bmatrix}-\frac{3}{2} &amp; -3 \\ \frac{5}{2} &amp; \frac{1}{2}\end{bmatrix},\,
+\begin{bmatrix}-\frac{1}{2} &amp; -\frac{1}{2} \\ \frac{1}{2} &amp;0\end{bmatrix}
+}
+\end{equation*}
+is a basis for $\krn{T}$.  Just for fun, you might evaluate $T$ with each of these two basis vectors and verify that the output is the zero polynomial (<a knowl="./knowls/exercise.MR.C10.knowl">Exercise MR.C10</a>).</p>
+<div class="context"><a href="section-MR.html#example-KVMR" class="context" title="Section MR">(in
+context)</a></div>
+</div>

@@ -1,0 +1,37 @@
+<div class="subsection" id="subsection-PSM" acro="PSM" titletext="Properties of Similar Matrices">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">PSM</span> <span class="titletext">Properties of Similar Matrices</span>
+</h4>
+<p>Similar matrices share many properties and it is these theorems that justify the choice of the word “similar.”  First we will show that similarity is an <em class="term">equivalence relation</em>.  Equivalence relations are important in the study of various algebras and can always be regarded as a kind of weak version of equality.  Sort of alike, but not quite equal.  The notion of two matrices being row-equivalent is an example of an equivalence relation we have been working with since the beginning of the course (see <a knowl="./knowls/exercise.RREF.T11.knowl">Exercise RREF.T11</a>).  Row-equivalent matrices are not equal, but they are a lot alike.  For example, row-equivalent matrices have the same rank.  Formally, an equivalence relation requires three conditions hold:  reflexive, symmetric and transitive.  We will illustrate these as we prove that similarity is an equivalence relation.</p>
+<div class="theorem" id="theorem-SER" acro="SER" titletext="Similarity is an Equivalence Relation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SER</span><span class="titletext"> Similarity is an Equivalence Relation</span>
+</h5>
+<div class="statement"><p>Suppose $A$, $B$ and $C$ are square matrices of size $n$.  Then
+<ol>
+<li> $A$ is similar to $A$.  (Reflexive)
+</li>
+<li> If $A$ is similar to $B$, then $B$ is similar to $A$.  (Symmetric)
+</li>
+<li> If $A$ is similar to $B$ and $B$ is similar to $C$, then $A$ is similar to $C$.  (Transitive)
+</li>
+</ol>
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.SER.knowl">Proof</a></div>
+</div>
+<p>Here is another theorem that tells us exactly what sorts of properties similar matrices share.</p>
+<div class="theorem" id="theorem-SMEE" acro="SMEE" titletext="Similar Matrices have Equal Eigenvalues">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">SMEE</span><span class="titletext"> Similar Matrices have Equal Eigenvalues</span>
+</h5>
+<div class="statement"><p>Suppose $A$ and $B$ are similar matrices.  Then the characteristic polynomials of $A$ and $B$ are equal, that is, $\charpoly{A}{x}=\charpoly{B}{x}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.SMEE.knowl">Proof</a></div>
+</div>
+<p>So similar matrices not only have the same <em>set</em> of eigenvalues, the algebraic multiplicities of these eigenvalues will also be the same.  However, be careful with this theorem.  It is tempting to think the converse is true, and argue that if two matrices have the same eigenvalues, then they are similar.  Not so, as the following example illustrates.</p>
+<div class="example" id="example-EENS" acro="EENS" titletext="Equal eigenvalues, not similar"><h5 class="example">
+<a knowl="./knowls/example.EENS.knowl"><span class="type">Example</span> <span class="acro">EENS</span></a> <span class="titletext">Equal eigenvalues, not similar</span>
+</h5></div>
+<div class="sage" id="sage-SM" acro="SM" titletext="Similar Matrices"><h5 class="sage">
+<a knowl="./knowls/sage.SM.knowl"><span class="type">Sage</span> <span class="acro">SM</span></a> <span class="titletext">Similar Matrices</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#subsection-PSM" class="context" title="Section SD">(in context)</a></div>

@@ -1,0 +1,14 @@
+<div class="exercise" acro="MO.C11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">MO.C11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Solve the given vector equation for $x$, or explain why no solution exists:
+\begin{equation*}
+2 \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 0 &amp; 4 &amp; 2 \end{bmatrix} -
+3 \begin{bmatrix} 1 &amp; 1 &amp; 2 \\ 0 &amp; 1 &amp; x \end{bmatrix}
+=
+\begin{bmatrix} -1 &amp; 1 &amp; 0 \\ 0 &amp; 5 &amp; -2 \end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.MO.C11.knowl">Solution</a></p></div>
+</div>

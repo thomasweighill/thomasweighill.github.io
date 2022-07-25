@@ -1,0 +1,22 @@
+<div class="exercise" acro="FS.C60">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">FS.C60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>For the matrix $B$ below, find sets of vectors whose span equals the column space of $B$ ($\csp{B}$) and which individually meet the following extra requirements.
+<ol>
+<li>The set illustrates the definition of the column space.</li>
+<li>The set is linearly independent and the members of the set are columns of $B$.</li>
+<li>The set is linearly independent with a “nice pattern of zeros and ones” at the <em>top</em> of each vector.</li>
+<li>The set is linearly independent with a “nice pattern of zeros and ones” at the <em>bottom</em> of each vector.</li>
+</ol>
+\begin{equation*}
+B=
+\begin{bmatrix}
+2 &amp; 3 &amp; 1 &amp; 1\\
+1 &amp; 1 &amp; 0 &amp; 1\\
+-1 &amp; 2 &amp; 3 &amp; -4
+\end{bmatrix}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.FS.C60.knowl">Solution</a></p></div>
+</div>

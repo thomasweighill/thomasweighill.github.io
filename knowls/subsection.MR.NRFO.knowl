@@ -1,0 +1,55 @@
+<div class="subsection" id="subsection-NRFO" acro="NRFO" titletext="New Representations from Old">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">NRFO</span> <span class="titletext">New Representations from Old</span>
+</h4>
+<p>In <a class="knowl" acro="LT.NLTFO" type="Subsection" title="" knowl="./knowls/subsection.LT.NLTFO.knowl">Subsection LT.NLTFO</a> we built new linear transformations from other linear transformations.  Sums, scalar multiples and compositions.  These new linear transformations will have matrix representations as well.  How do the new matrix representations relate to the old matrix representations?  Here are the three theorems.</p>
+<div class="theorem" id="theorem-MRSLT" acro="MRSLT" titletext="Matrix Representation of a Sum of Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRSLT</span><span class="titletext"> Matrix Representation of a Sum of Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{U}{V}$ are linear transformations, $B$ is a basis of $U$ and $C$ is a basis of $V$.  Then
+\begin{equation*}
+\matrixrep{T+S}{B}{C}=\matrixrep{T}{B}{C}+\matrixrep{S}{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRSLT.knowl">Proof</a></div>
+</div>
+<div class="theorem" id="theorem-MRMLT" acro="MRMLT" titletext="Matrix Representation of a Multiple of a Linear Transformation">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRMLT</span><span class="titletext"> Matrix Representation of a Multiple of a Linear Transformation</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation, $\alpha\in\complex{\null}$, $B$ is a basis of $U$ and $C$ is a basis of $V$.  Then
+\begin{equation*}
+\matrixrep{\alpha T}{B}{C}=\alpha\matrixrep{T}{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRMLT.knowl">Proof</a></div>
+</div>
+<p>The vector space of all linear transformations from $U$ to $V$ is now isomorphic to the vector space of all $m\times n$ matrices.</p>
+<div class="theorem" id="theorem-MRCLT" acro="MRCLT" titletext="Matrix Representation of a Composition of Linear Transformations">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">MRCLT</span><span class="titletext"> Matrix Representation of a Composition of Linear Transformations</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations, $B$ is a basis of $U$, $C$ is a basis of $V$, and $D$ is a basis of $W$.  Then
+\begin{equation*}
+\matrixrep{\compose{S}{T}}{B}{D}=\matrixrep{S}{C}{D}\matrixrep{T}{B}{C}
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.MRCLT.knowl">Proof</a></div>
+</div>
+<p>This is the second great surprise of introductory linear algebra.  Matrices are linear transformations (functions, really), and matrix multiplication is function composition!  We can form the composition of two linear transformations, then form the matrix representation of the result.  Or we can form the matrix representation of each linear transformation separately, then <em>multiply</em> the two representations together via <a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>.  In either case, we arrive at the same result.</p>
+<div class="example" id="example-MPMR" acro="MPMR" titletext="Matrix product of matrix representations"><h5 class="example">
+<a knowl="./knowls/example.MPMR.knowl"><span class="type">Example</span> <span class="acro">MPMR</span></a> <span class="titletext">Matrix product of matrix representations</span>
+</h5></div>
+<p>A diagram, similar to ones we have seen earlier, might make the importance of this theorem clearer,
+<div class="diagram" id="diagram-MRCLT" acro="MRCLT" titletext="Matrix Representation and Composition of Linear Transformations">
+<a id="diagram-MRCLT"></a><object type="image/svg+xml" data="./diagrams/MRCLT.svg">SVG image not dispayed</object><br><br><h5 class="diagram">
+<span class="type">Diagram</span> <span class="acro">MRCLT</span> <span class="titletext">Matrix Representation and Composition of Linear Transformations</span>
+</h5>
+</div>
+</p>
+<p>One of our goals in the first part of this book is to make the definition of matrix multiplication (<a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a>, <a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>) seem as natural as possible.  However, many of us are brought up with an entry-by-entry description of matrix multiplication (<a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a>) as the <em>definition</em> of matrix multiplication, and then theorems about columns of matrices and linear combinations follow from that definition.  With this unmotivated definition, the realization that matrix multiplication is function composition is quite remarkable.  It is an interesting exercise to begin with the question, “What is the matrix representation of the composition of two linear transformations?” and then, without using any theorems about matrix multiplication, finally arrive at the entry-by-entry description of matrix multiplication.  Try it yourself (<a knowl="./knowls/exercise.MR.T80.knowl">Exercise MR.T80</a>).</p>
+<div class="sage" id="sage-SUTH3" acro="SUTH3" titletext="Sage Under The Hood, Round 3"><h5 class="sage">
+<a knowl="./knowls/sage.SUTH3.knowl"><span class="type">Sage</span> <span class="acro">SUTH3</span></a> <span class="titletext">Sage Under The Hood, Round 3</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MR.html#subsection-NRFO" class="context" title="Section MR">(in context)</a></div>

@@ -1,0 +1,13 @@
+<div class="proof" id="proof-NMPEM" acro="NMPEM" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">NMPEM</span>
+</h5>
+<p>Since $A$ is nonsingular, it is row-equivalent to the identity matrix by <a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a>, so there is a sequence of $t$ row operations that converts $I$ to $A$.  For each of these row operations, form the associated elementary matrix from <a class="knowl" acro="EMDRO" type="Theorem" title="Elementary Matrices Do Row Operations" knowl="./knowls/theorem.EMDRO.knowl">Theorem EMDRO</a> and denote these matrices by $E_1,\,E_2,\,E_3,\,\dots,\,E_t$.  Applying the first row operation to $I$ yields the matrix $E_1I$.  The second row operation yields $E_2(E_1I)$, and the third row operation creates $E_3E_2E_1I$.  The result of the full sequence of $t$ row operations will yield $A$, so
+\begin{equation*}
+A=  E_t\dots E_3E_2E_1I= E_t\dots E_3E_2E_1
+\end{equation*}
+</p>
+
+<p>Other than the cosmetic matter of re-indexing these elementary matrices in the opposite order, this is the desired result.</p>
+
+</div>

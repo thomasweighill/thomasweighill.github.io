@@ -1,0 +1,45 @@
+<div class="solution" acro="EE.C20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">EE.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>The characteristic polynomial of $B$ is
+\begin{align*}
+\charpoly{B}{x}&amp;=\detname{B-xI_2}&amp;&amp;\knowl{./knowls/definition.CP.knowl}{\text{Definition CP}}\\
+&amp;=
+\begin{vmatrix}
+-12-x&amp;30\\-5&amp;13-x
+\end{vmatrix}\\
+&amp;=(-12-x)(13-x)-(30)(-5)&amp;&amp;\knowl{./knowls/theorem.DMST.knowl}{\text{Theorem DMST}}\\
+&amp;=x^2-x-6\\
+&amp;=(x-3)(x+2)
+\end{align*}
+
+From this we find eigenvalues $\lambda=3,\,-2$ with algebraic multiplicities $\algmult{B}{3}=1$ and $\algmult{B}{-2}=1$.<br><br>
+For eigenvectors and geometric multiplicities, we study the null spaces of $B-\lambda I_2$ (<a class="knowl" acro="EMNS" type="Theorem" title="Eigenspace of a Matrix is a Null Space" knowl="./knowls/theorem.EMNS.knowl">Theorem EMNS</a>).
+\begin{align*}
+\lambda&amp;=3&amp;B-3I_2&amp;=
+\begin{bmatrix}
+-15&amp;30\\-5&amp;10
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; -2 \\
+0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{B}{3}&amp;=\nsp{B-3I_2}=\spn{\set{\colvector{2\\1}}}
+\end{align*}
+
+\begin{align*}
+\lambda&amp;=-2&amp;B+2I_2&amp;=
+\begin{bmatrix}
+-10&amp;30\\-5&amp;15
+\end{bmatrix}
+\rref
+\begin{bmatrix}
+\leading{1} &amp; -3 \\
+0 &amp; 0
+\end{bmatrix}\\
+&amp;&amp;\eigenspace{B}{-2}&amp;=\nsp{B+2I_2}=\spn{\set{\colvector{3\\1}}}
+\end{align*}
+
+Each eigenspace has dimension one, so we have geometric multiplicities $\geomult{B}{3}=1$ and $\geomult{B}{-2}=1$.
+</div>

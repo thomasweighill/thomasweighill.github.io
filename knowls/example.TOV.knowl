@@ -1,0 +1,22 @@
+<div class="example" id="example-TOV" acro="TOV" titletext="Two orthogonal vectors">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">TOV</span> <span class="titletext">Two orthogonal vectors</span>
+</h5>
+<p>The vectors
+\begin{align*}
+\vect{u}&amp;=\colvector{2 + 3i\\4 - 2i\\1 + i\\1 + i}
+&amp;
+\vect{v}&amp;=\colvector{1 - i\\2 + 3i\\4 - 6i\\1}
+\end{align*}
+
+are orthogonal since
+\begin{align*}
+\innerproduct{\vect{u}}{\vect{v}}
+&amp;=(2-3i)(1-i)+(4+2i)(2+3i)+(1-i)(4-6i)+(1-i)(1)\\
+&amp;=(-1-5i)+(2+16i)+(-2-10i)+(1-i)\\
+&amp;=0+0i.
+\end{align*}
+</p>
+<div class="context"><a href="section-O.html#example-TOV" class="context" title="Section O">(in
+context)</a></div>
+</div>

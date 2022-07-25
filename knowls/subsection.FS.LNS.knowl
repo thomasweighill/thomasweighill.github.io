@@ -1,0 +1,30 @@
+<div class="subsection" id="subsection-LNS" acro="LNS" titletext="Left Null Space">
+<h4 class="subsection">
+<span class="type">Subsection</span> <span class="acro">LNS</span> <span class="titletext">Left Null Space</span>
+</h4>
+<div class="definition" id="definition-LNS" acro="LNS" titletext="Left Null Space">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LNS</span> <span class="titletext"> Left Null Space</span>
+</h5>
+<p>Suppose $A$ is an $m\times n$ matrix.  Then the <em class="term">left null space</em> is defined as $\lns{A}=\nsp{\transpose{A}}\subseteq\complex{m}$.</p>
+</div>
+<p>The left null space will not feature prominently in the sequel, but we can explain its name and connect it to row operations.   Suppose $\vect{y}\in\lns{A}$.  Then by <a class="knowl" acro="LNS" type="Definition" title="Left Null Space" knowl="./knowls/definition.LNS.knowl">Definition LNS</a>, $\transpose{A}\vect{y}=\zerovector$.  We can then write
+\begin{align*}
+\transpose{\zerovector}
+&amp;=\transpose{\left(\transpose{A}\vect{y}\right)}
+&amp;&amp;\knowl{./knowls/definition.LNS.knowl}{\text{Definition LNS}}\\
+&amp;=\transpose{\vect{y}}\transpose{\left(\transpose{A}\right)}
+&amp;&amp;\knowl{./knowls/theorem.MMT.knowl}{\text{Theorem MMT}}\\
+&amp;=\transpose{\vect{y}}A
+&amp;&amp;\knowl{./knowls/theorem.TT.knowl}{\text{Theorem TT}}
+\end{align*}
+
+</p>
+<p>The product $\transpose{\vect{y}}A$ can be viewed as the components of $\vect{y}$ acting as the scalars in a linear combination of the <em>rows</em> of $A$.  And the result is a “row vector”, $\transpose{\zerovector}$ that is totally zeros.  When we apply a sequence of row operations to a matrix, each row of the resulting matrix is some linear combination of the rows.  These observations tell us that the vectors in the left null space are scalars that record a sequence of row operations that result in a row of zeros in the row-reduced version of the matrix.  We will see this idea more explicitly in the course of proving <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a>.</p>
+<div class="example" id="example-LNS" acro="LNS" titletext="Left null space"><h5 class="example">
+<a knowl="./knowls/example.LNS.knowl"><span class="type">Example</span> <span class="acro">LNS</span></a> <span class="titletext">Left null space</span>
+</h5></div>
+<div class="sage" id="sage-LNS" acro="LNS" titletext="Left Null Spaces"><h5 class="sage">
+<a knowl="./knowls/sage.LNS.knowl"><span class="type">Sage</span> <span class="acro">LNS</span></a> <span class="titletext">Left Null Spaces</span>
+</h5></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-FS.html#subsection-LNS" class="context" title="Section FS">(in context)</a></div>

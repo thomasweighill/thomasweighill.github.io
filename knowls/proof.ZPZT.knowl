@@ -1,0 +1,19 @@
+<div class="proof" id="proof-ZPZT" acro="ZPZT" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ZPZT</span>
+</h5>
+    <p>(⇒)We conduct the forward argument in two cases.  First suppose that $\alpha=0$.  Then we are done.  (That was easy.)</p>
+
+<p>For the second case, suppose now that $\alpha\neq 0$. Then
+\begin{align*}
+\beta&amp;=1\beta&amp;&amp;\knowl{./knowls/property.OCN.knowl}{\text{Property OCN}}\\
+&amp;=\left(\frac{1}{\alpha}\alpha\right)\beta&amp;&amp;\knowl{./knowls/property.MICN.knowl}{\text{Property MICN}}\\
+&amp;=\frac{1}{\alpha}\left(\alpha\beta\right)&amp;&amp;\knowl{./knowls/property.MACN.knowl}{\text{Property MACN}}\\
+&amp;=\frac{1}{\alpha}0&amp;&amp;\text{Hypothesis}\\
+&amp;=0&amp;&amp;\knowl{./knowls/theorem.ZPCN.knowl}{\text{Theorem ZPCN}}
+\end{align*}
+</p>
+
+<p>(⇐)With two applications of <a class="knowl" acro="ZPCN" type="Theorem" title="Zero Product, Complex Numbers" knowl="./knowls/theorem.ZPCN.knowl">Theorem ZPCN</a> it is easy to see that if one of the scalars is zero, then so is the product.</p>
+
+</div>

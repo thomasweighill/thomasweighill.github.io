@@ -1,0 +1,61 @@
+<div class="proof" id="proof-MLTCV" acro="MLTCV" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">MLTCV</span>
+</h5>
+<p>The conclusion says a certain matrix exists.  What better way to prove something exists than to actually build it?  So our proof will be constructive (<a class="knowl" acro="C" type="Proof Technique" title="Constructive Proofs" knowl="./knowls/technique.C.knowl">Proof Technique C</a>), and the procedure that we will use abstractly in the proof can be used concretely in specific examples.</p>
+
+<p>Let $\vectorlist{e}{n}$ be the columns of the identity matrix of size $n$, $I_n$ (<a class="knowl" acro="SUV" type="Definition" title="Standard Unit Vectors" knowl="./knowls/definition.SUV.knowl">Definition SUV</a>).  Evaluate the linear transformation $T$ with each of these standard unit vectors as an input, and record the result.  In other words, define $n$ vectors in $\complex{m}$, $\vect{A}_i$, $1\leq i\leq n$ by
+\begin{equation*}
+\vect{A}_i=\lt{T}{\vect{e}_i}
+\end{equation*}
+</p>
+
+<p>Then package up these vectors as the columns of a matrix
+\begin{equation*}
+A=\matrixcolumns{A}{n}
+\end{equation*}
+</p>
+
+<p>Does $A$ have the desired properties?  First, $A$ is clearly an $m\times n$ matrix.  Then
+\begin{align*}
+\lt{T}{\vect{x}}
+&amp;=\lt{T}{I_n\vect{x}}
+&amp;&amp;\knowl{./knowls/theorem.MMIM.knowl}{\text{Theorem MMIM}}\\
+&amp;=\lt{T}{\matrixcolumns{e}{n}\vect{x}}
+&amp;&amp;\knowl{./knowls/definition.SUV.knowl}{\text{Definition SUV}}\\
+&amp;=\lt{T}{
+\vectorentry{\vect{x}}{1}\vect{e}_1+
+\vectorentry{\vect{x}}{2}\vect{e}_2+
+\vectorentry{\vect{x}}{3}\vect{e}_3+
+\cdots+
+\vectorentry{\vect{x}}{n}\vect{e}_n
+}
+&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}\\
+&amp;=
+\lt{T}{\vectorentry{\vect{x}}{1}\vect{e}_1}+
+\lt{T}{\vectorentry{\vect{x}}{2}\vect{e}_2}+
+\lt{T}{\vectorentry{\vect{x}}{3}\vect{e}_3}+
+\cdots+
+\lt{T}{\vectorentry{\vect{x}}{n}\vect{e}_n}
+&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=
+\vectorentry{\vect{x}}{1}\lt{T}{\vect{e}_1}+
+\vectorentry{\vect{x}}{2}\lt{T}{\vect{e}_2}+
+\vectorentry{\vect{x}}{3}\lt{T}{\vect{e}_3}+
+\cdots+
+\vectorentry{\vect{x}}{n}\lt{T}{\vect{e}_n}
+&amp;&amp;\knowl{./knowls/definition.LT.knowl}{\text{Definition LT}}\\
+&amp;=
+\vectorentry{\vect{x}}{1}{\vect{A}_1}+
+\vectorentry{\vect{x}}{2}{\vect{A}_2}+
+\vectorentry{\vect{x}}{3}{\vect{A}_3}+
+\cdots+
+\vectorentry{\vect{x}}{n}{\vect{A}_n}
+&amp;&amp;\text{Definition of $\vect{A}_i$}\\
+&amp;=A\vect{x}
+&amp;&amp;\knowl{./knowls/definition.MVP.knowl}{\text{Definition MVP}}
+\end{align*}
+
+as desired.</p>
+
+</div>

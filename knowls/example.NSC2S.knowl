@@ -1,0 +1,16 @@
+<div class="example" id="example-NSC2S" acro="NSC2S" titletext="A non-subspace in $\complex{2}$, scalar multiplication closure">
+<h5 class="example">
+<span class="type">Example</span> <span class="acro">NSC2S</span> <span class="titletext">A non-subspace in $\complex{2}$, scalar multiplication closure</span>
+</h5>
+<p>Consider the subset $Y$ below as a candidate for being a subspace of $\complex{2}$
+\begin{equation*}
+Y=\setparts{\colvector{x_1\\x_2}}{x_1\in{\mathbb Z},\,x_2\in{\mathbb Z}}
+\end{equation*}
+${\mathbb Z}$ is the set of integers, so we are only allowing “whole numbers” as the constituents of our vectors.  Now, $\zerovector\in Y$, and additive closure also holds (can you prove these claims?).  So we will have to try something different.  Note that $\alpha = \frac{1}{2}\in\complex{\null}$ and $\colvector{2\\3}\in Y$, but
+\begin{equation*}
+\alpha\vect{x}=\frac{1}{2}\colvector{2\\3}=\colvector{1\\\frac{3}{2}}\not\in Y
+\end{equation*}
+So $Y$ fails the scalar multiplication closure requirement of either <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a> or <a class="knowl" acro="TSS" type="Theorem" title="Testing Subsets for Subspaces" knowl="./knowls/theorem.TSS.knowl">Theorem TSS</a>, and is therefore not a subspace.</p>
+<div class="context"><a href="section-S.html#example-NSC2S" class="context" title="Section S">(in
+context)</a></div>
+</div>

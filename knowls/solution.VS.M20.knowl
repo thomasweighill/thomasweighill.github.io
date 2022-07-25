@@ -1,0 +1,5 @@
+<div class="solution" acro="VS.M20">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">VS.M20</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>Hint:  The set of all polynomials of degree <em>exactly</em> $n$ fails one of the closure properties of a vector space.  Which one, and why?
+</div>

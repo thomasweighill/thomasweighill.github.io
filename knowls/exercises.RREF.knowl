@@ -1,0 +1,305 @@
+<div class="exercise" acro="RREF.C05">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C05</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Each archetype below is a system of equations.  Form the augmented matrix of the system of equations, convert the matrix to reduced row-echelon form by using equation operations and then describe the solution set of the original system of equations.<br><br>
+<a knowl="./knowls/archetype.A.knowl">Archetype A</a>,
+<a knowl="./knowls/archetype.B.knowl">Archetype B</a>,
+<a knowl="./knowls/archetype.C.knowl">Archetype C</a>,
+<a knowl="./knowls/archetype.D.knowl">Archetype D</a>,
+<a knowl="./knowls/archetype.E.knowl">Archetype E</a>,
+<a knowl="./knowls/archetype.F.knowl">Archetype F</a>,
+<a knowl="./knowls/archetype.G.knowl">Archetype G</a>,
+<a knowl="./knowls/archetype.H.knowl">Archetype H</a>,
+<a knowl="./knowls/archetype.I.knowl">Archetype I</a>,
+<a knowl="./knowls/archetype.J.knowl">Archetype J</a>
+</p></div>
+</div><div class="exercisegroup">
+<p>For problems C10–C19, find all solutions to the system of linear equations.  Use your favorite computing device to row-reduce the augmented matrices for the systems, and write the solutions as a set, using correct set notation.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="RREF.C10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+2x_1-3x_2+x_3+7x_4&amp;=14\\
+2x_1+8x_2-4x_3+5x_4&amp;=-1\\
+x_1+3x_2-3x_3&amp;=4 \\
+-5x_1+2x_2+3x_3+4x_4&amp;=-19
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C10.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+3x_1+4x_2-x_3+2x_4&amp;=6\\
+x_1-2x_2+3x_3+x_4&amp;=2\\
+10x_2-10x_3-x_4&amp;=1
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C11.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C12</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+2x_1+4x_2+5x_3+7x_4&amp;=-26\\
+x_1+2x_2+x_3-x_4&amp;=-4\\
+-2x_1-4x_2+x_3+11x_4&amp;=-10
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C12.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C13">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C13</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1+2x_2+8x_3-7x_4&amp;=-2\\
+3x_1+2x_2+12x_3-5x_4&amp;=6\\
+-x_1+x_2+x_3-5x_4&amp;=-10
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C13.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C14">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C14</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+2x_1+x_2+7x_3-2x_4&amp;=4\\
+3x_1-2x_2+11x_4&amp;=13\\
+x_1+x_2+5x_3-3x_4&amp;=1
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C14.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+2x_1+ 3x_2-x_3 -9x_4&amp;=-16\\
+x_1+ 2x_2+ x_3&amp;=0\\
+-x_1+ 2x_2+ 3x_3+ 4x_4&amp;=8
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C15.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C16">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C16</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+2x_1+ 3x_2+19x_3 -4x_4&amp;=2\\
+x_1+ 2x_2+ 12x_3-3x_4&amp;=1\\
+-x_1+ 2x_2+ 8x_3-5x_4&amp;=1
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C16.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C17">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C17</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+-x_1+5x_2&amp;=-8\\
+-2x_1+5x_2+5x_3+2x_4&amp;=9\\
+-3x_1-x_2+3x_3+x_4&amp;=3\\
+7x_1+6x_2+5x_3+x_4&amp;=30
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C17.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C18">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C18</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+x_1+2x_2-4x_3-x_4&amp;=32\\
+x_1+3x_2-7x_3-x_5&amp;=33\\
+x_1+2x_3-2x_4+3x_5&amp;=22\\
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C18.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C19">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C19</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+ 2x_1 + x_2 &amp;= 6 \\
+ -x_1 - x_2 &amp;= -2 \\
+ 3x_1 + 4x_2 &amp;= 4 \\
+ 3x_1 + 5x_2 &amp;= 2
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C19.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercisegroup">
+<p>For problems C30–C33, row-reduce the matrix without the aid of a calculator, indicating the row operations you are using at each step using the notation of <a class="knowl" acro="RO" type="Definition" title="Row Operations" knowl="./knowls/definition.RO.knowl">Definition RO</a>.</p>
+<div class="grouped-exercises">
+<div class="exercise" acro="RREF.C30">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+\begin{bmatrix}
+2 &amp; 1 &amp; 5 &amp; 10\\
+1 &amp; -3 &amp; -1 &amp; -2\\
+4 &amp; -2 &amp; 6 &amp; 12
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C30.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C31">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+\begin{bmatrix}
+ 1 &amp; 2 &amp; -4 \\
+ -3 &amp; -1 &amp; -3 \\
+ -2 &amp; 1 &amp; -7
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C31.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C32">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C32</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 \\
+-4 &amp; -3 &amp; -2 \\
+3 &amp; 2 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C32.knowl">Solution</a></p></div>
+</div>
+<div class="exercise" acro="RREF.C33">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.C33</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>\begin{align*}
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; -1 \\
+2 &amp; 4 &amp; -1 &amp; 4 \\
+-1 &amp; -2 &amp; 3 &amp; 5
+\end{bmatrix}
+\end{align*}
+
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.C33.knowl">Solution</a></p></div>
+</div>
+</div>
+</div><div class="exercise" acro="RREF.M40">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.M40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Consider the two $3\times 4$ matrices below
+\begin{align*}
+B&amp;=
+\begin{bmatrix}
+1 &amp; 3 &amp; -2 &amp; 2 \\
+-1 &amp; -2 &amp; -1 &amp; -1 \\
+-1 &amp; -5 &amp; 8 &amp; -3
+\end{bmatrix}
+&amp;
+C&amp;=
+\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; 2 \\
+1 &amp; 1 &amp; 4 &amp; 0 \\
+-1 &amp; -1 &amp; -4 &amp; 1
+\end{bmatrix}
+\end{align*}
+
+<br><br>
+<ol>
+<li>Row-reduce each matrix and determine that the reduced row-echelon forms of $B$ and $C$ are identical.  From this argue that $B$ and $C$ are row-equivalent.</li>
+<li>In the proof of <a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>, we begin by arguing that entries of row-equivalent matrices are related by way of certain scalars and sums.  In this example, we would write that entries of $B$ from row $i$ that are in column $j$ are linearly related to the entries of $C$ in column $j$ from all three rows
+\begin{align*}
+\matrixentry{B}{ij}
+&amp;=
+\delta_{i1}\matrixentry{C}{1j}+
+\delta_{i2}\matrixentry{C}{2j}+
+\delta_{i3}\matrixentry{C}{3j}
+&amp;
+1&amp;\leq j\leq 4
+\end{align*}
+
+For each $1\leq i\leq 3$ find the corresponding three scalars in this relationship.  So your answer will be nine scalars, determined three at a time.</li>
+</ol>
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.M40.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="RREF.M45">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.M45</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>You keep a number of lizards, mice and peacocks as pets.  There are a total of 108 legs and 30 tails in your menagerie.  You have twice as many mice as lizards.  How many of each creature do you have?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.M45.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="RREF.M50">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.M50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>A parking lot has 66 vehicles (cars, trucks, motorcycles and bicycles)  in it.  There are four times as many cars as trucks.  The total number of tires (4 per car or truck, 2 per motorcycle or bicycle) is 252.  How many cars are there?  How many bicycles?
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.M50.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="RREF.T10">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Prove that each of the three row operations (<a class="knowl" acro="RO" type="Definition" title="Row Operations" knowl="./knowls/definition.RO.knowl">Definition RO</a>) is reversible.  More precisely, if the matrix $B$ is obtained from $A$ by application of a single row operation, show that there is a single row operation that will transform $B$ back into $A$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.RREF.T10.knowl">Solution</a></p></div>
+</div><div class="exercise" acro="RREF.T11">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $A$, $B$ and $C$ are $m\times n$ matrices.  Use the definition of row-equivalence (<a class="knowl" acro="REM" type="Definition" title="Row-Equivalent Matrices" knowl="./knowls/definition.REM.knowl">Definition REM</a>) to prove the following three facts.
+<ol>
+<li> $A$ is row-equivalent to $A$.
+</li>
+<li> If $A$ is row-equivalent to $B$, then $B$ is row-equivalent to $A$.
+</li>
+<li> If $A$ is row-equivalent to $B$, and $B$ is row-equivalent to $C$, then $A$ is row-equivalent to $C$.
+</li>
+</ol>
+A relationship that satisfies these three properties is known as an <em class="term">equivalence relation</em>, an important idea in the study of various algebras.  This is a formal way of saying that a relationship behaves like equality, without requiring the relationship to be as strict as equality itself.   We will see it again in <a class="knowl" acro="SER" type="Theorem" title="Similarity is an Equivalence Relation" knowl="./knowls/theorem.SER.knowl">Theorem SER</a>.
+</p></div>
+</div><div class="exercise" acro="RREF.T12">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T12</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that $B$ is an $m\times n$ matrix in reduced row-echelon form.  Build a new, likely smaller, $k\times\ell$ matrix $C$ as follows.  Keep any collection of $k$ adjacent rows, $k\leq m$.  From these rows, keep columns $1$ through $\ell$, $\ell\leq n$.  Prove that $C$ is in reduced row-echelon form.
+</p></div>
+</div><div class="exercise" acro="RREF.T13">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">RREF.T13</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Generalize <a knowl="./knowls/exercise.RREF.T12.knowl">Exercise RREF.T12</a> by just keeping any $k$ rows, and not requiring the rows to be adjacent.  Prove that any such matrix $C$ is in reduced row-echelon form.
+</p></div>
+</div>

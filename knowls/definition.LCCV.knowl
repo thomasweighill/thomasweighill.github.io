@@ -1,0 +1,10 @@
+<div class="definition" id="definition-LCCV" acro="LCCV" titletext="Linear Combination of Column Vectors">
+<h5 class="definition">
+<span class="type">Definition </span><span class="acro">LCCV</span> <span class="titletext"> Linear Combination of Column Vectors</span>
+</h5>
+<p>Given $n$ vectors $\vectorlist{u}{n}$ from $\complex{m}$ and $n$ scalars $\alpha_1,\,\alpha_2,\,\alpha_3,\,\ldots,\,\alpha_n$, their <em class="term">linear combination</em> is the vector
+\begin{equation*}
+\lincombo{\alpha}{u}{n}
+\end{equation*}
+</p>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LC.html#definition-LCCV" class="context" title="Section LC">(in context)</a></div>

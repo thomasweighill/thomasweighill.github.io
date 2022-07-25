@@ -1,0 +1,7 @@
+<div class="proof" id="proof-ILTD" acro="ILTD" titletext="">
+<h5 class="proof">
+<span class="type">Proof of Theorem</span> <span class="acro">ILTD</span>
+</h5>
+<p>Suppose to the contrary that $m=\dimension{U}&gt;\dimension{V}=t$.  Let $B$ be  a basis of $U$, which will then contain $m$ vectors.  Apply $T$ to each element of $B$ to form a set $C$ that is a subset of $V$.  By <a class="knowl" acro="ILTB" type="Theorem" title="Injective Linear Transformations and Bases" knowl="./knowls/theorem.ILTB.knowl">Theorem ILTB</a>, $C$ is linearly independent and therefore must contain $m$ distinct vectors.  So we have found a set of $m$ linearly independent vectors in $V$, a vector space of dimension $t$, with $m&gt;t$.  However, this contradicts <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a>, so our assumption is false and $\dimension{U}\leq\dimension{V}$.</p>
+
+</div>

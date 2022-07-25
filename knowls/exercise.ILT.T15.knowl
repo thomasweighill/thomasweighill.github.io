@@ -1,0 +1,11 @@
+<div class="exercise" acro="ILT.T15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">ILT.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>Suppose that that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations.  Prove the following relationship between kernels.
+\begin{equation*}
+\krn{T}\subseteq\krn{\compose{S}{T}}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.ILT.T15.knowl">Solution</a></p></div>
+</div>

@@ -1,0 +1,15 @@
+
+<ol>
+<li>Summarize the three conditions that allow us to quickly test if a set is a subspace.
+</li>
+<li>Consider the set of vectors
+\begin{align*}
+W&amp;=\setparts{\colvector{a\\b\\c}}{3a-2b+c=5}
+\end{align*}
+
+Is the set $W$ a subspace of $\complex{3}$?  Explain your answer.
+</li>
+<li>Name five general constructions of sets of column vectors (subsets of $\complex{m}$) that we now know as subspaces.
+</li>
+</ol>
+

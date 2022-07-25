@@ -1,0 +1,8 @@
+<div class="theorem" id="theorem-IPAC" acro="IPAC" titletext="Inner Product is Anti-Commutative">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">IPAC</span><span class="titletext"> Inner Product is Anti-Commutative</span>
+</h5>
+<div class="statement"><p>Suppose that $\vect{u}$ and $\vect{v}$ are vectors in $\complex{m}$.  Then
+$\innerproduct{\vect{u}}{\vect{v}}=\conjugate{\innerproduct{\vect{v}}{\vect{u}}}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.IPAC.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#theorem-IPAC" class="context" title="Section O">(in context)</a></div>

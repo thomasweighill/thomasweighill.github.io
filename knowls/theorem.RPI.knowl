@@ -1,0 +1,11 @@
+<div class="theorem" id="theorem-RPI" acro="RPI" titletext="Range and Pre-Image">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">RPI</span><span class="titletext"> Range and Pre-Image</span>
+</h5>
+<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then
+\begin{equation*}
+\vect{v}\in\rng{T}\text{ if and only if }\preimage{T}{\vect{v}}\neq\emptyset
+\end{equation*}
+</p></div>
+<div class="proof"><a knowl="./knowls/proof.RPI.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SLT.html#theorem-RPI" class="context" title="Section SLT">(in context)</a></div>

@@ -1,0 +1,8 @@
+<div class="exercise" acro="D.C21">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">D.C21</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Find the dimension of the subspace $W = \setparts{\colvector{a + b\\ a + c\\a + d \\ d}}{a, b, c, d \in\complexes}$ of $\complex{4}$.
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.D.C21.knowl">Solution</a></p></div>
+</div>

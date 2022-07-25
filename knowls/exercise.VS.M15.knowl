@@ -1,0 +1,20 @@
+<div class="exercise" acro="VS.M15">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">VS.M15</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>
+<div class="problem"><p>Consider the following sets of $3 \times 3$ matrices, where the symbol $*$ indicates the position of an arbitrary complex number.  Determine whether or not these sets form vector spaces with the usual operations of addition and scalar multiplication for matrices.
+<ol>
+<li> All matrices of the form $\begin{bmatrix} * &amp; * &amp; 1\\ * &amp; 1 &amp; *\\ 1 &amp; * &amp; * \end{bmatrix}$
+</li>
+<li> All matrices of the form $\begin{bmatrix} * &amp; 0 &amp; *\\ 0 &amp; * &amp; 0\\ * &amp; 0 &amp; * \end{bmatrix}$
+</li>
+<li> All matrices of the form $\begin{bmatrix} * &amp; 0 &amp; 0\\ 0 &amp; * &amp; 0\\ 0 &amp; 0 &amp; * \end{bmatrix}$
+(These are the <em class="term">diagonal</em> matrices.)
+</li>
+<li> All matrices of the form $\begin{bmatrix} * &amp; * &amp; *\\ 0 &amp; * &amp; *\\ 0 &amp; 0 &amp; * \end{bmatrix}$
+(These are the <em class="term">upper triangular</em> matrices.)
+</li>
+</ol>
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.VS.M15.knowl">Solution</a></p></div>
+</div>

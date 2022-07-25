@@ -1,0 +1,5 @@
+<div class="solution" acro="MINM.M15">
+<h5 class="solution">
+<span class="type">Solution</span> <span class="acro">MINM.M15</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
+</h5>If $B$ is singular, then there exists a vector $\vect{x}\ne\zerovector$ so that $\vect{x}\in \nsp{B}$.  Thus, $B\vect{x} = \vect{0}$, so $A(B\vect{x}) = (AB)\vect{x} = \zerovector$, so $\vect{x}\in\nsp{AB}$.  Since the null space of $AB$ is not trivial, $AB$ is a singular matrix.
+</div>

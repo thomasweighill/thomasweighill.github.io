@@ -1,0 +1,11 @@
+<div class="exercise" acro="S.M20">
+<h5 class="exercise">
+<span class="type">Exercise</span> <span class="acro">S.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
+</h5>
+<div class="problem"><p>In $\complex{3}$, the vector space of column vectors of size 3, prove that the set $Z$ is a subspace.
+\begin{equation*}
+Z=\setparts{\colvector{x_1\\x_2\\x_3}}{4x_1-x_2+5x_3=0}
+\end{equation*}
+</p></div>
+<div class="solution"><p><a knowl="./knowls/solution.S.M20.knowl">Solution</a></p></div>
+</div>

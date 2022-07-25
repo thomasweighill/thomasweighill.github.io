@@ -1,0 +1,7 @@
+<div class="theorem" id="theorem-DRCS" acro="DRCS" titletext="Determinant for Row or Column Swap">
+<h5 class="theorem">
+<span class="type">Theorem </span><span class="acro">DRCS</span><span class="titletext"> Determinant for Row or Column Swap</span>
+</h5>
+<div class="statement"><p>Suppose that $A$ is a square matrix.  Let $B$ be the square matrix obtained from $A$ by interchanging the location of two rows, or interchanging the location of two columns.  Then $\detname{B}=-\detname{A}$.</p></div>
+<div class="proof"><a knowl="./knowls/proof.DRCS.knowl">Proof</a></div>
+</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PDM.html#theorem-DRCS" class="context" title="Section PDM">(in context)</a></div>
