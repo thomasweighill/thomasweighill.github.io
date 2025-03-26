@@ -1,7 +1,0 @@
-<div class="exercise" acro="D.C40">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">D.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In <a class="knowl" acro="LDP4" type="Example" title="Linearly dependent set in $P_4$" knowl="./knowls/example.LDP4.knowl">Example LDP4</a> we determined that the set of five polynomials, $T$, is linearly dependent by a simple invocation of <a class="knowl" acro="SSLD" type="Theorem" title="Spanning Sets and Linear Dependence" knowl="./knowls/theorem.SSLD.knowl">Theorem SSLD</a>.  Prove that $T$ is linearly dependent from scratch, beginning with <a class="knowl" acro="LI" type="Definition" title="Linear Independence" knowl="./knowls/definition.LI.knowl">Definition LI</a>.
-</p></div>
-</div>

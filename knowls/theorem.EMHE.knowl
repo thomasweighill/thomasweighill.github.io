@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-EMHE" acro="EMHE" titletext="Every Matrix Has an Eigenvalue">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EMHE</span><span class="titletext"> Every Matrix Has an Eigenvalue</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is a square matrix.  Then $A$ has at least one eigenvalue.</p></div>
-<div class="proof"><a knowl="./knowls/proof.EMHE.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#theorem-EMHE" class="context" title="Section EE">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-EMMVP" acro="EMMVP" titletext="Equal Matrices and Matrix-Vector Products">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EMMVP</span><span class="titletext"> Equal Matrices and Matrix-Vector Products</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ and $B$ are $m\times n$ matrices such that $A\vect{x}=B\vect{x}$ for every $\vect{x}\in\complex{n}$.  Then $A=B$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.EMMVP.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-EMMVP" class="context" title="Section MM">(in context)</a></div>

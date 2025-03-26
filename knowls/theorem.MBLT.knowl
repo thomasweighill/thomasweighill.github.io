@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-MBLT" acro="MBLT" titletext="Matrices Build Linear Transformations">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">MBLT</span><span class="titletext"> Matrices Build Linear Transformations</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Define a function $\ltdefn{T}{\complex{n}}{\complex{m}}$ by $\lt{T}{\vect{x}}=A\vect{x}$.  Then $T$ is a linear transformation.</p></div>
-<div class="proof"><a knowl="./knowls/proof.MBLT.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#theorem-MBLT" class="context" title="Section LT">(in context)</a></div>

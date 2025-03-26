@@ -1,7 +1,0 @@
-<div class="exercise" acro="LI.T13">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LI.T13</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $T$ is a linearly dependent set of vectors, and $T$ is a subset of $S$, $T\subseteq S$ (<a class="knowl" acro="SSET" type="Definition" title="Subset" knowl="./knowls/definition.SSET.knowl">Definition SSET</a>).  Prove that $S$ is linearly dependent.
-</p></div>
-</div>

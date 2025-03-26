@@ -1,7 +1,0 @@
-<div class="exercise" acro="LDS.M10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LDS.M10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>At the conclusion of <a class="knowl" acro="RSC4" type="Example" title="Reducing a span in $\complex{4}$" knowl="./knowls/example.RSC4.knowl">Example RSC4</a> two alternative solutions, sets $T^{\prime}$ and $T^{*}$, are proposed.  Verify these claims by proving that $\spn{T}=\spn{T^{\prime}}$ and $\spn{T}=\spn{T^{*}}$.
-</p></div>
-</div>

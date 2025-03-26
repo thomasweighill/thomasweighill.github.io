@@ -1,7 +1,0 @@
-<div class="exercise" acro="O.T30">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">O.T30</span> <span class="contributor"><a knowl="./knowls/contributor.stevecanfield.knowl">Steve Canfield</a></span>
-</h5>
-<div class="problem"><p>Suppose that the set $S$ in the hypothesis of <a class="knowl" acro="GSP" type="Theorem" title="Gram-Schmidt Procedure" knowl="./knowls/theorem.GSP.knowl">Theorem GSP</a> is not just linearly independent, but is also orthogonal.  Prove that the set $T$ created by the Gram-Schmidt procedure is equal to $S$.  (Note that we are getting a stronger conclusion than $\spn{T}=\spn{S}$ — the conclusion is that $T=S$.)  In other words, it is pointless to apply the Gram-Schmidt procedure to a set that is already orthogonal.
-</p></div>
-</div>

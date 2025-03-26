@@ -1,8 +1,0 @@
-<div class="exercise" acro="MO.T13">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MO.T13</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Prove <a class="knowl" acro="CM" type="Property" title="Commutativity, Matrices" knowl="./knowls/property.CM.knowl">Property CM</a> of <a class="knowl" acro="VSPM" type="Theorem" title="Vector Space Properties of Matrices" knowl="./knowls/theorem.VSPM.knowl">Theorem VSPM</a>.  Write your proof in the style of the proof of <a class="knowl" acro="DSAM" type="Property" title="Distributivity across Scalar Addition, Matrices" knowl="./knowls/property.DSAM.knowl">Property DSAM</a> given in this section.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.MO.T13.knowl">Solution</a></p></div>
-</div>

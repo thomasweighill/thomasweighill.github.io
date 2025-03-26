@@ -1,9 +1,0 @@
-<div class="proof" id="proof-OBNM" acro="OBNM" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">OBNM</span>
-</h5>
-<p>Let $U$ be the unitary matrix promised by <a class="knowl" acro="OD" type="Theorem" title="Orthonormal Diagonalization" knowl="./knowls/theorem.OD.knowl">Theorem OD</a> and let $D$ be the resulting diagonal matrix.  The desired set of vectors is formed by collecting the columns of $U$ into a set.  <a class="knowl" acro="CUMOS" type="Theorem" title="Columns of Unitary Matrices are Orthonormal Sets" knowl="./knowls/theorem.CUMOS.knowl">Theorem CUMOS</a> says this set of columns is orthonormal.  Since $U$ is nonsingular (<a class="knowl" acro="UMI" type="Theorem" title="Unitary Matrices are Invertible" knowl="./knowls/theorem.UMI.knowl">Theorem UMI</a>), <a class="knowl" acro="CNMB" type="Theorem" title="Columns of Nonsingular Matrix are a Basis" knowl="./knowls/theorem.CNMB.knowl">Theorem CNMB</a> says the set is a basis.</p>
-
-<p>Since $A$ is diagonalized by $U$, the diagonal entries of the matrix $D$ are the eigenvalues of $A$.  An argument exactly like the second half of the proof of <a class="knowl" acro="DC" type="Theorem" title="Diagonalization Characterization" knowl="./knowls/theorem.DC.knowl">Theorem DC</a> shows that each vector of the basis is an eigenvector of $A$.</p>
-
-</div>

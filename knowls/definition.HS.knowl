@@ -1,6 +1,0 @@
-<div class="definition" id="definition-HS" acro="HS" titletext="Homogeneous System">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">HS</span> <span class="titletext"> Homogeneous System</span>
-</h5>
-<p>A system of linear equations, $\linearsystem{A}{\vect{b}}$ is <em class="term">homogeneous</em> if the vector of constants is the zero vector, in other words, if $\vect{b}=\zerovector$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-HSE.html#definition-HS" class="context" title="Section HSE">(in context)</a></div>

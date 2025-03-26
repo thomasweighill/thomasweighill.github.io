@@ -1,6 +1,0 @@
-<div class="solution" acro="CRS.M21">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">CRS.M21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>Begin with a matrix $A$ (of any size) that does not have any zero rows, but which when row-reduced to $B$ yields at least one row of zeros.  Such a matrix should be easy to construct (or find, like say from <a knowl="./knowls/archetype.A.knowl">Archetype A</a>).<br><br>
-$\csp{A}$ will contain some vectors whose final slot (entry $m$) is nonzero, however, every column vector from the matrix $B$ will have a zero in slot $m$ and so every vector in $\csp{B}$ will also contain a zero in the final slot.  This means that $\csp{A}\neq\csp{B}$, since we have vectors in $\csp{A}$ that cannot be elements of $\csp{B}$.
-</div>

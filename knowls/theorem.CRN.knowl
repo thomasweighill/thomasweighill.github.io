@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-CRN" acro="CRN" titletext="Computing Rank and Nullity">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">CRN</span><span class="titletext"> Computing Rank and Nullity</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix and $B$ is a row-equivalent matrix in reduced row-echelon form.  Let $r$ denote the number of pivot columns (or the number of nonzero rows).  Then $\rank{A}=r$ and $\nullity{A}=n-r$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.CRN.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-CRN" class="context" title="Section D">(in context)</a></div>

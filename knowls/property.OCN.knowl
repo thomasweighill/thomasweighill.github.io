@@ -1,7 +1,0 @@
-<div class="property" id="property-OCN" acro="OCN" titletext="One, Complex Numbers">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">OCN</span> <span class="titletext">One, Complex Numbers</span>
-</h5>
-<p>
-There is a complex number $1=1+0i$ so that for any $\alpha\in\complexes$, $1\alpha=\alpha$.</p>
-</div>

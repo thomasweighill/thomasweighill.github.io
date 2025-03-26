@@ -1,8 +1,0 @@
-<div class="exercise" acro="NM.T30">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">NM.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is a nonsingular matrix and $A$ is row-equivalent to the matrix $B$.  Prove that $B$ is nonsingular.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.NM.T30.knowl">Solution</a></p></div>
-</div>

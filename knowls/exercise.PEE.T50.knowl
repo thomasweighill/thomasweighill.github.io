@@ -1,8 +1,0 @@
-<div class="exercise" acro="PEE.T50">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PEE.T50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p><a class="knowl" acro="EIM" type="Theorem" title="Eigenvalues of the Inverse of a Matrix" knowl="./knowls/theorem.EIM.knowl">Theorem EIM</a> says that if $\lambda$ is an eigenvalue of the nonsingular matrix $A$, then $\frac{1}{\lambda}$ is an eigenvalue of $\inverse{A}$.  Write an alternate proof of this theorem using the characteristic polynomial and without making reference to an eigenvector of $A$ for $\lambda$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.PEE.T50.knowl">Solution</a></p></div>
-</div>

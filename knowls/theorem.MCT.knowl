@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-MCT" acro="MCT" titletext="Matrix Conjugation and Transposes">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">MCT</span><span class="titletext"> Matrix Conjugation and Transposes</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then $\conjugate{\left(\transpose{A}\right)}=\transpose{\left(\conjugate{A}\right)}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.MCT.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-MCT" class="context" title="Section MO">(in context)</a></div>

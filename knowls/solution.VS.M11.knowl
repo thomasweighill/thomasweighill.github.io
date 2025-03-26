@@ -1,5 +1,0 @@
-<div class="solution" acro="VS.M11">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">VS.M11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>The set $\complex{2}$ with the proposed operations is not a vector space since <a class="knowl" acro="O" type="Property" title="One" knowl="./knowls/property.O.knowl">Property O</a> is not valid.  A counterexample is $1\colvector{3\\2 } = \colvector{2\\3}\ne\colvector{3\\2 }$, so in general, $1\vect{u}\ne\vect{u}$.
-</div>

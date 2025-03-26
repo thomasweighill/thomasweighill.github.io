@@ -1,7 +1,0 @@
-<div class="proof" id="proof-NME4" acro="NME4" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">NME4</span>
-</h5>
-<p>Since <a class="knowl" acro="CSNM" type="Theorem" title="Column Space of a Nonsingular Matrix" knowl="./knowls/theorem.CSNM.knowl">Theorem CSNM</a> is an equivalence, we can add it to the list in <a class="knowl" acro="NME3" type="Theorem" title="Nonsingular Matrix Equivalences, Round 3" knowl="./knowls/theorem.NME3.knowl">Theorem NME3</a>.</p>
-
-</div>

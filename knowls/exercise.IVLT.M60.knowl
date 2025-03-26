@@ -1,7 +1,0 @@
-<div class="exercise" acro="IVLT.M60">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">IVLT.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose $U$ and $V$ are vector spaces.  Define the function $\ltdefn{Z}{U}{V}$ by $\lt{Z}{\vect{u}}=\zerovector_{V}$ for every $\vect{u}\in U$.  Then by <a knowl="./knowls/exercise.LT.M60.knowl">Exercise LT.M60</a>, $Z$ is a linear transformation.  Formulate a condition on $U$ and $V$ that is equivalent to $Z$ being an invertible linear transformation.   In other words, fill in the blank to complete the following statement (and then give a proof):  $Z$ is invertible if and only if $U$ and $V$ are  $\Rule{1in}{1pt}{0pt}$. (See <a knowl="./knowls/exercise.ILT.M60.knowl">Exercise ILT.M60</a>, <a knowl="./knowls/exercise.SLT.M60.knowl">Exercise SLT.M60</a>, <a knowl="./knowls/exercise.MR.M60.knowl">Exercise MR.M60</a>.)
-</p></div>
-</div>

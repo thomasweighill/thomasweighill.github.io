@@ -1,8 +1,0 @@
-<div class="exercise" acro="IVLT.T30">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">IVLT.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $U$ and $V$ are isomorphic vector spaces, not of dimension zero.  Prove that there are infinitely many isomorphisms between $U$ and $V$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.IVLT.T30.knowl">Solution</a></p></div>
-</div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-LIVHS" acro="LIVHS" titletext="Linearly Independent Vectors and Homogeneous Systems">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">LIVHS</span><span class="titletext"> Linearly Independent Vectors and Homogeneous Systems</span>
-</h5>
-<div class="statement"><p>Suppose that $S=\set{\vectorlist{v}{n}}\subseteq\complex{m}$ is a set of vectors and $A$ is the $m\times n$ matrix whose columns are the vectors in $S$.  Then $S$ is a linearly independent set if and only if the homogeneous system $\homosystem{A}$ has a unique solution.</p></div>
-<div class="proof"><a knowl="./knowls/proof.LIVHS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LI.html#theorem-LIVHS" class="context" title="Section LI">(in context)</a></div>

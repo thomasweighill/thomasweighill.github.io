@@ -1,8 +1,0 @@
-<div class="theorem" id="theorem-EOPSS" acro="EOPSS" titletext="Equation Operations Preserve Solution Sets">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EOPSS</span><span class="titletext"> Equation Operations Preserve Solution Sets</span>
-</h5>
-<div class="statement"><p>If we apply one of the three equation operations of <a class="knowl" acro="EO" type="Definition" title="Equation Operations" knowl="./knowls/definition.EO.knowl">Definition EO</a> to a system of linear equations  (<a class="knowl" acro="SLE" type="Definition" title="System of Linear Equations" knowl="./knowls/definition.SLE.knowl">Definition SLE</a>), then the original system and the transformed system are equivalent.
-</p></div>
-<div class="proof"><a knowl="./knowls/proof.EOPSS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SSLE.html#theorem-EOPSS" class="context" title="Section SSLE">(in context)</a></div>

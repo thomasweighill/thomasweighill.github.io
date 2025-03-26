@@ -1,7 +1,0 @@
-<div class="exercise" acro="MR.M81">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MR.M81</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In light of <a class="knowl" acro="RCSI" type="Theorem" title="Range and Column Space Isomorphism" knowl="./knowls/theorem.RCSI.knowl">Theorem RCSI</a> and <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a>, write a short comparison of <a knowl="./knowls/exercise.CRS.T40.knowl">Exercise CRS.T40</a> with <a knowl="./knowls/exercise.SLT.T15.knowl">Exercise SLT.T15</a>.
-</p></div>
-</div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-DM" acro="DM" titletext="Dimension of $M_{mn}$">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">DM</span><span class="titletext"> Dimension of $M_{mn}$</span>
-</h5>
-<div class="statement"><p>The dimension of $M_{mn}$  (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>) is $mn$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.DM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-DM" class="context" title="Section D">(in context)</a></div>

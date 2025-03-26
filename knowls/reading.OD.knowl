@@ -1,7 +1,0 @@
-
-<ol>
-<li>Name three broad classes of normal matrices that we have studied previously.  No set that you give should be a subset of another on your list.</li>
-<li>Compare and contrast <a class="knowl" acro="UTMR" type="Theorem" title="Upper Triangular Matrix Representation" knowl="./knowls/theorem.UTMR.knowl">Theorem UTMR</a> with <a class="knowl" acro="OD" type="Theorem" title="Orthonormal Diagonalization" knowl="./knowls/theorem.OD.knowl">Theorem OD</a>.</li>
-<li>Given an $n\times n$ matrix $A$, why would you desire an orthonormal basis of $\complex{n}$ composed entirely of eigenvectors of $A$?</li>
-</ol>
-

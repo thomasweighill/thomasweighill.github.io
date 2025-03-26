@@ -1,7 +1,0 @@
-<div class="exercise" acro="LT.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LT.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Use the conclusion of <a class="knowl" acro="LTLC" type="Theorem" title="Linear Transformations and Linear Combinations" knowl="./knowls/theorem.LTLC.knowl">Theorem LTLC</a> to motivate a new definition of a linear transformation.  Then prove that your new definition is equivalent to <a class="knowl" acro="LT" type="Definition" title="Linear Transformation" knowl="./knowls/definition.LT.knowl">Definition LT</a>.  (<a class="knowl" acro="D" type="Proof Technique" title="Definitions" knowl="./knowls/technique.D.knowl">Proof Technique D</a> and <a class="knowl" acro="E" type="Proof Technique" title="Equivalences" knowl="./knowls/technique.E.knowl">Proof Technique E</a> might be helpful if you are not sure what you are being asked to prove here.)
-</p></div>
-</div>

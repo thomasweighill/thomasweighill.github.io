@@ -1,6 +1,0 @@
-<div class="definition" id="definition-ROM" acro="ROM" titletext="Rank Of a Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">ROM</span> <span class="titletext"> Rank Of a Matrix</span>
-</h5>
-<p>Suppose that $A$ is an $m\times n$ matrix.  Then the <em class="term">rank</em> of $A$ is the dimension of the column space of $A$, $\rank{A}=\dimension{\csp{A}}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#definition-ROM" class="context" title="Section D">(in context)</a></div>

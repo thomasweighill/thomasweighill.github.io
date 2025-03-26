@@ -1,6 +1,0 @@
-<div class="solution" acro="NM.M51">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">NM.M51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<a class="knowl" acro="NMRRI" type="Theorem" title="Nonsingular Matrices Row Reduce to the Identity matrix" knowl="./knowls/theorem.NMRRI.knowl">Theorem NMRRI</a> tells us that the coefficient matrix will not row-reduce to the identity matrix.  So if we were to row-reduce the augmented matrix of this system of equations, we would not get a unique solution.  So by <a class="knowl" acro="PSSLS" type="Theorem" title="Possible Solution Sets for Linear Systems" knowl="./knowls/theorem.PSSLS.knowl">Theorem PSSLS</a> the remaining possibilities are no solutions, or infinitely many.
-</div>

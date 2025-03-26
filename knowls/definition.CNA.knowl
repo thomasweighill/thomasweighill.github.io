@@ -1,6 +1,0 @@
-<div class="definition" id="definition-CNA" acro="CNA" titletext="Complex Number Addition">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">CNA</span> <span class="titletext"> Complex Number Addition</span>
-</h5>
-<p>The <em class="term">sum</em> of the complex numbers $\alpha=a+bi$ and $\beta=c+di$ , denoted $\alpha+\beta$, is $(a+c)+(b+d)i$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#definition-CNA" class="context" title="Section CNO">(in context)</a></div>

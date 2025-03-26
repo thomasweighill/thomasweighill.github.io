@@ -1,6 +1,0 @@
-<div class="definition" id="definition-CCN" acro="CCN" titletext="Conjugate of a Complex Number">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">CCN</span> <span class="titletext"> Conjugate of a Complex Number</span>
-</h5>
-<p>The <em class="term">conjugate</em> of the complex number $\alpha=a+bi\in\complex{\null}$  is the complex number $\conjugate{\alpha}=a-bi$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#definition-CCN" class="context" title="Section CNO">(in context)</a></div>

@@ -1,8 +1,0 @@
-<div class="exercise" acro="PD.C40">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PD.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Determine if the set $T=\set{x^2-x+5,\,4x^3-x^2+5x,\,3x+2}$ spans the vector space of polynomials with degree 4 or less, $P_4$.  (Compare the solution to this exercise with <a knowl="./knowls/solution.LISS.C40.knowl">Solution LISS.C40</a>.)
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.PD.C40.knowl">Solution</a></p></div>
-</div>

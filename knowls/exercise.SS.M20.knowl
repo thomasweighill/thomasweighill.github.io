@@ -1,7 +1,0 @@
-<div class="exercise" acro="SS.M20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SS.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In <a class="knowl" acro="SCAD" type="Example" title="Span of the columns of Archetype D" knowl="./knowls/example.SCAD.knowl">Example SCAD</a> we began with the four columns of the coefficient matrix of <a knowl="./knowls/archetype.D.knowl">Archetype D</a>, and used these columns in a span construction.  Then we methodically argued that we could remove the last column, then the third column, and create the same set by just doing a span construction with the first two columns.  We claimed we could not go any further, and had removed as many vectors as possible.  Provide a convincing argument for why a third vector cannot be removed.
-</p></div>
-</div>

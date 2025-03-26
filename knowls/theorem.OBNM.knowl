@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-OBNM" acro="OBNM" titletext="Orthonormal Bases and Normal Matrices">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">OBNM</span><span class="titletext"> Orthonormal Bases and Normal Matrices</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is a normal matrix of size $n$.  Then there is an orthonormal basis of $\complex{n}$ composed of eigenvectors of $A$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.OBNM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#theorem-OBNM" class="context" title="Section OD">(in context)</a></div>

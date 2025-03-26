@@ -1,7 +1,0 @@
-<div class="exercise" acro="FS.M51">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">FS.M51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is a singular matrix.  Extend the four conclusions of <a class="knowl" acro="FS" type="Theorem" title="Four Subsets" knowl="./knowls/theorem.FS.knowl">Theorem FS</a> in this special case and discuss connections with previous results (such as <a class="knowl" acro="NME4" type="Theorem" title="Nonsingular Matrix Equivalences, Round 4" knowl="./knowls/theorem.NME4.knowl">Theorem NME4</a>).
-</p></div>
-</div>

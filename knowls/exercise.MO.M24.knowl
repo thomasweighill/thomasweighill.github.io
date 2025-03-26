@@ -1,8 +1,0 @@
-<div class="exercise" acro="MO.M24">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MO.M24</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose $Y$ is the set of all $3\times 3$ symmetric matrices (<a class="knowl" acro="SYM" type="Definition" title="Symmetric Matrix" knowl="./knowls/definition.SYM.knowl">Definition SYM</a>).  Find a set $T$ so that $T$ is linearly independent and $\spn{T}=Y$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.MO.M24.knowl">Solution</a></p></div>
-</div>

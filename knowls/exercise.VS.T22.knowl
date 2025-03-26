@@ -1,8 +1,0 @@
-<div class="exercise" acro="VS.T22">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">VS.T22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose $V$ is a vector space, $\vect{u},\,\vect{v}\in V$ and $\alpha$ is a nonzero scalar from $\complex{\null}$. If $\alpha\vect{u}=\alpha\vect{v}$, then $\vect{u}=\vect{v}$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.VS.T22.knowl">Solution</a></p></div>
-</div>

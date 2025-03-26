@@ -1,7 +1,0 @@
-<div class="exercise" acro="PDM.T10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PDM.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p><a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a> says that if the product of square matrices $AB$ is nonsingular, then the individual matrices $A$ and $B$ are nonsingular also.  Construct a new proof of this result making use of theorems about determinants of matrices.
-</p></div>
-</div>

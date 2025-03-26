@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-ICLT" acro="ICLT" titletext="Inverse of a Composition of Linear Transformations">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">ICLT</span><span class="titletext"> Inverse of a Composition of Linear Transformations</span>
-</h5>
-<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are invertible linear transformations. Then $\compose{S}{T}$ is invertible and $\ltinverse{\left(\compose{S}{T}\right)}=\compose{\ltinverse{T}}{\ltinverse{S}}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.ICLT.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#theorem-ICLT" class="context" title="Section IVLT">(in context)</a></div>

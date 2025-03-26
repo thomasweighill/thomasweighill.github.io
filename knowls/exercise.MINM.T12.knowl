@@ -1,7 +1,0 @@
-<div class="exercise" acro="MINM.T12">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MINM.T12</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that we are checking if a square matrix of size $n$ is unitary.  Show that a straightforward application of <a class="knowl" acro="CUMOS" type="Theorem" title="Columns of Unitary Matrices are Orthonormal Sets" knowl="./knowls/theorem.CUMOS.knowl">Theorem CUMOS</a> requires the computation of $n^2$ inner products when the matrix is unitary, and fewer when the matrix is not orthogonal.  Then show that this maximum number of inner products can be reduced to $\frac{1}{2}n(n+1)$ in light of <a class="knowl" acro="IPAC" type="Theorem" title="Inner Product is Anti-Commutative" knowl="./knowls/theorem.IPAC.knowl">Theorem IPAC</a>.
-</p></div>
-</div>

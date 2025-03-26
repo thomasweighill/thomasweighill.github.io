@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-NMLIC" acro="NMLIC" titletext="Nonsingular Matrices have Linearly Independent Columns">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">NMLIC</span><span class="titletext"> Nonsingular Matrices have Linearly Independent Columns</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is a square matrix.  Then $A$ is nonsingular if and only if the columns of $A$ form a linearly independent set.</p></div>
-<div class="proof"><a knowl="./knowls/proof.NMLIC.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LI.html#theorem-NMLIC" class="context" title="Section LI">(in context)</a></div>

@@ -1,5 +1,0 @@
-<div class="solution" acro="HSE.M51">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">HSE.M51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>Since there are more variables than equations, <a class="knowl" acro="HMVEI" type="Theorem" title="Homogeneous, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.HMVEI.knowl">Theorem HMVEI</a> applies and tells us that the solution set is infinite.  From the proof of <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a> we know that the zero vector is one solution.
-</div>

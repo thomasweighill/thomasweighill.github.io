@@ -1,8 +1,0 @@
-<div class="exercise" acro="OD.T10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">OD.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>
-<a knowl="./knowls/exercise.MM.T35.knowl">Exercise MM.T35</a> asked you to show that $A\adjoint{A}$ is Hermitian.  Prove directly that $A\adjoint{A}$ is a normal matrix.
-</p></div>
-</div>

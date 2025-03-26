@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-DCM" acro="DCM" titletext="Dimension of $\complex{m}$">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">DCM</span><span class="titletext"> Dimension of $\complex{m}$</span>
-</h5>
-<div class="statement"><p>The dimension of $\complex{m}$ (<a class="knowl" acro="VSCV" type="Example" title="The vector space $\complex{m}$" knowl="./knowls/example.VSCV.knowl">Example VSCV</a>) is $m$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.DCM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-DCM" class="context" title="Section D">(in context)</a></div>

@@ -1,5 +1,0 @@
-<div class="solution" acro="TSS.M56">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">TSS.M56</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>The system could be inconsistent.  If it is consistent, and since $12&gt;6$, then <a class="knowl" acro="CMVEI" type="Theorem" title="Consistent, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.CMVEI.knowl">Theorem CMVEI</a> says we will have infinitely many solutions.  So there are two possibilities.  <a class="knowl" acro="PSSLS" type="Theorem" title="Possible Solution Sets for Linear Systems" knowl="./knowls/theorem.PSSLS.knowl">Theorem PSSLS</a> allows to state equivalently that a unique solution is an impossibility.
-</div>

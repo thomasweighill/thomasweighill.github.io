@@ -1,8 +1,0 @@
-<div class="exercise" acro="SSLE.C52">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SSLE.C52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Driving along, Terry notices that the last four digits on his car's odometer are palindromic. A mile later, the last five digits are palindromic. After driving another mile, the middle four digits are palindromic. One more mile, and all six are palindromic. What was the odometer reading when Terry first looked at it?  Form a linear system of equations that expresses the requirements of this puzzle.  (<i>Car Talk</i> Puzzler,  National Public Radio, Week of January 21, 2008)  (A car odometer displays six digits and a sequence is a <em class="term">palindrome</em> if it reads the same left-to-right as right-to-left.)
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.SSLE.C52.knowl">Solution</a></p></div>
-</div>

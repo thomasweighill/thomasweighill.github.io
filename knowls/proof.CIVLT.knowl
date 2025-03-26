@@ -1,7 +1,0 @@
-<div class="proof" id="proof-CIVLT" acro="CIVLT" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">CIVLT</span>
-</h5>
-<p>Since $S$ and $T$ are both linear transformations,  $\compose{S}{T}$ is also a linear transformation by <a class="knowl" acro="CLTLT" type="Theorem" title="Composition of Linear Transformations is a Linear Transformation" knowl="./knowls/theorem.CLTLT.knowl">Theorem CLTLT</a>.    Since $S$ and $T$ are both invertible, <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> says that $S$ and $T$ are both injective and surjective.  Then <a class="knowl" acro="CILTI" type="Theorem" title="Composition of Injective Linear Transformations is Injective" knowl="./knowls/theorem.CILTI.knowl">Theorem CILTI</a> says $\compose{S}{T}$ is injective, and <a class="knowl" acro="CSLTS" type="Theorem" title="Composition of Surjective Linear Transformations is Surjective" knowl="./knowls/theorem.CSLTS.knowl">Theorem CSLTS</a> says $\compose{S}{T}$ is surjective.  Now apply the “other half” of <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> and conclude that $\compose{S}{T}$ is invertible.</p>
-
-</div>

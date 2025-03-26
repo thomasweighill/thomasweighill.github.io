@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-REMES" acro="REMES" titletext="Row-Equivalent Matrices represent Equivalent Systems">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">REMES</span><span class="titletext"> Row-Equivalent Matrices represent Equivalent Systems</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ and $B$ are row-equivalent augmented matrices.  Then the systems of linear equations that they represent are equivalent systems.</p></div>
-<div class="proof"><a knowl="./knowls/proof.REMES.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#theorem-REMES" class="context" title="Section RREF">(in context)</a></div>

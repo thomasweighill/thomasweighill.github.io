@@ -1,6 +1,0 @@
-<div class="definition" id="definition-SM" acro="SM" titletext="SubMatrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">SM</span> <span class="titletext"> SubMatrix</span>
-</h5>
-<p>Suppose that $A$ is an $m\times n$ matrix.  Then the <em class="term">submatrix</em> $\submatrix{A}{i}{j}$ is the $(m-1)\times (n-1)$ matrix obtained from $A$ by removing row $i$ and column $j$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-DM.html#definition-SM" class="context" title="Section DM">(in context)</a></div>

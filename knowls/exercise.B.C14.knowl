@@ -1,8 +1,0 @@
-<div class="exercise" acro="B.C14">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">B.C14</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>
-<div class="problem"><p>Find a basis for the subspace $R$ of $P_2$, $R = \setparts{p(x) = a + bx + cx^2}{p'(0) = 0}$, where $p'$ denotes the derivative.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.B.C14.knowl">Solution</a></p></div>
-</div>

@@ -1,6 +1,0 @@
-<div class="solution" acro="NM.T30">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">NM.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>Since $A$ and $B$ are row-equivalent matrices, consideration of the three row operations (<a class="knowl" acro="RO" type="Definition" title="Row Operations" knowl="./knowls/definition.RO.knowl">Definition RO</a>) will show that the augmented matrices, $\augmented{A}{\zerovector}$ and $\augmented{B}{\zerovector}$, are also row-equivalent matrices.  This says that the two homogeneous systems, $\homosystem{A}$ and $\homosystem{B}$ are equivalent systems.  $\homosystem{A}$ has only the zero vector as a solution (<a class="knowl" acro="NM" type="Definition" title="Nonsingular Matrix" knowl="./knowls/definition.NM.knowl">Definition NM</a>), thus $\homosystem{B}$ has only the zero vector as a solution.  Finally, by <a class="knowl" acro="NM" type="Definition" title="Nonsingular Matrix" knowl="./knowls/definition.NM.knowl">Definition NM</a>, we see that $B$ is nonsingular.<br><br>
-Form a similar theorem replacing “nonsingular” by “singular” in both the hypothesis and the conclusion. Prove this new theorem with an approach just like the one above, and/or employ the result about nonsingular matrices in a proof by contradiction.
-</div>

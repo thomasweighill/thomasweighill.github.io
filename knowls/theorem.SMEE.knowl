@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-SMEE" acro="SMEE" titletext="Similar Matrices have Equal Eigenvalues">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">SMEE</span><span class="titletext"> Similar Matrices have Equal Eigenvalues</span>
-</h5>
-<div class="statement"><p>Suppose $A$ and $B$ are similar matrices.  Then the characteristic polynomials of $A$ and $B$ are equal, that is, $\charpoly{A}{x}=\charpoly{B}{x}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.SMEE.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#theorem-SMEE" class="context" title="Section SD">(in context)</a></div>

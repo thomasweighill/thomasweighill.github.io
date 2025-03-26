@@ -1,8 +1,0 @@
-<div class="technique" id="technique-C" acro="C" titletext="Constructive Proofs">
-<h5 class="technique">
-<span class="type">Proof Technique</span> <span class="acro">C</span> <span class="titletext">Constructive Proofs</span>
-</h5>
-
-<p>Conclusions of proofs come in a variety of types.  Often a theorem will simply <em>assert</em> that something exists.  The best way, but not the only way, to show something exists is to actually build it.  Such a proof is called <em class="term">constructive</em>.  The thing to realize about constructive proofs is that the proof itself will contain a procedure that might be used computationally to construct the desired object.  If the procedure is not too cumbersome, then  the proof itself is as useful as the statement of the theorem.</p>
-
-</div>

@@ -1,8 +1,0 @@
-<div class="exercise" acro="SD.T15">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SD.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ and $B$ are similar matrices of size $n$.  Prove that $A^3$ and $B^3$ are similar matrices.  Generalize.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.SD.T15.knowl">Solution</a></p></div>
-</div>

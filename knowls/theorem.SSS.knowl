@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-SSS" acro="SSS" titletext="Span of a Set is a Subspace">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">SSS</span><span class="titletext"> Span of a Set is a Subspace</span>
-</h5>
-<div class="statement"><p>Suppose $V$ is a vector space.  Given a set of vectors $S=\{\vectorlist{u}{t}\}\subseteq V$, their span, $\spn{S}$, is a subspace.</p></div>
-<div class="proof"><a knowl="./knowls/proof.SSS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#theorem-SSS" class="context" title="Section S">(in context)</a></div>

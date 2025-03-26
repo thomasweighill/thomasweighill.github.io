@@ -1,6 +1,0 @@
-<div class="definition" id="definition-AME" acro="AME" titletext="Algebraic Multiplicity of an Eigenvalue">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">AME</span> <span class="titletext"> Algebraic Multiplicity of an Eigenvalue</span>
-</h5>
-<p>Suppose that $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then the <em class="term">algebraic multiplicity</em> of $\lambda$, $\algmult{A}{\lambda}$, is the highest power of $(x-\lambda)$ that divides the characteristic polynomial, $\charpoly{A}{x}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#definition-AME" class="context" title="Section EE">(in context)</a></div>

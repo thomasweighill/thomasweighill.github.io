@@ -1,8 +1,0 @@
-<div class="exercise" acro="LT.C20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LT.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Let $\vect{w}=\colvector{-3\\1\\4}$.  Referring to <a class="knowl" acro="MOLT" type="Example" title="Matrix of a linear transformation" knowl="./knowls/example.MOLT.knowl">Example MOLT</a>, compute $\lt{S}{\vect{w}}$ two different ways.  First use the definition of $S$, then compute the matrix-vector product $C\vect{w}$ (<a class="knowl" acro="MVP" type="Definition" title="Matrix-Vector Product" knowl="./knowls/definition.MVP.knowl">Definition MVP</a>).
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.LT.C20.knowl">Solution</a></p></div>
-</div>

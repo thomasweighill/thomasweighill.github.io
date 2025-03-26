@@ -1,8 +1,0 @@
-<div class="exercise" acro="CRS.T40">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">CRS.T40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix.  Prove that the column space of $AB$ is a subset of the column space of $A$, that is $\csp{AB}\subseteq\csp{A}$.  Provide an example where the opposite is false, in other words give an example where $\csp{A}\not\subseteq\csp{AB}$.   (Compare with <a knowl="./knowls/exercise.MM.T40.knowl">Exercise MM.T40</a>.)
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.CRS.T40.knowl">Solution</a></p></div>
-</div>

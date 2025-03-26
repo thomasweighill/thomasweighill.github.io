@@ -1,8 +1,0 @@
-<div class="exercise" acro="SSLE.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SSLE.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Explain why the second equation operation in <a class="knowl" acro="EO" type="Definition" title="Equation Operations" knowl="./knowls/definition.EO.knowl">Definition EO</a> requires that the scalar be nonzero, while in the third equation operation this restriction on the scalar is not present.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.SSLE.T20.knowl">Solution</a></p></div>
-</div>

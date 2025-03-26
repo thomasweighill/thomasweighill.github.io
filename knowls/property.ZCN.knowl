@@ -1,7 +1,0 @@
-<div class="property" id="property-ZCN" acro="ZCN" titletext="Zero, Complex Numbers">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">ZCN</span> <span class="titletext">Zero, Complex Numbers</span>
-</h5>
-<p>
-There is a complex number $0=0+0i$ so that for any $\alpha\in\complexes$, $0+\alpha=\alpha$.</p>
-</div>

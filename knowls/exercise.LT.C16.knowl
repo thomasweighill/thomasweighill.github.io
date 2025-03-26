@@ -1,9 +1,0 @@
-<div class="exercise" acro="LT.C16">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LT.C16</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>
-<div class="problem"><p>Find the matrix representation of $\ltdefn{T}{\complex{3}}{\complex{4}}$,
-$\lt{T}{\colvector{x\\y\\z}} = \colvector{3x + 2y + z\\ x + y + z \\ x - 3y \\2x + 3y + z }$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.LT.C16.knowl">Solution</a></p></div>
-</div>

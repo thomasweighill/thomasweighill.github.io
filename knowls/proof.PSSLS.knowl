@@ -1,7 +1,0 @@
-<div class="proof" id="proof-PSSLS" acro="PSSLS" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">PSSLS</span>
-</h5>
-<p>By its definition, a system is either inconsistent or consistent (<a class="knowl" acro="CS" type="Definition" title="Consistent System" knowl="./knowls/definition.CS.knowl">Definition CS</a>).  The first case describes systems with no solutions.  For consistent systems, we have the remaining two possibilities as guaranteed by, and described in, <a class="knowl" acro="CSRN" type="Theorem" title="Consistent Systems, $r$ and $n$" knowl="./knowls/theorem.CSRN.knowl">Theorem CSRN</a>.</p>
-
-</div>

@@ -1,8 +1,0 @@
-<div class="proof" id="proof-LIVRN" acro="LIVRN" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">LIVRN</span>
-</h5>
-<p><a class="knowl" acro="LIVHS" type="Theorem" title="Linearly Independent Vectors and Homogeneous Systems" knowl="./knowls/theorem.LIVHS.knowl">Theorem LIVHS</a> says the linear independence of $S$ is equivalent to the homogeneous linear system $\homosystem{A}$ having a unique solution.  Since $\homosystem{A}$ is consistent (<a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>) we can apply <a class="knowl" acro="CSRN" type="Theorem" title="Consistent Systems, $r$ and $n$" knowl="./knowls/theorem.CSRN.knowl">Theorem CSRN</a> to see that the solution is unique exactly when $n=r$.
-</p>
-
-</div>

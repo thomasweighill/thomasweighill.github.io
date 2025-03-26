@@ -1,7 +1,0 @@
-<div class="proof" id="proof-HSC" acro="HSC" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">HSC</span>
-</h5>
-<p>Set each variable of the system to zero.  When substituting these values into each equation, the left-hand side evaluates to zero, no matter what the coefficients are.  Since a homogeneous system has zero on the right-hand side of each equation as the constant term, each equation is true.  With one demonstrated solution, we can call the system consistent.</p>
-
-</div>

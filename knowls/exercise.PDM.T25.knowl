@@ -1,7 +1,0 @@
-<div class="exercise" acro="PDM.T25">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PDM.T25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Employ <a class="knowl" acro="DT" type="Theorem" title="Determinant of the Transpose" knowl="./knowls/theorem.DT.knowl">Theorem DT</a> to construct the second half of the proof of <a class="knowl" acro="DRCM" type="Theorem" title="Determinant for Row or Column Multiples" knowl="./knowls/theorem.DRCM.knowl">Theorem DRCM</a> (the portion about a multiple of a column).
-</p></div>
-</div>

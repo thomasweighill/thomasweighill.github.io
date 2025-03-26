@@ -1,8 +1,0 @@
-<div class="exercise" acro="LISS.T51">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LISS.T51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Carefully formulate the converse of <a class="knowl" acro="VRRB" type="Theorem" title="Vector Representation Relative to a Basis" knowl="./knowls/theorem.VRRB.knowl">Theorem VRRB</a> and provide a proof.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.LISS.T51.knowl">Solution</a></p></div>
-</div>

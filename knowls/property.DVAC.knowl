@@ -1,7 +1,0 @@
-<div class="property" id="property-DVAC" acro="DVAC" titletext="Distributivity across Vector Addition, Column Vectors">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">DVAC</span> <span class="titletext">Distributivity across Vector Addition, Column Vectors</span>
-</h5>
-<p>
-If $\alpha\in\complex{\null}$ and $\vect{u},\,\vect{v}\in\complex{m}$, then $\alpha(\vect{u}+\vect{v})=\alpha\vect{u}+\alpha\vect{v}$.</p>
-</div>

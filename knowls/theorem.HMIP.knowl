@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-HMIP" acro="HMIP" titletext="Hermitian Matrices and Inner Products">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">HMIP</span><span class="titletext"> Hermitian Matrices and Inner Products</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is a square matrix of size $n$.  Then $A$ is Hermitian if and only if $\innerproduct{A\vect{x}}{\vect{y}}=\innerproduct{\vect{x}}{A\vect{y}}$ for all $\vect{x},\,\vect{y}\in\complex{n}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.HMIP.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-HMIP" class="context" title="Section MM">(in context)</a></div>

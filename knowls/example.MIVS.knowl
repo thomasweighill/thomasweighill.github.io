@@ -1,9 +1,0 @@
-<div class="example" id="example-MIVS" acro="MIVS" titletext="Multiple isomorphic vector spaces">
-<h5 class="example">
-<span class="type">Example</span> <span class="acro">MIVS</span> <span class="titletext">Multiple isomorphic vector spaces</span>
-</h5>
-<p>$\complex{10}$, $P_{9}$, $M_{25}$ and $M_{52}$ are all vector spaces and each has dimension 10.  By <a class="knowl" acro="IFDVS" type="Theorem" title="Isomorphism of Finite Dimensional Vector Spaces" knowl="./knowls/theorem.IFDVS.knowl">Theorem IFDVS</a> each is isomorphic to any other.</p>
-<p>The subspace of $M_{44}$ that contains all the symmetric matrices (<a class="knowl" acro="SYM" type="Definition" title="Symmetric Matrix" knowl="./knowls/definition.SYM.knowl">Definition SYM</a>) has dimension $10$, so this subspace is also isomorphic to each of the four vector spaces above.</p>
-<div class="context"><a href="section-VR.html#example-MIVS" class="context" title="Section VR">(in
-context)</a></div>
-</div>

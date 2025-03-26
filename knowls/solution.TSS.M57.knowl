@@ -1,5 +1,0 @@
-<div class="solution" acro="TSS.M57">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">TSS.M57</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>7 pivot columns implies that there are $r=7$ nonzero rows (so row 8 is all zeros in the reduced row-echelon form).  The last column must be a pivot column and <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a> allows to conclude that the system is inconsistent.
-</div>

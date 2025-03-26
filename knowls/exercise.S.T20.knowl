@@ -1,8 +1,0 @@
-<div class="exercise" acro="S.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">S.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>A square matrix $A$ of size $n$ is upper triangular if $\matrixentry{A}{ij}=0$ whenever $i&gt;j$.  Let $UT_n$ be the set of all upper triangular matrices of size $n$.  Prove that $UT_n$ is a subspace of the vector space of all square matrices of size $n$, $M_{nn}$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.S.T20.knowl">Solution</a></p></div>
-</div>

@@ -1,8 +1,0 @@
-<div class="exercise" acro="CRS.T41">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">CRS.T41</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $B$ is an $n\times n$ nonsingular matrix.  Prove that the column space of $A$ is equal to the column space of $AB$, that is $\csp{A}=\csp{AB}$.  (Compare with <a knowl="./knowls/exercise.MM.T41.knowl">Exercise MM.T41</a> and <a knowl="./knowls/exercise.CRS.T40.knowl">Exercise CRS.T40</a>.)
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.CRS.T41.knowl">Solution</a></p></div>
-</div>

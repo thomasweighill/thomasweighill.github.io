@@ -1,7 +1,0 @@
-<div class="exercise" acro="WILA.C10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">WILA.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In <a class="knowl" acro="TMP" type="Example" title="Trail Mix Packaging" knowl="./knowls/example.TMP.knowl">Example TMP</a> the first table lists the cost (per kilogram) to manufacture each of the three varieties of trail mix (bulk, standard, fancy).  For example, it costs \$3.69 to make one kilogram of the bulk variety.  Re-compute each of these three costs and notice that the computations are linear in character.
-</p></div>
-</div>

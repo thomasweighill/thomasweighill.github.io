@@ -1,8 +1,0 @@
-<div class="exercise" acro="NM.T90">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">NM.T90</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Provide an alternative for the second half of the proof of <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>, without appealing to properties of the reduced row-echelon form of the coefficient matrix.  In other words, prove that if $A$ is nonsingular, then $\linearsystem{A}{\vect{b}}$ has a unique solution for every choice of the constant vector $\vect{b}$.  Construct this proof without using <a class="knowl" acro="REMEF" type="Theorem" title="Row-Equivalent Matrix in Echelon Form" knowl="./knowls/theorem.REMEF.knowl">Theorem REMEF</a> or <a class="knowl" acro="RREFU" type="Theorem" title="Reduced Row-Echelon Form is Unique" knowl="./knowls/theorem.RREFU.knowl">Theorem RREFU</a>.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.NM.T90.knowl">Solution</a></p></div>
-</div>

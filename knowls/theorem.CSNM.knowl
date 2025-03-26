@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-CSNM" acro="CSNM" titletext="Column Space of a Nonsingular Matrix">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">CSNM</span><span class="titletext"> Column Space of a Nonsingular Matrix</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is a square matrix of size $n$.  Then $A$ is nonsingular if and only if $\csp{A}=\complex{n}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.CSNM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#theorem-CSNM" class="context" title="Section CRS">(in context)</a></div>

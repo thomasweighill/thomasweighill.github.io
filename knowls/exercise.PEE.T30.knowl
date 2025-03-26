@@ -1,7 +1,0 @@
-<div class="exercise" acro="PEE.T30">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PEE.T30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p><a class="knowl" acro="DCP" type="Theorem" title="Degree of the Characteristic Polynomial" knowl="./knowls/theorem.DCP.knowl">Theorem DCP</a> tells us that the characteristic polynomial of a square matrix of size $n$ has degree $n$.  By suitably augmenting the proof of <a class="knowl" acro="DCP" type="Theorem" title="Degree of the Characteristic Polynomial" knowl="./knowls/theorem.DCP.knowl">Theorem DCP</a> prove that the coefficient of $x^n$ in the characteristic polynomial is $(-1)^n$.
-</p></div>
-</div>

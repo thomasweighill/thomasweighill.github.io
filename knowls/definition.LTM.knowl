@@ -1,7 +1,0 @@
-<div class="definition" id="definition-LTM" acro="LTM" titletext="Lower Triangular Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">LTM</span> <span class="titletext"> Lower Triangular Matrix</span>
-</h5>
-<p>The $n\times n$ square matrix $A$ is <em class="term">lower triangular</em> if $\matrixentry{A}{ij} =0$ whenever
-$i&lt;j$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-OD.html#definition-LTM" class="context" title="Section OD">(in context)</a></div>

@@ -1,8 +1,0 @@
-<div class="exercise" acro="MISLE.T10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MISLE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Construct an example to demonstrate that $\inverse{(A+B)}=\inverse{A}+\inverse{B}$ is not true for all square matrices $A$ and $B$ of the same size.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.MISLE.T10.knowl">Solution</a></p></div>
-</div>

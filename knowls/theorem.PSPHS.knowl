@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-PSPHS" acro="PSPHS" titletext="Particular Solution Plus Homogeneous Solutions">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">PSPHS</span><span class="titletext"> Particular Solution Plus Homogeneous Solutions</span>
-</h5>
-<div class="statement"><p>Suppose that $\vect{w}$ is one solution to the linear system of equations $\linearsystem{A}{\vect{b}}$.  Then $\vect{y}$ is a solution to $\linearsystem{A}{\vect{b}}$ if and only if $\vect{y}=\vect{w}+\vect{z}$ for some vector $\vect{z}\in\nsp{A}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.PSPHS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LC.html#theorem-PSPHS" class="context" title="Section LC">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="property" id="property-AIC" acro="AIC" titletext="Additive Inverses, Column Vectors">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">AIC</span> <span class="titletext">Additive Inverses, Column Vectors</span>
-</h5>
-<p>
-If  $\vect{u}\in\complex{m}$, then there exists a vector $\vect{-u}\in\complex{m}$ so that $\vect{u}+ (\vect{-u})=\zerovector$.</p>
-</div>

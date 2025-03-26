@@ -1,8 +1,0 @@
-<div class="exercise" acro="MR.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MR.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Construct a new solution to <a knowl="./knowls/exercise.B.T50.knowl">Exercise B.T50</a> along the following outline.  From the $n\times n$ matrix $A$, construct the linear transformation $\ltdefn{T}{\complex{n}}{\complex{n}}$, $\lt{T}{\vect{x}}=A\vect{x}$.  Use <a class="knowl" acro="NI" type="Theorem" title="Nonsingularity is Invertibility" knowl="./knowls/theorem.NI.knowl">Theorem NI</a>, <a class="knowl" acro="IMILT" type="Theorem" title="Invertible Matrices, Invertible Linear Transformation" knowl="./knowls/theorem.IMILT.knowl">Theorem IMILT</a> and <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> to translate between the nonsingularity of $A$ and the surjectivity/injectivity of $T$.  Then apply <a class="knowl" acro="ILTB" type="Theorem" title="Injective Linear Transformations and Bases" knowl="./knowls/theorem.ILTB.knowl">Theorem ILTB</a> and  <a class="knowl" acro="SLTB" type="Theorem" title="Surjective Linear Transformations and Bases" knowl="./knowls/theorem.SLTB.knowl">Theorem SLTB</a> to connect these properties with bases.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.MR.T20.knowl">Solution</a></p></div>
-</div>

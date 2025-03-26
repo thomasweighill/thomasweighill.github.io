@@ -1,7 +1,0 @@
-<div class="solution" acro="SSLE.M30">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">SSLE.M30</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>If $x$, $y$ and $z$ represent the money held by Dan, Diane and Donna, then $y=15-z$ and $x=20-y=20-(15-z)=5+z$.  We can let $z$ take on any value from $0$ to $15$ without any of the three amounts being negative, since presumably middle-schoolers are too young to assume debt.<br><br>
-Then the total capital held by the three is $x+y+z=(5+z)+(15-z)+z=20+z$.  So their combined holdings can range anywhere from \$20 (Donna is broke) to \$35 (Donna is flush).<br><br>
-We will have more to say about this situation in <a href="section-TSS.html" title="Types of Solution Sets">Section TSS</a>, and specifically <a class="knowl" acro="CMVEI" type="Theorem" title="Consistent, More Variables than Equations, Infinite solutions" knowl="./knowls/theorem.CMVEI.knowl">Theorem CMVEI</a>.
-</div>

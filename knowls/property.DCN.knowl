@@ -1,7 +1,0 @@
-<div class="property" id="property-DCN" acro="DCN" titletext="Distributivity, Complex Numbers">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">DCN</span> <span class="titletext">Distributivity, Complex Numbers</span>
-</h5>
-<p>
-For any $\alpha,\,\beta,\,\gamma\in\complexes$, $\alpha(\beta+\gamma)=\alpha\beta+\alpha\gamma$.</p>
-</div>

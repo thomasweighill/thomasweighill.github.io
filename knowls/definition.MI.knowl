@@ -1,6 +1,0 @@
-<div class="definition" id="definition-MI" acro="MI" titletext="Matrix Inverse">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">MI</span> <span class="titletext"> Matrix Inverse</span>
-</h5>
-<p>Suppose $A$ and $B$ are square matrices of size $n$ such that $AB=I_n$ and $BA=I_n$.  Then $A$ is <em class="term">invertible</em> and $B$ is the <em class="term">inverse</em> of $A$.  In this situation, we write $B=\inverse{A}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MISLE.html#definition-MI" class="context" title="Section MISLE">(in context)</a></div>

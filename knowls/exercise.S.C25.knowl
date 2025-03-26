@@ -1,9 +1,0 @@
-<div class="exercise" acro="S.C25">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">S.C25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Show that the set
-$W=\setparts{\colvector{x_1\\x_2}}{3x_1-5x_2=12}$
-from <a class="knowl" acro="NSC2Z" type="Example" title="A non-subspace in $\complex{2}$, zero vector" knowl="./knowls/example.NSC2Z.knowl">Example NSC2Z</a> fails <a class="knowl" acro="AC" type="Property" title="Additive Closure" knowl="./knowls/property.AC.knowl">Property AC</a> and <a class="knowl" acro="SC" type="Property" title="Scalar Closure" knowl="./knowls/property.SC.knowl">Property SC</a>.
-</p></div>
-</div>

@@ -1,5 +1,0 @@
-<div class="solution" acro="SSLE.T10">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">SSLE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>We can say that an integer is <em class="term">odd</em> if when it is divided by $2$ there is a remainder of 1.  So $6$ is not odd since $6=3\times 2+0$, while $11$ is odd since $11=5\times 2 + 1$.
-</div>

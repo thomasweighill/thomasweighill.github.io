@@ -1,7 +1,0 @@
-<div class="property" id="property-AACN" acro="AACN" titletext="Additive Associativity, Complex Numbers">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">AACN</span> <span class="titletext">Additive Associativity, Complex Numbers</span>
-</h5>
-<p>
-For any $\alpha,\,\beta,\,\gamma\in\complexes$, $\alpha+\left(\beta+\gamma\right)=\left(\alpha+\beta\right)+\gamma$.</p>
-</div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-TMSM" acro="TMSM" titletext="Transpose and Matrix Scalar Multiplication">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">TMSM</span><span class="titletext"> Transpose and Matrix Scalar Multiplication</span>
-</h5>
-<div class="statement"><p>Suppose that $\alpha\in\complex{\null}$ and $A$ is an $m\times n$ matrix.  Then $\transpose{(\alpha A)}=\alpha\transpose{A}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.TMSM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-TMSM" class="context" title="Section MO">(in context)</a></div>

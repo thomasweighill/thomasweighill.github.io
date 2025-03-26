@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-BIS" acro="BIS" titletext="Bases have Identical Sizes">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">BIS</span><span class="titletext"> Bases have Identical Sizes</span>
-</h5>
-<div class="statement"><p>Suppose that $V$ is a vector space with a finite basis $B$ and a second basis $C$.  Then $B$ and $C$ have the same size.</p></div>
-<div class="proof"><a knowl="./knowls/proof.BIS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#theorem-BIS" class="context" title="Section D">(in context)</a></div>

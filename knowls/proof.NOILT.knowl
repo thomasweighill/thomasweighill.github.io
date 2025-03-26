@@ -1,7 +1,0 @@
-<div class="proof" id="proof-NOILT" acro="NOILT" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">NOILT</span>
-</h5>
-<p>By <a class="knowl" acro="KILT" type="Theorem" title="Kernel of an Injective Linear Transformation" knowl="./knowls/theorem.KILT.knowl">Theorem KILT</a>, $T$ is injective if and only if $\krn{T}=\set{\zerovector}$.  Applying <a class="knowl" acro="NOLT" type="Definition" title="Nullity Of a Linear Transformation" knowl="./knowls/definition.NOLT.knowl">Definition NOLT</a>, $\krn{T}=\set{\zerovector}$ if and only if $\nullity{T}=0$.</p>
-
-</div>

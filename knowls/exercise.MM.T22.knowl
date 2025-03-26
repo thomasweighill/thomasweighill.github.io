@@ -1,7 +1,0 @@
-<div class="exercise" acro="MM.T22">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MM.T22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Prove the second part of <a class="knowl" acro="MMDAA" type="Theorem" title="Matrix Multiplication Distributes Across Addition" knowl="./knowls/theorem.MMDAA.knowl">Theorem MMDAA</a>.
-</p></div>
-</div>

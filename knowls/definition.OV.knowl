@@ -1,6 +1,0 @@
-<div class="definition" id="definition-OV" acro="OV" titletext="Orthogonal Vectors">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">OV</span> <span class="titletext"> Orthogonal Vectors</span>
-</h5>
-<p>A pair of vectors, $\vect{u}$ and $\vect{v}$, from $\complex{m}$ are <em class="term">orthogonal</em> if their inner product is zero, that is, $\innerproduct{\vect{u}}{\vect{v}}=0$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-O.html#definition-OV" class="context" title="Section O">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="exercise" acro="SSLE.C10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SSLE.C10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Find a solution to the system in <a class="knowl" acro="IS" type="Example" title="Three equations, infinitely many solutions" knowl="./knowls/example.IS.knowl">Example IS</a> where $x_3=6$ and $x_4=2$.  Find two other solutions to the system.  Find a solution where $x_1=-17$ and $x_2=14$.  How many possible answers are there to each of these questions?
-</p></div>
-</div>

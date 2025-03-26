@@ -1,6 +1,0 @@
-<div class="definition" id="definition-NOM" acro="NOM" titletext="Nullity Of a Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">NOM</span> <span class="titletext"> Nullity Of a Matrix</span>
-</h5>
-<p>Suppose that $A$ is an $m\times n$ matrix.  Then the <em class="term">nullity</em> of $A$ is the dimension of the null space of $A$, $\nullity{A}=\dimension{\nsp{A}}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-D.html#definition-NOM" class="context" title="Section D">(in context)</a></div>

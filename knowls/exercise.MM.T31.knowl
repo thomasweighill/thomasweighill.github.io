@@ -1,7 +1,0 @@
-<div class="exercise" acro="MM.T31">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MM.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and $\vect{x},\,\vect{y}\in\nsp{A}$.  Prove that $\vect{x}+\vect{y}\in\nsp{A}$.
-</p></div>
-</div>

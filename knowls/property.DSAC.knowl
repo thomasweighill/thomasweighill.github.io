@@ -1,8 +1,0 @@
-<div class="property" id="property-DSAC" acro="DSAC" titletext="Distributivity across Scalar Addition, Column Vectors">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">DSAC</span> <span class="titletext">Distributivity across Scalar Addition, Column Vectors</span>
-</h5>
-<p>
-If $\alpha,\,\beta\in\complex{\null}$ and $\vect{u}\in\complex{m}$, then
-$(\alpha+\beta)\vect{u}=\alpha\vect{u}+\beta\vect{u}$.</p>
-</div>

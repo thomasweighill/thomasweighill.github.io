@@ -1,7 +1,0 @@
-<div class="property" id="property-AIM" acro="AIM" titletext="Additive Inverses, Matrices">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">AIM</span> <span class="titletext">Additive Inverses, Matrices</span>
-</h5>
-<p>
-If $A\in M_{mn}$, then there exists a matrix $-A\in M_{mn}$ so that $A+(-A)=\zeromatrix$.</p>
-</div>

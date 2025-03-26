@@ -1,7 +1,0 @@
-<div class="exercise" acro="MO.T32">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MO.T32</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
-</h5>
-<div class="problem"><p>Prove that a matrix $A$ is both skew-symmetric and symmetric if and only if $A$ is the zero matrix.  (Hint: one half of this proof is very easy, the other half takes a little more work.)
-</p></div>
-</div>

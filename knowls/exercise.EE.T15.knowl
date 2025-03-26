@@ -1,8 +1,0 @@
-<div class="exercise" acro="EE.T15">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">EE.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>The characteristic polynomial of the square matrix $A$ is usually defined as $r_A(x)=\detname{xI_n-A}$.  Find a specific relationship between our characteristic polynomial, $\charpoly{A}{x}$, and $r_A(x)$, give a proof of your relationship, and use this to explain why <a class="knowl" acro="EMRCP" type="Theorem" title="Eigenvalues of a Matrix are Roots of Characteristic Polynomials" knowl="./knowls/theorem.EMRCP.knowl">Theorem EMRCP</a> can remain essentially unchanged with either definition.  Explain the advantages of each definition over the other.  (Computing with both definitions, for a $2\times 2$ and a $3\times 3$ matrix, might be a good way to start.)
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.EE.T15.knowl">Solution</a></p></div>
-</div>

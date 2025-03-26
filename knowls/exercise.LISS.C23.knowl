@@ -1,8 +1,0 @@
-<div class="exercise" acro="LISS.C23">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LISS.C23</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Determine if the set $S=\set{(3,\,1),\,(7,\,3)}$ is linearly independent in the crazy vector space $C$ (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>).
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.LISS.C23.knowl">Solution</a></p></div>
-</div>

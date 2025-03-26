@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-AIP" acro="AIP" titletext="Adjoint and Inner Product">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">AIP</span><span class="titletext"> Adjoint and Inner Product</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix and $\vect{x}\in\complex{n}$, $\vect{y}\in\complex{m}$.  Then $\innerproduct{A\vect{x}}{\vect{y}}=\innerproduct{\vect{x}}{\adjoint{A}\vect{y}}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.AIP.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#theorem-AIP" class="context" title="Section MM">(in context)</a></div>

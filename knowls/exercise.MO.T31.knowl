@@ -1,7 +1,0 @@
-<div class="exercise" acro="MO.T31">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MO.T31</span> <span class="contributor"><a knowl="./knowls/contributor.manleyperkel.knowl">Manley Perkel</a></span>
-</h5>
-<div class="problem"><p>Prove that a skew-symmetric matrix must have zeros for its diagonal elements.  In other words, if $A$ is skew-symmetric of size $n$, then $\matrixentry{A}{ii}=0$ for $1\leq i\leq n$.  (Hint: carefully construct an example of a $3\times 3$ skew-symmetric matrix before attempting a proof.)
-</p></div>
-</div>

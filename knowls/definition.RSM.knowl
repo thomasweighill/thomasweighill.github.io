@@ -1,6 +1,0 @@
-<div class="definition" id="definition-RSM" acro="RSM" titletext="Row Space of a Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">RSM</span> <span class="titletext"> Row Space of a Matrix</span>
-</h5>
-<p>Suppose $A$ is an $m\times n$ matrix.  Then the <em class="term">row space</em> of $A$, $\rsp{A}$, is the column space of $\transpose{A}$, i.e.  $\rsp{A}=\csp{\transpose{A}}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#definition-RSM" class="context" title="Section CRS">(in context)</a></div>

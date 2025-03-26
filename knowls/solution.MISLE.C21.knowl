@@ -1,5 +1,0 @@
-<div class="solution" acro="MISLE.C21">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">MISLE.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>Check that <em>both</em> matrix products (<a class="knowl" acro="MM" type="Definition" title="Matrix Multiplication" knowl="./knowls/definition.MM.knowl">Definition MM</a>) $AB$ and $BA$ equal the $4\times 4$ identity matrix $I_4$ (<a class="knowl" acro="IM" type="Definition" title="Identity Matrix" knowl="./knowls/definition.IM.knowl">Definition IM</a>).
-</div>

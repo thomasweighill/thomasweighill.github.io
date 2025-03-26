@@ -1,8 +1,0 @@
-<div class="exercise" acro="NM.T31">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">NM.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is a square matrix of size $n\times n$ and that we know there is a <em>single</em> vector $\vect{b}\in\complex{n}$ such that the system $\linearsystem{A}{\vect{b}}$ has a unique solution.  Prove that $A$ is a nonsingular matrix.  (Notice that this is very similar to <a class="knowl" acro="NMUS" type="Theorem" title="Nonsingular Matrices and Unique Solutions" knowl="./knowls/theorem.NMUS.knowl">Theorem NMUS</a>, but is not exactly the same.)
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.NM.T31.knowl">Solution</a></p></div>
-</div>

@@ -1,8 +1,0 @@
-<div class="proof" id="proof-RPI" acro="RPI" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">RPI</span>
-</h5>
-<p>(⇒)  If $\vect{v}\in\rng{T}$, then there is a vector $\vect{u}\in U$ such that $\lt{T}{\vect{u}}=\vect{v}$.  This qualifies $\vect{u}$ for membership in $\preimage{T}{\vect{v}}$, and thus the preimage of $\vect{v}$ is not empty.</p>
-
-<p>(⇐)  Suppose the preimage of $\vect{v}$ is not empty, so we can choose a vector $\vect{u}\in U$ such that $\lt{T}{\vect{u}}=\vect{v}$.  Then $\vect{v}\in\rng{T}$.</p>
-</div>

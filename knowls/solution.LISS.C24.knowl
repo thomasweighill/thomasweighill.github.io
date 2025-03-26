@@ -1,5 +1,0 @@
-<div class="solution" acro="LISS.C24">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">LISS.C24</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>One of the fundamental identities of trigonometry is $\sin^2(x) + \cos^2(x) = 1$.  Thus, we have a dependence relation $2(\sin^2{x}) + 2(\cos^2{x}) + (-1)(2) = 0$, and the set is linearly dependent.
-</div>

@@ -1,6 +1,0 @@
-<div class="definition" id="definition-SSLE" acro="SSLE" titletext="Solution of a System of Linear Equations">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">SSLE</span> <span class="titletext"> Solution of a System of Linear Equations</span>
-</h5>
-<p>A <em class="term">solution</em> of a system of linear equations in $n$ variables, $\scalarlist{x}{n}$ (such as the system given in <a class="knowl" acro="SLE" type="Definition" title="System of Linear Equations" knowl="./knowls/definition.SLE.knowl">Definition SLE</a>), is an ordered list of $n$ complex numbers, $\scalarlist{s}{n}$ such that if we substitute $s_1$ for $x_1$, $s_2$ for $x_2$, $s_3$ for $x_3$, …, $s_n$ for $x_n$,  then for every equation of the system the left side will equal the right side, i.e.  each equation is true simultaneously.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SSLE.html#definition-SSLE" class="context" title="Section SSLE">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-HMVEI" acro="HMVEI" titletext="Homogeneous, More Variables than Equations, Infinite solutions">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">HMVEI</span><span class="titletext"> Homogeneous, More Variables than Equations, Infinite solutions</span>
-</h5>
-<div class="statement"><p>Suppose that a homogeneous system of linear equations has $m$ equations and $n$ variables with $n&gt;m$.  Then the system has infinitely many solutions.</p></div>
-<div class="proof"><a knowl="./knowls/proof.HMVEI.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-HSE.html#theorem-HMVEI" class="context" title="Section HSE">(in context)</a></div>

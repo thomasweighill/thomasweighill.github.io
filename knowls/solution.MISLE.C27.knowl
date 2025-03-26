@@ -1,5 +1,0 @@
-<div class="solution" acro="MISLE.C27">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">MISLE.C27</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>The matrix $E$ has no inverse, though we do not yet have a theorem that allows us to reach this conclusion.  However, when row-reducing the matrix $\augmented{E}{I_5}$, the first 5 columns will not row-reduce to the $5\times 5$ identity matrix, so we are at a loss on how we might compute the inverse.  When requesting that your calculator compute $\inverse{E}$, it should give some indication that $E$ does not have an inverse.
-</div>

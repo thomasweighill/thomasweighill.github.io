@@ -1,8 +1,0 @@
-<div class="exercise" acro="PD.T33">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PD.T33</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Part of <a knowl="./knowls/exercise.B.T50.knowl">Exercise B.T50</a> is the half of the proof where we assume the matrix $A$ is nonsingular and prove that a set is a basis.  In <a knowl="./knowls/solution.B.T50.knowl">Solution B.T50</a> we proved directly that the set was both linearly independent and a spanning set.  Shorten this part of the proof by applying <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a>.  Be careful, there is one subtlety.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.PD.T33.knowl">Solution</a></p></div>
-</div>

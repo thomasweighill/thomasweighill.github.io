@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-NOILT" acro="NOILT" titletext="Nullity Of an Injective Linear Transformation">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">NOILT</span><span class="titletext"> Nullity Of an Injective Linear Transformation</span>
-</h5>
-<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then the nullity of $T$ is zero, $\nullity{T}=0$, if and only if $T$ is injective.</p></div>
-<div class="proof"><a knowl="./knowls/proof.NOILT.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#theorem-NOILT" class="context" title="Section IVLT">(in context)</a></div>

@@ -1,8 +1,0 @@
-<div class="exercise" acro="HSE.C20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">HSE.C20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p><a knowl="./knowls/archetype.K.knowl">Archetype K</a> and
-<a knowl="./knowls/archetype.L.knowl">Archetype L</a> are simply $5\times 5$ matrices (i.e. they are not systems of equations).  Compute the null space of each matrix.
-</p></div>
-</div>

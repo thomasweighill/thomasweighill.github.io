@@ -1,7 +1,0 @@
-<div class="property" id="property-MACN" acro="MACN" titletext="Multiplicative Associativity, Complex Numbers">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">MACN</span> <span class="titletext">Multiplicative Associativity, Complex Numbers</span>
-</h5>
-<p>
-For any $\alpha,\,\beta,\,\gamma\in\complexes$, $\alpha\left(\beta\gamma\right)=\left(\alpha\beta\right)\gamma$.</p>
-</div>

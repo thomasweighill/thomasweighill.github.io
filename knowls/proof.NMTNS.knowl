@@ -1,7 +1,0 @@
-<div class="proof" id="proof-NMTNS" acro="NMTNS" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">NMTNS</span>
-</h5>
-<p>The null space of a square <em>matrix</em>, $A$, is equal to the set of solutions to the homogeneous <em>system</em>, $\homosystem{A}$.  A <em>matrix</em> is nonsingular if and only if the set of solutions to the homogeneous <em>system</em>, $\linearsystem{A}{\zerovector}$, has only a trivial solution.  These two observations may be chained together to construct the two proofs necessary for each half of this theorem.</p>
-
-</div>

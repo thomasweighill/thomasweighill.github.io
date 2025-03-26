@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-DMFE" acro="DMFE" titletext="Diagonalizable Matrices have Full Eigenspaces">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">DMFE</span><span class="titletext"> Diagonalizable Matrices have Full Eigenspaces</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is a square matrix.  Then $A$ is diagonalizable if and only if $\geomult{A}{\lambda}=\algmult{A}{\lambda}$ for every eigenvalue $\lambda$ of $A$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.DMFE.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#theorem-DMFE" class="context" title="Section SD">(in context)</a></div>

@@ -1,6 +1,0 @@
-<div class="solution" acro="MISLE.C19">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">MISLE.C19</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>Answer: $\inverse{A} = \begin{bmatrix} 0 &amp; -1/2 &amp; 1/2\\ 1 &amp; -1/2 &amp; -1/2 \\ -2 &amp; 2 &amp; 1
-\end{bmatrix}$
-</div>

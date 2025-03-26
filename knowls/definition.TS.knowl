@@ -1,6 +1,0 @@
-<div class="definition" id="definition-TS" acro="TS" titletext="Trivial Subspaces">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">TS</span> <span class="titletext"> Trivial Subspaces</span>
-</h5>
-<p>Given the vector space $V$, the subspaces $V$ and $\set{\zerovector}$ are each called a <em class="term">trivial subspace</em>.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#definition-TS" class="context" title="Section S">(in context)</a></div>

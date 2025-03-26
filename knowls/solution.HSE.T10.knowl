@@ -1,7 +1,0 @@
-<div class="solution" acro="HSE.T10">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">HSE.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>This is a true statement.  A proof is:<br><br>
-(⇒)  Suppose we have a homogeneous system $\homosystem{A}$.  Then by substituting the scalar zero for each variable, we arrive at true statements for each equation.  So the zero vector is a solution.  This is the content of <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>.<br><br>
-(⇐)  Suppose now that we have a generic (i.e.  not necessarily homogeneous) system of equations, $\linearsystem{A}{\vect{b}}$ that has the zero vector as a solution.  Upon substituting this solution into the system, we discover that each component of $\vect{b}$ must also be zero.  So $\vect{b}=\zerovector$.
-</div>

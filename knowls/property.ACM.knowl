@@ -1,7 +1,0 @@
-<div class="property" id="property-ACM" acro="ACM" titletext="Additive Closure, Matrices">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">ACM</span> <span class="titletext">Additive Closure, Matrices</span>
-</h5>
-<p>
-If $A,\,B\in M_{mn}$, then $A+B\in M_{mn}$.</p>
-</div>

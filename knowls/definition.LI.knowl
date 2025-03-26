@@ -1,7 +1,0 @@
-<div class="definition" id="definition-LI" acro="LI" titletext="Linear Independence">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">LI</span> <span class="titletext"> Linear Independence</span>
-</h5>
-<p>Suppose that $V$ is a vector space.
-The set of vectors $S=\set{\vectorlist{u}{n}}$ from $V$ is <em class="term">linearly dependent</em> if there is a relation of linear dependence on $S$ that is not trivial.  In the case where the <em>only</em> relation of linear dependence on $S$ is the trivial one, then $S$ is a <em class="term">linearly independent</em> set of vectors.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LISS.html#definition-LI" class="context" title="Section LISS">(in context)</a></div>

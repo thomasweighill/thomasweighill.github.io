@@ -1,8 +1,0 @@
-<div class="exercise" acro="SS.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SS.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $S$ is a set of vectors from $\complex{m}$.  Prove that the zero vector, $\zerovector$, is an element of $\spn{S}$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.SS.T20.knowl">Solution</a></p></div>
-</div>

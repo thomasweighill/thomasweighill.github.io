@@ -1,9 +1,0 @@
-<div class="solution" acro="MM.C31">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">MM.C31</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>$A^2 = \begin{bmatrix}1 &amp; -2\\ 0 &amp; 1\end{bmatrix}$,
-$A^3 = \begin{bmatrix}1 &amp; -3\\ 0 &amp; 1\end{bmatrix}$,
-$A^4 = \begin{bmatrix}1 &amp; -4\\ 0 &amp; 1\end{bmatrix}$.
-From this pattern, we see that
-$A^n = \begin{bmatrix}1 &amp; -n\\ 0 &amp; 1\end{bmatrix}$.
-</div>

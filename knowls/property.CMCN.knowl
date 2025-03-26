@@ -1,7 +1,0 @@
-<div class="property" id="property-CMCN" acro="CMCN" titletext="Commutativity of Multiplication, Complex Numbers">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">CMCN</span> <span class="titletext">Commutativity of Multiplication, Complex Numbers</span>
-</h5>
-<p>
-For any $\alpha,\,\beta\in\complexes$, $\alpha\beta=\beta\alpha$.</p>
-</div>

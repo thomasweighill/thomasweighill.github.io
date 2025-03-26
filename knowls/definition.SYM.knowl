@@ -1,6 +1,0 @@
-<div class="definition" id="definition-SYM" acro="SYM" titletext="Symmetric Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">SYM</span> <span class="titletext"> Symmetric Matrix</span>
-</h5>
-<p>The matrix $A$ is <em class="term">symmetric</em> if $A=\transpose{A}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-SYM" class="context" title="Section MO">(in context)</a></div>

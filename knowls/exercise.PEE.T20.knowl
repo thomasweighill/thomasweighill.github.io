@@ -1,8 +1,0 @@
-<div class="exercise" acro="PEE.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PEE.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is a square matrix.  Prove that a single vector may not be an eigenvector of $A$ for two different eigenvalues.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.PEE.T20.knowl">Solution</a></p></div>
-</div>

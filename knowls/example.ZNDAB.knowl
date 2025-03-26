@@ -1,8 +1,0 @@
-<div class="example" id="example-ZNDAB" acro="ZNDAB" titletext="Zero and nonzero determinant, Archetypes A and B">
-<h5 class="example">
-<span class="type">Example</span> <span class="acro">ZNDAB</span> <span class="titletext">Zero and nonzero determinant, Archetypes A and B</span>
-</h5>
-<p>The coefficient matrix in <a knowl="./knowls/archetype.A.knowl">Archetype A</a> has a zero determinant (check this!) while the coefficient matrix <a knowl="./knowls/archetype.B.knowl">Archetype B</a> has a nonzero determinant (check this, too).  These matrices are singular and nonsingular, respectively.  This is exactly what <a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a> says, and continues our list of contrasts between these two archetypes.</p>
-<div class="context"><a href="section-PDM.html#example-ZNDAB" class="context" title="Section PDM">(in
-context)</a></div>
-</div>

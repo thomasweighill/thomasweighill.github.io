@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-EDELI" acro="EDELI" titletext="Eigenvectors with Distinct Eigenvalues are Linearly Independent">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EDELI</span><span class="titletext"> Eigenvectors with Distinct Eigenvalues are Linearly Independent</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $n\times n$ square matrix and $S=\set{\vectorlist{x}{p}}$ is a set of eigenvectors with eigenvalues $\scalarlist{\lambda}{p}$ such that $\lambda_i\neq\lambda_j$ whenever $i\neq j$.  Then $S$ is a linearly independent set.</p></div>
-<div class="proof"><a knowl="./knowls/proof.EDELI.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-EDELI" class="context" title="Section PEE">(in context)</a></div>

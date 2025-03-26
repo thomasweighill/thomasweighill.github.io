@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-CRMA" acro="CRMA" titletext="Conjugation Respects Matrix Addition">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">CRMA</span><span class="titletext"> Conjugation Respects Matrix Addition</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ and $B$ are $m\times n$ matrices.  Then $\conjugate{A+B}=\conjugate{A}+\conjugate{B}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.CRMA.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-CRMA" class="context" title="Section MO">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="proof" id="proof-VRILT" acro="VRILT" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">VRILT</span>
-</h5>
-<p>The function $\vectrepname{B}$ (<a class="knowl" acro="VR" type="Definition" title="Vector Representation" knowl="./knowls/definition.VR.knowl">Definition VR</a>) is a linear transformation (<a class="knowl" acro="VRLT" type="Theorem" title="Vector Representation is a Linear Transformation" knowl="./knowls/theorem.VRLT.knowl">Theorem VRLT</a>) that is injective (<a class="knowl" acro="VRI" type="Theorem" title="Vector Representation is Injective" knowl="./knowls/theorem.VRI.knowl">Theorem VRI</a>) and surjective (<a class="knowl" acro="VRS" type="Theorem" title="Vector Representation is Surjective" knowl="./knowls/theorem.VRS.knowl">Theorem VRS</a>) with domain $V$ and codomain $\complex{n}$.  By <a class="knowl" acro="ILTIS" type="Theorem" title="Invertible Linear Transformations are Injective and Surjective" knowl="./knowls/theorem.ILTIS.knowl">Theorem ILTIS</a> we then know that $\vectrepname{B}$ is an invertible linear transformation.</p>
-
-</div>

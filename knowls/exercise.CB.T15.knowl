@@ -1,7 +1,0 @@
-<div class="exercise" acro="CB.T15">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">CB.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $V$ is a vector space and $\ltdefn{T}{V}{V}$ is a linear transformation.  Prove that $T$ is injective if and only if $\lambda=0$ is not an eigenvalue of $T$.
-</p></div>
-</div>

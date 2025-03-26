@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-LTDB" acro="LTDB" titletext="Linear Transformation Defined on a Basis">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">LTDB</span><span class="titletext"> Linear Transformation Defined on a Basis</span>
-</h5>
-<div class="statement"><p>Suppose $U$ is a vector space with basis $B=\set{\vectorlist{u}{n}}$ and the vector space $V$ contains the vectors $\vectorlist{v}{n}$ (which may not be distinct).   Then there is a unique linear transformation, $\ltdefn{T}{U}{V}$, such that $\lt{T}{\vect{u}_i}=\vect{v}_i$, $1\leq i\leq n$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.LTDB.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-LT.html#theorem-LTDB" class="context" title="Section LT">(in context)</a></div>

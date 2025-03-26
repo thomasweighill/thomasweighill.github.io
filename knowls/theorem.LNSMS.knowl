@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-LNSMS" acro="LNSMS" titletext="Left Null Space of a Matrix is a Subspace">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">LNSMS</span><span class="titletext"> Left Null Space of a Matrix is a Subspace</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then $\lns{A}$ is a subspace of $\complex{m}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.LNSMS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#theorem-LNSMS" class="context" title="Section S">(in context)</a></div>

@@ -1,9 +1,0 @@
-<div class="theorem" id="theorem-PSSD" acro="PSSD" titletext="Proper Subspaces have Smaller Dimension">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">PSSD</span><span class="titletext"> Proper Subspaces have Smaller Dimension</span>
-</h5>
-<div class="statement"><p>
-Suppose that $U$ and $V$ are subspaces of the vector space $W$, such that $U\subsetneq V$.  Then $\dimension{U}&lt;\dimension{V}$.
-</p></div>
-<div class="proof"><a knowl="./knowls/proof.PSSD.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PD.html#theorem-PSSD" class="context" title="Section PD">(in context)</a></div>

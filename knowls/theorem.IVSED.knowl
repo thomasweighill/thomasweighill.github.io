@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-IVSED" acro="IVSED" titletext="Isomorphic Vector Spaces have Equal Dimension">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">IVSED</span><span class="titletext"> Isomorphic Vector Spaces have Equal Dimension</span>
-</h5>
-<div class="statement"><p>Suppose $U$ and $V$ are isomorphic vector spaces.  Then $\dimension{U}=\dimension{V}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.IVSED.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#theorem-IVSED" class="context" title="Section IVLT">(in context)</a></div>

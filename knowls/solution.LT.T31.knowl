@@ -1,6 +1,0 @@
-<div class="solution" acro="LT.T31">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">LT.T31</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-Choose  $\vect{x}\in U$, then $\lt{T}{\vect{x}}\in V$ and we can form $\preimage{T}{\lt{T}{\vect{x}}}$.  Almost trivially, $\vect{x}\in\preimage{T}{\lt{T}{\vect{x}}}$, so every vector in $U$ is in <em>some</em> preimage.  For (b), suppose that $\preimage{T}{\vect{v}_1}$ and $\preimage{T}{\vect{v}_2}$ are two <em>different</em> preimages, and the vector $\vect{u}\in U$ is an element of both.  Then $\lt{T}{\vect{u}}=\vect{v}_1$ and $\lt{T}{\vect{u}}=\vect{v}_2$.  But because $T$ is a function, we conclude that $\vect{v}_1=\vect{v}_2$.  It then follows that $\preimage{T}{\vect{v}_1}=\preimage{T}{\vect{v}_2}$, contrary to our assumption that they were different.  So there cannot be a common element $\vect{u}$.
-</div>

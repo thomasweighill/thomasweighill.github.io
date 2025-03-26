@@ -1,7 +1,0 @@
-<div class="exercise" acro="NM.T12">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">NM.T12</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Using (<a class="knowl" acro="RREF" type="Definition" title="Reduced Row-Echelon Form" knowl="./knowls/definition.RREF.knowl">Definition RREF</a>) and  (<a class="knowl" acro="IM" type="Definition" title="Identity Matrix" knowl="./knowls/definition.IM.knowl">Definition IM</a>) carefully, give a proof of the following equivalence:  $A$ is a square matrix in reduced row-echelon form where every column is a pivot column if and only if $A$ is the identity matrix.
-</p></div>
-</div>

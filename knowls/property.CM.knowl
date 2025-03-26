@@ -1,7 +1,0 @@
-<div class="property" id="property-CM" acro="CM" titletext="Commutativity, Matrices">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">CM</span> <span class="titletext">Commutativity, Matrices</span>
-</h5>
-<p>
-If $A,\,B\in M_{mn}$, then $A+B=B+A$.</p>
-</div>

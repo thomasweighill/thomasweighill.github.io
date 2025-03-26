@@ -1,8 +1,0 @@
-<div class="example" id="example-CVSR" acro="CVSR" titletext="Crazy vector space revealed">
-<h5 class="example">
-<span class="type">Example</span> <span class="acro">CVSR</span> <span class="titletext">Crazy vector space revealed</span>
-</h5>
-<p>The crazy vector space, $C$ of <a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>, has dimension 2 by <a class="knowl" acro="DC" type="Example" title="Dimension of the crazy vector space" knowl="./knowls/example.DC.knowl">Example DC</a>.  By <a class="knowl" acro="CFDVS" type="Theorem" title="Characterization of Finite Dimensional Vector Spaces" knowl="./knowls/theorem.CFDVS.knowl">Theorem CFDVS</a>, $C$ is isomorphic to $\complex{2}$.  Hmmmm.  Not really so crazy after all?</p>
-<div class="context"><a href="section-VR.html#example-CVSR" class="context" title="Section VR">(in
-context)</a></div>
-</div>

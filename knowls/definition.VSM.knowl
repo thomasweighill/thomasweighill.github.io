@@ -1,6 +1,0 @@
-<div class="definition" id="definition-VSM" acro="VSM" titletext="Vector Space of $m\times n$ Matrices">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">VSM</span> <span class="titletext"> Vector Space of $m\times n$ Matrices</span>
-</h5>
-<p>The vector space $M_{mn}$ is the set of all $m\times n$ matrices with entries from the set of complex numbers.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-VSM" class="context" title="Section MO">(in context)</a></div>

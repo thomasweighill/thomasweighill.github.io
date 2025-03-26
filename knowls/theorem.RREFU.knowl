@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-RREFU" acro="RREFU" titletext="Reduced Row-Echelon Form is Unique">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">RREFU</span><span class="titletext"> Reduced Row-Echelon Form is Unique</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix and that $B$ and $C$ are $m\times n$ matrices that are row-equivalent to $A$ and in reduced row-echelon form.  Then $B=C$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.RREFU.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-RREF.html#theorem-RREFU" class="context" title="Section RREF">(in context)</a></div>

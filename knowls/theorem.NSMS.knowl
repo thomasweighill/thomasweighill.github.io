@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-NSMS" acro="NSMS" titletext="Null Space of a Matrix is a Subspace">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">NSMS</span><span class="titletext"> Null Space of a Matrix is a Subspace</span>
-</h5>
-<div class="statement"><p>Suppose that $A$ is an $m\times n$ matrix.  Then the null space of $A$, $\nsp{A}$, is a subspace of $\complex{n}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.NSMS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-S.html#theorem-NSMS" class="context" title="Section S">(in context)</a></div>

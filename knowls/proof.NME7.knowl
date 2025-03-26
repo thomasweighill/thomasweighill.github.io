@@ -1,7 +1,0 @@
-<div class="proof" id="proof-NME7" acro="NME7" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">NME7</span>
-</h5>
-<p><a class="knowl" acro="SMZD" type="Theorem" title="Singular Matrices have Zero Determinants" knowl="./knowls/theorem.SMZD.knowl">Theorem SMZD</a> says $A$ is singular if and only if $\detname{A}=0$.  If we negate each of these statements, we arrive at two contrapositives that we can combine as the equivalence, $A$ is nonsingular if and only if $\detname{A}\neq 0$.  This allows us to add a new statement to the list found in <a class="knowl" acro="NME6" type="Theorem" title="Nonsingular Matrix Equivalences, Round 6" knowl="./knowls/theorem.NME6.knowl">Theorem NME6</a>.</p>
-
-</div>

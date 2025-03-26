@@ -1,6 +1,0 @@
-<div class="definition" id="definition-SQM" acro="SQM" titletext="Square Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">SQM</span> <span class="titletext"> Square Matrix</span>
-</h5>
-<p>A matrix with $m$ rows and $n$ columns is <em class="term">square</em> if $m=n$.  In this case, we say the matrix has <em class="term">size</em> $n$.  To emphasize the situation when a matrix is not square, we will call it <em class="term">rectangular</em>.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-NM.html#definition-SQM" class="context" title="Section NM">(in context)</a></div>

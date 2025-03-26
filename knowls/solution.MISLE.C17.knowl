@@ -1,5 +1,0 @@
-<div class="solution" acro="MISLE.C17">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">MISLE.C17</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>The procedure we have for finding a matrix inverse fails for this matrix $A$ since $A$ does not row-reduce to $I_3$.  We suspect in this case that $A$ is not invertible, although we do not yet know that concretely.  (Stay tuned for upcoming revelations in <a href="section-MINM.html" title="Matrix Inverses and Nonsingular Matrices">Section MINM</a>!)
-</div>

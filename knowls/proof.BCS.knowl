@@ -1,7 +1,0 @@
-<div class="proof" id="proof-BCS" acro="BCS" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">BCS</span>
-</h5>
-<p><a class="knowl" acro="CSM" type="Definition" title="Column Space of a Matrix" knowl="./knowls/definition.CSM.knowl">Definition CSM</a> describes the column space as the span of the set of columns of $A$.  <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> tells us that we can reduce the set of vectors used in a span.  If we apply <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> to $\csp{A}$, we would collect the columns of $A$ into a matrix (which would just be $A$ again) and bring the matrix to reduced row-echelon form, which is the matrix $B$ in the statement of the theorem.  In this case, the conclusions of <a class="knowl" acro="BS" type="Theorem" title="Basis of a Span" knowl="./knowls/theorem.BS.knowl">Theorem BS</a> applied to $A$,  $B$ and $\csp{A}$ are exactly the conclusions we desire.</p>
-
-</div>

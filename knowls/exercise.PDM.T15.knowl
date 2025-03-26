@@ -1,7 +1,0 @@
-<div class="exercise" acro="PDM.T15">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PDM.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Use <a class="knowl" acro="DRCM" type="Theorem" title="Determinant for Row or Column Multiples" knowl="./knowls/theorem.DRCM.knowl">Theorem DRCM</a> to prove <a class="knowl" acro="DZRC" type="Theorem" title="Determinant with Zero Row or Column" knowl="./knowls/theorem.DZRC.knowl">Theorem DZRC</a> as a corollary.  (See <a class="knowl" acro="LC" type="Proof Technique" title="Lemmas and Corollaries" knowl="./knowls/technique.LC.knowl">Proof Technique LC</a>.)
-</p></div>
-</div>

@@ -1,5 +1,0 @@
-<div class="solution" acro="VS.M14">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">VS.M14</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>Since addition is unchanged, we only need to check the axioms involving scalar multiplication.  The proposed scalar multiplication clearly fails <a class="knowl" acro="O" type="Property" title="One" knowl="./knowls/property.O.knowl">Property O</a> :  $1A = \zeromatrix_{2,2}\ne A$.  Thus, the proposed set is not a vector space.
-</div>

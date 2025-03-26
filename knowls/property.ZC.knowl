@@ -1,7 +1,0 @@
-<div class="property" id="property-ZC" acro="ZC" titletext="Zero Vector, Column Vectors">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">ZC</span> <span class="titletext">Zero Vector, Column Vectors</span>
-</h5>
-<p>
-There is a vector, $\zerovector$, called the zero vector, such that  $\vect{u}+\zerovector=\vect{u}$  for all $\vect{u}\in\complex{m}$.</p>
-</div>

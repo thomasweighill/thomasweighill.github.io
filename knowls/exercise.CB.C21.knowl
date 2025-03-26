@@ -1,8 +1,0 @@
-<div class="exercise" acro="CB.C21">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">CB.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Perform a check on <a class="knowl" acro="MRCM" type="Example" title="Matrix representations and change-of-basis matrices" knowl="./knowls/example.MRCM.knowl">Example MRCM</a> by computing $\matrixrep{Q}{B}{D}$ directly.  In other words, apply <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a> rather than <a class="knowl" acro="MRCB" type="Theorem" title="Matrix Representation and Change of Basis" knowl="./knowls/theorem.MRCB.knowl">Theorem MRCB</a>.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.CB.C21.knowl">Solution</a></p></div>
-</div>

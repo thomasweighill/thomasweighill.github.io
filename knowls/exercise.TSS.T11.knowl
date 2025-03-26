@@ -1,8 +1,0 @@
-<div class="exercise" acro="TSS.T11">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">TSS.T11</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose $A$ is the augmented matrix of a system of linear equations in $n$ variables.  and that $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ pivot columns.  If $r=n+1$, prove that the system of equations is inconsistent.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.TSS.T11.knowl">Solution</a></p></div>
-</div>

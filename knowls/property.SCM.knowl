@@ -1,7 +1,0 @@
-<div class="property" id="property-SCM" acro="SCM" titletext="Scalar Closure, Matrices">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">SCM</span> <span class="titletext">Scalar Closure, Matrices</span>
-</h5>
-<p>
-If $\alpha\in\complex{\null}$ and $A\in M_{mn}$, then $\alpha A\in M_{mn}$.</p>
-</div>

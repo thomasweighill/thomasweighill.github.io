@@ -1,7 +1,0 @@
-<div class="exercise" acro="PDM.T20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PDM.T20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is a square matrix of size $n$ and $\alpha\in\complex{\null}$ is a scalar.  Prove that $\detname{\alpha A}=\alpha^n\detname{A}$.
-</p></div>
-</div>

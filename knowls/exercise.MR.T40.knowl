@@ -1,7 +1,0 @@
-<div class="exercise" acro="MR.T40">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MR.T40</span> <span class="contributor"><a knowl="./knowls/contributor.chilijohnson.knowl">Chili Johnson</a></span>
-</h5>
-<div class="problem"><p><a class="knowl" acro="VSLT" type="Theorem" title="Vector Space of Linear Transformations" knowl="./knowls/theorem.VSLT.knowl">Theorem VSLT</a> defines the vector space $\vslt{U}{V}$ containing all linear transformations with domain $U$ and codomain $V$.  Suppose $\dimension{U}=n$ and $\dimension{V}=m$.  Prove that $\vslt{U}{V}$ is isomorphic to $M_{mn}$, the vector space of all $m\times n$ matrices (<a class="knowl" acro="VSM" type="Example" title="The vector space of matrices, $M_{mn}$" knowl="./knowls/example.VSM.knowl">Example VSM</a>).  (Hint: we could have suggested this exercise in <a href="chapter-LT.html" title="Linear Transformations">Chapter LT</a>, but have postponed it to this section.  Why?)
-</p></div>
-</div>

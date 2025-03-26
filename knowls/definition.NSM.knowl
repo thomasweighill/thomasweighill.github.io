@@ -1,6 +1,0 @@
-<div class="definition" id="definition-NSM" acro="NSM" titletext="Null Space of a Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">NSM</span> <span class="titletext"> Null Space of a Matrix</span>
-</h5>
-<p>The <em class="term">null space</em> of a matrix $A$, denoted $\nsp{A}$, is the set of all the vectors that are solutions to the homogeneous system $\homosystem{A}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-HSE.html#definition-NSM" class="context" title="Section HSE">(in context)</a></div>

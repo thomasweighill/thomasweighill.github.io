@@ -1,5 +1,0 @@
-<div class="solution" acro="TSS.M52">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">TSS.M52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>With 6 rows in the augmented matrix, the row-reduced version will have $r\leq 6$.  Since the system is consistent, apply <a class="knowl" acro="CSRN" type="Theorem" title="Consistent Systems, $r$ and $n$" knowl="./knowls/theorem.CSRN.knowl">Theorem CSRN</a> to see that $n-r\geq 2$ implies infinitely many solutions.
-</div>

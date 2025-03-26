@@ -1,7 +1,0 @@
-<div class="proof" id="proof-NME6" acro="NME6" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">NME6</span>
-</h5>
-<p>Building on <a class="knowl" acro="NME5" type="Theorem" title="Nonsingular Matrix Equivalences, Round 5" knowl="./knowls/theorem.NME5.knowl">Theorem NME5</a> we can add two of the statements from <a class="knowl" acro="RNNM" type="Theorem" title="Rank and Nullity of a Nonsingular Matrix" knowl="./knowls/theorem.RNNM.knowl">Theorem RNNM</a>.</p>
-
-</div>

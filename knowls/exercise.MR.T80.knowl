@@ -1,8 +1,0 @@
-<div class="exercise" acro="MR.T80">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MR.T80</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $\ltdefn{T}{U}{V}$ and $\ltdefn{S}{V}{W}$ are linear transformations, and that $B$, $C$ and $D$ are bases for $U$, $V$, and $W$.  Using only <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a> define matrix representations for $T$ and $S$.  Using these two definitions, and <a class="knowl" acro="MR" type="Definition" title="Matrix Representation" knowl="./knowls/definition.MR.knowl">Definition MR</a>, derive a matrix representation for the composition $\compose{S}{T}$ in terms of the entries of the matrices $\matrixrep{T}{B}{C}$ and $\matrixrep{S}{C}{D}$.  Explain how you would use this result to <em>motivate a definition</em> for matrix multiplication that is strikingly similar to <a class="knowl" acro="EMP" type="Theorem" title="Entries of Matrix Products" knowl="./knowls/theorem.EMP.knowl">Theorem EMP</a>.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.MR.T80.knowl">Solution</a></p></div>
-</div>

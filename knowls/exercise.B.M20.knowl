@@ -1,8 +1,0 @@
-<div class="exercise" acro="B.M20">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">B.M20</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In <a class="knowl" acro="BM" type="Example" title="A basis for the vector space of matrices" knowl="./knowls/example.BM.knowl">Example BM</a> provide the verifications (linear independence and spanning) to show that $B$ is a basis of $M_{mn}$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.B.M20.knowl">Solution</a></p></div>
-</div>

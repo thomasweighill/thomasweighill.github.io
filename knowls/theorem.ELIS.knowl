@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-ELIS" acro="ELIS" titletext="Extending Linearly Independent Sets">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">ELIS</span><span class="titletext"> Extending Linearly Independent Sets</span>
-</h5>
-<div class="statement"><p>Suppose $V$ is a vector space and $S$ is a linearly independent set of vectors from $V$.  Suppose $\vect{w}$ is a vector such that $\vect{w}\not\in\spn{S}$.  Then the set $S^\prime=S\cup\set{\vect{w}}$ is linearly independent.</p></div>
-<div class="proof"><a knowl="./knowls/proof.ELIS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PD.html#theorem-ELIS" class="context" title="Section PD">(in context)</a></div>

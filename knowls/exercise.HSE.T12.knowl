@@ -1,7 +1,0 @@
-<div class="exercise" acro="HSE.T12">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">HSE.T12</span> <span class="contributor"><a knowl="./knowls/contributor.ivankessler.knowl">Ivan Kessler</a></span>
-</h5>
-<div class="problem"><p>Give an alternate proof of <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a> that uses <a class="knowl" acro="RCLS" type="Theorem" title="Recognizing Consistency of a Linear System" knowl="./knowls/theorem.RCLS.knowl">Theorem RCLS</a>.
-</p></div>
-</div>

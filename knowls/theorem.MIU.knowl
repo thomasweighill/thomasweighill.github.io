@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-MIU" acro="MIU" titletext="Matrix Inverse is Unique">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">MIU</span><span class="titletext"> Matrix Inverse is Unique</span>
-</h5>
-<div class="statement"><p>Suppose the square matrix $A$ has an inverse.  Then $\inverse{A}$ is unique.</p></div>
-<div class="proof"><a knowl="./knowls/proof.MIU.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MISLE.html#theorem-MIU" class="context" title="Section MISLE">(in context)</a></div>

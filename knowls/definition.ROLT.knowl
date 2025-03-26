@@ -1,9 +1,0 @@
-<div class="definition" id="definition-ROLT" acro="ROLT" titletext="Rank Of a Linear Transformation">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">ROLT</span> <span class="titletext"> Rank Of a Linear Transformation</span>
-</h5>
-<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then the <em class="term">rank</em> of $T$, $\rank{T}$, is the dimension of the range of $T$,
-\begin{equation*}
-\rank{T}=\dimension{\rng{T}}
-\end{equation*}</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#definition-ROLT" class="context" title="Section IVLT">(in context)</a></div>

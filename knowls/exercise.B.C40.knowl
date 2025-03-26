@@ -1,8 +1,0 @@
-<div class="exercise" acro="B.C40">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">B.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>From <a class="knowl" acro="RSB" type="Example" title="Row space basis" knowl="./knowls/example.RSB.knowl">Example RSB</a>, form an arbitrary (and nontrivial) linear combination of the four vectors in the original spanning set for $W$.  So the result of this computation is of course an element of $W$.  As such, this vector should be a linear combination of the basis vectors in $B$.  Find the (unique) scalars that provide this linear combination.  Repeat with another linear combination of the original four vectors.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.B.C40.knowl">Solution</a></p></div>
-</div>

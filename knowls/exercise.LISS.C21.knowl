@@ -1,9 +1,0 @@
-<div class="exercise" acro="LISS.C21">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LISS.C21</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In the crazy vector space $C$ (<a class="knowl" acro="CVS" type="Example" title="The crazy vector space " knowl="./knowls/example.CVS.knowl">Example CVS</a>), is the set
-$S=\set{(0,\,2),\ (2,\,8)}$ linearly independent?
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.LISS.C21.knowl">Solution</a></p></div>
-</div>

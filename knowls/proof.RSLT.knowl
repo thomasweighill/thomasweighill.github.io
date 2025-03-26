@@ -1,9 +1,0 @@
-<div class="proof" id="proof-RSLT" acro="RSLT" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">RSLT</span>
-</h5>
-<p>(⇒) By <a class="knowl" acro="RLT" type="Definition" title="Range of a Linear Transformation" knowl="./knowls/definition.RLT.knowl">Definition RLT</a>, we know that $\rng{T}\subseteq V$.  To establish the reverse inclusion, assume $\vect{v}\in V$.  Then since $T$ is surjective (<a class="knowl" acro="SLT" type="Definition" title="Surjective Linear Transformation" knowl="./knowls/definition.SLT.knowl">Definition SLT</a>), there exists a vector $\vect{u}\in U$ so that $\lt{T}{\vect{u}}=\vect{v}$.  However, the existence of $\vect{u}$ gains $\vect{v}$ membership in $\rng{T}$, so $V\subseteq\rng{T}$.  Thus, $\rng{T}=V$.</p>
-
-<p>(⇐)  To establish that $T$ is surjective, choose $\vect{v}\in V$.  Since we are assuming that $\rng{T}=V$, $\vect{v}\in\rng{T}$.  This says there is a vector $\vect{u}\in U$ so that $\lt{T}{\vect{u}}=\vect{v}$, i.e.  $T$ is surjective.</p>
-
-</div>

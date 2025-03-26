@@ -1,6 +1,0 @@
-<div class="definition" id="definition-IVS" acro="IVS" titletext="Isomorphic Vector Spaces">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">IVS</span> <span class="titletext"> Isomorphic Vector Spaces</span>
-</h5>
-<p>Two vector spaces $U$ and $V$ are <em class="term">isomorphic</em> if there exists an invertible linear transformation $T$ with domain $U$ and codomain $V$, $\ltdefn{T}{U}{V}$.  In this case, we write $U\isomorphic V$, and the linear transformation $T$ is known as an <em class="term">isomorphism</em> between $U$ and $V$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#definition-IVS" class="context" title="Section IVLT">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-SMZE" acro="SMZE" titletext="Singular Matrices have Zero Eigenvalues">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">SMZE</span><span class="titletext"> Singular Matrices have Zero Eigenvalues</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is a square matrix.  Then $A$ is singular if and only if $\lambda=0$ is an eigenvalue of $A$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.SMZE.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-SMZE" class="context" title="Section PEE">(in context)</a></div>

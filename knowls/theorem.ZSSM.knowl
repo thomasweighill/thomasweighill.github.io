@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-ZSSM" acro="ZSSM" titletext="Zero Scalar in Scalar Multiplication">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">ZSSM</span><span class="titletext"> Zero Scalar in Scalar Multiplication</span>
-</h5>
-<div class="statement"><p>Suppose that $V$ is a vector space and $\vect{u}\in V$.  Then $0\vect{u}=\zerovector$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.ZSSM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-VS.html#theorem-ZSSM" class="context" title="Section VS">(in context)</a></div>

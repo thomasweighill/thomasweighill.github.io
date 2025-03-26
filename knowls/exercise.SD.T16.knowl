@@ -1,8 +1,0 @@
-<div class="exercise" acro="SD.T16">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SD.T16</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ and $B$ are similar matrices, with $A$ nonsingular.  Prove that $B$ is nonsingular, and that $\inverse{A}$ is similar to $\inverse{B}$.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.SD.T16.knowl">Solution</a></p></div>
-</div>

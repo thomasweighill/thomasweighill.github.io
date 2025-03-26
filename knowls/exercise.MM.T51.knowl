@@ -1,8 +1,0 @@
-<div class="exercise" acro="MM.T51">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MM.T51</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Give a new proof of <a class="knowl" acro="PSPHS" type="Theorem" title="Particular Solution Plus Homogeneous Solutions" knowl="./knowls/theorem.PSPHS.knowl">Theorem PSPHS</a> replacing applications of <a class="knowl" acro="SLSLC" type="Theorem" title="Solutions to Linear Systems are Linear Combinations" knowl="./knowls/theorem.SLSLC.knowl">Theorem SLSLC</a> with matrix-vector products (<a class="knowl" acro="SLEMM" type="Theorem" title="Systems of Linear Equations as Matrix Multiplication" knowl="./knowls/theorem.SLEMM.knowl">Theorem SLEMM</a>).
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.MM.T51.knowl">Solution</a></p></div>
-</div>

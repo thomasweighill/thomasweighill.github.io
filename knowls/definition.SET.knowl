@@ -1,6 +1,0 @@
-<div class="definition" id="definition-SET" acro="SET" titletext="Set">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">SET</span> <span class="titletext"> Set</span>
-</h5>
-<p>A <em class="term">set</em> is an unordered collection of objects.  If $S$ is a set and $x$ is an object that is in the set $S$, we write $x\in S$.  If $x$ is not in $S$, then we write $x\not\in S$.  We refer to the objects in a set as its <em class="term">elements</em>.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SET.html#definition-SET" class="context" title="Section SET">(in context)</a></div>

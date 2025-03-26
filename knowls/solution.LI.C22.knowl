@@ -1,5 +1,0 @@
-<div class="solution" acro="LI.C22">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">LI.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>Five vectors from $\complex{3}$.  <a class="knowl" acro="MVSLD" type="Theorem" title="More Vectors than Size implies Linear Dependence" knowl="./knowls/theorem.MVSLD.knowl">Theorem MVSLD</a> says the set is linearly dependent.  Boom.
-</div>

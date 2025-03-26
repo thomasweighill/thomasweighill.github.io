@@ -1,7 +1,0 @@
-<div class="property" id="property-AI" acro="AI" titletext="Additive Inverses">
-<h5 class="property">
-<span class="type">Property</span> <span class="acro">AI</span> <span class="titletext">Additive Inverses</span>
-</h5>
-<p>
-If $\vect{u}\in V$, then there exists a vector $\vect{-u}\in V$ so that $\vect{u}+ (\vect{-u})=\zerovector$.</p>
-</div>

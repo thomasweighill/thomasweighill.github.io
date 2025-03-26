@@ -1,7 +1,0 @@
-<div class="exercise" acro="PD.T15">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PD.T15</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $A$ is an $m\times n$ matrix and let $\text{min}(m,\,n)$ denote the minimum of $m$ and $n$.  Prove that $\rank{A}\leq \text{min}(m,\,n)$.  (If $m$ and $n$ are two numbers, then $\text{min}(m,\,n)$ stands for the number that is the smaller of the two.  For example $\text{min}(4,\,6)=4$.)
-</p></div>
-</div>

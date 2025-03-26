@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-FVCS" acro="FVCS" titletext="Free Variables for Consistent Systems">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">FVCS</span><span class="titletext"> Free Variables for Consistent Systems</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is the augmented matrix of a <em>consistent</em> system of linear equations with $n$ variables.  Suppose also that $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ rows that are not completely zeros.  Then the solution set can be described with $n-r$ free variables.</p></div>
-<div class="proof"><a knowl="./knowls/proof.FVCS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-TSS.html#theorem-FVCS" class="context" title="Section TSS">(in context)</a></div>

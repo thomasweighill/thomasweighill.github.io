@@ -1,9 +1,0 @@
-<div class="theorem" id="theorem-DMST" acro="DMST" titletext="Determinant of Matrices of Size Two">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">DMST</span><span class="titletext"> Determinant of Matrices of Size Two</span>
-</h5>
-<div class="statement"><p>Suppose that
-$A=\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}$.
-Then $\detname{A}=ad-bc$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.DMST.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-DM.html#theorem-DMST" class="context" title="Section DM">(in context)</a></div>

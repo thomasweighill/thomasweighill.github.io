@@ -1,7 +1,0 @@
-<div class="exercise" acro="VO.T18">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">VO.T18</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Prove <a class="knowl" acro="DVAC" type="Property" title="Distributivity across Vector Addition, Column Vectors" knowl="./knowls/property.DVAC.knowl">Property DVAC</a> of <a class="knowl" acro="VSPCV" type="Theorem" title="Vector Space Properties of Column Vectors" knowl="./knowls/theorem.VSPCV.knowl">Theorem VSPCV</a>.    Write your proof in the style of the proof of <a class="knowl" acro="DSAC" type="Property" title="Distributivity across Scalar Addition, Column Vectors" knowl="./knowls/property.DSAC.knowl">Property DSAC</a> given in this section.
-</p></div>
-</div>

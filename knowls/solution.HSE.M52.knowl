@@ -1,5 +1,0 @@
-<div class="solution" acro="HSE.M52">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">HSE.M52</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>By <a class="knowl" acro="HSC" type="Theorem" title="Homogeneous Systems are Consistent" knowl="./knowls/theorem.HSC.knowl">Theorem HSC</a>, we know the system is consistent because the zero vector is always a solution of a homogeneous system.  There is no more that we can say, since both a unique solution and infinitely many solutions are possibilities.
-</div>

@@ -1,8 +1,0 @@
-<div class="exercise" acro="EE.C25">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">EE.C25</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>
-<div class="problem"><p>Find the eigenvalues, eigenspaces, algebraic and geometric multiplicities for the $3\times 3$ identity matrix $I_3$.  Do your results make sense?
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.EE.C25.knowl">Solution</a></p></div>
-</div>

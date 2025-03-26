@@ -1,9 +1,0 @@
-<div class="definition" id="definition-NOLT" acro="NOLT" titletext="Nullity Of a Linear Transformation">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">NOLT</span> <span class="titletext"> Nullity Of a Linear Transformation</span>
-</h5>
-<p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then the <em class="term">nullity</em> of $T$, $\nullity{T}$, is the dimension of the kernel of $T$,
-\begin{equation*}
-\nullity{T}=\dimension{\krn{T}}
-\end{equation*}</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#definition-NOLT" class="context" title="Section IVLT">(in context)</a></div>

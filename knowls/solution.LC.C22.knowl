@@ -1,5 +1,0 @@
-<div class="solution" acro="LC.C22">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">LC.C22</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>Solutions for <a knowl="./knowls/archetype.D.knowl">Archetype D</a> and <a knowl="./knowls/archetype.I.knowl">Archetype I</a> are described carefully in <a class="knowl" acro="VFSAD" type="Example" title="Vector form of solutions for Archetype D" knowl="./knowls/example.VFSAD.knowl">Example VFSAD</a> and <a class="knowl" acro="VFSAI" type="Example" title="Vector form of solutions for Archetype I" knowl="./knowls/example.VFSAI.knowl">Example VFSAI</a>.  The technique described in these examples is probably more useful than carefully deciphering the notation of <a class="knowl" acro="VFSLS" type="Theorem" title="Vector Form of Solutions to Linear Systems" knowl="./knowls/theorem.VFSLS.knowl">Theorem VFSLS</a>.  The solution for each archetype is contained in its description.  So now you can check-off the box for that item.
-</div>

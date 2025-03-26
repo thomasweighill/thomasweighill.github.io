@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-EER" acro="EER" titletext="Eigenvalues, Eigenvectors, Representations">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EER</span><span class="titletext"> Eigenvalues, Eigenvectors, Representations</span>
-</h5>
-<div class="statement"><p>Suppose that $\ltdefn{T}{V}{V}$ is a linear transformation and $B$ is a basis of $V$.  Then $\vect{v}\in V$ is an eigenvector of $T$ for the eigenvalue $\lambda$ if and only if $\vectrep{B}{\vect{v}}$ is an eigenvector of $\matrixrep{T}{B}{B}$ for the eigenvalue $\lambda$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.EER.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CB.html#theorem-EER" class="context" title="Section CB">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-CRMSM" acro="CRMSM" titletext="Conjugation Respects Matrix Scalar Multiplication">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">CRMSM</span><span class="titletext"> Conjugation Respects Matrix Scalar Multiplication</span>
-</h5>
-<div class="statement"><p>Suppose that $\alpha\in\complex{\null}$ and $A$ is an $m\times n$ matrix.  Then $\conjugate{\alpha A}=\conjugate{\alpha}\conjugate{A}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.CRMSM.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#theorem-CRMSM" class="context" title="Section MO">(in context)</a></div>

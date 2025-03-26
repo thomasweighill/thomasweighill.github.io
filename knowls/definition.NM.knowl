@@ -1,6 +1,0 @@
-<div class="definition" id="definition-NM" acro="NM" titletext="Nonsingular Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">NM</span> <span class="titletext"> Nonsingular Matrix</span>
-</h5>
-<p>Suppose $A$ is a square matrix.  Suppose further that the solution set to the homogeneous linear system of equations $\linearsystem{A}{\zerovector}$ is $\set{\zerovector}$, in other words, the system has <em>only</em> the trivial solution.  Then we say that $A$ is a <em class="term">nonsingular</em> matrix.  Otherwise we say $A$ is a <em class="term">singular</em> matrix.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-NM.html#definition-NM" class="context" title="Section NM">(in context)</a></div>

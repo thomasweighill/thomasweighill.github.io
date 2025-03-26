@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-EMS" acro="EMS" titletext="Eigenspace for a Matrix is a Subspace">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EMS</span><span class="titletext"> Eigenspace for a Matrix is a Subspace</span>
-</h5>
-<div class="statement"><p>Suppose  $A$ is a square matrix of size $n$ and $\lambda$ is an eigenvalue of $A$.  Then the eigenspace $\eigenspace{A}{\lambda}$ is a subspace of the vector space $\complex{n}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.EMS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#theorem-EMS" class="context" title="Section EE">(in context)</a></div>

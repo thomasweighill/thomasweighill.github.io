@@ -1,6 +1,0 @@
-<div class="definition" id="definition-ME" acro="ME" titletext="Matrix Equality">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">ME</span> <span class="titletext"> Matrix Equality</span>
-</h5>
-<p>The $m\times n$ matrices $A$ and $B$ are <em class="term">equal</em>, written $A=B$ provided $\matrixentry{A}{ij}=\matrixentry{B}{ij}$ for all $1\leq i\leq m$, $1\leq j\leq n$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-ME" class="context" title="Section MO">(in context)</a></div>

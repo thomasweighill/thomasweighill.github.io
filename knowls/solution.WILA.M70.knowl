@@ -1,5 +1,0 @@
-<div class="solution" acro="WILA.M70">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">WILA.M70</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>If the price of standard mix is set at \$5.292, then the profit function has a zero coefficient on the variable quantity $f$.  So, we can set $f$ to be any integer quantity in $\set{825,\,826,\,\ldots,\,960}$.  All but the extreme values ($f=825$, $f=960$) will result in production levels where some of every mix is manufactured.  No matter what value of $f$ is chosen, the resulting profit will be the same, at \$2,664.60.
-</div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-SS" acro="SS" titletext="Socks and Shoes">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">SS</span><span class="titletext"> Socks and Shoes</span>
-</h5>
-<div class="statement"><p>Suppose $A$ and $B$ are invertible matrices of size $n$.  Then $AB$ is an invertible matrix and $\inverse{(AB)}=\inverse{B}\inverse{A}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.SS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MISLE.html#theorem-SS" class="context" title="Section MISLE">(in context)</a></div>

@@ -1,6 +1,0 @@
-<div class="definition" id="definition-EM" acro="EM" titletext="Eigenspace of a Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">EM</span> <span class="titletext"> Eigenspace of a Matrix</span>
-</h5>
-<p>Suppose that $A$ is a square matrix and $\lambda$ is an eigenvalue of $A$.  Then the <em class="term">eigenspace</em> of $A$ for $\lambda$, $\eigenspace{A}{\lambda}$, is the set of all the eigenvectors of $A$ for $\lambda$, together with the inclusion of the zero vector.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-EE.html#definition-EM" class="context" title="Section EE">(in context)</a></div>

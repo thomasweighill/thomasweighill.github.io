@@ -1,5 +1,0 @@
-<div class="solution" acro="SLT.C30">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">SLT.C30</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>If we transform the basis of $P_4$, then <a class="knowl" acro="SSRLT" type="Theorem" title="Spanning Set for Range of a Linear Transformation" knowl="./knowls/theorem.SSRLT.knowl">Theorem SSRLT</a> guarantees we will have a spanning set of $\rng{T}$.  A basis of $P_4$ is $\set{1, x, x^2, x^3, x^4}$.  If we transform the elements of this set, we get the set $\set{0, 1, 2x, 3x^2, 4x^3}$ which is a spanning set for $\rng{T}$.  Reducing this to a linearly independent set, we find that $\{1, 2x, 3x^2, 4x^3\}$ is a basis of $\rng{T}$.  Since $\rng{T}$ and $P_3$ both have dimension 4, $T$ is surjective.
-</div>

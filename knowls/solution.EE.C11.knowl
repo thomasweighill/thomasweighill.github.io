@@ -1,5 +1,0 @@
-<div class="solution" acro="EE.C11">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">EE.C11</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>Answer: $\charpoly{A}{x} = -5 + 4x^2 - x^3$.
-</div>

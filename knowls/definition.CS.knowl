@@ -1,6 +1,0 @@
-<div class="definition" id="definition-CS" acro="CS" titletext="Consistent System">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">CS</span> <span class="titletext"> Consistent System</span>
-</h5>
-<p>A system of linear equations is <em class="term">consistent</em> if it has at least one solution.  Otherwise, the system is called <em class="term">inconsistent</em>.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-TSS.html#definition-CS" class="context" title="Section TSS">(in context)</a></div>

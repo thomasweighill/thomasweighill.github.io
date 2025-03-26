@@ -1,7 +1,0 @@
-<div class="exercise" acro="MR.M83">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">MR.M83</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>In light of <a class="knowl" acro="MRCLT" type="Theorem" title="Matrix Representation of a Composition of Linear Transformations" knowl="./knowls/theorem.MRCLT.knowl">Theorem MRCLT</a> and <a class="knowl" acro="IMR" type="Theorem" title="Invertible Matrix Representations" knowl="./knowls/theorem.IMR.knowl">Theorem IMR</a>, write a short comparison of <a class="knowl" acro="NPNT" type="Theorem" title="Nonsingular Product has Nonsingular Terms" knowl="./knowls/theorem.NPNT.knowl">Theorem NPNT</a> and <a knowl="./knowls/exercise.IVLT.T40.knowl">Exercise IVLT.T40</a>.
-</p></div>
-</div>

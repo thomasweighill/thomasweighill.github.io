@@ -1,6 +1,0 @@
-<div class="definition" id="definition-SIM" acro="SIM" titletext="Similar Matrices">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">SIM</span> <span class="titletext"> Similar Matrices</span>
-</h5>
-<p>Suppose $A$ and $B$ are two square matrices of size $n$.  Then $A$ and $B$ are <em class="term">similar</em> if there exists a nonsingular matrix of size $n$, $S$, such that $A=\similar{B}{S}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#definition-SIM" class="context" title="Section SD">(in context)</a></div>

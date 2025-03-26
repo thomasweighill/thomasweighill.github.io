@@ -1,9 +1,0 @@
-<div class="solution" acro="B.C14">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">B.C14</span> <span class="contributor"><a knowl="./knowls/contributor.chrisblack.knowl">Chris Black</a></span>
-</h5>The derivative of $p(x) = a + bx + cx^2$ is $p^\prime(x) = b + 2cx$.
-Thus, if $p \in R$, then $p^\prime(0) = b + 2c(0) = 0$,
-so we must have $b = 0$.  We see that we can rewrite $R$ as
-$R = \setparts{p(x) = a + cx^2}{a, c\in\complexes}$.
-A linearly independent set that spans $R$ is $B = \set{1,x^2}$, and $B$ is a basis of $R$.
-</div>

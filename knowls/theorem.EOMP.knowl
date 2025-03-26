@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-EOMP" acro="EOMP" titletext="Eigenvalues Of Matrix Powers">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">EOMP</span><span class="titletext"> Eigenvalues Of Matrix Powers</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is a square matrix, $\lambda$ is an eigenvalue of $A$, and $s\geq 0$ is an integer.  Then $\lambda^s$ is an eigenvalue of $A^s$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.EOMP.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-PEE.html#theorem-EOMP" class="context" title="Section PEE">(in context)</a></div>

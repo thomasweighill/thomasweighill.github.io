@@ -1,5 +1,0 @@
-<div class="solution" acro="PD.C40">
-<h5 class="solution">
-<span class="type">Solution</span> <span class="acro">PD.C40</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>The vector space $P_4$ has dimension 5 by <a class="knowl" acro="DP" type="Theorem" title="Dimension of $P_n$" knowl="./knowls/theorem.DP.knowl">Theorem DP</a>.  Since $T$ contains only 3 vectors, and $3&lt;5$, <a class="knowl" acro="G" type="Theorem" title="Goldilocks" knowl="./knowls/theorem.G.knowl">Theorem G</a> tells us that $T$ does not span $P_4$.
-</div>

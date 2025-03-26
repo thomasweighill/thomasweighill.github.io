@@ -1,8 +1,0 @@
-<div class="exercise" acro="LISS.T50">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LISS.T50</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $V$ is a vector space and $\vect{u},\,\vect{v}\in V$ are two vectors in $V$.  Use the definition of linear independence to prove that $S=\set{\vect{u},\,\vect{v}}$ is a linearly dependent set if and only if one of the two vectors is a scalar multiple of the other.  Prove this directly in the context of an abstract vector space ($V$), without simply giving an upgraded version of <a class="knowl" acro="DLDS" type="Theorem" title="Dependency in Linearly Dependent Sets" knowl="./knowls/theorem.DLDS.knowl">Theorem DLDS</a> for the special case of just two vectors.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.LISS.T50.knowl">Solution</a></p></div>
-</div>

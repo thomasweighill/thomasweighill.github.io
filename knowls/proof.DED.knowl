@@ -1,8 +1,0 @@
-<div class="proof" id="proof-DED" acro="DED" titletext="">
-<h5 class="proof">
-<span class="type">Proof of Theorem</span> <span class="acro">DED</span>
-</h5>
-<p>Let $\scalarlist{\lambda}{n}$ denote the $n$ distinct eigenvalues of $A$.
-Then by <a class="knowl" acro="NEM" type="Theorem" title="Number of Eigenvalues of a Matrix" knowl="./knowls/theorem.NEM.knowl">Theorem NEM</a> we have $n=\sum_{i=1}^n\algmult{A}{\lambda_i}$, which implies that $\algmult{A}{\lambda_i}=1$, $1\leq i\leq n$.  From <a class="knowl" acro="ME" type="Theorem" title="Multiplicities of an Eigenvalue" knowl="./knowls/theorem.ME.knowl">Theorem ME</a> it follows that $\geomult{A}{\lambda_i}=1$, $1\leq i\leq n$.  So $\geomult{A}{\lambda_i}=\algmult{A}{\lambda_i}$, $1\leq i\leq n$ and <a class="knowl" acro="DMFE" type="Theorem" title="Diagonalizable Matrices have Full Eigenspaces" knowl="./knowls/theorem.DMFE.knowl">Theorem DMFE</a> says $A$ is diagonalizable.</p>
-
-</div>

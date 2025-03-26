@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-REMRS" acro="REMRS" titletext="Row-Equivalent Matrices have equal Row Spaces">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">REMRS</span><span class="titletext"> Row-Equivalent Matrices have equal Row Spaces</span>
-</h5>
-<div class="statement"><p>Suppose $A$ and $B$ are row-equivalent matrices.  Then $\rsp{A}=\rsp{B}$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.REMRS.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CRS.html#theorem-REMRS" class="context" title="Section CRS">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-DC" acro="DC" titletext="Diagonalization Characterization">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">DC</span><span class="titletext"> Diagonalization Characterization</span>
-</h5>
-<div class="statement"><p>Suppose $A$ is a square matrix of size $n$.  Then $A$ is diagonalizable if and only if there exists a linearly independent set $S$ that contains $n$ eigenvectors of $A$.</p></div>
-<div class="proof"><a knowl="./knowls/proof.DC.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-SD.html#theorem-DC" class="context" title="Section SD">(in context)</a></div>

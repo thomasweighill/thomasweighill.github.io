@@ -1,6 +1,0 @@
-<div class="definition" id="definition-ILT" acro="ILT" titletext="Injective Linear Transformation">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">ILT</span> <span class="titletext"> Injective Linear Transformation</span>
-</h5>
-<p>Suppose $\ltdefn{T}{U}{V}$ is a linear transformation.  Then $T$ is <em class="term">injective</em> if whenever $\lt{T}{\vect{x}}=\lt{T}{\vect{y}}$, then $\vect{x}=\vect{y}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-ILT.html#definition-ILT" class="context" title="Section ILT">(in context)</a></div>

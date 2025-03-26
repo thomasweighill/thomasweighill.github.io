@@ -1,6 +1,0 @@
-<div class="definition" id="definition-LNS" acro="LNS" titletext="Left Null Space">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">LNS</span> <span class="titletext"> Left Null Space</span>
-</h5>
-<p>Suppose $A$ is an $m\times n$ matrix.  Then the <em class="term">left null space</em> is defined as $\lns{A}=\nsp{\transpose{A}}\subseteq\complex{m}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-FS.html#definition-LNS" class="context" title="Section FS">(in context)</a></div>

@@ -1,7 +1,0 @@
-<div class="theorem" id="theorem-ROSLT" acro="ROSLT" titletext="Rank Of a Surjective Linear Transformation">
-<h5 class="theorem">
-<span class="type">Theorem </span><span class="acro">ROSLT</span><span class="titletext"> Rank Of a Surjective Linear Transformation</span>
-</h5>
-<div class="statement"><p>Suppose that $\ltdefn{T}{U}{V}$ is a linear transformation.  Then the rank of $T$ is the dimension of $V$, $\rank{T}=\dimension{V}$, if and only if $T$ is surjective.</p></div>
-<div class="proof"><a knowl="./knowls/proof.ROSLT.knowl">Proof</a></div>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-IVLT.html#theorem-ROSLT" class="context" title="Section IVLT">(in context)</a></div>

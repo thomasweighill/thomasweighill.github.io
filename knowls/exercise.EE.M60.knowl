@@ -1,8 +1,0 @@
-<div class="exercise" acro="EE.M60">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">EE.M60</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Repeat <a class="knowl" acro="CAEHW" type="Example" title="Computing an eigenvalue the hard way" knowl="./knowls/example.CAEHW.knowl">Example CAEHW</a> by choosing $\vect{x}=\colvector{0\\8\\2\\1\\2}$ and then arrive at an eigenvalue and eigenvector of the matrix $A$.  The hard way.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.EE.M60.knowl">Solution</a></p></div>
-</div>

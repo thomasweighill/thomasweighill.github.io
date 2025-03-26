@@ -1,6 +1,0 @@
-<div class="definition" id="definition-CNM" acro="CNM" titletext="Complex Number Multiplication">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">CNM</span> <span class="titletext"> Complex Number Multiplication</span>
-</h5>
-<p>The <em class="term">product</em> of the complex numbers $\alpha=a+bi$ and $\beta=c+di$ , denoted $\alpha\beta$, is $(ac-bd)+(ad+bc)i$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-CNO.html#definition-CNM" class="context" title="Section CNO">(in context)</a></div>

@@ -1,6 +1,0 @@
-<div class="definition" id="definition-ZM" acro="ZM" titletext="Zero Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">ZM</span> <span class="titletext"> Zero Matrix</span>
-</h5>
-<p>The $m\times n$ <em class="term">zero matrix</em> is written as $\zeromatrix=\zeromatrix_{m\times n}$ and defined by $\matrixentry{\zeromatrix}{ij}=0$, for all $1\leq i\leq m$, $1\leq j\leq n$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MO.html#definition-ZM" class="context" title="Section MO">(in context)</a></div>

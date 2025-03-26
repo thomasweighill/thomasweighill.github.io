@@ -1,7 +1,0 @@
-<div class="exercise" acro="LI.T10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">LI.T10</span> <span class="contributor"><a knowl="./knowls/contributor.martinjackson.knowl">Martin Jackson</a></span>
-</h5>
-<div class="problem"><p>Prove that if a set of vectors contains the zero vector, then the set is linearly dependent.  (Ed. “The zero vector is death to linearly independent sets.”)
-</p></div>
-</div>

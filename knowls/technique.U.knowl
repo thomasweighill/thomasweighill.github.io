@@ -1,8 +1,0 @@
-<div class="technique" id="technique-U" acro="U" titletext="Uniqueness">
-<h5 class="technique">
-<span class="type">Proof Technique</span> <span class="acro">U</span> <span class="titletext">Uniqueness</span>
-</h5>
-
-<p>A theorem will sometimes claim that some object, having some desirable property, is unique.  In other words, there should be only one such object.  To prove this, a standard technique is to assume there are two such objects and proceed to analyze the consequences.  The end result may be a contradiction (<a class="knowl" acro="CD" type="Proof Technique" title="Contradiction" knowl="./knowls/technique.CD.knowl">Proof Technique CD</a>), or the conclusion that the two allegedly different objects really are equal.</p>
-
-</div>

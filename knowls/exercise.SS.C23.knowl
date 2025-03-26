@@ -1,8 +1,0 @@
-<div class="exercise" acro="SS.C23">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">SS.C23</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p><a knowl="./knowls/archetype.K.knowl">Archetype K</a> and <a knowl="./knowls/archetype.L.knowl">Archetype L</a> are defined as matrices.  Use <a class="knowl" acro="SSNS" type="Theorem" title="Spanning Sets for Null Spaces" knowl="./knowls/theorem.SSNS.knowl">Theorem SSNS</a> directly to find a set $S$ so that $\spn{S}$ is the null space of the matrix.  Do not make any reference to the associated homogeneous system of equations in your solution.
-</p></div>
-<div class="solution"><p><a knowl="./knowls/solution.SS.C23.knowl">Solution</a></p></div>
-</div>

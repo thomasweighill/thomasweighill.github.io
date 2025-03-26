@@ -1,7 +1,0 @@
-<div class="exercise" acro="PD.T25">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">PD.T25</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Suppose that $V$ is a vector space with finite dimension.  Let $W$ be any subspace of $V$.  Prove that $W$ has finite dimension.
-</p></div>
-</div>

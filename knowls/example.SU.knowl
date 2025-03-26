@@ -1,8 +1,0 @@
-<div class="example" id="example-SU" acro="SU" titletext="Set union">
-<h5 class="example">
-<span class="type">Example</span> <span class="acro">SU</span> <span class="titletext">Set union</span>
-</h5>
-<p>If $S=\set{\blacklozenge,\,\bigstar,\,\blacksquare}$ and $T=\set{\blacklozenge,\,\bigstar,\,\blacktriangle}$ then $S\cup T=\set{\blacklozenge,\,\bigstar,\,\blacksquare,\,\blacktriangle}$.</p>
-<div class="context"><a href="section-SET.html#example-SU" class="context" title="Section SET">(in
-context)</a></div>
-</div>

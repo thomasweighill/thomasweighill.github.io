@@ -1,7 +1,0 @@
-<div class="exercise" acro="VS.T10">
-<h5 class="exercise">
-<span class="type">Exercise</span> <span class="acro">VS.T10</span> <span class="contributor"><a knowl="./knowls/contributor.robertbeezer.knowl">Robert Beezer</a></span>
-</h5>
-<div class="problem"><p>Prove each of the ten properties of <a class="knowl" acro="VS" type="Definition" title="Vector Space" knowl="./knowls/definition.VS.knowl">Definition VS</a> for each of the following examples of a vector space: <a class="knowl" acro="VSP" type="Example" title="The vector space of polynomials, $P_n$" knowl="./knowls/example.VSP.knowl">Example VSP</a>, <a class="knowl" acro="VSIS" type="Example" title="The vector space of infinite sequences" knowl="./knowls/example.VSIS.knowl">Example VSIS</a>, <a class="knowl" acro="VSF" type="Example" title="The vector space of functions" knowl="./knowls/example.VSF.knowl">Example VSF</a>, <a class="knowl" acro="VSS" type="Example" title="The singleton vector space " knowl="./knowls/example.VSS.knowl">Example VSS</a>.
-</p></div>
-</div>

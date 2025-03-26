@@ -1,6 +1,0 @@
-<div class="definition" id="definition-HM" acro="HM" titletext="Hermitian Matrix">
-<h5 class="definition">
-<span class="type">Definition </span><span class="acro">HM</span> <span class="titletext"> Hermitian Matrix</span>
-</h5>
-<p>The square matrix $A$ is <em class="term">Hermitian</em> (or <em class="term">self-adjoint</em>) if $A=\adjoint{A}$.</p>
-</div><div class="context"><a href="http://linear.pugetsound.edu/html/section-MM.html#definition-HM" class="context" title="Section MM">(in context)</a></div>
